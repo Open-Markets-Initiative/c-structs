@@ -95,9 +95,9 @@
 /*
  * Market Code Values
  */ 
-#define ENUM_MARKET_CODE_NASDAQ_Q = "Q"
-#define ENUM_MARKET_CODE_BX_B = "B"
-#define ENUM_MARKET_CODE_PSX_X = "X"
+#define ENUM_MARKET_CODE_NASDAQ_Q = Q
+#define ENUM_MARKET_CODE_BX_B = B
+#define ENUM_MARKET_CODE_PSX_X = X
 
 /*
  * Message Type Values
@@ -115,8 +115,8 @@
 /*
  * Operational Halt Action Values
  */ 
-#define ENUM_OPERATIONAL_HALT_ACTION_HALTED_H = "H"
-#define ENUM_OPERATIONAL_HALT_ACTION_RESUMED_T = "T"
+#define ENUM_OPERATIONAL_HALT_ACTION_HALTED_H = H
+#define ENUM_OPERATIONAL_HALT_ACTION_RESUMED_T = T
 
 /*
  * Reg Sho Action Values

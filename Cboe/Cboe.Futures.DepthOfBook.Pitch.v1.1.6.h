@@ -1,5 +1,5 @@
 /*******************************************************************************
- * C Structs For Cboe Options Pitch DepthOfBook 2.39.4 protocol
+ * C Structs For Cboe Futures Pitch DepthOfBook 1.1.6 protocol
  *******************************************************************************/
 
 /*******************************************************************************
@@ -7,32 +7,34 @@
  *******************************************************************************/
 
 /*
- * Auction Type Values
+ * Futures Flags Values
  */ 
-#define ENUM_AUCTION_TYPE_OPENING_O = 'O'
-#define ENUM_AUCTION_TYPE_CLOSING_C = 'C'
-#define ENUM_AUCTION_TYPE_HALT_H = 'H'
-#define ENUM_AUCTION_TYPE_IPO_I = 'I'
-#define ENUM_AUCTION_TYPE_CLOSE_M = 'M'
-#define ENUM_AUCTION_TYPE_SUM_T = 'T'
-#define ENUM_AUCTION_TYPE_BAM_B = 'B'
+#define ENUM_FUTURES_FLAGS_STANDARD_0 = 0
+#define ENUM_FUTURES_FLAGS_VARIANCE_1 = 1
 
 /*
- * Customer Indicator Values
+ * Issue Values
  */ 
-#define ENUM_CUSTOMER_INDICATOR_NON_CUSTOMER_N = 'N'
-#define ENUM_CUSTOMER_INDICATOR_CUSTOMER_C = 'C'
+#define ENUM_ISSUE_INITIAL_SETTLEMENT_S = 'S'
+#define ENUM_ISSUE_REISSUED_SETTLEMENT_R = 'R'
+
+/*
+ * Listing State Values
+ */ 
+#define ENUM_LISTING_STATE_ACTIVE_A = 'A'
+#define ENUM_LISTING_STATE_INACTIVE_I = 'I'
+#define ENUM_LISTING_STATE_TEST_T = 'T'
 
 /*
  * Message Type Values
  */ 
 #define ENUM_MESSAGE_TYPE_TIME_MESSAGE_0X20 = 0x20
 #define ENUM_MESSAGE_TYPE_UNIT_CLEAR_MESSAGE_0X97 = 0x97
+#define ENUM_MESSAGE_TYPE_TIME_REFERENCE_MESSAGE_0_XB_1 = 0xB1
+#define ENUM_MESSAGE_TYPE_FUTURES_INSTRUMENT_DEFINITION_MESSAGE_0_XBB = 0xBB
 #define ENUM_MESSAGE_TYPE_ADD_ORDER_LONG_MESSAGE_0X21 = 0x21
 #define ENUM_MESSAGE_TYPE_ADD_ORDER_SHORT_MESSAGE_0X22 = 0x22
-#define ENUM_MESSAGE_TYPE_ADD_ORDER_EXPANDED_MESSAGE_0X_2F = 0x2F
 #define ENUM_MESSAGE_TYPE_ORDER_EXECUTED_MESSAGE_0X23 = 0x23
-#define ENUM_MESSAGE_TYPE_ORDER_EXECUTED_AT_PRICE_SIZE_MESSAGE_0X24 = 0x24
 #define ENUM_MESSAGE_TYPE_REDUCE_SIZE_LONG_MESSAGE_0X25 = 0x25
 #define ENUM_MESSAGE_TYPE_REDUCE_SIZE_SHORT_MESSAGE_0X26 = 0x26
 #define ENUM_MESSAGE_TYPE_MODIFY_ORDER_LONG_MESSAGE_0X27 = 0x27
@@ -40,31 +42,13 @@
 #define ENUM_MESSAGE_TYPE_DELETE_ORDER_MESSAGE_0X29 = 0x29
 #define ENUM_MESSAGE_TYPE_TRADE_LONG_MESSAGE_0X_2A = 0x2A
 #define ENUM_MESSAGE_TYPE_TRADE_SHORT_MESSAGE_0X_2B = 0x2B
-#define ENUM_MESSAGE_TYPE_TRADE_EXPANDED_MESSAGE_0X30 = 0x30
+#define ENUM_MESSAGE_TYPE_TRANSACTION_BEGIN_0_XBC = 0xBC
+#define ENUM_MESSAGE_TYPE_TRANSACTION_END_0_XBD = 0xBD
 #define ENUM_MESSAGE_TYPE_TRADE_BREAK_MESSAGE_0X_2C = 0x2C
-#define ENUM_MESSAGE_TYPE_END_OF_SESSION_MESSAGE_0X_2D = 0x2D
-#define ENUM_MESSAGE_TYPE_SYMBOL_MAPPING_MESSAGE_0X_2E = 0x2E
+#define ENUM_MESSAGE_TYPE_SETTLEMENT_MESSAGE_0_XB_9 = 0xB9
+#define ENUM_MESSAGE_TYPE_END_OF_DAY_SUMMARY_MESSAGE_0_XBA = 0xBA
 #define ENUM_MESSAGE_TYPE_TRADING_STATUS_MESSAGE_0X31 = 0x31
-#define ENUM_MESSAGE_TYPE_AUCTION_UPDATE_MESSAGE_0X95 = 0x95
-#define ENUM_MESSAGE_TYPE_AUCTION_SUMMARY_MESSAGE_0X96 = 0x96
-#define ENUM_MESSAGE_TYPE_AUCTION_NOTIFICATION_MESSAGE_0_XAD = 0xAD
-#define ENUM_MESSAGE_TYPE_AUCTION_CANCEL_MESSAGE_0_XAE = 0xAE
-#define ENUM_MESSAGE_TYPE_AUCTION_TRADE_MESSAGE_0_XAF = 0xAF
-#define ENUM_MESSAGE_TYPE_RETAIL_PRICE_IMPROVEMENT_MESSAGE_0X98 = 0x98
-
-/*
- * Reg Sho Action Values
- */ 
-#define ENUM_REG_SHO_ACTION_NO_PRICE_TEST_IN_EFFECT_0 = '0'
-#define ENUM_REG_SHO_ACTION_REG_SHO_PRICE_TEST_RESTRICTION_IN_EFFECT_1 = '1'
-
-/*
- * Retail Price Improvement Values
- */ 
-#define ENUM_RETAIL_PRICE_IMPROVEMENT_BUY_SIDE_B = 'B'
-#define ENUM_RETAIL_PRICE_IMPROVEMENT_SELL_SIDE_S = 'S'
-#define ENUM_RETAIL_PRICE_IMPROVEMENT_BUY_AND_SELL_A = 'A'
-#define ENUM_RETAIL_PRICE_IMPROVEMENT_NO_RPI_N = 'N'
+#define ENUM_MESSAGE_TYPE_END_OF_SESSION_MESSAGE_0X_2D = 0x2D
 
 /*
  * Side Indicator Values
@@ -73,21 +57,17 @@
 #define ENUM_SIDE_INDICATOR_SELL_ORDER_S = 'S'
 
 /*
- * Symbol Condition Values
- */ 
-#define ENUM_SYMBOL_CONDITION_NORMAL_N = 'N'
-#define ENUM_SYMBOL_CONDITION_CLOSING_ONLY_C = 'C'
-
-/*
  * Trade Condition Values
  */ 
 #define ENUM_TRADE_CONDITION_NORMAL_TRADE = ''
+#define ENUM_TRADE_CONDITION_OPENING_TRADE_O = 'O'
 #define ENUM_TRADE_CONDITION_SPREAD_TRADE_S = 'S'
+#define ENUM_TRADE_CONDITION_BLOCK_TRADE_B = 'B'
+#define ENUM_TRADE_CONDITION_ECRP_TRADE_E = 'E'
 
 /*
  * Trading Status Values
  */ 
-#define ENUM_TRADING_STATUS_ACCEPTING_ORDERS_A = 'A'
 #define ENUM_TRADING_STATUS_HALTED_H = 'H'
 #define ENUM_TRADING_STATUS_QUOTE_ONLY_Q = 'Q'
 #define ENUM_TRADING_STATUS_EXCHANGE_SPECIFIC_SUSPENSION_S = 'S'
@@ -99,29 +79,6 @@
  *******************************************************************************/
 
 /*
- * Structure: Add Flags
- */ 
-typedef struct {
-    char Reserved7[7];
-    char Display[1];
-} AddFlagsT;
-
-/*
- * Structure: Add Order Expanded Message
- */ 
-typedef struct {
-    uint32_t TimeOffset;
-    uint64_t OrderId;
-    char SideIndicator;
-    uint32_t LongQuantity;
-    char ExpandedSymbol[8];
-    uint64_t LongPrice;
-    char AddFlags[0];
-    char ParticipantId[4];
-    char CustomerIndicator;
-} AddOrderExpandedMessageT;
-
-/*
  * Structure: Add Order Long Message
  */ 
 typedef struct {
@@ -131,7 +88,6 @@ typedef struct {
     uint32_t LongQuantity;
     char Symbol[6];
     uint64_t LongPrice;
-    AddFlagsT AddFlags;
 } AddOrderLongMessageT;
 
 /*
@@ -144,68 +100,7 @@ typedef struct {
     uint16_t ShortQuantity;
     char Symbol[6];
     uint16_t ShortPrice;
-    char AddFlags[0];
 } AddOrderShortMessageT;
-
-/*
- * Structure: Auction Cancel Message
- */ 
-typedef struct {
-    uint32_t TimeOffset;
-    uint64_t AuctionId;
-} AuctionCancelMessageT;
-
-/*
- * Structure: Auction Notification Message
- */ 
-typedef struct {
-    uint32_t TimeOffset;
-    char Symbol[6];
-    uint64_t AuctionId;
-    char AuctionType;
-    char SideIndicator;
-    uint64_t LongPrice;
-    uint32_t Contracts;
-    char CustomerIndicator;
-    char ParticipantId[4];
-    uint32_t AuctionEndOffset;
-} AuctionNotificationMessageT;
-
-/*
- * Structure: Auction Summary Message
- */ 
-typedef struct {
-    uint32_t TimeOffset;
-    char StockSymbol[8];
-    char AuctionType;
-    uint64_t LongPrice;
-    uint32_t Shares;
-} AuctionSummaryMessageT;
-
-/*
- * Structure: Auction Trade Message
- */ 
-typedef struct {
-    uint32_t TimeOffset;
-    uint64_t AuctionId;
-    uint64_t ExecutionId;
-    uint64_t LongPrice;
-    uint32_t Contracts;
-} AuctionTradeMessageT;
-
-/*
- * Structure: Auction Update Message
- */ 
-typedef struct {
-    uint32_t TimeOffset;
-    char StockSymbol[8];
-    char AuctionType;
-    uint64_t ReferencePrice;
-    uint32_t BuyShares;
-    uint32_t SellShares;
-    uint64_t IndicativePrice;
-    uint64_t AuctionOnlyPrice;
-} AuctionUpdateMessageT;
 
 /*
  * Structure: Delete Order Message
@@ -216,6 +111,24 @@ typedef struct {
 } DeleteOrderMessageT;
 
 /*
+ * Structure: End Of Day Summary Message
+ */ 
+typedef struct {
+    uint32_t TimeOffset;
+    char Symbol[6];
+    uint32_t TradeDate;
+    uint32_t OpenInterest;
+    uint64_t HighPrice;
+    uint64_t LowPrice;
+    uint64_t OpenPrice;
+    uint64_t ClosePrice;
+    uint32_t TotalVolume;
+    uint32_t BlockVolume;
+    uint32_t EcrpVolume;
+    SummaryFlagsT SummaryFlags;
+} EndOfDaySummaryMessageT;
+
+/*
  * Structure: End Of Session Message
  */ 
 typedef struct {
@@ -223,11 +136,12 @@ typedef struct {
 } EndOfSessionMessageT;
 
 /*
- * Structure: Message
+ * Structure: Future Leg
  */ 
 typedef struct {
-    MessageHeaderT MessageHeader;
-} MessageT;
+    int32_t LegRatio;
+    char LegSymbol[6];
+} FutureLegT;
 
 /*
  * Structure: Message Header
@@ -238,15 +152,6 @@ typedef struct {
 } MessageHeaderT;
 
 /*
- * Structure: Modify Flags
- */ 
-typedef struct {
-    char Reserved6[6];
-    char MaintainPriority[1];
-    char Display[1];
-} ModifyFlagsT;
-
-/*
  * Structure: Modify Order Long Message
  */ 
 typedef struct {
@@ -254,7 +159,6 @@ typedef struct {
     uint64_t OrderId;
     uint32_t LongQuantity;
     uint64_t LongPrice;
-    ModifyFlagsT ModifyFlags;
 } ModifyOrderLongMessageT;
 
 /*
@@ -265,21 +169,7 @@ typedef struct {
     uint64_t OrderId;
     uint16_t ShortQuantity;
     uint16_t ShortPrice;
-    char ModifyFlags[0];
 } ModifyOrderShortMessageT;
-
-/*
- * Structure: Order Executed At Price Size Message
- */ 
-typedef struct {
-    uint32_t TimeOffset;
-    uint64_t OrderId;
-    uint32_t ExecutedQuantity;
-    uint32_t RemainingQuantity;
-    uint64_t ExecutionId;
-    uint64_t LongPrice;
-    char TradeCondition;
-} OrderExecutedAtPriceSizeMessageT;
 
 /*
  * Structure: Order Executed Message
@@ -291,13 +181,6 @@ typedef struct {
     uint64_t ExecutionId;
     char TradeCondition;
 } OrderExecutedMessageT;
-
-/*
- * Structure: Packet
- */ 
-typedef struct {
-    PacketHeaderT PacketHeader;
-} PacketT;
 
 /*
  * Structure: Packet Header
@@ -328,29 +211,51 @@ typedef struct {
 } ReduceSizeShortMessageT;
 
 /*
- * Structure: Retail Price Improvement Message
+ * Structure: Settlement Message
  */ 
 typedef struct {
     uint32_t TimeOffset;
-    char ExpandedSymbol[8];
-    char RetailPriceImprovement;
-} RetailPriceImprovementMessageT;
+    char Symbol[6];
+    uint32_t TradeDate;
+    uint64_t SettlementPrice;
+    char Issue;
+} SettlementMessageT;
 
 /*
- * Structure: Symbol Mapping Message
+ * Structure: Standard
  */ 
 typedef struct {
-    char FeedSymbol[6];
-    char OsiSymbol[21];
-    char SymbolCondition;
-} SymbolMappingMessageT;
+} StandardT;
+
+/*
+ * Structure: Summary Flags
+ */ 
+typedef struct {
+    char ReservedFlags[7];
+    char OfferCloseValid[1];
+    char LowPriceIsOffer[1];
+    char LowPriceValid[1];
+    char HighPriceIsBid[1];
+    char HighPriceValid[1];
+} SummaryFlagsT;
 
 /*
  * Structure: Time Message
  */ 
 typedef struct {
     uint32_t Time;
+    uint32_t Epoch;
 } TimeMessageT;
+
+/*
+ * Structure: Time Reference Message
+ */ 
+typedef struct {
+    uint32_t MidnightReference;
+    uint32_t Time;
+    uint32_t TimeOffset;
+    uint32_t TradeDate;
+} TimeReferenceMessageT;
 
 /*
  * Structure: Trade Break Message
@@ -359,20 +264,6 @@ typedef struct {
     uint32_t TimeOffset;
     uint64_t ExecutionId;
 } TradeBreakMessageT;
-
-/*
- * Structure: Trade Expanded Message
- */ 
-typedef struct {
-    uint32_t TimeOffset;
-    uint64_t OrderId;
-    char SideIndicator;
-    uint32_t LongQuantity;
-    char ExpandedSymbol[8];
-    uint64_t LongPrice;
-    uint64_t ExecutionId;
-    char TradeCondition;
-} TradeExpandedMessageT;
 
 /*
  * Structure: Trade Long Message
@@ -407,12 +298,25 @@ typedef struct {
  */ 
 typedef struct {
     uint32_t TimeOffset;
-    char ExpandedSymbol[8];
+    char Symbol[6];
+    char Reserved2[2];
     char TradingStatus;
-    char RegShoAction;
-    char Reserved1[1];
-    char Reserved2[1];
+    char Reserved3[3];
 } TradingStatusMessageT;
+
+/*
+ * Structure: Transaction Begin
+ */ 
+typedef struct {
+    uint32_t TimeOffset;
+} TransactionBeginT;
+
+/*
+ * Structure: Transaction End
+ */ 
+typedef struct {
+    uint32_t TimeOffset;
+} TransactionEndT;
 
 /*
  * Structure: Unit Clear Message
@@ -420,4 +324,18 @@ typedef struct {
 typedef struct {
     uint32_t TimeOffset;
 } UnitClearMessageT;
+
+/*
+ * Structure: Variance
+ */ 
+typedef struct {
+    int64_t RealizedVariance;
+    uint16_t NumExpectedPrices;
+    uint16_t NumElapsedReturns;
+    uint64_t PreviousSettlement;
+    int64_t DiscountFactor;
+    uint64_t InitialStrike;
+    int64_t PreviousArmvm;
+    int64_t FedFundsRate;
+} VarianceT;
 

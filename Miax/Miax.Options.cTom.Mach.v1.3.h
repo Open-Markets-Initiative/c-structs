@@ -1,5 +1,5 @@
 /*******************************************************************************
- * C Structs For Miax Options Mach cTom 1.1 protocol
+ * C Structs For Miax Options Mach cTom 1.3 protocol
  *******************************************************************************/
 
 /*******************************************************************************
@@ -36,17 +36,11 @@
 #define ENUM_EVENT_REASON_MANUAL_M = 'M'
 
 /*
- * Leg Side Values
- */ 
-#define ENUM_LEG_SIDE_BID_B = B
-#define ENUM_LEG_SIDE_ASK_A = A
-
-/*
  * Liquidity Acceptance Increment Indicator Values
  */ 
 #define ENUM_LIQUIDITY_ACCEPTANCE_INCREMENT_INDICATOR_PENNY_P = 'P'
-#define ENUM_LIQUIDITY_ACCEPTANCE_INCREMENT_INDICATOR_NICKEL_N = 'N'
-#define ENUM_LIQUIDITY_ACCEPTANCE_INCREMENT_INDICATOR_DIME_D = 'D'
+#define ENUM_LIQUIDITY_ACCEPTANCE_INCREMENT_INDICATOR_PENNY_OR_NICKEL_N = 'N'
+#define ENUM_LIQUIDITY_ACCEPTANCE_INCREMENT_INDICATOR_NICKEL_OR_DIME_D = 'D'
 
 /*
  * Long Term Option Values
@@ -58,24 +52,24 @@
  * Message Type Values
  */ 
 #define ENUM_MESSAGE_TYPE_SYSTEM_TIME_MESSAGE_1 = '1'
-#define ENUM_MESSAGE_TYPE_SERIES_UPDATE_P = 'P'
+#define ENUM_MESSAGE_TYPE_SIMPLE_SERIES_UPDATE_MESSAGE_P = 'P'
 #define ENUM_MESSAGE_TYPE_COMPLEX_STRATEGY_DEFINITION_MESSAGE_C = 'C'
 #define ENUM_MESSAGE_TYPE_SYSTEM_STATE_MESSAGE_S = 'S'
 #define ENUM_MESSAGE_TYPE_COMPLEX_TOP_OF_MARKET_BID_COMPACT_MESSAGE_B = 'b'
 #define ENUM_MESSAGE_TYPE_COMPLEX_TOP_OF_MARKET_OFFER_COMPACT_MESSAGE_O = 'o'
-#define ENUM_MESSAGE_TYPE_WIDE_COMPLEX_TOP_OF_MARKET_BID_MESSAGE_E = 'e'
-#define ENUM_MESSAGE_TYPE_WIDE_COMPLEX_TOP_OF_MARKET_OFFER_MESSAGE_F = 'f'
+#define ENUM_MESSAGE_TYPE_COMPLEX_TOP_OF_MARKET_BID_WIDE_MESSAGE_E = 'e'
+#define ENUM_MESSAGE_TYPE_COMPLEX_TOP_OF_MARKET_OFFER_WIDE_MESSAGE_F = 'f'
 #define ENUM_MESSAGE_TYPE_COMPLEX_DOUBLE_SIDED_TOP_OF_MARKET_COMPACT_MESSAGE_M = 'm'
-#define ENUM_MESSAGE_TYPE_WIDE_COMPLEX_DOUBLE_SIDED_TOP_OF_MARKET_MESSAGE_W = 'w'
-#define ENUM_MESSAGE_TYPE_STRATEGY_TRADE_MESSAGE_T = 't'
-#define ENUM_MESSAGE_TYPE_UNDERLYING_TRADING_STATUS_MESSAGE_H = 'H'
+#define ENUM_MESSAGE_TYPE_COMPLEX_DOUBLE_SIDED_TOP_OF_MARKET_WIDE_MESSAGE_W = 'w'
+#define ENUM_MESSAGE_TYPE_STRATEGY_LAST_SALE_MESSAGE_T = 't'
+#define ENUM_MESSAGE_TYPE_UNDERLYING_TRADING_STATUS_NOTIFICATION_MESSAGE_H = 'H'
 
 /*
  * Miax Bbo Posting Increment Indicator Values
  */ 
 #define ENUM_MIAX_BBO_POSTING_INCREMENT_INDICATOR_PENNY_P = 'P'
-#define ENUM_MIAX_BBO_POSTING_INCREMENT_INDICATOR_NICKEL_N = 'N'
-#define ENUM_MIAX_BBO_POSTING_INCREMENT_INDICATOR_DIME_D = 'D'
+#define ENUM_MIAX_BBO_POSTING_INCREMENT_INDICATOR_PENNY_OR_NICKEL_N = 'N'
+#define ENUM_MIAX_BBO_POSTING_INCREMENT_INDICATOR_NICKEL_OR_DIME_D = 'D'
 
 /*
  * Offer Condition Values
@@ -134,9 +128,13 @@
 /*
  * Top Of Market Quote Condition Values
  */ 
-#define ENUM_TOP_OF_MARKET_QUOTE_CONDITION_HALTED_H = 'H'
-#define ENUM_TOP_OF_MARKET_QUOTE_CONDITION_RESUMED_R = 'R'
-#define ENUM_TOP_OF_MARKET_QUOTE_CONDITION_OPENED_O = 'O'
+#define ENUM_TOP_OF_MARKET_QUOTE_CONDITION_REGULAR_A = 'A'
+#define ENUM_TOP_OF_MARKET_QUOTE_CONDITION_TRADING_HALT_T = 'T'
+#define ENUM_TOP_OF_MARKET_QUOTE_CONDITION_WIDE_W = 'W'
+#define ENUM_TOP_OF_MARKET_QUOTE_CONDITION_SIMPLE_AUCTION_S = 'S'
+#define ENUM_TOP_OF_MARKET_QUOTE_CONDITION_COMPLEX_AUCTION_C = 'C'
+#define ENUM_TOP_OF_MARKET_QUOTE_CONDITION_SIMPLE_MARKET_PROTECTION_M = 'M'
+#define ENUM_TOP_OF_MARKET_QUOTE_CONDITION_LEG_MARKET_PROTECTION_L = 'L'
 
 /*
  * Trade Condition Values
@@ -175,15 +173,31 @@ typedef struct {
 typedef struct {
     uint32_t Timestamp;
     uint32_t StrategyId;
-    int16_t CompactBidPrice;
-    uint16_t CompactBidSize;
-    char BidReserved2[2];
+    int16_t BidPrice2;
+    uint16_t BidSize2;
+    uint16_t BidPriorityCustomerSize2;
     char BidCondition;
-    int16_t CompactOfferPrice;
-    uint16_t CompactOfferSize;
-    char OfferReserved2[2];
+    int16_t OfferPrice2;
+    uint16_t OfferSize2;
+    uint16_t OfferPriorityCustomerSize2;
     char OfferCondition;
 } ComplexDoubleSidedTopOfMarketCompactMessageT;
+
+/*
+ * Structure: Complex Double Sided Top Of Market Wide Message
+ */ 
+typedef struct {
+    uint32_t Timestamp;
+    uint32_t StrategyId;
+    int64_t BidPrice8;
+    uint32_t BidSize4;
+    uint32_t BidPriorityCustomerSize4;
+    char BidCondition;
+    int64_t OfferPrice8;
+    uint32_t OfferSize4;
+    uint32_t OfferPriorityCustomerSize4;
+    char OfferCondition;
+} ComplexDoubleSidedTopOfMarketWideMessageT;
 
 /*
  * Structure: Complex Strategy Definition Message
@@ -206,11 +220,23 @@ typedef struct {
 typedef struct {
     uint32_t Timestamp;
     uint32_t StrategyId;
-    int16_t CompactPrice;
-    uint16_t CompactSize;
-    char Reserved2[2];
+    int16_t Price2;
+    uint16_t Size2;
+    uint16_t PriorityCustomerSize2;
     char TopOfMarketQuoteCondition;
 } ComplexTopOfMarketBidCompactMessageT;
+
+/*
+ * Structure: Complex Top Of Market Bid Wide Message
+ */ 
+typedef struct {
+    uint32_t Timestamp;
+    uint32_t StrategyId;
+    int64_t Price8;
+    uint32_t Size4;
+    uint32_t PriorityCustomerSize4;
+    char TopOfMarketQuoteCondition;
+} ComplexTopOfMarketBidWideMessageT;
 
 /*
  * Structure: Complex Top Of Market Offer Compact Message
@@ -218,11 +244,23 @@ typedef struct {
 typedef struct {
     uint32_t Timestamp;
     uint32_t StrategyId;
-    int16_t CompactPrice;
-    uint16_t CompactSize;
-    char Reserved2[2];
+    int16_t Price2;
+    uint16_t Size2;
+    uint16_t PriorityCustomerSize2;
     char TopOfMarketQuoteCondition;
 } ComplexTopOfMarketOfferCompactMessageT;
+
+/*
+ * Structure: Complex Top Of Market Offer Wide Message
+ */ 
+typedef struct {
+    uint32_t Timestamp;
+    uint32_t StrategyId;
+    int64_t Price8;
+    uint32_t Size4;
+    uint32_t PriorityCustomerSize4;
+    char TopOfMarketQuoteCondition;
+} ComplexTopOfMarketOfferWideMessageT;
 
 /*
  * Structure: Leg Definition
@@ -230,8 +268,8 @@ typedef struct {
 typedef struct {
     uint32_t ProductId;
     uint16_t LegRatioQty;
-    uint8_t LegSide;
-    char Reserved8[8];
+    char LegSide[1];
+    uint64_t Reserved8;
 } LegDefinitionT;
 
 /*
@@ -251,7 +289,7 @@ typedef struct {
 } PacketT;
 
 /*
- * Structure: Series Update
+ * Structure: Simple Series Update Message
  */ 
 typedef struct {
     uint32_t ProductAddUpdateTime;
@@ -270,11 +308,11 @@ typedef struct {
     char LiquidityAcceptanceIncrementIndicator;
     char OpeningUnderlyingMarketCode;
     uint32_t PriorityQuoteWidth;
-    char Reserved8[8];
-} SeriesUpdateT;
+    uint64_t Reserved8;
+} SimpleSeriesUpdateMessageT;
 
 /*
- * Structure: Strategy Trade Message
+ * Structure: Strategy Last Sale Message
  */ 
 typedef struct {
     uint32_t Timestamp;
@@ -284,7 +322,7 @@ typedef struct {
     uint32_t TradeSize;
     char TradeCondition;
     char Reserved16[16];
-} StrategyTradeMessageT;
+} StrategyLastSaleMessageT;
 
 /*
  * Structure: System State Message
@@ -304,54 +342,14 @@ typedef struct {
 } SystemTimeMessageT;
 
 /*
- * Structure: Underlying Trading Status Message
+ * Structure: Underlying Trading Status Notification Message
  */ 
 typedef struct {
     uint32_t Timestamp;
     char UnderlyingSymbol[11];
     char TradingStatus;
     char EventReason;
-    uint32_t SecondsPart;
-    uint32_t ExpectedEventTimeNanoSecondsPart;
-} UnderlyingTradingStatusMessageT;
-
-/*
- * Structure: Wide Complex Double Sided Top Of Market Message
- */ 
-typedef struct {
-    uint32_t Timestamp;
-    uint32_t StrategyId;
-    int64_t WideBidPrice;
-    uint32_t WideBidSize;
-    char BidReserved4[4];
-    char BidCondition;
-    int64_t WideOfferPrice;
-    uint32_t WideOfferSize;
-    char OfferReserved4[4];
-    char OfferCondition;
-} WideComplexDoubleSidedTopOfMarketMessageT;
-
-/*
- * Structure: Wide Complex Top Of Market Bid Message
- */ 
-typedef struct {
-    uint32_t Timestamp;
-    uint32_t StrategyId;
-    int64_t WidePrice;
-    uint32_t WideSize;
-    char Reserved4[4];
-    char TopOfMarketQuoteCondition;
-} WideComplexTopOfMarketBidMessageT;
-
-/*
- * Structure: Wide Complex Top Of Market Offer Message
- */ 
-typedef struct {
-    uint32_t Timestamp;
-    uint32_t StrategyId;
-    int64_t WidePrice;
-    uint32_t WideSize;
-    char Reserved4[4];
-    char TopOfMarketQuoteCondition;
-} WideComplexTopOfMarketOfferMessageT;
+    uint32_t ExpectedEventTimeSeconds;
+    uint32_t ExpectedEventTimeNanoSeconds;
+} UnderlyingTradingStatusNotificationMessageT;
 

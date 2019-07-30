@@ -1,5 +1,5 @@
 /*******************************************************************************
- * C Structs For Opra Obdi Recipient 2.9 protocol
+ * C Structs For Opra Options Obdi Recipient 2.9 protocol
  *******************************************************************************/
 
 /*******************************************************************************
@@ -102,28 +102,28 @@
 /*
  * Session Indicator Values
  */ 
-#define ENUM_SESSION_INDICATOR_REGULAR_0 = "0"
-#define ENUM_SESSION_INDICATOR_PRE_MARKET_88 = "88"
+#define ENUM_SESSION_INDICATOR_REGULAR_0 = 0
+#define ENUM_SESSION_INDICATOR_PRE_MARKET_88 = 88
 
 /*
  * Volume Values
  */ 
-#define ENUM_VOLUME_NYSE_AMERICAN_A = "A"
-#define ENUM_VOLUME_BOX_B = "B"
-#define ENUM_VOLUME_CBOE_C = "C"
-#define ENUM_VOLUME_EDGX_E = "E"
-#define ENUM_VOLUME_GEMINI_H = "H"
-#define ENUM_VOLUME_ISE_I = "I"
-#define ENUM_VOLUME_MERCURY_J = "J"
-#define ENUM_VOLUME_MIAX_M = "M"
-#define ENUM_VOLUME_NYSE_ARCA_N = "N"
-#define ENUM_VOLUME_OPRA_O = "O"
-#define ENUM_VOLUME_MIAX_PEARL_P = "P"
-#define ENUM_VOLUME_NASDAQ_Q = "Q"
-#define ENUM_VOLUME_C2W = "W"
-#define ENUM_VOLUME_NASDAQ_BX_T = "T"
-#define ENUM_VOLUME_NASDAQ_PHLX_X = "X"
-#define ENUM_VOLUME_BATS_Z = "Z"
+#define ENUM_VOLUME_NYSE_AMERICAN_A = A
+#define ENUM_VOLUME_BOX_B = B
+#define ENUM_VOLUME_CBOE_C = C
+#define ENUM_VOLUME_EDGX_E = E
+#define ENUM_VOLUME_GEMINI_H = H
+#define ENUM_VOLUME_ISE_I = I
+#define ENUM_VOLUME_MERCURY_J = J
+#define ENUM_VOLUME_MIAX_M = M
+#define ENUM_VOLUME_NYSE_ARCA_N = N
+#define ENUM_VOLUME_OPRA_O = O
+#define ENUM_VOLUME_MIAX_PEARL_P = P
+#define ENUM_VOLUME_NASDAQ_Q = Q
+#define ENUM_VOLUME_C2W = W
+#define ENUM_VOLUME_NASDAQ_BX_T = T
+#define ENUM_VOLUME_NASDAQ_PHLX_X = X
+#define ENUM_VOLUME_BATS_Z = Z
 
 
 /*******************************************************************************

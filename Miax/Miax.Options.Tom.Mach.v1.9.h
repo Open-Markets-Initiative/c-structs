@@ -90,10 +90,10 @@
 /*
  * Packet Type Values
  */ 
-#define ENUM_PACKET_TYPE_HEARTBEAT_0 = "0"
-#define ENUM_PACKET_TYPE_START_OF_SESSION_1 = "1"
-#define ENUM_PACKET_TYPE_END_OF_SESSION_2 = "2"
-#define ENUM_PACKET_TYPE_APPLICATION_MESSAGE_3 = "3"
+#define ENUM_PACKET_TYPE_HEARTBEAT_0 = 0
+#define ENUM_PACKET_TYPE_START_OF_SESSION_1 = 1
+#define ENUM_PACKET_TYPE_END_OF_SESSION_2 = 2
+#define ENUM_PACKET_TYPE_APPLICATION_MESSAGE_3 = 3
 
 /*
  * System Status Values
@@ -130,7 +130,7 @@ typedef struct {
 } ApplicationMessageT;
 
 /*
- * Structure: Double-Sided Top of Market Compact Message
+ * Structure: Double Sided Top Of Market Compact Message
  */ 
 typedef struct {
     uint32_t Timestamp;
@@ -202,7 +202,7 @@ typedef struct {
 } SystemTimeMessageT;
 
 /*
- * Structure: Top of Market Bid Compact Message
+ * Structure: Top Of Market Bid Compact Message
  */ 
 typedef struct {
     uint32_t Timestamp;
@@ -214,7 +214,7 @@ typedef struct {
 } TopOfMarketBidCompactMessageT;
 
 /*
- * Structure: Top of Market Offer Compact Message
+ * Structure: Top Of Market Offer Compact Message
  */ 
 typedef struct {
     uint32_t Timestamp;
@@ -266,7 +266,7 @@ typedef struct {
 } UnderlyingTradingStatusMessageT;
 
 /*
- * Structure: Wide Double Sided Top of Market Message
+ * Structure: Wide Double Sided Top Of Market Message
  */ 
 typedef struct {
     uint32_t Timestamp;
@@ -282,7 +282,7 @@ typedef struct {
 } WideDoubleSidedTopOfMarketMessageT;
 
 /*
- * Structure: Wide Top of Market Bid Message
+ * Structure: Wide Top Of Market Bid Message
  */ 
 typedef struct {
     uint32_t Timestamp;
@@ -294,7 +294,7 @@ typedef struct {
 } WideTopOfMarketBidMessageT;
 
 /*
- * Structure: Wide Top of Market Offer Message
+ * Structure: Wide Top Of Market Offer Message
  */ 
 typedef struct {
     uint32_t Timestamp;
