@@ -10,6 +10,7 @@
 |Equities | Bbo | Xdp | [2.4.g][Nyse.Equities.Bbo.Xdp.v2.4.g.Structs] | 1/29/2018 | 375 | Verified | [url][Nyse.Equities.Bbo.Xdp.v2.4.g.Url] - [pdf][Nyse.Equities.Bbo.Xdp.v2.4.g.Pdf]|
 |Equities | Bqt | Xdp | [2.1.a][Nyse.Equities.Bqt.Xdp.v2.1.a.Structs] | 4/4/2018 | 656 | Untested | [url][Nyse.Equities.Bqt.Xdp.v2.1.a.Url] - [pdf][Nyse.Equities.Bqt.Xdp.v2.1.a.Pdf]|
 |Equities | Bqt | Xdp | [1.7.a][Nyse.Equities.Bqt.Xdp.v1.7.a.Structs] | 7/24/2017 | 654 | Verified | [url][Nyse.Equities.Bqt.Xdp.v1.7.a.Url] - [pdf][Nyse.Equities.Bqt.Xdp.v1.7.a.Pdf]|
+|Equities | ImbalancesFeed | Xdp | [2.2.a][Nyse.Equities.ImbalancesFeed.Xdp.v2.2.a.Structs] | 3/8/2019 | 285 | Verified | [url][Nyse.Equities.ImbalancesFeed.Xdp.v2.2.a.Url] - [pdf][Nyse.Equities.ImbalancesFeed.Xdp.v2.2.a.Pdf]|
 |Equities | ImbalancesFeed | Xdp | [2.1.f][Nyse.Equities.ImbalancesFeed.Xdp.v2.1.f.Structs] | 2/1/2018 | 269 | Verified | [url][Nyse.Equities.ImbalancesFeed.Xdp.v2.1.f.Url] - [pdf][Nyse.Equities.ImbalancesFeed.Xdp.v2.1.f.Pdf]|
 |Equities | IntegratedFeed | Xdp | [2.1.g][Nyse.Equities.IntegratedFeed.Xdp.v2.1.g.Structs] | 1/29/2018 | 640 | Verified | [url][Nyse.Equities.IntegratedFeed.Xdp.v2.1.g.Url] - [pdf][Nyse.Equities.IntegratedFeed.Xdp.v2.1.g.Pdf]|
 |Equities Amex | IntegratedFeed | Xdp | [2.1.g][Nyse.Equities.Amex.IntegratedFeed.Xdp.v2.1.g.Structs] | 1/29/2018 | 640 | Verified | [url][Nyse.Equities.Amex.IntegratedFeed.Xdp.v2.1.g.Url] - [pdf][Nyse.Equities.Amex.IntegratedFeed.Xdp.v2.1.g.Pdf]|
@@ -46,6 +47,9 @@ Nyse: [website](https://www.nyse.com "Go to New York Stock Exchange")
 [Nyse.Equities.ImbalancesFeed.Xdp.v2.1.f.Structs]: https://github.com/Open-Markets-Initiative/c-structs/blob/master/Nyse/Nyse.Equities.ImbalancesFeed.Xdp.v2.1.f.h "New York Stock Exchange 2.1.f C# Parsers Source File"
 [Nyse.Equities.ImbalancesFeed.Xdp.v2.1.f.Url]: https://www.nyse.com/publicdocs/nyse/data/XDP_Imbalances_Feed_Client_Specification_v2.1f.pdf "Specification url"
 [Nyse.Equities.ImbalancesFeed.Xdp.v2.1.f.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/master/Specifications/Nyse/Nyse.Equities.ImbalancesFeed.Xdp.v2.1.f.pdf "New York Stock Exchange 2.1.f Pdf"
+[Nyse.Equities.ImbalancesFeed.Xdp.v2.2.a.Structs]: https://github.com/Open-Markets-Initiative/c-structs/blob/master/Nyse/Nyse.Equities.ImbalancesFeed.Xdp.v2.2.a.h "New York Stock Exchange 2.2.a C# Parsers Source File"
+[Nyse.Equities.ImbalancesFeed.Xdp.v2.2.a.Url]: https://www.nyse.com/publicdocs/nyse/data/XDP_Imbalances_Feed_Client_Specification_v2.2a.pdf "Specification url"
+[Nyse.Equities.ImbalancesFeed.Xdp.v2.2.a.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/master/Specifications/Nyse/Nyse.Equities.ImbalancesFeed.Xdp.v2.2.a.pdf "New York Stock Exchange 2.2.a Pdf"
 [Nyse.Equities.IntegratedFeed.Xdp.v2.1.g.Structs]: https://github.com/Open-Markets-Initiative/c-structs/blob/master/Nyse/Nyse.Equities.IntegratedFeed.Xdp.v2.1.g.h "New York Stock Exchange 2.1.g C# Parsers Source File"
 [Nyse.Equities.IntegratedFeed.Xdp.v2.1.g.Url]: https://www.nyse.com/market-data/real-time/integrated-feed "Specification url"
 [Nyse.Equities.IntegratedFeed.Xdp.v2.1.g.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/master/Specifications/Nyse/Nyse.Equities.ImbalancesFeed.Xdp.v2.1.f.pdf "New York Stock Exchange 2.1.g Pdf"

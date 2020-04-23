@@ -1,5 +1,5 @@
 /*******************************************************************************
- * C Structs For Nasdaq Psx Itch TotalView 5.0 protocol
+ * C Structs For Nasdaq Equities Itch Aggregated 2.0 protocol
  *******************************************************************************/
 
 /*******************************************************************************
@@ -20,12 +20,6 @@
 #define ENUM_BREACHED_LEVEL_LEVEL_33 = '3'
 
 /*
- * Buy Sell Indicator Values
- */ 
-#define ENUM_BUY_SELL_INDICATOR_BUY_B = 'B'
-#define ENUM_BUY_SELL_INDICATOR_SELL_S = 'S'
-
-/*
  * Cross Type Values
  */ 
 #define ENUM_CROSS_TYPE_OPENING_CROSS_O = 'O'
@@ -38,7 +32,7 @@
  */ 
 #define ENUM_ETP_FLAG_ETP_Y = 'Y'
 #define ENUM_ETP_FLAG_NOT_ETP_N = 'N'
-#define ENUM_ETP_FLAG_NA = ' '
+#define ENUM_ETP_FLAG_NOT_AVAILABLE = ' '
 
 /*
  * Event Code Values
@@ -46,6 +40,7 @@
 #define ENUM_EVENT_CODE_START_OF_MESSAGES_O = 'O'
 #define ENUM_EVENT_CODE_START_OF_SYSTEM_HOURS_S = 'S'
 #define ENUM_EVENT_CODE_START_OF_MARKET_HOURS_Q = 'Q'
+#define ENUM_EVENT_CODE_CLEAR_NOII_X = 'X'
 #define ENUM_EVENT_CODE_END_OF_MARKET_HOURS_M = 'M'
 #define ENUM_EVENT_CODE_END_OF_SYSTEM_HOURS_E = 'E'
 #define ENUM_EVENT_CODE_END_OF_MESSAGES_C = 'C'
@@ -74,6 +69,14 @@
 #define ENUM_IMBALANCE_DIRECTION_INSUFFICIENT_ORDERS_O = 'O'
 
 /*
+ * Interest Flag Values
+ */ 
+#define ENUM_INTEREST_FLAG_BUY_SIDE_RPI_ORDERS_AVAILABLE_B = 'B'
+#define ENUM_INTEREST_FLAG_SELL_SIDE_RPI_ORDERS_AVAILABLE_S = 'S'
+#define ENUM_INTEREST_FLAG_BOTH_SIDES_RPI_ORDERS_AVAILABLE_A = 'A'
+#define ENUM_INTEREST_FLAG_NO_RPI_ORDERS_AVAILABLE_N = 'N'
+
+/*
  * Inverse Indicator Values
  */ 
 #define ENUM_INVERSE_INDICATOR_INVERSE_ETP_Y = 'Y'
@@ -82,16 +85,42 @@
 /*
  * Ipo Flag Values
  */ 
-#define ENUM_IPO_FLAG_NASDAQ_LISTED_INSTRUMENT_Y = 'Y'
-#define ENUM_IPO_FLAG_NASDAQ_LISTED_INSTRUMENT_N = 'N'
-#define ENUM_IPO_FLAG_NA = ' '
+#define ENUM_IPO_FLAG_SET_UP_FOR_IPO_RELEASE_Y = 'Y'
+#define ENUM_IPO_FLAG_NOT_SET_UP_FOR_IPO_RELEASE_N = 'N'
+#define ENUM_IPO_FLAG_NOT_AVAILABLE = ' '
+
+/*
+ * Ipo Quotation Release Qualifier Values
+ */ 
+#define ENUM_IPO_QUOTATION_RELEASE_QUALIFIER_ANTICIPATED_QUOTATION_RELEASE_TIME_A = 'A'
+#define ENUM_IPO_QUOTATION_RELEASE_QUALIFIER_IPO_RELEASE_CANCELED_OR_POSTPONED_C = 'C'
+
+/*
+ * Issue Classification Values
+ */ 
+#define ENUM_ISSUE_CLASSIFICATION_AMERICAN_DEPOSITARY_SHARE_A = 'A'
+#define ENUM_ISSUE_CLASSIFICATION_BOND_B = 'B'
+#define ENUM_ISSUE_CLASSIFICATION_COMMON_C = 'C'
+#define ENUM_ISSUE_CLASSIFICATION_DEPOSITORY_F = 'F'
+#define ENUM_ISSUE_CLASSIFICATION_144AI = 'I'
+#define ENUM_ISSUE_CLASSIFICATION_LIMITED_L = 'L'
+#define ENUM_ISSUE_CLASSIFICATION_NOTES_N = 'N'
+#define ENUM_ISSUE_CLASSIFICATION_ORDINARY_SHARE_O = 'O'
+#define ENUM_ISSUE_CLASSIFICATION_PREFERRED_P = 'P'
+#define ENUM_ISSUE_CLASSIFICATION_OTHER_Q = 'Q'
+#define ENUM_ISSUE_CLASSIFICATION_RIGHT_R = 'R'
+#define ENUM_ISSUE_CLASSIFICATION_SHARES_S = 'S'
+#define ENUM_ISSUE_CLASSIFICATION_CONVERTIBLE_T = 'T'
+#define ENUM_ISSUE_CLASSIFICATION_UNIT_U = 'U'
+#define ENUM_ISSUE_CLASSIFICATION_UNITS_BENIF_INT_V = 'V'
+#define ENUM_ISSUE_CLASSIFICATION_WARRANT_W = 'W'
 
 /*
  * Luld Reference Price Tier Values
  */ 
 #define ENUM_LULD_REFERENCE_PRICE_TIER_TIER_11 = '1'
 #define ENUM_LULD_REFERENCE_PRICE_TIER_TIER_22 = '2'
-#define ENUM_LULD_REFERENCE_PRICE_TIER_NA = ' '
+#define ENUM_LULD_REFERENCE_PRICE_TIER_NOT_AVAILABLE = ' '
 
 /*
  * Market Category Values
@@ -107,13 +136,6 @@
 #define ENUM_MARKET_CATEGORY_NA = ' '
 
 /*
- * Market Code Values
- */ 
-#define ENUM_MARKET_CODE_NASDAQ_Q = 'Q'
-#define ENUM_MARKET_CODE_BX_B = 'B'
-#define ENUM_MARKET_CODE_PSX_X = 'X'
-
-/*
  * Market Maker Mode Values
  */ 
 #define ENUM_MARKET_MAKER_MODE_NORMAL_N = 'N'
@@ -126,10 +148,16 @@
  * Market Participant State Values
  */ 
 #define ENUM_MARKET_PARTICIPANT_STATE_ACTIVE_A = 'A'
-#define ENUM_MARKET_PARTICIPANT_STATE_EXCUSED_WITHDRAWN_E = 'E'
+#define ENUM_MARKET_PARTICIPANT_STATE_EXCUSED_E = 'E'
 #define ENUM_MARKET_PARTICIPANT_STATE_WITHDRAWN_W = 'W'
 #define ENUM_MARKET_PARTICIPANT_STATE_SUSPENDED_S = 'S'
 #define ENUM_MARKET_PARTICIPANT_STATE_DELETED_D = 'D'
+
+/*
+ * Market Side Values
+ */ 
+#define ENUM_MARKET_SIDE_BUY_B = 'B'
+#define ENUM_MARKET_SIDE_SELL_S = 'S'
 
 /*
  * Message Type Values
@@ -137,34 +165,20 @@
 #define ENUM_MESSAGE_TYPE_SYSTEM_EVENT_MESSAGE_S = 'S'
 #define ENUM_MESSAGE_TYPE_STOCK_DIRECTORY_MESSAGE_R = 'R'
 #define ENUM_MESSAGE_TYPE_STOCK_TRADING_ACTION_MESSAGE_H = 'H'
-#define ENUM_MESSAGE_TYPE_REG_SHO_SHORT_SALE_PRICE_TEST_RESTRICTED_INDICATOR_MESSAGE_Y = 'Y'
-#define ENUM_MESSAGE_TYPE_MARKET_PARTICIPANT_POSITION_MESSAGE_L = 'L'
+#define ENUM_MESSAGE_TYPE_REG_SHO_RESTRICTION_MESSAGE_Y = 'Y'
+#define ENUM_MESSAGE_TYPE_MARKET_PARTICIPANT_POSITION_MESSAGE_P = 'P'
 #define ENUM_MESSAGE_TYPE_MWCB_DECLINE_LEVEL_MESSAGE_V = 'V'
-#define ENUM_MESSAGE_TYPE_MWCB_STATUS_LEVEL_MESSAGE_W = 'W'
+#define ENUM_MESSAGE_TYPE_MWCB_STATUS_MESSAGE_W = 'W'
+#define ENUM_MESSAGE_TYPE_IPO_QUOTING_PERIOD_UPDATE_MESSAGE_K = 'K'
 #define ENUM_MESSAGE_TYPE_LULD_AUCTION_COLLAR_MESSAGE_J = 'J'
-#define ENUM_MESSAGE_TYPE_OPERATIONAL_HALT_MESSAGE_H = 'h'
-#define ENUM_MESSAGE_TYPE_ADD_ORDER_NO_MPID_ATTRIBUTION_MESSAGE_A = 'A'
-#define ENUM_MESSAGE_TYPE_ADD_ORDER_WITH_MPID_ATTRIBUTION_MESSAGE_F = 'F'
-#define ENUM_MESSAGE_TYPE_ORDER_EXECUTED_MESSAGE_E = 'E'
-#define ENUM_MESSAGE_TYPE_ORDER_EXECUTED_WITH_PRICE_MESSAGE_C = 'C'
-#define ENUM_MESSAGE_TYPE_ORDER_CANCEL_MESSAGE_X = 'X'
-#define ENUM_MESSAGE_TYPE_ORDER_DELETE_MESSAGE_D = 'D'
-#define ENUM_MESSAGE_TYPE_ORDER_REPLACE_MESSAGE_U = 'U'
-#define ENUM_MESSAGE_TYPE_TRADE_MESSAGE_NON_CROSS_P = 'P'
-#define ENUM_MESSAGE_TYPE_CROSS_TRADE_MESSAGE_Q = 'Q'
-#define ENUM_MESSAGE_TYPE_BROKEN_TRADE_MESSAGE_B = 'B'
-#define ENUM_MESSAGE_TYPE_NET_ORDER_IMBALANCE_INDICATOR_MESSAGE_I = 'I'
-
-/*
- * Operational Halt Action Values
- */ 
-#define ENUM_OPERATIONAL_HALT_ACTION_HALTED_H = 'H'
-#define ENUM_OPERATIONAL_HALT_ACTION_RESUMED_T = 'T'
+#define ENUM_MESSAGE_TYPE_PRICE_LEVEL_UPDATE_MESSAGE_U = 'U'
+#define ENUM_MESSAGE_TYPE_NOII_MESSAGE_I = 'I'
+#define ENUM_MESSAGE_TYPE_RPII_MESSAGE_N = 'N'
 
 /*
  * Price Variation Indicator Values
  */ 
-#define ENUM_PRICE_VARIATION_INDICATOR_LESS_THAN_1L = 'L'
+#define ENUM_PRICE_VARIATION_INDICATOR_LESS_L = 'L'
 #define ENUM_PRICE_VARIATION_INDICATOR_1_TO_1991 = '1'
 #define ENUM_PRICE_VARIATION_INDICATOR_2_TO_2992 = '2'
 #define ENUM_PRICE_VARIATION_INDICATOR_3_TO_3993 = '3'
@@ -186,12 +200,6 @@
 #define ENUM_PRIMARY_MARKET_MAKER_NON_PRIMARY_N = 'N'
 
 /*
- * Printable Values
- */ 
-#define ENUM_PRINTABLE_NON_PRINTABLE_N = 'N'
-#define ENUM_PRINTABLE_PRINTABLE_Y = 'Y'
-
-/*
  * Reg Sho Action Values
  */ 
 #define ENUM_REG_SHO_ACTION_NO_PRICE_TEST_0 = '0'
@@ -201,8 +209,8 @@
 /*
  * Round Lots Only Values
  */ 
-#define ENUM_ROUND_LOTS_ONLY_NASDAQ_PSX_Y = 'Y'
-#define ENUM_ROUND_LOTS_ONLY_NASDAQ_PSX_N = 'N'
+#define ENUM_ROUND_LOTS_ONLY_ROUND_LOTS_ONLY_Y = 'Y'
+#define ENUM_ROUND_LOTS_ONLY_NO_RESTRICTIONS_N = 'N'
 
 /*
  * Short Sale Threshold Indicator Values
@@ -225,63 +233,21 @@
  *******************************************************************************/
 
 /*
- * Structure: Add Order No Mpid Attribution Message
+ * Structure: Ipo Quoting Period Update Message
  */ 
 typedef struct {
-    uint16_t StockLocate;
     uint16_t TrackingNumber;
     char Timestamp;
-    uint64_t OrderReferenceNumber;
-    char BuySellIndicator;
-    uint32_t Shares;
     char Stock[8];
-    int32_t Price;
-} AddOrderNoMpidAttributionMessageT;
-
-/*
- * Structure: Add Order With Mpid Attribution Message
- */ 
-typedef struct {
-    uint16_t StockLocate;
-    uint16_t TrackingNumber;
-    char Timestamp;
-    uint64_t OrderReferenceNumber;
-    char BuySellIndicator;
-    uint32_t Shares;
-    char Stock[8];
-    int32_t Price;
-    char Attribution[4];
-} AddOrderWithMpidAttributionMessageT;
-
-/*
- * Structure: Broken Trade Message
- */ 
-typedef struct {
-    uint16_t StockLocate;
-    uint16_t TrackingNumber;
-    char Timestamp;
-    uint64_t MatchNumber;
-} BrokenTradeMessageT;
-
-/*
- * Structure: Cross Trade Message
- */ 
-typedef struct {
-    uint16_t StockLocate;
-    uint16_t TrackingNumber;
-    char Timestamp;
-    uint64_t CrossShares;
-    char Stock[8];
-    int32_t CrossPrice;
-    uint64_t MatchNumber;
-    char CrossType;
-} CrossTradeMessageT;
+    uint32_t IpoQuotationReleaseTime;
+    char IpoQuotationReleaseQualifier;
+    int32_t IpoPrice;
+} IpoQuotingPeriodUpdateMessageT;
 
 /*
  * Structure: Luld Auction Collar Message
  */ 
 typedef struct {
-    uint16_t StockLocate;
     uint16_t TrackingNumber;
     char Timestamp;
     char Stock[8];
@@ -295,7 +261,6 @@ typedef struct {
  * Structure: Market Participant Position Message
  */ 
 typedef struct {
-    uint16_t StockLocate;
     uint16_t TrackingNumber;
     char Timestamp;
     char Mpid[4];
@@ -324,7 +289,6 @@ typedef struct {
  * Structure: Mwcb Decline Level Message
  */ 
 typedef struct {
-    uint16_t StockLocate;
     uint16_t TrackingNumber;
     char Timestamp;
     int64_t Level1;
@@ -333,104 +297,30 @@ typedef struct {
 } MwcbDeclineLevelMessageT;
 
 /*
- * Structure: Mwcb Status Level Message
+ * Structure: Mwcb Status Message
  */ 
 typedef struct {
-    uint16_t StockLocate;
     uint16_t TrackingNumber;
     char Timestamp;
     char BreachedLevel;
-} MwcbStatusLevelMessageT;
+} MwcbStatusMessageT;
 
 /*
- * Structure: Net Order Imbalance Indicator Message
+ * Structure: Noii Message
  */ 
 typedef struct {
-    uint16_t StockLocate;
     uint16_t TrackingNumber;
     char Timestamp;
     uint64_t PairedShares;
     uint64_t ImbalanceShares;
     char ImbalanceDirection;
     char Stock[8];
-    int32_t FarPrice;
-    int32_t NearPrice;
-    int32_t CurrentReferencePrice;
+    uint32_t FarPrice;
+    uint32_t NearPrice;
+    uint32_t CurrentReferencePrice;
     char CrossType;
     char PriceVariationIndicator;
-} NetOrderImbalanceIndicatorMessageT;
-
-/*
- * Structure: Operational Halt Message
- */ 
-typedef struct {
-    uint16_t StockLocate;
-    uint16_t TrackingNumber;
-    char Timestamp;
-    char Stock[8];
-    char MarketCode;
-    char OperationalHaltAction;
-} OperationalHaltMessageT;
-
-/*
- * Structure: Order Cancel Message
- */ 
-typedef struct {
-    uint16_t StockLocate;
-    uint16_t TrackingNumber;
-    char Timestamp;
-    uint64_t OrderReferenceNumber;
-    uint32_t CanceledShares;
-} OrderCancelMessageT;
-
-/*
- * Structure: Order Delete Message
- */ 
-typedef struct {
-    uint16_t StockLocate;
-    uint16_t TrackingNumber;
-    char Timestamp;
-    uint64_t OrderReferenceNumber;
-} OrderDeleteMessageT;
-
-/*
- * Structure: Order Executed Message
- */ 
-typedef struct {
-    uint16_t StockLocate;
-    uint16_t TrackingNumber;
-    char Timestamp;
-    uint64_t OrderReferenceNumber;
-    uint32_t ExecutedShares;
-    uint64_t MatchNumber;
-} OrderExecutedMessageT;
-
-/*
- * Structure: Order Executed With Price Message
- */ 
-typedef struct {
-    uint16_t StockLocate;
-    uint16_t TrackingNumber;
-    char Timestamp;
-    uint64_t OrderReferenceNumber;
-    uint32_t ExecutedShares;
-    uint64_t MatchNumber;
-    char Printable;
-    int32_t ExecutionPrice;
-} OrderExecutedWithPriceMessageT;
-
-/*
- * Structure: Order Replace Message
- */ 
-typedef struct {
-    uint16_t StockLocate;
-    uint16_t TrackingNumber;
-    char Timestamp;
-    uint64_t OriginalOrderReferenceNumber;
-    uint64_t NewOrderReferenceNumber;
-    uint32_t Shares;
-    int32_t Price;
-} OrderReplaceMessageT;
+} NoiiMessageT;
 
 /*
  * Structure: Packet
@@ -449,21 +339,43 @@ typedef struct {
 } PacketHeaderT;
 
 /*
- * Structure: Reg Sho Short Sale Price Test Restricted Indicator Message
+ * Structure: Price Level Update Message
  */ 
 typedef struct {
-    uint16_t LocateCode;
+    uint16_t TrackingNumber;
+    char Timestamp;
+    char MarketSide;
+    uint32_t ParticipantShares;
+    uint32_t AggregateShares;
+    char Stock[8];
+    uint32_t Price;
+    char Mpid[4];
+} PriceLevelUpdateMessageT;
+
+/*
+ * Structure: Reg Sho Restriction Message
+ */ 
+typedef struct {
     uint16_t TrackingNumber;
     char Timestamp;
     char Stock[8];
     char RegShoAction;
-} RegShoShortSalePriceTestRestrictedIndicatorMessageT;
+} RegShoRestrictionMessageT;
+
+/*
+ * Structure: Rpii Message
+ */ 
+typedef struct {
+    uint16_t TrackingNumber;
+    char Timestamp;
+    char Stock[8];
+    char InterestFlag;
+} RpiiMessageT;
 
 /*
  * Structure: Stock Directory Message
  */ 
 typedef struct {
-    uint16_t StockLocate;
     uint16_t TrackingNumber;
     char Timestamp;
     char Stock[8];
@@ -471,7 +383,7 @@ typedef struct {
     char FinancialStatusIndicator;
     uint32_t RoundLotSize;
     char RoundLotsOnly;
-    char IssueClassification[1];
+    char IssueClassification;
     char IssueSubType[2];
     char Authenticity;
     char ShortSaleThresholdIndicator;
@@ -486,37 +398,19 @@ typedef struct {
  * Structure: Stock Trading Action Message
  */ 
 typedef struct {
-    uint16_t StockLocate;
     uint16_t TrackingNumber;
     char Timestamp;
     char Stock[8];
     char TradingState;
-    char Reserved[1];
-    char Reason[4];
+    char TradingActionReason[4];
 } StockTradingActionMessageT;
 
 /*
  * Structure: System Event Message
  */ 
 typedef struct {
-    uint16_t StockLocate;
     uint16_t TrackingNumber;
     char Timestamp;
     char EventCode;
 } SystemEventMessageT;
-
-/*
- * Structure: Trade Message Non Cross
- */ 
-typedef struct {
-    uint16_t StockLocate;
-    uint16_t TrackingNumber;
-    char Timestamp;
-    uint64_t OrderReferenceNumber;
-    char BuySellIndicator;
-    uint32_t Shares;
-    char Stock[8];
-    int32_t Price;
-    uint64_t MatchNumber;
-} TradeMessageNonCrossT;
 
