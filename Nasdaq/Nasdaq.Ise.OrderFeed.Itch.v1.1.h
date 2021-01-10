@@ -9,126 +9,134 @@
 /*
  * Auction Event Values
  */ 
-#define ENUM_AUCTION_EVENT_START_S = 'S'
-#define ENUM_AUCTION_EVENT_AUCTION_UPDATE_U = 'U'
-#define ENUM_AUCTION_EVENT_END_OF_AUCTION_E = 'E'
+#define ENUM_AUCTION_EVENT_START = 'S'
+#define ENUM_AUCTION_EVENT_AUCTION_UPDATE = 'U'
+#define ENUM_AUCTION_EVENT_END_OF_AUCTION = 'E'
 
 /*
  * Closing Only Values
  */ 
-#define ENUM_CLOSING_ONLY_CLOSING_POSITION_ONLY_Y = 'Y'
-#define ENUM_CLOSING_ONLY_NOT_CLOSING_POSITION_ONLY_N = 'N'
+#define ENUM_CLOSING_ONLY_CLOSING_POSITION_ONLY = 'Y'
+#define ENUM_CLOSING_ONLY_NOT_CLOSING_POSITION_ONLY = 'N'
 
 /*
  * Current Trading State Values
  */ 
-#define ENUM_CURRENT_TRADING_STATE_HALT_IN_EFFECT_H = 'H'
-#define ENUM_CURRENT_TRADING_STATE_TRADING_ON_THE_OPTIONS_SYSTEM_T = 'T'
+#define ENUM_CURRENT_TRADING_STATE_HALT_IN_EFFECT = 'H'
+#define ENUM_CURRENT_TRADING_STATE_TRADING_ON_THE_OPTIONS_SYSTEM = 'T'
 
 /*
  * Event Code Values
  */ 
-#define ENUM_EVENT_CODE_START_OF_MESSAGES_O = 'O'
-#define ENUM_EVENT_CODE_START_OF_SYSTEM_HOURS_S = 'S'
-#define ENUM_EVENT_CODE_START_OF_OPENING_PROCESS_Q = 'Q'
-#define ENUM_EVENT_CODE_START_OF_NORMAL_HOURS_CLOSING_PROCESS_N = 'N'
-#define ENUM_EVENT_CODE_START_OF_LATE_HOURS_CLOSING_PROCESS_L = 'L'
-#define ENUM_EVENT_CODE_END_OF_SYSTEM_HOURS_E = 'E'
-#define ENUM_EVENT_CODE_END_OF_MESSAGES_C = 'C'
-#define ENUM_EVENT_CODE_END_OF_WCO_EARLY_CLOSING_W = 'W'
+#define ENUM_EVENT_CODE_START_OF_MESSAGES = 'O'
+#define ENUM_EVENT_CODE_START_OF_SYSTEM_HOURS = 'S'
+#define ENUM_EVENT_CODE_START_OF_OPENING_PROCESS = 'Q'
+#define ENUM_EVENT_CODE_START_OF_NORMAL_HOURS_CLOSING_PROCESS = 'N'
+#define ENUM_EVENT_CODE_START_OF_LATE_HOURS_CLOSING_PROCESS = 'L'
+#define ENUM_EVENT_CODE_END_OF_SYSTEM_HOURS = 'E'
+#define ENUM_EVENT_CODE_END_OF_MESSAGES = 'C'
+#define ENUM_EVENT_CODE_END_OF_WCO_EARLY_CLOSING = 'W'
 
 /*
  * Exec Flag Values
  */ 
-#define ENUM_EXEC_FLAG_NONE_N = 'N'
-#define ENUM_EXEC_FLAG_AON_A = 'A'
+#define ENUM_EXEC_FLAG_NONE = 'N'
+#define ENUM_EXEC_FLAG_AON = 'A'
 #define ENUM_EXEC_FLAG_HIDDEN = ' '
 
 /*
  * Imbalance Direction Values
  */ 
-#define ENUM_IMBALANCE_DIRECTION_BUY_IMBALANCE_B = 'B'
-#define ENUM_IMBALANCE_DIRECTION_SELL_IMBALANCE_S = 'S'
+#define ENUM_IMBALANCE_DIRECTION_BUY_IMBALANCE = 'B'
+#define ENUM_IMBALANCE_DIRECTION_SELL_IMBALANCE = 'S'
 
 /*
  * Message Type Values
  */ 
-#define ENUM_MESSAGE_TYPE_SYSTEM_EVENT_MESSAGE_S = 'S'
-#define ENUM_MESSAGE_TYPE_OPTION_DIRECTORY_MESSAGE_D = 'D'
-#define ENUM_MESSAGE_TYPE_TRADING_ACTION_MESSAGE_H = 'H'
-#define ENUM_MESSAGE_TYPE_SECURITY_OPEN_CLOSED_MESSAGE_O = 'O'
-#define ENUM_MESSAGE_TYPE_OPENING_IMBALANCE_MESSAGE_N = 'N'
-#define ENUM_MESSAGE_TYPE_ORDER_ON_BOOK_MESSAGE_B = 'B'
-#define ENUM_MESSAGE_TYPE_AUCTION_MESSAGE_A = 'A'
+#define ENUM_MESSAGE_TYPE_SYSTEM_EVENT_MESSAGE = 'S'
+#define ENUM_MESSAGE_TYPE_OPTION_DIRECTORY_MESSAGE = 'D'
+#define ENUM_MESSAGE_TYPE_TRADING_ACTION_MESSAGE = 'H'
+#define ENUM_MESSAGE_TYPE_SECURITY_OPEN_CLOSED_MESSAGE = 'O'
+#define ENUM_MESSAGE_TYPE_OPENING_IMBALANCE_MESSAGE = 'N'
+#define ENUM_MESSAGE_TYPE_ORDER_ON_BOOK_MESSAGE = 'B'
+#define ENUM_MESSAGE_TYPE_AUCTION_MESSAGE = 'A'
 
 /*
  * Mpv Values
  */ 
-#define ENUM_MPV_PENNY_EVERYWHERE_E = 'E'
-#define ENUM_MPV_SCALED_S = 'S'
-#define ENUM_MPV_PENNY_PILOT_P = 'P'
+#define ENUM_MPV_PENNY_EVERYWHERE = 'E'
+#define ENUM_MPV_SCALED = 'S'
+#define ENUM_MPV_PENNY_PILOT = 'P'
 
 /*
  * Open State Values
  */ 
-#define ENUM_OPEN_STATE_OPEN_FOR_AUTO_EXECUTION_Y = 'Y'
-#define ENUM_OPEN_STATE_CLOSED_FOR_AUTO_EXECUTION_N = 'N'
+#define ENUM_OPEN_STATE_OPEN_FOR_AUTO_EXECUTION = 'Y'
+#define ENUM_OPEN_STATE_CLOSED_FOR_AUTO_EXECUTION = 'N'
 
 /*
  * Option Closing Type Values
  */ 
-#define ENUM_OPTION_CLOSING_TYPE_NORMAL_N = 'N'
-#define ENUM_OPTION_CLOSING_TYPE_LATE_L = 'L'
+#define ENUM_OPTION_CLOSING_TYPE_NORMAL = 'N'
+#define ENUM_OPTION_CLOSING_TYPE_LATE = 'L'
 
 /*
  * Option Type Values
  */ 
-#define ENUM_OPTION_TYPE_CALL_C = 'C'
-#define ENUM_OPTION_TYPE_PUT_P = 'P'
+#define ENUM_OPTION_TYPE_CALL = 'C'
+#define ENUM_OPTION_TYPE_PUT = 'P'
 
 /*
  * Order Capacity Values
  */ 
-#define ENUM_ORDER_CAPACITY_CUSTOMER_C = 'C'
-#define ENUM_ORDER_CAPACITY_CUSTOMER_PROFESSIONAL_D = 'D'
-#define ENUM_ORDER_CAPACITY_FIRM_F = 'F'
-#define ENUM_ORDER_CAPACITY_BROKER_DEALER_CUSTOMER_B = 'B'
-#define ENUM_ORDER_CAPACITY_BROKER_DEALER_FIRM_K = 'K'
-#define ENUM_ORDER_CAPACITY_PROPRIETARY_E = 'E'
-#define ENUM_ORDER_CAPACITY_AWAY_MARKET_MAKER_N = 'N'
-#define ENUM_ORDER_CAPACITY_MARKET_MAKER_M = 'M'
+#define ENUM_ORDER_CAPACITY_CUSTOMER = 'C'
+#define ENUM_ORDER_CAPACITY_CUSTOMER_PROFESSIONAL = 'D'
+#define ENUM_ORDER_CAPACITY_FIRM = 'F'
+#define ENUM_ORDER_CAPACITY_BROKER_DEALER_CUSTOMER = 'B'
+#define ENUM_ORDER_CAPACITY_BROKER_DEALER_FIRM = 'K'
+#define ENUM_ORDER_CAPACITY_PROPRIETARY = 'E'
+#define ENUM_ORDER_CAPACITY_AWAY_MARKET_MAKER = 'N'
+#define ENUM_ORDER_CAPACITY_MARKET_MAKER = 'M'
 
 /*
  * Order Type Values
  */ 
-#define ENUM_ORDER_TYPE_MARKET_M = 'M'
-#define ENUM_ORDER_TYPE_LIMIT_L = 'L'
+#define ENUM_ORDER_TYPE_MARKET = 'M'
+#define ENUM_ORDER_TYPE_LIMIT = 'L'
 
 /*
  * Side Values
  */ 
-#define ENUM_SIDE_BID_B = 'B'
-#define ENUM_SIDE_OFFER_ASK_A = 'A'
+#define ENUM_SIDE_BID = 'B'
+#define ENUM_SIDE_OFFER_ASK = 'A'
 #define ENUM_SIDE_HIDDEN = ' '
 
 /*
  * Tradable Values
  */ 
-#define ENUM_TRADABLE_TRADABLE_Y = 'Y'
-#define ENUM_TRADABLE_NOT_TRADABLE_N = 'N'
+#define ENUM_TRADABLE_TRADABLE = 'Y'
+#define ENUM_TRADABLE_NOT_TRADABLE = 'N'
 
 /*
  * Trading Type Values
  */ 
-#define ENUM_TRADING_TYPE_EQUITY_E = 'E'
-#define ENUM_TRADING_TYPE_INDEX_I = 'I'
-#define ENUM_TRADING_TYPE_ETF_F = 'F'
-#define ENUM_TRADING_TYPE_CURRENCY_C = 'C'
+#define ENUM_TRADING_TYPE_EQUITY = 'E'
+#define ENUM_TRADING_TYPE_INDEX = 'I'
+#define ENUM_TRADING_TYPE_ETF = 'F'
+#define ENUM_TRADING_TYPE_CURRENCY = 'C'
 
 
 /*******************************************************************************
  * Structs
  *******************************************************************************/
+
+/*
+ * Structure: Auction Response
+ */ 
+typedef struct {
+    uint32_t ResponsePrice;
+    uint32_t ResponseSize;
+} AuctionResponseT;
 
 /*
  * Structure: Auction Message
@@ -151,27 +159,21 @@ typedef struct {
 } AuctionMessageT;
 
 /*
- * Structure: Auction Response
+ * Structure: Order On Book Message
  */ 
 typedef struct {
-    uint32_t ResponsePrice;
-    uint32_t ResponseSize;
-} AuctionResponseT;
-
-/*
- * Structure: Message
- */ 
-typedef struct {
-    MessageHeaderT MessageHeader;
-} MessageT;
-
-/*
- * Structure: Message Header
- */ 
-typedef struct {
-    uint16_t Length;
-    char MessageType;
-} MessageHeaderT;
+    char Timestamp;
+    uint32_t OptionId;
+    char OrderType;
+    char Side;
+    uint32_t Price;
+    uint32_t Size;
+    char ExecFlag;
+    char OrderCapacity;
+    char OwnerId[6];
+    char Giveup[6];
+    char Cmta[6];
+} OrderOnBookMessageT;
 
 /*
  * Structure: Opening Imbalance Message
@@ -184,6 +186,24 @@ typedef struct {
     uint32_t ImbalancePrice;
     uint32_t ImbalanceVolume;
 } OpeningImbalanceMessageT;
+
+/*
+ * Structure: Security Open Closed Message
+ */ 
+typedef struct {
+    char Timestamp;
+    uint32_t OptionId;
+    char OpenState;
+} SecurityOpenClosedMessageT;
+
+/*
+ * Structure: Trading Action Message
+ */ 
+typedef struct {
+    char Timestamp;
+    uint32_t OptionId;
+    char CurrentTradingState;
+} TradingActionMessageT;
 
 /*
  * Structure: Option Directory Message
@@ -208,48 +228,6 @@ typedef struct {
 } OptionDirectoryMessageT;
 
 /*
- * Structure: Order On Book Message
- */ 
-typedef struct {
-    char Timestamp;
-    uint32_t OptionId;
-    char OrderType;
-    char Side;
-    uint32_t Price;
-    uint32_t Size;
-    char ExecFlag;
-    char OrderCapacity;
-    char OwnerId[6];
-    char Giveup[6];
-    char Cmta[6];
-} OrderOnBookMessageT;
-
-/*
- * Structure: Packet
- */ 
-typedef struct {
-    PacketHeaderT PacketHeader;
-} PacketT;
-
-/*
- * Structure: Packet Header
- */ 
-typedef struct {
-    char Session[10];
-    uint64_t Sequence;
-    uint16_t Count;
-} PacketHeaderT;
-
-/*
- * Structure: Security Open Closed Message
- */ 
-typedef struct {
-    char Timestamp;
-    uint32_t OptionId;
-    char OpenState;
-} SecurityOpenClosedMessageT;
-
-/*
  * Structure: System Event Message
  */ 
 typedef struct {
@@ -263,11 +241,45 @@ typedef struct {
 } SystemEventMessageT;
 
 /*
- * Structure: Trading Action Message
+ * Structure: Payload
  */ 
 typedef struct {
-    char Timestamp;
-    uint32_t OptionId;
-    char CurrentTradingState;
-} TradingActionMessageT;
+    SystemEventMessageT SystemEventMessage;
+    OptionDirectoryMessageT OptionDirectoryMessage;
+    TradingActionMessageT TradingActionMessage;
+    SecurityOpenClosedMessageT SecurityOpenClosedMessage;
+    OpeningImbalanceMessageT OpeningImbalanceMessage;
+    OrderOnBookMessageT OrderOnBookMessage;
+} PayloadT;
+
+/*
+ * Structure: Message Header
+ */ 
+typedef struct {
+    uint16_t Length;
+    char MessageType;
+} MessageHeaderT;
+
+/*
+ * Structure: Message
+ */ 
+typedef struct {
+    MessageHeaderT MessageHeader;
+} MessageT;
+
+/*
+ * Structure: Packet Header
+ */ 
+typedef struct {
+    char Session[10];
+    uint64_t Sequence;
+    uint16_t Count;
+} PacketHeaderT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    PacketHeaderT PacketHeader;
+} PacketT;
 

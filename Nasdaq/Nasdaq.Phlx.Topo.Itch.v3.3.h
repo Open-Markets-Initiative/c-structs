@@ -9,78 +9,78 @@
 /*
  * Current Trading State Values
  */ 
-#define ENUM_CURRENT_TRADING_STATE_HALT_IN_EFFECT_H = 'H'
-#define ENUM_CURRENT_TRADING_STATE_TRADING_RESUMED_T = 'T'
+#define ENUM_CURRENT_TRADING_STATE_HALT_IN_EFFECT = 'H'
+#define ENUM_CURRENT_TRADING_STATE_TRADING_RESUMED = 'T'
 
 /*
  * Event Code Values
  */ 
-#define ENUM_EVENT_CODE_START_OF_MESSAGES_O = O
-#define ENUM_EVENT_CODE_START_OF_SYSTEM_HOURS_S = S
-#define ENUM_EVENT_CODE_START_OF_OPENING_PROCESS_Q = Q
-#define ENUM_EVENT_CODE_START_OF_NORMAL_HOURS_CLOSING_PROCESS_N = N
-#define ENUM_EVENT_CODE_START_OF_LATE_HOURS_CLOSING_PROCESS_L = L
-#define ENUM_EVENT_CODE_END_OF_SYSTEM_HOURS_E = E
-#define ENUM_EVENT_CODE_END_OF_MESSAGES_C = C
-#define ENUM_EVENT_CODE_END_OF_WCO_EARLY_CLOSING_W = W
+#define ENUM_EVENT_CODE_START_OF_MESSAGES = O
+#define ENUM_EVENT_CODE_START_OF_SYSTEM_HOURS = S
+#define ENUM_EVENT_CODE_START_OF_OPENING_PROCESS = Q
+#define ENUM_EVENT_CODE_START_OF_NORMAL_HOURS_CLOSING_PROCESS = N
+#define ENUM_EVENT_CODE_START_OF_LATE_HOURS_CLOSING_PROCESS = L
+#define ENUM_EVENT_CODE_END_OF_SYSTEM_HOURS = E
+#define ENUM_EVENT_CODE_END_OF_MESSAGES = C
+#define ENUM_EVENT_CODE_END_OF_WCO_EARLY_CLOSING = W
 
 /*
  * Message Type Values
  */ 
-#define ENUM_MESSAGE_TYPE_TIMESTAMP_MESSAGE_T = 'T'
-#define ENUM_MESSAGE_TYPE_SYSTEM_EVENT_MESSAGE_S = 'S'
-#define ENUM_MESSAGE_TYPE_OPTIONS_DIRECTORY_MESSAGE_D = 'D'
-#define ENUM_MESSAGE_TYPE_TRADING_ACTION_MESSAGE_H = 'H'
-#define ENUM_MESSAGE_TYPE_SECURITY_OPEN_CLOSED_MESSAGE_O = 'O'
-#define ENUM_MESSAGE_TYPE_SHORT_BEST_BID_AND_ASK_UPDATE_MESSAGE_Q = 'q'
-#define ENUM_MESSAGE_TYPE_LONG_BEST_BID_AND_ASK_UPDATE_MESSAGE_Q = 'Q'
-#define ENUM_MESSAGE_TYPE_SHORT_BEST_ASK_UPDATE_MESSAGE_A = 'a'
-#define ENUM_MESSAGE_TYPE_SHORT_BEST_BID_UPDATE_MESSAGE_B = 'b'
-#define ENUM_MESSAGE_TYPE_LONG_BEST_ASK_UPDATE_MESSAGE_A = 'A'
-#define ENUM_MESSAGE_TYPE_LONG_BEST_BID_UPDATE_MESSAGE_B = 'B'
-#define ENUM_MESSAGE_TYPE_TRADE_REPORT_MESSAGE_R = 'R'
-#define ENUM_MESSAGE_TYPE_BROKEN_TRADE_REPORT_MESSAGE_X = 'X'
+#define ENUM_MESSAGE_TYPE_TIMESTAMP_MESSAGE = 'T'
+#define ENUM_MESSAGE_TYPE_SYSTEM_EVENT_MESSAGE = 'S'
+#define ENUM_MESSAGE_TYPE_OPTIONS_DIRECTORY_MESSAGE = 'D'
+#define ENUM_MESSAGE_TYPE_TRADING_ACTION_MESSAGE = 'H'
+#define ENUM_MESSAGE_TYPE_SECURITY_OPEN_CLOSED_MESSAGE = 'O'
+#define ENUM_MESSAGE_TYPE_SHORT_BEST_BID_AND_ASK_UPDATE_MESSAGE = 'q'
+#define ENUM_MESSAGE_TYPE_LONG_BEST_BID_AND_ASK_UPDATE_MESSAGE = 'Q'
+#define ENUM_MESSAGE_TYPE_SHORT_BEST_ASK_UPDATE_MESSAGE = 'a'
+#define ENUM_MESSAGE_TYPE_SHORT_BEST_BID_UPDATE_MESSAGE = 'b'
+#define ENUM_MESSAGE_TYPE_LONG_BEST_ASK_UPDATE_MESSAGE = 'A'
+#define ENUM_MESSAGE_TYPE_LONG_BEST_BID_UPDATE_MESSAGE = 'B'
+#define ENUM_MESSAGE_TYPE_TRADE_REPORT_MESSAGE = 'R'
+#define ENUM_MESSAGE_TYPE_BROKEN_TRADE_REPORT_MESSAGE = 'X'
 
 /*
  * Mpv Values
  */ 
-#define ENUM_MPV_PENNY_EVERYWHERE_E = 'E'
-#define ENUM_MPV_SCALED_S = 'S'
-#define ENUM_MPV_PENNY_PILOT_P = 'P'
+#define ENUM_MPV_PENNY_EVERYWHERE = 'E'
+#define ENUM_MPV_SCALED = 'S'
+#define ENUM_MPV_PENNY_PILOT = 'P'
 
 /*
  * Open State Values
  */ 
-#define ENUM_OPEN_STATE_OPEN_FOR_AUTO_EXECUTION_Y = 'Y'
-#define ENUM_OPEN_STATE_CLOSED_FOR_AUTO_EXECUTION_N = 'N'
+#define ENUM_OPEN_STATE_OPEN_FOR_AUTO_EXECUTION = 'Y'
+#define ENUM_OPEN_STATE_CLOSED_FOR_AUTO_EXECUTION = 'N'
 
 /*
  * Option Closing Type Values
  */ 
-#define ENUM_OPTION_CLOSING_TYPE_NORMAL_N = 'N'
-#define ENUM_OPTION_CLOSING_TYPE_LATE_L = 'L'
-#define ENUM_OPTION_CLOSING_TYPE_WCO_EARLY_CLOSING_W = 'W'
+#define ENUM_OPTION_CLOSING_TYPE_NORMAL = 'N'
+#define ENUM_OPTION_CLOSING_TYPE_LATE = 'L'
+#define ENUM_OPTION_CLOSING_TYPE_WCO_EARLY_CLOSING = 'W'
 
 /*
  * Option Type Values
  */ 
-#define ENUM_OPTION_TYPE_CALL_C = 'C'
-#define ENUM_OPTION_TYPE_PUT_P = 'P'
+#define ENUM_OPTION_TYPE_CALL = 'C'
+#define ENUM_OPTION_TYPE_PUT = 'P'
 
 /*
  * Quote Condition Values
  */ 
 #define ENUM_QUOTE_CONDITION_REGULAR_QUOTEAUTOX_ELIGIBLE = ''
-#define ENUM_QUOTE_CONDITION_NON_FIRM_QUOTE_F = 'F'
-#define ENUM_QUOTE_CONDITION_ROTATIONAL_QUOTE_R = 'R'
-#define ENUM_QUOTE_CONDITION_BID_SIDE_FIRM_X = 'X'
-#define ENUM_QUOTE_CONDITION_ASK_SIDE_FIRM_Y = 'Y'
+#define ENUM_QUOTE_CONDITION_NON_FIRM_QUOTE = 'F'
+#define ENUM_QUOTE_CONDITION_ROTATIONAL_QUOTE = 'R'
+#define ENUM_QUOTE_CONDITION_BID_SIDE_FIRM = 'X'
+#define ENUM_QUOTE_CONDITION_ASK_SIDE_FIRM = 'Y'
 
 /*
  * Tradable Values
  */ 
-#define ENUM_TRADABLE_TRADABLE_Y = 'Y'
-#define ENUM_TRADABLE_NOT_TRADABLE_N = 'N'
+#define ENUM_TRADABLE_TRADABLE = 'Y'
+#define ENUM_TRADABLE_NOT_TRADABLE = 'N'
 
 
 /*******************************************************************************
@@ -99,6 +99,29 @@ typedef struct {
 } BrokenTradeReportMessageT;
 
 /*
+ * Structure: Trade Report Message
+ */ 
+typedef struct {
+    uint32_t Nanoseconds;
+    uint32_t OptionId;
+    uint32_t CrossId;
+    char TradeCondition[1];
+    uint32_t Price4;
+    uint32_t Volume;
+} TradeReportMessageT;
+
+/*
+ * Structure: Long Best Bid Update Message
+ */ 
+typedef struct {
+    uint32_t Nanoseconds;
+    uint32_t OptionId;
+    char QuoteCondition;
+    uint32_t Price4;
+    uint32_t Size4;
+} LongBestBidUpdateMessageT;
+
+/*
  * Structure: Long Best Ask Update Message
  */ 
 typedef struct {
@@ -108,6 +131,28 @@ typedef struct {
     uint32_t Price4;
     uint32_t Size4;
 } LongBestAskUpdateMessageT;
+
+/*
+ * Structure: Short Best Bid Update Message
+ */ 
+typedef struct {
+    uint32_t Nanoseconds;
+    uint32_t OptionId;
+    char QuoteCondition;
+    uint16_t Price2;
+    uint16_t Size2;
+} ShortBestBidUpdateMessageT;
+
+/*
+ * Structure: Short Best Ask Update Message
+ */ 
+typedef struct {
+    uint32_t Nanoseconds;
+    uint32_t OptionId;
+    char QuoteCondition;
+    uint16_t Price2;
+    uint16_t Size2;
+} ShortBestAskUpdateMessageT;
 
 /*
  * Structure: Long Best Bid And Ask Update Message
@@ -123,30 +168,35 @@ typedef struct {
 } LongBestBidAndAskUpdateMessageT;
 
 /*
- * Structure: Long Best Bid Update Message
+ * Structure: Short Best Bid And Ask Update Message
  */ 
 typedef struct {
     uint32_t Nanoseconds;
     uint32_t OptionId;
     char QuoteCondition;
-    uint32_t Price4;
-    uint32_t Size4;
-} LongBestBidUpdateMessageT;
+    uint16_t BidPrice2;
+    uint16_t BidSize2;
+    uint16_t AskPrice2;
+    uint16_t AskSize2;
+} ShortBestBidAndAskUpdateMessageT;
 
 /*
- * Structure: Message
+ * Structure: Security Open Closed Message
  */ 
 typedef struct {
-    MessageHeaderT MessageHeader;
-} MessageT;
+    uint32_t Nanoseconds;
+    uint32_t OptionId;
+    char OpenState;
+} SecurityOpenClosedMessageT;
 
 /*
- * Structure: Message Header
+ * Structure: Trading Action Message
  */ 
 typedef struct {
-    uint16_t Length;
-    char MessageType;
-} MessageHeaderT;
+    uint32_t Nanoseconds;
+    uint32_t OptionId;
+    char CurrentTradingState;
+} TradingActionMessageT;
 
 /*
  * Structure: Options Directory Message
@@ -168,66 +218,6 @@ typedef struct {
 } OptionsDirectoryMessageT;
 
 /*
- * Structure: Packet
- */ 
-typedef struct {
-    PacketHeaderT PacketHeader;
-} PacketT;
-
-/*
- * Structure: Packet Header
- */ 
-typedef struct {
-    char Session[10];
-    uint64_t Sequence;
-    uint16_t Count;
-} PacketHeaderT;
-
-/*
- * Structure: Security Open Closed Message
- */ 
-typedef struct {
-    uint32_t Nanoseconds;
-    uint32_t OptionId;
-    char OpenState;
-} SecurityOpenClosedMessageT;
-
-/*
- * Structure: Short Best Ask Update Message
- */ 
-typedef struct {
-    uint32_t Nanoseconds;
-    uint32_t OptionId;
-    char QuoteCondition;
-    uint16_t Price2;
-    uint16_t Size2;
-} ShortBestAskUpdateMessageT;
-
-/*
- * Structure: Short Best Bid And Ask Update Message
- */ 
-typedef struct {
-    uint32_t Nanoseconds;
-    uint32_t OptionId;
-    char QuoteCondition;
-    uint16_t BidPrice2;
-    uint16_t BidSize2;
-    uint16_t AskPrice2;
-    uint16_t AskSize2;
-} ShortBestBidAndAskUpdateMessageT;
-
-/*
- * Structure: Short Best Bid Update Message
- */ 
-typedef struct {
-    uint32_t Nanoseconds;
-    uint32_t OptionId;
-    char QuoteCondition;
-    uint16_t Price2;
-    uint16_t Size2;
-} ShortBestBidUpdateMessageT;
-
-/*
  * Structure: System Event Message
  */ 
 typedef struct {
@@ -245,23 +235,52 @@ typedef struct {
 } TimestampMessageT;
 
 /*
- * Structure: Trade Report Message
+ * Structure: Payload
  */ 
 typedef struct {
-    uint32_t Nanoseconds;
-    uint32_t OptionId;
-    uint32_t CrossId;
-    char TradeCondition[1];
-    uint32_t Price4;
-    uint32_t Volume;
-} TradeReportMessageT;
+    TimestampMessageT TimestampMessage;
+    SystemEventMessageT SystemEventMessage;
+    OptionsDirectoryMessageT OptionsDirectoryMessage;
+    TradingActionMessageT TradingActionMessage;
+    SecurityOpenClosedMessageT SecurityOpenClosedMessage;
+    ShortBestBidAndAskUpdateMessageT ShortBestBidAndAskUpdateMessage;
+    LongBestBidAndAskUpdateMessageT LongBestBidAndAskUpdateMessage;
+    ShortBestAskUpdateMessageT ShortBestAskUpdateMessage;
+    ShortBestBidUpdateMessageT ShortBestBidUpdateMessage;
+    LongBestAskUpdateMessageT LongBestAskUpdateMessage;
+    LongBestBidUpdateMessageT LongBestBidUpdateMessage;
+    TradeReportMessageT TradeReportMessage;
+    BrokenTradeReportMessageT BrokenTradeReportMessage;
+} PayloadT;
 
 /*
- * Structure: Trading Action Message
+ * Structure: Message Header
  */ 
 typedef struct {
-    uint32_t Nanoseconds;
-    uint32_t OptionId;
-    char CurrentTradingState;
-} TradingActionMessageT;
+    uint16_t Length;
+    char MessageType;
+} MessageHeaderT;
+
+/*
+ * Structure: Message
+ */ 
+typedef struct {
+    MessageHeaderT MessageHeader;
+} MessageT;
+
+/*
+ * Structure: Packet Header
+ */ 
+typedef struct {
+    char Session[10];
+    uint64_t Sequence;
+    uint16_t Count;
+} PacketHeaderT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    PacketHeaderT PacketHeader;
+} PacketT;
 

@@ -9,185 +9,150 @@
 /*
  * Authenticity Values
  */ 
-#define ENUM_AUTHENTICITY_LIVE_PRODUCTION_P = 'P'
-#define ENUM_AUTHENTICITY_TEST_T = 'T'
+#define ENUM_AUTHENTICITY_LIVE_PRODUCTION = 'P'
+#define ENUM_AUTHENTICITY_TEST = 'T'
 
 /*
  * Breached Level Values
  */ 
-#define ENUM_BREACHED_LEVEL_LEVEL_11 = '1'
-#define ENUM_BREACHED_LEVEL_LEVEL_22 = '2'
-#define ENUM_BREACHED_LEVEL_LEVEL_33 = '3'
+#define ENUM_BREACHED_LEVEL_LEVEL_1 = '1'
+#define ENUM_BREACHED_LEVEL_LEVEL_2 = '2'
+#define ENUM_BREACHED_LEVEL_LEVEL_3 = '3'
 
 /*
  * Current Trading State Values
  */ 
-#define ENUM_CURRENT_TRADING_STATE_HALTED_H = 'H'
-#define ENUM_CURRENT_TRADING_STATE_PAUSED_P = 'P'
-#define ENUM_CURRENT_TRADING_STATE_QUOTATION_ONLY_PERIOD_Q = 'Q'
-#define ENUM_CURRENT_TRADING_STATE_TRADING_T = 'T'
+#define ENUM_CURRENT_TRADING_STATE_HALTED = 'H'
+#define ENUM_CURRENT_TRADING_STATE_PAUSED = 'P'
+#define ENUM_CURRENT_TRADING_STATE_QUOTATION_ONLY_PERIOD = 'Q'
+#define ENUM_CURRENT_TRADING_STATE_TRADING = 'T'
 
 /*
  * Etp Flag Values
  */ 
-#define ENUM_ETP_FLAG_ETP_Y = 'Y'
-#define ENUM_ETP_FLAG_NOT_ETP_N = 'N'
+#define ENUM_ETP_FLAG_ETP = 'Y'
+#define ENUM_ETP_FLAG_NOT_ETP = 'N'
 #define ENUM_ETP_FLAG_NA = ' '
 
 /*
  * Event Code Values
  */ 
-#define ENUM_EVENT_CODE_START_OF_TRANSMISSIONS_O = 'O'
-#define ENUM_EVENT_CODE_START_OF_SYSTEM_HOURS_S = 'S'
-#define ENUM_EVENT_CODE_START_OF_MARKET_HOURS_Q = 'Q'
-#define ENUM_EVENT_CODE_END_OF_MARKET_HOURS_M = 'M'
-#define ENUM_EVENT_CODE_END_OF_SYSTEM_HOURS_E = 'E'
-#define ENUM_EVENT_CODE_END_OF_MESSAGES_C = 'C'
+#define ENUM_EVENT_CODE_START_OF_TRANSMISSIONS = 'O'
+#define ENUM_EVENT_CODE_START_OF_SYSTEM_HOURS = 'S'
+#define ENUM_EVENT_CODE_START_OF_MARKET_HOURS = 'Q'
+#define ENUM_EVENT_CODE_END_OF_MARKET_HOURS = 'M'
+#define ENUM_EVENT_CODE_END_OF_SYSTEM_HOURS = 'E'
+#define ENUM_EVENT_CODE_END_OF_MESSAGES = 'C'
 
 /*
  * Financial Status Indicator Values
  */ 
-#define ENUM_FINANCIAL_STATUS_INDICATOR_DEFICIENT_D = 'D'
-#define ENUM_FINANCIAL_STATUS_INDICATOR_DELINQUENT_E = 'E'
-#define ENUM_FINANCIAL_STATUS_INDICATOR_BANKRUPT_Q = 'Q'
-#define ENUM_FINANCIAL_STATUS_INDICATOR_SUSPENDED_S = 'S'
-#define ENUM_FINANCIAL_STATUS_INDICATOR_DEFICIENT_AND_BANKRUPT_G = 'G'
-#define ENUM_FINANCIAL_STATUS_INDICATOR_DEFICIENT_AND_DELINQUENT_H = 'H'
-#define ENUM_FINANCIAL_STATUS_INDICATOR_DELINQUENT_AND_BANKRUPT_J = 'J'
-#define ENUM_FINANCIAL_STATUS_INDICATOR_DEFICIENT_DELINQUENT_AND_BANKRUPT_K = 'K'
-#define ENUM_FINANCIAL_STATUS_INDICATOR_CREATIONS_AND_REDEMPTIONS_SUSPENDED_C = 'C'
-#define ENUM_FINANCIAL_STATUS_INDICATOR_NORMAL_N = 'N'
+#define ENUM_FINANCIAL_STATUS_INDICATOR_DEFICIENT = 'D'
+#define ENUM_FINANCIAL_STATUS_INDICATOR_DELINQUENT = 'E'
+#define ENUM_FINANCIAL_STATUS_INDICATOR_BANKRUPT = 'Q'
+#define ENUM_FINANCIAL_STATUS_INDICATOR_SUSPENDED = 'S'
+#define ENUM_FINANCIAL_STATUS_INDICATOR_DEFICIENT_AND_BANKRUPT = 'G'
+#define ENUM_FINANCIAL_STATUS_INDICATOR_DEFICIENT_AND_DELINQUENT = 'H'
+#define ENUM_FINANCIAL_STATUS_INDICATOR_DELINQUENT_AND_BANKRUPT = 'J'
+#define ENUM_FINANCIAL_STATUS_INDICATOR_DEFICIENT_DELINQUENT_AND_BANKRUPT = 'K'
+#define ENUM_FINANCIAL_STATUS_INDICATOR_CREATIONS_AND_REDEMPTIONS_SUSPENDED = 'C'
+#define ENUM_FINANCIAL_STATUS_INDICATOR_NORMAL = 'N'
 #define ENUM_FINANCIAL_STATUS_INDICATOR_NA = ' '
 
 /*
  * Inverse Indicator Values
  */ 
-#define ENUM_INVERSE_INDICATOR_INVERSE_ETP_Y = 'Y'
-#define ENUM_INVERSE_INDICATOR_NOT_INVERSE_ETP_N = 'N'
+#define ENUM_INVERSE_INDICATOR_INVERSE_ETP = 'Y'
+#define ENUM_INVERSE_INDICATOR_NOT_INVERSE_ETP = 'N'
 
 /*
  * Ipo Flag Values
  */ 
-#define ENUM_IPO_FLAG_NASDAQ_LISTED_INSTRUMENT_Y = 'Y'
-#define ENUM_IPO_FLAG_NASDAQ_LISTED_INSTRUMENT_N = 'N'
+#define ENUM_IPO_FLAG_NASDAQ_LISTED_INSTRUMENT = 'Y'
+#define ENUM_IPO_FLAG_NASDAQ_LISTED_INSTRUMENT = 'N'
 #define ENUM_IPO_FLAG_NA = ' '
 
 /*
  * Luld Reference Price Tier Values
  */ 
-#define ENUM_LULD_REFERENCE_PRICE_TIER_TIER_11 = '1'
-#define ENUM_LULD_REFERENCE_PRICE_TIER_TIER_22 = '2'
+#define ENUM_LULD_REFERENCE_PRICE_TIER_TIER_1 = '1'
+#define ENUM_LULD_REFERENCE_PRICE_TIER_TIER_2 = '2'
 #define ENUM_LULD_REFERENCE_PRICE_TIER_NA = ' '
 
 /*
  * Market Category Values
  */ 
-#define ENUM_MARKET_CATEGORY_NASDAQ_GLOBAL_SELECT_MARKET_Q = 'Q'
-#define ENUM_MARKET_CATEGORY_NASDAQ_GLOBAL_MARKET_G = 'G'
-#define ENUM_MARKET_CATEGORY_NASDAQ_CAPITAL_MARKET_S = 'S'
-#define ENUM_MARKET_CATEGORY_NYSE_N = 'N'
-#define ENUM_MARKET_CATEGORY_NYSE_AMEX_A = 'A'
-#define ENUM_MARKET_CATEGORY_NYSE_ARCA_P = 'P'
-#define ENUM_MARKET_CATEGORY_BATS_BZX_Z = 'Z'
-#define ENUM_MARKET_CATEGORY_INVESTORS_EXCHANGE_V = 'V'
+#define ENUM_MARKET_CATEGORY_NASDAQ_GLOBAL_SELECT_MARKET = 'Q'
+#define ENUM_MARKET_CATEGORY_NASDAQ_GLOBAL_MARKET = 'G'
+#define ENUM_MARKET_CATEGORY_NASDAQ_CAPITAL_MARKET = 'S'
+#define ENUM_MARKET_CATEGORY_NYSE = 'N'
+#define ENUM_MARKET_CATEGORY_NYSE_AMEX = 'A'
+#define ENUM_MARKET_CATEGORY_NYSE_ARCA = 'P'
+#define ENUM_MARKET_CATEGORY_BATS_BZX = 'Z'
+#define ENUM_MARKET_CATEGORY_INVESTORS_EXCHANGE = 'V'
 #define ENUM_MARKET_CATEGORY_NA = ' '
 
 /*
  * Market Code Values
  */ 
-#define ENUM_MARKET_CODE_NASDAQ_Q = Q
-#define ENUM_MARKET_CODE_BX_B = B
-#define ENUM_MARKET_CODE_PSX_X = X
+#define ENUM_MARKET_CODE_NASDAQ = Q
+#define ENUM_MARKET_CODE_BX = B
+#define ENUM_MARKET_CODE_PSX = X
 
 /*
  * Message Type Values
  */ 
-#define ENUM_MESSAGE_TYPE_SYSTEM_EVENT_MESSAGE_S = 'S'
-#define ENUM_MESSAGE_TYPE_STOCK_DIRECTORY_MESSAGE_R = 'R'
-#define ENUM_MESSAGE_TYPE_STOCK_TRADING_ACTION_MESSAGE_H = 'H'
-#define ENUM_MESSAGE_TYPE_REG_SHO_SHORT_SALE_PRICE_TEST_RESTRICTED_INDICATOR_MESSAGE_Y = 'Y'
-#define ENUM_MESSAGE_TYPE_MWCB_DECLINE_LEVEL_MESSAGE_V = 'V'
-#define ENUM_MESSAGE_TYPE_MWCB_STATUS_MESSAGE_W = 'W'
-#define ENUM_MESSAGE_TYPE_OPERATIONAL_HALT_MESSAGE_H = 'h'
-#define ENUM_MESSAGE_TYPE_QUOTATION_MESSAGE_Q = 'Q'
-#define ENUM_MESSAGE_TYPE_NEXT_SHARES_QUOTATION_MESSAGE_A = 'A'
+#define ENUM_MESSAGE_TYPE_SYSTEM_EVENT_MESSAGE = 'S'
+#define ENUM_MESSAGE_TYPE_STOCK_DIRECTORY_MESSAGE = 'R'
+#define ENUM_MESSAGE_TYPE_STOCK_TRADING_ACTION_MESSAGE = 'H'
+#define ENUM_MESSAGE_TYPE_REG_SHO_SHORT_SALE_PRICE_TEST_RESTRICTED_INDICATOR_MESSAGE = 'Y'
+#define ENUM_MESSAGE_TYPE_MWCB_DECLINE_LEVEL_MESSAGE = 'V'
+#define ENUM_MESSAGE_TYPE_MWCB_STATUS_MESSAGE = 'W'
+#define ENUM_MESSAGE_TYPE_OPERATIONAL_HALT_MESSAGE = 'h'
+#define ENUM_MESSAGE_TYPE_QUOTATION_MESSAGE = 'Q'
+#define ENUM_MESSAGE_TYPE_NEXT_SHARES_QUOTATION_MESSAGE = 'A'
 
 /*
  * Operational Halt Action Values
  */ 
-#define ENUM_OPERATIONAL_HALT_ACTION_HALTED_H = H
-#define ENUM_OPERATIONAL_HALT_ACTION_RESUMED_T = T
+#define ENUM_OPERATIONAL_HALT_ACTION_HALTED = H
+#define ENUM_OPERATIONAL_HALT_ACTION_RESUMED = T
 
 /*
  * Reg Sho Action Values
  */ 
-#define ENUM_REG_SHO_ACTION_NO_PRICE_TEST_0 = '0'
-#define ENUM_REG_SHO_ACTION_REG_SHO_SHORT_SALE_PRICE_TEST_RESTRICTION_1 = '1'
-#define ENUM_REG_SHO_ACTION_TEST_RESTRICTION_REMAINS_2 = '2'
+#define ENUM_REG_SHO_ACTION_NO_PRICE_TEST = '0'
+#define ENUM_REG_SHO_ACTION_REG_SHO_SHORT_SALE_PRICE_TEST_RESTRICTION = '1'
+#define ENUM_REG_SHO_ACTION_TEST_RESTRICTION_REMAINS = '2'
 
 /*
  * Round Lots Only Values
  */ 
-#define ENUM_ROUND_LOTS_ONLY_ROUND_LOTS_ONLY_Y = 'Y'
-#define ENUM_ROUND_LOTS_ONLY_ODD_MIXED_ALLOWED_N = 'N'
+#define ENUM_ROUND_LOTS_ONLY_ROUND_LOTS_ONLY = 'Y'
+#define ENUM_ROUND_LOTS_ONLY_ODD_MIXED_ALLOWED = 'N'
 
 /*
  * Security Class Values
  */ 
-#define ENUM_SECURITY_CLASS_NASDAQ_LISTED_ISSUE_Q = 'Q'
-#define ENUM_SECURITY_CLASS_NYSE_N = 'N'
-#define ENUM_SECURITY_CLASS_NYSE_MKT_A = 'A'
-#define ENUM_SECURITY_CLASS_NYSE_ARCA_P = 'P'
-#define ENUM_SECURITY_CLASS_BATS_Z = 'Z'
-#define ENUM_SECURITY_CLASS_IEXG_V = 'V'
+#define ENUM_SECURITY_CLASS_NASDAQ_LISTED_ISSUE = 'Q'
+#define ENUM_SECURITY_CLASS_NYSE = 'N'
+#define ENUM_SECURITY_CLASS_NYSE_MKT = 'A'
+#define ENUM_SECURITY_CLASS_NYSE_ARCA = 'P'
+#define ENUM_SECURITY_CLASS_BATS = 'Z'
+#define ENUM_SECURITY_CLASS_IEXG = 'V'
 #define ENUM_SECURITY_CLASS_NA = ' '
 
 /*
  * Short Sale Threshold Indicator Values
  */ 
-#define ENUM_SHORT_SALE_THRESHOLD_INDICATOR_RESTRICTED_Y = 'Y'
-#define ENUM_SHORT_SALE_THRESHOLD_INDICATOR_NOT_RESTRICTED_N = 'N'
+#define ENUM_SHORT_SALE_THRESHOLD_INDICATOR_RESTRICTED = 'Y'
+#define ENUM_SHORT_SALE_THRESHOLD_INDICATOR_NOT_RESTRICTED = 'N'
 #define ENUM_SHORT_SALE_THRESHOLD_INDICATOR_NA = ' '
 
 
 /*******************************************************************************
  * Structs
  *******************************************************************************/
-
-/*
- * Structure: Message
- */ 
-typedef struct {
-    MessageHeaderT MessageHeader;
-} MessageT;
-
-/*
- * Structure: Message Header
- */ 
-typedef struct {
-    uint16_t Length;
-    char MessageType;
-} MessageHeaderT;
-
-/*
- * Structure: Mwcb Decline Level Message
- */ 
-typedef struct {
-    uint16_t TrackingNumber;
-    char Timestamp;
-    int64_t Level1;
-    int64_t Level2;
-    int64_t Level3;
-} MwcbDeclineLevelMessageT;
-
-/*
- * Structure: Mwcb Status Message
- */ 
-typedef struct {
-    uint16_t TrackingNumber;
-    char Timestamp;
-    char BreachedLevel;
-} MwcbStatusMessageT;
 
 /*
  * Structure: Next Shares Quotation Message
@@ -199,33 +164,6 @@ typedef struct {
     char SecurityClass;
     int32_t NasdaqBestBid;
 } NextSharesQuotationMessageT;
-
-/*
- * Structure: Operational Halt Message
- */ 
-typedef struct {
-    uint16_t TrackingNumber;
-    char Timestamp;
-    char Stock[8];
-    int8_t MarketCode;
-    int8_t OperationalHaltAction;
-} OperationalHaltMessageT;
-
-/*
- * Structure: Packet
- */ 
-typedef struct {
-    PacketHeaderT PacketHeader;
-} PacketT;
-
-/*
- * Structure: Packet Header
- */ 
-typedef struct {
-    char Session[10];
-    uint64_t Sequence;
-    uint16_t Count;
-} PacketHeaderT;
 
 /*
  * Structure: Quotation Message
@@ -242,6 +180,37 @@ typedef struct {
 } QuotationMessageT;
 
 /*
+ * Structure: Operational Halt Message
+ */ 
+typedef struct {
+    uint16_t TrackingNumber;
+    char Timestamp;
+    char Stock[8];
+    int8_t MarketCode;
+    int8_t OperationalHaltAction;
+} OperationalHaltMessageT;
+
+/*
+ * Structure: Mwcb Status Message
+ */ 
+typedef struct {
+    uint16_t TrackingNumber;
+    char Timestamp;
+    char BreachedLevel;
+} MwcbStatusMessageT;
+
+/*
+ * Structure: Mwcb Decline Level Message
+ */ 
+typedef struct {
+    uint16_t TrackingNumber;
+    char Timestamp;
+    int64_t Level1;
+    int64_t Level2;
+    int64_t Level3;
+} MwcbDeclineLevelMessageT;
+
+/*
  * Structure: Reg Sho Short Sale Price Test Restricted Indicator Message
  */ 
 typedef struct {
@@ -250,6 +219,18 @@ typedef struct {
     char Stock[8];
     char RegShoAction;
 } RegShoShortSalePriceTestRestrictedIndicatorMessageT;
+
+/*
+ * Structure: Stock Trading Action Message
+ */ 
+typedef struct {
+    uint16_t TrackingNumber;
+    char Timestamp;
+    char Stock[8];
+    char SecurityClass;
+    char CurrentTradingState;
+    char Reason[4];
+} StockTradingActionMessageT;
 
 /*
  * Structure: Stock Directory Message
@@ -274,18 +255,6 @@ typedef struct {
 } StockDirectoryMessageT;
 
 /*
- * Structure: Stock Trading Action Message
- */ 
-typedef struct {
-    uint16_t TrackingNumber;
-    char Timestamp;
-    char Stock[8];
-    char SecurityClass;
-    char CurrentTradingState;
-    char Reason[4];
-} StockTradingActionMessageT;
-
-/*
  * Structure: System Event Message
  */ 
 typedef struct {
@@ -293,4 +262,50 @@ typedef struct {
     char Timestamp;
     char EventCode;
 } SystemEventMessageT;
+
+/*
+ * Structure: Payload
+ */ 
+typedef struct {
+    SystemEventMessageT SystemEventMessage;
+    StockDirectoryMessageT StockDirectoryMessage;
+    StockTradingActionMessageT StockTradingActionMessage;
+    RegShoShortSalePriceTestRestrictedIndicatorMessageT RegShoShortSalePriceTestRestrictedIndicatorMessage;
+    MwcbDeclineLevelMessageT MwcbDeclineLevelMessage;
+    MwcbStatusMessageT MwcbStatusMessage;
+    OperationalHaltMessageT OperationalHaltMessage;
+    QuotationMessageT QuotationMessage;
+    NextSharesQuotationMessageT NextSharesQuotationMessage;
+} PayloadT;
+
+/*
+ * Structure: Message Header
+ */ 
+typedef struct {
+    uint16_t Length;
+    char MessageType;
+} MessageHeaderT;
+
+/*
+ * Structure: Message
+ */ 
+typedef struct {
+    MessageHeaderT MessageHeader;
+} MessageT;
+
+/*
+ * Structure: Packet Header
+ */ 
+typedef struct {
+    char Session[10];
+    uint64_t Sequence;
+    uint16_t Count;
+} PacketHeaderT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    PacketHeaderT PacketHeader;
+} PacketT;
 

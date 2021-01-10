@@ -9,88 +9,76 @@
 /*
  * Current Trading State Values
  */ 
-#define ENUM_CURRENT_TRADING_STATE_HALT_IN_EFFECT_H = 'H'
-#define ENUM_CURRENT_TRADING_STATE_TRADING_RESUMED_T = 'T'
+#define ENUM_CURRENT_TRADING_STATE_HALT_IN_EFFECT = 'H'
+#define ENUM_CURRENT_TRADING_STATE_TRADING_RESUMED = 'T'
 
 /*
  * Event Code Values
  */ 
-#define ENUM_EVENT_CODE_START_OF_MESSAGES_O = 'O'
-#define ENUM_EVENT_CODE_START_OF_SYSTEM_HOURS_S = 'S'
-#define ENUM_EVENT_CODE_START_OF_OPENING_PROCESS_Q = 'Q'
-#define ENUM_EVENT_CODE_START_OF_NORMAL_HOURS_CLOSING_PROCESS_N = 'N'
-#define ENUM_EVENT_CODE_START_OF_LATE_HOURS_CLOSING_PROCESS_L = 'L'
-#define ENUM_EVENT_CODE_END_OF_SYSTEM_HOURS_E = 'E'
-#define ENUM_EVENT_CODE_END_OF_MESSAGES_C = 'C'
-#define ENUM_EVENT_CODE_END_OF_WCO_EARLY_CLOSING_W = 'W'
+#define ENUM_EVENT_CODE_START_OF_MESSAGES = 'O'
+#define ENUM_EVENT_CODE_START_OF_SYSTEM_HOURS = 'S'
+#define ENUM_EVENT_CODE_START_OF_OPENING_PROCESS = 'Q'
+#define ENUM_EVENT_CODE_START_OF_NORMAL_HOURS_CLOSING_PROCESS = 'N'
+#define ENUM_EVENT_CODE_START_OF_LATE_HOURS_CLOSING_PROCESS = 'L'
+#define ENUM_EVENT_CODE_END_OF_SYSTEM_HOURS = 'E'
+#define ENUM_EVENT_CODE_END_OF_MESSAGES = 'C'
+#define ENUM_EVENT_CODE_END_OF_WCO_EARLY_CLOSING = 'W'
 
 /*
  * Message Type Values
  */ 
-#define ENUM_MESSAGE_TYPE_SYSTEM_EVENT_MESSAGE_S = 'S'
-#define ENUM_MESSAGE_TYPE_COMPLEX_STRATEGY_DIRECTORY_MESSAGE_R = 'R'
-#define ENUM_MESSAGE_TYPE_STRATEGY_OPEN_CLOSED_MESSAGE_O = 'O'
-#define ENUM_MESSAGE_TYPE_STRATEGY_TRADING_ACTION_MESSAGE_H = 'H'
-#define ENUM_MESSAGE_TYPE_STRATEGY_BEST_BID_AND_ASK_UPDATE_C = 'C'
-#define ENUM_MESSAGE_TYPE_STRATEGY_BEST_BID_UPDATE_D = 'D'
-#define ENUM_MESSAGE_TYPE_STRATEGY_BEST_ASK_UPDATE_E = 'E'
-#define ENUM_MESSAGE_TYPE_COMPLEX_STRATEGY_TICKER_MESSAGE_T = 't'
+#define ENUM_MESSAGE_TYPE_SYSTEM_EVENT_MESSAGE = 'S'
+#define ENUM_MESSAGE_TYPE_COMPLEX_STRATEGY_DIRECTORY_MESSAGE = 'R'
+#define ENUM_MESSAGE_TYPE_STRATEGY_OPEN_CLOSED_MESSAGE = 'O'
+#define ENUM_MESSAGE_TYPE_STRATEGY_TRADING_ACTION_MESSAGE = 'H'
+#define ENUM_MESSAGE_TYPE_STRATEGY_BEST_BID_AND_ASK_UPDATE = 'C'
+#define ENUM_MESSAGE_TYPE_STRATEGY_BEST_BID_UPDATE = 'D'
+#define ENUM_MESSAGE_TYPE_STRATEGY_BEST_ASK_UPDATE = 'E'
+#define ENUM_MESSAGE_TYPE_COMPLEX_STRATEGY_TICKER_MESSAGE = 't'
 
 /*
  * Open State Values
  */ 
-#define ENUM_OPEN_STATE_OPEN_Y = 'Y'
-#define ENUM_OPEN_STATE_CLOSED_N = 'N'
+#define ENUM_OPEN_STATE_OPEN = 'Y'
+#define ENUM_OPEN_STATE_CLOSED = 'N'
 
 /*
  * Option Type Values
  */ 
-#define ENUM_OPTION_TYPE_CALL_C = 'C'
-#define ENUM_OPTION_TYPE_PUT_P = 'P'
+#define ENUM_OPTION_TYPE_CALL = 'C'
+#define ENUM_OPTION_TYPE_PUT = 'P'
 #define ENUM_OPTION_TYPE_NA = ' '
 
 /*
  * Quote Condition Values
  */ 
 #define ENUM_QUOTE_CONDITION_REGULAR_QUOTE = ' '
-#define ENUM_QUOTE_CONDITION_HALTED_X = 'X'
+#define ENUM_QUOTE_CONDITION_HALTED = 'X'
 
 /*
  * Side Values
  */ 
-#define ENUM_SIDE_BUY_B = 'B'
-#define ENUM_SIDE_SELL_S = 'S'
+#define ENUM_SIDE_BUY = 'B'
+#define ENUM_SIDE_SELL = 'S'
 #define ENUM_SIDE_HIDDEN = ''
 
 /*
  * Strategy Type Values
  */ 
-#define ENUM_STRATEGY_TYPE_VERTICAL_SPREAD_V = 'V'
-#define ENUM_STRATEGY_TYPE_TIME_SPREAD_T = 'T'
-#define ENUM_STRATEGY_TYPE_DIAGONAL_SPREAD_D = 'D'
-#define ENUM_STRATEGY_TYPE_STRADDLE_S = 'S'
-#define ENUM_STRATEGY_TYPE_STRANGLE_G = 'G'
-#define ENUM_STRATEGY_TYPE_COMBO_C = 'C'
-#define ENUM_STRATEGY_TYPE_RISK_REVERSAL_R = 'R'
-#define ENUM_STRATEGY_TYPE_RATIO_SPREAD_A = 'A'
-#define ENUM_STRATEGY_TYPE_CUSTOM_U = 'U'
+#define ENUM_STRATEGY_TYPE_VERTICAL_SPREAD = 'V'
+#define ENUM_STRATEGY_TYPE_TIME_SPREAD = 'T'
+#define ENUM_STRATEGY_TYPE_DIAGONAL_SPREAD = 'D'
+#define ENUM_STRATEGY_TYPE_STRADDLE = 'S'
+#define ENUM_STRATEGY_TYPE_STRANGLE = 'G'
+#define ENUM_STRATEGY_TYPE_COMBO = 'C'
+#define ENUM_STRATEGY_TYPE_RISK_REVERSAL = 'R'
+#define ENUM_STRATEGY_TYPE_RATIO_SPREAD = 'A'
+#define ENUM_STRATEGY_TYPE_CUSTOM = 'U'
 
 
 /*******************************************************************************
  * Structs
  *******************************************************************************/
-
-/*
- * Structure: Complex Strategy Directory Message
- */ 
-typedef struct {
-    char Timestamp;
-    uint32_t StrategyId;
-    char StrategyType;
-    uint8_t Source;
-    char UnderlyingSymbol[13];
-    uint8_t NumberOfLegs;
-} ComplexStrategyDirectoryMessageT;
 
 /*
  * Structure: Complex Strategy Ticker Message
@@ -108,39 +96,6 @@ typedef struct {
 } ComplexStrategyTickerMessageT;
 
 /*
- * Structure: Leg Information
- */ 
-typedef struct {
-    uint32_t OptionId;
-    char SecuritySymbol[6];
-    uint8_t LegId;
-    uint8_t ExpirationYear;
-    uint8_t ExpirationMonth;
-    uint8_t ExpirationDay;
-    uint64_t ExplicitStrikePrice;
-    char OptionType;
-    char Side;
-    uint32_t LegRatio;
-} LegInformationT;
-
-/*
- * Structure: Message Header
- */ 
-typedef struct {
-    uint16_t Length;
-    char MessageType;
-} MessageHeaderT;
-
-/*
- * Structure: Packet Header
- */ 
-typedef struct {
-    char Session[10];
-    uint64_t Sequence;
-    uint16_t Count;
-} PacketHeaderT;
-
-/*
  * Structure: Strategy Best Ask Update
  */ 
 typedef struct {
@@ -155,6 +110,22 @@ typedef struct {
     uint32_t MarketSize;
     uint32_t NttMarketSize;
 } StrategyBestAskUpdateT;
+
+/*
+ * Structure: Strategy Best Bid Update
+ */ 
+typedef struct {
+    char Timestamp;
+    uint32_t StrategyId;
+    char QuoteCondition;
+    uint32_t Price;
+    uint32_t Size;
+    uint32_t CustSize;
+    uint32_t ProCustSize;
+    uint32_t NttSize;
+    uint32_t MarketSize;
+    uint32_t NttMarketSize;
+} StrategyBestBidUpdateT;
 
 /*
  * Structure: Strategy Best Bid And Ask Update
@@ -180,20 +151,13 @@ typedef struct {
 } StrategyBestBidAndAskUpdateT;
 
 /*
- * Structure: Strategy Best Bid Update
+ * Structure: Strategy Trading Action Message
  */ 
 typedef struct {
     char Timestamp;
     uint32_t StrategyId;
-    char QuoteCondition;
-    uint32_t Price;
-    uint32_t Size;
-    uint32_t CustSize;
-    uint32_t ProCustSize;
-    uint32_t NttSize;
-    uint32_t MarketSize;
-    uint32_t NttMarketSize;
-} StrategyBestBidUpdateT;
+    char CurrentTradingState;
+} StrategyTradingActionMessageT;
 
 /*
  * Structure: Strategy Open Closed Message
@@ -205,13 +169,32 @@ typedef struct {
 } StrategyOpenClosedMessageT;
 
 /*
- * Structure: Strategy Trading Action Message
+ * Structure: Leg Information
+ */ 
+typedef struct {
+    uint32_t OptionId;
+    char SecuritySymbol[6];
+    uint8_t LegId;
+    uint8_t ExpirationYear;
+    uint8_t ExpirationMonth;
+    uint8_t ExpirationDay;
+    uint64_t ExplicitStrikePrice;
+    char OptionType;
+    char Side;
+    uint32_t LegRatio;
+} LegInformationT;
+
+/*
+ * Structure: Complex Strategy Directory Message
  */ 
 typedef struct {
     char Timestamp;
     uint32_t StrategyId;
-    char CurrentTradingState;
-} StrategyTradingActionMessageT;
+    char StrategyType;
+    uint8_t Source;
+    char UnderlyingSymbol[13];
+    uint8_t NumberOfLegs;
+} ComplexStrategyDirectoryMessageT;
 
 /*
  * Structure: System Event Message
@@ -225,4 +208,21 @@ typedef struct {
     uint8_t Version;
     uint8_t Subversion;
 } SystemEventMessageT;
+
+/*
+ * Structure: Message Header
+ */ 
+typedef struct {
+    uint16_t Length;
+    char MessageType;
+} MessageHeaderT;
+
+/*
+ * Structure: Packet Header
+ */ 
+typedef struct {
+    char Session[10];
+    uint64_t Sequence;
+    uint16_t Count;
+} PacketHeaderT;
 

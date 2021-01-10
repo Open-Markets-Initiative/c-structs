@@ -9,61 +9,125 @@
 /*
  * Auction Type Values
  */ 
-#define ENUM_AUCTION_TYPE_AUCTION_INSTRUCTION_MECHANISM_B = 'B'
-#define ENUM_AUCTION_TYPE_SOLICITATION_AUCTION_MECHANISM_S = 'S'
-#define ENUM_AUCTION_TYPE_STEP_UP_MECHANISM_T = 'T'
-#define ENUM_AUCTION_TYPE_ALL_OR_NONE_A = 'A'
+#define ENUM_AUCTION_TYPE_AUCTION_INSTRUCTION_MECHANISM = 'B'
+#define ENUM_AUCTION_TYPE_SOLICITATION_AUCTION_MECHANISM = 'S'
+#define ENUM_AUCTION_TYPE_STEP_UP_MECHANISM = 'T'
+#define ENUM_AUCTION_TYPE_ALL_OR_NONE = 'A'
 
 /*
  * Customer Indicator Values
  */ 
-#define ENUM_CUSTOMER_INDICATOR_NON_CUSTOMER_N = 'N'
-#define ENUM_CUSTOMER_INDICATOR_CUSTOMER_C = 'C'
+#define ENUM_CUSTOMER_INDICATOR_NON_CUSTOMER = 'N'
+#define ENUM_CUSTOMER_INDICATOR_CUSTOMER = 'C'
 
 /*
  * Message Type Values
  */ 
-#define ENUM_MESSAGE_TYPE_TIME_MESSAGE_0X20 = 0x20
-#define ENUM_MESSAGE_TYPE_UNIT_CLEAR_MESSAGE_0X97 = 0x97
-#define ENUM_MESSAGE_TYPE_AUCTION_NOTIFICATION_MESSAGE_0_XAD = 0xAD
-#define ENUM_MESSAGE_TYPE_AUCTION_CANCEL_MESSAGE_0_XAE = 0xAE
-#define ENUM_MESSAGE_TYPE_AUCTION_TRADE_MESSAGE_0_XAF = 0xAF
-#define ENUM_MESSAGE_TYPE_AUCTION_UPDATE_MESSAGE_0_XD_1 = 0xD1
-#define ENUM_MESSAGE_TYPE_AUCTION_SUMMARY_MESSAGE_0X96 = 0x96
-#define ENUM_MESSAGE_TYPE_WIDTH_UPDATE_MESSAGE_0_XD_2 = 0xD2
-#define ENUM_MESSAGE_TYPE_SYMBOL_MAPPING_MESSAGE_0X_2E = 0x2E
-#define ENUM_MESSAGE_TYPE_END_OF_SESSION_MESSAGE_0X_2D = 0x2D
+#define ENUM_MESSAGE_TYPE_TIME_MESSAGE = 0x20
+#define ENUM_MESSAGE_TYPE_UNIT_CLEAR_MESSAGE = 0x97
+#define ENUM_MESSAGE_TYPE_AUCTION_NOTIFICATION_MESSAGE = 0xAD
+#define ENUM_MESSAGE_TYPE_AUCTION_CANCEL_MESSAGE = 0xAE
+#define ENUM_MESSAGE_TYPE_AUCTION_TRADE_MESSAGE = 0xAF
+#define ENUM_MESSAGE_TYPE_AUCTION_UPDATE_MESSAGE = 0xD1
+#define ENUM_MESSAGE_TYPE_AUCTION_SUMMARY_MESSAGE = 0x96
+#define ENUM_MESSAGE_TYPE_WIDTH_UPDATE_MESSAGE = 0xD2
+#define ENUM_MESSAGE_TYPE_SYMBOL_MAPPING_MESSAGE = 0x2E
+#define ENUM_MESSAGE_TYPE_END_OF_SESSION_MESSAGE = 0x2D
 
 /*
  * Opening Type Values
  */ 
-#define ENUM_OPENING_TYPE_GTH_OPENING_G = 'G'
-#define ENUM_OPENING_TYPE_RTH_OPENING_O = 'O'
-#define ENUM_OPENING_TYPE_HALT_REOPENING_H = 'H'
-#define ENUM_OPENING_TYPE_VOLATILITY_OPENING_V = 'V'
+#define ENUM_OPENING_TYPE_GTH_OPENING = 'G'
+#define ENUM_OPENING_TYPE_RTH_OPENING = 'O'
+#define ENUM_OPENING_TYPE_HALT_REOPENING = 'H'
+#define ENUM_OPENING_TYPE_VOLATILITY_OPENING = 'V'
 
 /*
  * Side Values
  */ 
-#define ENUM_SIDE_BUY_B = 'B'
-#define ENUM_SIDE_SELL_S = 'S'
+#define ENUM_SIDE_BUY = 'B'
+#define ENUM_SIDE_SELL = 'S'
 
 /*
  * Symbol Condition Values
  */ 
-#define ENUM_SYMBOL_CONDITION_NORMAL_N = 'N'
-#define ENUM_SYMBOL_CONDITION_CLOSING_ONLY_C = 'C'
+#define ENUM_SYMBOL_CONDITION_NORMAL = 'N'
+#define ENUM_SYMBOL_CONDITION_CLOSING_ONLY = 'C'
 
 /*
  * Width Type Values
  */ 
-#define ENUM_WIDTH_TYPE_REGULAR_R = 'R'
-#define ENUM_WIDTH_TYPE_VOLATILITY_V = 'V'
+#define ENUM_WIDTH_TYPE_REGULAR = 'R'
+#define ENUM_WIDTH_TYPE_VOLATILITY = 'V'
 
 
 /*******************************************************************************
  * Structs
  *******************************************************************************/
+
+/*
+ * Structure: End Of Session Message
+ */ 
+typedef struct {
+    uint32_t Timestamp;
+} EndOfSessionMessageT;
+
+/*
+ * Structure: Symbol Mapping Message
+ */ 
+typedef struct {
+    char FeedSymbol[6];
+    char OsiSymbol[21];
+    char SymbolCondition;
+    char Underlying[8];
+} SymbolMappingMessageT;
+
+/*
+ * Structure: Width Update Message
+ */ 
+typedef struct {
+    uint32_t TimeOffset;
+    char Underlying[8];
+    char WidthType;
+    uint32_t Multiplier;
+} WidthUpdateMessageT;
+
+/*
+ * Structure: Auction Summary Message
+ */ 
+typedef struct {
+    uint32_t TimeOffset;
+    char Symbol8[8];
+    char OpeningType;
+    uint64_t Price;
+    uint32_t Quantity;
+} AuctionSummaryMessageT;
+
+/*
+ * Structure: Auction Update Message
+ */ 
+typedef struct {
+    uint32_t TimeOffset;
+    char Symbol8[8];
+    char OpeningType;
+    uint64_t ReferencePrice;
+    uint32_t BuyContracts;
+    uint32_t SellContracts;
+    uint64_t IndicativePrice;
+    uint64_t AuctionOnlyPrice;
+    char OpeningCondition[1];
+} AuctionUpdateMessageT;
+
+/*
+ * Structure: Auction Trade Message
+ */ 
+typedef struct {
+    uint32_t TimeOffset;
+    uint64_t AuctionId;
+    uint64_t ExecutionId;
+    uint64_t Price;
+    uint32_t Contracts;
+} AuctionTradeMessageT;
 
 /*
  * Structure: Auction Cancel Message
@@ -91,55 +155,34 @@ typedef struct {
 } AuctionNotificationMessageT;
 
 /*
- * Structure: Auction Summary Message
+ * Structure: Unit Clear Message
  */ 
 typedef struct {
     uint32_t TimeOffset;
-    char Symbol8[8];
-    char OpeningType;
-    uint64_t Price;
-    uint32_t Quantity;
-} AuctionSummaryMessageT;
+} UnitClearMessageT;
 
 /*
- * Structure: Auction Trade Message
+ * Structure: Time Message
  */ 
 typedef struct {
-    uint32_t TimeOffset;
-    uint64_t AuctionId;
-    uint64_t ExecutionId;
-    uint64_t Price;
-    uint32_t Contracts;
-} AuctionTradeMessageT;
+    uint32_t Time;
+} TimeMessageT;
 
 /*
- * Structure: Auction Update Message
+ * Structure: Payload
  */ 
 typedef struct {
-    uint32_t TimeOffset;
-    char Symbol8[8];
-    char OpeningType;
-    uint64_t ReferencePrice;
-    uint32_t BuyContracts;
-    uint32_t SellContracts;
-    uint64_t IndicativePrice;
-    uint64_t AuctionOnlyPrice;
-    char OpeningCondition[1];
-} AuctionUpdateMessageT;
-
-/*
- * Structure: End Of Session Message
- */ 
-typedef struct {
-    uint32_t Timestamp;
-} EndOfSessionMessageT;
-
-/*
- * Structure: Message
- */ 
-typedef struct {
-    MessageHeaderT MessageHeader;
-} MessageT;
+    TimeMessageT TimeMessage;
+    UnitClearMessageT UnitClearMessage;
+    AuctionNotificationMessageT AuctionNotificationMessage;
+    AuctionCancelMessageT AuctionCancelMessage;
+    AuctionTradeMessageT AuctionTradeMessage;
+    AuctionUpdateMessageT AuctionUpdateMessage;
+    AuctionSummaryMessageT AuctionSummaryMessage;
+    WidthUpdateMessageT WidthUpdateMessage;
+    SymbolMappingMessageT SymbolMappingMessage;
+    EndOfSessionMessageT EndOfSessionMessage;
+} PayloadT;
 
 /*
  * Structure: Message Header
@@ -150,11 +193,11 @@ typedef struct {
 } MessageHeaderT;
 
 /*
- * Structure: Packet
+ * Structure: Message
  */ 
 typedef struct {
-    PacketHeaderT PacketHeader;
-} PacketT;
+    MessageHeaderT MessageHeader;
+} MessageT;
 
 /*
  * Structure: Packet Header
@@ -167,36 +210,9 @@ typedef struct {
 } PacketHeaderT;
 
 /*
- * Structure: Symbol Mapping Message
+ * Structure: Packet
  */ 
 typedef struct {
-    char FeedSymbol[6];
-    char OsiSymbol[21];
-    char SymbolCondition;
-    char Underlying[8];
-} SymbolMappingMessageT;
-
-/*
- * Structure: Time Message
- */ 
-typedef struct {
-    uint32_t Time;
-} TimeMessageT;
-
-/*
- * Structure: Unit Clear Message
- */ 
-typedef struct {
-    uint32_t TimeOffset;
-} UnitClearMessageT;
-
-/*
- * Structure: Width Update Message
- */ 
-typedef struct {
-    uint32_t TimeOffset;
-    char Underlying[8];
-    char WidthType;
-    uint32_t Multiplier;
-} WidthUpdateMessageT;
+    PacketHeaderT PacketHeader;
+} PacketT;
 
