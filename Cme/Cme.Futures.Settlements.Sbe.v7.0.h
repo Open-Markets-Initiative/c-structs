@@ -168,13 +168,14 @@ typedef struct {
  * Bitfield: Settl Price Type
  */ 
 typedef struct {
-    unsigned char NullValue : 1;
-    unsigned char ReservedBits : 2;
-    unsigned char Cabinet : 1;
-    unsigned char Intraday : 1;
-    unsigned char Rounded : 1;
-    unsigned char Actual : 1;
-    unsigned char FinalDaily : 1;
+    uint8_t
+    NullValue : 1,
+    ReservedBits : 2,
+    Cabinet : 1,
+    Intraday : 1,
+    Rounded : 1,
+    Actual : 1,
+    FinalDaily : 1;
 } SettlPriceTypeT;
 
 /*

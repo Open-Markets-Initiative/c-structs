@@ -173,14 +173,15 @@ typedef struct {
  * Bitfield: Match Event Indicator
  */ 
 typedef struct {
-    unsigned char EndOfEvent : 1;
-    unsigned char Reserved : 1;
-    unsigned char RecoveryMsg : 1;
-    unsigned char LastImpliedMsg : 1;
-    unsigned char LastStatsMsg : 1;
-    unsigned char LastQuoteMsg : 1;
-    unsigned char LastVolumeMsg : 1;
-    unsigned char LastTradeMsg : 1;
+    uint8_t
+    EndOfEvent : 1,
+    Reserved : 1,
+    RecoveryMsg : 1,
+    LastImpliedMsg : 1,
+    LastStatsMsg : 1,
+    LastQuoteMsg : 1,
+    LastVolumeMsg : 1,
+    LastTradeMsg : 1;
 } MatchEventIndicatorT;
 
 /*
@@ -711,11 +712,12 @@ typedef struct {
  * Bitfield: Settl Price Type
  */ 
 typedef struct {
-    unsigned char NullValue : 1;
-    unsigned char ReservedBits : 4;
-    unsigned char Rounded : 1;
-    unsigned char Actual : 1;
-    unsigned char FinalDaily : 1;
+    uint8_t
+    NullValue : 1,
+    ReservedBits : 4,
+    Rounded : 1,
+    Actual : 1,
+    FinalDaily : 1;
 } SettlPriceTypeT;
 
 /*

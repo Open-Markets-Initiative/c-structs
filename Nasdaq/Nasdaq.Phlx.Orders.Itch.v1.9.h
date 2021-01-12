@@ -186,9 +186,10 @@ typedef struct {
  * Bitfield: Expiration
  */ 
 typedef struct {
-    unsigned char Year : 7;
-    unsigned char Month : 4;
-    unsigned char Day : 5;
+    uint16_t
+    Year : 7,
+    Month : 4,
+    Day : 5;
 } ExpirationT;
 
 /*

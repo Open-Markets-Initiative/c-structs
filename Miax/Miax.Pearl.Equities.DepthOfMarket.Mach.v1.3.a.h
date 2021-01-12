@@ -115,8 +115,9 @@ typedef struct {
  * Bitfield: Trade Flags
  */ 
 typedef struct {
-    unsigned char Undefined : 7;
-    unsigned char Reportable : 1;
+    uint8_t
+    Undefined : 7,
+    Reportable : 1;
 } TradeFlagsT;
 
 /*
@@ -136,8 +137,9 @@ typedef struct {
  * Bitfield: Order Execution Flags
  */ 
 typedef struct {
-    unsigned char Undefined : 7;
-    unsigned char Reportable : 1;
+    uint8_t
+    Undefined : 7,
+    Reportable : 1;
 } OrderExecutionFlagsT;
 
 /*
@@ -166,8 +168,9 @@ typedef struct {
  * Bitfield: Modify Order Flags
  */ 
 typedef struct {
-    unsigned char Undefined : 7;
-    unsigned char OrderPosition : 1;
+    uint8_t
+    Undefined : 7,
+    OrderPosition : 1;
 } ModifyOrderFlagsT;
 
 /*

@@ -183,12 +183,13 @@
  * Bitfield: Settl Price Type
  */ 
 typedef struct {
-    unsigned char NullValue : 1;
-    unsigned char ReservedBits : 3;
-    unsigned char Intraday : 1;
-    unsigned char Rounded : 1;
-    unsigned char Actual : 1;
-    unsigned char FinalDaily : 1;
+    uint8_t
+    NullValue : 1,
+    ReservedBits : 3,
+    Intraday : 1,
+    Rounded : 1,
+    Actual : 1,
+    FinalDaily : 1;
 } SettlPriceTypeT;
 
 /*
@@ -225,14 +226,15 @@ typedef struct {
  * Bitfield: Match Event Indicator
  */ 
 typedef struct {
-    unsigned char EndOfEvent : 1;
-    unsigned char Reserved : 1;
-    unsigned char RecoveryMsg : 1;
-    unsigned char LastImpliedMsg : 1;
-    unsigned char LastStatsMsg : 1;
-    unsigned char LastQuoteMsg : 1;
-    unsigned char LastVolumeMsg : 1;
-    unsigned char LastTradeMsg : 1;
+    uint8_t
+    EndOfEvent : 1,
+    Reserved : 1,
+    RecoveryMsg : 1,
+    LastImpliedMsg : 1,
+    LastStatsMsg : 1,
+    LastQuoteMsg : 1,
+    LastVolumeMsg : 1,
+    LastTradeMsg : 1;
 } MatchEventIndicatorT;
 
 /*
@@ -354,31 +356,32 @@ typedef struct {
  * Bitfield: Inst Attrib Value
  */ 
 typedef struct {
-    unsigned char Reserved8 : 8;
-    unsigned char IsAoNInstrument : 1;
-    unsigned char InvertedBook : 1;
-    unsigned char VariableCabEligible : 1;
-    unsigned char TriangulationEligible : 1;
-    unsigned char ImpliedMatchingEligibility : 1;
-    unsigned char GtOrdersEligibility : 1;
-    unsigned char DailyProductEligibility : 1;
-    unsigned char VariableProductEligibility : 1;
-    unsigned char DecayingProductEligibility : 1;
-    unsigned char ZeroPriceOutrightEligible : 1;
-    unsigned char RfqCrossEligible : 1;
-    unsigned char VolatilityQuotedOption : 1;
-    unsigned char IsFractional : 1;
-    unsigned char NegativePriceOutrightEligible : 1;
-    unsigned char NegativeStrikeEligible : 1;
-    unsigned char ILinkIndicativeMassQuotingEligible : 1;
-    unsigned char OtcEligible : 1;
-    unsigned char EfrEligible : 1;
-    unsigned char EfsEligible : 1;
-    unsigned char EbfEligible : 1;
-    unsigned char EfpEligible : 1;
-    unsigned char BlockTradeEligible : 1;
-    unsigned char OrderCrossEligible : 1;
-    unsigned char ElectronicMatchEligible : 1;
+    uint32_t
+    Reserved8 : 8,
+    IsAoNInstrument : 1,
+    InvertedBook : 1,
+    VariableCabEligible : 1,
+    TriangulationEligible : 1,
+    ImpliedMatchingEligibility : 1,
+    GtOrdersEligibility : 1,
+    DailyProductEligibility : 1,
+    VariableProductEligibility : 1,
+    DecayingProductEligibility : 1,
+    ZeroPriceOutrightEligible : 1,
+    RfqCrossEligible : 1,
+    VolatilityQuotedOption : 1,
+    IsFractional : 1,
+    NegativePriceOutrightEligible : 1,
+    NegativeStrikeEligible : 1,
+    ILinkIndicativeMassQuotingEligible : 1,
+    OtcEligible : 1,
+    EfrEligible : 1,
+    EfsEligible : 1,
+    EbfEligible : 1,
+    EfpEligible : 1,
+    BlockTradeEligible : 1,
+    OrderCrossEligible : 1,
+    ElectronicMatchEligible : 1;
 } InstAttribValueT;
 
 /*

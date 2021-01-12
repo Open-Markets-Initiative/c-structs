@@ -98,8 +98,9 @@
  * Bitfield: Trade Status
  */ 
 typedef struct {
-    unsigned char ReservedTradeStatusBits : 7;
-    unsigned char Irregular : 1;
+    uint8_t
+    ReservedTradeStatusBits : 7,
+    Irregular : 1;
 } TradeStatusT;
 
 /*
@@ -122,28 +123,30 @@ typedef struct {
  * Bitfield: Security Flags
  */ 
 typedef struct {
-    unsigned char SaturationEligible : 1;
-    unsigned char OtcLinkMessagingDisabled : 1;
-    unsigned char OtcLinkEcnEligible : 1;
-    unsigned char BbQuoted : 1;
-    unsigned char UnsolicitedOnly : 1;
-    unsigned char QualifiedInstitutionalBuyersOnly : 1;
-    unsigned char CaveatEmptorWarning : 1;
-    unsigned char Piggyback : 1;
+    uint8_t
+    SaturationEligible : 1,
+    OtcLinkMessagingDisabled : 1,
+    OtcLinkEcnEligible : 1,
+    BbQuoted : 1,
+    UnsolicitedOnly : 1,
+    QualifiedInstitutionalBuyersOnly : 1,
+    CaveatEmptorWarning : 1,
+    Piggyback : 1;
 } SecurityFlagsT;
 
 /*
  * Bitfield: Quote Flags
  */ 
 typedef struct {
-    unsigned char BidAskWanted : 1;
-    unsigned char BidPriced : 1;
-    unsigned char BidUnsolicited : 1;
-    unsigned char AskBidWanted : 1;
-    unsigned char AskPriced : 1;
-    unsigned char AskUnsolicited : 1;
-    unsigned char State : 1;
-    unsigned char UpdateSide : 1;
+    uint8_t
+    BidAskWanted : 1,
+    BidPriced : 1,
+    BidUnsolicited : 1,
+    AskBidWanted : 1,
+    AskPriced : 1,
+    AskUnsolicited : 1,
+    State : 1,
+    UpdateSide : 1;
 } QuoteFlagsT;
 
 /*
@@ -201,11 +204,12 @@ typedef struct {
  * Bitfield: Extended Quote Flags
  */ 
 typedef struct {
-    unsigned char ReservedExtendedQuoteFlagBits : 4;
-    unsigned char NmsConditionalQuote : 1;
-    unsigned char OfferAutoEx : 1;
-    unsigned char BidAutoEx : 1;
-    unsigned char QuoteSaturated : 1;
+    uint8_t
+    ReservedExtendedQuoteFlagBits : 4,
+    NmsConditionalQuote : 1,
+    OfferAutoEx : 1,
+    BidAutoEx : 1,
+    QuoteSaturated : 1;
 } ExtendedQuoteFlagsT;
 
 /*
@@ -303,11 +307,12 @@ typedef struct {
  * Bitfield: Packet Flag
  */ 
 typedef struct {
-    unsigned char Test : 1;
-    unsigned char Replay : 1;
-    unsigned char ReservedPacketFlags : 4;
-    unsigned char SeqNumReset : 1;
-    unsigned char Heartbeat : 1;
+    uint8_t
+    Test : 1,
+    Replay : 1,
+    ReservedPacketFlags : 4,
+    SeqNumReset : 1,
+    Heartbeat : 1;
 } PacketFlagT;
 
 /*

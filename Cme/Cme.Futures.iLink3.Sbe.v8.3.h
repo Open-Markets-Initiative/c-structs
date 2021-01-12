@@ -405,14 +405,15 @@ typedef struct {
  * Bitfield: Exec Inst
  */ 
 typedef struct {
-    unsigned char Reserved5 : 1;
-    unsigned char Reserved4 : 1;
-    unsigned char Reserved3 : 1;
-    unsigned char Reserved2 : 1;
-    unsigned char Reserved1 : 1;
-    unsigned char Nh : 1;
-    unsigned char Ob : 1;
-    unsigned char Aon : 1;
+    uint8_t
+    Reserved5 : 1,
+    Reserved4 : 1,
+    Reserved3 : 1,
+    Reserved2 : 1,
+    Reserved1 : 1,
+    Nh : 1,
+    Ob : 1,
+    Aon : 1;
 } ExecInstT;
 
 /*

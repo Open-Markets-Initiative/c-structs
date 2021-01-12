@@ -257,9 +257,10 @@ typedef struct {
  * Bitfield: Modify Flags
  */ 
 typedef struct {
-    unsigned char Reserved6 : 6;
-    unsigned char MaintainPriority : 1;
-    unsigned char Display : 1;
+    uint8_t
+    Reserved6 : 6,
+    MaintainPriority : 1,
+    Display : 1;
 } ModifyFlagsT;
 
 /*
@@ -330,8 +331,9 @@ typedef struct {
  * Bitfield: Add Flags
  */ 
 typedef struct {
-    unsigned char Reserved7 : 7;
-    unsigned char Display : 1;
+    uint8_t
+    Reserved7 : 7,
+    Display : 1;
 } AddFlagsT;
 
 /*

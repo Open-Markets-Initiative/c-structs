@@ -676,13 +676,14 @@ typedef struct {
  * Bitfield: Packet Flags
  */ 
 typedef struct {
-    unsigned char ReservedBits : 6;
-    unsigned char HasStatusMessage : 1;
-    unsigned char HasEndOfDaySnapshot : 1;
-    unsigned char HasStartOfDaySnapshot : 1;
-    unsigned char PsnHighWeight : 3;
-    unsigned char MdgRestartCount : 3;
-    unsigned char Compression : 1;
+    uint16_t
+    ReservedBits : 6,
+    HasStatusMessage : 1,
+    HasEndOfDaySnapshot : 1,
+    HasStartOfDaySnapshot : 1,
+    PsnHighWeight : 3,
+    MdgRestartCount : 3,
+    Compression : 1;
 } PacketFlagsT;
 
 /*

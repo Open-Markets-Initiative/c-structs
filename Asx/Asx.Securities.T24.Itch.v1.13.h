@@ -197,13 +197,14 @@ typedef struct {
  * Bitfield: Market Updates
  */ 
 typedef struct {
-    unsigned char Reserved : 2;
-    unsigned char LastTradedVolume : 1;
-    unsigned char LastTradedPrice : 1;
-    unsigned char TotalTradedVolumeAndTotalTrades : 1;
-    unsigned char LowestTradedPrice : 1;
-    unsigned char HighestTradedPrice : 1;
-    unsigned char OpeningTradePrice : 1;
+    uint8_t
+    Reserved : 2,
+    LastTradedVolume : 1,
+    LastTradedPrice : 1,
+    TotalTradedVolumeAndTotalTrades : 1,
+    LowestTradedPrice : 1,
+    HighestTradedPrice : 1,
+    OpeningTradePrice : 1;
 } MarketUpdatesT;
 
 /*

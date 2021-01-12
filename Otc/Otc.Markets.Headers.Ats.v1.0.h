@@ -26,11 +26,12 @@ typedef struct {
  * Bitfield: Packet Flag
  */ 
 typedef struct {
-    unsigned char Test : 1;
-    unsigned char Replay : 1;
-    unsigned char ReservedPacketFlags : 4;
-    unsigned char SeqNumReset : 1;
-    unsigned char Heartbeat : 1;
+    uint8_t
+    Test : 1,
+    Replay : 1,
+    ReservedPacketFlags : 4,
+    SeqNumReset : 1,
+    Heartbeat : 1;
 } PacketFlagT;
 
 /*

@@ -511,10 +511,11 @@ typedef struct {
  * Bitfield: Trade Session
  */ 
 typedef struct {
-    unsigned char Reserved : 5;
-    unsigned char OkForLateHours : 1;
-    unsigned char OkForNationalHours : 1;
-    unsigned char OkForMorningHours : 1;
+    uint8_t
+    Reserved : 5,
+    OkForLateHours : 1,
+    OkForNationalHours : 1,
+    OkForMorningHours : 1;
 } TradeSessionT;
 
 /*

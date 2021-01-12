@@ -100,12 +100,13 @@ typedef struct {
  * Bitfield: Summary Flags
  */ 
 typedef struct {
-    unsigned char ReservedFlags : 7;
-    unsigned char OfferCloseValid : 1;
-    unsigned char LowPriceIsOffer : 1;
-    unsigned char LowPriceValid : 1;
-    unsigned char HighPriceIsBid : 1;
-    unsigned char HighPriceValid : 1;
+    uint8_t
+    ReservedFlags : 7,
+    OfferCloseValid : 1,
+    LowPriceIsOffer : 1,
+    LowPriceValid : 1,
+    HighPriceIsBid : 1,
+    HighPriceValid : 1;
 } SummaryFlagsT;
 
 /*

@@ -506,476 +506,510 @@ typedef struct {
  * Bitfield: Purge Rejected Byte 17
  */ 
 typedef struct {
-    unsigned char PurgeRejectedReservedBit8Exists : 1;
-    unsigned char PurgeRejectedReservedBit7Exists : 1;
-    unsigned char PurgeRejectedReservedBit6Exists : 1;
-    unsigned char PurgeRejectedReservedBit5Exists : 1;
-    unsigned char PurgeRejectedReservedBit4Exists : 1;
-    unsigned char PurgeRejectedReservedBit3Exists : 1;
-    unsigned char PurgeRejectedReservedBit2Exists : 1;
-    unsigned char PurgeRejectedReservedBit1Exists : 1;
+    uint8_t
+    PurgeRejectedReservedBit8Exists : 1,
+    PurgeRejectedReservedBit7Exists : 1,
+    PurgeRejectedReservedBit6Exists : 1,
+    PurgeRejectedReservedBit5Exists : 1,
+    PurgeRejectedReservedBit4Exists : 1,
+    PurgeRejectedReservedBit3Exists : 1,
+    PurgeRejectedReservedBit2Exists : 1,
+    PurgeRejectedReservedBit1Exists : 1;
 } PurgeRejectedByte17T;
 
 /*
  * Bitfield: Purge Rejected Byte 16
  */ 
 typedef struct {
-    unsigned char PurgeRejectedReservedBit8Exists : 1;
-    unsigned char PurgeRejectedReservedBit7Exists : 1;
-    unsigned char PurgeRejectedReservedBit6Exists : 1;
-    unsigned char PurgeRejectedReservedBit5Exists : 1;
-    unsigned char PurgeRejectedReservedBit4Exists : 1;
-    unsigned char PurgeRejectedReservedBit3Exists : 1;
-    unsigned char PurgeRejectedReservedBit2Exists : 1;
-    unsigned char PurgeRejectedReservedBit1Exists : 1;
+    uint8_t
+    PurgeRejectedReservedBit8Exists : 1,
+    PurgeRejectedReservedBit7Exists : 1,
+    PurgeRejectedReservedBit6Exists : 1,
+    PurgeRejectedReservedBit5Exists : 1,
+    PurgeRejectedReservedBit4Exists : 1,
+    PurgeRejectedReservedBit3Exists : 1,
+    PurgeRejectedReservedBit2Exists : 1,
+    PurgeRejectedReservedBit1Exists : 1;
 } PurgeRejectedByte16T;
 
 /*
  * Bitfield: Purge Rejected Byte 15
  */ 
 typedef struct {
-    unsigned char PurgeRejectedReservedBit8Exists : 1;
-    unsigned char PurgeRejectedReservedBit7Exists : 1;
-    unsigned char PurgeRejectedReservedBit6Exists : 1;
-    unsigned char PurgeRejectedReservedBit5Exists : 1;
-    unsigned char PurgeRejectedMassCancelIdExists : 1;
-    unsigned char PurgeRejectedReservedBit3Exists : 1;
-    unsigned char PurgeRejectedReservedBit2Exists : 1;
-    unsigned char PurgeRejectedReservedBit1Exists : 1;
+    uint8_t
+    PurgeRejectedReservedBit8Exists : 1,
+    PurgeRejectedReservedBit7Exists : 1,
+    PurgeRejectedReservedBit6Exists : 1,
+    PurgeRejectedReservedBit5Exists : 1,
+    PurgeRejectedMassCancelIdExists : 1,
+    PurgeRejectedReservedBit3Exists : 1,
+    PurgeRejectedReservedBit2Exists : 1,
+    PurgeRejectedReservedBit1Exists : 1;
 } PurgeRejectedByte15T;
 
 /*
  * Bitfield: Purge Rejected Byte 14
  */ 
 typedef struct {
-    unsigned char PurgeRejectedReservedBit8Exists : 1;
-    unsigned char PurgeRejectedReservedBit7Exists : 1;
-    unsigned char PurgeRejectedReservedBit6Exists : 1;
-    unsigned char PurgeRejectedReservedBit5Exists : 1;
-    unsigned char PurgeRejectedReservedBit4Exists : 1;
-    unsigned char PurgeRejectedReservedBit3Exists : 1;
-    unsigned char PurgeRejectedReservedBit2Exists : 1;
-    unsigned char PurgeRejectedReservedBit1Exists : 1;
+    uint8_t
+    PurgeRejectedReservedBit8Exists : 1,
+    PurgeRejectedReservedBit7Exists : 1,
+    PurgeRejectedReservedBit6Exists : 1,
+    PurgeRejectedReservedBit5Exists : 1,
+    PurgeRejectedReservedBit4Exists : 1,
+    PurgeRejectedReservedBit3Exists : 1,
+    PurgeRejectedReservedBit2Exists : 1,
+    PurgeRejectedReservedBit1Exists : 1;
 } PurgeRejectedByte14T;
 
 /*
  * Bitfield: Purge Rejected Byte 13
  */ 
 typedef struct {
-    unsigned char PurgeRejectedReservedBit8Exists : 1;
-    unsigned char PurgeRejectedReservedBit7Exists : 1;
-    unsigned char PurgeRejectedReservedBit6Exists : 1;
-    unsigned char PurgeRejectedReservedBit5Exists : 1;
-    unsigned char PurgeRejectedReservedBit4Exists : 1;
-    unsigned char PurgeRejectedReservedBit3Exists : 1;
-    unsigned char PurgeRejectedReservedBit2Exists : 1;
-    unsigned char PurgeRejectedReservedBit1Exists : 1;
+    uint8_t
+    PurgeRejectedReservedBit8Exists : 1,
+    PurgeRejectedReservedBit7Exists : 1,
+    PurgeRejectedReservedBit6Exists : 1,
+    PurgeRejectedReservedBit5Exists : 1,
+    PurgeRejectedReservedBit4Exists : 1,
+    PurgeRejectedReservedBit3Exists : 1,
+    PurgeRejectedReservedBit2Exists : 1,
+    PurgeRejectedReservedBit1Exists : 1;
 } PurgeRejectedByte13T;
 
 /*
  * Bitfield: Purge Rejected Byte 12
  */ 
 typedef struct {
-    unsigned char PurgeRejectedReservedBit8Exists : 1;
-    unsigned char PurgeRejectedReservedBit7Exists : 1;
-    unsigned char PurgeRejectedReservedBit6Exists : 1;
-    unsigned char PurgeRejectedReservedBit5Exists : 1;
-    unsigned char PurgeRejectedReservedBit4Exists : 1;
-    unsigned char PurgeRejectedReservedBit3Exists : 1;
-    unsigned char PurgeRejectedReservedBit2Exists : 1;
-    unsigned char PurgeRejectedReservedBit1Exists : 1;
+    uint8_t
+    PurgeRejectedReservedBit8Exists : 1,
+    PurgeRejectedReservedBit7Exists : 1,
+    PurgeRejectedReservedBit6Exists : 1,
+    PurgeRejectedReservedBit5Exists : 1,
+    PurgeRejectedReservedBit4Exists : 1,
+    PurgeRejectedReservedBit3Exists : 1,
+    PurgeRejectedReservedBit2Exists : 1,
+    PurgeRejectedReservedBit1Exists : 1;
 } PurgeRejectedByte12T;
 
 /*
  * Bitfield: Purge Rejected Byte 11
  */ 
 typedef struct {
-    unsigned char PurgeRejectedReservedBit8Exists : 1;
-    unsigned char PurgeRejectedReservedBit7Exists : 1;
-    unsigned char PurgeRejectedReservedBit6Exists : 1;
-    unsigned char PurgeRejectedReservedBit5Exists : 1;
-    unsigned char PurgeRejectedReservedBit4Exists : 1;
-    unsigned char PurgeRejectedReservedBit3Exists : 1;
-    unsigned char PurgeRejectedReservedBit2Exists : 1;
-    unsigned char PurgeRejectedReservedBit1Exists : 1;
+    uint8_t
+    PurgeRejectedReservedBit8Exists : 1,
+    PurgeRejectedReservedBit7Exists : 1,
+    PurgeRejectedReservedBit6Exists : 1,
+    PurgeRejectedReservedBit5Exists : 1,
+    PurgeRejectedReservedBit4Exists : 1,
+    PurgeRejectedReservedBit3Exists : 1,
+    PurgeRejectedReservedBit2Exists : 1,
+    PurgeRejectedReservedBit1Exists : 1;
 } PurgeRejectedByte11T;
 
 /*
  * Bitfield: Purge Rejected Byte 10
  */ 
 typedef struct {
-    unsigned char PurgeRejectedReservedBit8Exists : 1;
-    unsigned char PurgeRejectedReservedBit7Exists : 1;
-    unsigned char PurgeRejectedReservedBit6Exists : 1;
-    unsigned char PurgeRejectedReservedBit5Exists : 1;
-    unsigned char PurgeRejectedReservedBit4Exists : 1;
-    unsigned char PurgeRejectedReservedBit3Exists : 1;
-    unsigned char PurgeRejectedReservedBit2Exists : 1;
-    unsigned char PurgeRejectedReservedBit1Exists : 1;
+    uint8_t
+    PurgeRejectedReservedBit8Exists : 1,
+    PurgeRejectedReservedBit7Exists : 1,
+    PurgeRejectedReservedBit6Exists : 1,
+    PurgeRejectedReservedBit5Exists : 1,
+    PurgeRejectedReservedBit4Exists : 1,
+    PurgeRejectedReservedBit3Exists : 1,
+    PurgeRejectedReservedBit2Exists : 1,
+    PurgeRejectedReservedBit1Exists : 1;
 } PurgeRejectedByte10T;
 
 /*
  * Bitfield: Purge Rejected Byte 9
  */ 
 typedef struct {
-    unsigned char PurgeRejectedReservedBit8Exists : 1;
-    unsigned char PurgeRejectedReservedBit7Exists : 1;
-    unsigned char PurgeRejectedReservedBit6Exists : 1;
-    unsigned char PurgeRejectedReservedBit5Exists : 1;
-    unsigned char PurgeRejectedReservedBit4Exists : 1;
-    unsigned char PurgeRejectedReservedBit3Exists : 1;
-    unsigned char PurgeRejectedReservedBit2Exists : 1;
-    unsigned char PurgeRejectedReservedBit1Exists : 1;
+    uint8_t
+    PurgeRejectedReservedBit8Exists : 1,
+    PurgeRejectedReservedBit7Exists : 1,
+    PurgeRejectedReservedBit6Exists : 1,
+    PurgeRejectedReservedBit5Exists : 1,
+    PurgeRejectedReservedBit4Exists : 1,
+    PurgeRejectedReservedBit3Exists : 1,
+    PurgeRejectedReservedBit2Exists : 1,
+    PurgeRejectedReservedBit1Exists : 1;
 } PurgeRejectedByte9T;
 
 /*
  * Bitfield: Purge Rejected Byte 8
  */ 
 typedef struct {
-    unsigned char PurgeRejectedReservedBit8Exists : 1;
-    unsigned char PurgeRejectedReservedBit7Exists : 1;
-    unsigned char PurgeRejectedReservedBit6Exists : 1;
-    unsigned char PurgeRejectedReservedBit5Exists : 1;
-    unsigned char PurgeRejectedReservedBit4Exists : 1;
-    unsigned char PurgeRejectedReservedBit3Exists : 1;
-    unsigned char PurgeRejectedReservedBit2Exists : 1;
-    unsigned char PurgeRejectedReservedBit1Exists : 1;
+    uint8_t
+    PurgeRejectedReservedBit8Exists : 1,
+    PurgeRejectedReservedBit7Exists : 1,
+    PurgeRejectedReservedBit6Exists : 1,
+    PurgeRejectedReservedBit5Exists : 1,
+    PurgeRejectedReservedBit4Exists : 1,
+    PurgeRejectedReservedBit3Exists : 1,
+    PurgeRejectedReservedBit2Exists : 1,
+    PurgeRejectedReservedBit1Exists : 1;
 } PurgeRejectedByte8T;
 
 /*
  * Bitfield: Purge Rejected Byte 7
  */ 
 typedef struct {
-    unsigned char PurgeRejectedReservedBit8Exists : 1;
-    unsigned char PurgeRejectedReservedBit7Exists : 1;
-    unsigned char PurgeRejectedReservedBit6Exists : 1;
-    unsigned char PurgeRejectedReservedBit5Exists : 1;
-    unsigned char PurgeRejectedReservedBit4Exists : 1;
-    unsigned char PurgeRejectedReservedBit3Exists : 1;
-    unsigned char PurgeRejectedReservedBit2Exists : 1;
-    unsigned char PurgeRejectedReservedBit1Exists : 1;
+    uint8_t
+    PurgeRejectedReservedBit8Exists : 1,
+    PurgeRejectedReservedBit7Exists : 1,
+    PurgeRejectedReservedBit6Exists : 1,
+    PurgeRejectedReservedBit5Exists : 1,
+    PurgeRejectedReservedBit4Exists : 1,
+    PurgeRejectedReservedBit3Exists : 1,
+    PurgeRejectedReservedBit2Exists : 1,
+    PurgeRejectedReservedBit1Exists : 1;
 } PurgeRejectedByte7T;
 
 /*
  * Bitfield: Purge Rejected Byte 6
  */ 
 typedef struct {
-    unsigned char PurgeRejectedReservedBit8Exists : 1;
-    unsigned char PurgeRejectedReservedBit7Exists : 1;
-    unsigned char PurgeRejectedReservedBit6Exists : 1;
-    unsigned char PurgeRejectedReservedBit5Exists : 1;
-    unsigned char PurgeRejectedReservedBit4Exists : 1;
-    unsigned char PurgeRejectedReservedBit3Exists : 1;
-    unsigned char PurgeRejectedReservedBit2Exists : 1;
-    unsigned char PurgeRejectedReservedBit1Exists : 1;
+    uint8_t
+    PurgeRejectedReservedBit8Exists : 1,
+    PurgeRejectedReservedBit7Exists : 1,
+    PurgeRejectedReservedBit6Exists : 1,
+    PurgeRejectedReservedBit5Exists : 1,
+    PurgeRejectedReservedBit4Exists : 1,
+    PurgeRejectedReservedBit3Exists : 1,
+    PurgeRejectedReservedBit2Exists : 1,
+    PurgeRejectedReservedBit1Exists : 1;
 } PurgeRejectedByte6T;
 
 /*
  * Bitfield: Purge Rejected Byte 5
  */ 
 typedef struct {
-    unsigned char PurgeRejectedReservedBit8Exists : 1;
-    unsigned char PurgeRejectedReservedBit7Exists : 1;
-    unsigned char PurgeRejectedReservedBit6Exists : 1;
-    unsigned char PurgeRejectedReservedBit5Exists : 1;
-    unsigned char PurgeRejectedReservedBit4Exists : 1;
-    unsigned char PurgeRejectedReservedBit3Exists : 1;
-    unsigned char PurgeRejectedReservedBit2Exists : 1;
-    unsigned char PurgeRejectedReservedBit1Exists : 1;
+    uint8_t
+    PurgeRejectedReservedBit8Exists : 1,
+    PurgeRejectedReservedBit7Exists : 1,
+    PurgeRejectedReservedBit6Exists : 1,
+    PurgeRejectedReservedBit5Exists : 1,
+    PurgeRejectedReservedBit4Exists : 1,
+    PurgeRejectedReservedBit3Exists : 1,
+    PurgeRejectedReservedBit2Exists : 1,
+    PurgeRejectedReservedBit1Exists : 1;
 } PurgeRejectedByte5T;
 
 /*
  * Bitfield: Purge Rejected Byte 4
  */ 
 typedef struct {
-    unsigned char PurgeRejectedReservedBit8Exists : 1;
-    unsigned char PurgeRejectedReservedBit7Exists : 1;
-    unsigned char PurgeRejectedReservedBit6Exists : 1;
-    unsigned char PurgeRejectedReservedBit5Exists : 1;
-    unsigned char PurgeRejectedReservedBit4Exists : 1;
-    unsigned char PurgeRejectedReservedBit3Exists : 1;
-    unsigned char PurgeRejectedReservedBit2Exists : 1;
-    unsigned char PurgeRejectedReservedBit1Exists : 1;
+    uint8_t
+    PurgeRejectedReservedBit8Exists : 1,
+    PurgeRejectedReservedBit7Exists : 1,
+    PurgeRejectedReservedBit6Exists : 1,
+    PurgeRejectedReservedBit5Exists : 1,
+    PurgeRejectedReservedBit4Exists : 1,
+    PurgeRejectedReservedBit3Exists : 1,
+    PurgeRejectedReservedBit2Exists : 1,
+    PurgeRejectedReservedBit1Exists : 1;
 } PurgeRejectedByte4T;
 
 /*
  * Bitfield: Purge Rejected Byte 3
  */ 
 typedef struct {
-    unsigned char PurgeRejectedReservedBit8Exists : 1;
-    unsigned char PurgeRejectedReservedBit7Exists : 1;
-    unsigned char PurgeRejectedReservedBit6Exists : 1;
-    unsigned char PurgeRejectedReservedBit5Exists : 1;
-    unsigned char PurgeRejectedReservedBit4Exists : 1;
-    unsigned char PurgeRejectedReservedBit3Exists : 1;
-    unsigned char PurgeRejectedReservedBit2Exists : 1;
-    unsigned char PurgeRejectedReservedBit1Exists : 1;
+    uint8_t
+    PurgeRejectedReservedBit8Exists : 1,
+    PurgeRejectedReservedBit7Exists : 1,
+    PurgeRejectedReservedBit6Exists : 1,
+    PurgeRejectedReservedBit5Exists : 1,
+    PurgeRejectedReservedBit4Exists : 1,
+    PurgeRejectedReservedBit3Exists : 1,
+    PurgeRejectedReservedBit2Exists : 1,
+    PurgeRejectedReservedBit1Exists : 1;
 } PurgeRejectedByte3T;
 
 /*
  * Bitfield: Purge Rejected Byte 2
  */ 
 typedef struct {
-    unsigned char PurgeRejectedReservedBit8Exists : 1;
-    unsigned char PurgeRejectedReservedBit7Exists : 1;
-    unsigned char PurgeRejectedReservedBit6Exists : 1;
-    unsigned char PurgeRejectedReservedBit5Exists : 1;
-    unsigned char PurgeRejectedReservedBit4Exists : 1;
-    unsigned char PurgeRejectedReservedBit3Exists : 1;
-    unsigned char PurgeRejectedReservedBit2Exists : 1;
-    unsigned char PurgeRejectedReservedBit1Exists : 1;
+    uint8_t
+    PurgeRejectedReservedBit8Exists : 1,
+    PurgeRejectedReservedBit7Exists : 1,
+    PurgeRejectedReservedBit6Exists : 1,
+    PurgeRejectedReservedBit5Exists : 1,
+    PurgeRejectedReservedBit4Exists : 1,
+    PurgeRejectedReservedBit3Exists : 1,
+    PurgeRejectedReservedBit2Exists : 1,
+    PurgeRejectedReservedBit1Exists : 1;
 } PurgeRejectedByte2T;
 
 /*
  * Bitfield: Purge Rejected Byte 1
  */ 
 typedef struct {
-    unsigned char PurgeRejectedReservedBit8Exists : 1;
-    unsigned char PurgeRejectedReservedBit7Exists : 1;
-    unsigned char PurgeRejectedReservedBit6Exists : 1;
-    unsigned char PurgeRejectedReservedBit5Exists : 1;
-    unsigned char PurgeRejectedReservedBit4Exists : 1;
-    unsigned char PurgeRejectedReservedBit3Exists : 1;
-    unsigned char PurgeRejectedReservedBit2Exists : 1;
-    unsigned char PurgeRejectedReservedBit1Exists : 1;
+    uint8_t
+    PurgeRejectedReservedBit8Exists : 1,
+    PurgeRejectedReservedBit7Exists : 1,
+    PurgeRejectedReservedBit6Exists : 1,
+    PurgeRejectedReservedBit5Exists : 1,
+    PurgeRejectedReservedBit4Exists : 1,
+    PurgeRejectedReservedBit3Exists : 1,
+    PurgeRejectedReservedBit2Exists : 1,
+    PurgeRejectedReservedBit1Exists : 1;
 } PurgeRejectedByte1T;
 
 /*
  * Bitfield: Trade Cancel Or Correct Byte 17
  */ 
 typedef struct {
-    unsigned char TradeCancelOrCorrectReservedBit8Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit7Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit6Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit5Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit4Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit3Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit2Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit1Exists : 1;
+    uint8_t
+    TradeCancelOrCorrectReservedBit8Exists : 1,
+    TradeCancelOrCorrectReservedBit7Exists : 1,
+    TradeCancelOrCorrectReservedBit6Exists : 1,
+    TradeCancelOrCorrectReservedBit5Exists : 1,
+    TradeCancelOrCorrectReservedBit4Exists : 1,
+    TradeCancelOrCorrectReservedBit3Exists : 1,
+    TradeCancelOrCorrectReservedBit2Exists : 1,
+    TradeCancelOrCorrectReservedBit1Exists : 1;
 } TradeCancelOrCorrectByte17T;
 
 /*
  * Bitfield: Trade Cancel Or Correct Byte 16
  */ 
 typedef struct {
-    unsigned char TradeCancelOrCorrectReservedBit8Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit7Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit6Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit5Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit4Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit3Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit2Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit1Exists : 1;
+    uint8_t
+    TradeCancelOrCorrectReservedBit8Exists : 1,
+    TradeCancelOrCorrectReservedBit7Exists : 1,
+    TradeCancelOrCorrectReservedBit6Exists : 1,
+    TradeCancelOrCorrectReservedBit5Exists : 1,
+    TradeCancelOrCorrectReservedBit4Exists : 1,
+    TradeCancelOrCorrectReservedBit3Exists : 1,
+    TradeCancelOrCorrectReservedBit2Exists : 1,
+    TradeCancelOrCorrectReservedBit1Exists : 1;
 } TradeCancelOrCorrectByte16T;
 
 /*
  * Bitfield: Trade Cancel Or Correct Byte 15
  */ 
 typedef struct {
-    unsigned char TradeCancelOrCorrectReservedBit8Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit7Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit6Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit5Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit4Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit3Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit2Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit1Exists : 1;
+    uint8_t
+    TradeCancelOrCorrectReservedBit8Exists : 1,
+    TradeCancelOrCorrectReservedBit7Exists : 1,
+    TradeCancelOrCorrectReservedBit6Exists : 1,
+    TradeCancelOrCorrectReservedBit5Exists : 1,
+    TradeCancelOrCorrectReservedBit4Exists : 1,
+    TradeCancelOrCorrectReservedBit3Exists : 1,
+    TradeCancelOrCorrectReservedBit2Exists : 1,
+    TradeCancelOrCorrectReservedBit1Exists : 1;
 } TradeCancelOrCorrectByte15T;
 
 /*
  * Bitfield: Trade Cancel Or Correct Byte 14
  */ 
 typedef struct {
-    unsigned char TradeCancelOrCorrectReservedBit8Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit7Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit6Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit5Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit4Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit3Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit2Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit1Exists : 1;
+    uint8_t
+    TradeCancelOrCorrectReservedBit8Exists : 1,
+    TradeCancelOrCorrectReservedBit7Exists : 1,
+    TradeCancelOrCorrectReservedBit6Exists : 1,
+    TradeCancelOrCorrectReservedBit5Exists : 1,
+    TradeCancelOrCorrectReservedBit4Exists : 1,
+    TradeCancelOrCorrectReservedBit3Exists : 1,
+    TradeCancelOrCorrectReservedBit2Exists : 1,
+    TradeCancelOrCorrectReservedBit1Exists : 1;
 } TradeCancelOrCorrectByte14T;
 
 /*
  * Bitfield: Trade Cancel Or Correct Byte 13
  */ 
 typedef struct {
-    unsigned char TradeCancelOrCorrectReservedBit8Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit7Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit6Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit5Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit4Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit3Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit2Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit1Exists : 1;
+    uint8_t
+    TradeCancelOrCorrectReservedBit8Exists : 1,
+    TradeCancelOrCorrectReservedBit7Exists : 1,
+    TradeCancelOrCorrectReservedBit6Exists : 1,
+    TradeCancelOrCorrectReservedBit5Exists : 1,
+    TradeCancelOrCorrectReservedBit4Exists : 1,
+    TradeCancelOrCorrectReservedBit3Exists : 1,
+    TradeCancelOrCorrectReservedBit2Exists : 1,
+    TradeCancelOrCorrectReservedBit1Exists : 1;
 } TradeCancelOrCorrectByte13T;
 
 /*
  * Bitfield: Trade Cancel Or Correct Byte 12
  */ 
 typedef struct {
-    unsigned char TradeCancelOrCorrectReservedBit8Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit7Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit6Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit5Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit4Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit3Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit2Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit1Exists : 1;
+    uint8_t
+    TradeCancelOrCorrectReservedBit8Exists : 1,
+    TradeCancelOrCorrectReservedBit7Exists : 1,
+    TradeCancelOrCorrectReservedBit6Exists : 1,
+    TradeCancelOrCorrectReservedBit5Exists : 1,
+    TradeCancelOrCorrectReservedBit4Exists : 1,
+    TradeCancelOrCorrectReservedBit3Exists : 1,
+    TradeCancelOrCorrectReservedBit2Exists : 1,
+    TradeCancelOrCorrectReservedBit1Exists : 1;
 } TradeCancelOrCorrectByte12T;
 
 /*
  * Bitfield: Trade Cancel Or Correct Byte 11
  */ 
 typedef struct {
-    unsigned char TradeCancelOrCorrectReservedBit8Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit7Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit6Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit5Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit4Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit3Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit2Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit1Exists : 1;
+    uint8_t
+    TradeCancelOrCorrectReservedBit8Exists : 1,
+    TradeCancelOrCorrectReservedBit7Exists : 1,
+    TradeCancelOrCorrectReservedBit6Exists : 1,
+    TradeCancelOrCorrectReservedBit5Exists : 1,
+    TradeCancelOrCorrectReservedBit4Exists : 1,
+    TradeCancelOrCorrectReservedBit3Exists : 1,
+    TradeCancelOrCorrectReservedBit2Exists : 1,
+    TradeCancelOrCorrectReservedBit1Exists : 1;
 } TradeCancelOrCorrectByte11T;
 
 /*
  * Bitfield: Trade Cancel Or Correct Byte 10
  */ 
 typedef struct {
-    unsigned char TradeCancelOrCorrectReservedBit8Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit7Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit6Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit5Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit4Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit3Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit2Exists : 1;
-    unsigned char TradeCancelOrCorrectCrossIdExists : 1;
+    uint8_t
+    TradeCancelOrCorrectReservedBit8Exists : 1,
+    TradeCancelOrCorrectReservedBit7Exists : 1,
+    TradeCancelOrCorrectReservedBit6Exists : 1,
+    TradeCancelOrCorrectReservedBit5Exists : 1,
+    TradeCancelOrCorrectReservedBit4Exists : 1,
+    TradeCancelOrCorrectReservedBit3Exists : 1,
+    TradeCancelOrCorrectReservedBit2Exists : 1,
+    TradeCancelOrCorrectCrossIdExists : 1;
 } TradeCancelOrCorrectByte10T;
 
 /*
  * Bitfield: Trade Cancel Or Correct Byte 9
  */ 
 typedef struct {
-    unsigned char TradeCancelOrCorrectReservedBit8Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit7Exists : 1;
-    unsigned char TradeCancelOrCorrectCmtaNumberExists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit5Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit4Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit3Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit2Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit1Exists : 1;
+    uint8_t
+    TradeCancelOrCorrectReservedBit8Exists : 1,
+    TradeCancelOrCorrectReservedBit7Exists : 1,
+    TradeCancelOrCorrectCmtaNumberExists : 1,
+    TradeCancelOrCorrectReservedBit5Exists : 1,
+    TradeCancelOrCorrectReservedBit4Exists : 1,
+    TradeCancelOrCorrectReservedBit3Exists : 1,
+    TradeCancelOrCorrectReservedBit2Exists : 1,
+    TradeCancelOrCorrectReservedBit1Exists : 1;
 } TradeCancelOrCorrectByte9T;
 
 /*
  * Bitfield: Trade Cancel Or Correct Byte 8
  */ 
 typedef struct {
-    unsigned char TradeCancelOrCorrectReservedBit8Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit7Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit6Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit5Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit4Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit3Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit2Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit1Exists : 1;
+    uint8_t
+    TradeCancelOrCorrectReservedBit8Exists : 1,
+    TradeCancelOrCorrectReservedBit7Exists : 1,
+    TradeCancelOrCorrectReservedBit6Exists : 1,
+    TradeCancelOrCorrectReservedBit5Exists : 1,
+    TradeCancelOrCorrectReservedBit4Exists : 1,
+    TradeCancelOrCorrectReservedBit3Exists : 1,
+    TradeCancelOrCorrectReservedBit2Exists : 1,
+    TradeCancelOrCorrectReservedBit1Exists : 1;
 } TradeCancelOrCorrectByte8T;
 
 /*
  * Bitfield: Trade Cancel Or Correct Byte 7
  */ 
 typedef struct {
-    unsigned char TradeCancelOrCorrectReservedBit8Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit7Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit6Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit5Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit4Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit3Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit2Exists : 1;
-    unsigned char TradeCancelOrCorrectSubLiquidityIndicatorExists : 1;
+    uint8_t
+    TradeCancelOrCorrectReservedBit8Exists : 1,
+    TradeCancelOrCorrectReservedBit7Exists : 1,
+    TradeCancelOrCorrectReservedBit6Exists : 1,
+    TradeCancelOrCorrectReservedBit5Exists : 1,
+    TradeCancelOrCorrectReservedBit4Exists : 1,
+    TradeCancelOrCorrectReservedBit3Exists : 1,
+    TradeCancelOrCorrectReservedBit2Exists : 1,
+    TradeCancelOrCorrectSubLiquidityIndicatorExists : 1;
 } TradeCancelOrCorrectByte7T;
 
 /*
  * Bitfield: Trade Cancel Or Correct Byte 6
  */ 
 typedef struct {
-    unsigned char TradeCancelOrCorrectReservedBit8Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit7Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit6Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit5Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit4Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit3Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit2Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit1Exists : 1;
+    uint8_t
+    TradeCancelOrCorrectReservedBit8Exists : 1,
+    TradeCancelOrCorrectReservedBit7Exists : 1,
+    TradeCancelOrCorrectReservedBit6Exists : 1,
+    TradeCancelOrCorrectReservedBit5Exists : 1,
+    TradeCancelOrCorrectReservedBit4Exists : 1,
+    TradeCancelOrCorrectReservedBit3Exists : 1,
+    TradeCancelOrCorrectReservedBit2Exists : 1,
+    TradeCancelOrCorrectReservedBit1Exists : 1;
 } TradeCancelOrCorrectByte6T;
 
 /*
  * Bitfield: Trade Cancel Or Correct Byte 5
  */ 
 typedef struct {
-    unsigned char TradeCancelOrCorrectReservedBit8Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit7Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit6Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit5Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit4Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit3Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit2Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit1Exists : 1;
+    uint8_t
+    TradeCancelOrCorrectReservedBit8Exists : 1,
+    TradeCancelOrCorrectReservedBit7Exists : 1,
+    TradeCancelOrCorrectReservedBit6Exists : 1,
+    TradeCancelOrCorrectReservedBit5Exists : 1,
+    TradeCancelOrCorrectReservedBit4Exists : 1,
+    TradeCancelOrCorrectReservedBit3Exists : 1,
+    TradeCancelOrCorrectReservedBit2Exists : 1,
+    TradeCancelOrCorrectReservedBit1Exists : 1;
 } TradeCancelOrCorrectByte5T;
 
 /*
  * Bitfield: Trade Cancel Or Correct Byte 4
  */ 
 typedef struct {
-    unsigned char TradeCancelOrCorrectReservedBit8Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit7Exists : 1;
-    unsigned char TradeCancelOrCorrectCorrectedSizeExists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit5Exists : 1;
-    unsigned char TradeCancelOrCorrectOpenCloseExists : 1;
-    unsigned char TradeCancelOrCorrectPutOrCallExists : 1;
-    unsigned char TradeCancelOrCorrectStrikePriceExists : 1;
-    unsigned char TradeCancelOrCorrectMaturityDateExists : 1;
+    uint8_t
+    TradeCancelOrCorrectReservedBit8Exists : 1,
+    TradeCancelOrCorrectReservedBit7Exists : 1,
+    TradeCancelOrCorrectCorrectedSizeExists : 1,
+    TradeCancelOrCorrectReservedBit5Exists : 1,
+    TradeCancelOrCorrectOpenCloseExists : 1,
+    TradeCancelOrCorrectPutOrCallExists : 1,
+    TradeCancelOrCorrectStrikePriceExists : 1,
+    TradeCancelOrCorrectMaturityDateExists : 1;
 } TradeCancelOrCorrectByte4T;
 
 /*
  * Bitfield: Trade Cancel Or Correct Byte 3
  */ 
 typedef struct {
-    unsigned char TradeCancelOrCorrectReservedBit8Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit7Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit6Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit5Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit4Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit3Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit2Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit1Exists : 1;
+    uint8_t
+    TradeCancelOrCorrectReservedBit8Exists : 1,
+    TradeCancelOrCorrectReservedBit7Exists : 1,
+    TradeCancelOrCorrectReservedBit6Exists : 1,
+    TradeCancelOrCorrectReservedBit5Exists : 1,
+    TradeCancelOrCorrectReservedBit4Exists : 1,
+    TradeCancelOrCorrectReservedBit3Exists : 1,
+    TradeCancelOrCorrectReservedBit2Exists : 1,
+    TradeCancelOrCorrectReservedBit1Exists : 1;
 } TradeCancelOrCorrectByte3T;
 
 /*
  * Bitfield: Trade Cancel Or Correct Byte 2
  */ 
 typedef struct {
-    unsigned char TradeCancelOrCorrectReservedBit8Exists : 1;
-    unsigned char TradeCancelOrCorrectCapacityExists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit6Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit5Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit4Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit3Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit2Exists : 1;
-    unsigned char TradeCancelOrCorrectSymbolExists : 1;
+    uint8_t
+    TradeCancelOrCorrectReservedBit8Exists : 1,
+    TradeCancelOrCorrectCapacityExists : 1,
+    TradeCancelOrCorrectReservedBit6Exists : 1,
+    TradeCancelOrCorrectReservedBit5Exists : 1,
+    TradeCancelOrCorrectReservedBit4Exists : 1,
+    TradeCancelOrCorrectReservedBit3Exists : 1,
+    TradeCancelOrCorrectReservedBit2Exists : 1,
+    TradeCancelOrCorrectSymbolExists : 1;
 } TradeCancelOrCorrectByte2T;
 
 /*
  * Bitfield: Trade Cancel Or Correct Byte 1
  */ 
 typedef struct {
-    unsigned char TradeCancelOrCorrectReservedBit8Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit7Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit6Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit5Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit4Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit3Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit2Exists : 1;
-    unsigned char TradeCancelOrCorrectReservedBit1Exists : 1;
+    uint8_t
+    TradeCancelOrCorrectReservedBit8Exists : 1,
+    TradeCancelOrCorrectReservedBit7Exists : 1,
+    TradeCancelOrCorrectReservedBit6Exists : 1,
+    TradeCancelOrCorrectReservedBit5Exists : 1,
+    TradeCancelOrCorrectReservedBit4Exists : 1,
+    TradeCancelOrCorrectReservedBit3Exists : 1,
+    TradeCancelOrCorrectReservedBit2Exists : 1,
+    TradeCancelOrCorrectReservedBit1Exists : 1;
 } TradeCancelOrCorrectByte1T;
 
 /*
@@ -1004,238 +1038,255 @@ typedef struct {
  * Bitfield: Cancel Rejected Byte 17
  */ 
 typedef struct {
-    unsigned char CancelRejectedReservedBit8Exists : 1;
-    unsigned char CancelRejectedReservedBit7Exists : 1;
-    unsigned char CancelRejectedReservedBit6Exists : 1;
-    unsigned char CancelRejectedReservedBit5Exists : 1;
-    unsigned char CancelRejectedReservedBit4Exists : 1;
-    unsigned char CancelRejectedReservedBit3Exists : 1;
-    unsigned char CancelRejectedReservedBit2Exists : 1;
-    unsigned char CancelRejectedReservedBit1Exists : 1;
+    uint8_t
+    CancelRejectedReservedBit8Exists : 1,
+    CancelRejectedReservedBit7Exists : 1,
+    CancelRejectedReservedBit6Exists : 1,
+    CancelRejectedReservedBit5Exists : 1,
+    CancelRejectedReservedBit4Exists : 1,
+    CancelRejectedReservedBit3Exists : 1,
+    CancelRejectedReservedBit2Exists : 1,
+    CancelRejectedReservedBit1Exists : 1;
 } CancelRejectedByte17T;
 
 /*
  * Bitfield: Cancel Rejected Byte 16
  */ 
 typedef struct {
-    unsigned char CancelRejectedReservedBit8Exists : 1;
-    unsigned char CancelRejectedReservedBit7Exists : 1;
-    unsigned char CancelRejectedReservedBit6Exists : 1;
-    unsigned char CancelRejectedReservedBit5Exists : 1;
-    unsigned char CancelRejectedReservedBit4Exists : 1;
-    unsigned char CancelRejectedReservedBit3Exists : 1;
-    unsigned char CancelRejectedReservedBit2Exists : 1;
-    unsigned char CancelRejectedReservedBit1Exists : 1;
+    uint8_t
+    CancelRejectedReservedBit8Exists : 1,
+    CancelRejectedReservedBit7Exists : 1,
+    CancelRejectedReservedBit6Exists : 1,
+    CancelRejectedReservedBit5Exists : 1,
+    CancelRejectedReservedBit4Exists : 1,
+    CancelRejectedReservedBit3Exists : 1,
+    CancelRejectedReservedBit2Exists : 1,
+    CancelRejectedReservedBit1Exists : 1;
 } CancelRejectedByte16T;
 
 /*
  * Bitfield: Cancel Rejected Byte 15
  */ 
 typedef struct {
-    unsigned char CancelRejectedReservedBit8Exists : 1;
-    unsigned char CancelRejectedReservedBit7Exists : 1;
-    unsigned char CancelRejectedReservedBit6Exists : 1;
-    unsigned char CancelRejectedReservedBit5Exists : 1;
-    unsigned char CancelRejectedMassCancelIdExists : 1;
-    unsigned char CancelRejectedReservedBit3Exists : 1;
-    unsigned char CancelRejectedReservedBit2Exists : 1;
-    unsigned char CancelRejectedReservedBit1Exists : 1;
+    uint8_t
+    CancelRejectedReservedBit8Exists : 1,
+    CancelRejectedReservedBit7Exists : 1,
+    CancelRejectedReservedBit6Exists : 1,
+    CancelRejectedReservedBit5Exists : 1,
+    CancelRejectedMassCancelIdExists : 1,
+    CancelRejectedReservedBit3Exists : 1,
+    CancelRejectedReservedBit2Exists : 1,
+    CancelRejectedReservedBit1Exists : 1;
 } CancelRejectedByte15T;
 
 /*
  * Bitfield: Cancel Rejected Byte 14
  */ 
 typedef struct {
-    unsigned char CancelRejectedReservedBit8Exists : 1;
-    unsigned char CancelRejectedReservedBit7Exists : 1;
-    unsigned char CancelRejectedReservedBit6Exists : 1;
-    unsigned char CancelRejectedReservedBit5Exists : 1;
-    unsigned char CancelRejectedReservedBit4Exists : 1;
-    unsigned char CancelRejectedReservedBit3Exists : 1;
-    unsigned char CancelRejectedReservedBit2Exists : 1;
-    unsigned char CancelRejectedReservedBit1Exists : 1;
+    uint8_t
+    CancelRejectedReservedBit8Exists : 1,
+    CancelRejectedReservedBit7Exists : 1,
+    CancelRejectedReservedBit6Exists : 1,
+    CancelRejectedReservedBit5Exists : 1,
+    CancelRejectedReservedBit4Exists : 1,
+    CancelRejectedReservedBit3Exists : 1,
+    CancelRejectedReservedBit2Exists : 1,
+    CancelRejectedReservedBit1Exists : 1;
 } CancelRejectedByte14T;
 
 /*
  * Bitfield: Cancel Rejected Byte 13
  */ 
 typedef struct {
-    unsigned char CancelRejectedReservedBit8Exists : 1;
-    unsigned char CancelRejectedReservedBit7Exists : 1;
-    unsigned char CancelRejectedReservedBit6Exists : 1;
-    unsigned char CancelRejectedReservedBit5Exists : 1;
-    unsigned char CancelRejectedReservedBit4Exists : 1;
-    unsigned char CancelRejectedReservedBit3Exists : 1;
-    unsigned char CancelRejectedReservedBit2Exists : 1;
-    unsigned char CancelRejectedReservedBit1Exists : 1;
+    uint8_t
+    CancelRejectedReservedBit8Exists : 1,
+    CancelRejectedReservedBit7Exists : 1,
+    CancelRejectedReservedBit6Exists : 1,
+    CancelRejectedReservedBit5Exists : 1,
+    CancelRejectedReservedBit4Exists : 1,
+    CancelRejectedReservedBit3Exists : 1,
+    CancelRejectedReservedBit2Exists : 1,
+    CancelRejectedReservedBit1Exists : 1;
 } CancelRejectedByte13T;
 
 /*
  * Bitfield: Cancel Rejected Byte 12
  */ 
 typedef struct {
-    unsigned char CancelRejectedReservedBit8Exists : 1;
-    unsigned char CancelRejectedReservedBit7Exists : 1;
-    unsigned char CancelRejectedReservedBit6Exists : 1;
-    unsigned char CancelRejectedReservedBit5Exists : 1;
-    unsigned char CancelRejectedReservedBit4Exists : 1;
-    unsigned char CancelRejectedReservedBit3Exists : 1;
-    unsigned char CancelRejectedReservedBit2Exists : 1;
-    unsigned char CancelRejectedReservedBit1Exists : 1;
+    uint8_t
+    CancelRejectedReservedBit8Exists : 1,
+    CancelRejectedReservedBit7Exists : 1,
+    CancelRejectedReservedBit6Exists : 1,
+    CancelRejectedReservedBit5Exists : 1,
+    CancelRejectedReservedBit4Exists : 1,
+    CancelRejectedReservedBit3Exists : 1,
+    CancelRejectedReservedBit2Exists : 1,
+    CancelRejectedReservedBit1Exists : 1;
 } CancelRejectedByte12T;
 
 /*
  * Bitfield: Cancel Rejected Byte 11
  */ 
 typedef struct {
-    unsigned char CancelRejectedReservedBit8Exists : 1;
-    unsigned char CancelRejectedReservedBit7Exists : 1;
-    unsigned char CancelRejectedReservedBit6Exists : 1;
-    unsigned char CancelRejectedReservedBit5Exists : 1;
-    unsigned char CancelRejectedReservedBit4Exists : 1;
-    unsigned char CancelRejectedReservedBit3Exists : 1;
-    unsigned char CancelRejectedReservedBit2Exists : 1;
-    unsigned char CancelRejectedReservedBit1Exists : 1;
+    uint8_t
+    CancelRejectedReservedBit8Exists : 1,
+    CancelRejectedReservedBit7Exists : 1,
+    CancelRejectedReservedBit6Exists : 1,
+    CancelRejectedReservedBit5Exists : 1,
+    CancelRejectedReservedBit4Exists : 1,
+    CancelRejectedReservedBit3Exists : 1,
+    CancelRejectedReservedBit2Exists : 1,
+    CancelRejectedReservedBit1Exists : 1;
 } CancelRejectedByte11T;
 
 /*
  * Bitfield: Cancel Rejected Byte 10
  */ 
 typedef struct {
-    unsigned char CancelRejectedReservedBit8Exists : 1;
-    unsigned char CancelRejectedReservedBit7Exists : 1;
-    unsigned char CancelRejectedReservedBit6Exists : 1;
-    unsigned char CancelRejectedReservedBit5Exists : 1;
-    unsigned char CancelRejectedReservedBit4Exists : 1;
-    unsigned char CancelRejectedReservedBit3Exists : 1;
-    unsigned char CancelRejectedReservedBit2Exists : 1;
-    unsigned char CancelRejectedCrossIdExists : 1;
+    uint8_t
+    CancelRejectedReservedBit8Exists : 1,
+    CancelRejectedReservedBit7Exists : 1,
+    CancelRejectedReservedBit6Exists : 1,
+    CancelRejectedReservedBit5Exists : 1,
+    CancelRejectedReservedBit4Exists : 1,
+    CancelRejectedReservedBit3Exists : 1,
+    CancelRejectedReservedBit2Exists : 1,
+    CancelRejectedCrossIdExists : 1;
 } CancelRejectedByte10T;
 
 /*
  * Bitfield: Cancel Rejected Byte 9
  */ 
 typedef struct {
-    unsigned char CancelRejectedReservedBit8Exists : 1;
-    unsigned char CancelRejectedReservedBit7Exists : 1;
-    unsigned char CancelRejectedCmtaNumberExists : 1;
-    unsigned char CancelRejectedReservedBit5Exists : 1;
-    unsigned char CancelRejectedReservedBit4Exists : 1;
-    unsigned char CancelRejectedReservedBit3Exists : 1;
-    unsigned char CancelRejectedReservedBit2Exists : 1;
-    unsigned char CancelRejectedMarketFeeCodeExists : 1;
+    uint8_t
+    CancelRejectedReservedBit8Exists : 1,
+    CancelRejectedReservedBit7Exists : 1,
+    CancelRejectedCmtaNumberExists : 1,
+    CancelRejectedReservedBit5Exists : 1,
+    CancelRejectedReservedBit4Exists : 1,
+    CancelRejectedReservedBit3Exists : 1,
+    CancelRejectedReservedBit2Exists : 1,
+    CancelRejectedMarketFeeCodeExists : 1;
 } CancelRejectedByte9T;
 
 /*
  * Bitfield: Cancel Rejected Byte 8
  */ 
 typedef struct {
-    unsigned char CancelRejectedReservedBit8Exists : 1;
-    unsigned char CancelRejectedReservedBit7Exists : 1;
-    unsigned char CancelRejectedReservedBit6Exists : 1;
-    unsigned char CancelRejectedReservedBit5Exists : 1;
-    unsigned char CancelRejectedReservedBit4Exists : 1;
-    unsigned char CancelRejectedStopPxExists : 1;
-    unsigned char CancelRejectedEchoTextExists : 1;
-    unsigned char CancelRejectedReservedBit1Exists : 1;
+    uint8_t
+    CancelRejectedReservedBit8Exists : 1,
+    CancelRejectedReservedBit7Exists : 1,
+    CancelRejectedReservedBit6Exists : 1,
+    CancelRejectedReservedBit5Exists : 1,
+    CancelRejectedReservedBit4Exists : 1,
+    CancelRejectedStopPxExists : 1,
+    CancelRejectedEchoTextExists : 1,
+    CancelRejectedReservedBit1Exists : 1;
 } CancelRejectedByte8T;
 
 /*
  * Bitfield: Cancel Rejected Byte 7
  */ 
 typedef struct {
-    unsigned char CancelRejectedReservedBit8Exists : 1;
-    unsigned char CancelRejectedReservedBit7Exists : 1;
-    unsigned char CancelRejectedReservedBit6Exists : 1;
-    unsigned char CancelRejectedReservedBit5Exists : 1;
-    unsigned char CancelRejectedReservedBit4Exists : 1;
-    unsigned char CancelRejectedReservedBit3Exists : 1;
-    unsigned char CancelRejectedReservedBit2Exists : 1;
-    unsigned char CancelRejectedReservedBit1Exists : 1;
+    uint8_t
+    CancelRejectedReservedBit8Exists : 1,
+    CancelRejectedReservedBit7Exists : 1,
+    CancelRejectedReservedBit6Exists : 1,
+    CancelRejectedReservedBit5Exists : 1,
+    CancelRejectedReservedBit4Exists : 1,
+    CancelRejectedReservedBit3Exists : 1,
+    CancelRejectedReservedBit2Exists : 1,
+    CancelRejectedReservedBit1Exists : 1;
 } CancelRejectedByte7T;
 
 /*
  * Bitfield: Cancel Rejected Byte 6
  */ 
 typedef struct {
-    unsigned char CancelRejectedReservedBit8Exists : 1;
-    unsigned char CancelRejectedReservedBit7Exists : 1;
-    unsigned char CancelRejectedReservedBit6Exists : 1;
-    unsigned char CancelRejectedReservedBit5Exists : 1;
-    unsigned char CancelRejectedReservedBit4Exists : 1;
-    unsigned char CancelRejectedReservedBit3Exists : 1;
-    unsigned char CancelRejectedReservedBit2Exists : 1;
-    unsigned char CancelRejectedReservedBit1Exists : 1;
+    uint8_t
+    CancelRejectedReservedBit8Exists : 1,
+    CancelRejectedReservedBit7Exists : 1,
+    CancelRejectedReservedBit6Exists : 1,
+    CancelRejectedReservedBit5Exists : 1,
+    CancelRejectedReservedBit4Exists : 1,
+    CancelRejectedReservedBit3Exists : 1,
+    CancelRejectedReservedBit2Exists : 1,
+    CancelRejectedReservedBit1Exists : 1;
 } CancelRejectedByte6T;
 
 /*
  * Bitfield: Cancel Rejected Byte 5
  */ 
 typedef struct {
-    unsigned char CancelRejectedReservedBit8Exists : 1;
-    unsigned char CancelRejectedReservedBit7Exists : 1;
-    unsigned char CancelRejectedReservedBit6Exists : 1;
-    unsigned char CancelRejectedReservedBit5Exists : 1;
-    unsigned char CancelRejectedReservedBit4Exists : 1;
-    unsigned char CancelRejectedReservedBit3Exists : 1;
-    unsigned char CancelRejectedReservedBit2Exists : 1;
-    unsigned char CancelRejectedReservedBit1Exists : 1;
+    uint8_t
+    CancelRejectedReservedBit8Exists : 1,
+    CancelRejectedReservedBit7Exists : 1,
+    CancelRejectedReservedBit6Exists : 1,
+    CancelRejectedReservedBit5Exists : 1,
+    CancelRejectedReservedBit4Exists : 1,
+    CancelRejectedReservedBit3Exists : 1,
+    CancelRejectedReservedBit2Exists : 1,
+    CancelRejectedReservedBit1Exists : 1;
 } CancelRejectedByte5T;
 
 /*
  * Bitfield: Cancel Rejected Byte 4
  */ 
 typedef struct {
-    unsigned char CancelRejectedReservedBit8Exists : 1;
-    unsigned char CancelRejectedReservedBit7Exists : 1;
-    unsigned char CancelRejectedCorrectedSizeExists : 1;
-    unsigned char CancelRejectedReservedBit5Exists : 1;
-    unsigned char CancelRejectedOpenCloseExists : 1;
-    unsigned char CancelRejectedPutOrCallExists : 1;
-    unsigned char CancelRejectedStrikePriceExists : 1;
-    unsigned char CancelRejectedMaturityDateExists : 1;
+    uint8_t
+    CancelRejectedReservedBit8Exists : 1,
+    CancelRejectedReservedBit7Exists : 1,
+    CancelRejectedCorrectedSizeExists : 1,
+    CancelRejectedReservedBit5Exists : 1,
+    CancelRejectedOpenCloseExists : 1,
+    CancelRejectedPutOrCallExists : 1,
+    CancelRejectedStrikePriceExists : 1,
+    CancelRejectedMaturityDateExists : 1;
 } CancelRejectedByte4T;
 
 /*
  * Bitfield: Cancel Rejected Byte 3
  */ 
 typedef struct {
-    unsigned char CancelRejectedReservedBit8Exists : 1;
-    unsigned char CancelRejectedReservedBit7Exists : 1;
-    unsigned char CancelRejectedReservedBit6Exists : 1;
-    unsigned char CancelRejectedReservedBit5Exists : 1;
-    unsigned char CancelRejectedReservedBit4Exists : 1;
-    unsigned char CancelRejectedReservedBit3Exists : 1;
-    unsigned char CancelRejectedReservedBit2Exists : 1;
-    unsigned char CancelRejectedReservedBit1Exists : 1;
+    uint8_t
+    CancelRejectedReservedBit8Exists : 1,
+    CancelRejectedReservedBit7Exists : 1,
+    CancelRejectedReservedBit6Exists : 1,
+    CancelRejectedReservedBit5Exists : 1,
+    CancelRejectedReservedBit4Exists : 1,
+    CancelRejectedReservedBit3Exists : 1,
+    CancelRejectedReservedBit2Exists : 1,
+    CancelRejectedReservedBit1Exists : 1;
 } CancelRejectedByte3T;
 
 /*
  * Bitfield: Cancel Rejected Byte 2
  */ 
 typedef struct {
-    unsigned char CancelRejectedReservedBit8Exists : 1;
-    unsigned char CancelRejectedCapacityExists : 1;
-    unsigned char CancelRejectedReservedBit6Exists : 1;
-    unsigned char CancelRejectedReservedBit5Exists : 1;
-    unsigned char CancelRejectedReservedBit4Exists : 1;
-    unsigned char CancelRejectedReservedBit3Exists : 1;
-    unsigned char CancelRejectedReservedBit2Exists : 1;
-    unsigned char CancelRejectedSymbolExists : 1;
+    uint8_t
+    CancelRejectedReservedBit8Exists : 1,
+    CancelRejectedCapacityExists : 1,
+    CancelRejectedReservedBit6Exists : 1,
+    CancelRejectedReservedBit5Exists : 1,
+    CancelRejectedReservedBit4Exists : 1,
+    CancelRejectedReservedBit3Exists : 1,
+    CancelRejectedReservedBit2Exists : 1,
+    CancelRejectedSymbolExists : 1;
 } CancelRejectedByte2T;
 
 /*
  * Bitfield: Cancel Rejected Byte 1
  */ 
 typedef struct {
-    unsigned char CancelRejectedMaxRemovePctExists : 1;
-    unsigned char CancelRejectedMinQtyExists : 1;
-    unsigned char CancelRejectedTimeInForceExists : 1;
-    unsigned char CancelRejectedOrdTypeExists : 1;
-    unsigned char CancelRejectedExecInstExists : 1;
-    unsigned char CancelRejectedPriceExists : 1;
-    unsigned char CancelRejectedReservedBit2Exists : 1;
-    unsigned char CancelRejectedSideExists : 1;
+    uint8_t
+    CancelRejectedMaxRemovePctExists : 1,
+    CancelRejectedMinQtyExists : 1,
+    CancelRejectedTimeInForceExists : 1,
+    CancelRejectedOrdTypeExists : 1,
+    CancelRejectedExecInstExists : 1,
+    CancelRejectedPriceExists : 1,
+    CancelRejectedReservedBit2Exists : 1,
+    CancelRejectedSideExists : 1;
 } CancelRejectedByte1T;
 
 /*
@@ -1254,476 +1305,510 @@ typedef struct {
  * Bitfield: Order Cancelled Byte 17
  */ 
 typedef struct {
-    unsigned char OrderCancelledReservedBit8Exists : 1;
-    unsigned char OrderCancelledReservedBit7Exists : 1;
-    unsigned char OrderCancelledReservedBit6Exists : 1;
-    unsigned char OrderCancelledReservedBit5Exists : 1;
-    unsigned char OrderCancelledReservedBit4Exists : 1;
-    unsigned char OrderCancelledReservedBit3Exists : 1;
-    unsigned char OrderCancelledReservedBit2Exists : 1;
-    unsigned char OrderCancelledReservedBit1Exists : 1;
+    uint8_t
+    OrderCancelledReservedBit8Exists : 1,
+    OrderCancelledReservedBit7Exists : 1,
+    OrderCancelledReservedBit6Exists : 1,
+    OrderCancelledReservedBit5Exists : 1,
+    OrderCancelledReservedBit4Exists : 1,
+    OrderCancelledReservedBit3Exists : 1,
+    OrderCancelledReservedBit2Exists : 1,
+    OrderCancelledReservedBit1Exists : 1;
 } OrderCancelledByte17T;
 
 /*
  * Bitfield: Order Cancelled Byte 16
  */ 
 typedef struct {
-    unsigned char OrderCancelledReservedBit8Exists : 1;
-    unsigned char OrderCancelledReservedBit7Exists : 1;
-    unsigned char OrderCancelledReservedBit6Exists : 1;
-    unsigned char OrderCancelledReservedBit5Exists : 1;
-    unsigned char OrderCancelledReservedBit4Exists : 1;
-    unsigned char OrderCancelledReservedBit3Exists : 1;
-    unsigned char OrderCancelledReservedBit2Exists : 1;
-    unsigned char OrderCancelledReservedBit1Exists : 1;
+    uint8_t
+    OrderCancelledReservedBit8Exists : 1,
+    OrderCancelledReservedBit7Exists : 1,
+    OrderCancelledReservedBit6Exists : 1,
+    OrderCancelledReservedBit5Exists : 1,
+    OrderCancelledReservedBit4Exists : 1,
+    OrderCancelledReservedBit3Exists : 1,
+    OrderCancelledReservedBit2Exists : 1,
+    OrderCancelledReservedBit1Exists : 1;
 } OrderCancelledByte16T;
 
 /*
  * Bitfield: Order Cancelled Byte 15
  */ 
 typedef struct {
-    unsigned char OrderCancelledReservedBit8Exists : 1;
-    unsigned char OrderCancelledReservedBit7Exists : 1;
-    unsigned char OrderCancelledReservedBit6Exists : 1;
-    unsigned char OrderCancelledReservedBit5Exists : 1;
-    unsigned char OrderCancelledReservedBit4Exists : 1;
-    unsigned char OrderCancelledReservedBit3Exists : 1;
-    unsigned char OrderCancelledReservedBit2Exists : 1;
-    unsigned char OrderCancelledReservedBit1Exists : 1;
+    uint8_t
+    OrderCancelledReservedBit8Exists : 1,
+    OrderCancelledReservedBit7Exists : 1,
+    OrderCancelledReservedBit6Exists : 1,
+    OrderCancelledReservedBit5Exists : 1,
+    OrderCancelledReservedBit4Exists : 1,
+    OrderCancelledReservedBit3Exists : 1,
+    OrderCancelledReservedBit2Exists : 1,
+    OrderCancelledReservedBit1Exists : 1;
 } OrderCancelledByte15T;
 
 /*
  * Bitfield: Order Cancelled Byte 14
  */ 
 typedef struct {
-    unsigned char OrderCancelledReservedBit8Exists : 1;
-    unsigned char OrderCancelledReservedBit7Exists : 1;
-    unsigned char OrderCancelledReservedBit6Exists : 1;
-    unsigned char OrderCancelledReservedBit5Exists : 1;
-    unsigned char OrderCancelledReservedBit4Exists : 1;
-    unsigned char OrderCancelledReservedBit3Exists : 1;
-    unsigned char OrderCancelledReservedBit2Exists : 1;
-    unsigned char OrderCancelledReservedBit1Exists : 1;
+    uint8_t
+    OrderCancelledReservedBit8Exists : 1,
+    OrderCancelledReservedBit7Exists : 1,
+    OrderCancelledReservedBit6Exists : 1,
+    OrderCancelledReservedBit5Exists : 1,
+    OrderCancelledReservedBit4Exists : 1,
+    OrderCancelledReservedBit3Exists : 1,
+    OrderCancelledReservedBit2Exists : 1,
+    OrderCancelledReservedBit1Exists : 1;
 } OrderCancelledByte14T;
 
 /*
  * Bitfield: Order Cancelled Byte 13
  */ 
 typedef struct {
-    unsigned char OrderCancelledReservedBit8Exists : 1;
-    unsigned char OrderCancelledReservedBit7Exists : 1;
-    unsigned char OrderCancelledReservedBit6Exists : 1;
-    unsigned char OrderCancelledReservedBit5Exists : 1;
-    unsigned char OrderCancelledReservedBit4Exists : 1;
-    unsigned char OrderCancelledReservedBit3Exists : 1;
-    unsigned char OrderCancelledReservedBit2Exists : 1;
-    unsigned char OrderCancelledReservedBit1Exists : 1;
+    uint8_t
+    OrderCancelledReservedBit8Exists : 1,
+    OrderCancelledReservedBit7Exists : 1,
+    OrderCancelledReservedBit6Exists : 1,
+    OrderCancelledReservedBit5Exists : 1,
+    OrderCancelledReservedBit4Exists : 1,
+    OrderCancelledReservedBit3Exists : 1,
+    OrderCancelledReservedBit2Exists : 1,
+    OrderCancelledReservedBit1Exists : 1;
 } OrderCancelledByte13T;
 
 /*
  * Bitfield: Order Cancelled Byte 12
  */ 
 typedef struct {
-    unsigned char OrderCancelledReservedBit8Exists : 1;
-    unsigned char OrderCancelledReservedBit7Exists : 1;
-    unsigned char OrderCancelledReservedBit6Exists : 1;
-    unsigned char OrderCancelledReservedBit5Exists : 1;
-    unsigned char OrderCancelledReservedBit4Exists : 1;
-    unsigned char OrderCancelledReservedBit3Exists : 1;
-    unsigned char OrderCancelledReservedBit2Exists : 1;
-    unsigned char OrderCancelledReservedBit1Exists : 1;
+    uint8_t
+    OrderCancelledReservedBit8Exists : 1,
+    OrderCancelledReservedBit7Exists : 1,
+    OrderCancelledReservedBit6Exists : 1,
+    OrderCancelledReservedBit5Exists : 1,
+    OrderCancelledReservedBit4Exists : 1,
+    OrderCancelledReservedBit3Exists : 1,
+    OrderCancelledReservedBit2Exists : 1,
+    OrderCancelledReservedBit1Exists : 1;
 } OrderCancelledByte12T;
 
 /*
  * Bitfield: Order Cancelled Byte 11
  */ 
 typedef struct {
-    unsigned char OrderCancelledReservedBit8Exists : 1;
-    unsigned char OrderCancelledReservedBit7Exists : 1;
-    unsigned char OrderCancelledReservedBit6Exists : 1;
-    unsigned char OrderCancelledReservedBit5Exists : 1;
-    unsigned char OrderCancelledReservedBit4Exists : 1;
-    unsigned char OrderCancelledReservedBit3Exists : 1;
-    unsigned char OrderCancelledReservedBit2Exists : 1;
-    unsigned char OrderCancelledReservedBit1Exists : 1;
+    uint8_t
+    OrderCancelledReservedBit8Exists : 1,
+    OrderCancelledReservedBit7Exists : 1,
+    OrderCancelledReservedBit6Exists : 1,
+    OrderCancelledReservedBit5Exists : 1,
+    OrderCancelledReservedBit4Exists : 1,
+    OrderCancelledReservedBit3Exists : 1,
+    OrderCancelledReservedBit2Exists : 1,
+    OrderCancelledReservedBit1Exists : 1;
 } OrderCancelledByte11T;
 
 /*
  * Bitfield: Order Cancelled Byte 10
  */ 
 typedef struct {
-    unsigned char OrderCancelledReservedBit8Exists : 1;
-    unsigned char OrderCancelledReservedBit7Exists : 1;
-    unsigned char OrderCancelledReservedBit6Exists : 1;
-    unsigned char OrderCancelledReservedBit5Exists : 1;
-    unsigned char OrderCancelledReservedBit4Exists : 1;
-    unsigned char OrderCancelledReservedBit3Exists : 1;
-    unsigned char OrderCancelledReservedBit2Exists : 1;
-    unsigned char OrderCancelledCrossIdExists : 1;
+    uint8_t
+    OrderCancelledReservedBit8Exists : 1,
+    OrderCancelledReservedBit7Exists : 1,
+    OrderCancelledReservedBit6Exists : 1,
+    OrderCancelledReservedBit5Exists : 1,
+    OrderCancelledReservedBit4Exists : 1,
+    OrderCancelledReservedBit3Exists : 1,
+    OrderCancelledReservedBit2Exists : 1,
+    OrderCancelledCrossIdExists : 1;
 } OrderCancelledByte10T;
 
 /*
  * Bitfield: Order Cancelled Byte 9
  */ 
 typedef struct {
-    unsigned char OrderCancelledReservedBit8Exists : 1;
-    unsigned char OrderCancelledReservedBit7Exists : 1;
-    unsigned char OrderCancelledCmtaNumberExists : 1;
-    unsigned char OrderCancelledReservedBit5Exists : 1;
-    unsigned char OrderCancelledReservedBit4Exists : 1;
-    unsigned char OrderCancelledReservedBit3Exists : 1;
-    unsigned char OrderCancelledReservedBit2Exists : 1;
-    unsigned char OrderCancelledMarketFeeCodeExists : 1;
+    uint8_t
+    OrderCancelledReservedBit8Exists : 1,
+    OrderCancelledReservedBit7Exists : 1,
+    OrderCancelledCmtaNumberExists : 1,
+    OrderCancelledReservedBit5Exists : 1,
+    OrderCancelledReservedBit4Exists : 1,
+    OrderCancelledReservedBit3Exists : 1,
+    OrderCancelledReservedBit2Exists : 1,
+    OrderCancelledMarketFeeCodeExists : 1;
 } OrderCancelledByte9T;
 
 /*
  * Bitfield: Order Cancelled Byte 8
  */ 
 typedef struct {
-    unsigned char OrderCancelledReservedBit8Exists : 1;
-    unsigned char OrderCancelledExDestinationExists : 1;
-    unsigned char OrderCancelledRouteDeliveryMethodExists : 1;
-    unsigned char OrderCancelledRouteStrategyExists : 1;
-    unsigned char OrderCancelledRoutingInstExists : 1;
-    unsigned char OrderCancelledStopPxExists : 1;
-    unsigned char OrderCancelledEchoTextExists : 1;
-    unsigned char OrderCancelledReservedBit1Exists : 1;
+    uint8_t
+    OrderCancelledReservedBit8Exists : 1,
+    OrderCancelledExDestinationExists : 1,
+    OrderCancelledRouteDeliveryMethodExists : 1,
+    OrderCancelledRouteStrategyExists : 1,
+    OrderCancelledRoutingInstExists : 1,
+    OrderCancelledStopPxExists : 1,
+    OrderCancelledEchoTextExists : 1,
+    OrderCancelledReservedBit1Exists : 1;
 } OrderCancelledByte8T;
 
 /*
  * Bitfield: Order Cancelled Byte 7
  */ 
 typedef struct {
-    unsigned char OrderCancelledReservedBit8Exists : 1;
-    unsigned char OrderCancelledReservedBit7Exists : 1;
-    unsigned char OrderCancelledReservedBit6Exists : 1;
-    unsigned char OrderCancelledReservedBit5Exists : 1;
-    unsigned char OrderCancelledReservedBit4Exists : 1;
-    unsigned char OrderCancelledReservedBit3Exists : 1;
-    unsigned char OrderCancelledReservedBit2Exists : 1;
-    unsigned char OrderCancelledReservedBit1Exists : 1;
+    uint8_t
+    OrderCancelledReservedBit8Exists : 1,
+    OrderCancelledReservedBit7Exists : 1,
+    OrderCancelledReservedBit6Exists : 1,
+    OrderCancelledReservedBit5Exists : 1,
+    OrderCancelledReservedBit4Exists : 1,
+    OrderCancelledReservedBit3Exists : 1,
+    OrderCancelledReservedBit2Exists : 1,
+    OrderCancelledReservedBit1Exists : 1;
 } OrderCancelledByte7T;
 
 /*
  * Bitfield: Order Cancelled Byte 6
  */ 
 typedef struct {
-    unsigned char OrderCancelledReservedBit8Exists : 1;
-    unsigned char OrderCancelledReservedBit7Exists : 1;
-    unsigned char OrderCancelledReservedBit6Exists : 1;
-    unsigned char OrderCancelledReservedBit5Exists : 1;
-    unsigned char OrderCancelledAttributedQuoteExists : 1;
-    unsigned char OrderCancelledContraCapacityExists : 1;
-    unsigned char OrderCancelledReservedBit2Exists : 1;
-    unsigned char OrderCancelledSecondaryOrderIdExists : 1;
+    uint8_t
+    OrderCancelledReservedBit8Exists : 1,
+    OrderCancelledReservedBit7Exists : 1,
+    OrderCancelledReservedBit6Exists : 1,
+    OrderCancelledReservedBit5Exists : 1,
+    OrderCancelledAttributedQuoteExists : 1,
+    OrderCancelledContraCapacityExists : 1,
+    OrderCancelledReservedBit2Exists : 1,
+    OrderCancelledSecondaryOrderIdExists : 1;
 } OrderCancelledByte6T;
 
 /*
  * Bitfield: Order Cancelled Byte 5
  */ 
 typedef struct {
-    unsigned char OrderCancelledExpireTimeExists : 1;
-    unsigned char OrderCancelledBaseLiquidityIndicatorExists : 1;
-    unsigned char OrderCancelledWorkingPriceExists : 1;
-    unsigned char OrderCancelledDisplayPriceExists : 1;
-    unsigned char OrderCancelledLastPxExists : 1;
-    unsigned char OrderCancelledLastSharesExists : 1;
-    unsigned char OrderCancelledLeavesQtyExists : 1;
-    unsigned char OrderCancelledOrigClOrdIdExists : 1;
+    uint8_t
+    OrderCancelledExpireTimeExists : 1,
+    OrderCancelledBaseLiquidityIndicatorExists : 1,
+    OrderCancelledWorkingPriceExists : 1,
+    OrderCancelledDisplayPriceExists : 1,
+    OrderCancelledLastPxExists : 1,
+    OrderCancelledLastSharesExists : 1,
+    OrderCancelledLeavesQtyExists : 1,
+    OrderCancelledOrigClOrdIdExists : 1;
 } OrderCancelledByte5T;
 
 /*
  * Bitfield: Order Cancelled Byte 4
  */ 
 typedef struct {
-    unsigned char OrderCancelledReservedBit8Exists : 1;
-    unsigned char OrderCancelledReservedBit7Exists : 1;
-    unsigned char OrderCancelledCorrectedSizeExists : 1;
-    unsigned char OrderCancelledReservedBit5Exists : 1;
-    unsigned char OrderCancelledOpenCloseExists : 1;
-    unsigned char OrderCancelledPutOrCallExists : 1;
-    unsigned char OrderCancelledStrikePriceExists : 1;
-    unsigned char OrderCancelledMaturityDateExists : 1;
+    uint8_t
+    OrderCancelledReservedBit8Exists : 1,
+    OrderCancelledReservedBit7Exists : 1,
+    OrderCancelledCorrectedSizeExists : 1,
+    OrderCancelledReservedBit5Exists : 1,
+    OrderCancelledOpenCloseExists : 1,
+    OrderCancelledPutOrCallExists : 1,
+    OrderCancelledStrikePriceExists : 1,
+    OrderCancelledMaturityDateExists : 1;
 } OrderCancelledByte4T;
 
 /*
  * Bitfield: Order Cancelled Byte 3
  */ 
 typedef struct {
-    unsigned char OrderCancelledPreventMatchExists : 1;
-    unsigned char OrderCancelledOrderQtyExists : 1;
-    unsigned char OrderCancelledReservedBit6Exists : 1;
-    unsigned char OrderCancelledMaxFloorExists : 1;
-    unsigned char OrderCancelledDisplayIndicatorExists : 1;
-    unsigned char OrderCancelledClearingAccountExists : 1;
-    unsigned char OrderCancelledClearingFirmExists : 1;
-    unsigned char OrderCancelledAccountExists : 1;
+    uint8_t
+    OrderCancelledPreventMatchExists : 1,
+    OrderCancelledOrderQtyExists : 1,
+    OrderCancelledReservedBit6Exists : 1,
+    OrderCancelledMaxFloorExists : 1,
+    OrderCancelledDisplayIndicatorExists : 1,
+    OrderCancelledClearingAccountExists : 1,
+    OrderCancelledClearingFirmExists : 1,
+    OrderCancelledAccountExists : 1;
 } OrderCancelledByte3T;
 
 /*
  * Bitfield: Order Cancelled Byte 2
  */ 
 typedef struct {
-    unsigned char OrderCancelledReservedBit8Exists : 1;
-    unsigned char OrderCancelledCapacityExists : 1;
-    unsigned char OrderCancelledReservedBit6Exists : 1;
-    unsigned char OrderCancelledReservedBit5Exists : 1;
-    unsigned char OrderCancelledReservedBit4Exists : 1;
-    unsigned char OrderCancelledReservedBit3Exists : 1;
-    unsigned char OrderCancelledReservedBit2Exists : 1;
-    unsigned char OrderCancelledSymbolExists : 1;
+    uint8_t
+    OrderCancelledReservedBit8Exists : 1,
+    OrderCancelledCapacityExists : 1,
+    OrderCancelledReservedBit6Exists : 1,
+    OrderCancelledReservedBit5Exists : 1,
+    OrderCancelledReservedBit4Exists : 1,
+    OrderCancelledReservedBit3Exists : 1,
+    OrderCancelledReservedBit2Exists : 1,
+    OrderCancelledSymbolExists : 1;
 } OrderCancelledByte2T;
 
 /*
  * Bitfield: Order Cancelled Byte 1
  */ 
 typedef struct {
-    unsigned char OrderCancelledMaxRemovePctExists : 1;
-    unsigned char OrderCancelledMinQtyExists : 1;
-    unsigned char OrderCancelledTimeInForceExists : 1;
-    unsigned char OrderCancelledOrdTypeExists : 1;
-    unsigned char OrderCancelledExecInstExists : 1;
-    unsigned char OrderCancelledPriceExists : 1;
-    unsigned char OrderCancelledReservedBit2Exists : 1;
-    unsigned char OrderCancelledSideExists : 1;
+    uint8_t
+    OrderCancelledMaxRemovePctExists : 1,
+    OrderCancelledMinQtyExists : 1,
+    OrderCancelledTimeInForceExists : 1,
+    OrderCancelledOrdTypeExists : 1,
+    OrderCancelledExecInstExists : 1,
+    OrderCancelledPriceExists : 1,
+    OrderCancelledReservedBit2Exists : 1,
+    OrderCancelledSideExists : 1;
 } OrderCancelledByte1T;
 
 /*
  * Bitfield: User Modify Rejected Byte 17
  */ 
 typedef struct {
-    unsigned char UserModifyRejectedReservedBit8Exists : 1;
-    unsigned char UserModifyRejectedReservedBit7Exists : 1;
-    unsigned char UserModifyRejectedReservedBit6Exists : 1;
-    unsigned char UserModifyRejectedReservedBit5Exists : 1;
-    unsigned char UserModifyRejectedReservedBit4Exists : 1;
-    unsigned char UserModifyRejectedReservedBit3Exists : 1;
-    unsigned char UserModifyRejectedReservedBit2Exists : 1;
-    unsigned char UserModifyRejectedReservedBit1Exists : 1;
+    uint8_t
+    UserModifyRejectedReservedBit8Exists : 1,
+    UserModifyRejectedReservedBit7Exists : 1,
+    UserModifyRejectedReservedBit6Exists : 1,
+    UserModifyRejectedReservedBit5Exists : 1,
+    UserModifyRejectedReservedBit4Exists : 1,
+    UserModifyRejectedReservedBit3Exists : 1,
+    UserModifyRejectedReservedBit2Exists : 1,
+    UserModifyRejectedReservedBit1Exists : 1;
 } UserModifyRejectedByte17T;
 
 /*
  * Bitfield: User Modify Rejected Byte 16
  */ 
 typedef struct {
-    unsigned char UserModifyRejectedReservedBit8Exists : 1;
-    unsigned char UserModifyRejectedReservedBit7Exists : 1;
-    unsigned char UserModifyRejectedReservedBit6Exists : 1;
-    unsigned char UserModifyRejectedReservedBit5Exists : 1;
-    unsigned char UserModifyRejectedReservedBit4Exists : 1;
-    unsigned char UserModifyRejectedReservedBit3Exists : 1;
-    unsigned char UserModifyRejectedReservedBit2Exists : 1;
-    unsigned char UserModifyRejectedReservedBit1Exists : 1;
+    uint8_t
+    UserModifyRejectedReservedBit8Exists : 1,
+    UserModifyRejectedReservedBit7Exists : 1,
+    UserModifyRejectedReservedBit6Exists : 1,
+    UserModifyRejectedReservedBit5Exists : 1,
+    UserModifyRejectedReservedBit4Exists : 1,
+    UserModifyRejectedReservedBit3Exists : 1,
+    UserModifyRejectedReservedBit2Exists : 1,
+    UserModifyRejectedReservedBit1Exists : 1;
 } UserModifyRejectedByte16T;
 
 /*
  * Bitfield: User Modify Rejected Byte 15
  */ 
 typedef struct {
-    unsigned char UserModifyRejectedReservedBit8Exists : 1;
-    unsigned char UserModifyRejectedReservedBit7Exists : 1;
-    unsigned char UserModifyRejectedReservedBit6Exists : 1;
-    unsigned char UserModifyRejectedReservedBit5Exists : 1;
-    unsigned char UserModifyRejectedReservedBit4Exists : 1;
-    unsigned char UserModifyRejectedReservedBit3Exists : 1;
-    unsigned char UserModifyRejectedReservedBit2Exists : 1;
-    unsigned char UserModifyRejectedReservedBit1Exists : 1;
+    uint8_t
+    UserModifyRejectedReservedBit8Exists : 1,
+    UserModifyRejectedReservedBit7Exists : 1,
+    UserModifyRejectedReservedBit6Exists : 1,
+    UserModifyRejectedReservedBit5Exists : 1,
+    UserModifyRejectedReservedBit4Exists : 1,
+    UserModifyRejectedReservedBit3Exists : 1,
+    UserModifyRejectedReservedBit2Exists : 1,
+    UserModifyRejectedReservedBit1Exists : 1;
 } UserModifyRejectedByte15T;
 
 /*
  * Bitfield: User Modify Rejected Byte 14
  */ 
 typedef struct {
-    unsigned char UserModifyRejectedReservedBit8Exists : 1;
-    unsigned char UserModifyRejectedReservedBit7Exists : 1;
-    unsigned char UserModifyRejectedReservedBit6Exists : 1;
-    unsigned char UserModifyRejectedReservedBit5Exists : 1;
-    unsigned char UserModifyRejectedReservedBit4Exists : 1;
-    unsigned char UserModifyRejectedReservedBit3Exists : 1;
-    unsigned char UserModifyRejectedReservedBit2Exists : 1;
-    unsigned char UserModifyRejectedReservedBit1Exists : 1;
+    uint8_t
+    UserModifyRejectedReservedBit8Exists : 1,
+    UserModifyRejectedReservedBit7Exists : 1,
+    UserModifyRejectedReservedBit6Exists : 1,
+    UserModifyRejectedReservedBit5Exists : 1,
+    UserModifyRejectedReservedBit4Exists : 1,
+    UserModifyRejectedReservedBit3Exists : 1,
+    UserModifyRejectedReservedBit2Exists : 1,
+    UserModifyRejectedReservedBit1Exists : 1;
 } UserModifyRejectedByte14T;
 
 /*
  * Bitfield: User Modify Rejected Byte 13
  */ 
 typedef struct {
-    unsigned char UserModifyRejectedReservedBit8Exists : 1;
-    unsigned char UserModifyRejectedReservedBit7Exists : 1;
-    unsigned char UserModifyRejectedReservedBit6Exists : 1;
-    unsigned char UserModifyRejectedReservedBit5Exists : 1;
-    unsigned char UserModifyRejectedReservedBit4Exists : 1;
-    unsigned char UserModifyRejectedReservedBit3Exists : 1;
-    unsigned char UserModifyRejectedReservedBit2Exists : 1;
-    unsigned char UserModifyRejectedReservedBit1Exists : 1;
+    uint8_t
+    UserModifyRejectedReservedBit8Exists : 1,
+    UserModifyRejectedReservedBit7Exists : 1,
+    UserModifyRejectedReservedBit6Exists : 1,
+    UserModifyRejectedReservedBit5Exists : 1,
+    UserModifyRejectedReservedBit4Exists : 1,
+    UserModifyRejectedReservedBit3Exists : 1,
+    UserModifyRejectedReservedBit2Exists : 1,
+    UserModifyRejectedReservedBit1Exists : 1;
 } UserModifyRejectedByte13T;
 
 /*
  * Bitfield: User Modify Rejected Byte 12
  */ 
 typedef struct {
-    unsigned char UserModifyRejectedReservedBit8Exists : 1;
-    unsigned char UserModifyRejectedReservedBit7Exists : 1;
-    unsigned char UserModifyRejectedReservedBit6Exists : 1;
-    unsigned char UserModifyRejectedReservedBit5Exists : 1;
-    unsigned char UserModifyRejectedReservedBit4Exists : 1;
-    unsigned char UserModifyRejectedReservedBit3Exists : 1;
-    unsigned char UserModifyRejectedReservedBit2Exists : 1;
-    unsigned char UserModifyRejectedReservedBit1Exists : 1;
+    uint8_t
+    UserModifyRejectedReservedBit8Exists : 1,
+    UserModifyRejectedReservedBit7Exists : 1,
+    UserModifyRejectedReservedBit6Exists : 1,
+    UserModifyRejectedReservedBit5Exists : 1,
+    UserModifyRejectedReservedBit4Exists : 1,
+    UserModifyRejectedReservedBit3Exists : 1,
+    UserModifyRejectedReservedBit2Exists : 1,
+    UserModifyRejectedReservedBit1Exists : 1;
 } UserModifyRejectedByte12T;
 
 /*
  * Bitfield: User Modify Rejected Byte 11
  */ 
 typedef struct {
-    unsigned char UserModifyRejectedReservedBit8Exists : 1;
-    unsigned char UserModifyRejectedReservedBit7Exists : 1;
-    unsigned char UserModifyRejectedReservedBit6Exists : 1;
-    unsigned char UserModifyRejectedReservedBit5Exists : 1;
-    unsigned char UserModifyRejectedReservedBit4Exists : 1;
-    unsigned char UserModifyRejectedReservedBit3Exists : 1;
-    unsigned char UserModifyRejectedReservedBit2Exists : 1;
-    unsigned char UserModifyRejectedReservedBit1Exists : 1;
+    uint8_t
+    UserModifyRejectedReservedBit8Exists : 1,
+    UserModifyRejectedReservedBit7Exists : 1,
+    UserModifyRejectedReservedBit6Exists : 1,
+    UserModifyRejectedReservedBit5Exists : 1,
+    UserModifyRejectedReservedBit4Exists : 1,
+    UserModifyRejectedReservedBit3Exists : 1,
+    UserModifyRejectedReservedBit2Exists : 1,
+    UserModifyRejectedReservedBit1Exists : 1;
 } UserModifyRejectedByte11T;
 
 /*
  * Bitfield: User Modify Rejected Byte 10
  */ 
 typedef struct {
-    unsigned char UserModifyRejectedReservedBit8Exists : 1;
-    unsigned char UserModifyRejectedReservedBit7Exists : 1;
-    unsigned char UserModifyRejectedReservedBit6Exists : 1;
-    unsigned char UserModifyRejectedReservedBit5Exists : 1;
-    unsigned char UserModifyRejectedReservedBit4Exists : 1;
-    unsigned char UserModifyRejectedReservedBit3Exists : 1;
-    unsigned char UserModifyRejectedReservedBit2Exists : 1;
-    unsigned char UserModifyRejectedCrossIdExists : 1;
+    uint8_t
+    UserModifyRejectedReservedBit8Exists : 1,
+    UserModifyRejectedReservedBit7Exists : 1,
+    UserModifyRejectedReservedBit6Exists : 1,
+    UserModifyRejectedReservedBit5Exists : 1,
+    UserModifyRejectedReservedBit4Exists : 1,
+    UserModifyRejectedReservedBit3Exists : 1,
+    UserModifyRejectedReservedBit2Exists : 1,
+    UserModifyRejectedCrossIdExists : 1;
 } UserModifyRejectedByte10T;
 
 /*
  * Bitfield: User Modify Rejected Byte 9
  */ 
 typedef struct {
-    unsigned char UserModifyRejectedReservedBit8Exists : 1;
-    unsigned char UserModifyRejectedReservedBit7Exists : 1;
-    unsigned char UserModifyRejectedReservedBit6Exists : 1;
-    unsigned char UserModifyRejectedReservedBit5Exists : 1;
-    unsigned char UserModifyRejectedReservedBit4Exists : 1;
-    unsigned char UserModifyRejectedReservedBit3Exists : 1;
-    unsigned char UserModifyRejectedReservedBit2Exists : 1;
-    unsigned char UserModifyRejectedReservedBit1Exists : 1;
+    uint8_t
+    UserModifyRejectedReservedBit8Exists : 1,
+    UserModifyRejectedReservedBit7Exists : 1,
+    UserModifyRejectedReservedBit6Exists : 1,
+    UserModifyRejectedReservedBit5Exists : 1,
+    UserModifyRejectedReservedBit4Exists : 1,
+    UserModifyRejectedReservedBit3Exists : 1,
+    UserModifyRejectedReservedBit2Exists : 1,
+    UserModifyRejectedReservedBit1Exists : 1;
 } UserModifyRejectedByte9T;
 
 /*
  * Bitfield: User Modify Rejected Byte 8
  */ 
 typedef struct {
-    unsigned char UserModifyRejectedReservedBit8Exists : 1;
-    unsigned char UserModifyRejectedReservedBit7Exists : 1;
-    unsigned char UserModifyRejectedReservedBit6Exists : 1;
-    unsigned char UserModifyRejectedReservedBit5Exists : 1;
-    unsigned char UserModifyRejectedReservedBit4Exists : 1;
-    unsigned char UserModifyRejectedReservedBit3Exists : 1;
-    unsigned char UserModifyRejectedReservedBit2Exists : 1;
-    unsigned char UserModifyRejectedReservedBit1Exists : 1;
+    uint8_t
+    UserModifyRejectedReservedBit8Exists : 1,
+    UserModifyRejectedReservedBit7Exists : 1,
+    UserModifyRejectedReservedBit6Exists : 1,
+    UserModifyRejectedReservedBit5Exists : 1,
+    UserModifyRejectedReservedBit4Exists : 1,
+    UserModifyRejectedReservedBit3Exists : 1,
+    UserModifyRejectedReservedBit2Exists : 1,
+    UserModifyRejectedReservedBit1Exists : 1;
 } UserModifyRejectedByte8T;
 
 /*
  * Bitfield: User Modify Rejected Byte 7
  */ 
 typedef struct {
-    unsigned char UserModifyRejectedReservedBit8Exists : 1;
-    unsigned char UserModifyRejectedReservedBit7Exists : 1;
-    unsigned char UserModifyRejectedReservedBit6Exists : 1;
-    unsigned char UserModifyRejectedReservedBit5Exists : 1;
-    unsigned char UserModifyRejectedReservedBit4Exists : 1;
-    unsigned char UserModifyRejectedReservedBit3Exists : 1;
-    unsigned char UserModifyRejectedReservedBit2Exists : 1;
-    unsigned char UserModifyRejectedReservedBit1Exists : 1;
+    uint8_t
+    UserModifyRejectedReservedBit8Exists : 1,
+    UserModifyRejectedReservedBit7Exists : 1,
+    UserModifyRejectedReservedBit6Exists : 1,
+    UserModifyRejectedReservedBit5Exists : 1,
+    UserModifyRejectedReservedBit4Exists : 1,
+    UserModifyRejectedReservedBit3Exists : 1,
+    UserModifyRejectedReservedBit2Exists : 1,
+    UserModifyRejectedReservedBit1Exists : 1;
 } UserModifyRejectedByte7T;
 
 /*
  * Bitfield: User Modify Rejected Byte 6
  */ 
 typedef struct {
-    unsigned char UserModifyRejectedReservedBit8Exists : 1;
-    unsigned char UserModifyRejectedReservedBit7Exists : 1;
-    unsigned char UserModifyRejectedReservedBit6Exists : 1;
-    unsigned char UserModifyRejectedReservedBit5Exists : 1;
-    unsigned char UserModifyRejectedReservedBit4Exists : 1;
-    unsigned char UserModifyRejectedReservedBit3Exists : 1;
-    unsigned char UserModifyRejectedReservedBit2Exists : 1;
-    unsigned char UserModifyRejectedReservedBit1Exists : 1;
+    uint8_t
+    UserModifyRejectedReservedBit8Exists : 1,
+    UserModifyRejectedReservedBit7Exists : 1,
+    UserModifyRejectedReservedBit6Exists : 1,
+    UserModifyRejectedReservedBit5Exists : 1,
+    UserModifyRejectedReservedBit4Exists : 1,
+    UserModifyRejectedReservedBit3Exists : 1,
+    UserModifyRejectedReservedBit2Exists : 1,
+    UserModifyRejectedReservedBit1Exists : 1;
 } UserModifyRejectedByte6T;
 
 /*
  * Bitfield: User Modify Rejected Byte 5
  */ 
 typedef struct {
-    unsigned char UserModifyRejectedReservedBit8Exists : 1;
-    unsigned char UserModifyRejectedReservedBit7Exists : 1;
-    unsigned char UserModifyRejectedReservedBit6Exists : 1;
-    unsigned char UserModifyRejectedReservedBit5Exists : 1;
-    unsigned char UserModifyRejectedReservedBit4Exists : 1;
-    unsigned char UserModifyRejectedReservedBit3Exists : 1;
-    unsigned char UserModifyRejectedReservedBit2Exists : 1;
-    unsigned char UserModifyRejectedReservedBit1Exists : 1;
+    uint8_t
+    UserModifyRejectedReservedBit8Exists : 1,
+    UserModifyRejectedReservedBit7Exists : 1,
+    UserModifyRejectedReservedBit6Exists : 1,
+    UserModifyRejectedReservedBit5Exists : 1,
+    UserModifyRejectedReservedBit4Exists : 1,
+    UserModifyRejectedReservedBit3Exists : 1,
+    UserModifyRejectedReservedBit2Exists : 1,
+    UserModifyRejectedReservedBit1Exists : 1;
 } UserModifyRejectedByte5T;
 
 /*
  * Bitfield: User Modify Rejected Byte 4
  */ 
 typedef struct {
-    unsigned char UserModifyRejectedReservedBit8Exists : 1;
-    unsigned char UserModifyRejectedReservedBit7Exists : 1;
-    unsigned char UserModifyRejectedReservedBit6Exists : 1;
-    unsigned char UserModifyRejectedReservedBit5Exists : 1;
-    unsigned char UserModifyRejectedReservedBit4Exists : 1;
-    unsigned char UserModifyRejectedReservedBit3Exists : 1;
-    unsigned char UserModifyRejectedReservedBit2Exists : 1;
-    unsigned char UserModifyRejectedReservedBit1Exists : 1;
+    uint8_t
+    UserModifyRejectedReservedBit8Exists : 1,
+    UserModifyRejectedReservedBit7Exists : 1,
+    UserModifyRejectedReservedBit6Exists : 1,
+    UserModifyRejectedReservedBit5Exists : 1,
+    UserModifyRejectedReservedBit4Exists : 1,
+    UserModifyRejectedReservedBit3Exists : 1,
+    UserModifyRejectedReservedBit2Exists : 1,
+    UserModifyRejectedReservedBit1Exists : 1;
 } UserModifyRejectedByte4T;
 
 /*
  * Bitfield: User Modify Rejected Byte 3
  */ 
 typedef struct {
-    unsigned char UserModifyRejectedReservedBit8Exists : 1;
-    unsigned char UserModifyRejectedReservedBit7Exists : 1;
-    unsigned char UserModifyRejectedReservedBit6Exists : 1;
-    unsigned char UserModifyRejectedReservedBit5Exists : 1;
-    unsigned char UserModifyRejectedReservedBit4Exists : 1;
-    unsigned char UserModifyRejectedReservedBit3Exists : 1;
-    unsigned char UserModifyRejectedReservedBit2Exists : 1;
-    unsigned char UserModifyRejectedReservedBit1Exists : 1;
+    uint8_t
+    UserModifyRejectedReservedBit8Exists : 1,
+    UserModifyRejectedReservedBit7Exists : 1,
+    UserModifyRejectedReservedBit6Exists : 1,
+    UserModifyRejectedReservedBit5Exists : 1,
+    UserModifyRejectedReservedBit4Exists : 1,
+    UserModifyRejectedReservedBit3Exists : 1,
+    UserModifyRejectedReservedBit2Exists : 1,
+    UserModifyRejectedReservedBit1Exists : 1;
 } UserModifyRejectedByte3T;
 
 /*
  * Bitfield: User Modify Rejected Byte 2
  */ 
 typedef struct {
-    unsigned char UserModifyRejectedReservedBit8Exists : 1;
-    unsigned char UserModifyRejectedReservedBit7Exists : 1;
-    unsigned char UserModifyRejectedReservedBit6Exists : 1;
-    unsigned char UserModifyRejectedReservedBit5Exists : 1;
-    unsigned char UserModifyRejectedReservedBit4Exists : 1;
-    unsigned char UserModifyRejectedReservedBit3Exists : 1;
-    unsigned char UserModifyRejectedReservedBit2Exists : 1;
-    unsigned char UserModifyRejectedReservedBit1Exists : 1;
+    uint8_t
+    UserModifyRejectedReservedBit8Exists : 1,
+    UserModifyRejectedReservedBit7Exists : 1,
+    UserModifyRejectedReservedBit6Exists : 1,
+    UserModifyRejectedReservedBit5Exists : 1,
+    UserModifyRejectedReservedBit4Exists : 1,
+    UserModifyRejectedReservedBit3Exists : 1,
+    UserModifyRejectedReservedBit2Exists : 1,
+    UserModifyRejectedReservedBit1Exists : 1;
 } UserModifyRejectedByte2T;
 
 /*
  * Bitfield: User Modify Rejected Byte 1
  */ 
 typedef struct {
-    unsigned char UserModifyRejectedReservedBit8Exists : 1;
-    unsigned char UserModifyRejectedReservedBit7Exists : 1;
-    unsigned char UserModifyRejectedReservedBit6Exists : 1;
-    unsigned char UserModifyRejectedReservedBit5Exists : 1;
-    unsigned char UserModifyRejectedReservedBit4Exists : 1;
-    unsigned char UserModifyRejectedReservedBit3Exists : 1;
-    unsigned char UserModifyRejectedReservedBit2Exists : 1;
-    unsigned char UserModifyRejectedReservedBit1Exists : 1;
+    uint8_t
+    UserModifyRejectedReservedBit8Exists : 1,
+    UserModifyRejectedReservedBit7Exists : 1,
+    UserModifyRejectedReservedBit6Exists : 1,
+    UserModifyRejectedReservedBit5Exists : 1,
+    UserModifyRejectedReservedBit4Exists : 1,
+    UserModifyRejectedReservedBit3Exists : 1,
+    UserModifyRejectedReservedBit2Exists : 1,
+    UserModifyRejectedReservedBit1Exists : 1;
 } UserModifyRejectedByte1T;
 
 /*
@@ -1744,476 +1829,510 @@ typedef struct {
  * Bitfield: Order Restated Byte 17
  */ 
 typedef struct {
-    unsigned char OrderRestatedReservedBit8Exists : 1;
-    unsigned char OrderRestatedReservedBit7Exists : 1;
-    unsigned char OrderRestatedReservedBit6Exists : 1;
-    unsigned char OrderRestatedReservedBit5Exists : 1;
-    unsigned char OrderRestatedReservedBit4Exists : 1;
-    unsigned char OrderRestatedReservedBit3Exists : 1;
-    unsigned char OrderRestatedReservedBit2Exists : 1;
-    unsigned char OrderRestatedReservedBit1Exists : 1;
+    uint8_t
+    OrderRestatedReservedBit8Exists : 1,
+    OrderRestatedReservedBit7Exists : 1,
+    OrderRestatedReservedBit6Exists : 1,
+    OrderRestatedReservedBit5Exists : 1,
+    OrderRestatedReservedBit4Exists : 1,
+    OrderRestatedReservedBit3Exists : 1,
+    OrderRestatedReservedBit2Exists : 1,
+    OrderRestatedReservedBit1Exists : 1;
 } OrderRestatedByte17T;
 
 /*
  * Bitfield: Order Restated Byte 16
  */ 
 typedef struct {
-    unsigned char OrderRestatedReservedBit8Exists : 1;
-    unsigned char OrderRestatedReservedBit7Exists : 1;
-    unsigned char OrderRestatedReservedBit6Exists : 1;
-    unsigned char OrderRestatedReservedBit5Exists : 1;
-    unsigned char OrderRestatedReservedBit4Exists : 1;
-    unsigned char OrderRestatedReservedBit3Exists : 1;
-    unsigned char OrderRestatedReservedBit2Exists : 1;
-    unsigned char OrderRestatedReservedBit1Exists : 1;
+    uint8_t
+    OrderRestatedReservedBit8Exists : 1,
+    OrderRestatedReservedBit7Exists : 1,
+    OrderRestatedReservedBit6Exists : 1,
+    OrderRestatedReservedBit5Exists : 1,
+    OrderRestatedReservedBit4Exists : 1,
+    OrderRestatedReservedBit3Exists : 1,
+    OrderRestatedReservedBit2Exists : 1,
+    OrderRestatedReservedBit1Exists : 1;
 } OrderRestatedByte16T;
 
 /*
  * Bitfield: Order Restated Byte 15
  */ 
 typedef struct {
-    unsigned char OrderRestatedClientIdAttrExists : 1;
-    unsigned char OrderRestatedReservedBit7Exists : 1;
-    unsigned char OrderRestatedReservedBit6Exists : 1;
-    unsigned char OrderRestatedReservedBit5Exists : 1;
-    unsigned char OrderRestatedReservedBit4Exists : 1;
-    unsigned char OrderRestatedReservedBit3Exists : 1;
-    unsigned char OrderRestatedReservedBit2Exists : 1;
-    unsigned char OrderRestatedReservedBit1Exists : 1;
+    uint8_t
+    OrderRestatedClientIdAttrExists : 1,
+    OrderRestatedReservedBit7Exists : 1,
+    OrderRestatedReservedBit6Exists : 1,
+    OrderRestatedReservedBit5Exists : 1,
+    OrderRestatedReservedBit4Exists : 1,
+    OrderRestatedReservedBit3Exists : 1,
+    OrderRestatedReservedBit2Exists : 1,
+    OrderRestatedReservedBit1Exists : 1;
 } OrderRestatedByte15T;
 
 /*
  * Bitfield: Order Restated Byte 14
  */ 
 typedef struct {
-    unsigned char OrderRestatedReservedBit8Exists : 1;
-    unsigned char OrderRestatedReservedBit7Exists : 1;
-    unsigned char OrderRestatedReservedBit6Exists : 1;
-    unsigned char OrderRestatedReservedBit5Exists : 1;
-    unsigned char OrderRestatedReservedBit4Exists : 1;
-    unsigned char OrderRestatedReservedBit3Exists : 1;
-    unsigned char OrderRestatedReservedBit2Exists : 1;
-    unsigned char OrderRestatedReservedBit1Exists : 1;
+    uint8_t
+    OrderRestatedReservedBit8Exists : 1,
+    OrderRestatedReservedBit7Exists : 1,
+    OrderRestatedReservedBit6Exists : 1,
+    OrderRestatedReservedBit5Exists : 1,
+    OrderRestatedReservedBit4Exists : 1,
+    OrderRestatedReservedBit3Exists : 1,
+    OrderRestatedReservedBit2Exists : 1,
+    OrderRestatedReservedBit1Exists : 1;
 } OrderRestatedByte14T;
 
 /*
  * Bitfield: Order Restated Byte 13
  */ 
 typedef struct {
-    unsigned char OrderRestatedReservedBit8Exists : 1;
-    unsigned char OrderRestatedReservedBit7Exists : 1;
-    unsigned char OrderRestatedReservedBit6Exists : 1;
-    unsigned char OrderRestatedReservedBit5Exists : 1;
-    unsigned char OrderRestatedReservedBit4Exists : 1;
-    unsigned char OrderRestatedReservedBit3Exists : 1;
-    unsigned char OrderRestatedReservedBit2Exists : 1;
-    unsigned char OrderRestatedReservedBit1Exists : 1;
+    uint8_t
+    OrderRestatedReservedBit8Exists : 1,
+    OrderRestatedReservedBit7Exists : 1,
+    OrderRestatedReservedBit6Exists : 1,
+    OrderRestatedReservedBit5Exists : 1,
+    OrderRestatedReservedBit4Exists : 1,
+    OrderRestatedReservedBit3Exists : 1,
+    OrderRestatedReservedBit2Exists : 1,
+    OrderRestatedReservedBit1Exists : 1;
 } OrderRestatedByte13T;
 
 /*
  * Bitfield: Order Restated Byte 12
  */ 
 typedef struct {
-    unsigned char OrderRestatedReservedBit8Exists : 1;
-    unsigned char OrderRestatedReservedBit7Exists : 1;
-    unsigned char OrderRestatedReservedBit6Exists : 1;
-    unsigned char OrderRestatedReservedBit5Exists : 1;
-    unsigned char OrderRestatedReservedBit4Exists : 1;
-    unsigned char OrderRestatedReservedBit3Exists : 1;
-    unsigned char OrderRestatedReservedBit2Exists : 1;
-    unsigned char OrderRestatedReservedBit1Exists : 1;
+    uint8_t
+    OrderRestatedReservedBit8Exists : 1,
+    OrderRestatedReservedBit7Exists : 1,
+    OrderRestatedReservedBit6Exists : 1,
+    OrderRestatedReservedBit5Exists : 1,
+    OrderRestatedReservedBit4Exists : 1,
+    OrderRestatedReservedBit3Exists : 1,
+    OrderRestatedReservedBit2Exists : 1,
+    OrderRestatedReservedBit1Exists : 1;
 } OrderRestatedByte12T;
 
 /*
  * Bitfield: Order Restated Byte 11
  */ 
 typedef struct {
-    unsigned char OrderRestatedReservedBit8Exists : 1;
-    unsigned char OrderRestatedReservedBit7Exists : 1;
-    unsigned char OrderRestatedReservedBit6Exists : 1;
-    unsigned char OrderRestatedReservedBit5Exists : 1;
-    unsigned char OrderRestatedReservedBit4Exists : 1;
-    unsigned char OrderRestatedReservedBit3Exists : 1;
-    unsigned char OrderRestatedReservedBit2Exists : 1;
-    unsigned char OrderRestatedReservedBit1Exists : 1;
+    uint8_t
+    OrderRestatedReservedBit8Exists : 1,
+    OrderRestatedReservedBit7Exists : 1,
+    OrderRestatedReservedBit6Exists : 1,
+    OrderRestatedReservedBit5Exists : 1,
+    OrderRestatedReservedBit4Exists : 1,
+    OrderRestatedReservedBit3Exists : 1,
+    OrderRestatedReservedBit2Exists : 1,
+    OrderRestatedReservedBit1Exists : 1;
 } OrderRestatedByte11T;
 
 /*
  * Bitfield: Order Restated Byte 10
  */ 
 typedef struct {
-    unsigned char OrderRestatedReservedBit8Exists : 1;
-    unsigned char OrderRestatedReservedBit7Exists : 1;
-    unsigned char OrderRestatedReservedBit6Exists : 1;
-    unsigned char OrderRestatedReservedBit5Exists : 1;
-    unsigned char OrderRestatedReservedBit4Exists : 1;
-    unsigned char OrderRestatedReservedBit3Exists : 1;
-    unsigned char OrderRestatedReservedBit2Exists : 1;
-    unsigned char OrderRestatedCrossIdExists : 1;
+    uint8_t
+    OrderRestatedReservedBit8Exists : 1,
+    OrderRestatedReservedBit7Exists : 1,
+    OrderRestatedReservedBit6Exists : 1,
+    OrderRestatedReservedBit5Exists : 1,
+    OrderRestatedReservedBit4Exists : 1,
+    OrderRestatedReservedBit3Exists : 1,
+    OrderRestatedReservedBit2Exists : 1,
+    OrderRestatedCrossIdExists : 1;
 } OrderRestatedByte10T;
 
 /*
  * Bitfield: Order Restated Byte 9
  */ 
 typedef struct {
-    unsigned char OrderRestatedReservedBit8Exists : 1;
-    unsigned char OrderRestatedReservedBit7Exists : 1;
-    unsigned char OrderRestatedCmtaNumberExists : 1;
-    unsigned char OrderRestatedReservedBit5Exists : 1;
-    unsigned char OrderRestatedReservedBit4Exists : 1;
-    unsigned char OrderRestatedReservedBit3Exists : 1;
-    unsigned char OrderRestatedReservedBit2Exists : 1;
-    unsigned char OrderRestatedMarketFeeCodeExists : 1;
+    uint8_t
+    OrderRestatedReservedBit8Exists : 1,
+    OrderRestatedReservedBit7Exists : 1,
+    OrderRestatedCmtaNumberExists : 1,
+    OrderRestatedReservedBit5Exists : 1,
+    OrderRestatedReservedBit4Exists : 1,
+    OrderRestatedReservedBit3Exists : 1,
+    OrderRestatedReservedBit2Exists : 1,
+    OrderRestatedMarketFeeCodeExists : 1;
 } OrderRestatedByte9T;
 
 /*
  * Bitfield: Order Restated Byte 8
  */ 
 typedef struct {
-    unsigned char OrderRestatedReservedBit8Exists : 1;
-    unsigned char OrderRestatedExDestinationExists : 1;
-    unsigned char OrderRestatedRouteDeliveryMethodExists : 1;
-    unsigned char OrderRestatedRouteStrategyExists : 1;
-    unsigned char OrderRestatedRoutingInstExists : 1;
-    unsigned char OrderRestatedStopPxExists : 1;
-    unsigned char OrderRestatedEchoTextExists : 1;
-    unsigned char OrderRestatedReservedBit1Exists : 1;
+    uint8_t
+    OrderRestatedReservedBit8Exists : 1,
+    OrderRestatedExDestinationExists : 1,
+    OrderRestatedRouteDeliveryMethodExists : 1,
+    OrderRestatedRouteStrategyExists : 1,
+    OrderRestatedRoutingInstExists : 1,
+    OrderRestatedStopPxExists : 1,
+    OrderRestatedEchoTextExists : 1,
+    OrderRestatedReservedBit1Exists : 1;
 } OrderRestatedByte8T;
 
 /*
  * Bitfield: Order Restated Byte 7
  */ 
 typedef struct {
-    unsigned char OrderRestatedReservedBit8Exists : 1;
-    unsigned char OrderRestatedReservedBit7Exists : 1;
-    unsigned char OrderRestatedReservedBit6Exists : 1;
-    unsigned char OrderRestatedReservedBit5Exists : 1;
-    unsigned char OrderRestatedReservedBit4Exists : 1;
-    unsigned char OrderRestatedReservedBit3Exists : 1;
-    unsigned char OrderRestatedReservedBit2Exists : 1;
-    unsigned char OrderRestatedReservedBit1Exists : 1;
+    uint8_t
+    OrderRestatedReservedBit8Exists : 1,
+    OrderRestatedReservedBit7Exists : 1,
+    OrderRestatedReservedBit6Exists : 1,
+    OrderRestatedReservedBit5Exists : 1,
+    OrderRestatedReservedBit4Exists : 1,
+    OrderRestatedReservedBit3Exists : 1,
+    OrderRestatedReservedBit2Exists : 1,
+    OrderRestatedReservedBit1Exists : 1;
 } OrderRestatedByte7T;
 
 /*
  * Bitfield: Order Restated Byte 6
  */ 
 typedef struct {
-    unsigned char OrderRestatedReservedBit8Exists : 1;
-    unsigned char OrderRestatedReservedBit7Exists : 1;
-    unsigned char OrderRestatedReservedBit6Exists : 1;
-    unsigned char OrderRestatedReservedBit5Exists : 1;
-    unsigned char OrderRestatedAttributedQuoteExists : 1;
-    unsigned char OrderRestatedContraCapacityExists : 1;
-    unsigned char OrderRestatedReservedBit2Exists : 1;
-    unsigned char OrderRestatedSecondaryOrderIdExists : 1;
+    uint8_t
+    OrderRestatedReservedBit8Exists : 1,
+    OrderRestatedReservedBit7Exists : 1,
+    OrderRestatedReservedBit6Exists : 1,
+    OrderRestatedReservedBit5Exists : 1,
+    OrderRestatedAttributedQuoteExists : 1,
+    OrderRestatedContraCapacityExists : 1,
+    OrderRestatedReservedBit2Exists : 1,
+    OrderRestatedSecondaryOrderIdExists : 1;
 } OrderRestatedByte6T;
 
 /*
  * Bitfield: Order Restated Byte 5
  */ 
 typedef struct {
-    unsigned char OrderRestatedExpireTimeExists : 1;
-    unsigned char OrderRestatedBaseLiquidityIndicatorExists : 1;
-    unsigned char OrderRestatedWorkingPriceExists : 1;
-    unsigned char OrderRestatedDisplayPriceExists : 1;
-    unsigned char OrderRestatedLastPxExists : 1;
-    unsigned char OrderRestatedLastSharesExists : 1;
-    unsigned char OrderRestatedLeavesQtyExists : 1;
-    unsigned char OrderRestatedOrigClOrdIdExists : 1;
+    uint8_t
+    OrderRestatedExpireTimeExists : 1,
+    OrderRestatedBaseLiquidityIndicatorExists : 1,
+    OrderRestatedWorkingPriceExists : 1,
+    OrderRestatedDisplayPriceExists : 1,
+    OrderRestatedLastPxExists : 1,
+    OrderRestatedLastSharesExists : 1,
+    OrderRestatedLeavesQtyExists : 1,
+    OrderRestatedOrigClOrdIdExists : 1;
 } OrderRestatedByte5T;
 
 /*
  * Bitfield: Order Restated Byte 4
  */ 
 typedef struct {
-    unsigned char OrderRestatedReservedBit8Exists : 1;
-    unsigned char OrderRestatedReservedBit7Exists : 1;
-    unsigned char OrderRestatedCorrectedSizeExists : 1;
-    unsigned char OrderRestatedReservedBit5Exists : 1;
-    unsigned char OrderRestatedOpenCloseExists : 1;
-    unsigned char OrderRestatedPutOrCallExists : 1;
-    unsigned char OrderRestatedStrikePriceExists : 1;
-    unsigned char OrderRestatedMaturityDateExists : 1;
+    uint8_t
+    OrderRestatedReservedBit8Exists : 1,
+    OrderRestatedReservedBit7Exists : 1,
+    OrderRestatedCorrectedSizeExists : 1,
+    OrderRestatedReservedBit5Exists : 1,
+    OrderRestatedOpenCloseExists : 1,
+    OrderRestatedPutOrCallExists : 1,
+    OrderRestatedStrikePriceExists : 1,
+    OrderRestatedMaturityDateExists : 1;
 } OrderRestatedByte4T;
 
 /*
  * Bitfield: Order Restated Byte 3
  */ 
 typedef struct {
-    unsigned char OrderRestatedPreventMatchExists : 1;
-    unsigned char OrderRestatedOrderQtyExists : 1;
-    unsigned char OrderRestatedReservedBit6Exists : 1;
-    unsigned char OrderRestatedMaxFloorExists : 1;
-    unsigned char OrderRestatedDisplayIndicatorExists : 1;
-    unsigned char OrderRestatedClearingAccountExists : 1;
-    unsigned char OrderRestatedClearingFirmExists : 1;
-    unsigned char OrderRestatedAccountExists : 1;
+    uint8_t
+    OrderRestatedPreventMatchExists : 1,
+    OrderRestatedOrderQtyExists : 1,
+    OrderRestatedReservedBit6Exists : 1,
+    OrderRestatedMaxFloorExists : 1,
+    OrderRestatedDisplayIndicatorExists : 1,
+    OrderRestatedClearingAccountExists : 1,
+    OrderRestatedClearingFirmExists : 1,
+    OrderRestatedAccountExists : 1;
 } OrderRestatedByte3T;
 
 /*
  * Bitfield: Order Restated Byte 2
  */ 
 typedef struct {
-    unsigned char OrderRestatedReservedBit8Exists : 1;
-    unsigned char OrderRestatedCapacityExists : 1;
-    unsigned char OrderRestatedReservedBit6Exists : 1;
-    unsigned char OrderRestatedReservedBit5Exists : 1;
-    unsigned char OrderRestatedReservedBit4Exists : 1;
-    unsigned char OrderRestatedReservedBit3Exists : 1;
-    unsigned char OrderRestatedReservedBit2Exists : 1;
-    unsigned char OrderRestatedSymbolExists : 1;
+    uint8_t
+    OrderRestatedReservedBit8Exists : 1,
+    OrderRestatedCapacityExists : 1,
+    OrderRestatedReservedBit6Exists : 1,
+    OrderRestatedReservedBit5Exists : 1,
+    OrderRestatedReservedBit4Exists : 1,
+    OrderRestatedReservedBit3Exists : 1,
+    OrderRestatedReservedBit2Exists : 1,
+    OrderRestatedSymbolExists : 1;
 } OrderRestatedByte2T;
 
 /*
  * Bitfield: Order Restated Byte 1
  */ 
 typedef struct {
-    unsigned char OrderRestatedMaxRemovePctExists : 1;
-    unsigned char OrderRestatedMinQtyExists : 1;
-    unsigned char OrderRestatedTimeInForceExists : 1;
-    unsigned char OrderRestatedOrdTypeExists : 1;
-    unsigned char OrderRestatedExecInstExists : 1;
-    unsigned char OrderRestatedPriceExists : 1;
-    unsigned char OrderRestatedPegDifferenceExists : 1;
-    unsigned char OrderRestatedSideExists : 1;
+    uint8_t
+    OrderRestatedMaxRemovePctExists : 1,
+    OrderRestatedMinQtyExists : 1,
+    OrderRestatedTimeInForceExists : 1,
+    OrderRestatedOrdTypeExists : 1,
+    OrderRestatedExecInstExists : 1,
+    OrderRestatedPriceExists : 1,
+    OrderRestatedPegDifferenceExists : 1,
+    OrderRestatedSideExists : 1;
 } OrderRestatedByte1T;
 
 /*
  * Bitfield: Order Modified Byte 17
  */ 
 typedef struct {
-    unsigned char OrderModifiedReservedBit8Exists : 1;
-    unsigned char OrderModifiedReservedBit7Exists : 1;
-    unsigned char OrderModifiedReservedBit6Exists : 1;
-    unsigned char OrderModifiedReservedBit5Exists : 1;
-    unsigned char OrderModifiedReservedBit4Exists : 1;
-    unsigned char OrderModifiedReservedBit3Exists : 1;
-    unsigned char OrderModifiedReservedBit2Exists : 1;
-    unsigned char OrderModifiedReservedBit1Exists : 1;
+    uint8_t
+    OrderModifiedReservedBit8Exists : 1,
+    OrderModifiedReservedBit7Exists : 1,
+    OrderModifiedReservedBit6Exists : 1,
+    OrderModifiedReservedBit5Exists : 1,
+    OrderModifiedReservedBit4Exists : 1,
+    OrderModifiedReservedBit3Exists : 1,
+    OrderModifiedReservedBit2Exists : 1,
+    OrderModifiedReservedBit1Exists : 1;
 } OrderModifiedByte17T;
 
 /*
  * Bitfield: Order Modified Byte 16
  */ 
 typedef struct {
-    unsigned char OrderModifiedReservedBit8Exists : 1;
-    unsigned char OrderModifiedReservedBit7Exists : 1;
-    unsigned char OrderModifiedReservedBit6Exists : 1;
-    unsigned char OrderModifiedReservedBit5Exists : 1;
-    unsigned char OrderModifiedReservedBit4Exists : 1;
-    unsigned char OrderModifiedReservedBit3Exists : 1;
-    unsigned char OrderModifiedSessionEligibilityExists : 1;
-    unsigned char OrderModifiedReservedBit1Exists : 1;
+    uint8_t
+    OrderModifiedReservedBit8Exists : 1,
+    OrderModifiedReservedBit7Exists : 1,
+    OrderModifiedReservedBit6Exists : 1,
+    OrderModifiedReservedBit5Exists : 1,
+    OrderModifiedReservedBit4Exists : 1,
+    OrderModifiedReservedBit3Exists : 1,
+    OrderModifiedSessionEligibilityExists : 1,
+    OrderModifiedReservedBit1Exists : 1;
 } OrderModifiedByte16T;
 
 /*
  * Bitfield: Order Modified Byte 15
  */ 
 typedef struct {
-    unsigned char OrderModifiedClientIdAttrExists : 1;
-    unsigned char OrderModifiedReservedBit7Exists : 1;
-    unsigned char OrderModifiedReservedBit6Exists : 1;
-    unsigned char OrderModifiedReservedBit5Exists : 1;
-    unsigned char OrderModifiedReservedBit4Exists : 1;
-    unsigned char OrderModifiedReservedBit3Exists : 1;
-    unsigned char OrderModifiedReservedBit2Exists : 1;
-    unsigned char OrderModifiedReservedBit1Exists : 1;
+    uint8_t
+    OrderModifiedClientIdAttrExists : 1,
+    OrderModifiedReservedBit7Exists : 1,
+    OrderModifiedReservedBit6Exists : 1,
+    OrderModifiedReservedBit5Exists : 1,
+    OrderModifiedReservedBit4Exists : 1,
+    OrderModifiedReservedBit3Exists : 1,
+    OrderModifiedReservedBit2Exists : 1,
+    OrderModifiedReservedBit1Exists : 1;
 } OrderModifiedByte15T;
 
 /*
  * Bitfield: Order Modified Byte 14
  */ 
 typedef struct {
-    unsigned char OrderModifiedReservedBit8Exists : 1;
-    unsigned char OrderModifiedReservedBit7Exists : 1;
-    unsigned char OrderModifiedReservedBit6Exists : 1;
-    unsigned char OrderModifiedReservedBit5Exists : 1;
-    unsigned char OrderModifiedReservedBit4Exists : 1;
-    unsigned char OrderModifiedReservedBit3Exists : 1;
-    unsigned char OrderModifiedReservedBit2Exists : 1;
-    unsigned char OrderModifiedReservedBit1Exists : 1;
+    uint8_t
+    OrderModifiedReservedBit8Exists : 1,
+    OrderModifiedReservedBit7Exists : 1,
+    OrderModifiedReservedBit6Exists : 1,
+    OrderModifiedReservedBit5Exists : 1,
+    OrderModifiedReservedBit4Exists : 1,
+    OrderModifiedReservedBit3Exists : 1,
+    OrderModifiedReservedBit2Exists : 1,
+    OrderModifiedReservedBit1Exists : 1;
 } OrderModifiedByte14T;
 
 /*
  * Bitfield: Order Modified Byte 13
  */ 
 typedef struct {
-    unsigned char OrderModifiedReservedBit8Exists : 1;
-    unsigned char OrderModifiedReservedBit7Exists : 1;
-    unsigned char OrderModifiedReservedBit6Exists : 1;
-    unsigned char OrderModifiedReservedBit5Exists : 1;
-    unsigned char OrderModifiedReservedBit4Exists : 1;
-    unsigned char OrderModifiedReservedBit3Exists : 1;
-    unsigned char OrderModifiedReservedBit2Exists : 1;
-    unsigned char OrderModifiedReservedBit1Exists : 1;
+    uint8_t
+    OrderModifiedReservedBit8Exists : 1,
+    OrderModifiedReservedBit7Exists : 1,
+    OrderModifiedReservedBit6Exists : 1,
+    OrderModifiedReservedBit5Exists : 1,
+    OrderModifiedReservedBit4Exists : 1,
+    OrderModifiedReservedBit3Exists : 1,
+    OrderModifiedReservedBit2Exists : 1,
+    OrderModifiedReservedBit1Exists : 1;
 } OrderModifiedByte13T;
 
 /*
  * Bitfield: Order Modified Byte 12
  */ 
 typedef struct {
-    unsigned char OrderModifiedClearingOptionalDataExists : 1;
-    unsigned char OrderModifiedReservedBit7Exists : 1;
-    unsigned char OrderModifiedReservedBit6Exists : 1;
-    unsigned char OrderModifiedReservedBit5Exists : 1;
-    unsigned char OrderModifiedReservedBit4Exists : 1;
-    unsigned char OrderModifiedReservedBit3Exists : 1;
-    unsigned char OrderModifiedReservedBit2Exists : 1;
-    unsigned char OrderModifiedReservedBit1Exists : 1;
+    uint8_t
+    OrderModifiedClearingOptionalDataExists : 1,
+    OrderModifiedReservedBit7Exists : 1,
+    OrderModifiedReservedBit6Exists : 1,
+    OrderModifiedReservedBit5Exists : 1,
+    OrderModifiedReservedBit4Exists : 1,
+    OrderModifiedReservedBit3Exists : 1,
+    OrderModifiedReservedBit2Exists : 1,
+    OrderModifiedReservedBit1Exists : 1;
 } OrderModifiedByte12T;
 
 /*
  * Bitfield: Order Modified Byte 11
  */ 
 typedef struct {
-    unsigned char OrderModifiedReservedBit8Exists : 1;
-    unsigned char OrderModifiedReservedBit7Exists : 1;
-    unsigned char OrderModifiedReservedBit6Exists : 1;
-    unsigned char OrderModifiedReservedBit5Exists : 1;
-    unsigned char OrderModifiedReservedBit4Exists : 1;
-    unsigned char OrderModifiedReservedBit3Exists : 1;
-    unsigned char OrderModifiedReservedBit2Exists : 1;
-    unsigned char OrderModifiedReservedBit1Exists : 1;
+    uint8_t
+    OrderModifiedReservedBit8Exists : 1,
+    OrderModifiedReservedBit7Exists : 1,
+    OrderModifiedReservedBit6Exists : 1,
+    OrderModifiedReservedBit5Exists : 1,
+    OrderModifiedReservedBit4Exists : 1,
+    OrderModifiedReservedBit3Exists : 1,
+    OrderModifiedReservedBit2Exists : 1,
+    OrderModifiedReservedBit1Exists : 1;
 } OrderModifiedByte11T;
 
 /*
  * Bitfield: Order Modified Byte 10
  */ 
 typedef struct {
-    unsigned char OrderModifiedReservedBit8Exists : 1;
-    unsigned char OrderModifiedReservedBit7Exists : 1;
-    unsigned char OrderModifiedReservedBit6Exists : 1;
-    unsigned char OrderModifiedReservedBit5Exists : 1;
-    unsigned char OrderModifiedReservedBit4Exists : 1;
-    unsigned char OrderModifiedReservedBit3Exists : 1;
-    unsigned char OrderModifiedReservedBit2Exists : 1;
-    unsigned char OrderModifiedCrossIdExists : 1;
+    uint8_t
+    OrderModifiedReservedBit8Exists : 1,
+    OrderModifiedReservedBit7Exists : 1,
+    OrderModifiedReservedBit6Exists : 1,
+    OrderModifiedReservedBit5Exists : 1,
+    OrderModifiedReservedBit4Exists : 1,
+    OrderModifiedReservedBit3Exists : 1,
+    OrderModifiedReservedBit2Exists : 1,
+    OrderModifiedCrossIdExists : 1;
 } OrderModifiedByte10T;
 
 /*
  * Bitfield: Order Modified Byte 9
  */ 
 typedef struct {
-    unsigned char OrderModifiedReservedBit8Exists : 1;
-    unsigned char OrderModifiedReservedBit7Exists : 1;
-    unsigned char OrderModifiedReservedBit6Exists : 1;
-    unsigned char OrderModifiedReservedBit5Exists : 1;
-    unsigned char OrderModifiedReservedBit4Exists : 1;
-    unsigned char OrderModifiedReservedBit3Exists : 1;
-    unsigned char OrderModifiedReservedBit2Exists : 1;
-    unsigned char OrderModifiedMarketFeeCodeExists : 1;
+    uint8_t
+    OrderModifiedReservedBit8Exists : 1,
+    OrderModifiedReservedBit7Exists : 1,
+    OrderModifiedReservedBit6Exists : 1,
+    OrderModifiedReservedBit5Exists : 1,
+    OrderModifiedReservedBit4Exists : 1,
+    OrderModifiedReservedBit3Exists : 1,
+    OrderModifiedReservedBit2Exists : 1,
+    OrderModifiedMarketFeeCodeExists : 1;
 } OrderModifiedByte9T;
 
 /*
  * Bitfield: Order Modified Byte 8
  */ 
 typedef struct {
-    unsigned char OrderModifiedReservedBit8Exists : 1;
-    unsigned char OrderModifiedExDestinationExists : 1;
-    unsigned char OrderModifiedRouteDeliveryMethodExists : 1;
-    unsigned char OrderModifiedRouteStrategyExists : 1;
-    unsigned char OrderModifiedRoutingInstExists : 1;
-    unsigned char OrderModifiedStopPxExists : 1;
-    unsigned char OrderModifiedEchoTextExists : 1;
-    unsigned char OrderModifiedReservedBit1Exists : 1;
+    uint8_t
+    OrderModifiedReservedBit8Exists : 1,
+    OrderModifiedExDestinationExists : 1,
+    OrderModifiedRouteDeliveryMethodExists : 1,
+    OrderModifiedRouteStrategyExists : 1,
+    OrderModifiedRoutingInstExists : 1,
+    OrderModifiedStopPxExists : 1,
+    OrderModifiedEchoTextExists : 1,
+    OrderModifiedReservedBit1Exists : 1;
 } OrderModifiedByte8T;
 
 /*
  * Bitfield: Order Modified Byte 7
  */ 
 typedef struct {
-    unsigned char OrderModifiedReservedBit8Exists : 1;
-    unsigned char OrderModifiedReservedBit7Exists : 1;
-    unsigned char OrderModifiedReservedBit6Exists : 1;
-    unsigned char OrderModifiedReservedBit5Exists : 1;
-    unsigned char OrderModifiedReservedBit4Exists : 1;
-    unsigned char OrderModifiedReservedBit3Exists : 1;
-    unsigned char OrderModifiedReservedBit2Exists : 1;
-    unsigned char OrderModifiedSubLiquidityIndicatorExists : 1;
+    uint8_t
+    OrderModifiedReservedBit8Exists : 1,
+    OrderModifiedReservedBit7Exists : 1,
+    OrderModifiedReservedBit6Exists : 1,
+    OrderModifiedReservedBit5Exists : 1,
+    OrderModifiedReservedBit4Exists : 1,
+    OrderModifiedReservedBit3Exists : 1,
+    OrderModifiedReservedBit2Exists : 1,
+    OrderModifiedSubLiquidityIndicatorExists : 1;
 } OrderModifiedByte7T;
 
 /*
  * Bitfield: Order Modified Byte 6
  */ 
 typedef struct {
-    unsigned char OrderModifiedReservedBit8Exists : 1;
-    unsigned char OrderModifiedReservedBit7Exists : 1;
-    unsigned char OrderModifiedReservedBit6Exists : 1;
-    unsigned char OrderModifiedReservedBit5Exists : 1;
-    unsigned char OrderModifiedAttributedQuoteExists : 1;
-    unsigned char OrderModifiedContraCapacityExists : 1;
-    unsigned char OrderModifiedReservedBit2Exists : 1;
-    unsigned char OrderModifiedSecondaryOrderIdExists : 1;
+    uint8_t
+    OrderModifiedReservedBit8Exists : 1,
+    OrderModifiedReservedBit7Exists : 1,
+    OrderModifiedReservedBit6Exists : 1,
+    OrderModifiedReservedBit5Exists : 1,
+    OrderModifiedAttributedQuoteExists : 1,
+    OrderModifiedContraCapacityExists : 1,
+    OrderModifiedReservedBit2Exists : 1,
+    OrderModifiedSecondaryOrderIdExists : 1;
 } OrderModifiedByte6T;
 
 /*
  * Bitfield: Order Modified Byte 5
  */ 
 typedef struct {
-    unsigned char OrderModifiedExpireTimeExists : 1;
-    unsigned char OrderModifiedBaseLiquidityIndicatorExists : 1;
-    unsigned char OrderModifiedWorkingPriceExists : 1;
-    unsigned char OrderModifiedDisplayPriceExists : 1;
-    unsigned char OrderModifiedLastPxExists : 1;
-    unsigned char OrderModifiedLastSharesExists : 1;
-    unsigned char OrderModifiedLeavesQtyExists : 1;
-    unsigned char OrderModifiedOrigClOrdIdExists : 1;
+    uint8_t
+    OrderModifiedExpireTimeExists : 1,
+    OrderModifiedBaseLiquidityIndicatorExists : 1,
+    OrderModifiedWorkingPriceExists : 1,
+    OrderModifiedDisplayPriceExists : 1,
+    OrderModifiedLastPxExists : 1,
+    OrderModifiedLastSharesExists : 1,
+    OrderModifiedLeavesQtyExists : 1,
+    OrderModifiedOrigClOrdIdExists : 1;
 } OrderModifiedByte5T;
 
 /*
  * Bitfield: Order Modified Byte 4
  */ 
 typedef struct {
-    unsigned char OrderModifiedReservedBit8Exists : 1;
-    unsigned char OrderModifiedReservedBit7Exists : 1;
-    unsigned char OrderModifiedCorrectedSizeExists : 1;
-    unsigned char OrderModifiedReservedBit5Exists : 1;
-    unsigned char OrderModifiedOpenCloseExists : 1;
-    unsigned char OrderModifiedPutOrCallExists : 1;
-    unsigned char OrderModifiedStrikePriceExists : 1;
-    unsigned char OrderModifiedMaturityDateExists : 1;
+    uint8_t
+    OrderModifiedReservedBit8Exists : 1,
+    OrderModifiedReservedBit7Exists : 1,
+    OrderModifiedCorrectedSizeExists : 1,
+    OrderModifiedReservedBit5Exists : 1,
+    OrderModifiedOpenCloseExists : 1,
+    OrderModifiedPutOrCallExists : 1,
+    OrderModifiedStrikePriceExists : 1,
+    OrderModifiedMaturityDateExists : 1;
 } OrderModifiedByte4T;
 
 /*
  * Bitfield: Order Modified Byte 3
  */ 
 typedef struct {
-    unsigned char OrderModifiedPreventMatchExists : 1;
-    unsigned char OrderModifiedOrderQtyExists : 1;
-    unsigned char OrderModifiedReservedBit6Exists : 1;
-    unsigned char OrderModifiedMaxFloorExists : 1;
-    unsigned char OrderModifiedDisplayIndicatorExists : 1;
-    unsigned char OrderModifiedClearingAccountExists : 1;
-    unsigned char OrderModifiedClearingFirmExists : 1;
-    unsigned char OrderModifiedAccountExists : 1;
+    uint8_t
+    OrderModifiedPreventMatchExists : 1,
+    OrderModifiedOrderQtyExists : 1,
+    OrderModifiedReservedBit6Exists : 1,
+    OrderModifiedMaxFloorExists : 1,
+    OrderModifiedDisplayIndicatorExists : 1,
+    OrderModifiedClearingAccountExists : 1,
+    OrderModifiedClearingFirmExists : 1,
+    OrderModifiedAccountExists : 1;
 } OrderModifiedByte3T;
 
 /*
  * Bitfield: Order Modified Byte 2
  */ 
 typedef struct {
-    unsigned char OrderModifiedReservedBit8Exists : 1;
-    unsigned char OrderModifiedCapacityExists : 1;
-    unsigned char OrderModifiedReservedBit6Exists : 1;
-    unsigned char OrderModifiedReservedBit5Exists : 1;
-    unsigned char OrderModifiedReservedBit4Exists : 1;
-    unsigned char OrderModifiedReservedBit3Exists : 1;
-    unsigned char OrderModifiedReservedBit2Exists : 1;
-    unsigned char OrderModifiedSymbolExists : 1;
+    uint8_t
+    OrderModifiedReservedBit8Exists : 1,
+    OrderModifiedCapacityExists : 1,
+    OrderModifiedReservedBit6Exists : 1,
+    OrderModifiedReservedBit5Exists : 1,
+    OrderModifiedReservedBit4Exists : 1,
+    OrderModifiedReservedBit3Exists : 1,
+    OrderModifiedReservedBit2Exists : 1,
+    OrderModifiedSymbolExists : 1;
 } OrderModifiedByte2T;
 
 /*
  * Bitfield: Order Modified Byte 1
  */ 
 typedef struct {
-    unsigned char OrderModifiedMaxRemovePctExists : 1;
-    unsigned char OrderModifiedMinQtyExists : 1;
-    unsigned char OrderModifiedTimeInForceExists : 1;
-    unsigned char OrderModifiedOrdTypeExists : 1;
-    unsigned char OrderModifiedExecInstExists : 1;
-    unsigned char OrderModifiedPriceExists : 1;
-    unsigned char OrderModifiedPegDifferenceExists : 1;
-    unsigned char OrderModifiedSideExists : 1;
+    uint8_t
+    OrderModifiedMaxRemovePctExists : 1,
+    OrderModifiedMinQtyExists : 1,
+    OrderModifiedTimeInForceExists : 1,
+    OrderModifiedOrdTypeExists : 1,
+    OrderModifiedExecInstExists : 1,
+    OrderModifiedPriceExists : 1,
+    OrderModifiedPegDifferenceExists : 1,
+    OrderModifiedSideExists : 1;
 } OrderModifiedByte1T;
 
 /*
@@ -2230,238 +2349,255 @@ typedef struct {
  * Bitfield: Order Rejected Byte 17
  */ 
 typedef struct {
-    unsigned char OrderRejectedReservedBit8Exists : 1;
-    unsigned char OrderRejectedReservedBit7Exists : 1;
-    unsigned char OrderRejectedReservedBit6Exists : 1;
-    unsigned char OrderRejectedReservedBit5Exists : 1;
-    unsigned char OrderRejectedReservedBit4Exists : 1;
-    unsigned char OrderRejectedReservedBit3Exists : 1;
-    unsigned char OrderRejectedReservedBit2Exists : 1;
-    unsigned char OrderRejectedReservedBit1Exists : 1;
+    uint8_t
+    OrderRejectedReservedBit8Exists : 1,
+    OrderRejectedReservedBit7Exists : 1,
+    OrderRejectedReservedBit6Exists : 1,
+    OrderRejectedReservedBit5Exists : 1,
+    OrderRejectedReservedBit4Exists : 1,
+    OrderRejectedReservedBit3Exists : 1,
+    OrderRejectedReservedBit2Exists : 1,
+    OrderRejectedReservedBit1Exists : 1;
 } OrderRejectedByte17T;
 
 /*
  * Bitfield: Order Rejected Byte 16
  */ 
 typedef struct {
-    unsigned char OrderRejectedReservedBit8Exists : 1;
-    unsigned char OrderRejectedReservedBit7Exists : 1;
-    unsigned char OrderRejectedReservedBit6Exists : 1;
-    unsigned char OrderRejectedReservedBit5Exists : 1;
-    unsigned char OrderRejectedReservedBit4Exists : 1;
-    unsigned char OrderRejectedReservedBit3Exists : 1;
-    unsigned char OrderRejectedSessionEligibilityExists : 1;
-    unsigned char OrderRejectedReservedBit1Exists : 1;
+    uint8_t
+    OrderRejectedReservedBit8Exists : 1,
+    OrderRejectedReservedBit7Exists : 1,
+    OrderRejectedReservedBit6Exists : 1,
+    OrderRejectedReservedBit5Exists : 1,
+    OrderRejectedReservedBit4Exists : 1,
+    OrderRejectedReservedBit3Exists : 1,
+    OrderRejectedSessionEligibilityExists : 1,
+    OrderRejectedReservedBit1Exists : 1;
 } OrderRejectedByte16T;
 
 /*
  * Bitfield: Order Rejected Byte 15
  */ 
 typedef struct {
-    unsigned char OrderRejectedClientIdAttrExists : 1;
-    unsigned char OrderRejectedReservedBit7Exists : 1;
-    unsigned char OrderRejectedReservedBit6Exists : 1;
-    unsigned char OrderRejectedReservedBit5Exists : 1;
-    unsigned char OrderRejectedReservedBit4Exists : 1;
-    unsigned char OrderRejectedReservedBit3Exists : 1;
-    unsigned char OrderRejectedReservedBit2Exists : 1;
-    unsigned char OrderRejectedReservedBit1Exists : 1;
+    uint8_t
+    OrderRejectedClientIdAttrExists : 1,
+    OrderRejectedReservedBit7Exists : 1,
+    OrderRejectedReservedBit6Exists : 1,
+    OrderRejectedReservedBit5Exists : 1,
+    OrderRejectedReservedBit4Exists : 1,
+    OrderRejectedReservedBit3Exists : 1,
+    OrderRejectedReservedBit2Exists : 1,
+    OrderRejectedReservedBit1Exists : 1;
 } OrderRejectedByte15T;
 
 /*
  * Bitfield: Order Rejected Byte 14
  */ 
 typedef struct {
-    unsigned char OrderRejectedReservedBit8Exists : 1;
-    unsigned char OrderRejectedReservedBit7Exists : 1;
-    unsigned char OrderRejectedReservedBit6Exists : 1;
-    unsigned char OrderRejectedReservedBit5Exists : 1;
-    unsigned char OrderRejectedReservedBit4Exists : 1;
-    unsigned char OrderRejectedReservedBit3Exists : 1;
-    unsigned char OrderRejectedReservedBit2Exists : 1;
-    unsigned char OrderRejectedReservedBit1Exists : 1;
+    uint8_t
+    OrderRejectedReservedBit8Exists : 1,
+    OrderRejectedReservedBit7Exists : 1,
+    OrderRejectedReservedBit6Exists : 1,
+    OrderRejectedReservedBit5Exists : 1,
+    OrderRejectedReservedBit4Exists : 1,
+    OrderRejectedReservedBit3Exists : 1,
+    OrderRejectedReservedBit2Exists : 1,
+    OrderRejectedReservedBit1Exists : 1;
 } OrderRejectedByte14T;
 
 /*
  * Bitfield: Order Rejected Byte 13
  */ 
 typedef struct {
-    unsigned char OrderRejectedReservedBit8Exists : 1;
-    unsigned char OrderRejectedReservedBit7Exists : 1;
-    unsigned char OrderRejectedReservedBit6Exists : 1;
-    unsigned char OrderRejectedReservedBit5Exists : 1;
-    unsigned char OrderRejectedReservedBit4Exists : 1;
-    unsigned char OrderRejectedReservedBit3Exists : 1;
-    unsigned char OrderRejectedReservedBit2Exists : 1;
-    unsigned char OrderRejectedReservedBit1Exists : 1;
+    uint8_t
+    OrderRejectedReservedBit8Exists : 1,
+    OrderRejectedReservedBit7Exists : 1,
+    OrderRejectedReservedBit6Exists : 1,
+    OrderRejectedReservedBit5Exists : 1,
+    OrderRejectedReservedBit4Exists : 1,
+    OrderRejectedReservedBit3Exists : 1,
+    OrderRejectedReservedBit2Exists : 1,
+    OrderRejectedReservedBit1Exists : 1;
 } OrderRejectedByte13T;
 
 /*
  * Bitfield: Order Rejected Byte 12
  */ 
 typedef struct {
-    unsigned char OrderRejectedReservedBit8Exists : 1;
-    unsigned char OrderRejectedReservedBit7Exists : 1;
-    unsigned char OrderRejectedReservedBit6Exists : 1;
-    unsigned char OrderRejectedReservedBit5Exists : 1;
-    unsigned char OrderRejectedReservedBit4Exists : 1;
-    unsigned char OrderRejectedReservedBit3Exists : 1;
-    unsigned char OrderRejectedReservedBit2Exists : 1;
-    unsigned char OrderRejectedReservedBit1Exists : 1;
+    uint8_t
+    OrderRejectedReservedBit8Exists : 1,
+    OrderRejectedReservedBit7Exists : 1,
+    OrderRejectedReservedBit6Exists : 1,
+    OrderRejectedReservedBit5Exists : 1,
+    OrderRejectedReservedBit4Exists : 1,
+    OrderRejectedReservedBit3Exists : 1,
+    OrderRejectedReservedBit2Exists : 1,
+    OrderRejectedReservedBit1Exists : 1;
 } OrderRejectedByte12T;
 
 /*
  * Bitfield: Order Rejected Byte 11
  */ 
 typedef struct {
-    unsigned char OrderRejectedReservedBit8Exists : 1;
-    unsigned char OrderRejectedReservedBit7Exists : 1;
-    unsigned char OrderRejectedReservedBit6Exists : 1;
-    unsigned char OrderRejectedReservedBit5Exists : 1;
-    unsigned char OrderRejectedReservedBit4Exists : 1;
-    unsigned char OrderRejectedReservedBit3Exists : 1;
-    unsigned char OrderRejectedReservedBit2Exists : 1;
-    unsigned char OrderRejectedReservedBit1Exists : 1;
+    uint8_t
+    OrderRejectedReservedBit8Exists : 1,
+    OrderRejectedReservedBit7Exists : 1,
+    OrderRejectedReservedBit6Exists : 1,
+    OrderRejectedReservedBit5Exists : 1,
+    OrderRejectedReservedBit4Exists : 1,
+    OrderRejectedReservedBit3Exists : 1,
+    OrderRejectedReservedBit2Exists : 1,
+    OrderRejectedReservedBit1Exists : 1;
 } OrderRejectedByte11T;
 
 /*
  * Bitfield: Order Rejected Byte 10
  */ 
 typedef struct {
-    unsigned char OrderRejectedReservedBit8Exists : 1;
-    unsigned char OrderRejectedReservedBit7Exists : 1;
-    unsigned char OrderRejectedReservedBit6Exists : 1;
-    unsigned char OrderRejectedReservedBit5Exists : 1;
-    unsigned char OrderRejectedReservedBit4Exists : 1;
-    unsigned char OrderRejectedReservedBit3Exists : 1;
-    unsigned char OrderRejectedReservedBit2Exists : 1;
-    unsigned char OrderRejectedCrossIdExists : 1;
+    uint8_t
+    OrderRejectedReservedBit8Exists : 1,
+    OrderRejectedReservedBit7Exists : 1,
+    OrderRejectedReservedBit6Exists : 1,
+    OrderRejectedReservedBit5Exists : 1,
+    OrderRejectedReservedBit4Exists : 1,
+    OrderRejectedReservedBit3Exists : 1,
+    OrderRejectedReservedBit2Exists : 1,
+    OrderRejectedCrossIdExists : 1;
 } OrderRejectedByte10T;
 
 /*
  * Bitfield: Order Rejected Byte 9
  */ 
 typedef struct {
-    unsigned char OrderRejectedReservedBit8Exists : 1;
-    unsigned char OrderRejectedReservedBit7Exists : 1;
-    unsigned char OrderRejectedCmtaNumberExists : 1;
-    unsigned char OrderRejectedReservedBit5Exists : 1;
-    unsigned char OrderRejectedReservedBit4Exists : 1;
-    unsigned char OrderRejectedReservedBit3Exists : 1;
-    unsigned char OrderRejectedReservedBit2Exists : 1;
-    unsigned char OrderRejectedMarketFeeCodeExists : 1;
+    uint8_t
+    OrderRejectedReservedBit8Exists : 1,
+    OrderRejectedReservedBit7Exists : 1,
+    OrderRejectedCmtaNumberExists : 1,
+    OrderRejectedReservedBit5Exists : 1,
+    OrderRejectedReservedBit4Exists : 1,
+    OrderRejectedReservedBit3Exists : 1,
+    OrderRejectedReservedBit2Exists : 1,
+    OrderRejectedMarketFeeCodeExists : 1;
 } OrderRejectedByte9T;
 
 /*
  * Bitfield: Order Rejected Byte 8
  */ 
 typedef struct {
-    unsigned char OrderRejectedReservedBit8Exists : 1;
-    unsigned char OrderRejectedExDestinationExists : 1;
-    unsigned char OrderRejectedRouteDeliveryMethodExists : 1;
-    unsigned char OrderRejectedRouteStrategyExists : 1;
-    unsigned char OrderRejectedRoutingInstExists : 1;
-    unsigned char OrderRejectedStopPxExists : 1;
-    unsigned char OrderRejectedEchoTextExists : 1;
-    unsigned char OrderRejectedReservedBit1Exists : 1;
+    uint8_t
+    OrderRejectedReservedBit8Exists : 1,
+    OrderRejectedExDestinationExists : 1,
+    OrderRejectedRouteDeliveryMethodExists : 1,
+    OrderRejectedRouteStrategyExists : 1,
+    OrderRejectedRoutingInstExists : 1,
+    OrderRejectedStopPxExists : 1,
+    OrderRejectedEchoTextExists : 1,
+    OrderRejectedReservedBit1Exists : 1;
 } OrderRejectedByte8T;
 
 /*
  * Bitfield: Order Rejected Byte 7
  */ 
 typedef struct {
-    unsigned char OrderRejectedReservedBit8Exists : 1;
-    unsigned char OrderRejectedReservedBit7Exists : 1;
-    unsigned char OrderRejectedReservedBit6Exists : 1;
-    unsigned char OrderRejectedReservedBit5Exists : 1;
-    unsigned char OrderRejectedReservedBit4Exists : 1;
-    unsigned char OrderRejectedReservedBit3Exists : 1;
-    unsigned char OrderRejectedReservedBit2Exists : 1;
-    unsigned char OrderRejectedReservedBit1Exists : 1;
+    uint8_t
+    OrderRejectedReservedBit8Exists : 1,
+    OrderRejectedReservedBit7Exists : 1,
+    OrderRejectedReservedBit6Exists : 1,
+    OrderRejectedReservedBit5Exists : 1,
+    OrderRejectedReservedBit4Exists : 1,
+    OrderRejectedReservedBit3Exists : 1,
+    OrderRejectedReservedBit2Exists : 1,
+    OrderRejectedReservedBit1Exists : 1;
 } OrderRejectedByte7T;
 
 /*
  * Bitfield: Order Rejected Byte 6
  */ 
 typedef struct {
-    unsigned char OrderRejectedReservedBit8Exists : 1;
-    unsigned char OrderRejectedReservedBit7Exists : 1;
-    unsigned char OrderRejectedReservedBit6Exists : 1;
-    unsigned char OrderRejectedReservedBit5Exists : 1;
-    unsigned char OrderRejectedAttributedQuoteExists : 1;
-    unsigned char OrderRejectedContraCapacityExists : 1;
-    unsigned char OrderRejectedReservedBit2Exists : 1;
-    unsigned char OrderRejectedSecondaryOrderIdExists : 1;
+    uint8_t
+    OrderRejectedReservedBit8Exists : 1,
+    OrderRejectedReservedBit7Exists : 1,
+    OrderRejectedReservedBit6Exists : 1,
+    OrderRejectedReservedBit5Exists : 1,
+    OrderRejectedAttributedQuoteExists : 1,
+    OrderRejectedContraCapacityExists : 1,
+    OrderRejectedReservedBit2Exists : 1,
+    OrderRejectedSecondaryOrderIdExists : 1;
 } OrderRejectedByte6T;
 
 /*
  * Bitfield: Order Rejected Byte 5
  */ 
 typedef struct {
-    unsigned char OrderRejectedReservedBit8Exists : 1;
-    unsigned char OrderRejectedReservedBit7Exists : 1;
-    unsigned char OrderRejectedReservedBit6Exists : 1;
-    unsigned char OrderRejectedReservedBit5Exists : 1;
-    unsigned char OrderRejectedReservedBit4Exists : 1;
-    unsigned char OrderRejectedReservedBit3Exists : 1;
-    unsigned char OrderRejectedReservedBit2Exists : 1;
-    unsigned char OrderRejectedReservedBit1Exists : 1;
+    uint8_t
+    OrderRejectedReservedBit8Exists : 1,
+    OrderRejectedReservedBit7Exists : 1,
+    OrderRejectedReservedBit6Exists : 1,
+    OrderRejectedReservedBit5Exists : 1,
+    OrderRejectedReservedBit4Exists : 1,
+    OrderRejectedReservedBit3Exists : 1,
+    OrderRejectedReservedBit2Exists : 1,
+    OrderRejectedReservedBit1Exists : 1;
 } OrderRejectedByte5T;
 
 /*
  * Bitfield: Order Rejected Byte 4
  */ 
 typedef struct {
-    unsigned char OrderRejectedReservedBit8Exists : 1;
-    unsigned char OrderRejectedReservedBit7Exists : 1;
-    unsigned char OrderRejectedCorrectedSizeExists : 1;
-    unsigned char OrderRejectedReservedBit5Exists : 1;
-    unsigned char OrderRejectedOpenCloseExists : 1;
-    unsigned char OrderRejectedPutOrCallExists : 1;
-    unsigned char OrderRejectedStrikePriceExists : 1;
-    unsigned char OrderRejectedMaturityDateExists : 1;
+    uint8_t
+    OrderRejectedReservedBit8Exists : 1,
+    OrderRejectedReservedBit7Exists : 1,
+    OrderRejectedCorrectedSizeExists : 1,
+    OrderRejectedReservedBit5Exists : 1,
+    OrderRejectedOpenCloseExists : 1,
+    OrderRejectedPutOrCallExists : 1,
+    OrderRejectedStrikePriceExists : 1,
+    OrderRejectedMaturityDateExists : 1;
 } OrderRejectedByte4T;
 
 /*
  * Bitfield: Order Rejected Byte 3
  */ 
 typedef struct {
-    unsigned char OrderRejectedPreventMatchExists : 1;
-    unsigned char OrderRejectedOrderQtyExists : 1;
-    unsigned char OrderRejectedReservedBit6Exists : 1;
-    unsigned char OrderRejectedMaxFloorExists : 1;
-    unsigned char OrderRejectedDisplayIndicatorExists : 1;
-    unsigned char OrderRejectedClearingAccountExists : 1;
-    unsigned char OrderRejectedClearingFirmExists : 1;
-    unsigned char OrderRejectedAccountExists : 1;
+    uint8_t
+    OrderRejectedPreventMatchExists : 1,
+    OrderRejectedOrderQtyExists : 1,
+    OrderRejectedReservedBit6Exists : 1,
+    OrderRejectedMaxFloorExists : 1,
+    OrderRejectedDisplayIndicatorExists : 1,
+    OrderRejectedClearingAccountExists : 1,
+    OrderRejectedClearingFirmExists : 1,
+    OrderRejectedAccountExists : 1;
 } OrderRejectedByte3T;
 
 /*
  * Bitfield: Order Rejected Byte 2
  */ 
 typedef struct {
-    unsigned char OrderRejectedReservedBit8Exists : 1;
-    unsigned char OrderRejectedCapacityExists : 1;
-    unsigned char OrderRejectedReservedBit6Exists : 1;
-    unsigned char OrderRejectedReservedBit5Exists : 1;
-    unsigned char OrderRejectedReservedBit4Exists : 1;
-    unsigned char OrderRejectedReservedBit3Exists : 1;
-    unsigned char OrderRejectedReservedBit2Exists : 1;
-    unsigned char OrderRejectedSymbolExists : 1;
+    uint8_t
+    OrderRejectedReservedBit8Exists : 1,
+    OrderRejectedCapacityExists : 1,
+    OrderRejectedReservedBit6Exists : 1,
+    OrderRejectedReservedBit5Exists : 1,
+    OrderRejectedReservedBit4Exists : 1,
+    OrderRejectedReservedBit3Exists : 1,
+    OrderRejectedReservedBit2Exists : 1,
+    OrderRejectedSymbolExists : 1;
 } OrderRejectedByte2T;
 
 /*
  * Bitfield: Order Rejected Byte 1
  */ 
 typedef struct {
-    unsigned char OrderRejectedMaxRemovePctExists : 1;
-    unsigned char OrderRejectedMinQtyExists : 1;
-    unsigned char OrderRejectedTimeInForceExists : 1;
-    unsigned char OrderRejectedOrdTypeExists : 1;
-    unsigned char OrderRejectedExecInstExists : 1;
-    unsigned char OrderRejectedPriceExists : 1;
-    unsigned char OrderRejectedPegDifferenceExists : 1;
-    unsigned char OrderRejectedSideExists : 1;
+    uint8_t
+    OrderRejectedMaxRemovePctExists : 1,
+    OrderRejectedMinQtyExists : 1,
+    OrderRejectedTimeInForceExists : 1,
+    OrderRejectedOrdTypeExists : 1,
+    OrderRejectedExecInstExists : 1,
+    OrderRejectedPriceExists : 1,
+    OrderRejectedPegDifferenceExists : 1,
+    OrderRejectedSideExists : 1;
 } OrderRejectedByte1T;
 
 /*
@@ -2489,238 +2625,255 @@ typedef struct {
  * Bitfield: Order Acknowledgment Byte 17
  */ 
 typedef struct {
-    unsigned char OrderAcknowledgmentReservedBit8Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit7Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit6Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit5Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit4Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit3Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit2Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit1Exists : 1;
+    uint8_t
+    OrderAcknowledgmentReservedBit8Exists : 1,
+    OrderAcknowledgmentReservedBit7Exists : 1,
+    OrderAcknowledgmentReservedBit6Exists : 1,
+    OrderAcknowledgmentReservedBit5Exists : 1,
+    OrderAcknowledgmentReservedBit4Exists : 1,
+    OrderAcknowledgmentReservedBit3Exists : 1,
+    OrderAcknowledgmentReservedBit2Exists : 1,
+    OrderAcknowledgmentReservedBit1Exists : 1;
 } OrderAcknowledgmentByte17T;
 
 /*
  * Bitfield: Order Acknowledgment Byte 16
  */ 
 typedef struct {
-    unsigned char OrderAcknowledgmentReservedBit8Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit7Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit6Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit5Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit4Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit3Exists : 1;
-    unsigned char OrderAcknowledgmentSessionEligibilityExists : 1;
-    unsigned char OrderAcknowledgmentReservedBit1Exists : 1;
+    uint8_t
+    OrderAcknowledgmentReservedBit8Exists : 1,
+    OrderAcknowledgmentReservedBit7Exists : 1,
+    OrderAcknowledgmentReservedBit6Exists : 1,
+    OrderAcknowledgmentReservedBit5Exists : 1,
+    OrderAcknowledgmentReservedBit4Exists : 1,
+    OrderAcknowledgmentReservedBit3Exists : 1,
+    OrderAcknowledgmentSessionEligibilityExists : 1,
+    OrderAcknowledgmentReservedBit1Exists : 1;
 } OrderAcknowledgmentByte16T;
 
 /*
  * Bitfield: Order Acknowledgment Byte 15
  */ 
 typedef struct {
-    unsigned char OrderAcknowledgmentClientIdAttrExists : 1;
-    unsigned char OrderAcknowledgmentReservedBit7Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit6Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit5Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit4Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit3Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit2Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit1Exists : 1;
+    uint8_t
+    OrderAcknowledgmentClientIdAttrExists : 1,
+    OrderAcknowledgmentReservedBit7Exists : 1,
+    OrderAcknowledgmentReservedBit6Exists : 1,
+    OrderAcknowledgmentReservedBit5Exists : 1,
+    OrderAcknowledgmentReservedBit4Exists : 1,
+    OrderAcknowledgmentReservedBit3Exists : 1,
+    OrderAcknowledgmentReservedBit2Exists : 1,
+    OrderAcknowledgmentReservedBit1Exists : 1;
 } OrderAcknowledgmentByte15T;
 
 /*
  * Bitfield: Order Acknowledgment Byte 14
  */ 
 typedef struct {
-    unsigned char OrderAcknowledgmentReservedBit8Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit7Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit6Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit5Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit4Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit3Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit2Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit1Exists : 1;
+    uint8_t
+    OrderAcknowledgmentReservedBit8Exists : 1,
+    OrderAcknowledgmentReservedBit7Exists : 1,
+    OrderAcknowledgmentReservedBit6Exists : 1,
+    OrderAcknowledgmentReservedBit5Exists : 1,
+    OrderAcknowledgmentReservedBit4Exists : 1,
+    OrderAcknowledgmentReservedBit3Exists : 1,
+    OrderAcknowledgmentReservedBit2Exists : 1,
+    OrderAcknowledgmentReservedBit1Exists : 1;
 } OrderAcknowledgmentByte14T;
 
 /*
  * Bitfield: Order Acknowledgment Byte 13
  */ 
 typedef struct {
-    unsigned char OrderAcknowledgmentReservedBit8Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit7Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit6Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit5Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit4Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit3Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit2Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit1Exists : 1;
+    uint8_t
+    OrderAcknowledgmentReservedBit8Exists : 1,
+    OrderAcknowledgmentReservedBit7Exists : 1,
+    OrderAcknowledgmentReservedBit6Exists : 1,
+    OrderAcknowledgmentReservedBit5Exists : 1,
+    OrderAcknowledgmentReservedBit4Exists : 1,
+    OrderAcknowledgmentReservedBit3Exists : 1,
+    OrderAcknowledgmentReservedBit2Exists : 1,
+    OrderAcknowledgmentReservedBit1Exists : 1;
 } OrderAcknowledgmentByte13T;
 
 /*
  * Bitfield: Order Acknowledgment Byte 12
  */ 
 typedef struct {
-    unsigned char OrderAcknowledgmentClearingOptionalDataExists : 1;
-    unsigned char OrderAcknowledgmentReservedBit7Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit6Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit5Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit4Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit3Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit2Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit1Exists : 1;
+    uint8_t
+    OrderAcknowledgmentClearingOptionalDataExists : 1,
+    OrderAcknowledgmentReservedBit7Exists : 1,
+    OrderAcknowledgmentReservedBit6Exists : 1,
+    OrderAcknowledgmentReservedBit5Exists : 1,
+    OrderAcknowledgmentReservedBit4Exists : 1,
+    OrderAcknowledgmentReservedBit3Exists : 1,
+    OrderAcknowledgmentReservedBit2Exists : 1,
+    OrderAcknowledgmentReservedBit1Exists : 1;
 } OrderAcknowledgmentByte12T;
 
 /*
  * Bitfield: Order Acknowledgment Byte 11
  */ 
 typedef struct {
-    unsigned char OrderAcknowledgmentReservedBit8Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit7Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit6Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit5Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit4Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit3Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit2Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit1Exists : 1;
+    uint8_t
+    OrderAcknowledgmentReservedBit8Exists : 1,
+    OrderAcknowledgmentReservedBit7Exists : 1,
+    OrderAcknowledgmentReservedBit6Exists : 1,
+    OrderAcknowledgmentReservedBit5Exists : 1,
+    OrderAcknowledgmentReservedBit4Exists : 1,
+    OrderAcknowledgmentReservedBit3Exists : 1,
+    OrderAcknowledgmentReservedBit2Exists : 1,
+    OrderAcknowledgmentReservedBit1Exists : 1;
 } OrderAcknowledgmentByte11T;
 
 /*
  * Bitfield: Order Acknowledgment Byte 10
  */ 
 typedef struct {
-    unsigned char OrderAcknowledgmentReservedBit8Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit7Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit6Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit5Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit4Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit3Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit2Exists : 1;
-    unsigned char OrderAcknowledgmentCrossIdExists : 1;
+    uint8_t
+    OrderAcknowledgmentReservedBit8Exists : 1,
+    OrderAcknowledgmentReservedBit7Exists : 1,
+    OrderAcknowledgmentReservedBit6Exists : 1,
+    OrderAcknowledgmentReservedBit5Exists : 1,
+    OrderAcknowledgmentReservedBit4Exists : 1,
+    OrderAcknowledgmentReservedBit3Exists : 1,
+    OrderAcknowledgmentReservedBit2Exists : 1,
+    OrderAcknowledgmentCrossIdExists : 1;
 } OrderAcknowledgmentByte10T;
 
 /*
  * Bitfield: Order Acknowledgment Byte 9
  */ 
 typedef struct {
-    unsigned char OrderAcknowledgmentReservedBit8Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit7Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit6Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit5Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit4Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit3Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit2Exists : 1;
-    unsigned char OrderAcknowledgmentMarketFeeCodeExists : 1;
+    uint8_t
+    OrderAcknowledgmentReservedBit8Exists : 1,
+    OrderAcknowledgmentReservedBit7Exists : 1,
+    OrderAcknowledgmentReservedBit6Exists : 1,
+    OrderAcknowledgmentReservedBit5Exists : 1,
+    OrderAcknowledgmentReservedBit4Exists : 1,
+    OrderAcknowledgmentReservedBit3Exists : 1,
+    OrderAcknowledgmentReservedBit2Exists : 1,
+    OrderAcknowledgmentMarketFeeCodeExists : 1;
 } OrderAcknowledgmentByte9T;
 
 /*
  * Bitfield: Order Acknowledgment Byte 8
  */ 
 typedef struct {
-    unsigned char OrderAcknowledgmentReservedBit8Exists : 1;
-    unsigned char OrderAcknowledgmentExDestinationExists : 1;
-    unsigned char OrderAcknowledgmentRouteDeliveryMethodExists : 1;
-    unsigned char OrderAcknowledgmentRouteStrategyExists : 1;
-    unsigned char OrderAcknowledgmentRoutingInstExists : 1;
-    unsigned char OrderAcknowledgmentStopPxExists : 1;
-    unsigned char OrderAcknowledgmentEchoTextExists : 1;
-    unsigned char OrderAcknowledgmentReservedBit1Exists : 1;
+    uint8_t
+    OrderAcknowledgmentReservedBit8Exists : 1,
+    OrderAcknowledgmentExDestinationExists : 1,
+    OrderAcknowledgmentRouteDeliveryMethodExists : 1,
+    OrderAcknowledgmentRouteStrategyExists : 1,
+    OrderAcknowledgmentRoutingInstExists : 1,
+    OrderAcknowledgmentStopPxExists : 1,
+    OrderAcknowledgmentEchoTextExists : 1,
+    OrderAcknowledgmentReservedBit1Exists : 1;
 } OrderAcknowledgmentByte8T;
 
 /*
  * Bitfield: Order Acknowledgment Byte 7
  */ 
 typedef struct {
-    unsigned char OrderAcknowledgmentReservedBit8Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit7Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit6Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit5Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit4Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit3Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit2Exists : 1;
-    unsigned char OrderAcknowledgmentSubLiquidityIndicatorExists : 1;
+    uint8_t
+    OrderAcknowledgmentReservedBit8Exists : 1,
+    OrderAcknowledgmentReservedBit7Exists : 1,
+    OrderAcknowledgmentReservedBit6Exists : 1,
+    OrderAcknowledgmentReservedBit5Exists : 1,
+    OrderAcknowledgmentReservedBit4Exists : 1,
+    OrderAcknowledgmentReservedBit3Exists : 1,
+    OrderAcknowledgmentReservedBit2Exists : 1,
+    OrderAcknowledgmentSubLiquidityIndicatorExists : 1;
 } OrderAcknowledgmentByte7T;
 
 /*
  * Bitfield: Order Acknowledgment Byte 6
  */ 
 typedef struct {
-    unsigned char OrderAcknowledgmentReservedBit8Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit7Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit6Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit5Exists : 1;
-    unsigned char OrderAcknowledgmentAttributedQuoteExists : 1;
-    unsigned char OrderAcknowledgmentContraCapacityExists : 1;
-    unsigned char OrderAcknowledgmentReservedBit2Exists : 1;
-    unsigned char OrderAcknowledgmentSecondaryOrderIdExists : 1;
+    uint8_t
+    OrderAcknowledgmentReservedBit8Exists : 1,
+    OrderAcknowledgmentReservedBit7Exists : 1,
+    OrderAcknowledgmentReservedBit6Exists : 1,
+    OrderAcknowledgmentReservedBit5Exists : 1,
+    OrderAcknowledgmentAttributedQuoteExists : 1,
+    OrderAcknowledgmentContraCapacityExists : 1,
+    OrderAcknowledgmentReservedBit2Exists : 1,
+    OrderAcknowledgmentSecondaryOrderIdExists : 1;
 } OrderAcknowledgmentByte6T;
 
 /*
  * Bitfield: Order Acknowledgment Byte 5
  */ 
 typedef struct {
-    unsigned char OrderAcknowledgmentExpireTimeExists : 1;
-    unsigned char OrderAcknowledgmentBaseLiquidityIndicatorExists : 1;
-    unsigned char OrderAcknowledgmentWorkingPriceExists : 1;
-    unsigned char OrderAcknowledgmentDisplayPriceExists : 1;
-    unsigned char OrderAcknowledgmentLastPxExists : 1;
-    unsigned char OrderAcknowledgmentLastSharesExists : 1;
-    unsigned char OrderAcknowledgmentLeavesQtyExists : 1;
-    unsigned char OrderAcknowledgmentOrigClOrdIdExists : 1;
+    uint8_t
+    OrderAcknowledgmentExpireTimeExists : 1,
+    OrderAcknowledgmentBaseLiquidityIndicatorExists : 1,
+    OrderAcknowledgmentWorkingPriceExists : 1,
+    OrderAcknowledgmentDisplayPriceExists : 1,
+    OrderAcknowledgmentLastPxExists : 1,
+    OrderAcknowledgmentLastSharesExists : 1,
+    OrderAcknowledgmentLeavesQtyExists : 1,
+    OrderAcknowledgmentOrigClOrdIdExists : 1;
 } OrderAcknowledgmentByte5T;
 
 /*
  * Bitfield: Order Acknowledgment Byte 4
  */ 
 typedef struct {
-    unsigned char OrderAcknowledgmentReservedBit8Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit7Exists : 1;
-    unsigned char OrderAcknowledgmentCorrectedSizeExists : 1;
-    unsigned char OrderAcknowledgmentReservedBit5Exists : 1;
-    unsigned char OrderAcknowledgmentOpenCloseExists : 1;
-    unsigned char OrderAcknowledgmentPutOrCallExists : 1;
-    unsigned char OrderAcknowledgmentStrikePriceExists : 1;
-    unsigned char OrderAcknowledgmentMaturityDateExists : 1;
+    uint8_t
+    OrderAcknowledgmentReservedBit8Exists : 1,
+    OrderAcknowledgmentReservedBit7Exists : 1,
+    OrderAcknowledgmentCorrectedSizeExists : 1,
+    OrderAcknowledgmentReservedBit5Exists : 1,
+    OrderAcknowledgmentOpenCloseExists : 1,
+    OrderAcknowledgmentPutOrCallExists : 1,
+    OrderAcknowledgmentStrikePriceExists : 1,
+    OrderAcknowledgmentMaturityDateExists : 1;
 } OrderAcknowledgmentByte4T;
 
 /*
  * Bitfield: Order Acknowledgment Byte 3
  */ 
 typedef struct {
-    unsigned char OrderAcknowledgmentPreventMatchExists : 1;
-    unsigned char OrderAcknowledgmentOrderQtyExists : 1;
-    unsigned char OrderAcknowledgmentReservedBit6Exists : 1;
-    unsigned char OrderAcknowledgmentMaxFloorExists : 1;
-    unsigned char OrderAcknowledgmentDisplayIndicatorExists : 1;
-    unsigned char OrderAcknowledgmentClearingAccountExists : 1;
-    unsigned char OrderAcknowledgmentClearingFirmExists : 1;
-    unsigned char OrderAcknowledgmentAccountExists : 1;
+    uint8_t
+    OrderAcknowledgmentPreventMatchExists : 1,
+    OrderAcknowledgmentOrderQtyExists : 1,
+    OrderAcknowledgmentReservedBit6Exists : 1,
+    OrderAcknowledgmentMaxFloorExists : 1,
+    OrderAcknowledgmentDisplayIndicatorExists : 1,
+    OrderAcknowledgmentClearingAccountExists : 1,
+    OrderAcknowledgmentClearingFirmExists : 1,
+    OrderAcknowledgmentAccountExists : 1;
 } OrderAcknowledgmentByte3T;
 
 /*
  * Bitfield: Order Acknowledgment Byte 2
  */ 
 typedef struct {
-    unsigned char OrderAcknowledgmentReservedBit8Exists : 1;
-    unsigned char OrderAcknowledgmentCapacityExists : 1;
-    unsigned char OrderAcknowledgmentReservedBit6Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit5Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit4Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit3Exists : 1;
-    unsigned char OrderAcknowledgmentReservedBit2Exists : 1;
-    unsigned char OrderAcknowledgmentSymbolExists : 1;
+    uint8_t
+    OrderAcknowledgmentReservedBit8Exists : 1,
+    OrderAcknowledgmentCapacityExists : 1,
+    OrderAcknowledgmentReservedBit6Exists : 1,
+    OrderAcknowledgmentReservedBit5Exists : 1,
+    OrderAcknowledgmentReservedBit4Exists : 1,
+    OrderAcknowledgmentReservedBit3Exists : 1,
+    OrderAcknowledgmentReservedBit2Exists : 1,
+    OrderAcknowledgmentSymbolExists : 1;
 } OrderAcknowledgmentByte2T;
 
 /*
  * Bitfield: Order Acknowledgment Byte 1
  */ 
 typedef struct {
-    unsigned char OrderAcknowledgmentMaxRemovePctExists : 1;
-    unsigned char OrderAcknowledgmentMinQtyExists : 1;
-    unsigned char OrderAcknowledgmentTimeInForceExists : 1;
-    unsigned char OrderAcknowledgmentOrdTypeExists : 1;
-    unsigned char OrderAcknowledgmentExecInstExists : 1;
-    unsigned char OrderAcknowledgmentPriceExists : 1;
-    unsigned char OrderAcknowledgmentPegDifferenceExists : 1;
-    unsigned char OrderAcknowledgmentSideExists : 1;
+    uint8_t
+    OrderAcknowledgmentMaxRemovePctExists : 1,
+    OrderAcknowledgmentMinQtyExists : 1,
+    OrderAcknowledgmentTimeInForceExists : 1,
+    OrderAcknowledgmentOrdTypeExists : 1,
+    OrderAcknowledgmentExecInstExists : 1,
+    OrderAcknowledgmentPriceExists : 1,
+    OrderAcknowledgmentPegDifferenceExists : 1,
+    OrderAcknowledgmentSideExists : 1;
 } OrderAcknowledgmentByte1T;
 
 /*
@@ -2739,28 +2892,30 @@ typedef struct {
  * Bitfield: Modify Order Byte 2
  */ 
 typedef struct {
-    unsigned char ModifyOrderReservedBit8Exists : 1;
-    unsigned char ModifyOrderReservedBit7Exists : 1;
-    unsigned char ModifyOrderReservedBit6Exists : 1;
-    unsigned char ModifyOrderReservedBit5Exists : 1;
-    unsigned char ModifyOrderReservedBit4Exists : 1;
-    unsigned char ModifyOrderReservedBit3Exists : 1;
-    unsigned char ModifyOrderStopPxExists : 1;
-    unsigned char ModifyOrderMaxFloorExists : 1;
+    uint8_t
+    ModifyOrderReservedBit8Exists : 1,
+    ModifyOrderReservedBit7Exists : 1,
+    ModifyOrderReservedBit6Exists : 1,
+    ModifyOrderReservedBit5Exists : 1,
+    ModifyOrderReservedBit4Exists : 1,
+    ModifyOrderReservedBit3Exists : 1,
+    ModifyOrderStopPxExists : 1,
+    ModifyOrderMaxFloorExists : 1;
 } ModifyOrderByte2T;
 
 /*
  * Bitfield: Modify Order Byte 1
  */ 
 typedef struct {
-    unsigned char ModifyOrderSideExists : 1;
-    unsigned char ModifyOrderExecInstExists : 1;
-    unsigned char ModifyOrderCancelOrigOnRejectExists : 1;
-    unsigned char ModifyOrderOrdTypeExists : 1;
-    unsigned char ModifyOrderPriceExists : 1;
-    unsigned char ModifyOrderOrderQtyExists : 1;
-    unsigned char ModifyOrderReservedBit2Exists : 1;
-    unsigned char ModifyOrderClearingFirmExists : 1;
+    uint8_t
+    ModifyOrderSideExists : 1,
+    ModifyOrderExecInstExists : 1,
+    ModifyOrderCancelOrigOnRejectExists : 1,
+    ModifyOrderOrdTypeExists : 1,
+    ModifyOrderPriceExists : 1,
+    ModifyOrderOrderQtyExists : 1,
+    ModifyOrderReservedBit2Exists : 1,
+    ModifyOrderClearingFirmExists : 1;
 } ModifyOrderByte1T;
 
 /*
@@ -2825,154 +2980,165 @@ typedef struct {
  * Bitfield: Cancel Order Byte 2
  */ 
 typedef struct {
-    unsigned char CancelOrderReservedBit8Exists : 1;
-    unsigned char CancelOrderReservedBit7Exists : 1;
-    unsigned char CancelOrderReservedBit6Exists : 1;
-    unsigned char CancelOrderReservedBit5Exists : 1;
-    unsigned char CancelOrderReservedBit4Exists : 1;
-    unsigned char CancelOrderReservedBit3Exists : 1;
-    unsigned char CancelOrderReservedBit2Exists : 1;
-    unsigned char CancelOrderMassCancelInstExists : 1;
+    uint8_t
+    CancelOrderReservedBit8Exists : 1,
+    CancelOrderReservedBit7Exists : 1,
+    CancelOrderReservedBit6Exists : 1,
+    CancelOrderReservedBit5Exists : 1,
+    CancelOrderReservedBit4Exists : 1,
+    CancelOrderReservedBit3Exists : 1,
+    CancelOrderReservedBit2Exists : 1,
+    CancelOrderMassCancelInstExists : 1;
 } CancelOrderByte2T;
 
 /*
  * Bitfield: Cancel Order Byte 1
  */ 
 typedef struct {
-    unsigned char CancelOrderReservedBit8Exists : 1;
-    unsigned char CancelOrderReservedBit7Exists : 1;
-    unsigned char CancelOrderReservedBit6Exists : 1;
-    unsigned char CancelOrderMassCancelIdExists : 1;
-    unsigned char CancelOrderRiskRootExists : 1;
-    unsigned char CancelOrderMassCancelExists : 1;
-    unsigned char CancelOrderMassCancelLockoutExists : 1;
-    unsigned char CancelOrderClearingFirmExists : 1;
+    uint8_t
+    CancelOrderReservedBit8Exists : 1,
+    CancelOrderReservedBit7Exists : 1,
+    CancelOrderReservedBit6Exists : 1,
+    CancelOrderMassCancelIdExists : 1,
+    CancelOrderRiskRootExists : 1,
+    CancelOrderMassCancelExists : 1,
+    CancelOrderMassCancelLockoutExists : 1,
+    CancelOrderClearingFirmExists : 1;
 } CancelOrderByte1T;
 
 /*
  * Bitfield: New Order Byte 9
  */ 
 typedef struct {
-    unsigned char NewOrderReservedBit8Exists : 1;
-    unsigned char NewOrderReservedBit7Exists : 1;
-    unsigned char NewOrderReservedBit6Exists : 1;
-    unsigned char NewOrderReservedBit5Exists : 1;
-    unsigned char NewOrderReservedBit4Exists : 1;
-    unsigned char NewOrderReservedBit3Exists : 1;
-    unsigned char NewOrderReservedBit2Exists : 1;
-    unsigned char NewOrderReservedBit1Exists : 1;
+    uint8_t
+    NewOrderReservedBit8Exists : 1,
+    NewOrderReservedBit7Exists : 1,
+    NewOrderReservedBit6Exists : 1,
+    NewOrderReservedBit5Exists : 1,
+    NewOrderReservedBit4Exists : 1,
+    NewOrderReservedBit3Exists : 1,
+    NewOrderReservedBit2Exists : 1,
+    NewOrderReservedBit1Exists : 1;
 } NewOrderByte9T;
 
 /*
  * Bitfield: New Order Byte 8
  */ 
 typedef struct {
-    unsigned char NewOrderReservedBit8Exists : 1;
-    unsigned char NewOrderReservedBit7Exists : 1;
-    unsigned char NewOrderReservedBit6Exists : 1;
-    unsigned char NewOrderReservedBit5Exists : 1;
-    unsigned char NewOrderClientIdAttrExists : 1;
-    unsigned char NewOrderClearingOptionalDataExists : 1;
-    unsigned char NewOrderCustomGroupIdExists : 1;
-    unsigned char NewOrderReservedBit1Exists : 1;
+    uint8_t
+    NewOrderReservedBit8Exists : 1,
+    NewOrderReservedBit7Exists : 1,
+    NewOrderReservedBit6Exists : 1,
+    NewOrderReservedBit5Exists : 1,
+    NewOrderClientIdAttrExists : 1,
+    NewOrderClearingOptionalDataExists : 1,
+    NewOrderCustomGroupIdExists : 1,
+    NewOrderReservedBit1Exists : 1;
 } NewOrderByte8T;
 
 /*
  * Bitfield: New Order Byte 7
  */ 
 typedef struct {
-    unsigned char NewOrderReservedBit8Exists : 1;
-    unsigned char NewOrderReservedBit7Exists : 1;
-    unsigned char NewOrderReservedBit6Exists : 1;
-    unsigned char NewOrderReservedBit5Exists : 1;
-    unsigned char NewOrderReservedBit4Exists : 1;
-    unsigned char NewOrderReservedBit3Exists : 1;
-    unsigned char NewOrderCustomGroupIdExists : 1;
-    unsigned char NewOrderReservedBit1Exists : 1;
+    uint8_t
+    NewOrderReservedBit8Exists : 1,
+    NewOrderReservedBit7Exists : 1,
+    NewOrderReservedBit6Exists : 1,
+    NewOrderReservedBit5Exists : 1,
+    NewOrderReservedBit4Exists : 1,
+    NewOrderReservedBit3Exists : 1,
+    NewOrderCustomGroupIdExists : 1,
+    NewOrderReservedBit1Exists : 1;
 } NewOrderByte7T;
 
 /*
  * Bitfield: New Order Byte 6
  */ 
 typedef struct {
-    unsigned char NewOrderReservedBit8Exists : 1;
-    unsigned char NewOrderReservedBit7Exists : 1;
-    unsigned char NewOrderEchoTextExists : 1;
-    unsigned char NewOrderExDestinationExists : 1;
-    unsigned char NewOrderRouteDeliveryMethodExists : 1;
-    unsigned char NewOrderRouteStrategyExists : 1;
-    unsigned char NewOrderStopPxExists : 1;
-    unsigned char NewOrderDisplayRangeExists : 1;
+    uint8_t
+    NewOrderReservedBit8Exists : 1,
+    NewOrderReservedBit7Exists : 1,
+    NewOrderEchoTextExists : 1,
+    NewOrderExDestinationExists : 1,
+    NewOrderRouteDeliveryMethodExists : 1,
+    NewOrderRouteStrategyExists : 1,
+    NewOrderStopPxExists : 1,
+    NewOrderDisplayRangeExists : 1;
 } NewOrderByte6T;
 
 /*
  * Bitfield: New Order Byte 5
  */ 
 typedef struct {
-    unsigned char NewOrderReservedBit8Exists : 1;
-    unsigned char NewOrderReservedBit7Exists : 1;
-    unsigned char NewOrderReservedBit6Exists : 1;
-    unsigned char NewOrderReservedBit5Exists : 1;
-    unsigned char NewOrderExtExecInstExists : 1;
-    unsigned char NewOrderReservedBit3Exists : 1;
-    unsigned char NewOrderAttributedQuoteExists : 1;
-    unsigned char NewOrderSessionEligibilityExists : 1;
+    uint8_t
+    NewOrderReservedBit8Exists : 1,
+    NewOrderReservedBit7Exists : 1,
+    NewOrderReservedBit6Exists : 1,
+    NewOrderReservedBit5Exists : 1,
+    NewOrderExtExecInstExists : 1,
+    NewOrderReservedBit3Exists : 1,
+    NewOrderAttributedQuoteExists : 1,
+    NewOrderSessionEligibilityExists : 1;
 } NewOrderByte5T;
 
 /*
  * Bitfield: New Order Byte 4
  */ 
 typedef struct {
-    unsigned char NewOrderReservedBit8Exists : 1;
-    unsigned char NewOrderReservedBit7Exists : 1;
-    unsigned char NewOrderCmtaNumberExists : 1;
-    unsigned char NewOrderOpenCloseExists : 1;
-    unsigned char NewOrderRiskResetExists : 1;
-    unsigned char NewOrderPutOrCallExists : 1;
-    unsigned char NewOrderStrikePriceExists : 1;
-    unsigned char NewOrderMaturityDateExists : 1;
+    uint8_t
+    NewOrderReservedBit8Exists : 1,
+    NewOrderReservedBit7Exists : 1,
+    NewOrderCmtaNumberExists : 1,
+    NewOrderOpenCloseExists : 1,
+    NewOrderRiskResetExists : 1,
+    NewOrderPutOrCallExists : 1,
+    NewOrderStrikePriceExists : 1,
+    NewOrderMaturityDateExists : 1;
 } NewOrderByte4T;
 
 /*
  * Bitfield: New Order Byte 3
  */ 
 typedef struct {
-    unsigned char NewOrderExpireTimeExists : 1;
-    unsigned char NewOrderLocateReqdExists : 1;
-    unsigned char NewOrderPreventMatchExists : 1;
-    unsigned char NewOrderPegDifferenceExists : 1;
-    unsigned char NewOrderDiscretionAmountExists : 1;
-    unsigned char NewOrderMaxRemovePctExists : 1;
-    unsigned char NewOrderDisplayIndicatorExists : 1;
-    unsigned char NewOrderAccountExists : 1;
+    uint8_t
+    NewOrderExpireTimeExists : 1,
+    NewOrderLocateReqdExists : 1,
+    NewOrderPreventMatchExists : 1,
+    NewOrderPegDifferenceExists : 1,
+    NewOrderDiscretionAmountExists : 1,
+    NewOrderMaxRemovePctExists : 1,
+    NewOrderDisplayIndicatorExists : 1,
+    NewOrderAccountExists : 1;
 } NewOrderByte3T;
 
 /*
  * Bitfield: New Order Byte 2
  */ 
 typedef struct {
-    unsigned char NewOrderRoutingInstExists : 1;
-    unsigned char NewOrderCapacityExists : 1;
-    unsigned char NewOrderReservedBit6Exists : 1;
-    unsigned char NewOrderReservedBit5Exists : 1;
-    unsigned char NewOrderReservedBit4Exists : 1;
-    unsigned char NewOrderReservedBit3Exists : 1;
-    unsigned char NewOrderSymbolSfxExists : 1;
-    unsigned char NewOrderSymbolExists : 1;
+    uint8_t
+    NewOrderRoutingInstExists : 1,
+    NewOrderCapacityExists : 1,
+    NewOrderReservedBit6Exists : 1,
+    NewOrderReservedBit5Exists : 1,
+    NewOrderReservedBit4Exists : 1,
+    NewOrderReservedBit3Exists : 1,
+    NewOrderSymbolSfxExists : 1,
+    NewOrderSymbolExists : 1;
 } NewOrderByte2T;
 
 /*
  * Bitfield: New Order Byte 1
  */ 
 typedef struct {
-    unsigned char NewOrderMaxFloorExists : 1;
-    unsigned char NewOrderMinQtyExists : 1;
-    unsigned char NewOrderTimeInForceExists : 1;
-    unsigned char NewOrderOrdTypeExists : 1;
-    unsigned char NewOrderExecInstExists : 1;
-    unsigned char NewOrderPriceExists : 1;
-    unsigned char NewOrderClearingAccountExists : 1;
-    unsigned char NewOrderClearingFirmExists : 1;
+    uint8_t
+    NewOrderMaxFloorExists : 1,
+    NewOrderMinQtyExists : 1,
+    NewOrderTimeInForceExists : 1,
+    NewOrderOrdTypeExists : 1,
+    NewOrderExecInstExists : 1,
+    NewOrderPriceExists : 1,
+    NewOrderClearingAccountExists : 1,
+    NewOrderClearingFirmExists : 1;
 } NewOrderByte1T;
 
 /*
@@ -2997,238 +3163,255 @@ typedef struct {
  * Bitfield: Order Execution Byte 17
  */ 
 typedef struct {
-    unsigned char OrderExecutionReservedBit8Exists : 1;
-    unsigned char OrderExecutionReservedBit7Exists : 1;
-    unsigned char OrderExecutionReservedBit6Exists : 1;
-    unsigned char OrderExecutionReservedBit5Exists : 1;
-    unsigned char OrderExecutionReservedBit4Exists : 1;
-    unsigned char OrderExecutionReservedBit3Exists : 1;
-    unsigned char OrderExecutionReservedBit2Exists : 1;
-    unsigned char OrderExecutionReservedBit1Exists : 1;
+    uint8_t
+    OrderExecutionReservedBit8Exists : 1,
+    OrderExecutionReservedBit7Exists : 1,
+    OrderExecutionReservedBit6Exists : 1,
+    OrderExecutionReservedBit5Exists : 1,
+    OrderExecutionReservedBit4Exists : 1,
+    OrderExecutionReservedBit3Exists : 1,
+    OrderExecutionReservedBit2Exists : 1,
+    OrderExecutionReservedBit1Exists : 1;
 } OrderExecutionByte17T;
 
 /*
  * Bitfield: Order Execution Byte 16
  */ 
 typedef struct {
-    unsigned char OrderExecutionReservedBit8Exists : 1;
-    unsigned char OrderExecutionReservedBit7Exists : 1;
-    unsigned char OrderExecutionReservedBit6Exists : 1;
-    unsigned char OrderExecutionReservedBit5Exists : 1;
-    unsigned char OrderExecutionReservedBit4Exists : 1;
-    unsigned char OrderExecutionReservedBit3Exists : 1;
-    unsigned char OrderExecutionReservedBit2Exists : 1;
-    unsigned char OrderExecutionReservedBit1Exists : 1;
+    uint8_t
+    OrderExecutionReservedBit8Exists : 1,
+    OrderExecutionReservedBit7Exists : 1,
+    OrderExecutionReservedBit6Exists : 1,
+    OrderExecutionReservedBit5Exists : 1,
+    OrderExecutionReservedBit4Exists : 1,
+    OrderExecutionReservedBit3Exists : 1,
+    OrderExecutionReservedBit2Exists : 1,
+    OrderExecutionReservedBit1Exists : 1;
 } OrderExecutionByte16T;
 
 /*
  * Bitfield: Order Execution Byte 15
  */ 
 typedef struct {
-    unsigned char OrderExecutionClientIdAttrExists : 1;
-    unsigned char OrderExecutionReservedBit7Exists : 1;
-    unsigned char OrderExecutionReservedBit6Exists : 1;
-    unsigned char OrderExecutionReservedBit5Exists : 1;
-    unsigned char OrderExecutionReservedBit4Exists : 1;
-    unsigned char OrderExecutionReservedBit3Exists : 1;
-    unsigned char OrderExecutionReservedBit2Exists : 1;
-    unsigned char OrderExecutionReservedBit1Exists : 1;
+    uint8_t
+    OrderExecutionClientIdAttrExists : 1,
+    OrderExecutionReservedBit7Exists : 1,
+    OrderExecutionReservedBit6Exists : 1,
+    OrderExecutionReservedBit5Exists : 1,
+    OrderExecutionReservedBit4Exists : 1,
+    OrderExecutionReservedBit3Exists : 1,
+    OrderExecutionReservedBit2Exists : 1,
+    OrderExecutionReservedBit1Exists : 1;
 } OrderExecutionByte15T;
 
 /*
  * Bitfield: Order Execution Byte 14
  */ 
 typedef struct {
-    unsigned char OrderExecutionReservedBit8Exists : 1;
-    unsigned char OrderExecutionReservedBit7Exists : 1;
-    unsigned char OrderExecutionReservedBit6Exists : 1;
-    unsigned char OrderExecutionReservedBit5Exists : 1;
-    unsigned char OrderExecutionReservedBit4Exists : 1;
-    unsigned char OrderExecutionReservedBit3Exists : 1;
-    unsigned char OrderExecutionReservedBit2Exists : 1;
-    unsigned char OrderExecutionReservedBit1Exists : 1;
+    uint8_t
+    OrderExecutionReservedBit8Exists : 1,
+    OrderExecutionReservedBit7Exists : 1,
+    OrderExecutionReservedBit6Exists : 1,
+    OrderExecutionReservedBit5Exists : 1,
+    OrderExecutionReservedBit4Exists : 1,
+    OrderExecutionReservedBit3Exists : 1,
+    OrderExecutionReservedBit2Exists : 1,
+    OrderExecutionReservedBit1Exists : 1;
 } OrderExecutionByte14T;
 
 /*
  * Bitfield: Order Execution Byte 13
  */ 
 typedef struct {
-    unsigned char OrderExecutionReservedBit8Exists : 1;
-    unsigned char OrderExecutionReservedBit7Exists : 1;
-    unsigned char OrderExecutionReservedBit6Exists : 1;
-    unsigned char OrderExecutionDayAvgPxExists : 1;
-    unsigned char OrderExecutionAvgPxExists : 1;
-    unsigned char OrderExecutionDayCumQtyExists : 1;
-    unsigned char OrderExecutionDayOrderQtyExists : 1;
-    unsigned char OrderExecutionCumQtyExists : 1;
+    uint8_t
+    OrderExecutionReservedBit8Exists : 1,
+    OrderExecutionReservedBit7Exists : 1,
+    OrderExecutionReservedBit6Exists : 1,
+    OrderExecutionDayAvgPxExists : 1,
+    OrderExecutionAvgPxExists : 1,
+    OrderExecutionDayCumQtyExists : 1,
+    OrderExecutionDayOrderQtyExists : 1,
+    OrderExecutionCumQtyExists : 1;
 } OrderExecutionByte13T;
 
 /*
  * Bitfield: Order Execution Byte 12
  */ 
 typedef struct {
-    unsigned char OrderExecutionClearingOptionalDataExists : 1;
-    unsigned char OrderExecutionReservedBit7Exists : 1;
-    unsigned char OrderExecutionReservedBit6Exists : 1;
-    unsigned char OrderExecutionReservedBit5Exists : 1;
-    unsigned char OrderExecutionReservedBit4Exists : 1;
-    unsigned char OrderExecutionReservedBit3Exists : 1;
-    unsigned char OrderExecutionReservedBit2Exists : 1;
-    unsigned char OrderExecutionReservedBit1Exists : 1;
+    uint8_t
+    OrderExecutionClearingOptionalDataExists : 1,
+    OrderExecutionReservedBit7Exists : 1,
+    OrderExecutionReservedBit6Exists : 1,
+    OrderExecutionReservedBit5Exists : 1,
+    OrderExecutionReservedBit4Exists : 1,
+    OrderExecutionReservedBit3Exists : 1,
+    OrderExecutionReservedBit2Exists : 1,
+    OrderExecutionReservedBit1Exists : 1;
 } OrderExecutionByte12T;
 
 /*
  * Bitfield: Order Execution Byte 11
  */ 
 typedef struct {
-    unsigned char OrderExecutionReservedBit8Exists : 1;
-    unsigned char OrderExecutionReservedBit7Exists : 1;
-    unsigned char OrderExecutionReservedBit6Exists : 1;
-    unsigned char OrderExecutionReservedBit5Exists : 1;
-    unsigned char OrderExecutionReservedBit4Exists : 1;
-    unsigned char OrderExecutionReservedBit3Exists : 1;
-    unsigned char OrderExecutionReservedBit2Exists : 1;
-    unsigned char OrderExecutionReservedBit1Exists : 1;
+    uint8_t
+    OrderExecutionReservedBit8Exists : 1,
+    OrderExecutionReservedBit7Exists : 1,
+    OrderExecutionReservedBit6Exists : 1,
+    OrderExecutionReservedBit5Exists : 1,
+    OrderExecutionReservedBit4Exists : 1,
+    OrderExecutionReservedBit3Exists : 1,
+    OrderExecutionReservedBit2Exists : 1,
+    OrderExecutionReservedBit1Exists : 1;
 } OrderExecutionByte11T;
 
 /*
  * Bitfield: Order Execution Byte 10
  */ 
 typedef struct {
-    unsigned char OrderExecutionReservedBit8Exists : 1;
-    unsigned char OrderExecutionReservedBit7Exists : 1;
-    unsigned char OrderExecutionReservedBit6Exists : 1;
-    unsigned char OrderExecutionReservedBit5Exists : 1;
-    unsigned char OrderExecutionReservedBit4Exists : 1;
-    unsigned char OrderExecutionReservedBit3Exists : 1;
-    unsigned char OrderExecutionReservedBit2Exists : 1;
-    unsigned char OrderExecutionCrossIdExists : 1;
+    uint8_t
+    OrderExecutionReservedBit8Exists : 1,
+    OrderExecutionReservedBit7Exists : 1,
+    OrderExecutionReservedBit6Exists : 1,
+    OrderExecutionReservedBit5Exists : 1,
+    OrderExecutionReservedBit4Exists : 1,
+    OrderExecutionReservedBit3Exists : 1,
+    OrderExecutionReservedBit2Exists : 1,
+    OrderExecutionCrossIdExists : 1;
 } OrderExecutionByte10T;
 
 /*
  * Bitfield: Order Execution Byte 9
  */ 
 typedef struct {
-    unsigned char OrderExecutionReservedBit8Exists : 1;
-    unsigned char OrderExecutionReservedBit7Exists : 1;
-    unsigned char OrderExecutionCmtaNumberExists : 1;
-    unsigned char OrderExecutionReservedBit5Exists : 1;
-    unsigned char OrderExecutionReservedBit4Exists : 1;
-    unsigned char OrderExecutionReservedBit3Exists : 1;
-    unsigned char OrderExecutionReservedBit2Exists : 1;
-    unsigned char OrderExecutionMarketFeeCodeExists : 1;
+    uint8_t
+    OrderExecutionReservedBit8Exists : 1,
+    OrderExecutionReservedBit7Exists : 1,
+    OrderExecutionCmtaNumberExists : 1,
+    OrderExecutionReservedBit5Exists : 1,
+    OrderExecutionReservedBit4Exists : 1,
+    OrderExecutionReservedBit3Exists : 1,
+    OrderExecutionReservedBit2Exists : 1,
+    OrderExecutionMarketFeeCodeExists : 1;
 } OrderExecutionByte9T;
 
 /*
  * Bitfield: Order Execution Byte 8
  */ 
 typedef struct {
-    unsigned char OrderExecutionReservedBit8Exists : 1;
-    unsigned char OrderExecutionExDestinationExists : 1;
-    unsigned char OrderExecutionRouteDeliveryMethodExists : 1;
-    unsigned char OrderExecutionRouteStrategyExists : 1;
-    unsigned char OrderExecutionRoutingInstExists : 1;
-    unsigned char OrderExecutionStopPxExists : 1;
-    unsigned char OrderExecutionEchoTextExists : 1;
-    unsigned char OrderExecutionFeeCodeExists : 1;
+    uint8_t
+    OrderExecutionReservedBit8Exists : 1,
+    OrderExecutionExDestinationExists : 1,
+    OrderExecutionRouteDeliveryMethodExists : 1,
+    OrderExecutionRouteStrategyExists : 1,
+    OrderExecutionRoutingInstExists : 1,
+    OrderExecutionStopPxExists : 1,
+    OrderExecutionEchoTextExists : 1,
+    OrderExecutionFeeCodeExists : 1;
 } OrderExecutionByte8T;
 
 /*
  * Bitfield: Order Execution Byte 7
  */ 
 typedef struct {
-    unsigned char OrderExecutionReservedBit8Exists : 1;
-    unsigned char OrderExecutionReservedBit7Exists : 1;
-    unsigned char OrderExecutionReservedBit6Exists : 1;
-    unsigned char OrderExecutionReservedBit5Exists : 1;
-    unsigned char OrderExecutionReservedBit4Exists : 1;
-    unsigned char OrderExecutionReservedBit3Exists : 1;
-    unsigned char OrderExecutionReservedBit2Exists : 1;
-    unsigned char OrderExecutionReservedBit1Exists : 1;
+    uint8_t
+    OrderExecutionReservedBit8Exists : 1,
+    OrderExecutionReservedBit7Exists : 1,
+    OrderExecutionReservedBit6Exists : 1,
+    OrderExecutionReservedBit5Exists : 1,
+    OrderExecutionReservedBit4Exists : 1,
+    OrderExecutionReservedBit3Exists : 1,
+    OrderExecutionReservedBit2Exists : 1,
+    OrderExecutionReservedBit1Exists : 1;
 } OrderExecutionByte7T;
 
 /*
  * Bitfield: Order Execution Byte 6
  */ 
 typedef struct {
-    unsigned char OrderExecutionReservedBit8Exists : 1;
-    unsigned char OrderExecutionReservedBit7Exists : 1;
-    unsigned char OrderExecutionReservedBit6Exists : 1;
-    unsigned char OrderExecutionReservedBit5Exists : 1;
-    unsigned char OrderExecutionAttributedQuoteExists : 1;
-    unsigned char OrderExecutionContraCapacityExists : 1;
-    unsigned char OrderExecutionReservedBit2Exists : 1;
-    unsigned char OrderExecutionReservedBit1Exists : 1;
+    uint8_t
+    OrderExecutionReservedBit8Exists : 1,
+    OrderExecutionReservedBit7Exists : 1,
+    OrderExecutionReservedBit6Exists : 1,
+    OrderExecutionReservedBit5Exists : 1,
+    OrderExecutionAttributedQuoteExists : 1,
+    OrderExecutionContraCapacityExists : 1,
+    OrderExecutionReservedBit2Exists : 1,
+    OrderExecutionReservedBit1Exists : 1;
 } OrderExecutionByte6T;
 
 /*
  * Bitfield: Order Execution Byte 5
  */ 
 typedef struct {
-    unsigned char OrderExecutionReservedBit8Exists : 1;
-    unsigned char OrderExecutionReservedBit7Exists : 1;
-    unsigned char OrderExecutionReservedBit6Exists : 1;
-    unsigned char OrderExecutionReservedBit5Exists : 1;
-    unsigned char OrderExecutionReservedBit4Exists : 1;
-    unsigned char OrderExecutionReservedBit3Exists : 1;
-    unsigned char OrderExecutionReservedBit2Exists : 1;
-    unsigned char OrderExecutionReservedBit1Exists : 1;
+    uint8_t
+    OrderExecutionReservedBit8Exists : 1,
+    OrderExecutionReservedBit7Exists : 1,
+    OrderExecutionReservedBit6Exists : 1,
+    OrderExecutionReservedBit5Exists : 1,
+    OrderExecutionReservedBit4Exists : 1,
+    OrderExecutionReservedBit3Exists : 1,
+    OrderExecutionReservedBit2Exists : 1,
+    OrderExecutionReservedBit1Exists : 1;
 } OrderExecutionByte5T;
 
 /*
  * Bitfield: Order Execution Byte 4
  */ 
 typedef struct {
-    unsigned char OrderExecutionReservedBit8Exists : 1;
-    unsigned char OrderExecutionReservedBit7Exists : 1;
-    unsigned char OrderExecutionCorrectedSizeExists : 1;
-    unsigned char OrderExecutionReservedBit5Exists : 1;
-    unsigned char OrderExecutionOpenCloseExists : 1;
-    unsigned char OrderExecutionPutOrCallExists : 1;
-    unsigned char OrderExecutionStrikePriceExists : 1;
-    unsigned char OrderExecutionMaturityDateExists : 1;
+    uint8_t
+    OrderExecutionReservedBit8Exists : 1,
+    OrderExecutionReservedBit7Exists : 1,
+    OrderExecutionCorrectedSizeExists : 1,
+    OrderExecutionReservedBit5Exists : 1,
+    OrderExecutionOpenCloseExists : 1,
+    OrderExecutionPutOrCallExists : 1,
+    OrderExecutionStrikePriceExists : 1,
+    OrderExecutionMaturityDateExists : 1;
 } OrderExecutionByte4T;
 
 /*
  * Bitfield: Order Execution Byte 3
  */ 
 typedef struct {
-    unsigned char OrderExecutionPreventMatchExists : 1;
-    unsigned char OrderExecutionOrderQtyExists : 1;
-    unsigned char OrderExecutionReservedBit6Exists : 1;
-    unsigned char OrderExecutionMaxFloorExists : 1;
-    unsigned char OrderExecutionDisplayIndicatorExists : 1;
-    unsigned char OrderExecutionClearingAccountExists : 1;
-    unsigned char OrderExecutionClearingFirmExists : 1;
-    unsigned char OrderExecutionAccountExists : 1;
+    uint8_t
+    OrderExecutionPreventMatchExists : 1,
+    OrderExecutionOrderQtyExists : 1,
+    OrderExecutionReservedBit6Exists : 1,
+    OrderExecutionMaxFloorExists : 1,
+    OrderExecutionDisplayIndicatorExists : 1,
+    OrderExecutionClearingAccountExists : 1,
+    OrderExecutionClearingFirmExists : 1,
+    OrderExecutionAccountExists : 1;
 } OrderExecutionByte3T;
 
 /*
  * Bitfield: Order Execution Byte 2
  */ 
 typedef struct {
-    unsigned char OrderExecutionContraTraderExists : 1;
-    unsigned char OrderExecutionCapacityExists : 1;
-    unsigned char OrderExecutionReservedBit6Exists : 1;
-    unsigned char OrderExecutionReservedBit5Exists : 1;
-    unsigned char OrderExecutionReservedBit4Exists : 1;
-    unsigned char OrderExecutionReservedBit3Exists : 1;
-    unsigned char OrderExecutionReservedBit2Exists : 1;
-    unsigned char OrderExecutionSymbolExists : 1;
+    uint8_t
+    OrderExecutionContraTraderExists : 1,
+    OrderExecutionCapacityExists : 1,
+    OrderExecutionReservedBit6Exists : 1,
+    OrderExecutionReservedBit5Exists : 1,
+    OrderExecutionReservedBit4Exists : 1,
+    OrderExecutionReservedBit3Exists : 1,
+    OrderExecutionReservedBit2Exists : 1,
+    OrderExecutionSymbolExists : 1;
 } OrderExecutionByte2T;
 
 /*
  * Bitfield: Order Execution Byte 1
  */ 
 typedef struct {
-    unsigned char OrderExecutionMaxRemovePctExists : 1;
-    unsigned char OrderExecutionMinQtyExists : 1;
-    unsigned char OrderExecutionTimeInForceExists : 1;
-    unsigned char OrderExecutionOrdTypeExists : 1;
-    unsigned char OrderExecutionExecInstExists : 1;
-    unsigned char OrderExecutionPriceExists : 1;
-    unsigned char OrderExecutionReservedBit2Exists : 1;
-    unsigned char OrderExecutionSideExists : 1;
+    uint8_t
+    OrderExecutionMaxRemovePctExists : 1,
+    OrderExecutionMinQtyExists : 1,
+    OrderExecutionTimeInForceExists : 1,
+    OrderExecutionOrdTypeExists : 1,
+    OrderExecutionExecInstExists : 1,
+    OrderExecutionPriceExists : 1,
+    OrderExecutionReservedBit2Exists : 1,
+    OrderExecutionSideExists : 1;
 } OrderExecutionByte1T;
 
 /*
