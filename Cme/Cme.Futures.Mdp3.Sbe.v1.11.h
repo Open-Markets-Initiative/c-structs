@@ -7,6 +7,13 @@
  *******************************************************************************/
 
 /*
+ * Aggressor Indicator Values
+ */ 
+#define ENUM_AGGRESSOR_INDICATOR_NO_VALUE = 255
+#define ENUM_AGGRESSOR_INDICATOR_NOT_AGGRESSOR = 0
+#define ENUM_AGGRESSOR_INDICATOR_AGGRESSOR = 1
+
+/*
  * Aggressor Side Values
  */ 
 #define ENUM_AGGRESSOR_SIDE_NO_VALUE = 255
@@ -38,7 +45,7 @@
 #define ENUM_LEG_SIDE_SELL_SIDE = 2
 
 /*
- * Md Entry Type Values
+ * Md Entry Type  Values
  */ 
 #define ENUM_MD_ENTRY_TYPE_BID = '0'
 #define ENUM_MD_ENTRY_TYPE_OFFER = '1'
@@ -58,6 +65,60 @@
 #define ENUM_MD_ENTRY_TYPE_FIXING_PRICE = 'W'
 #define ENUM_MD_ENTRY_TYPE_ELECTRONIC_VOLUME = 'e'
 #define ENUM_MD_ENTRY_TYPE_THRESHOLD_LIMITSAND_PRICE_BAND_VARIATION = 'g'
+
+/*
+ * Md Entry Type Book Values
+ */ 
+#define ENUM_MD_ENTRY_TYPE_BOOK_BID = '0'
+#define ENUM_MD_ENTRY_TYPE_BOOK_OFFER = '1'
+#define ENUM_MD_ENTRY_TYPE_BOOK_IMPLIED_BID = 'E'
+#define ENUM_MD_ENTRY_TYPE_BOOK_IMPLIED_OFFER = 'F'
+#define ENUM_MD_ENTRY_TYPE_BOOK_BOOK_RESET = 'J'
+
+/*
+ * Md Entry Type Daily Statistics Values
+ */ 
+#define ENUM_MD_ENTRY_TYPE_DAILY_STATISTICS_SETTLEMENT_PRICE = '6'
+#define ENUM_MD_ENTRY_TYPE_DAILY_STATISTICS_CLEARED_VOLUME = 'B'
+#define ENUM_MD_ENTRY_TYPE_DAILY_STATISTICS_OPEN_INTEREST = 'C'
+#define ENUM_MD_ENTRY_TYPE_DAILY_STATISTICS_FIXING_PRICE = 'W'
+
+/*
+ * Md Entry Type Statistics Values
+ */ 
+#define ENUM_MD_ENTRY_TYPE_STATISTICS_OPEN_PRICE = '4'
+#define ENUM_MD_ENTRY_TYPE_STATISTICS_HIGH_TRADE = '7'
+#define ENUM_MD_ENTRY_TYPE_STATISTICS_LOW_TRADE = '8'
+#define ENUM_MD_ENTRY_TYPE_STATISTICS_VWAP = '9'
+#define ENUM_MD_ENTRY_TYPE_STATISTICS_HIGHEST_BID = 'N'
+#define ENUM_MD_ENTRY_TYPE_STATISTICS_LOWEST_OFFER = 'O'
+
+/*
+ * Md Security Trading Status Values
+ */ 
+#define ENUM_MD_SECURITY_TRADING_STATUS_NO_VALUE = 255
+#define ENUM_MD_SECURITY_TRADING_STATUS_TRADING_HALT = 2
+#define ENUM_MD_SECURITY_TRADING_STATUS_CLOSE = 4
+#define ENUM_MD_SECURITY_TRADING_STATUS_NEW_PRICE_INDICATION = 15
+#define ENUM_MD_SECURITY_TRADING_STATUS_READY_TO_TRADE = 17
+#define ENUM_MD_SECURITY_TRADING_STATUS_NOT_AVAILABLE_FOR_TRADING = 18
+#define ENUM_MD_SECURITY_TRADING_STATUS_UNKNOWNOR_INVALID = 20
+#define ENUM_MD_SECURITY_TRADING_STATUS_PRE_OPEN = 21
+#define ENUM_MD_SECURITY_TRADING_STATUS_PRE_CROSS = 24
+#define ENUM_MD_SECURITY_TRADING_STATUS_CROSS = 25
+#define ENUM_MD_SECURITY_TRADING_STATUS_POST_CLOSE = 26
+#define ENUM_MD_SECURITY_TRADING_STATUS_NO_CHANGE = 103
+#define ENUM_MD_SECURITY_TRADING_STATUS_PRIVATE_WORKUP = 201
+#define ENUM_MD_SECURITY_TRADING_STATUS_PUBLIC_WORKUP = 202
+
+/*
+ * Md Stream Id Values
+ */ 
+#define ENUM_MD_STREAM_ID_NO_VALUE = 255
+#define ENUM_MD_STREAM_ID_MARKET_PLACE_ASSISTANT = 0
+#define ENUM_MD_STREAM_ID_GLOBEX = 1
+#define ENUM_MD_STREAM_ID_REFINITIV = 2
+#define ENUM_MD_STREAM_ID_ICAP = 3
 
 /*
  * Md Update Action Values
@@ -99,6 +160,13 @@
  */ 
 #define ENUM_PUT_OR_CALL_PUT = 0
 #define ENUM_PUT_OR_CALL_CALL = 1
+
+/*
+ * Repo Sub Type Values
+ */ 
+#define ENUM_REPO_SUB_TYPE_SPECIAL = 0
+#define ENUM_REPO_SUB_TYPE_GC = 1
+#define ENUM_REPO_SUB_TYPE_GC_FOR_DBV = 2
 
 /*
  * Security Alt Id Source Values
@@ -145,7 +213,6 @@
 /*
  * Side Values
  */ 
-#define ENUM_SIDE_SIDE = 127
 #define ENUM_SIDE_BUY = 1
 #define ENUM_SIDE_SELL = 2
 
@@ -176,6 +243,21 @@
 #define ENUM_TEMPLATE_ID_SECURITY_STATUS_WORKUP = 60
 #define ENUM_TEMPLATE_ID_SNAPSHOT_FULL_REFRESH_TCP = 61
 #define ENUM_TEMPLATE_ID_COLLATERAL_MARKET_VALUE = 62
+
+/*
+ * Underlying Security Alt Id Source Values
+ */ 
+#define ENUM_UNDERLYING_SECURITY_ALT_ID_SOURCE_NO_VALUE = 255
+#define ENUM_UNDERLYING_SECURITY_ALT_ID_SOURCE_CUSIP = 1
+#define ENUM_UNDERLYING_SECURITY_ALT_ID_SOURCE_ISIN = 4
+
+/*
+ * Workup Trading Status Values
+ */ 
+#define ENUM_WORKUP_TRADING_STATUS_READY_TO_TRADE = 17
+#define ENUM_WORKUP_TRADING_STATUS_NOT_AVAILABLE_FOR_TRADING = 18
+#define ENUM_WORKUP_TRADING_STATUS_PRIVATE_WORKUP = 201
+#define ENUM_WORKUP_TRADING_STATUS_PUBLIC_WORKUP = 202
 
 
 /*******************************************************************************
@@ -251,11 +333,11 @@ typedef struct {
  * Structure: Snapshot Full Refresh Tcp Group
  */ 
 typedef struct {
-    int64_t MdEntryPx;
-    int32_t MdEntrySize;
+    int64_t MdEntryPxOptional;
+    int32_t MdEntrySizeOptional;
     int32_t TradeableSize;
-    int32_t NumberOfOrders;
-    uint8_t MdPriceLevel;
+    int32_t NumberOfOrdersOptional;
+    int8_t MdPriceLevelOptional;
     uint8_t OpenCloseSettlFlag;
     char MdEntryType;
     uint16_t TradingReferenceDate;
@@ -302,12 +384,12 @@ typedef struct {
  */ 
 typedef struct {
     uint64_t TransactTime;
-    int64_t MdEntryPx;
+    int64_t MdEntryPxOptional;
     int32_t SecurityId;
     MatchEventIndicatorT MatchEventIndicator;
     uint16_t TradeDate;
     uint32_t TradeLinkId;
-    uint8_t SecurityTradingStatus;
+    uint8_t WorkupTradingStatus;
     uint8_t HaltReason;
     uint8_t SecurityTradingEvent;
 } SecurityStatusWorkup60T;
@@ -320,7 +402,7 @@ typedef struct {
     uint64_t MdOrderPriority;
     int64_t MdEntryPx;
     int32_t MdDisplayQty;
-    char MdEntryType;
+    char MdEntryTypeBook;
 } SnapshotRefreshTopOrdersGroupT;
 
 /*
@@ -493,10 +575,10 @@ typedef struct {
  */ 
 typedef struct {
     uint64_t OrderId;
-    uint64_t MdOrderPriority;
+    uint64_t MdOrderPriorityOptional;
     int64_t MdEntryPx;
     int32_t MdDisplayQty;
-    char MdEntryType;
+    char MdEntryTypeBook;
 } SnapshotFullRefreshOrderBookGroupT;
 
 /*
@@ -522,10 +604,10 @@ typedef struct {
  * Structure: Snapshot Full Refresh Group
  */ 
 typedef struct {
-    int64_t MdEntryPx;
-    int32_t MdEntrySize;
-    int32_t NumberOfOrders;
-    uint8_t MdPriceLevel;
+    int64_t MdEntryPxOptional;
+    int32_t MdEntrySizeOptional;
+    int32_t NumberOfOrdersOptional;
+    int8_t MdPriceLevelOptional;
     uint16_t TradingReferenceDate;
     uint8_t OpenCloseSettlFlag;
     SettlPriceTypeT SettlPriceType;
@@ -565,8 +647,8 @@ typedef struct {
     uint32_t RptSeq;
     uint8_t OpenCloseSettlFlag;
     uint8_t MdUpdateAction;
-    char MdEntryType;
-    int32_t MdEntrySize;
+    char MdEntryTypeStatistics;
+    int32_t MdEntrySizeOptional;
     char Padding1[1];
 } MDIncrementalRefreshSessionStatisticsGroupT;
 
@@ -617,14 +699,14 @@ typedef struct {
  * Structure: M D Incremental Refresh Daily Statistics Group
  */ 
 typedef struct {
-    int64_t MdEntryPx;
-    int32_t MdEntrySize;
+    int64_t MdEntryPxOptional;
+    int32_t MdEntrySizeOptional;
     int32_t SecurityId;
     uint32_t RptSeq;
     uint16_t TradingReferenceDate;
     SettlPriceTypeT SettlPriceType;
     uint8_t MdUpdateAction;
-    char MdEntryType;
+    char MdEntryTypeDailyStatistics;
     char Padding7[7];
 } MDIncrementalRefreshDailyStatisticsGroupT;
 
@@ -695,13 +777,13 @@ typedef struct {
  * Structure: M D Incremental Refresh Order Book Group
  */ 
 typedef struct {
-    uint64_t OrderId;
-    uint64_t MdOrderPriority;
-    int64_t MdEntryPx;
-    int32_t MdDisplayQty;
+    uint64_t OrderIdOptional;
+    uint64_t MdOrderPriorityOptional;
+    int64_t MdEntryPxOptional;
+    int32_t MdDisplayQtyOptional;
     int32_t SecurityId;
     uint8_t MdUpdateAction;
-    char MdEntryType;
+    char MdEntryTypeBook;
     char Padding6[6];
 } MDIncrementalRefreshOrderBookGroupT;
 
@@ -726,8 +808,8 @@ typedef struct {
  */ 
 typedef struct {
     uint64_t OrderId;
-    uint64_t MdOrderPriority;
-    int32_t MdDisplayQty;
+    uint64_t MdOrderPriorityOptional;
+    int32_t MdDisplayQtyOptional;
     uint8_t ReferenceId;
     uint8_t OrderUpdateAction;
     char Padding2[2];
@@ -744,14 +826,14 @@ typedef struct {
  * Structure: M D Incremental Refresh Book Group
  */ 
 typedef struct {
-    int64_t MdEntryPx;
-    int32_t MdEntrySize;
+    int64_t MdEntryPxOptional;
+    int32_t MdEntrySizeOptional;
     int32_t SecurityId;
     uint32_t RptSeq;
-    int32_t NumberOfOrders;
+    int32_t NumberOfOrdersOptional;
     uint8_t MdPriceLevel;
     uint8_t MdUpdateAction;
-    char MdEntryType;
+    char MdEntryTypeBook;
     int32_t TradeableSize;
     char Padding1[1];
 } MDIncrementalRefreshBookGroupT;
@@ -771,7 +853,7 @@ typedef struct {
     int32_t SecurityId;
     int32_t OrderQty;
     int8_t QuoteType;
-    uint8_t Side;
+    int8_t SideOptional;
     char Padding2[2];
 } RelatedSymGroupT;
 
@@ -826,7 +908,7 @@ typedef struct {
     uint64_t TransactTime;
     char SecurityGroup[6];
     char Asset[6];
-    int32_t SecurityId;
+    int32_t SecurityIdOptional;
     uint16_t TradeDate;
     MatchEventIndicatorT MatchEventIndicator;
     uint8_t SecurityTradingStatus;
@@ -881,10 +963,25 @@ typedef struct {
 } MessageHeaderT;
 
 /*
+ * Structure: Message
+ */ 
+typedef struct {
+    uint16_t MessageSize;
+    MessageHeaderT MessageHeader;
+} MessageT;
+
+/*
  * Structure: Binary Packet Header
  */ 
 typedef struct {
     uint32_t MessageSequenceNumber;
     uint64_t SendingTime;
 } BinaryPacketHeaderT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    BinaryPacketHeaderT BinaryPacketHeader;
+} PacketT;
 

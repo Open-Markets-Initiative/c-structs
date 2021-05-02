@@ -5,17 +5,17 @@
 
 | Division | Data | Protocol | Version | Date | Size | Testing | Specification |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Equities | OpenBook | Ultra | [2.1.b][Nyse.Equities.OpenBook.Ultra.v2.1.b.Structs] | 3/9/2018 | 141 | Verified | [url][Nyse.Equities.OpenBook.Ultra.v2.1.b.Url] - [pdf][Nyse.Equities.OpenBook.Ultra.v2.1.b.Pdf] |
-| Amex Equities | OpenBook | Ultra | [2.1.b][Nyse.Amex.Equities.OpenBook.Ultra.v2.1.b.Structs] | 3/9/2018 | 143 | Verified | [url][Nyse.Amex.Equities.OpenBook.Ultra.v2.1.b.Url] - [pdf][Nyse.Amex.Equities.OpenBook.Ultra.v2.1.b.Pdf] |
+|  Equities | OpenBook | Ultra | [2.1.b][Nyse.Equities.OpenBook.Ultra.v2.1.b.Structs] | 3/9/2018 | 148 | Verified | [url][Nyse.Equities.OpenBook.Ultra.v2.1.b.Url] - [pdf][Nyse.Equities.OpenBook.Ultra.v2.1.b.Pdf] |
+| Amex Equities | OpenBook | Ultra | [2.1.b][Nyse.Amex.Equities.OpenBook.Ultra.v2.1.b.Structs] | 3/9/2018 | 150 | Verified | [url][Nyse.Amex.Equities.OpenBook.Ultra.v2.1.b.Url] - [pdf][Nyse.Amex.Equities.OpenBook.Ultra.v2.1.b.Pdf] |
+| Amex Equities | IntegratedFeed | Xdp | [2.1.g][Nyse.Amex.Equities.IntegratedFeed.Xdp.v2.1.g.Structs] | 1/29/2018 | 667 | Verified | [url][Nyse.Amex.Equities.IntegratedFeed.Xdp.v2.1.g.Url] - [pdf][Nyse.Amex.Equities.IntegratedFeed.Xdp.v2.1.g.Pdf] |
+| Arca Equities | Bbo | Xdp | [2.4.c][Nyse.Arca.Equities.Bbo.Xdp.v2.4.c.Structs] | 7/13/2016 | 396 | Verified | [url][Nyse.Arca.Equities.Bbo.Xdp.v2.4.c.Url] - [pdf][Nyse.Arca.Equities.Bbo.Xdp.v2.4.c.Pdf] |
 | Equities | Bbo | Xdp | [2.4.g][Nyse.Equities.Bbo.Xdp.v2.4.g.Structs] | 1/29/2018 | 395 | Verified | [url][Nyse.Equities.Bbo.Xdp.v2.4.g.Url] - [pdf][Nyse.Equities.Bbo.Xdp.v2.4.g.Pdf] |
-| Equities | Bqt | Xdp | [2.1.a][Nyse.Equities.Bqt.Xdp.v2.1.a.Structs] | 4/4/2018 | 657 | Untested | [url][Nyse.Equities.Bqt.Xdp.v2.1.a.Url] - [pdf][Nyse.Equities.Bqt.Xdp.v2.1.a.Pdf] |
+| Equities | Bqt | Xdp | [2.1.a][Nyse.Equities.Bqt.Xdp.v2.1.a.Structs] | 4/4/2018 | 671 | Untested | [url][Nyse.Equities.Bqt.Xdp.v2.1.a.Url] - [pdf][Nyse.Equities.Bqt.Xdp.v2.1.a.Pdf] |
 | Equities | Bqt | Xdp | [1.7.a][Nyse.Equities.Bqt.Xdp.v1.7.a.Structs] | 7/24/2017 | 679 | Verified | [url][Nyse.Equities.Bqt.Xdp.v1.7.a.Url] - [pdf][Nyse.Equities.Bqt.Xdp.v1.7.a.Pdf] |
 | Equities | ImbalancesFeed | Xdp | [2.2.a][Nyse.Equities.ImbalancesFeed.Xdp.v2.2.a.Structs] | 3/8/2019 | 303 | Verified | [url][Nyse.Equities.ImbalancesFeed.Xdp.v2.2.a.Url] - [pdf][Nyse.Equities.ImbalancesFeed.Xdp.v2.2.a.Pdf] |
 | Equities | ImbalancesFeed | Xdp | [2.1.f][Nyse.Equities.ImbalancesFeed.Xdp.v2.1.f.Structs] | 2/1/2018 | 287 | Verified | [url][Nyse.Equities.ImbalancesFeed.Xdp.v2.1.f.Url] - [pdf][Nyse.Equities.ImbalancesFeed.Xdp.v2.1.f.Pdf] |
 | Equities | IntegratedFeed | Xdp | [2.1.g][Nyse.Equities.IntegratedFeed.Xdp.v2.1.g.Structs] | 1/29/2018 | 671 | Verified | [url][Nyse.Equities.IntegratedFeed.Xdp.v2.1.g.Url] - [pdf][Nyse.Equities.IntegratedFeed.Xdp.v2.1.g.Pdf] |
-| Equities Amex | IntegratedFeed | Xdp | [2.1.g][Nyse.Equities.Amex.IntegratedFeed.Xdp.v2.1.g.Structs] | 1/29/2018 | 671 | Verified | [url][Nyse.Equities.Amex.IntegratedFeed.Xdp.v2.1.g.Url] - [pdf][Nyse.Equities.Amex.IntegratedFeed.Xdp.v2.1.g.Pdf] |
-| Equities Arca | Bbo | Xdp | [2.4.c][Nyse.Equities.Arca.Bbo.Xdp.v2.4.c.Structs] | 7/13/2016 | 396 | Verified | [url][Nyse.Equities.Arca.Bbo.Xdp.v2.4.c.Url] - [pdf][Nyse.Equities.Arca.Bbo.Xdp.v2.4.c.Pdf] |
-| Options | ComplexFeed | Xdp | [1.3.a][Nyse.Options.ComplexFeed.Xdp.v1.3.a.Structs] | 2/28/2018 | 276 | Verified | [url][Nyse.Options.ComplexFeed.Xdp.v1.3.a.Url] - [pdf][Nyse.Options.ComplexFeed.Xdp.v1.3.a.Pdf] |
+| Options | ComplexFeed | Xdp | [1.3.a][Nyse.Options.ComplexFeed.Xdp.v1.3.a.Structs] | 2/28/2018 | 290 | Verified | [url][Nyse.Options.ComplexFeed.Xdp.v1.3.a.Url] - [pdf][Nyse.Options.ComplexFeed.Xdp.v1.3.a.Pdf] |
 | Options | DeepFeed | Xdp | [1.3.a][Nyse.Options.DeepFeed.Xdp.v1.3.a.Structs] | 2/28/2018 | 339 | Untested | [url][Nyse.Options.DeepFeed.Xdp.v1.3.a.Url] - [pdf][Nyse.Options.DeepFeed.Xdp.v1.3.a.Pdf] |
 | Options | TopFeed | Xdp | [1.3.a][Nyse.Options.TopFeed.Xdp.v1.3.a.Structs] | 2/28/2018 | 493 | Untested | [url][Nyse.Options.TopFeed.Xdp.v1.3.a.Url] - [pdf][Nyse.Options.TopFeed.Xdp.v1.3.a.Pdf] |
 
@@ -29,12 +29,12 @@ Nyse: [website](https://www.nyse.com "Go to New York Stock Exchange")
 [Nyse.Equities.OpenBook.Ultra.v2.1.b.Structs]: https://github.com/Open-Markets-Initiative/c-structs/blob/master/Nyse/Nyse.Equities.OpenBook.Ultra.v2.1.b.h "Nyse Equities OpenBook Ultra v2.1.b C# Parsers Source File"
 [Nyse.Equities.OpenBook.Ultra.v2.1.b.Url]: https://www.nyse.com/market-data/real-time/openbook-ultra "Specification url"
 [Nyse.Equities.OpenBook.Ultra.v2.1.b.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/master/Specifications/Nyse/Nyse.Amex.Equities.OpenBook.Ultra.v2.1.b.pdf "New York Stock Exchange 2.1.b Pdf"
-[Nyse.Equities.Amex.IntegratedFeed.Xdp.v2.1.g.Structs]: https://github.com/Open-Markets-Initiative/c-structs/blob/master/Nyse/Nyse.Equities.Amex.IntegratedFeed.Xdp.v2.1.g.h "Nyse Equities Amex IntegratedFeed Xdp v2.1.g C# Parsers Source File"
-[Nyse.Equities.Amex.IntegratedFeed.Xdp.v2.1.g.Url]: https://www.nyse.com/market-data/real-time/integrated-feed "Specification url"
-[Nyse.Equities.Amex.IntegratedFeed.Xdp.v2.1.g.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/master/Specifications/Nyse/Nyse.Equities.ImbalancesFeed.Xdp.v2.1.f.pdf "New York Stock Exchange 2.1.g Pdf"
-[Nyse.Equities.Arca.Bbo.Xdp.v2.4.c.Structs]: https://github.com/Open-Markets-Initiative/c-structs/blob/master/Nyse/Nyse.Equities.Arca.Bbo.Xdp.v2.4.c.h "Nyse Equities Arca Bbo Xdp v2.4.c C# Parsers Source File"
-[Nyse.Equities.Arca.Bbo.Xdp.v2.4.c.Url]: https://www.nyse.com/publicdocs/nyse/data/XDP_BBO_Client_Specification_V2.4c.pdf "Specification url"
-[Nyse.Equities.Arca.Bbo.Xdp.v2.4.c.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/master/Specifications/Nyse/Nyse.Client.Bbo.Xdp.v2.4.c.pdf "New York Stock Exchange 2.4.c Pdf"
+[Nyse.Amex.Equities.IntegratedFeed.Xdp.v2.1.g.Structs]: https://github.com/Open-Markets-Initiative/c-structs/blob/master/Nyse/Nyse.Amex.Equities.IntegratedFeed.Xdp.v2.1.g.h "Nyse Amex Equities IntegratedFeed Xdp v2.1.g C# Parsers Source File"
+[Nyse.Amex.Equities.IntegratedFeed.Xdp.v2.1.g.Url]: https://www.nyse.com/market-data/real-time/integrated-feed "Specification url"
+[Nyse.Amex.Equities.IntegratedFeed.Xdp.v2.1.g.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/master/Specifications/Nyse/Nyse.Equities.ImbalancesFeed.Xdp.v2.1.f.pdf "New York Stock Exchange 2.1.g Pdf"
+[Nyse.Arca.Equities.Bbo.Xdp.v2.4.c.Structs]: https://github.com/Open-Markets-Initiative/c-structs/blob/master/Nyse/Nyse.Arca.Equities.Bbo.Xdp.v2.4.c.h "Nyse Arca Equities Bbo Xdp v2.4.c C# Parsers Source File"
+[Nyse.Arca.Equities.Bbo.Xdp.v2.4.c.Url]: https://www.nyse.com/publicdocs/nyse/data/XDP_BBO_Client_Specification_V2.4c.pdf "Specification url"
+[Nyse.Arca.Equities.Bbo.Xdp.v2.4.c.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/master/Specifications/Nyse/Nyse.Client.Bbo.Xdp.v2.4.c.pdf "New York Stock Exchange 2.4.c Pdf"
 [Nyse.Equities.Bbo.Xdp.v2.4.g.Structs]: https://github.com/Open-Markets-Initiative/c-structs/blob/master/Nyse/Nyse.Equities.Bbo.Xdp.v2.4.g.h "Nyse Equities Bbo Xdp v2.4.g C# Parsers Source File"
 [Nyse.Equities.Bbo.Xdp.v2.4.g.Url]: https://www.nyse.com/publicdocs/nyse/data/XDP_BBO_Client_Specification_V2.4c.pdf "Specification url"
 [Nyse.Equities.Bbo.Xdp.v2.4.g.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/master/Specifications/Nyse/Nyse.Equities.Bbo.Xdp.v2.4.c.pdf "New York Stock Exchange 2.4.g Pdf"

@@ -5,8 +5,8 @@
 
 | Division | Data | Protocol | Version | Date | Size | Testing | Specification |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Optiq | MarketDataGateway | Sbe | [4.3.0][Euronext.Optiq.MarketDataGateway.Sbe.v4.3.0.Structs] | 9/25/2020 | 705 | Untested | [url][Euronext.Optiq.MarketDataGateway.Sbe.v4.3.0.Url] - [pdf][Euronext.Optiq.MarketDataGateway.Sbe.v4.3.0.Pdf] - [xml][Euronext.Optiq.MarketDataGateway.Sbe.v4.3.0.Xml] |
-| Optiq | OrderEntryGateway | Sbe | [4.2.2][Euronext.Optiq.OrderEntryGateway.Sbe.v4.2.2.Structs] | 9/25/2020 | 1068 | Untested | [url][Euronext.Optiq.OrderEntryGateway.Sbe.v4.2.2.Url] - [pdf][Euronext.Optiq.OrderEntryGateway.Sbe.v4.2.2.Pdf] - [xml][Euronext.Optiq.OrderEntryGateway.Sbe.v4.2.2.Xml] |
+| Optiq | MarketDataGateway | Sbe | [4.3.0][Euronext.Optiq.MarketDataGateway.Sbe.v4.3.0.Structs] | 9/25/2020 | 705 | Beta | [url][Euronext.Optiq.MarketDataGateway.Sbe.v4.3.0.Url] - [pdf][Euronext.Optiq.MarketDataGateway.Sbe.v4.3.0.Pdf] - [xml][Euronext.Optiq.MarketDataGateway.Sbe.v4.3.0.Xml] |
+| Optiq | OrderEntryGateway | Sbe | [4.2.2][Euronext.Optiq.OrderEntryGateway.Sbe.v4.2.2.Structs] | 9/25/2020 | 1068 | Beta | [url][Euronext.Optiq.OrderEntryGateway.Sbe.v4.2.2.Url] - [pdf][Euronext.Optiq.OrderEntryGateway.Sbe.v4.2.2.Pdf] - [xml][Euronext.Optiq.OrderEntryGateway.Sbe.v4.2.2.Xml] |
 
 
 Euronext: [website](https://www.euronext.com "Go to European New Exchange Technology")

@@ -263,6 +263,13 @@ typedef struct {
 } MessageHeaderT;
 
 /*
+ * Structure: Message
+ */ 
+typedef struct {
+    MessageHeaderT MessageHeader;
+} MessageT;
+
+/*
  * Structure: Packet Header
  */ 
 typedef struct {
@@ -273,4 +280,11 @@ typedef struct {
     uint32_t Timestamp;
     uint32_t Nanoseconds;
 } PacketHeaderT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    PacketHeaderT PacketHeader;
+} PacketT;
 

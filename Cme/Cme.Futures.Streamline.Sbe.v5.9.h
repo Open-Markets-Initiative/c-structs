@@ -15,6 +15,13 @@
 #define ENUM_AGGRESSOR_SIDE_SELL = 2
 
 /*
+ * Event Type Indices Values
+ */ 
+#define ENUM_EVENT_TYPE_INDICES_ACTIVATION = 5
+#define ENUM_EVENT_TYPE_INDICES_DELETION = 6
+#define ENUM_EVENT_TYPE_INDICES_MODIFICATION = 120
+
+/*
  * Md Entry Code Values
  */ 
 #define ENUM_MD_ENTRY_CODE_NO_VALUE = 255
@@ -23,6 +30,20 @@
 #define ENUM_MD_ENTRY_CODE_PRELIMINARY_CLOSE = 3
 #define ENUM_MD_ENTRY_CODE_SESSION_CLOSE = 4
 #define ENUM_MD_ENTRY_CODE_CLOSE = 5
+
+/*
+ * Md Entry Type Indices Values
+ */ 
+#define ENUM_MD_ENTRY_TYPE_INDICES_BID = '0'
+#define ENUM_MD_ENTRY_TYPE_INDICES_OFFER = '1'
+#define ENUM_MD_ENTRY_TYPE_INDICES_TRADE = '2'
+#define ENUM_MD_ENTRY_TYPE_INDICES_INDEX_VALUE = '3'
+#define ENUM_MD_ENTRY_TYPE_INDICES_OPENING_VALUE = '4'
+#define ENUM_MD_ENTRY_TYPE_INDICES_CLOSING_PRICE = '5'
+#define ENUM_MD_ENTRY_TYPE_INDICES_SETTLEMENT_PRICE = '6'
+#define ENUM_MD_ENTRY_TYPE_INDICES_SESSION_HIGH_PRICE = '7'
+#define ENUM_MD_ENTRY_TYPE_INDICES_SESSION_LOW_PRICE = '8'
+#define ENUM_MD_ENTRY_TYPE_INDICES_TRADE_VOLUME = 'e'
 
 /*
  * Md Update Action Values
@@ -67,28 +88,20 @@
  *******************************************************************************/
 
 /*
- * Structure: Unit Of Measure Qty
+ * Structure: Unit Of Measure Qty Decimal
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
-} UnitOfMeasureQtyT;
+} UnitOfMeasureQtyDecimalT;
 
 /*
- * Structure: Strike Price
+ * Structure: Strike Price Decimal
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
-} StrikePriceT;
-
-/*
- * Structure: Coupon Rate
- */ 
-typedef struct {
-    int32_t Mantissa32;
-    int8_t Exponent;
-} CouponRateT;
+} StrikePriceDecimalT;
 
 /*
  * Structure: Maturity Month Year
@@ -104,17 +117,9 @@ typedef struct {
  * Structure: Md Entry Size
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } MdEntrySizeT;
-
-/*
- * Structure: Md Entry Px
- */ 
-typedef struct {
-    int64_t Mantissa64;
-    int8_t Exponent;
-} MdEntryPxT;
 
 /*
  * Structure: M D Incremental Refresh Otc Group
@@ -122,24 +127,24 @@ typedef struct {
 typedef struct {
     char MdEntryType[1];
     uint32_t RptSeq;
-    MdEntryPxT MdEntryPx;
+    int64_t MdEntryPxOptional;
     MdEntrySizeT MdEntrySize;
     char Symbol[50];
-    char SecurityGroup[12];
-    char SecurityType[4];
+    char SecurityGroup12[12];
+    char SecurityType[9];
     MaturityMonthYearT MaturityMonthYear;
     char SecurityExchange[4];
-    int8_t Product;
+    uint8_t ProductOptional;
     uint16_t MaturityDate;
-    CouponRateT CouponRate;
+    int32_t CouponRate;
     char RestructuringType[2];
     char Seniority[2];
     int32_t NotionalPercentageOutstanding;
     uint8_t PutOrCall;
-    StrikePriceT StrikePrice;
+    StrikePriceDecimalT StrikePriceDecimal;
     char UnitOfMeasure[5];
     char UnitOfMeasureCurrency[3];
-    UnitOfMeasureQtyT UnitOfMeasureQty;
+    UnitOfMeasureQtyDecimalT UnitOfMeasureQtyDecimal;
     int32_t MdEntryDate;
     uint8_t OpenCloseSettlFlag;
     uint16_t PriceType;
@@ -151,7 +156,7 @@ typedef struct {
     char ProductComplex[26];
     char SecuritySubType[2];
     uint16_t VolType;
-    char ReferenceId[50];
+    char ReferenceId100[100];
 } MDIncrementalRefreshOtcGroupT;
 
 /*
@@ -159,7 +164,7 @@ typedef struct {
  */ 
 typedef struct {
     uint16_t BlockLength;
-    uint8_t NumInGroup;
+    uint8_t NumInGroupUint8;
 } GroupSizeT;
 
 /*
@@ -191,7 +196,7 @@ typedef struct {
     uint64_t TransactTime;
     uint16_t TradeDate;
     MatchEventIndicatorT MatchEventIndicator;
-    uint16_t BatchTotalMessages;
+    uint16_t BatchTotalMessagesOptional;
 } MdIncrementalRefreshOtC366T;
 
 /*
@@ -201,30 +206,30 @@ typedef struct {
     uint8_t MdUpdateAction;
     uint64_t SecurityId;
     uint32_t RptSeq;
-    MdEntryPxT MdEntryPx;
-    MdEntrySizeT MdEntrySize;
+    int64_t MdEntryPxOptional;
+    uint64_t MdEntrySizeOptional;
     int32_t NumberOfOrders;
     int32_t TradeId;
     uint8_t AggressorSide;
     char Symbol[50];
-    char SecurityGroup[12];
-    char SecurityType[4];
+    char SecurityGroup12[12];
+    char SecurityType[9];
     char SecuritySubType[2];
     MaturityMonthYearT MaturityMonthYear;
-    char SecurityExchange[4];
+    char SecurityExchange4[4];
     uint16_t MaturityDate;
     char UnitOfMeasure[5];
-    char UnitOfMeasureCurrency[3];
-    UnitOfMeasureQtyT UnitOfMeasureQty;
-    CouponRateT CouponRate;
+    char UnitOfMeasureCurrency3[3];
+    int64_t UnitOfMeasureQtyOptional;
+    int32_t CouponRate;
     uint16_t PriceType;
     uint8_t TrdType;
     char MdEntryId[26];
     uint8_t PutOrCall;
-    StrikePriceT StrikePrice;
+    int64_t StrikePrice;
     char RestructuringType[2];
     char Seniority[2];
-    char ReferenceId[50];
+    char ReferenceId100[100];
     char StrategyLinkId[26];
     char LegRefId[17];
 } MDIncrementalRefreshTradeBlocksGroupT;
@@ -240,7 +245,7 @@ typedef struct {
  * Structure: Md Incremental Refresh Trade Blocks 365
  */ 
 typedef struct {
-    uint64_t TransactTime;
+    uint64_t TransactTimeOptional;
     MatchEventIndicatorT MatchEventIndicator;
     uint16_t BatchTotalMessages;
     uint16_t TradeDate;
@@ -250,7 +255,7 @@ typedef struct {
  * Structure: Interpolation Factor
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } InterpolationFactorT;
 
@@ -258,7 +263,7 @@ typedef struct {
  * Structure: Previous Fixing Rate
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } PreviousFixingRateT;
 
@@ -307,7 +312,7 @@ typedef struct {
  * Structure: Events Group
  */ 
 typedef struct {
-    uint8_t EventType;
+    uint8_t EventTypeIndices;
     uint64_t EventTime;
 } EventsGroupT;
 
@@ -316,7 +321,7 @@ typedef struct {
  */ 
 typedef struct {
     uint16_t BlockLength;
-    uint8_t NumInGroup;
+    uint16_t NumInGroup16;
 } GroupSizeEncodingT;
 
 /*
@@ -330,7 +335,7 @@ typedef struct {
  * Structure: M D Feed Types Group
  */ 
 typedef struct {
-    char MdFeedType[2];
+    char MdFeedType3[3];
     uint8_t MarketDepth;
 } MDFeedTypesGroupT;
 
@@ -345,7 +350,7 @@ typedef struct {
  * Structure: Min Price Increment
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } MinPriceIncrementT;
 
@@ -356,38 +361,46 @@ typedef struct {
     uint64_t TransactTime;
     uint16_t TradeDate;
     MatchEventIndicatorT MatchEventIndicator;
-    uint16_t BatchTotalMessages;
+    uint16_t BatchTotalMessagesOptional;
 } MdIncrementalRefreshOtC356T;
 
 /*
  * Structure: Cal Fut Px
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } CalFutPxT;
+
+/*
+ * Structure: Md Entry Px Decimal
+ */ 
+typedef struct {
+    int64_t Mantissa;
+    int8_t Exponent;
+} MdEntryPxDecimalT;
 
 /*
  * Structure: M D Incremental Refresh Eris Group
  */ 
 typedef struct {
-    uint8_t MdUpdateAction;
+    char MdUpdateActionChar[1];
     char MdEntryType[1];
     uint32_t RptSeq;
-    MdEntryPxT MdEntryPx;
-    MdEntrySizeT MdEntrySize;
+    MdEntryPxDecimalT MdEntryPxDecimal;
+    uint64_t MdEntrySizeOptional;
     CalFutPxT CalFutPx;
     int32_t MdEntryPositionNo;
     int32_t NumberOfOrders;
     int32_t TradeId;
     uint8_t AggressorSide;
     char Symbol[50];
-    char SecurityGroup[12];
-    char SecurityType[4];
+    char SecurityGroup26[26];
+    char SecurityType[9];
     char SecurityExchange[4];
-    int8_t Product;
+    uint8_t ProductOptional;
     uint16_t MaturityDate;
-    char ReferenceId[50];
+    char ReferenceId50[50];
 } MDIncrementalRefreshErisGroupT;
 
 /*
@@ -403,7 +416,7 @@ typedef struct {
 typedef struct {
     uint64_t TransactTime;
     MatchEventIndicatorT MatchEventIndicator;
-    uint16_t BatchTotalMessages;
+    uint16_t BatchTotalMessagesOptional;
 } MdIncrementalRefreshEris353T;
 
 /*
@@ -412,14 +425,14 @@ typedef struct {
 typedef struct {
     uint64_t TransactTime;
     MatchEventIndicatorT MatchEventIndicator;
-    uint16_t BatchTotalMessages;
+    uint16_t BatchTotalMessagesOptional;
 } MdIncrementalRefreshEris351T;
 
 /*
  * Structure: Md Incremental Refresh Trade Blocks 349
  */ 
 typedef struct {
-    uint64_t TransactTime;
+    uint64_t TransactTimeOptional;
     MatchEventIndicatorT MatchEventIndicator;
     uint16_t BatchTotalMessages;
     uint16_t TradeDate;
@@ -429,7 +442,7 @@ typedef struct {
  * Structure: Percent Trading
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } PercentTradingT;
 
@@ -437,7 +450,7 @@ typedef struct {
  * Structure: Net Pct Chg
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } NetPctChgT;
 
@@ -445,7 +458,7 @@ typedef struct {
  * Structure: Net Chg Prev Day
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } NetChgPrevDayT;
 
@@ -453,7 +466,7 @@ typedef struct {
  * Structure: Yield
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } YieldT;
 
@@ -461,12 +474,12 @@ typedef struct {
  * Structure: M D Incremental Refresh Indices Group
  */ 
 typedef struct {
-    char MdEntryType[1];
+    char MdEntryTypeIndices;
     uint32_t RptSeq;
-    MdEntryPxT MdEntryPx;
-    MdEntrySizeT MdEntrySize;
+    MdEntryPxDecimalT MdEntryPxDecimal;
+    uint64_t MdEntrySizeOptional;
     char Symbol[50];
-    uint8_t OpenCloseSettlFlag;
+    int8_t OpenCloseSettlFlag;
     char YieldType[8];
     YieldT Yield;
     NetChgPrevDayT NetChgPrevDay;
@@ -475,7 +488,7 @@ typedef struct {
     uint8_t MdEntryCode;
     int32_t MdEntryDate;
     int32_t MdEntryTime;
-    char ReferenceId[50];
+    char ReferenceId50[50];
 } MDIncrementalRefreshIndicesGroupT;
 
 /*
@@ -492,7 +505,7 @@ typedef struct {
     uint64_t TransactTime;
     char MdFeedType[2];
     MatchEventIndicatorT MatchEventIndicator;
-    uint16_t BatchTotalMessages;
+    uint16_t BatchTotalMessagesOptional;
 } MdIncrementalRefreshIndices348T;
 
 /*
@@ -546,7 +559,7 @@ typedef struct {
  * Structure: Lines Of Text Group
  */ 
 typedef struct {
-    char Text[180];
+    char Text500[500];
 } LinesOfTextGroupT;
 
 /*
@@ -560,7 +573,7 @@ typedef struct {
  * Structure: Final Settlement Futures Price
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } FinalSettlementFuturesPriceT;
 
@@ -568,7 +581,7 @@ typedef struct {
  * Structure: Settlement Npv
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } SettlementNpvT;
 
@@ -576,7 +589,7 @@ typedef struct {
  * Structure: D V 01
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } DV01T;
 
@@ -584,7 +597,7 @@ typedef struct {
  * Structure: P V 01
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } PV01T;
 
@@ -592,7 +605,7 @@ typedef struct {
  * Structure: Leg Contract Multiplier
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } LegContractMultiplierT;
 
@@ -600,7 +613,7 @@ typedef struct {
  * Structure: Previous Eris Pai
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } PreviousErisPaiT;
 
@@ -608,7 +621,7 @@ typedef struct {
  * Structure: Next Floating Payment Amount
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } NextFloatingPaymentAmountT;
 
@@ -616,7 +629,7 @@ typedef struct {
  * Structure: Next Fixed Payment Amount
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } NextFixedPaymentAmountT;
 
@@ -624,7 +637,7 @@ typedef struct {
  * Structure: Floating Payment
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } FloatingPaymentT;
 
@@ -632,15 +645,23 @@ typedef struct {
  * Structure: Fixed Payment
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } FixedPaymentT;
+
+/*
+ * Structure: Min Price Increment Optional
+ */ 
+typedef struct {
+    int64_t Mantissa;
+    int8_t Exponent;
+} MinPriceIncrementOptionalT;
 
 /*
  * Structure: Fed Funds Rate
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } FedFundsRateT;
 
@@ -648,7 +669,7 @@ typedef struct {
  * Structure: Eris Pai
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } ErisPaiT;
 
@@ -656,7 +677,7 @@ typedef struct {
  * Structure: Daily Incremental Eris Pai
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } DailyIncrementalErisPaiT;
 
@@ -664,7 +685,7 @@ typedef struct {
  * Structure: Accrued Coupons
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } AccruedCouponsT;
 
@@ -672,7 +693,7 @@ typedef struct {
  * Structure: Npv
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } NpvT;
 
@@ -680,7 +701,7 @@ typedef struct {
  * Structure: Float Npv
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } FloatNpvT;
 
@@ -688,7 +709,7 @@ typedef struct {
  * Structure: Fixed Npv
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } FixedNpvT;
 
@@ -696,7 +717,7 @@ typedef struct {
  * Structure: Leg Purchase Rate
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } LegPurchaseRateT;
 
@@ -704,9 +725,25 @@ typedef struct {
  * Structure: Fair Coupon Pct
  */ 
 typedef struct {
-    int64_t Mantissa64;
+    int64_t Mantissa;
     int8_t Exponent;
 } FairCouponPctT;
+
+/*
+ * Structure: Coupon Rate Optional
+ */ 
+typedef struct {
+    int32_t Mantissa32;
+    int8_t Exponent;
+} CouponRateOptionalT;
+
+/*
+ * Structure: Cal Fut Px Optional
+ */ 
+typedef struct {
+    int64_t Mantissa;
+    int8_t Exponent;
+} CalFutPxOptionalT;
 
 /*
  * Bitfield: Settl Price Type
@@ -721,25 +758,33 @@ typedef struct {
 } SettlPriceTypeT;
 
 /*
+ * Structure: Md Entry Px Decimal Optional
+ */ 
+typedef struct {
+    int64_t Mantissa;
+    int8_t Exponent;
+} MdEntryPxDecimalOptionalT;
+
+/*
  * Structure: M D Incremental Refresh Eris Reference Data And Daily Statistics Group
  */ 
 typedef struct {
-    uint8_t MdUpdateAction;
+    char MdUpdateActionChar[1];
     char MdEntryType[1];
     uint32_t RptSeq;
-    MdEntryPxT MdEntryPx;
+    MdEntryPxDecimalOptionalT MdEntryPxDecimalOptional;
     uint8_t OpenCloseSettlFlag;
     SettlPriceTypeT SettlPriceType;
-    CalFutPxT CalFutPx;
-    char ReferenceId[50];
-    MdEntrySizeT MdEntrySize;
+    CalFutPxOptionalT CalFutPxOptional;
+    char ReferenceId50[50];
+    uint64_t MdEntrySizeOptional;
     char Symbol[50];
-    char SecurityGroup[12];
-    int8_t Product;
-    char SecurityType[4];
+    char SecurityGroup26[26];
+    uint8_t ProductOptional;
+    char SecurityType[9];
     char SecurityExchange[4];
     uint16_t MaturityDate;
-    CouponRateT CouponRate;
+    CouponRateOptionalT CouponRateOptional;
     uint16_t TradeDate;
     FairCouponPctT FairCouponPct;
     LegPurchaseRateT LegPurchaseRate;
@@ -750,7 +795,7 @@ typedef struct {
     DailyIncrementalErisPaiT DailyIncrementalErisPai;
     ErisPaiT ErisPai;
     FedFundsRateT FedFundsRate;
-    MinPriceIncrementT MinPriceIncrement;
+    MinPriceIncrementOptionalT MinPriceIncrementOptional;
     FixedPaymentT FixedPayment;
     FloatingPaymentT FloatingPayment;
     uint16_t NextFixedPaymentDate;
@@ -784,7 +829,7 @@ typedef struct {
 typedef struct {
     uint64_t TransactTime;
     MatchEventIndicatorT MatchEventIndicator;
-    uint16_t BatchTotalMessages;
+    uint16_t BatchTotalMessagesOptional;
 } MdIncrementalRefreshErisReferenceDataAndDailyStatistics333T;
 
 /*
@@ -812,10 +857,25 @@ typedef struct {
 } MessageHeaderT;
 
 /*
+ * Structure: Message
+ */ 
+typedef struct {
+    uint16_t MessageSize;
+    MessageHeaderT MessageHeader;
+} MessageT;
+
+/*
  * Structure: Binary Packet Header
  */ 
 typedef struct {
     uint32_t MessageSequenceNumber;
     uint64_t SendingTime;
 } BinaryPacketHeaderT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    BinaryPacketHeaderT BinaryPacketHeader;
+} PacketT;
 

@@ -259,7 +259,8 @@
 #define ENUM_SECURITY_MASS_TRADING_STATUS_PRE_CALL = 214
 #define ENUM_SECURITY_MASS_TRADING_STATUS_CALL = 215
 #define ENUM_SECURITY_MASS_TRADING_STATUS_FREEZE = 216
-#define ENUM_SECURITY_MASS_TRADING_STATUS_SECURITY_MASS_TRADING_STATUS_MINIMUM_VALUE = 216
+#define ENUM_SECURITY_MASS_TRADING_STATUS_TRADE_AT_CLOSE = 217
+#define ENUM_SECURITY_MASS_TRADING_STATUS_SECURITY_MASS_TRADING_STATUS_MINIMUM_VALUE = 217
 #define ENUM_SECURITY_MASS_TRADING_STATUS_SECURITY_MASS_TRADING_STATUS_MINIMUM_VALUE = 2
 
 /*
@@ -307,7 +308,8 @@
 #define ENUM_SECURITY_TRADING_STATUS_PRE_CALL = 214
 #define ENUM_SECURITY_TRADING_STATUS_CALL = 215
 #define ENUM_SECURITY_TRADING_STATUS_FREEZE = 216
-#define ENUM_SECURITY_TRADING_STATUS_SECURITY_TRADING_STATUS_MINIMUM_VALUE = 216
+#define ENUM_SECURITY_TRADING_STATUS_TRADE_AT_CLOSE = 217
+#define ENUM_SECURITY_TRADING_STATUS_SECURITY_TRADING_STATUS_MINIMUM_VALUE = 217
 #define ENUM_SECURITY_TRADING_STATUS_SECURITY_TRADING_STATUS_MINIMUM_VALUE = 2
 
 /*
@@ -339,11 +341,11 @@
  */ 
 #define ENUM_TRADE_CONDITION_IMPLIED_TRADE = 1
 #define ENUM_TRADE_CONDITION_OUT_OF_SEQUENCE = 107
-#define ENUM_TRADE_CONDITION_SYSTEMATIC_INTERNALIZER = 153
 #define ENUM_TRADE_CONDITION_MIDPOINT_PRICE = 155
 #define ENUM_TRADE_CONDITION_TRADING_ON_TERMS_OF_ISSUE = 156
 #define ENUM_TRADE_CONDITION_SPECIAL_AUCTION = 596
-#define ENUM_TRADE_CONDITION_TRADE_CONDITION_MINIMUM_VALUE = 596
+#define ENUM_TRADE_CONDITION_TRADE_AT_CLOSE = 624
+#define ENUM_TRADE_CONDITION_TRADE_CONDITION_MINIMUM_VALUE = 624
 #define ENUM_TRADE_CONDITION_TRADE_CONDITION_MINIMUM_VALUE = 1
 
 /*
@@ -426,6 +428,9 @@ typedef struct {
     uint64_t OfferPx;
     uint64_t BidSize;
     uint64_t OfferSize;
+    uint16_t NumberOfBuyOrders;
+    uint16_t NumberOfSellOrders;
+    char Pad4[4];
 } TopOfBookT;
 
 /*
@@ -736,8 +741,10 @@ typedef struct {
     int32_t SecuritySubType;
     uint8_t ProductComplex;
     uint8_t ImpliedMarketIndicator;
+    char Pad2[2];
+    uint32_t LegRatioMultiplier;
     uint8_t NoLegs;
-    char Pad1[1];
+    char Pad3[3];
 } AddComplexInstrumentT;
 
 /*
@@ -748,6 +755,13 @@ typedef struct {
     uint16_t TemplateId;
     uint32_t MsgSeqNum;
 } MessageHeaderCompT;
+
+/*
+ * Structure: Message
+ */ 
+typedef struct {
+    MessageHeaderCompT MessageHeaderComp;
+} MessageT;
 
 /*
  * Structure: Packet Info
@@ -771,4 +785,11 @@ typedef struct {
     char Pad5[5];
     uint64_t TransactTime;
 } PacketHeaderT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    PacketHeaderT PacketHeader;
+} PacketT;
 

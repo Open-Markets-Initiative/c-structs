@@ -306,6 +306,13 @@ typedef struct {
 } StartOfDayMessageT;
 
 /*
+ * Structure: Control
+ */ 
+typedef struct {
+    char ControlMessageType;
+} ControlT;
+
+/*
  * Structure: Market Center Close Recap
  */ 
 typedef struct {
@@ -417,6 +424,21 @@ typedef struct {
 } CrossSroTradingActionMessageT;
 
 /*
+ * Structure: General Administrative Message
+ */ 
+typedef struct {
+    MessageInfoT MessageInfo;
+    uint16_t TextLength;
+} GeneralAdministrativeMessageT;
+
+/*
+ * Structure: Administrative
+ */ 
+typedef struct {
+    char AdministrativeMessageType;
+} AdministrativeT;
+
+/*
  * Structure: Finra Adf Market Participant Quotation Message
  */ 
 typedef struct {
@@ -466,6 +488,13 @@ typedef struct {
 } ShortFormNationalBboAppendageT;
 
 /*
+ * Structure: Quote
+ */ 
+typedef struct {
+    char QuoteMessageType;
+} QuoteT;
+
+/*
  * Structure: Message Header
  */ 
 typedef struct {
@@ -475,6 +504,13 @@ typedef struct {
 } MessageHeaderT;
 
 /*
+ * Structure: Message
+ */ 
+typedef struct {
+    MessageHeaderT MessageHeader;
+} MessageT;
+
+/*
  * Structure: Packet Header
  */ 
 typedef struct {
@@ -482,4 +518,11 @@ typedef struct {
     uint64_t Sequence;
     uint16_t Count;
 } PacketHeaderT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    PacketHeaderT PacketHeader;
+} PacketT;
 

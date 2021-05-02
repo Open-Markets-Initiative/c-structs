@@ -5,9 +5,9 @@
 
 | Division | Data | Protocol | Version | Date | Size | Testing | Specification |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Futures | Mdf | iMpact | [1.1.34][Ice.Futures.Mdf.iMpact.v1.1.34.Structs] | 9/4/2018 | 1179 | Verified | [pdf][Ice.Futures.Mdf.iMpact.v1.1.34.Pdf] |
-| Futures | Mdf | iMpact | [1.1.33][Ice.Futures.Mdf.iMpact.v1.1.33.Structs] | 8/6/2018 | 1155 | Verified | [pdf][Ice.Futures.Mdf.iMpact.v1.1.33.Pdf] |
-| Futures | Mdf | iMpact | [1.1.24][Ice.Futures.Mdf.iMpact.v1.1.24.Structs] | 3/30/2016 | 1068 | Verified | [pdf][Ice.Futures.Mdf.iMpact.v1.1.24.Pdf] |
+| Futures | Mdf | iMpact | [1.1.34][Ice.Futures.Mdf.iMpact.v1.1.34.Structs] | 9/4/2018 | 1208 | Verified | [pdf][Ice.Futures.Mdf.iMpact.v1.1.34.Pdf] |
+| Futures | Mdf | iMpact | [1.1.33][Ice.Futures.Mdf.iMpact.v1.1.33.Structs] | 8/6/2018 | 1184 | Verified | [pdf][Ice.Futures.Mdf.iMpact.v1.1.33.Pdf] |
+| Futures | Mdf | iMpact | [1.1.24][Ice.Futures.Mdf.iMpact.v1.1.24.Structs] | 3/30/2016 | 1097 | Verified | [pdf][Ice.Futures.Mdf.iMpact.v1.1.24.Pdf] |
 
 
 Ice: [website](https://www.theice.com "Go to Intercontinental Exchange")

@@ -1875,6 +1875,46 @@ typedef struct {
 } SideAllocGrpBcCompT;
 
 /*
+ * Structure: Tes Approve Broadcast
+ */ 
+typedef struct {
+    MessageHeaderOutCompT MessageHeaderOutComp;
+    RbcHeaderCompT RbcHeaderComp;
+    int64_t SecurityId;
+    uint64_t LastPx;
+    uint64_t AllocQty;
+    uint64_t TransactTime;
+    uint64_t TransBkdTime;
+    uint64_t SettlCurrFxRate;
+    int32_t MarketSegmentId;
+    uint32_t PackageId;
+    uint32_t TesExecId;
+    uint32_t AllocId;
+    uint32_t SettlDate;
+    uint32_t TesEnrichmentRuleId;
+    uint32_t AutoApprovalRuleId;
+    uint16_t TrdType;
+    uint16_t VarTextLen;
+    uint8_t Side;
+    uint8_t ValueCheckTypeValue;
+    uint8_t ValueCheckTypeQuantity;
+    uint8_t TradeReportType;
+    uint8_t TradingCapacity;
+    uint8_t TradeAllocStatus;
+    char MessageEventSource;
+    char TradeReportId[20];
+    char PartyExecutingFirm[5];
+    char PartyExecutingTrader[6];
+    uint8_t PartyIdEnteringFirm;
+    char PartyEnteringTrader[6];
+    char RootPartyExecutingFirm[5];
+    char RootPartyExecutingTrader[6];
+    char FreeText1[12];
+    char FreeText2[12];
+    char FreeText4[16];
+} TesApproveBroadcastT;
+
+/*
  * Structure: Subscribe Response
  */ 
 typedef struct {
@@ -2206,6 +2246,18 @@ typedef struct {
 } RetransmitMeMessageRequestT;
 
 /*
+ * Structure: Reject
+ */ 
+typedef struct {
+    MessageHeaderOutCompT MessageHeaderOutComp;
+    NrResponseHeaderMeCompT NrResponseHeaderMeComp;
+    uint32_t SessionRejectReason;
+    uint16_t VarTextLen;
+    uint8_t SessionStatus;
+    char Pad1[1];
+} RejectT;
+
+/*
  * Structure: Rfq Specialist Broadcast
  */ 
 typedef struct {
@@ -2528,6 +2580,18 @@ typedef struct {
     uint8_t NoFills;
     char Pad2[2];
 } OrderExecNotificationT;
+
+/*
+ * Structure: News Broadcast
+ */ 
+typedef struct {
+    MessageHeaderOutCompT MessageHeaderOutComp;
+    RbcHeaderCompT RbcHeaderComp;
+    uint64_t OrigTime;
+    uint16_t VarTextLen;
+    char Headline[256];
+    char Pad6[6];
+} NewsBroadcastT;
 
 /*
  * Structure: New Order Single Short Request
@@ -2936,6 +3000,18 @@ typedef struct {
 } LogonRequestT;
 
 /*
+ * Structure: Legal Notification Broadcast
+ */ 
+typedef struct {
+    MessageHeaderOutCompT MessageHeaderOutComp;
+    RbcHeaderCompT RbcHeaderComp;
+    uint64_t TransactTime;
+    uint16_t VarTextLen;
+    uint8_t UserStatus;
+    char Pad5[5];
+} LegalNotificationBroadcastT;
+
+/*
  * Structure: Issuer Security State Change Response
  */ 
 typedef struct {
@@ -3092,6 +3168,28 @@ typedef struct {
 typedef struct {
     MessageHeaderInCompT MessageHeaderInComp;
 } HeartbeatT;
+
+/*
+ * Structure: Forced User Logout Notification
+ */ 
+typedef struct {
+    MessageHeaderOutCompT MessageHeaderOutComp;
+    NotifHeaderCompT NotifHeaderComp;
+    uint32_t Username;
+    uint16_t VarTextLen;
+    uint8_t UserStatus;
+    char Pad1[1];
+} ForcedUserLogoutNotificationT;
+
+/*
+ * Structure: Forced Logout Notification
+ */ 
+typedef struct {
+    MessageHeaderOutCompT MessageHeaderOutComp;
+    NotifHeaderCompT NotifHeaderComp;
+    uint16_t VarTextLen;
+    char Pad6[6];
+} ForcedLogoutNotificationT;
 
 /*
  * Structure: Extended Deletion Report
@@ -3393,6 +3491,20 @@ typedef struct {
     int32_t MarketSegmentId;
     char Pad4[4];
 } CrossRequestT;
+
+/*
+ * Structure: Broadcast Error Notification
+ */ 
+typedef struct {
+    MessageHeaderOutCompT MessageHeaderOutComp;
+    NotifHeaderCompT NotifHeaderComp;
+    uint32_t ApplIdStatus;
+    uint32_t RefApplSubId;
+    uint16_t VarTextLen;
+    uint8_t RefApplId;
+    uint8_t SessionStatus;
+    char Pad4[4];
+} BroadcastErrorNotificationT;
 
 /*
  * Structure: Approve Tes Trade Request

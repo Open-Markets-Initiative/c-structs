@@ -439,3 +439,10 @@ typedef struct {
     char PacketType;
 } PacketHeaderT;
 
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    PacketHeaderT PacketHeader;
+} PacketT;
+

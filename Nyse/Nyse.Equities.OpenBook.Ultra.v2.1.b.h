@@ -139,3 +139,10 @@ typedef struct {
     uint8_t LinkFlag;
 } PacketHeaderT;
 
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    PacketHeaderT PacketHeader;
+} PacketT;
+

@@ -38,8 +38,8 @@
 /*
  * Current Trading State Values
  */ 
-#define ENUM_CURRENT_TRADING_STATE_HALT_IN_EFFECT = H
-#define ENUM_CURRENT_TRADING_STATE_PHLX_TRADING_RESUMED = T
+#define ENUM_CURRENT_TRADING_STATE_HALT_IN_EFFECT = 'H'
+#define ENUM_CURRENT_TRADING_STATE_PHLX_TRADING_RESUMED = 'T'
 
 /*
  * Customer Firm Indicator Values
@@ -110,15 +110,15 @@
 /*
  * Open State Values
  */ 
-#define ENUM_OPEN_STATE_OPEN_FOR_AUTO_EXECUTION = Y
-#define ENUM_OPEN_STATE_CLOSED_FOR_AUTO_EXECUTION = N
+#define ENUM_OPEN_STATE_OPEN_FOR_AUTO_EXECUTION = 'Y'
+#define ENUM_OPEN_STATE_CLOSED_FOR_AUTO_EXECUTION = 'N'
 
 /*
  * Option Closing Type Values
  */ 
-#define ENUM_OPTION_CLOSING_TYPE_NORMAL = N
-#define ENUM_OPTION_CLOSING_TYPE_LATE = L
-#define ENUM_OPTION_CLOSING_TYPE_WCO_EARLY_CLOSING = W
+#define ENUM_OPTION_CLOSING_TYPE_NORMAL = 'N'
+#define ENUM_OPTION_CLOSING_TYPE_LATE = 'L'
+#define ENUM_OPTION_CLOSING_TYPE_WCO_EARLY_CLOSING = 'W'
 
 /*
  * Option Type Values
@@ -145,8 +145,8 @@
 /*
  * Phlx Tradable Values
  */ 
-#define ENUM_PHLX_TRADABLE_TRADABLE = Y
-#define ENUM_PHLX_TRADABLE_NOT_TRADABLE = N
+#define ENUM_PHLX_TRADABLE_TRADABLE = 'Y'
+#define ENUM_PHLX_TRADABLE_NOT_TRADABLE = 'N'
 
 /*
  * Side Values
@@ -280,7 +280,7 @@ typedef struct {
     uint32_t Seconds;
     uint32_t Nanoseconds;
     uint32_t StrategyId;
-    uint8_t OpenState;
+    char OpenState;
 } StrategyOpenClosedMessageT;
 
 /*
@@ -294,7 +294,7 @@ typedef struct {
     ExpirationT Expiration;
     uint32_t ExplicitStrikePrice;
     char OptionType;
-    uint8_t OpenState;
+    char OpenState;
 } SecurityOpenClosedMessageT;
 
 /*
@@ -304,7 +304,7 @@ typedef struct {
     uint32_t Seconds;
     uint32_t Nanoseconds;
     uint32_t StrategyId;
-    uint8_t CurrentTradingState;
+    char CurrentTradingState;
 } ComplexTradingActionMessageT;
 
 /*
@@ -318,7 +318,7 @@ typedef struct {
     ExpirationT Expiration;
     uint32_t ExplicitStrikePrice;
     char OptionType;
-    uint8_t CurrentTradingState;
+    char CurrentTradingState;
 } SecurityTradingActionMessageT;
 
 /*
@@ -360,8 +360,8 @@ typedef struct {
     char OptionType;
     uint8_t Source;
     char UnderlyingSymbol[13];
-    uint8_t OptionClosingType;
-    uint8_t PhlxTradable;
+    char OptionClosingType;
+    char PhlxTradable;
 } OptionsDirectoryMessageT;
 
 /*
@@ -383,6 +383,13 @@ typedef struct {
 } MessageHeaderT;
 
 /*
+ * Structure: Message
+ */ 
+typedef struct {
+    MessageHeaderT MessageHeader;
+} MessageT;
+
+/*
  * Structure: Packet Header
  */ 
 typedef struct {
@@ -390,4 +397,11 @@ typedef struct {
     uint32_t Sequence;
     uint16_t Count;
 } PacketHeaderT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    PacketHeaderT PacketHeader;
+} PacketT;
 

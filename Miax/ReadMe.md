@@ -5,8 +5,8 @@
 
 | Division | Data | Protocol | Version | Date | Size | Testing | Specification |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Options | ComplexTopOfMarket | Mach | [1.3][Miax.Options.ComplexTopOfMarket.Mach.v1.3.Structs] | 3/16/2018 | 337 | Untested | [url][Miax.Options.ComplexTopOfMarket.Mach.v1.3.Url] - [pdf][Miax.Options.ComplexTopOfMarket.Mach.v1.3.Pdf] |
-| Options | ComplexTopOfMarket | Mach | [1.1][Miax.Options.ComplexTopOfMarket.Mach.v1.1.Structs] | 7/15/2016 | 333 | Verified | [url][Miax.Options.ComplexTopOfMarket.Mach.v1.1.Url] - [pdf][Miax.Options.ComplexTopOfMarket.Mach.v1.1.Pdf] |
+| Options | ComplexTopOfMarket | Mach | [1.3][Miax.Options.ComplexTopOfMarket.Mach.v1.3.Structs] | 3/16/2018 | 366 | Untested | [url][Miax.Options.ComplexTopOfMarket.Mach.v1.3.Url] - [pdf][Miax.Options.ComplexTopOfMarket.Mach.v1.3.Pdf] |
+| Options | ComplexTopOfMarket | Mach | [1.1][Miax.Options.ComplexTopOfMarket.Mach.v1.1.Structs] | 7/15/2016 | 362 | Verified | [url][Miax.Options.ComplexTopOfMarket.Mach.v1.1.Url] - [pdf][Miax.Options.ComplexTopOfMarket.Mach.v1.1.Pdf] |
 | Options | TopOfMarket | Mach | [2.3][Miax.Options.TopOfMarket.Mach.v2.3.Structs] | 6/10/2019 | 397 | Untested | [url][Miax.Options.TopOfMarket.Mach.v2.3.Url] - [pdf][Miax.Options.TopOfMarket.Mach.v2.3.Pdf] |
 | Options | TopOfMarket | Mach | [2.2][Miax.Options.TopOfMarket.Mach.v2.2.Structs] | 3/16/2018 | 52 | Untested | [url][Miax.Options.TopOfMarket.Mach.v2.2.Url] - [pdf][Miax.Options.TopOfMarket.Mach.v2.2.Pdf] |
 | Options | TopOfMarket | Mach | [1.9][Miax.Options.TopOfMarket.Mach.v1.9.Structs] | 1/15/2016 | 331 | Verified | [url][Miax.Options.TopOfMarket.Mach.v1.9.Url] - [pdf][Miax.Options.TopOfMarket.Mach.v1.9.Pdf] |

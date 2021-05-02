@@ -304,6 +304,13 @@ typedef struct {
 } MessageHeaderT;
 
 /*
+ * Structure: Message
+ */ 
+typedef struct {
+    MessageHeaderT MessageHeader;
+} MessageT;
+
+/*
  * Bitfield: Packet Flag
  */ 
 typedef struct {
@@ -325,4 +332,11 @@ typedef struct {
     uint8_t Messages;
     uint32_t PacketMilli;
 } PacketHeaderT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    PacketHeaderT PacketHeader;
+} PacketT;
 

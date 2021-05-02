@@ -477,3 +477,10 @@ typedef struct {
     char TradeMessageType;
 } TradeT;
 
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    uint8_t BlockSoh;
+} PacketT;
+

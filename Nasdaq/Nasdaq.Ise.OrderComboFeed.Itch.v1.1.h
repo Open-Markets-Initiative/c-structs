@@ -24,8 +24,8 @@
 /*
  * Current Trading State Values
  */ 
-#define ENUM_CURRENT_TRADING_STATE_HALT_IN_EFFECT = H
-#define ENUM_CURRENT_TRADING_STATE_TRADING_RESUMED = T
+#define ENUM_CURRENT_TRADING_STATE_HALT_IN_EFFECT = 'H'
+#define ENUM_CURRENT_TRADING_STATE_TRADING_RESUMED = 'T'
 
 /*
  * Event Code Values
@@ -44,6 +44,12 @@
  */ 
 #define ENUM_EXEC_FLAG_NONE = 'N'
 #define ENUM_EXEC_FLAG_AON = 'A'
+
+/*
+ * Leg Side Values
+ */ 
+#define ENUM_LEG_SIDE_BUY = 'B'
+#define ENUM_LEG_SIDE_SELL = 'S'
 
 /*
  * Message Type Values
@@ -180,7 +186,7 @@ typedef struct {
 typedef struct {
     char Timestamp;
     uint32_t StrategyId;
-    uint8_t CurrentTradingState;
+    char CurrentTradingState;
 } StrategyTradingActionMessageT;
 
 /*
@@ -195,7 +201,7 @@ typedef struct {
     uint8_t ExpirationDay;
     uint64_t ExplicitStrikePrice;
     char OptionType;
-    char Side;
+    char LegSide;
     uint32_t LegRatio;
 } LegInformationT;
 
@@ -233,6 +239,13 @@ typedef struct {
 } MessageHeaderT;
 
 /*
+ * Structure: Message
+ */ 
+typedef struct {
+    MessageHeaderT MessageHeader;
+} MessageT;
+
+/*
  * Structure: Packet Header
  */ 
 typedef struct {
@@ -240,4 +253,11 @@ typedef struct {
     uint64_t Sequence;
     uint16_t Count;
 } PacketHeaderT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    PacketHeaderT PacketHeader;
+} PacketT;
 

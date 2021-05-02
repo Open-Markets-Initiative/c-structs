@@ -628,6 +628,13 @@ typedef struct {
 } AuctionStatusMessageT;
 
 /*
+ * Structure: Trade
+ */ 
+typedef struct {
+    char TradeMessageType;
+} TradeT;
+
+/*
  * Structure: Participant End Of Day Summary Message
  */ 
 typedef struct {
@@ -708,6 +715,13 @@ typedef struct {
 } ConsolidatedStartOfDaySummaryMessageT;
 
 /*
+ * Structure: Summary
+ */ 
+typedef struct {
+    char SummaryMessageType;
+} SummaryT;
+
+/*
  * Structure: Prior Day Trade Message
  */ 
 typedef struct {
@@ -744,6 +758,13 @@ typedef struct {
     char TradeReportingFacilityId;
     OriginalTradeT OriginalTrade;
 } PriorDayTradeCorrectionMessageT;
+
+/*
+ * Structure: Prior Day
+ */ 
+typedef struct {
+    char PriorDayMessageType;
+} PriorDayT;
 
 /*
  * Structure: Crossing Session Summary Message
@@ -821,6 +842,13 @@ typedef struct {
 } MarketWideCircuitBreakerDeclineLevelStatusMessageT;
 
 /*
+ * Structure: Market Status
+ */ 
+typedef struct {
+    char MarketStatusMessageType;
+} MarketStatusT;
+
+/*
  * Structure: Bid And Offer Index Message
  */ 
 typedef struct {
@@ -846,6 +874,13 @@ typedef struct {
     char IndexSymbol[11];
     int64_t IndexValue;
 } IndexMessageT;
+
+/*
+ * Structure: Index
+ */ 
+typedef struct {
+    char IndexMessageType;
+} IndexT;
 
 /*
  * Structure: End Of Day Message
@@ -925,6 +960,13 @@ typedef struct {
 } StartOfDayMessageT;
 
 /*
+ * Structure: Control
+ */ 
+typedef struct {
+    char ControlMessageType;
+} ControlT;
+
+/*
  * Structure: Administrative Unformatted Message
  */ 
 typedef struct {
@@ -981,12 +1023,26 @@ typedef struct {
 } StartOfEndOfDayMessageT;
 
 /*
+ * Structure: Administrative
+ */ 
+typedef struct {
+    char AdministrativeMessageType;
+} AdministrativeT;
+
+/*
  * Structure: Message Header
  */ 
 typedef struct {
     uint16_t MessageLength;
     char MessageCategory;
 } MessageHeaderT;
+
+/*
+ * Structure: Message
+ */ 
+typedef struct {
+    MessageHeaderT MessageHeader;
+} MessageT;
 
 /*
  * Structure: Sip Block Timestamp

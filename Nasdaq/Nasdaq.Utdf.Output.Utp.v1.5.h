@@ -314,6 +314,13 @@ typedef struct {
 } StartOfDayMessageT;
 
 /*
+ * Structure: Control
+ */ 
+typedef struct {
+    char ControlMessageType;
+} ControlT;
+
+/*
  * Structure: Market Center Volume Attachment
  */ 
 typedef struct {
@@ -455,6 +462,21 @@ typedef struct {
 } CrossSroTradingActionMessageT;
 
 /*
+ * Structure: General Administrative Message
+ */ 
+typedef struct {
+    MessageInfoT MessageInfo;
+    uint16_t TextLength;
+} GeneralAdministrativeMessageT;
+
+/*
+ * Structure: Administrative
+ */ 
+typedef struct {
+    char AdministrativeMessageType;
+} AdministrativeT;
+
+/*
  * Structure: Sale Condition
  */ 
 typedef struct {
@@ -572,6 +594,13 @@ typedef struct {
 } TradeReportMessageShortFormMessageT;
 
 /*
+ * Structure: Trade
+ */ 
+typedef struct {
+    char TradeMessageType;
+} TradeT;
+
+/*
  * Structure: Message Header
  */ 
 typedef struct {
@@ -581,6 +610,13 @@ typedef struct {
 } MessageHeaderT;
 
 /*
+ * Structure: Message
+ */ 
+typedef struct {
+    MessageHeaderT MessageHeader;
+} MessageT;
+
+/*
  * Structure: Packet Header
  */ 
 typedef struct {
@@ -588,4 +624,11 @@ typedef struct {
     uint64_t Sequence;
     uint16_t Count;
 } PacketHeaderT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    PacketHeaderT PacketHeader;
+} PacketT;
 

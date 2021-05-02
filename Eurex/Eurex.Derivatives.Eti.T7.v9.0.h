@@ -2580,6 +2580,18 @@ typedef struct {
 } NrResponseHeaderMeCompT;
 
 /*
+ * Structure: Reject
+ */ 
+typedef struct {
+    MessageHeaderOutCompT MessageHeaderOutComp;
+    NrResponseHeaderMeCompT NrResponseHeaderMeComp;
+    uint32_t SessionRejectReason;
+    uint16_t VarTextLen;
+    uint8_t SessionStatus;
+    char Pad1[1];
+} RejectT;
+
+/*
  * Structure: Rfq Response
  */ 
 typedef struct {
@@ -2821,6 +2833,18 @@ typedef struct {
     char LegPositionEffect;
     char Pad5[5];
 } LegOrdGrpCompT;
+
+/*
+ * Structure: News Broadcast
+ */ 
+typedef struct {
+    MessageHeaderOutCompT MessageHeaderOutComp;
+    RbcHeaderCompT RbcHeaderComp;
+    uint64_t OrigTime;
+    uint16_t VarTextLen;
+    char Headline[256];
+    char Pad6[6];
+} NewsBroadcastT;
 
 /*
  * Structure: New Order Single Short Request
@@ -3422,6 +3446,18 @@ typedef struct {
 } LogonRequestT;
 
 /*
+ * Structure: Legal Notification Broadcast
+ */ 
+typedef struct {
+    MessageHeaderOutCompT MessageHeaderOutComp;
+    RbcHeaderCompT RbcHeaderComp;
+    uint64_t TransactTime;
+    uint16_t VarTextLen;
+    uint8_t UserStatus;
+    char Pad5[5];
+} LegalNotificationBroadcastT;
+
+/*
  * Structure: Party Details Grp Comp
  */ 
 typedef struct {
@@ -3579,6 +3615,28 @@ typedef struct {
 typedef struct {
     MessageHeaderInCompT MessageHeaderInComp;
 } HeartbeatT;
+
+/*
+ * Structure: Forced User Logout Notification
+ */ 
+typedef struct {
+    MessageHeaderOutCompT MessageHeaderOutComp;
+    NotifHeaderCompT NotifHeaderComp;
+    uint32_t Username;
+    uint16_t VarTextLen;
+    uint8_t UserStatus;
+    char Pad1[1];
+} ForcedUserLogoutNotificationT;
+
+/*
+ * Structure: Forced Logout Notification
+ */ 
+typedef struct {
+    MessageHeaderOutCompT MessageHeaderOutComp;
+    NotifHeaderCompT NotifHeaderComp;
+    uint16_t VarTextLen;
+    char Pad6[6];
+} ForcedLogoutNotificationT;
 
 /*
  * Structure: Side Cross Leg Grp Comp
@@ -3944,6 +4002,20 @@ typedef struct {
     char ExecType;
     char Pad6[6];
 } ClipDeletionNotificationT;
+
+/*
+ * Structure: Broadcast Error Notification
+ */ 
+typedef struct {
+    MessageHeaderOutCompT MessageHeaderOutComp;
+    NotifHeaderCompT NotifHeaderComp;
+    uint32_t ApplIdStatus;
+    uint32_t RefApplSubId;
+    uint16_t VarTextLen;
+    uint8_t RefApplId;
+    uint8_t SessionStatus;
+    char Pad4[4];
+} BroadcastErrorNotificationT;
 
 /*
  * Structure: Basket Response

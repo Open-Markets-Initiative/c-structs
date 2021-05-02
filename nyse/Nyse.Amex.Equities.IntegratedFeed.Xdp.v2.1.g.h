@@ -1,5 +1,5 @@
 /*******************************************************************************
- * C Structs For Nyse Equities Amex Xdp IntegratedFeed 2.1.g protocol
+ * C Structs For Nyse Amex Equities Xdp IntegratedFeed 2.1.g protocol
  *******************************************************************************/
 
 /*******************************************************************************
@@ -200,26 +200,22 @@
 /*
  * Security Type Values
  */ 
-#define ENUM_SECURITY_TYPE_COMMON_STOCK = 'A'
-#define ENUM_SECURITY_TYPE_PREFERRED_STOCK = 'B'
-#define ENUM_SECURITY_TYPE_WARRANT = 'C'
-#define ENUM_SECURITY_TYPE_RIGHT = 'D'
-#define ENUM_SECURITY_TYPE_CORPORATE_BOND = 'E'
-#define ENUM_SECURITY_TYPE_TREASURY_BOND = 'F'
-#define ENUM_SECURITY_TYPE_STRUCTURED_PRODUCT = 'G'
-#define ENUM_SECURITY_TYPE_ADR_COMMON = 'H'
-#define ENUM_SECURITY_TYPE_ADR_PREFERRED = 'I'
-#define ENUM_SECURITY_TYPE_ADR_WARRANTS = 'J'
-#define ENUM_SECURITY_TYPE_ADR_RIGHTS = 'K'
-#define ENUM_SECURITY_TYPE_ADR_CORPORATE_BOND = 'L'
-#define ENUM_SECURITY_TYPE_NY_REGISTERED_SHARE = 'M'
-#define ENUM_SECURITY_TYPE_GLOBAL_REGISTERED_SHARE = 'N'
-#define ENUM_SECURITY_TYPE_INDEX = 'O'
-#define ENUM_SECURITY_TYPE_FUND = 'P'
-#define ENUM_SECURITY_TYPE_BASKET = 'Q'
-#define ENUM_SECURITY_TYPE_UNIT = 'R'
-#define ENUM_SECURITY_TYPE_LIQUIDATING_TRUST = 'S'
-#define ENUM_SECURITY_TYPE_UNKNOWN = 'U'
+#define ENUM_SECURITY_TYPE_ADR = 'A'
+#define ENUM_SECURITY_TYPE_COMMON_STOCK = 'C'
+#define ENUM_SECURITY_TYPE_DEBENTURES = 'D'
+#define ENUM_SECURITY_TYPE_ETF = 'E'
+#define ENUM_SECURITY_TYPE_FOREIGN = 'F'
+#define ENUM_SECURITY_TYPE_US_DEPOSITARY_SHARES = 'H'
+#define ENUM_SECURITY_TYPE_UNITS = 'I'
+#define ENUM_SECURITY_TYPE_INDEX_LINKED_NOTES = 'L'
+#define ENUM_SECURITY_TYPE_MISCLIQUID_TRUST = 'M'
+#define ENUM_SECURITY_TYPE_ORDINARY_SHARES = 'O'
+#define ENUM_SECURITY_TYPE_PREFERRED_STOCK = 'P'
+#define ENUM_SECURITY_TYPE_RIGHTS = 'R'
+#define ENUM_SECURITY_TYPE_SHARES_OF_BENEFICIARY_INTEREST = 'S'
+#define ENUM_SECURITY_TYPE_TEST = 'T'
+#define ENUM_SECURITY_TYPE_UNITS = 'U'
+#define ENUM_SECURITY_TYPE_WARRANT = 'W'
 
 /*
  * Side Values

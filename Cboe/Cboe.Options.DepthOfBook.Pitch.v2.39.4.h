@@ -81,7 +81,7 @@
 /*
  * Trade Condition Values
  */ 
-#define ENUM_TRADE_CONDITION_NORMAL_TRADE = ''
+#define ENUM_TRADE_CONDITION_NORMAL_TRADE = ' '
 #define ENUM_TRADE_CONDITION_SPREAD_TRADE = 'S'
 
 /*

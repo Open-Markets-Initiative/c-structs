@@ -196,6 +196,13 @@ typedef struct {
 } IndexValueMdEntryT;
 
 /*
+ * Structure: Symbol
+ */ 
+typedef struct {
+    uint8_t SymbolLength;
+} SymbolT;
+
+/*
  * Structure: Eop
  */ 
 typedef struct {
@@ -214,6 +221,32 @@ typedef struct {
     uint8_t EopType;
     uint8_t LegalMarket;
 } ExpectedOpeningPriceAndSizeMessageT;
+
+/*
+ * Structure: Trade Condition
+ */ 
+typedef struct {
+    uint8_t TradeConditionLength;
+} TradeConditionT;
+
+/*
+ * Structure: Ticker Md Entry
+ */ 
+typedef struct {
+    char MdEntryType;
+    MdEntryPxT MdEntryPx;
+    uint32_t MdEntrySize;
+} TickerMdEntryT;
+
+/*
+ * Structure: Ticker Message
+ */ 
+typedef struct {
+    uint32_t ClassKey;
+    uint32_t SecurityId;
+    uint8_t PriceType;
+    uint8_t NoEntries;
+} TickerMessageT;
 
 /*
  * Structure: Recap Update Md Entry
@@ -301,6 +334,27 @@ typedef struct {
 } SecurityDefinitionLegT;
 
 /*
+ * Structure: Underlying Type
+ */ 
+typedef struct {
+    uint8_t UnderlyingTypeLength;
+} UnderlyingTypeT;
+
+/*
+ * Structure: Underlying Symbol
+ */ 
+typedef struct {
+    uint8_t UnderlyingSymbolLength;
+} UnderlyingSymbolT;
+
+/*
+ * Structure: Currency Code
+ */ 
+typedef struct {
+    uint8_t CurrencyCodeLength;
+} CurrencyCodeT;
+
+/*
  * Structure: Minimum Below Premium Fraction
  */ 
 typedef struct {
@@ -349,6 +403,20 @@ typedef struct {
 } StrikePriceT;
 
 /*
+ * Structure: Target Location Id
+ */ 
+typedef struct {
+    uint8_t TargetLocationIdLength;
+} TargetLocationIdT;
+
+/*
+ * Structure: Security Type
+ */ 
+typedef struct {
+    uint8_t SecurityTypeLength;
+} SecurityTypeT;
+
+/*
  * Structure: Message Header
  */ 
 typedef struct {
@@ -357,6 +425,13 @@ typedef struct {
     char MessageType[1];
     uint32_t MsgSeqNum;
 } MessageHeaderT;
+
+/*
+ * Structure: Message
+ */ 
+typedef struct {
+    MessageHeaderT MessageHeader;
+} MessageT;
 
 /*
  * Structure: Packet Header
@@ -368,4 +443,11 @@ typedef struct {
     uint8_t MessageCount;
     uint32_t FirstMsgSeqNum;
 } PacketHeaderT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    PacketHeaderT PacketHeader;
+} PacketT;
 

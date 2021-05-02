@@ -1,5 +1,5 @@
 /*******************************************************************************
- * C Structs For Cboe Options Edgx Boe OrderEntry 2.10 protocol
+ * C Structs For Cboe Edgx Options Boe OrderEntry 2.10 protocol
  *******************************************************************************/
 
 /*******************************************************************************
@@ -848,6 +848,17 @@ typedef struct {
 } ComplexInstrumentRejectedByte1T;
 
 /*
+ * Structure: Complex Instrument Rejected Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char OrderRejectReason;
+    char Text[60];
+    uint32_t NoOfSecurities;
+    char ReservedInternal[1];
+} ComplexInstrumentRejectedMessageT;
+
+/*
  * Bitfield: Complex Instrument Accepted Byte 17
  */ 
 typedef struct {
@@ -1101,6 +1112,18 @@ typedef struct {
     ComplexInstrumentAcceptedReservedBit2Exists : 1,
     ComplexInstrumentAcceptedReservedBit1Exists : 1;
 } ComplexInstrumentAcceptedByte1T;
+
+/*
+ * Structure: Complex Instrument Accepted Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char ClOrdId[20];
+    char Symbol[6];
+    char RevisedLegs;
+    uint32_t NoOfSecurities;
+    char ReservedInternal[1];
+} ComplexInstrumentAcceptedMessageT;
 
 /*
  * Structure: Mass Cancel Acknowledgment Message
@@ -1376,6 +1399,16 @@ typedef struct {
 } PurgeRejectedByte1T;
 
 /*
+ * Structure: Purge Rejected Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char PurgeRejectReason;
+    char Text[60];
+    char ReservedInternal[1];
+} PurgeRejectedMessageT;
+
+/*
  * Bitfield: Trade Cancel Or Correct Byte 17
  */ 
 typedef struct {
@@ -1629,6 +1662,25 @@ typedef struct {
     TradeCancelOrCorrectReservedBit2Exists : 1,
     TradeCancelOrCorrectReservedBit1Exists : 1;
 } TradeCancelOrCorrectByte1T;
+
+/*
+ * Structure: Trade Cancel Or Correct Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char ClOrdId[20];
+    uint64_t OrderId;
+    uint64_t ExecRefId;
+    char Side;
+    char BaseLiquidityIndicator;
+    char ClearingFirm[4];
+    char ClearingAccount[4];
+    uint32_t LastShares;
+    int64_t LastPx;
+    int64_t CorrectedPrice;
+    uint64_t OrigTime;
+    char ReservedInternal[1];
+} TradeCancelOrCorrectMessageT;
 
 /*
  * Structure: Quote Execution Message
@@ -1908,6 +1960,17 @@ typedef struct {
 } CancelRejectedByte1T;
 
 /*
+ * Structure: Cancel Rejected Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char ClOrdId[20];
+    char CancelRejectReason;
+    char Text[60];
+    char ReservedInternal[1];
+} CancelRejectedMessageT;
+
+/*
  * Bitfield: Cross Order Cancelled Byte 17
  */ 
 typedef struct {
@@ -2161,6 +2224,16 @@ typedef struct {
     CrossOrderCancelledReservedBit2Exists : 1,
     CrossOrderCancelledReservedBit1Exists : 1;
 } CrossOrderCancelledByte1T;
+
+/*
+ * Structure: Cross Order Cancelled Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char CrossId[20];
+    char CancelReason;
+    char ReservedInternal[1];
+} CrossOrderCancelledMessageT;
 
 /*
  * Structure: Quote Cancelled Message
@@ -2430,6 +2503,16 @@ typedef struct {
 } OrderCancelledByte1T;
 
 /*
+ * Structure: Order Cancelled Message
+ */ 
+typedef struct {
+    uint64_t TransactTime;
+    char ClOrdId[20];
+    char CancelReason;
+    char ReservedInternal[1];
+} OrderCancelledMessageT;
+
+/*
  * Bitfield: User Modify Rejected Byte 17
  */ 
 typedef struct {
@@ -2683,6 +2766,17 @@ typedef struct {
     UserModifyRejectedReservedBit2Exists : 1,
     UserModifyRejectedReservedBit1Exists : 1;
 } UserModifyRejectedByte1T;
+
+/*
+ * Structure: User Modify Rejected Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char ClOrdId[20];
+    char ModifyRejectReason;
+    char Text[60];
+    char ReservedInternal[1];
+} UserModifyRejectedMessageT;
 
 /*
  * Structure: Quote Restated Message
@@ -2954,6 +3048,17 @@ typedef struct {
 } OrderRestatedByte1T;
 
 /*
+ * Structure: Order Restated Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char ClOrdId[20];
+    uint64_t OrderId;
+    char RestatementReason;
+    char ReservedInternal[1];
+} OrderRestatedMessageT;
+
+/*
  * Bitfield: Order Modified Byte 17
  */ 
 typedef struct {
@@ -3207,6 +3312,16 @@ typedef struct {
     OrderModifiedPegDifferenceExists : 1,
     OrderModifiedSideExists : 1;
 } OrderModifiedByte1T;
+
+/*
+ * Structure: Order Modified Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char ClOrdId[20];
+    uint64_t OrderId;
+    char ReservedInternal[1];
+} OrderModifiedMessageT;
 
 /*
  * Structure: Quote Update Rejected Message
@@ -3474,6 +3589,17 @@ typedef struct {
 } CrossOrderRejectedByte1T;
 
 /*
+ * Structure: Cross Order Rejected Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char CrossId[20];
+    char OrderRejectReason;
+    char Text[60];
+    char ReservedInternal[1];
+} CrossOrderRejectedMessageT;
+
+/*
  * Bitfield: Order Rejected Byte 17
  */ 
 typedef struct {
@@ -3727,6 +3853,17 @@ typedef struct {
     OrderRejectedPegDifferenceExists : 1,
     OrderRejectedSideExists : 1;
 } OrderRejectedByte1T;
+
+/*
+ * Structure: Order Rejected Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char ClOrdId[20];
+    char OrderRejectReason;
+    char Text[60];
+    char ReservedInternal[1];
+} OrderRejectedMessageT;
 
 /*
  * Structure: Quote Result Group
@@ -4005,6 +4142,16 @@ typedef struct {
 } CrossOrderAcknowledgmentByte1T;
 
 /*
+ * Structure: Cross Order Acknowledgment Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char CrossId[20];
+    uint64_t AuctionId;
+    char ReservedInternal[1];
+} CrossOrderAcknowledgmentMessageT;
+
+/*
  * Bitfield: Order Acknowledgment Byte 17
  */ 
 typedef struct {
@@ -4260,6 +4407,16 @@ typedef struct {
 } OrderAcknowledgmentByte1T;
 
 /*
+ * Structure: Order Acknowledgment Message
+ */ 
+typedef struct {
+    uint64_t TransactTime;
+    char ClOrdId[20];
+    uint64_t OrderId;
+    char ReservedInternal[1];
+} OrderAcknowledgmentMessageT;
+
+/*
  * Bitfield: New Complex Instrument Byte 1
  */ 
 typedef struct {
@@ -4273,6 +4430,13 @@ typedef struct {
     NewComplexInstrumentLegMaturityDateExists : 1,
     NewComplexInstrumentLegCfiCodeExists : 1;
 } NewComplexInstrumentByte1T;
+
+/*
+ * Structure: New Complex Instrument Message
+ */ 
+typedef struct {
+    char ClOrdId[20];
+} NewComplexInstrumentMessageT;
 
 /*
  * Structure: Risk Reset Message
@@ -4315,6 +4479,13 @@ typedef struct {
     ModifyOrderReservedBit2Exists : 1,
     ModifyOrderClearingFirmExists : 1;
 } ModifyOrderByte1T;
+
+/*
+ * Structure: Purge Order Message
+ */ 
+typedef struct {
+    char MassCancel[1];
+} PurgeOrderMessageT;
 
 /*
  * Structure: Short Quote Update
@@ -4375,6 +4546,14 @@ typedef struct {
 } QuoteUpdateMessageT;
 
 /*
+ * Structure: Modify Order Message
+ */ 
+typedef struct {
+    char ClOrdId[20];
+    char OrigClOrdId[20];
+} ModifyOrderMessageT;
+
+/*
  * Bitfield: Cancel Order Byte 2
  */ 
 typedef struct {
@@ -4403,6 +4582,13 @@ typedef struct {
     CancelOrderMassCancelLockoutExists : 1,
     CancelOrderClearingFirmExists : 1;
 } CancelOrderByte1T;
+
+/*
+ * Structure: Cancel Order Message
+ */ 
+typedef struct {
+    char OrigClOrdId[20];
+} CancelOrderMessageT;
 
 /*
  * Bitfield: New Order Cross Multileg Byte 5
@@ -4480,6 +4666,26 @@ typedef struct {
 } NewOrderCrossMultilegByte1T;
 
 /*
+ * Structure: New Order Cross Multileg Message
+ */ 
+typedef struct {
+    char CrossId[20];
+    char CrossType[1];
+    char CrossPrioritization;
+    int64_t Price;
+    uint32_t OrderQty;
+} NewOrderCrossMultilegMessageT;
+
+/*
+ * Structure: New Order Complex Message
+ */ 
+typedef struct {
+    char ClOrdId[20];
+    char Side;
+    uint32_t OrderQty;
+} NewOrderComplexMessageT;
+
+/*
  * Bitfield: New Order Cross Byte 4
  */ 
 typedef struct {
@@ -4538,6 +4744,17 @@ typedef struct {
     NewOrderCrossMaturityDateExists : 1,
     NewOrderCrossSymbolExists : 1;
 } NewOrderCrossByte1T;
+
+/*
+ * Structure: New Order Cross Message
+ */ 
+typedef struct {
+    char CrossId[20];
+    char CrossType[1];
+    char CrossPrioritization;
+    int64_t Price;
+    uint32_t OrderQty;
+} NewOrderCrossMessageT;
 
 /*
  * Bitfield: New Order Byte 9
@@ -4673,6 +4890,15 @@ typedef struct {
     NewOrderClearingAccountExists : 1,
     NewOrderClearingFirmExists : 1;
 } NewOrderByte1T;
+
+/*
+ * Structure: New Order Message
+ */ 
+typedef struct {
+    char ClOrdId[20];
+    char Side;
+    uint32_t OrderQty;
+} NewOrderMessageT;
 
 /*
  * Structure: Unit Sequence
@@ -4948,6 +5174,13 @@ typedef struct {
 } OrderExecutionByte1T;
 
 /*
+ * Structure: Return Bitfields
+ */ 
+typedef struct {
+    uint8_t ApplicationMessageType;
+} ReturnBitfieldsT;
+
+/*
  * Structure: Unit Sequences
  */ 
 typedef struct {
@@ -4964,6 +5197,23 @@ typedef struct {
 } ParamHeaderT;
 
 /*
+ * Structure: Param Group
+ */ 
+typedef struct {
+    ParamHeaderT ParamHeader;
+} ParamGroupT;
+
+/*
+ * Structure: Login Request Message
+ */ 
+typedef struct {
+    char SessionSubId[4];
+    char Username[4];
+    char Password[10];
+    uint8_t NumberOfParamGroups;
+} LoginRequestMessageT;
+
+/*
  * Structure: Message Header
  */ 
 typedef struct {
@@ -4973,4 +5223,11 @@ typedef struct {
     uint8_t MatchingUnit;
     uint32_t SequenceNumber;
 } MessageHeaderT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    MessageHeaderT MessageHeader;
+} PacketT;
 

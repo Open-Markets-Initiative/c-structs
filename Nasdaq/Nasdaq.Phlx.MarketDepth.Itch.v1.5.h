@@ -192,6 +192,14 @@ typedef struct {
 } NonAuctionOptionsTradeMessageT;
 
 /*
+ * Structure: Block Delete Message
+ */ 
+typedef struct {
+    uint32_t Timestamp;
+    uint16_t NumberOfReferenceNumberDeltas;
+} BlockDeleteMessageT;
+
+/*
  * Structure: Quote Delete Message
  */ 
 typedef struct {
@@ -451,6 +459,13 @@ typedef struct {
 } MessageHeaderT;
 
 /*
+ * Structure: Message
+ */ 
+typedef struct {
+    MessageHeaderT MessageHeader;
+} MessageT;
+
+/*
  * Structure: Packet Header
  */ 
 typedef struct {
@@ -458,4 +473,11 @@ typedef struct {
     uint64_t Sequence;
     uint16_t Count;
 } PacketHeaderT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    PacketHeaderT PacketHeader;
+} PacketT;
 

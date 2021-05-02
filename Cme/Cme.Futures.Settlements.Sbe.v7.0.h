@@ -7,11 +7,31 @@
  *******************************************************************************/
 
 /*
+ * High Px Ind Values
+ */ 
+#define ENUM_HIGH_PX_IND_ASK = 'A'
+#define ENUM_HIGH_PX_IND_BID = 'B'
+#define ENUM_HIGH_PX_IND_TRADE = 'T'
+
+/*
+ * Low Px Ind Values
+ */ 
+#define ENUM_LOW_PX_IND_ASK = 'A'
+#define ENUM_LOW_PX_IND_BID = 'B'
+#define ENUM_LOW_PX_IND_TRADE = 'T'
+
+/*
  * Md Update Action Values
  */ 
 #define ENUM_MD_UPDATE_ACTION_NEW = 0
 #define ENUM_MD_UPDATE_ACTION_CHANGE = 1
 #define ENUM_MD_UPDATE_ACTION_DELETE = 2
+
+/*
+ * Open Close Settl Flag Values
+ */ 
+#define ENUM_OPEN_CLOSE_SETTL_FLAG_ESTIMATED = 3
+#define ENUM_OPEN_CLOSE_SETTL_FLAG_ACTUAL_ADJUSTED = 4
 
 /*
  * Put Or Call Values
@@ -97,9 +117,9 @@ typedef struct {
     uint64_t InstrumentGuid;
     uint32_t SecurityId;
     LowPxT LowPx;
-    char LowPxInd[1];
+    char LowPxInd;
     HighPxT HighPx;
-    char HighPxInd[1];
+    char HighPxInd;
     uint16_t TradingReferenceDate;
 } MDIncrementalRefreshHighLowGroupT;
 
@@ -108,7 +128,7 @@ typedef struct {
  */ 
 typedef struct {
     uint16_t BlockLength;
-    uint8_t NumInGroup;
+    uint8_t NumInGroupUint8;
 } GroupSizeT;
 
 /*
@@ -239,10 +259,25 @@ typedef struct {
 } MessageHeaderT;
 
 /*
+ * Structure: Message
+ */ 
+typedef struct {
+    uint16_t MessageSize;
+    MessageHeaderT MessageHeader;
+} MessageT;
+
+/*
  * Structure: Binary Packet Header
  */ 
 typedef struct {
     uint32_t MessageSequenceNumber;
     uint64_t SendingTime;
 } BinaryPacketHeaderT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    BinaryPacketHeaderT BinaryPacketHeader;
+} PacketT;
 

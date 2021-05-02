@@ -849,6 +849,21 @@ typedef struct {
 } MarketSnapshotOrderMessageT;
 
 /*
+ * Structure: Special Field
+ */ 
+typedef struct {
+    uint8_t SpecialFieldId;
+    uint16_t SpecialFieldLength;
+} SpecialFieldT;
+
+/*
+ * Structure: Special Field Message
+ */ 
+typedef struct {
+    int8_t NumberOfSpecialFields;
+} SpecialFieldMessageT;
+
+/*
  * Structure: New Expiry Message
  */ 
 typedef struct {
@@ -1168,6 +1183,13 @@ typedef struct {
 } MessageHeaderT;
 
 /*
+ * Structure: Message
+ */ 
+typedef struct {
+    MessageHeaderT MessageHeader;
+} MessageT;
+
+/*
  * Structure: Packet Header
  */ 
 typedef struct {
@@ -1176,4 +1198,11 @@ typedef struct {
     uint16_t Count;
     int64_t Timestamp;
 } PacketHeaderT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    PacketHeaderT PacketHeader;
+} PacketT;
 

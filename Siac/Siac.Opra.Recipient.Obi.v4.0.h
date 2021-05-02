@@ -166,6 +166,26 @@ typedef struct {
 } UnderlyingValueMessageT;
 
 /*
+ * Structure: Control Message
+ */ 
+typedef struct {
+    char ControlMessageType[0];
+    char MessageIndicator[1];
+    uint64_t TransactionId;
+    uint16_t MessageDataLength;
+} ControlMessageT;
+
+/*
+ * Structure: Administrative Message
+ */ 
+typedef struct {
+    char MessageType[1];
+    char MessageIndicator[1];
+    uint64_t TransactionId;
+    uint16_t MessageDataLength;
+} AdministrativeMessageT;
+
+/*
  * Structure: Best Offer Appendage
  */ 
 typedef struct {
@@ -244,6 +264,14 @@ typedef struct {
     uint32_t TradeIdentifier;
     char Reserved4[4];
 } EquityAndIndexLastSaleMessageT;
+
+/*
+ * Structure: Message
+ */ 
+typedef struct {
+    char ParticipantId;
+    char MessageCategory;
+} MessageT;
 
 /*
  * Structure: Block Timestamp

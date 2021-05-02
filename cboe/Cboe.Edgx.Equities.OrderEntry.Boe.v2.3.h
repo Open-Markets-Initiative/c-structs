@@ -1,5 +1,5 @@
 /*******************************************************************************
- * C Structs For Cboe Equities Bzx Boe OrderEntry 2.3 protocol
+ * C Structs For Cboe Edgx Equities Boe OrderEntry 2.3 protocol
  *******************************************************************************/
 
 /*******************************************************************************
@@ -143,7 +143,6 @@
 #define ENUM_EX_DESTINATION_MIAX_PEARL = 'H'
 #define ENUM_EX_DESTINATION_INVESTORS_EXCHANGE = 'I'
 #define ENUM_EX_DESTINATION_EDGA = 'J'
-#define ENUM_EX_DESTINATION_EDGX = 'K'
 #define ENUM_EX_DESTINATION_LONG_TERM_STOCK_EXCHANGE = 'L'
 #define ENUM_EX_DESTINATION_CHX = 'M'
 #define ENUM_EX_DESTINATION_NYSE = 'N'
@@ -152,6 +151,7 @@
 #define ENUM_EX_DESTINATION_MEMX = 'Q'
 #define ENUM_EX_DESTINATION_NASDAQ_PSX = 'X'
 #define ENUM_EX_DESTINATION_BYX = 'Y'
+#define ENUM_EX_DESTINATION_BZX = 'Y'
 
 /*
  * Exec Inst Values
@@ -164,7 +164,7 @@
 #define ENUM_EXEC_INST_MIDPOINT_PEG = 'M'
 #define ENUM_EXEC_INST_MIDPOINT_PEG_BUT_NO_MATCH_ON_NBBO_LOCK = 'm'
 #define ENUM_EXEC_INST_ALTERNATE_MIDPOINT = 'L'
-#define ENUM_EXEC_INST_LATE = 'r'
+#define ENUM_EXEC_INST_MIDPOINT_DISCRETIONARY_ORDER = 'd'
 #define ENUM_EXEC_INST_LISTING_MARKET_OPENING = 'o'
 #define ENUM_EXEC_INST_LISTING_MARKET_CLOSE = 'c'
 #define ENUM_EXEC_INST_BOTH_LISTING_MARKET_OPEN_AND_CLOSE = 'a'
@@ -174,6 +174,7 @@
  */ 
 #define ENUM_EXT_EXEC_INST_NONE = 'N'
 #define ENUM_EXT_EXEC_INST_ORDER_ELIGIBLE_FOR_RETAIL_REBATE = 'R'
+#define ENUM_EXT_EXEC_INST_RETAIL_PRIORITY_ORDER = 'X'
 
 /*
  * Login Response Status Values
@@ -374,13 +375,9 @@
 /*
  * Sub Liquidity Indicator Values
  */ 
-#define ENUM_SUB_LIQUIDITY_INDICATOR_TRADE_ADDED_RPI_LIQUIDITY = 'E'
 #define ENUM_SUB_LIQUIDITY_INDICATOR_TRADE_ADDED_HIDDEN_LIQUIDITY = 'H'
 #define ENUM_SUB_LIQUIDITY_INDICATOR_TRADE_ADDED_HIDDEN_LIQUIDITY_THAT_WAS_PRICE_IMPROVED = 'I'
-#define ENUM_SUB_LIQUIDITY_INDICATOR_MIDPOINT_PEG = 'm'
 #define ENUM_SUB_LIQUIDITY_INDICATOR_EXECUTION_FROM_FIRST_ORDER_TO_JOIN_THE_NBBO = 'J'
-#define ENUM_SUB_LIQUIDITY_INDICATOR_EXECUTION_FROM_FIRST_ORDER_THAT_SET_THE_NBBO = 'S'
-#define ENUM_SUB_LIQUIDITY_INDICATOR_VISISBLE_LIQUIDITY_ADD_TRADE_THAT_WAS_PRICE_IMPROVED = 'V'
 #define ENUM_SUB_LIQUIDITY_INDICATOR_EXECUTION_FROM_ORDER_THAT_SET_THE_NBBO = 'S'
 #define ENUM_SUB_LIQUIDITY_INDICATOR_VISIBLE_LIQUIDITY_ADD_TRADE_THAT_WAS_PRICE_IMPROVED = 'V'
 #define ENUM_SUB_LIQUIDITY_INDICATOR_MIDPOINT_PEG_ORDER = 'm'
@@ -390,12 +387,10 @@
  */ 
 #define ENUM_TIME_IN_FORCE_DAY = '0'
 #define ENUM_TIME_IN_FORCE_GTC = '1'
-#define ENUM_TIME_IN_FORCE_AT_THE_OPEN = '2'
 #define ENUM_TIME_IN_FORCE_IOC = '3'
 #define ENUM_TIME_IN_FORCE_FOK = '4'
 #define ENUM_TIME_IN_FORCE_GTX = '5'
 #define ENUM_TIME_IN_FORCE_GTD = '6'
-#define ENUM_TIME_IN_FORCE_AT_THE_CLOSE = '7'
 #define ENUM_TIME_IN_FORCE_PRE = 'E'
 #define ENUM_TIME_IN_FORCE_RHO = 'R'
 #define ENUM_TIME_IN_FORCE_PTD = 'T'
@@ -660,6 +655,16 @@ typedef struct {
     PurgeRejectedReservedBit2Exists : 1,
     PurgeRejectedReservedBit1Exists : 1;
 } PurgeRejectedByte1T;
+
+/*
+ * Structure: Purge Rejected Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char PurgeRejectReason;
+    char Text[60];
+    char ReservedInternal[1];
+} PurgeRejectedMessageT;
 
 /*
  * Structure: Mass Cancel Acknowledgment Message
@@ -927,6 +932,25 @@ typedef struct {
 } TradeCancelOrCorrectByte1T;
 
 /*
+ * Structure: Trade Cancel Or Correct Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char ClOrdId[20];
+    uint64_t OrderId;
+    uint64_t ExecRefId;
+    char Side;
+    char BaseLiquidityIndicator;
+    char ClearingFirm[4];
+    char ClearingAccount[4];
+    uint32_t LastShares;
+    int64_t LastPx;
+    int64_t CorrectedPrice;
+    uint64_t OrigTime;
+    char ReservedInternal[1];
+} TradeCancelOrCorrectMessageT;
+
+/*
  * Bitfield: Order Execution Byte 17
  */ 
 typedef struct {
@@ -1180,6 +1204,22 @@ typedef struct {
     OrderExecutionPegDifferenceExists : 1,
     OrderExecutionSideExists : 1;
 } OrderExecutionByte1T;
+
+/*
+ * Structure: Order Execution Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char ClOrdId[20];
+    uint64_t ExecId;
+    uint32_t LastShares;
+    int64_t LastPx;
+    uint32_t LeavesQty;
+    char BaseLiquidityIndicator;
+    char SubLiquidityIndicator;
+    char ContraBroker[4];
+    char ReservedInternal[1];
+} OrderExecutionMessageT;
 
 /*
  * Bitfield: Cancel Rejected Byte 17
@@ -1437,6 +1477,17 @@ typedef struct {
 } CancelRejectedByte1T;
 
 /*
+ * Structure: Cancel Rejected Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char ClOrdId[20];
+    char CancelRejectReason;
+    char Text[60];
+    char ReservedInternal[1];
+} CancelRejectedMessageT;
+
+/*
  * Bitfield: Order Cancelled Byte 17
  */ 
 typedef struct {
@@ -1690,6 +1741,16 @@ typedef struct {
     OrderCancelledPegDifferenceExists : 1,
     OrderCancelledSideExists : 1;
 } OrderCancelledByte1T;
+
+/*
+ * Structure: Order Cancelled Message
+ */ 
+typedef struct {
+    uint64_t TransactTime;
+    char ClOrdId[20];
+    char CancelReason;
+    char ReservedInternal[1];
+} OrderCancelledMessageT;
 
 /*
  * Bitfield: User Modify Rejected Byte 17
@@ -1947,6 +2008,17 @@ typedef struct {
 } UserModifyRejectedByte1T;
 
 /*
+ * Structure: User Modify Rejected Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char ClOrdId[20];
+    char ModifyRejectReason;
+    char Text[60];
+    char ReservedInternal[1];
+} UserModifyRejectedMessageT;
+
+/*
  * Bitfield: Order Restated Byte 17
  */ 
 typedef struct {
@@ -2200,6 +2272,17 @@ typedef struct {
     OrderRestatedPegDifferenceExists : 1,
     OrderRestatedSideExists : 1;
 } OrderRestatedByte1T;
+
+/*
+ * Structure: Order Restated Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char ClOrdId[20];
+    uint64_t OrderId;
+    char RestatementReason;
+    char ReservedInternal[1];
+} OrderRestatedMessageT;
 
 /*
  * Bitfield: Order Modified Byte 17
@@ -2457,6 +2540,16 @@ typedef struct {
 } OrderModifiedByte1T;
 
 /*
+ * Structure: Order Modified Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char ClOrdId[20];
+    uint64_t OrderId;
+    char ReservedInternal[1];
+} OrderModifiedMessageT;
+
+/*
  * Bitfield: Order Rejected Byte 17
  */ 
 typedef struct {
@@ -2710,6 +2803,17 @@ typedef struct {
     OrderRejectedPegDifferenceExists : 1,
     OrderRejectedSideExists : 1;
 } OrderRejectedByte1T;
+
+/*
+ * Structure: Order Rejected Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char ClOrdId[20];
+    char OrderRejectReason;
+    char Text[60];
+    char ReservedInternal[1];
+} OrderRejectedMessageT;
 
 /*
  * Bitfield: Order Acknowledgment Byte 17
@@ -2967,6 +3071,16 @@ typedef struct {
 } OrderAcknowledgmentByte1T;
 
 /*
+ * Structure: Order Acknowledgment Message
+ */ 
+typedef struct {
+    uint64_t TransactTime;
+    char ClOrdId[20];
+    uint64_t OrderId;
+    char ReservedInternal[1];
+} OrderAcknowledgmentMessageT;
+
+/*
  * Bitfield: Purge Order Byte 2
  */ 
 typedef struct {
@@ -2995,6 +3109,13 @@ typedef struct {
     PurgeOrderReservedBit2Exists : 1,
     PurgeOrderClearingFirmExists : 1;
 } PurgeOrderByte1T;
+
+/*
+ * Structure: Purge Order Message
+ */ 
+typedef struct {
+    char ReservedInternal[1];
+} PurgeOrderMessageT;
 
 /*
  * Bitfield: Modify Order Byte 2
@@ -3027,6 +3148,14 @@ typedef struct {
 } ModifyOrderByte1T;
 
 /*
+ * Structure: Modify Order Message
+ */ 
+typedef struct {
+    char ClOrdId[20];
+    char OrigClOrdId[20];
+} ModifyOrderMessageT;
+
+/*
  * Bitfield: Cancel Order Byte 2
  */ 
 typedef struct {
@@ -3055,6 +3184,13 @@ typedef struct {
     CancelOrderReservedBit2Exists : 1,
     CancelOrderClearingFirmExists : 1;
 } CancelOrderByte1T;
+
+/*
+ * Structure: Cancel Order Message
+ */ 
+typedef struct {
+    char OrigClOrdId[20];
+} CancelOrderMessageT;
 
 /*
  * Bitfield: New Order Byte 7
@@ -3162,6 +3298,15 @@ typedef struct {
 } NewOrderByte1T;
 
 /*
+ * Structure: New Order Message
+ */ 
+typedef struct {
+    char ClOrdId[20];
+    char Side;
+    uint32_t OrderQty;
+} NewOrderMessageT;
+
+/*
  * Structure: Unit Sequence
  */ 
 typedef struct {
@@ -3180,6 +3325,13 @@ typedef struct {
 } LogoutMessageT;
 
 /*
+ * Structure: Return Bitfields
+ */ 
+typedef struct {
+    uint8_t ApplicationMessageType;
+} ReturnBitfieldsT;
+
+/*
  * Structure: Unit Sequences
  */ 
 typedef struct {
@@ -3196,6 +3348,23 @@ typedef struct {
 } ParamHeaderT;
 
 /*
+ * Structure: Param Group
+ */ 
+typedef struct {
+    ParamHeaderT ParamHeader;
+} ParamGroupT;
+
+/*
+ * Structure: Login Request Message
+ */ 
+typedef struct {
+    char SessionSubId[4];
+    char Username[4];
+    char Password[10];
+    uint8_t NumberOfParamGroups;
+} LoginRequestMessageT;
+
+/*
  * Structure: Message Header
  */ 
 typedef struct {
@@ -3205,4 +3374,11 @@ typedef struct {
     uint8_t MatchingUnit;
     uint32_t SequenceNumber;
 } MessageHeaderT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    MessageHeaderT MessageHeader;
+} PacketT;
 

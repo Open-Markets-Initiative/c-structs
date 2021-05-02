@@ -602,3 +602,10 @@ typedef struct {
     uint16_t MessageLength;
 } CommonHeaderT;
 
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    CommonHeaderT CommonHeader;
+} PacketT;
+

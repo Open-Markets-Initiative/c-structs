@@ -170,6 +170,27 @@ typedef struct {
 } SecurityDefinitionLegT;
 
 /*
+ * Structure: Underlying Type
+ */ 
+typedef struct {
+    uint8_t UnderlyingTypeLength;
+} UnderlyingTypeT;
+
+/*
+ * Structure: Underlying Symbol
+ */ 
+typedef struct {
+    uint8_t UnderlyingSymbolLength;
+} UnderlyingSymbolT;
+
+/*
+ * Structure: Currency Code
+ */ 
+typedef struct {
+    uint8_t CurrencyCodeLength;
+} CurrencyCodeT;
+
+/*
  * Structure: Minimum Below Premium Fraction
  */ 
 typedef struct {
@@ -218,6 +239,27 @@ typedef struct {
 } StrikePriceT;
 
 /*
+ * Structure: Target Location Id
+ */ 
+typedef struct {
+    uint8_t TargetLocationIdLength;
+} TargetLocationIdT;
+
+/*
+ * Structure: Symbol
+ */ 
+typedef struct {
+    uint8_t SymbolLength;
+} SymbolT;
+
+/*
+ * Structure: Security Type
+ */ 
+typedef struct {
+    uint8_t SecurityTypeLength;
+} SecurityTypeT;
+
+/*
  * Structure: Message Header
  */ 
 typedef struct {
@@ -226,6 +268,13 @@ typedef struct {
     char MessageType[1];
     uint32_t MsgSeqNum;
 } MessageHeaderT;
+
+/*
+ * Structure: Message
+ */ 
+typedef struct {
+    MessageHeaderT MessageHeader;
+} MessageT;
 
 /*
  * Structure: Packet Header
@@ -237,4 +286,11 @@ typedef struct {
     uint8_t MessageCount;
     uint32_t FirstMsgSeqNum;
 } PacketHeaderT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    PacketHeaderT PacketHeader;
+} PacketT;
 

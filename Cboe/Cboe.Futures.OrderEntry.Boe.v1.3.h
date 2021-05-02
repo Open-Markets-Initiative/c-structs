@@ -644,6 +644,16 @@ typedef struct {
 } VarianceRestatementByte1T;
 
 /*
+ * Structure: Variance Restatement Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char ClOrdId[20];
+    uint64_t ExecId;
+    char ReservedInternal[1];
+} VarianceRestatementMessageT;
+
+/*
  * Bitfield: Tas Restatement Byte 17
  */ 
 typedef struct {
@@ -897,6 +907,16 @@ typedef struct {
     TasRestatementReservedBit2Exists : 1,
     TasRestatementSideExists : 1;
 } TasRestatementByte1T;
+
+/*
+ * Structure: Tas Restatement Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char ClOrdId[20];
+    uint64_t ExecId;
+    char ReservedInternal[1];
+} TasRestatementMessageT;
 
 /*
  * Structure: Mass Cancel Acknowledgment Message
@@ -1172,6 +1192,16 @@ typedef struct {
 } PurgeRejectedByte1T;
 
 /*
+ * Structure: Purge Rejected Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char PurgeRejectReason;
+    char Text[60];
+    char ReservedInternal[1];
+} PurgeRejectedMessageT;
+
+/*
  * Bitfield: Trade Cancel Or Correct Byte 17
  */ 
 typedef struct {
@@ -1425,6 +1455,25 @@ typedef struct {
     TradeCancelOrCorrectReservedBit2Exists : 1,
     TradeCancelOrCorrectReservedBit1Exists : 1;
 } TradeCancelOrCorrectByte1T;
+
+/*
+ * Structure: Trade Cancel Or Correct Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char ClOrdId[20];
+    uint64_t OrderId;
+    uint64_t ExecRefId;
+    char Side;
+    char BaseLiquidityIndicator;
+    char ClearingFirm[4];
+    char ClearingAccount[4];
+    uint32_t LastShares;
+    int64_t LastPx;
+    int64_t CorrectedPrice;
+    uint64_t OrigTime;
+    char ReservedInternal[1];
+} TradeCancelOrCorrectMessageT;
 
 /*
  * Structure: Quote Execution Message
@@ -1701,6 +1750,22 @@ typedef struct {
 } OrderExecutionByte1T;
 
 /*
+ * Structure: Order Execution Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char ClOrdId[20];
+    uint64_t ExecId;
+    uint32_t LastShares;
+    int64_t LastPx;
+    uint32_t LeavesQty;
+    char BaseLiquidityIndicator;
+    char SubLiquidityIndicator;
+    char ContraBroker[4];
+    char ReservedInternal[1];
+} OrderExecutionMessageT;
+
+/*
  * Bitfield: Cancel Rejected Byte 17
  */ 
 typedef struct {
@@ -1954,6 +2019,17 @@ typedef struct {
     CancelRejectedReservedBit2Exists : 1,
     CancelRejectedSideExists : 1;
 } CancelRejectedByte1T;
+
+/*
+ * Structure: Cancel Rejected Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char ClOrdId[20];
+    char CancelRejectReason;
+    char Text[60];
+    char ReservedInternal[1];
+} CancelRejectedMessageT;
 
 /*
  * Structure: Quote Cancelled Message
@@ -2223,6 +2299,16 @@ typedef struct {
 } OrderCancelledByte1T;
 
 /*
+ * Structure: Order Cancelled Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char ClOrdId[20];
+    char CancelReason;
+    char ReservedInternal[1];
+} OrderCancelledMessageT;
+
+/*
  * Bitfield: User Modify Rejected Byte 17
  */ 
 typedef struct {
@@ -2476,6 +2562,17 @@ typedef struct {
     UserModifyRejectedReservedBit2Exists : 1,
     UserModifyRejectedReservedBit1Exists : 1;
 } UserModifyRejectedByte1T;
+
+/*
+ * Structure: User Modify Rejected Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char ClOrdId[20];
+    char ModifyRejectReason;
+    char Text[60];
+    char ReservedInternal[1];
+} UserModifyRejectedMessageT;
 
 /*
  * Structure: Quote Restated Message
@@ -2747,6 +2844,16 @@ typedef struct {
 } OrderModifiedByte1T;
 
 /*
+ * Structure: Order Modified Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char ClOrdId[20];
+    uint64_t OrderId;
+    char ReservedInternal[1];
+} OrderModifiedMessageT;
+
+/*
  * Structure: Quote Update Rejected Message
  */ 
 typedef struct {
@@ -3010,6 +3117,17 @@ typedef struct {
     OrderRejectedReservedBit2Exists : 1,
     OrderRejectedSideExists : 1;
 } OrderRejectedByte1T;
+
+/*
+ * Structure: Order Rejected Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char ClOrdId[20];
+    char OrderRejectReason;
+    char Text[60];
+    char ReservedInternal[1];
+} OrderRejectedMessageT;
 
 /*
  * Structure: Quote Result Group
@@ -3288,6 +3406,16 @@ typedef struct {
 } OrderAcknowledgmentByte1T;
 
 /*
+ * Structure: Order Acknowledgment Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char ClOrdId[20];
+    uint64_t OrderId;
+    char ReservedInternal[1];
+} OrderAcknowledgmentMessageT;
+
+/*
  * Structure: Reset Risk Message
  */ 
 typedef struct {
@@ -3329,6 +3457,13 @@ typedef struct {
     PurgeOrderReservedBit2Exists : 1,
     PurgeOrderClearingFirmExists : 1;
 } PurgeOrderByte1T;
+
+/*
+ * Structure: Purge Order Message
+ */ 
+typedef struct {
+    char ReservedInternal[1];
+} PurgeOrderMessageT;
 
 /*
  * Structure: Quote Group
@@ -3392,6 +3527,14 @@ typedef struct {
 } ModifyOrderByte1T;
 
 /*
+ * Structure: Modify Order Message
+ */ 
+typedef struct {
+    char ClOrdId[20];
+    char OrigClOrdId[20];
+} ModifyOrderMessageT;
+
+/*
  * Bitfield: Cancel Order Byte 2
  */ 
 typedef struct {
@@ -3420,6 +3563,13 @@ typedef struct {
     CancelOrderReservedBit2Exists : 1,
     CancelOrderClearingFirmExists : 1;
 } CancelOrderByte1T;
+
+/*
+ * Structure: Cancel Order Message
+ */ 
+typedef struct {
+    char OrigClOrdId[20];
+} CancelOrderMessageT;
 
 /*
  * Bitfield: New Order Byte 8
@@ -3542,6 +3692,15 @@ typedef struct {
 } NewOrderByte1T;
 
 /*
+ * Structure: New Order Message
+ */ 
+typedef struct {
+    char ClOrdId[20];
+    char Side;
+    uint32_t OrderQty;
+} NewOrderMessageT;
+
+/*
  * Structure: Unit Sequence
  */ 
 typedef struct {
@@ -3560,6 +3719,13 @@ typedef struct {
 } LogoutMessageT;
 
 /*
+ * Structure: Return Bitfields
+ */ 
+typedef struct {
+    uint8_t ApplicationMessageType;
+} ReturnBitfieldsT;
+
+/*
  * Structure: Unit Sequences
  */ 
 typedef struct {
@@ -3576,6 +3742,23 @@ typedef struct {
 } ParamHeaderT;
 
 /*
+ * Structure: Param Group
+ */ 
+typedef struct {
+    ParamHeaderT ParamHeader;
+} ParamGroupT;
+
+/*
+ * Structure: Login Request Message
+ */ 
+typedef struct {
+    char SessionSubId[4];
+    char Username[4];
+    char Password[10];
+    uint8_t NumberOfParamGroups;
+} LoginRequestMessageT;
+
+/*
  * Structure: Message Header
  */ 
 typedef struct {
@@ -3585,4 +3768,11 @@ typedef struct {
     uint8_t MatchingUnit;
     uint32_t SequenceNumber;
 } MessageHeaderT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    MessageHeaderT MessageHeader;
+} PacketT;
 

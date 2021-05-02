@@ -331,3 +331,32 @@ typedef struct {
     uint32_t Timestamp;
 } SystemTimeMessageT;
 
+/*
+ * Structure: Application Message
+ */ 
+typedef struct {
+    char MessageType;
+} ApplicationMessageT;
+
+/*
+ * Structure: Payload
+ */ 
+typedef struct {
+} PayloadT;
+
+/*
+ * Structure: Message
+ */ 
+typedef struct {
+    uint64_t SequenceNumber;
+    uint16_t PacketLength;
+    uint8_t PacketType;
+    uint8_t SessionNumber;
+} MessageT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+} PacketT;
+

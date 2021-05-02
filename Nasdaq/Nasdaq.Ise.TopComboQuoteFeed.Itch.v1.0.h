@@ -60,7 +60,7 @@
  */ 
 #define ENUM_SIDE_BUY = 'B'
 #define ENUM_SIDE_SELL = 'S'
-#define ENUM_SIDE_HIDDEN = ''
+#define ENUM_SIDE_HIDDEN = ' '
 
 /*
  * Strategy Type Values
@@ -218,6 +218,13 @@ typedef struct {
 } MessageHeaderT;
 
 /*
+ * Structure: Message
+ */ 
+typedef struct {
+    MessageHeaderT MessageHeader;
+} MessageT;
+
+/*
  * Structure: Packet Header
  */ 
 typedef struct {
@@ -225,4 +232,11 @@ typedef struct {
     uint64_t Sequence;
     uint16_t Count;
 } PacketHeaderT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    PacketHeaderT PacketHeader;
+} PacketT;
 

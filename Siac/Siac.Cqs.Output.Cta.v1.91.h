@@ -377,6 +377,13 @@ typedef struct {
 } AuctionStatusMessageT;
 
 /*
+ * Structure: Quote
+ */ 
+typedef struct {
+    char QuoteMessageType;
+} QuoteT;
+
+/*
  * Structure: Market Wide Circuit Breaker Status Message
  */ 
 typedef struct {
@@ -403,6 +410,13 @@ typedef struct {
     int64_t MwcbLevel3;
     uint8_t Reserved;
 } MarketWideCircuitBreakerDeclineLevelStatusMessageT;
+
+/*
+ * Structure: Market Status
+ */ 
+typedef struct {
+    char MarketStatusMessageType;
+} MarketStatusT;
 
 /*
  * Structure: End Of Day Message
@@ -504,6 +518,13 @@ typedef struct {
 } StartOfDayMessageT;
 
 /*
+ * Structure: Control
+ */ 
+typedef struct {
+    char ControlMessageType;
+} ControlT;
+
+/*
  * Structure: Administrative Unformatted Message
  */ 
 typedef struct {
@@ -535,6 +556,13 @@ typedef struct {
     uint16_t MessageLength;
     char MessageCategory;
 } MessageHeaderT;
+
+/*
+ * Structure: Message
+ */ 
+typedef struct {
+    MessageHeaderT MessageHeader;
+} MessageT;
 
 /*
  * Structure: Sip Block Timestamp

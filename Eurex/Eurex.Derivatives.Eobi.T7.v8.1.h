@@ -750,6 +750,13 @@ typedef struct {
 } MessageHeaderCompT;
 
 /*
+ * Structure: Message
+ */ 
+typedef struct {
+    MessageHeaderCompT MessageHeaderComp;
+} MessageT;
+
+/*
  * Structure: Packet Info
  */ 
 typedef struct {
@@ -771,4 +778,11 @@ typedef struct {
     char Pad5[5];
     uint64_t TransactTime;
 } PacketHeaderT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    PacketHeaderT PacketHeader;
+} PacketT;
 

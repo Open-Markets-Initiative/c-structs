@@ -59,7 +59,7 @@
 /*
  * Trade Condition Values
  */ 
-#define ENUM_TRADE_CONDITION_NORMAL_TRADE = ''
+#define ENUM_TRADE_CONDITION_NORMAL_TRADE = ' '
 #define ENUM_TRADE_CONDITION_OPENING_TRADE = 'O'
 #define ENUM_TRADE_CONDITION_SPREAD_TRADE = 'S'
 #define ENUM_TRADE_CONDITION_BLOCK_TRADE = 'B'
@@ -298,6 +298,24 @@ typedef struct {
 } StandardT;
 
 /*
+ * Structure: Futures Instrument Definition Message
+ */ 
+typedef struct {
+    uint32_t TimeOffset;
+    char Symbol[6];
+    uint32_t UnitTimestamp;
+    char ReportSymbol[6];
+    uint8_t FuturesFlags;
+    uint32_t ExpirationDate;
+    uint16_t ContractSize;
+    char ListingState;
+    uint64_t PriceIncrement;
+    uint8_t LegCount;
+    uint8_t LegOffset;
+    uint8_t VarianceBlockOffset;
+} FuturesInstrumentDefinitionMessageT;
+
+/*
  * Structure: Time Reference Message
  */ 
 typedef struct {
@@ -331,6 +349,13 @@ typedef struct {
 } MessageHeaderT;
 
 /*
+ * Structure: Message
+ */ 
+typedef struct {
+    MessageHeaderT MessageHeader;
+} MessageT;
+
+/*
  * Structure: Packet Header
  */ 
 typedef struct {
@@ -339,4 +364,11 @@ typedef struct {
     uint8_t Unit;
     uint32_t Sequence;
 } PacketHeaderT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    PacketHeaderT PacketHeader;
+} PacketT;
 

@@ -302,3 +302,10 @@ typedef struct {
     char QuotationMessageType;
 } QuotationT;
 
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    uint8_t BlockSoh;
+} PacketT;
+

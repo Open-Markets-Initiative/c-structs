@@ -95,9 +95,9 @@
 /*
  * Market Code Values
  */ 
-#define ENUM_MARKET_CODE_NASDAQ = Q
-#define ENUM_MARKET_CODE_BX = B
-#define ENUM_MARKET_CODE_PSX = X
+#define ENUM_MARKET_CODE_NASDAQ = 'Q'
+#define ENUM_MARKET_CODE_BX = 'B'
+#define ENUM_MARKET_CODE_PSX = 'X'
 
 /*
  * Message Type Values
@@ -115,8 +115,8 @@
 /*
  * Operational Halt Action Values
  */ 
-#define ENUM_OPERATIONAL_HALT_ACTION_HALTED = H
-#define ENUM_OPERATIONAL_HALT_ACTION_RESUMED = T
+#define ENUM_OPERATIONAL_HALT_ACTION_HALTED = 'H'
+#define ENUM_OPERATIONAL_HALT_ACTION_RESUMED = 'T'
 
 /*
  * Reg Sho Action Values
@@ -186,8 +186,8 @@ typedef struct {
     uint16_t TrackingNumber;
     char Timestamp;
     char Stock[8];
-    int8_t MarketCode;
-    int8_t OperationalHaltAction;
+    char MarketCode;
+    char OperationalHaltAction;
 } OperationalHaltMessageT;
 
 /*
