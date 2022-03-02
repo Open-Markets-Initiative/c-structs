@@ -424,7 +424,7 @@
 #define ENUM_SECURITY_SUB_TYPE_HEDGED_1X2_CALL_SPREAD_TO_THE_2 = 42
 #define ENUM_SECURITY_SUB_TYPE_HEDGED_1X2_PUT_SPREAD_TO_THE_2 = 43
 #define ENUM_SECURITY_SUB_TYPE_CALL_SPREAD_VERSUS_SELL_PUT_HEDGE = 44
-#define ENUM_SECURITY_SUB_TYPE_PUT_SPREAD_VERSUS_SELL_CALL_+_HEDGE = 45
+#define ENUM_SECURITY_SUB_TYPE_PUT_SPREAD_VERSUS_SELL_CALL_HEDGE = 45
 #define ENUM_SECURITY_SUB_TYPE_HEDGED_CALL_CALENDAR = 46
 #define ENUM_SECURITY_SUB_TYPE_HEDGED_PUT_CALENDAR = 47
 #define ENUM_SECURITY_SUB_TYPE_HEDGED_CALL_LADDER_TREE = 48
@@ -681,16 +681,16 @@ typedef struct {
  * Structure: Strategy Leg Definition
  */ 
 typedef struct {
-    uint8_t LegBodyLength;
-    uint32_t LegMarketId;
+    int8_t LegBodyLength;
+    int32_t LegMarketId;
     uint32_t LegUnderlyingMarketId;
-    uint16_t LegRatio;
+    int16_t LegRatio;
     char LegSide;
-    uint16_t LegStrategyCode;
-    uint32_t LegRatioQtyNumerator;
-    uint32_t LegRatioQtyDenominator;
-    uint32_t LegRatioPriceNumerator;
-    uint32_t LegRatioPriceDenominator;
+    int16_t LegStrategyCode;
+    int32_t LegRatioQtyNumerator;
+    int32_t LegRatioQtyDenominator;
+    int32_t LegRatioPriceNumerator;
+    int32_t LegRatioPriceDenominator;
 } StrategyLegDefinitionT;
 
 /*
@@ -915,15 +915,15 @@ typedef struct {
  * Structure: Leg Definition
  */ 
 typedef struct {
-    uint8_t LegBodyLength;
-    uint32_t LegMarketId;
-    uint16_t LegRatio;
+    int8_t LegBodyLength;
+    int32_t LegMarketId;
+    int16_t LegRatio;
     char LegSide;
-    uint16_t LegStrategyCode;
-    uint32_t LegRatioQtyNumerator;
-    uint32_t LegRatioQtyDenominator;
-    uint32_t LegRatioPriceNumerator;
-    uint32_t LegRatioPriceDenominator;
+    int16_t LegStrategyCode;
+    int32_t LegRatioQtyNumerator;
+    int32_t LegRatioQtyDenominator;
+    int32_t LegRatioPriceNumerator;
+    int32_t LegRatioPriceDenominator;
 } LegDefinitionT;
 
 /*

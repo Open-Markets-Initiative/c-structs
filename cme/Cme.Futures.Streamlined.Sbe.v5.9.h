@@ -1,5 +1,5 @@
 /*******************************************************************************
- * C Structs For Cme Futures Sbe Streamline 5.8 protocol
+ * C Structs For Cme Futures Sbe Streamlined 5.9 protocol
  *******************************************************************************/
 
 /*******************************************************************************
@@ -79,11 +79,177 @@
 #define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_ERIS = 353
 #define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_OTC = 356
 #define ENUM_TEMPLATE_ID_MD_INSTRUMENT_DEFINITION_ERIS = 363
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_TRADE_BLOCKS = 365
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_OTC = 366
 
 
 /*******************************************************************************
  * Structs
  *******************************************************************************/
+
+/*
+ * Structure: Unit Of Measure Qty Decimal Optional
+ */ 
+typedef struct {
+    int64_t Mantissa;
+    int8_t Exponent;
+} UnitOfMeasureQtyDecimalOptionalT;
+
+/*
+ * Structure: Strike Price Decimal Optional
+ */ 
+typedef struct {
+    int64_t Mantissa;
+    int8_t Exponent;
+} StrikePriceDecimalOptionalT;
+
+/*
+ * Structure: Maturity Month Year
+ */ 
+typedef struct {
+    uint16_t Year;
+    uint8_t Month;
+    uint8_t Day;
+    uint8_t Week;
+} MaturityMonthYearT;
+
+/*
+ * Structure: Md Entry Size
+ */ 
+typedef struct {
+    int64_t Mantissa;
+    int8_t Exponent;
+} MdEntrySizeT;
+
+/*
+ * Structure: M D Incremental Refresh Ot C 366 Group
+ */ 
+typedef struct {
+    char MdEntryType[1];
+    uint32_t RptSeq;
+    int64_t MdEntryPx9;
+    MdEntrySizeT MdEntrySize;
+    char Symbol[50];
+    char SecurityGroup12[12];
+    char SecurityType[9];
+    MaturityMonthYearT MaturityMonthYear;
+    char SecurityExchange[4];
+    uint8_t ProductOptional;
+    uint16_t MaturityDate;
+    int32_t CouponRate;
+    char RestructuringType[2];
+    char Seniority[2];
+    int32_t NotionalPercentageOutstanding;
+    uint8_t PutOrCall;
+    StrikePriceDecimalOptionalT StrikePriceDecimalOptional;
+    char UnitOfMeasure[5];
+    char UnitOfMeasureCurrency[3];
+    UnitOfMeasureQtyDecimalOptionalT UnitOfMeasureQtyDecimalOptional;
+    int32_t MdEntryDate;
+    uint8_t OpenCloseSettlFlag;
+    uint16_t PriceType;
+    uint16_t SettlDate;
+    char QuoteCondition[1];
+    char MarketSector[26];
+    char SectorGroup[2];
+    char SectorSubGroup[26];
+    char ProductComplex[26];
+    char SecuritySubType[2];
+    uint16_t VolType;
+    char ReferenceId100[100];
+} MDIncrementalRefreshOtC366GroupT;
+
+/*
+ * Structure: Group Size
+ */ 
+typedef struct {
+    uint16_t BlockLength;
+    uint8_t NumInGroupUint8;
+} GroupSizeT;
+
+/*
+ * Structure: M D Incremental Refresh Ot C 366 Groups
+ */ 
+typedef struct {
+    GroupSizeT GroupSize;
+} MDIncrementalRefreshOtC366GroupsT;
+
+/*
+ * Bitfield: Match Event Indicator
+ */ 
+typedef struct {
+    uint8_t
+    EndOfEvent : 1,
+    Reserved : 1,
+    RecoveryMsg : 1,
+    LastImpliedMsg : 1,
+    LastStatsMsg : 1,
+    LastQuoteMsg : 1,
+    LastVolumeMsg : 1,
+    LastTradeMsg : 1;
+} MatchEventIndicatorT;
+
+/*
+ * Structure: Md Incremental Refresh Ot C 366
+ */ 
+typedef struct {
+    uint64_t TransactTime;
+    uint16_t TradeDate;
+    MatchEventIndicatorT MatchEventIndicator;
+    uint16_t BatchTotalMessagesOptional;
+} MdIncrementalRefreshOtC366T;
+
+/*
+ * Structure: M D Incremental Refresh Trade Blocks 365 Group
+ */ 
+typedef struct {
+    uint8_t MdUpdateAction;
+    uint64_t SecurityId;
+    uint32_t RptSeq;
+    int64_t MdEntryPx9;
+    MdEntrySizeT MdEntrySize;
+    int32_t NumberOfOrders;
+    int32_t TradeId;
+    uint8_t AggressorSide;
+    char Symbol[50];
+    char SecurityGroup12[12];
+    char SecurityType[9];
+    char SecuritySubType[2];
+    MaturityMonthYearT MaturityMonthYear;
+    char SecurityExchange4[4];
+    uint16_t MaturityDate;
+    char UnitOfMeasure[5];
+    char UnitOfMeasureCurrency3[3];
+    UnitOfMeasureQtyDecimalOptionalT UnitOfMeasureQtyDecimalOptional;
+    int32_t CouponRate;
+    uint16_t PriceType;
+    uint8_t TrdType;
+    char MdEntryId[26];
+    uint8_t PutOrCall;
+    StrikePriceDecimalOptionalT StrikePriceDecimalOptional;
+    char RestructuringType[2];
+    char Seniority[2];
+    char ReferenceId100[100];
+    char StrategyLinkId[26];
+    char LegRefId[17];
+} MDIncrementalRefreshTradeBlocks365GroupT;
+
+/*
+ * Structure: M D Incremental Refresh Trade Blocks 365 Groups
+ */ 
+typedef struct {
+    GroupSizeT GroupSize;
+} MDIncrementalRefreshTradeBlocks365GroupsT;
+
+/*
+ * Structure: Md Incremental Refresh Trade Blocks 365
+ */ 
+typedef struct {
+    uint64_t TransactTimeOptional;
+    MatchEventIndicatorT MatchEventIndicator;
+    uint16_t BatchTotalMessages;
+    uint16_t TradeDate;
+} MdIncrementalRefreshTradeBlocks365T;
 
 /*
  * Structure: Interpolation Factor
@@ -119,14 +285,6 @@ typedef struct {
     int8_t LegDateOffset;
     InterpolationFactorT InterpolationFactor;
 } MDInstrumentDefinitionErisLegGroupT;
-
-/*
- * Structure: Group Size
- */ 
-typedef struct {
-    uint16_t BlockLength;
-    uint8_t NumInGroupUint8;
-} GroupSizeT;
 
 /*
  * Structure: M D Instrument Definition Eris Leg Groups
@@ -213,25 +371,7 @@ typedef struct {
 } StrikePriceDecimalT;
 
 /*
- * Structure: Maturity Month Year
- */ 
-typedef struct {
-    uint16_t Year;
-    uint8_t Month;
-    uint8_t Day;
-    uint8_t Week;
-} MaturityMonthYearT;
-
-/*
- * Structure: Md Entry Size
- */ 
-typedef struct {
-    int64_t Mantissa;
-    int8_t Exponent;
-} MdEntrySizeT;
-
-/*
- * Structure: M D Incremental Refresh Otc Group
+ * Structure: M D Incremental Refresh Ot C 356 Group
  */ 
 typedef struct {
     char MdEntryType[1];
@@ -266,29 +406,14 @@ typedef struct {
     char SecuritySubType[2];
     uint16_t VolType;
     char ReferenceId100[100];
-} MDIncrementalRefreshOtcGroupT;
+} MDIncrementalRefreshOtC356GroupT;
 
 /*
- * Structure: M D Incremental Refresh Otc Groups
+ * Structure: M D Incremental Refresh Ot C 356 Groups
  */ 
 typedef struct {
     GroupSizeT GroupSize;
-} MDIncrementalRefreshOtcGroupsT;
-
-/*
- * Bitfield: Match Event Indicator
- */ 
-typedef struct {
-    uint8_t
-    EndOfEvent : 1,
-    Reserved : 1,
-    RecoveryMsg : 1,
-    LastImpliedMsg : 1,
-    LastStatsMsg : 1,
-    LastQuoteMsg : 1,
-    LastVolumeMsg : 1,
-    LastTradeMsg : 1;
-} MatchEventIndicatorT;
+} MDIncrementalRefreshOtC356GroupsT;
 
 /*
  * Structure: Md Incremental Refresh Ot C 356
@@ -317,7 +442,7 @@ typedef struct {
 } MdEntryPxDecimalT;
 
 /*
- * Structure: M D Incremental Refresh Eris Group
+ * Structure: M D Incremental Refresh Eris 353 Group
  */ 
 typedef struct {
     char MdUpdateActionChar[1];
@@ -337,14 +462,15 @@ typedef struct {
     uint8_t ProductOptional;
     uint16_t MaturityDate;
     char ReferenceId50[50];
-} MDIncrementalRefreshErisGroupT;
+    uint8_t MdQuoteType;
+} MDIncrementalRefreshEris353GroupT;
 
 /*
- * Structure: M D Incremental Refresh Eris Groups
+ * Structure: M D Incremental Refresh Eris 353 Groups
  */ 
 typedef struct {
     GroupSizeT GroupSize;
-} MDIncrementalRefreshErisGroupsT;
+} MDIncrementalRefreshEris353GroupsT;
 
 /*
  * Structure: Md Incremental Refresh Eris 353
@@ -356,6 +482,36 @@ typedef struct {
 } MdIncrementalRefreshEris353T;
 
 /*
+ * Structure: M D Incremental Refresh Eris 351 Group
+ */ 
+typedef struct {
+    char MdUpdateActionChar[1];
+    char MdEntryType[1];
+    uint32_t RptSeq;
+    MdEntryPxDecimalT MdEntryPxDecimal;
+    uint64_t MdEntrySizeOptional;
+    CalFutPxT CalFutPx;
+    int32_t MdEntryPositionNo;
+    int32_t NumberOfOrders;
+    int32_t TradeId;
+    uint8_t AggressorSide;
+    char Symbol[50];
+    char SecurityGroup26[26];
+    char SecurityType[9];
+    char SecurityExchange[4];
+    uint8_t ProductOptional;
+    uint16_t MaturityDate;
+    char ReferenceId50[50];
+} MDIncrementalRefreshEris351GroupT;
+
+/*
+ * Structure: M D Incremental Refresh Eris 351 Groups
+ */ 
+typedef struct {
+    GroupSizeT GroupSize;
+} MDIncrementalRefreshEris351GroupsT;
+
+/*
  * Structure: Md Incremental Refresh Eris 351
  */ 
 typedef struct {
@@ -365,14 +521,14 @@ typedef struct {
 } MdIncrementalRefreshEris351T;
 
 /*
- * Structure: M D Incremental Refresh Trade Blocks Group
+ * Structure: M D Incremental Refresh Trade Blocks 349 Group
  */ 
 typedef struct {
     uint8_t MdUpdateAction;
     uint64_t SecurityId;
     uint32_t RptSeq;
     int64_t MdEntryPxOptional;
-    uint64_t MdEntrySizeOptional;
+    MdEntrySizeT MdEntrySize;
     int32_t NumberOfOrders;
     int32_t TradeId;
     uint8_t AggressorSide;
@@ -397,14 +553,14 @@ typedef struct {
     char ReferenceId100[100];
     char StrategyLinkId[26];
     char LegRefId[17];
-} MDIncrementalRefreshTradeBlocksGroupT;
+} MDIncrementalRefreshTradeBlocks349GroupT;
 
 /*
- * Structure: M D Incremental Refresh Trade Blocks Groups
+ * Structure: M D Incremental Refresh Trade Blocks 349 Groups
  */ 
 typedef struct {
     GroupSizeT GroupSize;
-} MDIncrementalRefreshTradeBlocksGroupsT;
+} MDIncrementalRefreshTradeBlocks349GroupsT;
 
 /*
  * Structure: Md Incremental Refresh Trade Blocks 349
@@ -477,14 +633,14 @@ typedef struct {
 } MDIncrementalRefreshIndicesGroupsT;
 
 /*
- * Structure: Md Incremental Refresh Indices 348
+ * Structure: Md Incremental Refresh Indices
  */ 
 typedef struct {
     uint64_t TransactTime;
     char MdFeedType[2];
     MatchEventIndicatorT MatchEventIndicator;
     uint16_t BatchTotalMessagesOptional;
-} MdIncrementalRefreshIndices348T;
+} MdIncrementalRefreshIndicesT;
 
 /*
  * Structure: Inst Attrib Group
@@ -516,13 +672,55 @@ typedef struct {
 } RelatedSymGroupsT;
 
 /*
- * Structure: Quote Request 345
+ * Structure: Quote Request
  */ 
 typedef struct {
     uint64_t TransactTime;
     MatchEventIndicatorT MatchEventIndicator;
     char QuoteReqId[26];
-} QuoteRequest345T;
+} QuoteRequestT;
+
+/*
+ * Structure: M D Incremental Refresh Trade Blocks 340 Group
+ */ 
+typedef struct {
+    uint8_t MdUpdateAction;
+    uint64_t SecurityId;
+    uint32_t RptSeq;
+    int64_t MdEntryPxOptional;
+    uint64_t MdEntrySizeOptional;
+    int32_t NumberOfOrders;
+    int32_t TradeId;
+    uint8_t AggressorSide;
+    char Symbol[50];
+    char SecurityGroup12[12];
+    char SecurityType[9];
+    char SecuritySubType[2];
+    MaturityMonthYearT MaturityMonthYear;
+    char SecurityExchange4[4];
+    uint16_t MaturityDate;
+    char UnitOfMeasure[5];
+    char UnitOfMeasureCurrency3[3];
+    int64_t UnitOfMeasureQtyOptional;
+    int32_t CouponRate;
+    uint16_t PriceType;
+    uint8_t TrdType;
+    char MdEntryId[26];
+    uint8_t PutOrCall;
+    int64_t StrikePrice;
+    char RestructuringType[2];
+    char Seniority[2];
+    char ReferenceId100[100];
+    char StrategyLinkId[26];
+    char LegRefId[17];
+} MDIncrementalRefreshTradeBlocks340GroupT;
+
+/*
+ * Structure: M D Incremental Refresh Trade Blocks 340 Groups
+ */ 
+typedef struct {
+    GroupSizeT GroupSize;
+} MDIncrementalRefreshTradeBlocks340GroupsT;
 
 /*
  * Structure: Md Incremental Refresh Trade Blocks 340
@@ -732,7 +930,7 @@ typedef struct {
     ReservedBits : 4,
     Rounded : 1,
     Actual : 1,
-    Final : 1;
+    FinalDaily : 1;
 } SettlPriceTypeT;
 
 /*
@@ -802,27 +1000,27 @@ typedef struct {
 } MDIncrementalRefreshErisReferenceDataAndDailyStatisticsGroupsT;
 
 /*
- * Structure: Md Incremental Refresh Eris Reference Data And Daily Statistics 333
+ * Structure: Md Incremental Refresh Eris Reference Data And Daily Statistics
  */ 
 typedef struct {
     uint64_t TransactTime;
     MatchEventIndicatorT MatchEventIndicator;
     uint16_t BatchTotalMessagesOptional;
-} MdIncrementalRefreshErisReferenceDataAndDailyStatistics333T;
+} MdIncrementalRefreshErisReferenceDataAndDailyStatisticsT;
 
 /*
- * Structure: Admin Logout 316
+ * Structure: Admin Logout
  */ 
 typedef struct {
     char Text[180];
-} AdminLogout316T;
+} AdminLogoutT;
 
 /*
- * Structure: Admin Login 315
+ * Structure: Admin Login
  */ 
 typedef struct {
     int8_t HeartBtInt;
-} AdminLogin315T;
+} AdminLoginT;
 
 /*
  * Structure: Message Header

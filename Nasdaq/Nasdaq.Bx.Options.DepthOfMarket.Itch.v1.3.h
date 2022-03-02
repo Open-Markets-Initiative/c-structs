@@ -173,8 +173,8 @@ typedef struct {
     uint32_t CrossNumber;
     uint32_t MatchNumber;
     char CrossType;
-    uint16_t Price;
-    uint16_t Volume;
+    uint32_t PriceLong;
+    uint32_t VolumeLong;
 } OptionsCrossTradeMessageT;
 
 /*
@@ -186,8 +186,8 @@ typedef struct {
     uint32_t OptionId;
     uint32_t CrossNumber;
     uint32_t MatchNumber;
-    uint16_t Price;
-    uint16_t Volume;
+    uint32_t PriceLong;
+    uint32_t VolumeLong;
 } NonAuctionOptionsTradeMessageT;
 
 /*
@@ -217,10 +217,10 @@ typedef struct {
     uint32_t BidReferenceNumberDelta;
     uint32_t OriginalAskReferenceNumberDelta;
     uint32_t AskReferenceDeltaNumber;
-    uint16_t BidPrice;
-    uint16_t BidSize;
-    uint16_t AskPrice;
-    uint16_t AskSize;
+    uint32_t BidPriceLong;
+    uint32_t BidSizeLong;
+    uint32_t AskPriceLong;
+    uint32_t AskSizeLong;
 } QuoteReplaceMessageLongFormT;
 
 /*
@@ -245,8 +245,8 @@ typedef struct {
     uint32_t Timestamp;
     uint32_t ReferenceNumberDelta;
     char ChangeReason;
-    uint16_t Price;
-    uint16_t Volume;
+    uint32_t PriceLong;
+    uint32_t VolumeLong;
 } SingleSideUpdateMessageT;
 
 /*
@@ -264,8 +264,8 @@ typedef struct {
     uint32_t Timestamp;
     uint32_t OriginalReferenceNumberDelta;
     uint32_t NewReferenceNumberDelta;
-    uint16_t Price;
-    uint16_t Volume;
+    uint32_t PriceLong;
+    uint32_t VolumeLong;
 } SingleSideReplaceMessageLongFormT;
 
 /*
@@ -297,8 +297,8 @@ typedef struct {
     uint32_t CrossNumber;
     uint32_t MatchNumber;
     char Printable;
-    uint16_t Price;
-    uint16_t Volume;
+    uint32_t PriceLong;
+    uint32_t VolumeLong;
 } SingleSideOrderExecutedWithPriceMessageT;
 
 /*
@@ -321,9 +321,9 @@ typedef struct {
     uint32_t AskReferenceNumberDelta;
     uint32_t OptionId;
     uint32_t Bid;
-    uint16_t BidSize;
+    uint32_t BidSizeLong;
     uint32_t Ask;
-    uint16_t AskSize;
+    uint32_t AskSizeLong;
 } AddQuoteMessageLongFormT;
 
 /*
@@ -348,8 +348,8 @@ typedef struct {
     uint32_t OrderReferenceNumberDelta;
     char MarketSide;
     uint32_t OptionId;
-    uint16_t Price;
-    uint16_t Volume;
+    uint32_t PriceLong;
+    uint32_t VolumeLong;
 } AddOrderMessageLongFormT;
 
 /*

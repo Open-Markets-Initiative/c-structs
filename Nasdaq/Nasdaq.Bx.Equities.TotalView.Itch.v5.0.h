@@ -274,7 +274,7 @@ typedef struct {
     uint16_t StockLocate;
     uint16_t TrackingNumber;
     char Timestamp;
-    uint32_t Shares;
+    uint64_t SharesLong;
     char Stock[8];
     int32_t CrossPrice;
     uint64_t MatchNumber;

@@ -1,5 +1,5 @@
 /*******************************************************************************
- * C Structs For Cme Futures Sbe Streamline 5.9 protocol
+ * C Structs For Cme Futures Sbe Streamlined 5.8 protocol
  *******************************************************************************/
 
 /*******************************************************************************
@@ -79,13 +79,122 @@
 #define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_ERIS = 353
 #define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_OTC = 356
 #define ENUM_TEMPLATE_ID_MD_INSTRUMENT_DEFINITION_ERIS = 363
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_TRADE_BLOCKS = 365
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_OTC = 366
 
 
 /*******************************************************************************
  * Structs
  *******************************************************************************/
+
+/*
+ * Structure: Interpolation Factor
+ */ 
+typedef struct {
+    int64_t Mantissa;
+    int8_t Exponent;
+} InterpolationFactorT;
+
+/*
+ * Structure: Previous Fixing Rate
+ */ 
+typedef struct {
+    int64_t Mantissa;
+    int8_t Exponent;
+} PreviousFixingRateT;
+
+/*
+ * Structure: M D Instrument Definition Eris Leg Group
+ */ 
+typedef struct {
+    char LegBenchmarkCurveName[5];
+    char RateDescriptor[8];
+    uint16_t PreviousFixingDate;
+    char LegPayFrequencey[3];
+    PreviousFixingRateT PreviousFixingRate;
+    char LegSymbol[50];
+    int32_t LegRatioQty;
+    uint8_t LegSide;
+    char LegCurrency[3];
+    char LegSecurityType[8];
+    char LegSecurityGroup[12];
+    int8_t LegDateOffset;
+    InterpolationFactorT InterpolationFactor;
+} MDInstrumentDefinitionErisLegGroupT;
+
+/*
+ * Structure: Group Size
+ */ 
+typedef struct {
+    uint16_t BlockLength;
+    uint8_t NumInGroupUint8;
+} GroupSizeT;
+
+/*
+ * Structure: M D Instrument Definition Eris Leg Groups
+ */ 
+typedef struct {
+    GroupSizeT GroupSize;
+} MDInstrumentDefinitionErisLegGroupsT;
+
+/*
+ * Structure: Security Alt Id Group
+ */ 
+typedef struct {
+    char SecurityAltId[26];
+    char SecurityAltIdSource[1];
+} SecurityAltIdGroupT;
+
+/*
+ * Structure: Security Alt Id Groups
+ */ 
+typedef struct {
+    GroupSizeT GroupSize;
+} SecurityAltIdGroupsT;
+
+/*
+ * Structure: Events Group
+ */ 
+typedef struct {
+    uint8_t EventTypeIndices;
+    uint64_t EventTime;
+} EventsGroupT;
+
+/*
+ * Structure: Group Size Encoding
+ */ 
+typedef struct {
+    uint16_t BlockLength;
+    uint16_t NumInGroup16;
+} GroupSizeEncodingT;
+
+/*
+ * Structure: Events Groups
+ */ 
+typedef struct {
+    GroupSizeEncodingT GroupSizeEncoding;
+} EventsGroupsT;
+
+/*
+ * Structure: M D Feed Types Group
+ */ 
+typedef struct {
+    char MdFeedType3[3];
+    uint8_t MarketDepth;
+} MDFeedTypesGroupT;
+
+/*
+ * Structure: M D Feed Types Groups
+ */ 
+typedef struct {
+    GroupSizeT GroupSize;
+} MDFeedTypesGroupsT;
+
+/*
+ * Structure: Min Price Increment
+ */ 
+typedef struct {
+    int64_t Mantissa;
+    int8_t Exponent;
+} MinPriceIncrementT;
 
 /*
  * Structure: Unit Of Measure Qty Decimal
@@ -160,14 +269,6 @@ typedef struct {
 } MDIncrementalRefreshOtcGroupT;
 
 /*
- * Structure: Group Size
- */ 
-typedef struct {
-    uint16_t BlockLength;
-    uint8_t NumInGroupUint8;
-} GroupSizeT;
-
-/*
  * Structure: M D Incremental Refresh Otc Groups
  */ 
 typedef struct {
@@ -190,24 +291,119 @@ typedef struct {
 } MatchEventIndicatorT;
 
 /*
- * Structure: Md Incremental Refresh Ot C 366
+ * Structure: Md Incremental Refresh Otc
  */ 
 typedef struct {
     uint64_t TransactTime;
     uint16_t TradeDate;
     MatchEventIndicatorT MatchEventIndicator;
     uint16_t BatchTotalMessagesOptional;
-} MdIncrementalRefreshOtC366T;
+} MdIncrementalRefreshOtcT;
 
 /*
- * Structure: M D Incremental Refresh Trade Blocks Group
+ * Structure: Cal Fut Px
+ */ 
+typedef struct {
+    int64_t Mantissa;
+    int8_t Exponent;
+} CalFutPxT;
+
+/*
+ * Structure: Md Entry Px Decimal
+ */ 
+typedef struct {
+    int64_t Mantissa;
+    int8_t Exponent;
+} MdEntryPxDecimalT;
+
+/*
+ * Structure: M D Incremental Refresh Eris 353 Group
+ */ 
+typedef struct {
+    char MdUpdateActionChar[1];
+    char MdEntryType[1];
+    uint32_t RptSeq;
+    MdEntryPxDecimalT MdEntryPxDecimal;
+    uint64_t MdEntrySizeOptional;
+    CalFutPxT CalFutPx;
+    int32_t MdEntryPositionNo;
+    int32_t NumberOfOrders;
+    int32_t TradeId;
+    uint8_t AggressorSide;
+    char Symbol[50];
+    char SecurityGroup26[26];
+    char SecurityType[9];
+    char SecurityExchange[4];
+    uint8_t ProductOptional;
+    uint16_t MaturityDate;
+    char ReferenceId50[50];
+    uint8_t MdQuoteType;
+} MDIncrementalRefreshEris353GroupT;
+
+/*
+ * Structure: M D Incremental Refresh Eris 353 Groups
+ */ 
+typedef struct {
+    GroupSizeT GroupSize;
+} MDIncrementalRefreshEris353GroupsT;
+
+/*
+ * Structure: Md Incremental Refresh Eris 353
+ */ 
+typedef struct {
+    uint64_t TransactTime;
+    MatchEventIndicatorT MatchEventIndicator;
+    uint16_t BatchTotalMessagesOptional;
+} MdIncrementalRefreshEris353T;
+
+/*
+ * Structure: M D Incremental Refresh Eris 351 Group
+ */ 
+typedef struct {
+    char MdUpdateActionChar[1];
+    char MdEntryType[1];
+    uint32_t RptSeq;
+    MdEntryPxDecimalT MdEntryPxDecimal;
+    uint64_t MdEntrySizeOptional;
+    CalFutPxT CalFutPx;
+    int32_t MdEntryPositionNo;
+    int32_t NumberOfOrders;
+    int32_t TradeId;
+    uint8_t AggressorSide;
+    char Symbol[50];
+    char SecurityGroup26[26];
+    char SecurityType[9];
+    char SecurityExchange[4];
+    uint8_t ProductOptional;
+    uint16_t MaturityDate;
+    char ReferenceId50[50];
+} MDIncrementalRefreshEris351GroupT;
+
+/*
+ * Structure: M D Incremental Refresh Eris 351 Groups
+ */ 
+typedef struct {
+    GroupSizeT GroupSize;
+} MDIncrementalRefreshEris351GroupsT;
+
+/*
+ * Structure: Md Incremental Refresh Eris 351
+ */ 
+typedef struct {
+    uint64_t TransactTime;
+    MatchEventIndicatorT MatchEventIndicator;
+    uint16_t BatchTotalMessagesOptional;
+} MdIncrementalRefreshEris351T;
+
+/*
+ * Structure: M D Incremental Refresh Trade Blocks 349 Group
  */ 
 typedef struct {
     uint8_t MdUpdateAction;
     uint64_t SecurityId;
     uint32_t RptSeq;
     int64_t MdEntryPxOptional;
-    uint64_t MdEntrySizeOptional;
+    MdEntrySizeT MdEntrySize;
     int32_t NumberOfOrders;
     int32_t TradeId;
     uint8_t AggressorSide;
@@ -232,201 +428,14 @@ typedef struct {
     char ReferenceId100[100];
     char StrategyLinkId[26];
     char LegRefId[17];
-} MDIncrementalRefreshTradeBlocksGroupT;
+} MDIncrementalRefreshTradeBlocks349GroupT;
 
 /*
- * Structure: M D Incremental Refresh Trade Blocks Groups
+ * Structure: M D Incremental Refresh Trade Blocks 349 Groups
  */ 
 typedef struct {
     GroupSizeT GroupSize;
-} MDIncrementalRefreshTradeBlocksGroupsT;
-
-/*
- * Structure: Md Incremental Refresh Trade Blocks 365
- */ 
-typedef struct {
-    uint64_t TransactTimeOptional;
-    MatchEventIndicatorT MatchEventIndicator;
-    uint16_t BatchTotalMessages;
-    uint16_t TradeDate;
-} MdIncrementalRefreshTradeBlocks365T;
-
-/*
- * Structure: Interpolation Factor
- */ 
-typedef struct {
-    int64_t Mantissa;
-    int8_t Exponent;
-} InterpolationFactorT;
-
-/*
- * Structure: Previous Fixing Rate
- */ 
-typedef struct {
-    int64_t Mantissa;
-    int8_t Exponent;
-} PreviousFixingRateT;
-
-/*
- * Structure: M D Instrument Definition Eris Leg Group
- */ 
-typedef struct {
-    char LegBenchmarkCurveName[5];
-    char RateDescriptor[8];
-    uint16_t PreviousFixingDate;
-    char LegPayFrequencey[3];
-    PreviousFixingRateT PreviousFixingRate;
-    char LegSymbol[50];
-    int32_t LegRatioQty;
-    uint8_t LegSide;
-    char LegCurrency[3];
-    char LegSecurityType[8];
-    char LegSecurityGroup[12];
-    int8_t LegDateOffset;
-    InterpolationFactorT InterpolationFactor;
-} MDInstrumentDefinitionErisLegGroupT;
-
-/*
- * Structure: M D Instrument Definition Eris Leg Groups
- */ 
-typedef struct {
-    GroupSizeT GroupSize;
-} MDInstrumentDefinitionErisLegGroupsT;
-
-/*
- * Structure: Security Alt Id Group
- */ 
-typedef struct {
-    char SecurityAltId[26];
-    char SecurityAltIdSource[1];
-} SecurityAltIdGroupT;
-
-/*
- * Structure: Security Alt Id Groups
- */ 
-typedef struct {
-    GroupSizeT GroupSize;
-} SecurityAltIdGroupsT;
-
-/*
- * Structure: Events Group
- */ 
-typedef struct {
-    uint8_t EventTypeIndices;
-    uint64_t EventTime;
-} EventsGroupT;
-
-/*
- * Structure: Group Size Encoding
- */ 
-typedef struct {
-    uint16_t BlockLength;
-    uint16_t NumInGroup16;
-} GroupSizeEncodingT;
-
-/*
- * Structure: Events Groups
- */ 
-typedef struct {
-    GroupSizeEncodingT GroupSizeEncoding;
-} EventsGroupsT;
-
-/*
- * Structure: M D Feed Types Group
- */ 
-typedef struct {
-    char MdFeedType3[3];
-    uint8_t MarketDepth;
-} MDFeedTypesGroupT;
-
-/*
- * Structure: M D Feed Types Groups
- */ 
-typedef struct {
-    GroupSizeT GroupSize;
-} MDFeedTypesGroupsT;
-
-/*
- * Structure: Min Price Increment
- */ 
-typedef struct {
-    int64_t Mantissa;
-    int8_t Exponent;
-} MinPriceIncrementT;
-
-/*
- * Structure: Md Incremental Refresh Ot C 356
- */ 
-typedef struct {
-    uint64_t TransactTime;
-    uint16_t TradeDate;
-    MatchEventIndicatorT MatchEventIndicator;
-    uint16_t BatchTotalMessagesOptional;
-} MdIncrementalRefreshOtC356T;
-
-/*
- * Structure: Cal Fut Px
- */ 
-typedef struct {
-    int64_t Mantissa;
-    int8_t Exponent;
-} CalFutPxT;
-
-/*
- * Structure: Md Entry Px Decimal
- */ 
-typedef struct {
-    int64_t Mantissa;
-    int8_t Exponent;
-} MdEntryPxDecimalT;
-
-/*
- * Structure: M D Incremental Refresh Eris Group
- */ 
-typedef struct {
-    char MdUpdateActionChar[1];
-    char MdEntryType[1];
-    uint32_t RptSeq;
-    MdEntryPxDecimalT MdEntryPxDecimal;
-    uint64_t MdEntrySizeOptional;
-    CalFutPxT CalFutPx;
-    int32_t MdEntryPositionNo;
-    int32_t NumberOfOrders;
-    int32_t TradeId;
-    uint8_t AggressorSide;
-    char Symbol[50];
-    char SecurityGroup26[26];
-    char SecurityType[9];
-    char SecurityExchange[4];
-    uint8_t ProductOptional;
-    uint16_t MaturityDate;
-    char ReferenceId50[50];
-} MDIncrementalRefreshErisGroupT;
-
-/*
- * Structure: M D Incremental Refresh Eris Groups
- */ 
-typedef struct {
-    GroupSizeT GroupSize;
-} MDIncrementalRefreshErisGroupsT;
-
-/*
- * Structure: Md Incremental Refresh Eris 353
- */ 
-typedef struct {
-    uint64_t TransactTime;
-    MatchEventIndicatorT MatchEventIndicator;
-    uint16_t BatchTotalMessagesOptional;
-} MdIncrementalRefreshEris353T;
-
-/*
- * Structure: Md Incremental Refresh Eris 351
- */ 
-typedef struct {
-    uint64_t TransactTime;
-    MatchEventIndicatorT MatchEventIndicator;
-    uint16_t BatchTotalMessagesOptional;
-} MdIncrementalRefreshEris351T;
+} MDIncrementalRefreshTradeBlocks349GroupsT;
 
 /*
  * Structure: Md Incremental Refresh Trade Blocks 349
@@ -499,14 +508,14 @@ typedef struct {
 } MDIncrementalRefreshIndicesGroupsT;
 
 /*
- * Structure: Md Incremental Refresh Indices 348
+ * Structure: Md Incremental Refresh Indices
  */ 
 typedef struct {
     uint64_t TransactTime;
     char MdFeedType[2];
     MatchEventIndicatorT MatchEventIndicator;
     uint16_t BatchTotalMessagesOptional;
-} MdIncrementalRefreshIndices348T;
+} MdIncrementalRefreshIndicesT;
 
 /*
  * Structure: Inst Attrib Group
@@ -538,13 +547,55 @@ typedef struct {
 } RelatedSymGroupsT;
 
 /*
- * Structure: Quote Request 345
+ * Structure: Quote Request
  */ 
 typedef struct {
     uint64_t TransactTime;
     MatchEventIndicatorT MatchEventIndicator;
     char QuoteReqId[26];
-} QuoteRequest345T;
+} QuoteRequestT;
+
+/*
+ * Structure: M D Incremental Refresh Trade Blocks 340 Group
+ */ 
+typedef struct {
+    uint8_t MdUpdateAction;
+    uint64_t SecurityId;
+    uint32_t RptSeq;
+    int64_t MdEntryPxOptional;
+    uint64_t MdEntrySizeOptional;
+    int32_t NumberOfOrders;
+    int32_t TradeId;
+    uint8_t AggressorSide;
+    char Symbol[50];
+    char SecurityGroup12[12];
+    char SecurityType[9];
+    char SecuritySubType[2];
+    MaturityMonthYearT MaturityMonthYear;
+    char SecurityExchange4[4];
+    uint16_t MaturityDate;
+    char UnitOfMeasure[5];
+    char UnitOfMeasureCurrency3[3];
+    int64_t UnitOfMeasureQtyOptional;
+    int32_t CouponRate;
+    uint16_t PriceType;
+    uint8_t TrdType;
+    char MdEntryId[26];
+    uint8_t PutOrCall;
+    int64_t StrikePrice;
+    char RestructuringType[2];
+    char Seniority[2];
+    char ReferenceId100[100];
+    char StrategyLinkId[26];
+    char LegRefId[17];
+} MDIncrementalRefreshTradeBlocks340GroupT;
+
+/*
+ * Structure: M D Incremental Refresh Trade Blocks 340 Groups
+ */ 
+typedef struct {
+    GroupSizeT GroupSize;
+} MDIncrementalRefreshTradeBlocks340GroupsT;
 
 /*
  * Structure: Md Incremental Refresh Trade Blocks 340
@@ -754,7 +805,7 @@ typedef struct {
     ReservedBits : 4,
     Rounded : 1,
     Actual : 1,
-    FinalDaily : 1;
+    Final : 1;
 } SettlPriceTypeT;
 
 /*
@@ -824,27 +875,27 @@ typedef struct {
 } MDIncrementalRefreshErisReferenceDataAndDailyStatisticsGroupsT;
 
 /*
- * Structure: Md Incremental Refresh Eris Reference Data And Daily Statistics 333
+ * Structure: Md Incremental Refresh Eris Reference Data And Daily Statistics
  */ 
 typedef struct {
     uint64_t TransactTime;
     MatchEventIndicatorT MatchEventIndicator;
     uint16_t BatchTotalMessagesOptional;
-} MdIncrementalRefreshErisReferenceDataAndDailyStatistics333T;
+} MdIncrementalRefreshErisReferenceDataAndDailyStatisticsT;
 
 /*
- * Structure: Admin Logout 316
+ * Structure: Admin Logout
  */ 
 typedef struct {
     char Text[180];
-} AdminLogout316T;
+} AdminLogoutT;
 
 /*
- * Structure: Admin Login 315
+ * Structure: Admin Login
  */ 
 typedef struct {
     int8_t HeartBtInt;
-} AdminLogin315T;
+} AdminLoginT;
 
 /*
  * Structure: Message Header

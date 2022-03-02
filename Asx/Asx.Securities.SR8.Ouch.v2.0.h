@@ -334,9 +334,15 @@ typedef struct {
 } PacketHeaderT;
 
 /*
- * Structure: Packet
+ * Structure: Soup Bin Tcp Packet
  */ 
 typedef struct {
     PacketHeaderT PacketHeader;
+} SoupBinTcpPacketT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
 } PacketT;
 

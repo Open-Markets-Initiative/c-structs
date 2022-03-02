@@ -56,7 +56,7 @@
 #define ENUM_MD_ENTRY_TYPE_SESSION_LOW_OFFER = 'O'
 #define ENUM_MD_ENTRY_TYPE_FIXING_PRICE = 'W'
 #define ENUM_MD_ENTRY_TYPE_ELECTRONIC_VOLUME = 'e'
-#define ENUM_MD_ENTRY_TYPE_THRESHOLD_LIMITSAND_PRICE_BAND_VARIATION = 'g'
+#define ENUM_MD_ENTRY_TYPE_THRESHOLD_LIMITS_AND_PRICE_BAND_VARIATION = 'g'
 
 /*
  * Md Entry Type Book Values
@@ -201,15 +201,15 @@
  *******************************************************************************/
 
 /*
- * Structure: M D Instrument Definition Spread Leg Group
+ * Structure: M D Instrument Definition Spread 56 Leg Group
  */ 
 typedef struct {
     int32_t LegSecurityId;
     uint8_t LegSide;
     int8_t LegRatioQty;
-    int64_t LegPricePricenull;
+    int64_t LegPricePricenulL9;
     int32_t LegOptionDelta;
-} MDInstrumentDefinitionSpreadLegGroupT;
+} MDInstrumentDefinitionSpread56LegGroupT;
 
 /*
  * Structure: Group Size
@@ -220,11 +220,11 @@ typedef struct {
 } GroupSizeT;
 
 /*
- * Structure: M D Instrument Definition Spread Leg Groups
+ * Structure: M D Instrument Definition Spread 56 Leg Groups
  */ 
 typedef struct {
     GroupSizeT GroupSize;
-} MDInstrumentDefinitionSpreadLegGroupsT;
+} MDInstrumentDefinitionSpread56LegGroupsT;
 
 /*
  * Structure: Lot Type Rules Group
@@ -384,7 +384,7 @@ typedef struct {
 } UnderlyingsGroupsT;
 
 /*
- * Structure: Snapshot Full Refresh Order Book Group
+ * Structure: Snapshot Full Refresh Order Book 53 Group
  */ 
 typedef struct {
     uint64_t OrderId;
@@ -392,14 +392,14 @@ typedef struct {
     int64_t MdEntryPx;
     int32_t MdDisplayQty;
     char MdEntryTypeBook;
-} SnapshotFullRefreshOrderBookGroupT;
+} SnapshotFullRefreshOrderBook53GroupT;
 
 /*
- * Structure: Snapshot Full Refresh Order Book Groups
+ * Structure: Snapshot Full Refresh Order Book 53 Groups
  */ 
 typedef struct {
     GroupSizeT GroupSize;
-} SnapshotFullRefreshOrderBookGroupsT;
+} SnapshotFullRefreshOrderBook53GroupsT;
 
 /*
  * Structure: Snapshot Full Refresh Order Book 53
@@ -414,7 +414,7 @@ typedef struct {
 } SnapshotFullRefreshOrderBook53T;
 
 /*
- * Structure: Snapshot Full Refresh Group
+ * Structure: Snapshot Full Refresh 52 Group
  */ 
 typedef struct {
     int64_t MdEntryPxOptional;
@@ -425,14 +425,14 @@ typedef struct {
     uint8_t OpenCloseSettlFlag;
     SettlPriceTypeT SettlPriceType;
     char MdEntryType;
-} SnapshotFullRefreshGroupT;
+} SnapshotFullRefresh52GroupT;
 
 /*
- * Structure: Snapshot Full Refresh Groups
+ * Structure: Snapshot Full Refresh 52 Groups
  */ 
 typedef struct {
     GroupSizeT GroupSize;
-} SnapshotFullRefreshGroupsT;
+} SnapshotFullRefresh52GroupsT;
 
 /*
  * Structure: Snapshot Full Refresh 52
@@ -452,7 +452,7 @@ typedef struct {
 } SnapshotFullRefresh52T;
 
 /*
- * Structure: M D Incremental Refresh Session Statistics Group
+ * Structure: M D Incremental Refresh Session Statistics 51 Group
  */ 
 typedef struct {
     int64_t MdEntryPx;
@@ -463,14 +463,14 @@ typedef struct {
     char MdEntryTypeStatistics;
     int32_t MdEntrySizeOptional;
     char Padding1[1];
-} MDIncrementalRefreshSessionStatisticsGroupT;
+} MDIncrementalRefreshSessionStatistics51GroupT;
 
 /*
- * Structure: M D Incremental Refresh Session Statistics Groups
+ * Structure: M D Incremental Refresh Session Statistics 51 Groups
  */ 
 typedef struct {
     GroupSizeT GroupSize;
-} MDIncrementalRefreshSessionStatisticsGroupsT;
+} MDIncrementalRefreshSessionStatistics51GroupsT;
 
 /*
  * Structure: Md Incremental Refresh Session Statistics 51
@@ -482,22 +482,22 @@ typedef struct {
 } MdIncrementalRefreshSessionStatistics51T;
 
 /*
- * Structure: M D Incremental Refresh Limits Banding Group
+ * Structure: M D Incremental Refresh Limits Banding 50 Group
  */ 
 typedef struct {
-    int64_t HighLimitPricePricenull;
-    int64_t LowLimitPricePricenull;
-    int64_t MaxPriceVariationPricenull;
+    int64_t HighLimitPricePricenulL9;
+    int64_t LowLimitPricePricenulL9;
+    int64_t MaxPriceVariationPricenulL9;
     int32_t SecurityId;
     uint32_t RptSeq;
-} MDIncrementalRefreshLimitsBandingGroupT;
+} MDIncrementalRefreshLimitsBanding50GroupT;
 
 /*
- * Structure: M D Incremental Refresh Limits Banding Groups
+ * Structure: M D Incremental Refresh Limits Banding 50 Groups
  */ 
 typedef struct {
     GroupSizeT GroupSize;
-} MDIncrementalRefreshLimitsBandingGroupsT;
+} MDIncrementalRefreshLimitsBanding50GroupsT;
 
 /*
  * Structure: Md Incremental Refresh Limits Banding 50
@@ -509,7 +509,7 @@ typedef struct {
 } MdIncrementalRefreshLimitsBanding50T;
 
 /*
- * Structure: M D Incremental Refresh Daily Statistics Group
+ * Structure: M D Incremental Refresh Daily Statistics 49 Group
  */ 
 typedef struct {
     int64_t MdEntryPxOptional;
@@ -521,14 +521,14 @@ typedef struct {
     uint8_t MdUpdateAction;
     char MdEntryTypeDailyStatistics;
     char Padding7[7];
-} MDIncrementalRefreshDailyStatisticsGroupT;
+} MDIncrementalRefreshDailyStatistics49GroupT;
 
 /*
- * Structure: M D Incremental Refresh Daily Statistics Groups
+ * Structure: M D Incremental Refresh Daily Statistics 49 Groups
  */ 
 typedef struct {
     GroupSizeT GroupSize;
-} MDIncrementalRefreshDailyStatisticsGroupsT;
+} MDIncrementalRefreshDailyStatistics49GroupsT;
 
 /*
  * Structure: Md Incremental Refresh Daily Statistics 49
@@ -540,13 +540,13 @@ typedef struct {
 } MdIncrementalRefreshDailyStatistics49T;
 
 /*
- * Structure: M D Incremental Refresh Trade Summary Order Group
+ * Structure: M D Incremental Refresh Trade Summary 48 Order Group
  */ 
 typedef struct {
     uint64_t OrderId;
     int32_t LastQty;
     char Padding4[4];
-} MDIncrementalRefreshTradeSummaryOrderGroupT;
+} MDIncrementalRefreshTradeSummary48OrderGroupT;
 
 /*
  * Structure: Group Size 8 Byte
@@ -558,36 +558,36 @@ typedef struct {
 } GroupSize8ByteT;
 
 /*
- * Structure: M D Incremental Refresh Trade Summary Order Groups
+ * Structure: M D Incremental Refresh Trade Summary 48 Order Groups
  */ 
 typedef struct {
     GroupSize8ByteT GroupSize8Byte;
-} MDIncrementalRefreshTradeSummaryOrderGroupsT;
+} MDIncrementalRefreshTradeSummary48OrderGroupsT;
 
 /*
- * Structure: M D Incremental Refresh Trade Summary Group
+ * Structure: M D Incremental Refresh Trade Summary 48 Group
  */ 
 typedef struct {
     int64_t MdEntryPx;
     int32_t MdEntrySize;
     int32_t SecurityId;
     uint32_t RptSeq;
-    int32_t NumberOfOrdersOptional;
+    int32_t NumberOfOrders;
     uint8_t AggressorSide;
     uint8_t MdUpdateAction;
     uint32_t MdTradeEntryId;
     char Padding2[2];
-} MDIncrementalRefreshTradeSummaryGroupT;
+} MDIncrementalRefreshTradeSummary48GroupT;
 
 /*
- * Structure: M D Incremental Refresh Trade Summary Groups
+ * Structure: M D Incremental Refresh Trade Summary 48 Groups
  */ 
 typedef struct {
     GroupSizeT GroupSize;
-} MDIncrementalRefreshTradeSummaryGroupsT;
+} MDIncrementalRefreshTradeSummary48GroupsT;
 
 /*
- * Structure: M D Incremental Refresh Order Book Group
+ * Structure: M D Incremental Refresh Order Book 47 Group
  */ 
 typedef struct {
     uint64_t OrderIdOptional;
@@ -598,14 +598,14 @@ typedef struct {
     uint8_t MdUpdateAction;
     char MdEntryTypeBook;
     char Padding6[6];
-} MDIncrementalRefreshOrderBookGroupT;
+} MDIncrementalRefreshOrderBook47GroupT;
 
 /*
- * Structure: M D Incremental Refresh Order Book Groups
+ * Structure: M D Incremental Refresh Order Book 47 Groups
  */ 
 typedef struct {
     GroupSizeT GroupSize;
-} MDIncrementalRefreshOrderBookGroupsT;
+} MDIncrementalRefreshOrderBook47GroupsT;
 
 /*
  * Structure: Md Incremental Refresh Order Book 47
@@ -617,7 +617,7 @@ typedef struct {
 } MdIncrementalRefreshOrderBook47T;
 
 /*
- * Structure: M D Incremental Refresh Book Order Group
+ * Structure: M D Incremental Refresh Book 46 Order Group
  */ 
 typedef struct {
     uint64_t OrderId;
@@ -626,17 +626,17 @@ typedef struct {
     uint8_t ReferenceId;
     uint8_t OrderUpdateAction;
     char Padding2[2];
-} MDIncrementalRefreshBookOrderGroupT;
+} MDIncrementalRefreshBook46OrderGroupT;
 
 /*
- * Structure: M D Incremental Refresh Book Order Groups
+ * Structure: M D Incremental Refresh Book 46 Order Groups
  */ 
 typedef struct {
     GroupSize8ByteT GroupSize8Byte;
-} MDIncrementalRefreshBookOrderGroupsT;
+} MDIncrementalRefreshBook46OrderGroupsT;
 
 /*
- * Structure: M D Incremental Refresh Book Group
+ * Structure: M D Incremental Refresh Book 46 Group
  */ 
 typedef struct {
     int64_t MdEntryPxOptional;
@@ -648,14 +648,32 @@ typedef struct {
     uint8_t MdUpdateAction;
     char MdEntryTypeBook;
     char Padding5[5];
-} MDIncrementalRefreshBookGroupT;
+} MDIncrementalRefreshBook46GroupT;
 
 /*
- * Structure: M D Incremental Refresh Book Groups
+ * Structure: M D Incremental Refresh Book 46 Groups
  */ 
 typedef struct {
     GroupSizeT GroupSize;
-} MDIncrementalRefreshBookGroupsT;
+} MDIncrementalRefreshBook46GroupsT;
+
+/*
+ * Structure: Snapshot Full Refresh Order Book 44 Group
+ */ 
+typedef struct {
+    uint64_t OrderId;
+    uint64_t MdOrderPriority;
+    int64_t MdEntryPx;
+    int32_t MdDisplayQty;
+    char MdEntryTypeBook;
+} SnapshotFullRefreshOrderBook44GroupT;
+
+/*
+ * Structure: Snapshot Full Refresh Order Book 44 Groups
+ */ 
+typedef struct {
+    GroupSizeT GroupSize;
+} SnapshotFullRefreshOrderBook44GroupsT;
 
 /*
  * Structure: Snapshot Full Refresh Order Book 44
@@ -670,6 +688,27 @@ typedef struct {
 } SnapshotFullRefreshOrderBook44T;
 
 /*
+ * Structure: M D Incremental Refresh Order Book 43 Group
+ */ 
+typedef struct {
+    uint64_t OrderIdOptional;
+    uint64_t MdOrderPriority;
+    int64_t MdEntryPxOptional;
+    int32_t MdDisplayQtyOptional;
+    int32_t SecurityId;
+    uint8_t MdUpdateAction;
+    char MdEntryTypeBook;
+    char Padding6[6];
+} MDIncrementalRefreshOrderBook43GroupT;
+
+/*
+ * Structure: M D Incremental Refresh Order Book 43 Groups
+ */ 
+typedef struct {
+    GroupSizeT GroupSize;
+} MDIncrementalRefreshOrderBook43GroupsT;
+
+/*
  * Structure: Md Incremental Refresh Order Book 43
  */ 
 typedef struct {
@@ -677,6 +716,44 @@ typedef struct {
     MatchEventIndicatorT MatchEventIndicator;
     char Padding2[2];
 } MdIncrementalRefreshOrderBook43T;
+
+/*
+ * Structure: M D Incremental Refresh Trade Summary 42 Order Group
+ */ 
+typedef struct {
+    uint64_t OrderId;
+    int32_t LastQty;
+    char Padding4[4];
+} MDIncrementalRefreshTradeSummary42OrderGroupT;
+
+/*
+ * Structure: M D Incremental Refresh Trade Summary 42 Order Groups
+ */ 
+typedef struct {
+    GroupSize8ByteT GroupSize8Byte;
+} MDIncrementalRefreshTradeSummary42OrderGroupsT;
+
+/*
+ * Structure: M D Incremental Refresh Trade Summary 42 Group
+ */ 
+typedef struct {
+    int64_t MdEntryPx;
+    int32_t MdEntrySize;
+    int32_t SecurityId;
+    uint32_t RptSeq;
+    int32_t NumberOfOrdersOptional;
+    uint8_t AggressorSide;
+    uint8_t MdUpdateAction;
+    uint32_t MdTradeEntryId;
+    char Padding2[2];
+} MDIncrementalRefreshTradeSummary42GroupT;
+
+/*
+ * Structure: M D Incremental Refresh Trade Summary 42 Groups
+ */ 
+typedef struct {
+    GroupSizeT GroupSize;
+} MDIncrementalRefreshTradeSummary42GroupsT;
 
 /*
  * Structure: Related Sym Group
@@ -698,14 +775,35 @@ typedef struct {
 } RelatedSymGroupsT;
 
 /*
- * Structure: Quote Request 39
+ * Structure: Quote Request
  */ 
 typedef struct {
     uint64_t TransactTime;
     char QuoteReqId[23];
     MatchEventIndicatorT MatchEventIndicator;
     char Padding3[3];
-} QuoteRequest39T;
+} QuoteRequestT;
+
+/*
+ * Structure: Snapshot Full Refresh 38 Group
+ */ 
+typedef struct {
+    int64_t MdEntryPxOptional;
+    int32_t MdEntrySizeOptional;
+    int32_t NumberOfOrdersOptional;
+    int8_t MdPriceLevelOptional;
+    uint16_t TradingReferenceDate;
+    uint8_t OpenCloseSettlFlag;
+    SettlPriceTypeT SettlPriceType;
+    char MdEntryType;
+} SnapshotFullRefresh38GroupT;
+
+/*
+ * Structure: Snapshot Full Refresh 38 Groups
+ */ 
+typedef struct {
+    GroupSizeT GroupSize;
+} SnapshotFullRefresh38GroupsT;
 
 /*
  * Structure: Snapshot Full Refresh 38
@@ -743,13 +841,34 @@ typedef struct {
 } MDIncrementalRefreshVolumeGroupsT;
 
 /*
- * Structure: Md Incremental Refresh Volume 37
+ * Structure: Md Incremental Refresh Volume
  */ 
 typedef struct {
     uint64_t TransactTime;
     MatchEventIndicatorT MatchEventIndicator;
     char Padding2[2];
-} MdIncrementalRefreshVolume37T;
+} MdIncrementalRefreshVolumeT;
+
+/*
+ * Structure: M D Incremental Refresh Session Statistics 35 Group
+ */ 
+typedef struct {
+    int64_t MdEntryPx;
+    int32_t SecurityId;
+    uint32_t RptSeq;
+    uint8_t OpenCloseSettlFlag;
+    uint8_t MdUpdateAction;
+    char MdEntryTypeStatistics;
+    int32_t MdEntrySizeOptional;
+    char Padding1[1];
+} MDIncrementalRefreshSessionStatistics35GroupT;
+
+/*
+ * Structure: M D Incremental Refresh Session Statistics 35 Groups
+ */ 
+typedef struct {
+    GroupSizeT GroupSize;
+} MDIncrementalRefreshSessionStatistics35GroupsT;
 
 /*
  * Structure: Md Incremental Refresh Session Statistics 35
@@ -761,6 +880,24 @@ typedef struct {
 } MdIncrementalRefreshSessionStatistics35T;
 
 /*
+ * Structure: M D Incremental Refresh Limits Banding 34 Group
+ */ 
+typedef struct {
+    int64_t HighLimitPricePricenull;
+    int64_t LowLimitPricePricenull;
+    int64_t MaxPriceVariationPricenull;
+    int32_t SecurityId;
+    uint32_t RptSeq;
+} MDIncrementalRefreshLimitsBanding34GroupT;
+
+/*
+ * Structure: M D Incremental Refresh Limits Banding 34 Groups
+ */ 
+typedef struct {
+    GroupSizeT GroupSize;
+} MDIncrementalRefreshLimitsBanding34GroupsT;
+
+/*
  * Structure: Md Incremental Refresh Limits Banding 34
  */ 
 typedef struct {
@@ -768,6 +905,28 @@ typedef struct {
     MatchEventIndicatorT MatchEventIndicator;
     char Padding2[2];
 } MdIncrementalRefreshLimitsBanding34T;
+
+/*
+ * Structure: M D Incremental Refresh Daily Statistics 33 Group
+ */ 
+typedef struct {
+    int64_t MdEntryPxOptional;
+    int32_t MdEntrySizeOptional;
+    int32_t SecurityId;
+    uint32_t RptSeq;
+    uint16_t TradingReferenceDate;
+    SettlPriceTypeT SettlPriceType;
+    uint8_t MdUpdateAction;
+    char MdEntryTypeDailyStatistics;
+    char Padding7[7];
+} MDIncrementalRefreshDailyStatistics33GroupT;
+
+/*
+ * Structure: M D Incremental Refresh Daily Statistics 33 Groups
+ */ 
+typedef struct {
+    GroupSizeT GroupSize;
+} MDIncrementalRefreshDailyStatistics33GroupsT;
 
 /*
  * Structure: Md Incremental Refresh Daily Statistics 33
@@ -779,7 +938,48 @@ typedef struct {
 } MdIncrementalRefreshDailyStatistics33T;
 
 /*
- * Structure: Security Status 30
+ * Structure: M D Incremental Refresh Book 32 Order Group
+ */ 
+typedef struct {
+    uint64_t OrderId;
+    uint64_t MdOrderPriority;
+    int32_t MdDisplayQtyOptional;
+    uint8_t ReferenceId;
+    uint8_t OrderUpdateAction;
+    char Padding2[2];
+} MDIncrementalRefreshBook32OrderGroupT;
+
+/*
+ * Structure: M D Incremental Refresh Book 32 Order Groups
+ */ 
+typedef struct {
+    GroupSize8ByteT GroupSize8Byte;
+} MDIncrementalRefreshBook32OrderGroupsT;
+
+/*
+ * Structure: M D Incremental Refresh Book 32 Group
+ */ 
+typedef struct {
+    int64_t MdEntryPxOptional;
+    int32_t MdEntrySizeOptional;
+    int32_t SecurityId;
+    uint32_t RptSeq;
+    int32_t NumberOfOrdersOptional;
+    uint8_t MdPriceLevel;
+    uint8_t MdUpdateAction;
+    char MdEntryTypeBook;
+    char Padding5[5];
+} MDIncrementalRefreshBook32GroupT;
+
+/*
+ * Structure: M D Incremental Refresh Book 32 Groups
+ */ 
+typedef struct {
+    GroupSizeT GroupSize;
+} MDIncrementalRefreshBook32GroupsT;
+
+/*
+ * Structure: Security Status
  */ 
 typedef struct {
     uint64_t TransactTime;
@@ -791,21 +991,39 @@ typedef struct {
     uint8_t SecurityTradingStatus;
     uint8_t HaltReason;
     uint8_t SecurityTradingEvent;
-} SecurityStatus30T;
+} SecurityStatusT;
 
 /*
- * Structure: Admin Logout 16
+ * Structure: M D Instrument Definition Spread 29 Leg Group
+ */ 
+typedef struct {
+    int32_t LegSecurityId;
+    uint8_t LegSide;
+    int8_t LegRatioQty;
+    int64_t LegPricePricenull;
+    int32_t LegOptionDelta;
+} MDInstrumentDefinitionSpread29LegGroupT;
+
+/*
+ * Structure: M D Instrument Definition Spread 29 Leg Groups
+ */ 
+typedef struct {
+    GroupSizeT GroupSize;
+} MDInstrumentDefinitionSpread29LegGroupsT;
+
+/*
+ * Structure: Admin Logout
  */ 
 typedef struct {
     char Text[180];
-} AdminLogout16T;
+} AdminLogoutT;
 
 /*
- * Structure: Admin Login 15
+ * Structure: Admin Login
  */ 
 typedef struct {
     int8_t HeartBtInt;
-} AdminLogin15T;
+} AdminLoginT;
 
 /*
  * Structure: Channel Reset Group
@@ -822,12 +1040,12 @@ typedef struct {
 } ChannelResetGroupsT;
 
 /*
- * Structure: Channel Reset 4
+ * Structure: Channel Reset
  */ 
 typedef struct {
     uint64_t TransactTime;
     MatchEventIndicatorT MatchEventIndicator;
-} ChannelReset4T;
+} ChannelResetT;
 
 /*
  * Structure: Message Header

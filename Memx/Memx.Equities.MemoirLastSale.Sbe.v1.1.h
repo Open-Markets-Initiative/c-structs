@@ -7,11 +7,113 @@
  *******************************************************************************/
 
 /*
+ * Corrected Sale Condition 1 Values
+ */ 
+#define ENUM_CORRECTED_SALE_CONDITION_1_REGULAR = '@'
+
+/*
+ * Corrected Sale Condition 2 Values
+ */ 
+#define ENUM_CORRECTED_SALE_CONDITION_2_INTERMARKET_SWEEP = 'F'
+#define ENUM_CORRECTED_SALE_CONDITION_2_NOT_APPLICABLE = ' '
+
+/*
+ * Corrected Sale Condition 3 Values
+ */ 
+#define ENUM_CORRECTED_SALE_CONDITION_3_FORM_T = 'T'
+#define ENUM_CORRECTED_SALE_CONDITION_3_NOT_APPLICABLE = ' '
+
+/*
+ * Corrected Sale Condition 4 Values
+ */ 
+#define ENUM_CORRECTED_SALE_CONDITION_4_PRICE_VARIATION = 'H'
+#define ENUM_CORRECTED_SALE_CONDITION_4_ODD_LOT = 'I'
+#define ENUM_CORRECTED_SALE_CONDITION_4_CROSS = 'X'
+#define ENUM_CORRECTED_SALE_CONDITION_4_NOT_APPLICABLE = ' '
+
+/*
+ * Is Test Symbol Values
+ */ 
+#define ENUM_IS_TEST_SYMBOL_FALSE = 0
+#define ENUM_IS_TEST_SYMBOL_TRUE = 1
+
+/*
  * Message Type Values
  */ 
 #define ENUM_MESSAGE_TYPE_HEARTBEAT_MESSAGE = 0
 #define ENUM_MESSAGE_TYPE_SESSION_SHUTDOWN_MESSAGE = 1
 #define ENUM_MESSAGE_TYPE_SEQUENCED_MESSAGE = 2
+
+/*
+ * Original Sale Condition 1 Values
+ */ 
+#define ENUM_ORIGINAL_SALE_CONDITION_1_REGULAR = '@'
+
+/*
+ * Original Sale Condition 2 Values
+ */ 
+#define ENUM_ORIGINAL_SALE_CONDITION_2_INTERMARKET_SWEEP = 'F'
+#define ENUM_ORIGINAL_SALE_CONDITION_2_NOT_APPLICABLE = ' '
+
+/*
+ * Original Sale Condition 3 Values
+ */ 
+#define ENUM_ORIGINAL_SALE_CONDITION_3_FORM_T = 'T'
+#define ENUM_ORIGINAL_SALE_CONDITION_3_NOT_APPLICABLE = ' '
+
+/*
+ * Original Sale Condition 4 Values
+ */ 
+#define ENUM_ORIGINAL_SALE_CONDITION_4_PRICE_VARIATION = 'H'
+#define ENUM_ORIGINAL_SALE_CONDITION_4_ODD_LOT = 'I'
+#define ENUM_ORIGINAL_SALE_CONDITION_4_CROSS = 'X'
+#define ENUM_ORIGINAL_SALE_CONDITION_4_NOT_APPLICABLE = ' '
+
+/*
+ * Sale Condition 1 Values
+ */ 
+#define ENUM_SALE_CONDITION_1_REGULAR = '@'
+
+/*
+ * Sale Condition 2 Values
+ */ 
+#define ENUM_SALE_CONDITION_2_INTERMARKET_SWEEP = 'F'
+#define ENUM_SALE_CONDITION_2_NOT_APPLICABLE = ' '
+
+/*
+ * Sale Condition 3 Values
+ */ 
+#define ENUM_SALE_CONDITION_3_FORM_T = 'T'
+#define ENUM_SALE_CONDITION_3_NOT_APPLICABLE = ' '
+
+/*
+ * Sale Condition 4 Values
+ */ 
+#define ENUM_SALE_CONDITION_4_PRICE_VARIATION = 'H'
+#define ENUM_SALE_CONDITION_4_ODD_LOT = 'I'
+#define ENUM_SALE_CONDITION_4_CROSS = 'X'
+#define ENUM_SALE_CONDITION_4_NOT_APPLICABLE = ' '
+
+/*
+ * Security Trading Status Values
+ */ 
+#define ENUM_SECURITY_TRADING_STATUS_HALTED = 'H'
+#define ENUM_SECURITY_TRADING_STATUS_PAUSED = 'P'
+#define ENUM_SECURITY_TRADING_STATUS_QUOTING = 'Q'
+#define ENUM_SECURITY_TRADING_STATUS_TRADING = 'T'
+
+/*
+ * Security Trading Status Reason Values
+ */ 
+#define ENUM_SECURITY_TRADING_STATUS_REASON_NONE = 'X'
+#define ENUM_SECURITY_TRADING_STATUS_REASON_REGULATORY = 'R'
+#define ENUM_SECURITY_TRADING_STATUS_REASON_ADMINISTRATIVE = 'A'
+
+/*
+ * Short Sale Restriction Values
+ */ 
+#define ENUM_SHORT_SALE_RESTRICTION_FALSE = 0
+#define ENUM_SHORT_SALE_RESTRICTION_TRUE = 1
 
 /*
  * Template Id Values
@@ -23,6 +125,14 @@
 #define ENUM_TEMPLATE_ID_TRADE_REPORT_MESSAGE = 10
 #define ENUM_TEMPLATE_ID_TRADE_CANCEL_MESSAGE = 11
 #define ENUM_TEMPLATE_ID_TRADE_CORRECT_MESSAGE = 12
+
+/*
+ * Trading Session Values
+ */ 
+#define ENUM_TRADING_SESSION_OPENING = '1'
+#define ENUM_TRADING_SESSION_TRADING = '2'
+#define ENUM_TRADING_SESSION_POST_TRADING = '3'
+#define ENUM_TRADING_SESSION_CLOSED = '4'
 
 
 /*******************************************************************************
@@ -38,16 +148,16 @@ typedef struct {
     uint64_t TradeId;
     uint32_t OriginalTradeQty;
     int64_t OriginalTradePrice;
-    char OriginalSaleCondition1[1];
-    char OriginalSaleCondition2[1];
-    char OriginalSaleCondition3[1];
-    char OriginalSaleCondition4[1];
+    char OriginalSaleCondition1;
+    char OriginalSaleCondition2;
+    char OriginalSaleCondition3;
+    char OriginalSaleCondition4;
     uint32_t CorrectedTradeQty;
     int64_t CorrectedTradePrice;
-    char CorrectedSaleCondition1[1];
-    char CorrectedSaleCondition2[1];
-    char CorrectedSaleCondition3[1];
-    char CorrectedSaleCondition4[1];
+    char CorrectedSaleCondition1;
+    char CorrectedSaleCondition2;
+    char CorrectedSaleCondition3;
+    char CorrectedSaleCondition4;
 } TradeCorrectMessageT;
 
 /*
@@ -59,10 +169,10 @@ typedef struct {
     uint64_t TradeId;
     uint32_t TradeQty;
     int64_t LastPrice;
-    char SaleCondition1[1];
-    char SaleCondition2[1];
-    char SaleCondition3[1];
-    char SaleCondition4[1];
+    char SaleCondition1;
+    char SaleCondition2;
+    char SaleCondition3;
+    char SaleCondition4;
 } TradeCancelMessageT;
 
 /*
@@ -74,10 +184,10 @@ typedef struct {
     uint64_t TradeId;
     uint32_t TradeQty;
     int64_t TradePrice;
-    char SaleCondition1[1];
-    char SaleCondition2[1];
-    char SaleCondition3[1];
-    char SaleCondition4[1];
+    char SaleCondition1;
+    char SaleCondition2;
+    char SaleCondition3;
+    char SaleCondition4;
 } TradeReportMessageT;
 
 /*
@@ -85,7 +195,7 @@ typedef struct {
  */ 
 typedef struct {
     uint64_t Timestamp;
-    char TradingSession[1];
+    char TradingSession;
 } TradingSessionStatusMessageT;
 
 /*
@@ -94,8 +204,8 @@ typedef struct {
 typedef struct {
     uint64_t Timestamp;
     uint16_t SecurityId;
-    char SecurityTradingStatus[1];
-    char SecurityTradingStatusReason[1];
+    char SecurityTradingStatus;
+    char SecurityTradingStatusReason;
 } SecurityTradingStatusMessageT;
 
 /*

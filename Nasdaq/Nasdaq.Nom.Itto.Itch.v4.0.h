@@ -178,8 +178,8 @@ typedef struct {
     uint32_t CrossNumber;
     uint32_t MatchNumber;
     char CrossType;
-    uint16_t Price;
-    uint16_t Volume;
+    uint32_t PriceLong;
+    uint32_t VolumeLong;
 } OptionsCrossTradeMessageT;
 
 /*
@@ -192,8 +192,8 @@ typedef struct {
     uint32_t OptionId;
     uint32_t CrossNumber;
     uint32_t MatchNumber;
-    uint16_t Price;
-    uint16_t Volume;
+    uint32_t PriceLong;
+    uint32_t VolumeLong;
 } OptionsTradeMessagesNonAuctionT;
 
 /*
@@ -216,10 +216,10 @@ typedef struct {
     uint64_t BidReferenceNumber;
     uint64_t OriginalAskReferenceNumber;
     uint64_t AskReferenceNumber;
-    uint16_t BidPrice;
-    uint16_t BidSize;
-    uint16_t AskPrice;
-    uint16_t AskSize;
+    uint32_t BidPriceLong;
+    uint32_t BidSizeLong;
+    uint32_t AskPriceLong;
+    uint32_t AskSizeLong;
 } QuoteReplaceMessageLongFormT;
 
 /*
@@ -246,8 +246,8 @@ typedef struct {
     char Timestamp;
     uint64_t ReferenceNumber;
     char ChangeReason;
-    uint16_t Price;
-    uint16_t Volume;
+    uint32_t PriceLong;
+    uint32_t VolumeLong;
 } SingleSideChangeMessageT;
 
 /*
@@ -267,8 +267,8 @@ typedef struct {
     char Timestamp;
     uint64_t OriginalReferenceNumber;
     uint64_t NewReferenceNumber;
-    uint16_t Price;
-    uint16_t Volume;
+    uint32_t PriceLong;
+    uint32_t VolumeLong;
 } SingleSideReplaceMessageLongFormT;
 
 /*
@@ -303,8 +303,8 @@ typedef struct {
     uint32_t CrossNumber;
     uint32_t MatchNumber;
     char Printable;
-    uint16_t Price;
-    uint16_t Volume;
+    uint32_t PriceLong;
+    uint32_t VolumeLong;
 } SingleSideExecutedWithPriceMessageT;
 
 /*
@@ -329,9 +329,9 @@ typedef struct {
     uint64_t AskReferenceNumber;
     uint32_t OptionId;
     uint32_t Bid;
-    uint16_t BidSize;
+    uint32_t BidSizeLong;
     uint32_t Ask;
-    uint16_t AskSize;
+    uint32_t AskSizeLong;
 } AddQuoteMessageLongFormMessageT;
 
 /*
@@ -358,8 +358,8 @@ typedef struct {
     uint64_t OrderReferenceNumber;
     char MarketSide;
     uint32_t OptionId;
-    uint16_t Price;
-    uint16_t Volume;
+    uint32_t PriceLong;
+    uint32_t VolumeLong;
 } AddOrderMessageLongFormMessageT;
 
 /*

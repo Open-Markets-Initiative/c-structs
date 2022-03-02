@@ -28,6 +28,53 @@
 #define ENUM_BBO_INDICATOR_NOT_INCLUDED_IN_THE_BBO = ' '
 
 /*
+ * Control Message Type Values
+ */ 
+#define ENUM_CONTROL_MESSAGE_TYPE_START_OF_TEST_CYCLE = 'A'
+#define ENUM_CONTROL_MESSAGE_TYPE_END_OF_TEST_CYCLE = 'B'
+#define ENUM_CONTROL_MESSAGE_TYPE_START_OF_DAY = 'C'
+#define ENUM_CONTROL_MESSAGE_TYPE_GOOD_MORNING = 'D'
+#define ENUM_CONTROL_MESSAGE_TYPE_START_OF_SUMMARY = 'E'
+#define ENUM_CONTROL_MESSAGE_TYPE_END_OF_SUMMARY = 'F'
+#define ENUM_CONTROL_MESSAGE_TYPE_EARLY_MARKET_CLOSE = 'G'
+#define ENUM_CONTROL_MESSAGE_TYPE_END_OF_TRANSACTION_REPORTING = 'H'
+#define ENUM_CONTROL_MESSAGE_TYPE_GOOD_NIGHT = 'I'
+#define ENUM_CONTROL_MESSAGE_TYPE_END_OF_DAY = 'J'
+#define ENUM_CONTROL_MESSAGE_TYPE_RESET_BLOCK_SEQUENCE_NUMBER = 'K'
+#define ENUM_CONTROL_MESSAGE_TYPE_START_OF_OPEN_INTEREST = 'L'
+#define ENUM_CONTROL_MESSAGE_TYPE_END_OF_OPEN_INTEREST = 'M'
+#define ENUM_CONTROL_MESSAGE_TYPE_LINE_INTEGRITY = 'N'
+#define ENUM_CONTROL_MESSAGE_TYPE_DISASTER_RECOVERY_DATA_CENTER_ACTIVATION = 'P'
+
+/*
+ * Expiration Month Values
+ */ 
+#define ENUM_EXPIRATION_MONTH_JANUARY = 'A'
+#define ENUM_EXPIRATION_MONTH_JANUARY = 'M'
+#define ENUM_EXPIRATION_MONTH_FEBRUARY = 'B'
+#define ENUM_EXPIRATION_MONTH_FEBRUARY = 'N'
+#define ENUM_EXPIRATION_MONTH_MARCH = 'C'
+#define ENUM_EXPIRATION_MONTH_MARCH = 'O'
+#define ENUM_EXPIRATION_MONTH_APRIL = 'D'
+#define ENUM_EXPIRATION_MONTH_APRIL = 'P'
+#define ENUM_EXPIRATION_MONTH_MAY = 'E'
+#define ENUM_EXPIRATION_MONTH_MAY = 'Q'
+#define ENUM_EXPIRATION_MONTH_JUNE = 'F'
+#define ENUM_EXPIRATION_MONTH_JUNE = 'R'
+#define ENUM_EXPIRATION_MONTH_JULY = 'G'
+#define ENUM_EXPIRATION_MONTH_JULY = 'S'
+#define ENUM_EXPIRATION_MONTH_AUGUST = 'H'
+#define ENUM_EXPIRATION_MONTH_AUGUST = 'T'
+#define ENUM_EXPIRATION_MONTH_SEPTEMBER = 'I'
+#define ENUM_EXPIRATION_MONTH_SEPTEMBER = 'U'
+#define ENUM_EXPIRATION_MONTH_OCTOBER = 'J'
+#define ENUM_EXPIRATION_MONTH_OCTOBER = 'V'
+#define ENUM_EXPIRATION_MONTH_NOVEMBER = 'K'
+#define ENUM_EXPIRATION_MONTH_NOVEMBER = 'W'
+#define ENUM_EXPIRATION_MONTH_DECEMBER = 'L'
+#define ENUM_EXPIRATION_MONTH_DECEMBER = 'X'
+
+/*
  * Index Value Denominator Code Values
  */ 
 #define ENUM_INDEX_VALUE_DENOMINATOR_CODE_TEN = 'A'
@@ -85,6 +132,21 @@
 #define ENUM_PREMIUM_PRICE_DENOMINATOR_CODE_NO_FRACTION = 'I'
 
 /*
+ * Quote Message Type Values
+ */ 
+#define ENUM_QUOTE_MESSAGE_TYPE_REGULAR_TRADING = ' '
+#define ENUM_QUOTE_MESSAGE_TYPE_NON_FIRM_QUOTE = 'F'
+#define ENUM_QUOTE_MESSAGE_TYPE_INDICATIVE_VALUE = 'I'
+#define ENUM_QUOTE_MESSAGE_TYPE_ROTATION = 'R'
+#define ENUM_QUOTE_MESSAGE_TYPE_TRADING_HALTED = 'T'
+#define ENUM_QUOTE_MESSAGE_TYPE_ELIGIBLE_FOR_AUTOMATIC_EXECUTION = 'A'
+#define ENUM_QUOTE_MESSAGE_TYPE_BID_CONTAINS_CUSTOMER_TRADING_INTEREST = 'B'
+#define ENUM_QUOTE_MESSAGE_TYPE_OFFER_CONTAINS_CUSTOMER_TRADING_INTEREST = 'O'
+#define ENUM_QUOTE_MESSAGE_TYPE_BOTH_BID_AND_OFFER_CONTAIN_CUSTOMER_TRADING_INTEREST = 'C'
+#define ENUM_QUOTE_MESSAGE_TYPE_OFFER_SIDE_OF_QUOTE_NOT_FIRM_BID_SIDE_FIRM = 'X'
+#define ENUM_QUOTE_MESSAGE_TYPE_BID_SIDE_OF_QUOTE_NOT_FIRM_OFFER_SIDE_FIRM = 'Y'
+
+/*
  * Session Indicator Values
  */ 
 #define ENUM_SESSION_INDICATOR_REGULAR = 0
@@ -99,6 +161,32 @@
 #define ENUM_STRIKE_PRICE_DENOMINATOR_CODE_TEN_THOUSAND = 'D'
 #define ENUM_STRIKE_PRICE_DENOMINATOR_CODE_HUNDRED_THOUSAND = 'E'
 #define ENUM_STRIKE_PRICE_DENOMINATOR_CODE_NO_FRACTION = 'I'
+
+/*
+ * Trade Message Type Values
+ */ 
+#define ENUM_TRADE_MESSAGE_TYPE_REGULAR = ' '
+#define ENUM_TRADE_MESSAGE_TYPE_CANC = 'A'
+#define ENUM_TRADE_MESSAGE_TYPE_OSEQ = 'B'
+#define ENUM_TRADE_MESSAGE_TYPE_CNCL = 'C'
+#define ENUM_TRADE_MESSAGE_TYPE_LATE = 'D'
+#define ENUM_TRADE_MESSAGE_TYPE_CNCO = 'E'
+#define ENUM_TRADE_MESSAGE_TYPE_OPEN = 'F'
+#define ENUM_TRADE_MESSAGE_TYPE_CNOL = 'G'
+#define ENUM_TRADE_MESSAGE_TYPE_OPNL = 'H'
+#define ENUM_TRADE_MESSAGE_TYPE_AUTO = 'I'
+#define ENUM_TRADE_MESSAGE_TYPE_REOP = 'J'
+#define ENUM_TRADE_MESSAGE_TYPE_AJST = 'K'
+#define ENUM_TRADE_MESSAGE_TYPE_SPRD = 'L'
+#define ENUM_TRADE_MESSAGE_TYPE_STDL = 'M'
+#define ENUM_TRADE_MESSAGE_TYPE_STPD = 'N'
+#define ENUM_TRADE_MESSAGE_TYPE_CSTP = 'O'
+#define ENUM_TRADE_MESSAGE_TYPE_BWRT = 'P'
+#define ENUM_TRADE_MESSAGE_TYPE_CMBO = 'Q'
+#define ENUM_TRADE_MESSAGE_TYPE_SPIM = 'R'
+#define ENUM_TRADE_MESSAGE_TYPE_ISOI = 'S'
+#define ENUM_TRADE_MESSAGE_TYPE_BNMT = 'T'
+#define ENUM_TRADE_MESSAGE_TYPE_XMPT = 'X'
 
 /*
  * Underlying Price Denominator Code Values
@@ -169,7 +257,7 @@ typedef struct {
  * Structure: Control Message
  */ 
 typedef struct {
-    char ControlMessageType[0];
+    char ControlMessageType;
     char MessageIndicator[1];
     uint64_t TransactionId;
     uint16_t MessageDataLength;
@@ -206,6 +294,15 @@ typedef struct {
 } BestBidAppendageT;
 
 /*
+ * Structure: Expiration Block
+ */ 
+typedef struct {
+    char ExpirationMonth;
+    uint8_t ExpirationDay;
+    uint8_t ExpirationYear;
+} ExpirationBlockT;
+
+/*
  * Structure: Equity And Index End Of Day Summary Message
  */ 
 typedef struct {
@@ -214,7 +311,7 @@ typedef struct {
     uint64_t TransactionId;
     char SecuritySymbol[5];
     char Reserved1[1];
-    char ExpirationBlock[0];
+    ExpirationBlockT ExpirationBlock;
     char StrikePriceDenominatorCode;
     uint32_t StrikePrice;
     uint32_t Volume;
@@ -240,7 +337,7 @@ typedef struct {
     uint64_t TransactionId;
     char SecuritySymbol[5];
     char Reserved1[1];
-    char ExpirationBlock[0];
+    ExpirationBlockT ExpirationBlock;
     char StrikePriceDenominatorCode;
     uint32_t StrikePrice;
     uint32_t OpenInterestVolume;
@@ -250,12 +347,12 @@ typedef struct {
  * Structure: Equity And Index Last Sale Message
  */ 
 typedef struct {
-    char TradeMessageType[0];
+    char TradeMessageType;
     char MessageIndicator[1];
     uint64_t TransactionId;
     char SecuritySymbol[5];
     char Reserved1[1];
-    char ExpirationBlock[0];
+    ExpirationBlockT ExpirationBlock;
     char StrikePriceDenominatorCode;
     uint32_t StrikePrice;
     uint32_t Volume;

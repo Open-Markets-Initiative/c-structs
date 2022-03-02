@@ -139,11 +139,11 @@ typedef struct {
 } MDIncrementalRefreshHighLowGroupsT;
 
 /*
- * Structure: Md Incremental Refresh High Low 403
+ * Structure: Md Incremental Refresh High Low
  */ 
 typedef struct {
     uint64_t TransactTime;
-} MdIncrementalRefreshHighLow403T;
+} MdIncrementalRefreshHighLowT;
 
 /*
  * Structure: M D Incremental Refresh Voi Group
@@ -178,11 +178,11 @@ typedef struct {
 } MDIncrementalRefreshVoiGroupsT;
 
 /*
- * Structure: Md Incremental Refresh Vo I 402
+ * Structure: Md Incremental Refresh Voi
  */ 
 typedef struct {
     uint64_t TransactTime;
-} MdIncrementalRefreshVoI402T;
+} MdIncrementalRefreshVoiT;
 
 /*
  * Bitfield: Settl Price Type
@@ -242,11 +242,11 @@ typedef struct {
 } MDIncrementalRefreshSettleGroupsT;
 
 /*
- * Structure: Md Incremental Refresh Settle 401
+ * Structure: Md Incremental Refresh Settle
  */ 
 typedef struct {
     uint64_t TransactTime;
-} MdIncrementalRefreshSettle401T;
+} MdIncrementalRefreshSettleT;
 
 /*
  * Structure: Message Header

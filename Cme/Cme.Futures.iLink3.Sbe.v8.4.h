@@ -533,7 +533,7 @@ typedef struct {
 } MaturityMonthYearT;
 
 /*
- * Structure: Security Definition Response 561
+ * Structure: Security Definition Response
  */ 
 typedef struct {
     uint32_t SeqNum;
@@ -564,7 +564,7 @@ typedef struct {
     uint8_t SplitMsg;
     uint8_t AutoQuoteRequest;
     uint8_t PossRetransFlag;
-} SecurityDefinitionResponse561T;
+} SecurityDefinitionResponseT;
 
 /*
  * Structure: Security Definition Request Leg Group
@@ -585,7 +585,7 @@ typedef struct {
 } SecurityDefinitionRequestLegGroupsT;
 
 /*
- * Structure: Security Definition Request 560
+ * Structure: Security Definition Request
  */ 
 typedef struct {
     uint64_t PartyDetailsListReqId;
@@ -600,7 +600,7 @@ typedef struct {
     uint16_t EndDate;
     uint8_t MaxNoOfSubstitutions;
     int32_t SourceRepoId;
-} SecurityDefinitionRequest560T;
+} SecurityDefinitionRequestT;
 
 /*
  * Structure: Affected Orders Group
@@ -619,7 +619,7 @@ typedef struct {
 } AffectedOrdersGroupsT;
 
 /*
- * Structure: Order Mass Action Report 558
+ * Structure: Order Mass Action Report
  */ 
 typedef struct {
     uint32_t SeqNum;
@@ -649,7 +649,7 @@ typedef struct {
     uint8_t LiquidityFlag;
     uint8_t PossRetransFlag;
     uint64_t DelayToTime;
-} OrderMassActionReport558T;
+} OrderMassActionReportT;
 
 /*
  * Structure: Execution Report Trade Addendum Spread Leg Order Event Group
@@ -796,7 +796,7 @@ typedef struct {
 } QuoteCancelAckEntryGroupsT;
 
 /*
- * Structure: Request For Quote Ack 546
+ * Structure: Request For Quote Ack
  */ 
 typedef struct {
     uint32_t SeqNum;
@@ -816,7 +816,7 @@ typedef struct {
     uint8_t SplitMsg;
     uint8_t PossRetransFlag;
     uint64_t DelayToTime;
-} RequestForQuoteAck546T;
+} RequestForQuoteAckT;
 
 /*
  * Structure: Mass Quote Ack Entry Group
@@ -836,7 +836,7 @@ typedef struct {
 } MassQuoteAckEntryGroupsT;
 
 /*
- * Structure: Mass Quote Ack 545
+ * Structure: Mass Quote Ack
  */ 
 typedef struct {
     uint32_t SeqNum;
@@ -861,7 +861,7 @@ typedef struct {
     uint8_t TotNoQuoteEntriesOptional;
     uint8_t PossRetransFlag;
     uint64_t DelayToTime;
-} MassQuoteAck545T;
+} MassQuoteAckT;
 
 /*
  * Structure: Sides Group
@@ -882,7 +882,7 @@ typedef struct {
 } SidesGroupsT;
 
 /*
- * Structure: New Order Cross 544
+ * Structure: New Order Cross
  */ 
 typedef struct {
     uint64_t CrossId;
@@ -895,7 +895,7 @@ typedef struct {
     uint64_t SendingTimeEpoch;
     char Location[5];
     int32_t SecurityId;
-} NewOrderCross544T;
+} NewOrderCrossT;
 
 /*
  * Structure: Related Sym Group
@@ -914,7 +914,7 @@ typedef struct {
 } RelatedSymGroupsT;
 
 /*
- * Structure: Request For Quote 543
+ * Structure: Request For Quote
  */ 
 typedef struct {
     uint64_t PartyDetailsListReqId;
@@ -925,10 +925,10 @@ typedef struct {
     uint64_t SendingTimeEpoch;
     char Location[5];
     uint8_t QuoteType;
-} RequestForQuote543T;
+} RequestForQuoteT;
 
 /*
- * Structure: Execution Ack 539
+ * Structure: Execution Ack
  */ 
 typedef struct {
     uint64_t PartyDetailsListReqId;
@@ -943,7 +943,7 @@ typedef struct {
     char DkReason;
     uint8_t Side;
     char SenderId[20];
-} ExecutionAck539T;
+} ExecutionAckT;
 
 /*
  * Structure: Trd Reg Publications Group
@@ -1008,7 +1008,7 @@ typedef struct {
 } RequestingPartyIDsGroupsT;
 
 /*
- * Structure: Order Cancel Replace Reject 536
+ * Structure: Order Cancel Replace Reject
  */ 
 typedef struct {
     uint32_t SeqNum;
@@ -1030,10 +1030,10 @@ typedef struct {
     uint8_t SplitMsg;
     uint8_t LiquidityFlag;
     uint64_t DelayToTime;
-} OrderCancelReplaceReject536T;
+} OrderCancelReplaceRejectT;
 
 /*
- * Structure: Order Cancel Reject 535
+ * Structure: Order Cancel Reject
  */ 
 typedef struct {
     uint32_t SeqNum;
@@ -1055,10 +1055,10 @@ typedef struct {
     uint8_t SplitMsg;
     uint8_t LiquidityFlag;
     uint64_t DelayToTime;
-} OrderCancelReject535T;
+} OrderCancelRejectT;
 
 /*
- * Structure: Execution Report Cancel 534
+ * Structure: Execution Report Cancel
  */ 
 typedef struct {
     uint32_t SeqNum;
@@ -1097,10 +1097,10 @@ typedef struct {
     uint8_t ManagedOrder;
     uint8_t ShortSaleType;
     uint64_t DelayToTime;
-} ExecutionReportCancel534T;
+} ExecutionReportCancelT;
 
 /*
- * Structure: Order Status Request 533
+ * Structure: Order Status Request
  */ 
 typedef struct {
     uint64_t PartyDetailsListReqId;
@@ -1111,10 +1111,10 @@ typedef struct {
     uint64_t OrderId;
     uint64_t SendingTimeEpoch;
     char Location[5];
-} OrderStatusRequest533T;
+} OrderStatusRequestT;
 
 /*
- * Structure: Execution Report Status 532
+ * Structure: Execution Report Status
  */ 
 typedef struct {
     uint32_t SeqNum;
@@ -1155,10 +1155,10 @@ typedef struct {
     uint8_t LiquidityFlag;
     uint8_t ManagedOrder;
     uint8_t ShortSaleType;
-} ExecutionReportStatus532T;
+} ExecutionReportStatusT;
 
 /*
- * Structure: Execution Report Modify 531
+ * Structure: Execution Report Modify
  */ 
 typedef struct {
     uint32_t SeqNum;
@@ -1197,10 +1197,10 @@ typedef struct {
     uint8_t ManagedOrder;
     uint8_t ShortSaleType;
     uint64_t DelayToTime;
-} ExecutionReportModify531T;
+} ExecutionReportModifyT;
 
 /*
- * Structure: Order Mass Status Request 530
+ * Structure: Order Mass Status Request
  */ 
 typedef struct {
     uint64_t PartyDetailsListReqId;
@@ -1216,10 +1216,10 @@ typedef struct {
     uint8_t OrdStatusReqType;
     uint8_t MassStatusTif;
     uint8_t MarketSegmentId;
-} OrderMassStatusRequest530T;
+} OrderMassStatusRequestT;
 
 /*
- * Structure: Order Mass Action Request 529
+ * Structure: Order Mass Action Request
  */ 
 typedef struct {
     uint64_t PartyDetailsListReqId;
@@ -1238,7 +1238,7 @@ typedef struct {
     char MassActionOrdTyp;
     uint8_t MassCancelTif;
     uint8_t LiquidityFlag;
-} OrderMassActionRequest529T;
+} OrderMassActionRequestT;
 
 /*
  * Structure: Quote Cancel Set Group
@@ -1380,7 +1380,7 @@ typedef struct {
 } ExecutionReportTradeOutrightOrderEventGroupsT;
 
 /*
- * Structure: Execution Report Elimination 524
+ * Structure: Execution Report Elimination
  */ 
 typedef struct {
     uint32_t SeqNum;
@@ -1415,10 +1415,10 @@ typedef struct {
     uint8_t LiquidityFlag;
     uint8_t ManagedOrder;
     uint8_t ShortSaleType;
-} ExecutionReportElimination524T;
+} ExecutionReportEliminationT;
 
 /*
- * Structure: Execution Report Reject 523
+ * Structure: Execution Report Reject
  */ 
 typedef struct {
     uint32_t SeqNum;
@@ -1457,10 +1457,10 @@ typedef struct {
     uint8_t ManagedOrder;
     uint8_t ShortSaleType;
     uint64_t DelayToTime;
-} ExecutionReportReject523T;
+} ExecutionReportRejectT;
 
 /*
- * Structure: Execution Report New 522
+ * Structure: Execution Report New
  */ 
 typedef struct {
     uint32_t SeqNum;
@@ -1497,10 +1497,10 @@ typedef struct {
     uint8_t ManagedOrder;
     uint8_t ShortSaleType;
     uint64_t DelayToTime;
-} ExecutionReportNew522T;
+} ExecutionReportNewT;
 
 /*
- * Structure: Business Reject 521
+ * Structure: Business Reject
  */ 
 typedef struct {
     uint32_t SeqNum;
@@ -1518,7 +1518,7 @@ typedef struct {
     uint8_t PossRetransFlag;
     uint8_t ManualOrderIndicatorOptional;
     uint8_t SplitMsg;
-} BusinessReject521T;
+} BusinessRejectT;
 
 /*
  * Structure: Mass Quote Entry Group
@@ -1542,7 +1542,7 @@ typedef struct {
 } MassQuoteEntryGroupsT;
 
 /*
- * Structure: Mass Quote 517
+ * Structure: Mass Quote
  */ 
 typedef struct {
     uint64_t PartyDetailsListReqId;
@@ -1557,10 +1557,10 @@ typedef struct {
     uint8_t MmProtectionReset;
     uint8_t LiquidityFlag;
     uint8_t ShortSaleType;
-} MassQuote517T;
+} MassQuoteT;
 
 /*
- * Structure: Order Cancel Request 516
+ * Structure: Order Cancel Request
  */ 
 typedef struct {
     uint64_t OrderId;
@@ -1575,10 +1575,10 @@ typedef struct {
     int32_t SecurityId;
     uint8_t Side;
     uint8_t LiquidityFlag;
-} OrderCancelRequest516T;
+} OrderCancelRequestT;
 
 /*
- * Structure: Order Cancel Replace Request 515
+ * Structure: Order Cancel Replace Request
  */ 
 typedef struct {
     int64_t PriceOptional;
@@ -1606,10 +1606,10 @@ typedef struct {
     uint8_t LiquidityFlag;
     uint8_t ManagedOrder;
     uint8_t ShortSaleType;
-} OrderCancelReplaceRequest515T;
+} OrderCancelReplaceRequestT;
 
 /*
- * Structure: New Order Single 514
+ * Structure: New Order Single
  */ 
 typedef struct {
     int64_t PriceOptional;
@@ -1635,20 +1635,20 @@ typedef struct {
     uint8_t LiquidityFlag;
     uint8_t ManagedOrder;
     uint8_t ShortSaleType;
-} NewOrderSingle514T;
+} NewOrderSingleT;
 
 /*
- * Structure: Not Applied 513
+ * Structure: Not Applied
  */ 
 typedef struct {
     uint64_t Uuid;
     uint32_t FromSeqNo;
     uint32_t MsgCount;
     uint8_t SplitMsg;
-} NotApplied513T;
+} NotAppliedT;
 
 /*
- * Structure: Retransmit Reject 510
+ * Structure: Retransmit Reject
  */ 
 typedef struct {
     char Reason[48];
@@ -1657,10 +1657,10 @@ typedef struct {
     uint64_t RequestTimestamp;
     uint16_t ErrorCodes;
     uint8_t SplitMsg;
-} RetransmitReject510T;
+} RetransmitRejectT;
 
 /*
- * Structure: Retransmission 509
+ * Structure: Retransmission
  */ 
 typedef struct {
     uint64_t Uuid;
@@ -1669,10 +1669,10 @@ typedef struct {
     uint32_t FromSeqNo;
     uint16_t MsgCount16;
     uint8_t SplitMsg;
-} Retransmission509T;
+} RetransmissionT;
 
 /*
- * Structure: Retransmit Request 508
+ * Structure: Retransmit Request
  */ 
 typedef struct {
     uint64_t Uuid;
@@ -1680,10 +1680,10 @@ typedef struct {
     uint64_t RequestTimestamp;
     uint32_t FromSeqNo;
     uint16_t MsgCount16;
-} RetransmitRequest508T;
+} RetransmitRequestT;
 
 /*
- * Structure: Terminate 507
+ * Structure: Terminate
  */ 
 typedef struct {
     char Reason[48];
@@ -1691,20 +1691,20 @@ typedef struct {
     uint64_t RequestTimestamp;
     uint16_t ErrorCodes;
     uint8_t SplitMsg;
-} Terminate507T;
+} TerminateT;
 
 /*
- * Structure: Sequence 506
+ * Structure: Sequence
  */ 
 typedef struct {
     uint64_t Uuid;
     uint32_t NextSeqNo;
     uint8_t FaultToleranceIndicator;
     uint8_t KeepAliveIntervalLapsed;
-} Sequence506T;
+} SequenceT;
 
 /*
- * Structure: Establishment Reject 505
+ * Structure: Establishment Reject
  */ 
 typedef struct {
     char Reason[48];
@@ -1714,10 +1714,10 @@ typedef struct {
     uint16_t ErrorCodes;
     uint8_t FaultToleranceIndicator;
     uint8_t SplitMsg;
-} EstablishmentReject505T;
+} EstablishmentRejectT;
 
 /*
- * Structure: Establishment Ack 504
+ * Structure: Establishment Ack
  */ 
 typedef struct {
     uint64_t Uuid;
@@ -1729,7 +1729,7 @@ typedef struct {
     uint16_t SecretKeySecureIdExpiration;
     uint8_t FaultToleranceIndicator;
     uint8_t SplitMsg;
-} EstablishmentAck504T;
+} EstablishmentAckT;
 
 /*
  * Structure: Credentials
@@ -1739,7 +1739,7 @@ typedef struct {
 } CredentialsT;
 
 /*
- * Structure: Establish 503
+ * Structure: Establish
  */ 
 typedef struct {
     char HmacSignature[32];
@@ -1753,10 +1753,10 @@ typedef struct {
     char Session[3];
     char Firm[5];
     uint16_t KeepAliveInterval;
-} Establish503T;
+} EstablishT;
 
 /*
- * Structure: Negotiation Reject 502
+ * Structure: Negotiation Reject
  */ 
 typedef struct {
     char Reason[48];
@@ -1765,10 +1765,10 @@ typedef struct {
     uint16_t ErrorCodes;
     uint8_t FaultToleranceIndicator;
     uint8_t SplitMsg;
-} NegotiationReject502T;
+} NegotiationRejectT;
 
 /*
- * Structure: Negotiation Response 501
+ * Structure: Negotiation Response
  */ 
 typedef struct {
     uint64_t Uuid;
@@ -1778,10 +1778,10 @@ typedef struct {
     uint8_t SplitMsg;
     uint32_t PreviousSeqNo;
     uint64_t PreviousUuid;
-} NegotiationResponse501T;
+} NegotiationResponseT;
 
 /*
- * Structure: Negotiate 500
+ * Structure: Negotiate
  */ 
 typedef struct {
     char HmacSignature[32];
@@ -1790,7 +1790,7 @@ typedef struct {
     uint64_t RequestTimestamp;
     char Session[3];
     char Firm[5];
-} Negotiate500T;
+} NegotiateT;
 
 /*
  * Structure: Message Header

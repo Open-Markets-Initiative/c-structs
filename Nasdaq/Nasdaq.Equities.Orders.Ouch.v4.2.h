@@ -25,6 +25,24 @@
 #define ENUM_BUY_SELL_INDICATOR_SELL_SHORT_EXEMPT = 'E'
 
 /*
+ * Cancel Order Reason Values
+ */ 
+#define ENUM_CANCEL_ORDER_REASON_USER_REQUESTED_CANCEL = 'U'
+#define ENUM_CANCEL_ORDER_REASON_IMMEDIATE_OR_CANCEL_ORDER = 'I'
+#define ENUM_CANCEL_ORDER_REASON_TIMEOUT = 'T'
+#define ENUM_CANCEL_ORDER_REASON_SUPERVISORY = 'S'
+#define ENUM_CANCEL_ORDER_REASON_THIS_ORDER_CANNOT_BE_EXECUTED_BECAUSE_OF_A_REGULATORY_RESTRICTION = 'D'
+#define ENUM_CANCEL_ORDER_REASON_SELF_MATCH_PREVENTION = 'Q'
+#define ENUM_CANCEL_ORDER_REASON_SYSTEM_CANCEL = 'Z'
+#define ENUM_CANCEL_ORDER_REASON_CROSS_CANCELED = 'C'
+#define ENUM_CANCEL_ORDER_REASON_THIS_ORDER_CANNOT_BE_EXECUTED = 'K'
+#define ENUM_CANCEL_ORDER_REASON_HALTED = 'H'
+#define ENUM_CANCEL_ORDER_REASON_OPEN_PROTECTION = 'X'
+#define ENUM_CANCEL_ORDER_REASON_CLOSED = 'E'
+#define ENUM_CANCEL_ORDER_REASON_POST_ONLY_CANCEL = 'F'
+#define ENUM_CANCEL_ORDER_REASON_POST_ONLY_CANCEL = 'G'
+
+/*
  * Capacity Values
  */ 
 #define ENUM_CAPACITY_OTHER = 'O'
@@ -48,6 +66,7 @@
  */ 
 #define ENUM_CUSTOMER_TYPE_RETAIL_DESIGNATED = 'R'
 #define ENUM_CUSTOMER_TYPE_NOT_A_RETAIL_DESIGNATED = 'N'
+#define ENUM_CUSTOMER_TYPE_DEFAULT = ' '
 
 /*
  * Display Values
@@ -78,6 +97,36 @@
 #define ENUM_INTERMARKET_SWEEP_ELIGIBILITY_ELIGIBLE = 'Y'
 #define ENUM_INTERMARKET_SWEEP_ELIGIBILITY_NOT_ELIGIBLE = 'N'
 #define ENUM_INTERMARKET_SWEEP_ELIGIBILITY_TRADEAT = 'y'
+
+/*
+ * Liquidity Flag Values
+ */ 
+#define ENUM_LIQUIDITY_FLAG_ADDED = 'A'
+#define ENUM_LIQUIDITY_FLAG_REMOVED = 'R'
+#define ENUM_LIQUIDITY_FLAG_OPENING = 'O'
+#define ENUM_LIQUIDITY_FLAG_OPENING_CROSS = 'M'
+#define ENUM_LIQUIDITY_FLAG_CLOSING = 'C'
+#define ENUM_LIQUIDITY_FLAG_CLOSING_CROSS = 'L'
+#define ENUM_LIQUIDITY_FLAG_HALT_IPO = 'H'
+#define ENUM_LIQUIDITY_FLAG_HALT = 'K'
+#define ENUM_LIQUIDITY_FLAG_NONDISPLAYED = 'J'
+#define ENUM_LIQUIDITY_FLAG_ADDED = 'W'
+#define ENUM_LIQUIDITY_FLAG_REMOVED = 'm'
+#define ENUM_LIQUIDITY_FLAG_ADDED = 'k'
+#define ENUM_LIQUIDITY_FLAG_SUPPLEMENTAL = '0'
+#define ENUM_LIQUIDITY_FLAG_DISPLAYED = '7'
+#define ENUM_LIQUIDITY_FLAG_DISPLAYED = '8'
+#define ENUM_LIQUIDITY_FLAG_RETAIL_DESIGNATED = 'd'
+#define ENUM_LIQUIDITY_FLAG_RETAIL_DESIGNATED = 'e'
+#define ENUM_LIQUIDITY_FLAG_RETAIL_DESIGNATED = 'f'
+#define ENUM_LIQUIDITY_FLAG_RPI_RETAIL_PRICE_IMPROVING = 'j'
+#define ENUM_LIQUIDITY_FLAG_RETAIL_ORDER = 'r'
+#define ENUM_LIQUIDITY_FLAG_RETAIL_ORDER = 't'
+#define ENUM_LIQUIDITY_FLAG_ADDED = '4'
+#define ENUM_LIQUIDITY_FLAG_ADDED = '5'
+#define ENUM_LIQUIDITY_FLAG_REMOVED = '6'
+#define ENUM_LIQUIDITY_FLAG_ADDED = 'g'
+#define ENUM_LIQUIDITY_FLAG_MIDPOINT = 'n'
 
 /*
  * Message Type Values
@@ -170,7 +219,7 @@ typedef struct {
 typedef struct {
     uint64_t Timestamp;
     char OrderToken[14];
-    char Reason[1];
+    char RejectedOrderReason[1];
 } RejectedOrderMessageT;
 
 /*
@@ -181,7 +230,7 @@ typedef struct {
     char OrderToken[14];
     uint32_t ExecutedShares;
     uint32_t ExecutionPrice;
-    char LiquidityFlag[1];
+    char LiquidityFlag;
     uint64_t MatchNumber;
     char Reason[1];
 } TradeCorrectionMessageT;
@@ -194,7 +243,7 @@ typedef struct {
     char OrderToken[14];
     uint32_t ExecutedShares;
     uint32_t ExecutionPrice;
-    char LiquidityFlag[1];
+    char LiquidityFlag;
     uint64_t MatchNumber;
     uint32_t ReferencePrice;
     char ReferencePriceType[1];
@@ -207,7 +256,7 @@ typedef struct {
     uint64_t Timestamp;
     char OrderToken[14];
     uint64_t MatchNumber;
-    char Reason[1];
+    char BrokenTradeReason[1];
 } BrokenTradeMessageT;
 
 /*
@@ -218,7 +267,7 @@ typedef struct {
     char OrderToken[14];
     uint32_t ExecutedShares;
     uint32_t ExecutionPrice;
-    char LiquidityFlag[1];
+    char LiquidityFlag;
     uint64_t MatchNumber;
 } ExecutedMessageT;
 
@@ -229,10 +278,10 @@ typedef struct {
     uint64_t Timestamp;
     char OrderToken[14];
     uint32_t DecrementShares;
-    char Reason[1];
+    char CancelOrderReason;
     uint32_t QuantityPreventedFromTrading;
     uint32_t ExecutionPrice;
-    char LiquidityFlag[1];
+    char LiquidityFlag;
 } AiqCancelledMessageT;
 
 /*
@@ -242,7 +291,7 @@ typedef struct {
     uint64_t Timestamp;
     char OrderToken[14];
     uint32_t DecrementShares;
-    char Reason[1];
+    char CancelOrderReason;
 } CanceledMessageT;
 
 /*
@@ -440,9 +489,15 @@ typedef struct {
 } PacketHeaderT;
 
 /*
- * Structure: Packet
+ * Structure: Soup Bin Tcp Packet
  */ 
 typedef struct {
     PacketHeaderT PacketHeader;
+} SoupBinTcpPacketT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
 } PacketT;
 

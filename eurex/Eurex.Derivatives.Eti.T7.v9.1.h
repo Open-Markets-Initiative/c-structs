@@ -84,8 +84,7 @@
 #define ENUM_COMPRESSION_ACTION_START_COMPRESSION = 1
 #define ENUM_COMPRESSION_ACTION_COMMIT_COMPRESSION = 2
 #define ENUM_COMPRESSION_ACTION_CANCEL_COMPRESSION = 3
-#define ENUM_COMPRESSION_ACTION_INQUIRE_COMPRESSION = 4
-#define ENUM_COMPRESSION_ACTION_COMPRESSION_ACTION_MINIMUM_VALUE = 4
+#define ENUM_COMPRESSION_ACTION_COMPRESSION_ACTION_MINIMUM_VALUE = 3
 #define ENUM_COMPRESSION_ACTION_COMPRESSION_ACTION_MINIMUM_VALUE = 1
 
 /*
@@ -500,14 +499,6 @@
 #define ENUM_MULTILEG_PRICE_MODEL_MULTILEG_PRICE_MODEL_MINIMUM_VALUE = 0
 
 /*
- * Negotiate Underlying Values
- */ 
-#define ENUM_NEGOTIATE_UNDERLYING_NO = 0
-#define ENUM_NEGOTIATE_UNDERLYING_YES = 1
-#define ENUM_NEGOTIATE_UNDERLYING_NEGOTIATE_UNDERLYING_MINIMUM_VALUE = 1
-#define ENUM_NEGOTIATE_UNDERLYING_NEGOTIATE_UNDERLYING_MINIMUM_VALUE = 0
-
-/*
  * Number Of Resp Disclosure Instruction Values
  */ 
 #define ENUM_NUMBER_OF_RESP_DISCLOSURE_INSTRUCTION_NO = 0
@@ -824,15 +815,6 @@
 #define ENUM_QUOTE_INSTRUCTION_QUOTE_INSTRUCTION_MINIMUM_VALUE = 0
 
 /*
- * Quote Ref Price Source Values
- */ 
-#define ENUM_QUOTE_REF_PRICE_SOURCE_UNDERLYING = 1
-#define ENUM_QUOTE_REF_PRICE_SOURCE_CUSTOM_UNDERLYING_PRICE = 2
-#define ENUM_QUOTE_REF_PRICE_SOURCE_REF_PRICE = 3
-#define ENUM_QUOTE_REF_PRICE_SOURCE_QUOTE_REF_PRICE_SOURCE_MINIMUM_VALUE = 3
-#define ENUM_QUOTE_REF_PRICE_SOURCE_QUOTE_REF_PRICE_SOURCE_MINIMUM_VALUE = 1
-
-/*
  * Quote Size Type Values
  */ 
 #define ENUM_QUOTE_SIZE_TYPE_TOTAL_SIZE = 1
@@ -854,7 +836,11 @@
  */ 
 #define ENUM_QUOTE_SUB_TYPE_WORKING_DELTA = 1
 #define ENUM_QUOTE_SUB_TYPE_BASIS_TRADE = 2
-#define ENUM_QUOTE_SUB_TYPE_QUOTE_SUB_TYPE_MINIMUM_VALUE = 2
+#define ENUM_QUOTE_SUB_TYPE_REGULAR = 3
+#define ENUM_QUOTE_SUB_TYPE_NEGOTIATE_UNDERLYING_OUTSIDE_EXCHANGE = 4
+#define ENUM_QUOTE_SUB_TYPE_VOLA_STRATEGY_FIX = 5
+#define ENUM_QUOTE_SUB_TYPE_VOLA_STRATEGY_NEGOTIATE_UNDERLYING = 6
+#define ENUM_QUOTE_SUB_TYPE_QUOTE_SUB_TYPE_MINIMUM_VALUE = 6
 #define ENUM_QUOTE_SUB_TYPE_QUOTE_SUB_TYPE_MINIMUM_VALUE = 1
 
 /*
@@ -863,7 +849,7 @@
 #define ENUM_QUOTE_TYPE_INDICATIVE = 0
 #define ENUM_QUOTE_TYPE_TRADEABLE = 1
 #define ENUM_QUOTE_TYPE_TRADEABLE_BOC = 100
-#define ENUM_QUOTE_TYPE_QUOTE_TYPE_MINIMUM_VALUE = 103
+#define ENUM_QUOTE_TYPE_QUOTE_TYPE_MINIMUM_VALUE = 104
 #define ENUM_QUOTE_TYPE_QUOTE_TYPE_MINIMUM_VALUE = 0
 
 /*
@@ -1143,6 +1129,14 @@
 #define ENUM_SKIP_VALIDATIONS_SKIP_VALIDATIONS_MINIMUM_VALUE = 0
 
 /*
+ * Swap Clearer Values
+ */ 
+#define ENUM_SWAP_CLEARER_ECAG = 0
+#define ENUM_SWAP_CLEARER_NONECAG = 1
+#define ENUM_SWAP_CLEARER_SWAP_CLEARER_MINIMUM_VALUE = 1
+#define ENUM_SWAP_CLEARER_SWAP_CLEARER_MINIMUM_VALUE = 0
+
+/*
  * T 7 Entry Service Rtm Status Values
  */ 
 #define ENUM_T7_ENTRY_SERVICE_RTM_STATUS_UNAVAILABLE = 0
@@ -1266,14 +1260,6 @@
 #define ENUM_TRADE_TO_QUOTE_RATIO_RANKING_TRADE_TO_QUOTE_RATIO_RANKING_MINIMUM_VALUE = 1
 
 /*
- * Trade Underlying Values
- */ 
-#define ENUM_TRADE_UNDERLYING_NO = 1
-#define ENUM_TRADE_UNDERLYING_YES = 2
-#define ENUM_TRADE_UNDERLYING_TRADE_UNDERLYING_MINIMUM_VALUE = 2
-#define ENUM_TRADE_UNDERLYING_TRADE_UNDERLYING_MINIMUM_VALUE = 1
-
-/*
  * Trading Capacity Values
  */ 
 #define ENUM_TRADING_CAPACITY_CUSTOMER = 1
@@ -1312,6 +1298,7 @@
 #define ENUM_TRD_RPT_STATUS_REJECTED = 1
 #define ENUM_TRD_RPT_STATUS_CANCELLED = 2
 #define ENUM_TRD_RPT_STATUS_PENDING_NEW = 4
+#define ENUM_TRD_RPT_STATUS_PENDING_CANCEL = 5
 #define ENUM_TRD_RPT_STATUS_TERMINATED = 7
 #define ENUM_TRD_RPT_STATUS_DEEMED_VERIFIED = 9
 #define ENUM_TRD_RPT_STATUS_TRD_RPT_STATUS_MINIMUM_VALUE = 9
@@ -1798,11 +1785,14 @@ typedef struct {
     int32_t MarketSegmentId;
     uint32_t PackageId;
     uint32_t TesExecId;
+    int32_t RelatedMarketSegmentId;
     uint16_t TrdType;
+    uint8_t TrdRptStatus;
     uint8_t ReversalCancellationReason;
     uint8_t NoSideAllocs;
     char TradeReportId[20];
     char ReversalReasonText[132];
+    char Pad3[3];
 } TesReversalBroadcastT;
 
 /*
@@ -1830,8 +1820,9 @@ typedef struct {
     uint16_t TrdType;
     uint8_t TradeReportType;
     uint8_t Side;
+    uint8_t TrdRptStatus;
     char MessageEventSource;
-    char Pad3[3];
+    char Pad2[2];
 } TesExecutionBroadcastT;
 
 /*
@@ -1848,9 +1839,10 @@ typedef struct {
     uint16_t TrdType;
     uint8_t DeleteReason;
     uint8_t TradeReportType;
+    uint8_t TrdRptStatus;
     char MessageEventSource;
     char TradeReportId[20];
-    char Pad3[3];
+    char Pad2[2];
 } TesDeleteBroadcastT;
 
 /*
@@ -1994,13 +1986,11 @@ typedef struct {
     uint8_t NumberOfRespDisclosureInstruction;
     uint8_t Side;
     uint8_t QuoteCancelType;
-    uint8_t QuoteRefPriceSource;
     uint8_t ShowLastDealOnClosure;
     char PartyExecutingFirm[5];
     char PartyExecutingTrader[6];
     char FreeText5[132];
     char PartyOrderOriginationTrader[132];
-    char Pad7[7];
 } SrqsUpdateNegotiationRequestT;
 
 /*
@@ -2128,19 +2118,18 @@ typedef struct {
     uint64_t UnderlyingDeltaPercentage;
     uint64_t ExpireTime;
     uint64_t TradeToRequestRatio;
+    uint64_t TradeToQuoteRatio;
     uint32_t NegotiationId;
     int32_t MarketSegmentId;
     int32_t SecuritySubType;
     uint32_t NumberOfRespondents;
+    uint16_t TradeToQuoteRatioPosition;
     uint8_t QuoteType;
     uint8_t QuoteSubType;
     uint8_t QuoteStatus;
     uint8_t NoLegs;
     uint8_t Side;
-    uint8_t QuoteRefPriceSource;
-    uint8_t TradeUnderlying;
     uint8_t ProductComplex;
-    uint8_t NegotiateUnderlying;
     uint8_t RespondentType;
     char PartyExecutingFirm[5];
     char PartyExecutingTrader[6];
@@ -2150,7 +2139,7 @@ typedef struct {
     char FirmNegotiationId[20];
     char FreeText5[132];
     char PartyOrderOriginationTrader[132];
-    char Pad6[6];
+    char Pad7[7];
 } SrqsOpenNegotiationNotificationT;
 
 /*
@@ -2193,7 +2182,6 @@ typedef struct {
     uint8_t NoTargetPartyIDs;
     uint8_t NumberOfRespDisclosureInstruction;
     uint8_t Side;
-    uint8_t QuoteRefPriceSource;
     uint8_t ShowLastDealOnClosure;
     char PartyExecutingFirm[5];
     char PartyExecutingTrader[6];
@@ -2201,7 +2189,7 @@ typedef struct {
     char FirmNegotiationId[20];
     char FreeText5[132];
     char PartyOrderOriginationTrader[132];
-    char Pad3[3];
+    char Pad4[4];
 } SrqsNegotiationRequesterNotificationT;
 
 /*
@@ -2220,15 +2208,15 @@ typedef struct {
     uint64_t LastQty;
     uint64_t EffectiveTime;
     uint64_t LastUpdateTime;
+    uint64_t TradeToQuoteRatio;
     uint32_t NegotiationId;
     uint32_t NumberOfRespondents;
+    uint16_t TradeToQuoteRatioPosition;
     uint8_t QuoteType;
     uint8_t QuoteSubType;
     uint8_t QuoteStatus;
     uint8_t QuoteInstruction;
     uint8_t Side;
-    uint8_t QuoteRefPriceSource;
-    uint8_t ShowLastDealOnClosure;
     char PartyExecutingFirm[5];
     char PartyExecutingTrader[6];
     char PartyEnteringTrader[6];
@@ -2748,6 +2736,25 @@ typedef struct {
     char PartyDetailExecutingUnit[5];
     char Pad4[4];
 } PreTradeRiskLimitResponseT;
+
+/*
+ * Structure: Ping Response
+ */ 
+typedef struct {
+    MessageHeaderOutCompT MessageHeaderOutComp;
+    NrResponseHeaderMeCompT NrResponseHeaderMeComp;
+    uint64_t TransactTime;
+} PingResponseT;
+
+/*
+ * Structure: Ping Request
+ */ 
+typedef struct {
+    MessageHeaderInCompT MessageHeaderInComp;
+    RequestHeaderCompT RequestHeaderComp;
+    uint16_t PartitionId;
+    char Pad6[6];
+} PingRequestT;
 
 /*
  * Structure: Party Entitlements Update Report
@@ -3283,8 +3290,6 @@ typedef struct {
     uint64_t RelatedClosePrice;
     uint32_t PackageId;
     int32_t SideMarketSegmentId;
-    uint32_t NegotiationId;
-    uint32_t SrqsRelatedTradeId;
     uint16_t SideTrdSubTyp;
     uint8_t ProductComplex;
     uint8_t TradePublishIndicator;
@@ -4087,8 +4092,6 @@ typedef struct {
     uint32_t PackageId;
     int32_t SideMarketSegmentId;
     uint32_t AllocId;
-    uint32_t NegotiationId;
-    uint32_t SrqsRelatedTradeId;
     uint16_t SideTrdSubTyp;
     uint16_t PartySubIdType;
     uint8_t Side;
@@ -4217,13 +4220,13 @@ typedef struct {
     uint32_t BasketExecId;
     int32_t MarketSegmentId;
     uint16_t RootPartySubIdType;
+    uint16_t NoBasketSideAlloc;
     uint16_t TrdType;
     uint8_t TradeReportType;
-    uint8_t NoBasketSideAlloc;
     char BasketTradeReportText[20];
     char TradeReportId[20];
     char BasketSideTradeReportId[20];
-    char Pad6[6];
+    char Pad5[5];
 } ApproveBasketTradeRequestT;
 
 /*

@@ -7,11 +7,44 @@
  *******************************************************************************/
 
 /*
+ * Is Test Symbol Values
+ */ 
+#define ENUM_IS_TEST_SYMBOL_FALSE = 0
+#define ENUM_IS_TEST_SYMBOL_TRUE = 1
+
+/*
  * Message Type Values
  */ 
 #define ENUM_MESSAGE_TYPE_HEARTBEAT_MESSAGE = 0
 #define ENUM_MESSAGE_TYPE_SESSION_SHUTDOWN_MESSAGE = 1
 #define ENUM_MESSAGE_TYPE_SEQUENCED_MESSAGE = 2
+
+/*
+ * Security Trading Status Values
+ */ 
+#define ENUM_SECURITY_TRADING_STATUS_HALTED = 'H'
+#define ENUM_SECURITY_TRADING_STATUS_PAUSED = 'P'
+#define ENUM_SECURITY_TRADING_STATUS_QUOTING = 'Q'
+#define ENUM_SECURITY_TRADING_STATUS_TRADING = 'T'
+
+/*
+ * Security Trading Status Reason Values
+ */ 
+#define ENUM_SECURITY_TRADING_STATUS_REASON_NONE = 'X'
+#define ENUM_SECURITY_TRADING_STATUS_REASON_REGULATORY = 'R'
+#define ENUM_SECURITY_TRADING_STATUS_REASON_ADMINISTRATIVE = 'A'
+
+/*
+ * Short Sale Restriction Values
+ */ 
+#define ENUM_SHORT_SALE_RESTRICTION_FALSE = 0
+#define ENUM_SHORT_SALE_RESTRICTION_TRUE = 1
+
+/*
+ * Side Values
+ */ 
+#define ENUM_SIDE_BUY = 'B'
+#define ENUM_SIDE_SELL = 'S'
 
 /*
  * Template Id Values
@@ -29,6 +62,14 @@
 #define ENUM_TEMPLATE_ID_CORRECTED_TRADE_MESSAGE = 16
 #define ENUM_TEMPLATE_ID_CLEAR_BOOK_MESSAGE = 18
 #define ENUM_TEMPLATE_ID_SNAPSHOT_COMPLETE_MESSAGE = 100
+
+/*
+ * Trading Session Values
+ */ 
+#define ENUM_TRADING_SESSION_OPENING = '1'
+#define ENUM_TRADING_SESSION_TRADING = '2'
+#define ENUM_TRADING_SESSION_POST_TRADING = '3'
+#define ENUM_TRADING_SESSION_CLOSED = '4'
 
 
 /*******************************************************************************
@@ -124,7 +165,7 @@ typedef struct {
     uint64_t Timestamp;
     uint16_t SecurityId;
     uint64_t OrderId;
-    char Side[1];
+    char Side;
     uint32_t Quantity;
     int64_t Price;
 } OrderAddedMessageT;
@@ -134,7 +175,7 @@ typedef struct {
  */ 
 typedef struct {
     uint64_t Timestamp;
-    char TradingSession[1];
+    char TradingSession;
 } TradingSessionStatusMessageT;
 
 /*
@@ -143,8 +184,8 @@ typedef struct {
 typedef struct {
     uint64_t Timestamp;
     uint16_t SecurityId;
-    char SecurityTradingStatus[1];
-    char SecurityTradingStatusReason[1];
+    char SecurityTradingStatus;
+    char SecurityTradingStatusReason;
 } SecurityTradingStatusMessageT;
 
 /*
