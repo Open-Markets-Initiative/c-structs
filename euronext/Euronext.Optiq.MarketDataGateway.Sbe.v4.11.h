@@ -1,5 +1,5 @@
 /*******************************************************************************
- * C Structs For Euronext Optiq Sbe MarketDataGateway 4.3.0 protocol
+ * C Structs For Euronext Optiq Sbe MarketDataGateway 4.11 protocol
  *******************************************************************************/
 
 /*******************************************************************************
@@ -371,6 +371,7 @@
 #define ENUM_INSTRUMENT_CATEGORY_EURONEXT_FUNDS_SERVICES = 12
 #define ENUM_INSTRUMENT_CATEGORY_INAV_INDICATIVE_NET_ASSET_VALUE = 14
 #define ENUM_INSTRUMENT_CATEGORY_FUND = 15
+#define ENUM_INSTRUMENT_CATEGORY_FOREX = 16
 #define ENUM_INSTRUMENT_CATEGORY_MISCELLANEOUS = 254
 
 /*
@@ -1290,6 +1291,7 @@ typedef struct {
     char Venue[11];
     char MiFidEmissionAllowanceType[4];
     char LongTradeReference[52];
+    char ApaOrigin[4];
 } ApaFullTradeInformationMessageT;
 
 /*
@@ -1333,6 +1335,7 @@ typedef struct {
     uint8_t QuoteUpdateType;
     char MifidPrice[20];
     char MifidQuantity[20];
+    char ApaOrigin[4];
 } ApaQuotesMessageT;
 
 /*
@@ -1776,7 +1779,9 @@ typedef struct {
  */ 
 typedef struct {
     uint16_t
-    Reserved10 : 10,
+    Reserved8 : 8,
+    ExceptionalMarketConditions : 1,
+    StressedMarketConditions : 1,
     WholesaleAllowed : 1,
     Suspended : 1,
     RandomUncrossing : 1,

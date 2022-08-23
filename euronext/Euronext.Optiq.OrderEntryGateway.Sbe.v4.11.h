@@ -1,5 +1,5 @@
 /*******************************************************************************
- * C Structs For Euronext Optiq Sbe OrderEntryGateway 4.2.2 protocol
+ * C Structs For Euronext Optiq Sbe OrderEntryGateway 4.11 protocol
  *******************************************************************************/
 
 /*******************************************************************************
@@ -67,6 +67,7 @@
 #define ENUM_ACK_TYPE_VFUVFC_TRIGGERED_ACK = 16
 #define ENUM_ACK_TYPE_OPEN_ORDER_REQUEST_ACK = 17
 #define ENUM_ACK_TYPE_RFIE_ACK = 21
+#define ENUM_ACK_TYPE_CROSS_ORDER_ACK = 22
 
 /*
  * Action Type Values
@@ -103,6 +104,9 @@
  * Ccpid Values
  */ 
 #define ENUM_CCPID_LCHSA = 1
+#define ENUM_CCPID_BILATERAL_SETTLEMENT = 2
+#define ENUM_CCPID_LCH_LIMITED = 3
+#define ENUM_CCPID_SIXX_CLEAR = 5
 #define ENUM_CCPID_EURO_CCP = 6
 #define ENUM_CCPID_NO_VALUE = 255
 
@@ -180,6 +184,46 @@
 #define ENUM_INPUT_PRICE_TYPE_ALTERNATIVE_INDICATIVE_PRICE_AIP = 2
 
 /*
+ * Ioi Quality Indication Values
+ */ 
+#define ENUM_IOI_QUALITY_INDICATION_HIGH = 1
+#define ENUM_IOI_QUALITY_INDICATION_LOW = 2
+#define ENUM_IOI_QUALITY_INDICATION_MEDIUM = 3
+#define ENUM_IOI_QUALITY_INDICATION_NO_VALUE = 255
+
+/*
+ * Ioi Quantity Values
+ */ 
+#define ENUM_IOI_QUANTITY_SMALL = 1
+#define ENUM_IOI_QUANTITY_MEDIUM = 2
+#define ENUM_IOI_QUANTITY_LARGE = 3
+#define ENUM_IOI_QUANTITY_UNDISCLOSED_QUANTITY = 4
+
+/*
+ * Ioi Side Values
+ */ 
+#define ENUM_IOI_SIDE_BUY = 1
+#define ENUM_IOI_SIDE_SELL = 2
+#define ENUM_IOI_SIDE_UNDISCLOSED = 4
+
+/*
+ * Ioi Transaction Type Values
+ */ 
+#define ENUM_IOI_TRANSACTION_TYPE_NEW = 1
+#define ENUM_IOI_TRANSACTION_TYPE_CANCEL = 2
+#define ENUM_IOI_TRANSACTION_TYPE_REPLACE = 3
+
+/*
+ * Ioi Type Values
+ */ 
+#define ENUM_IOI_TYPE_ACK = 1
+#define ENUM_IOI_TYPE_REJECT = 2
+#define ENUM_IOI_TYPE_NEW_IOI_NOTIFICATION = 3
+#define ENUM_IOI_TYPE_IOI_REPLY_NOTIFICATION = 4
+#define ENUM_IOI_TYPE_IOI_CANCELLATION_NOTIFICATION = 5
+#define ENUM_IOI_TYPE_IOI_REPLACEMENT_NOTIFICATION = 6
+
+/*
  * Kill Reason Values
  */ 
 #define ENUM_KILL_REASON_ORDER_CANCELLEDBY_CLIENT = 1
@@ -208,6 +252,8 @@
 #define ENUM_KILL_REASON_ORDERCANCELLEDDUETO_TRADE_PRICE_VALIDATION = 26
 #define ENUM_KILL_REASON_CONDITIONAL_ORDERCANCELLEDDUETO_POTENTIAL_MATCHING = 30
 #define ENUM_KILL_REASON_ORDER_CANCELLEDDUETOAPOTENTIALTRADEOUTSIDE_FS_PLIMITS = 36
+#define ENUM_KILL_REASON_REMAINING_RFC_QUANTITY_CANCELLED = 37
+#define ENUM_KILL_REASON_ORDER_CANCELLEDDUETOANINCORRECT_REACTOR_RESPONSE = 38
 
 /*
  * Leg Put Or Call Values
@@ -306,6 +352,13 @@
 #define ENUM_ORDER_CATEGORY_QUOTE_REQUEST = 3
 #define ENUM_ORDER_CATEGORY_RFQLP_ANSWER = 4
 #define ENUM_ORDER_CATEGORY_NO_VALUE = 255
+
+/*
+ * Order Origin Values
+ */ 
+#define ENUM_ORDER_ORIGIN_COB = 1
+#define ENUM_ORDER_ORIGIN_LP_ANSWER = 2
+#define ENUM_ORDER_ORIGIN_NO_VALUE = 255
 
 /*
  * Order Side Values
@@ -501,6 +554,9 @@
 #define ENUM_TEMPLATE_ID_WHOLESALE_ORDER_ACK_MESSAGE = 65
 #define ENUM_TEMPLATE_ID_REQUEST_FOR_IMPLIED_EXECUTION_MESSAGE = 66
 #define ENUM_TEMPLATE_ID_CROSS_ORDER_MESSAGE = 67
+#define ENUM_TEMPLATE_ID_RFQ_AUDIT_MESSAGE = 72
+#define ENUM_TEMPLATE_ID_WAVE_FOR_LIQUIDITY_MESSAGE = 73
+#define ENUM_TEMPLATE_ID_WAVE_FOR_LIQUIDITY_NOTIFICATION_MESSAGE = 74
 #define ENUM_TEMPLATE_ID_LOGON_MESSAGE = 100
 #define ENUM_TEMPLATE_ID_LOGON_ACK_MESSAGE = 101
 #define ENUM_TEMPLATE_ID_LOGON_REJECT_MESSAGE = 102
@@ -567,10 +623,15 @@
 #define ENUM_TRADE_TYPE_ETFMTFNAV_DARK_TRADEPRICEINBP = 38
 #define ENUM_TRADE_TYPE_GUARANTEED_CROSS_NEGOTIATEDDEAL_NLIQ = 39
 #define ENUM_TRADE_TYPE_GUARANTEED_CROSS_NEGOTIATEDDEAL_OILQ = 40
+#define ENUM_TRADE_TYPE_LARGEIN_SCALE_TRADE = 41
 #define ENUM_TRADE_TYPE_LARGEIN_SCALE_TRADEINBASISPOINTS = 42
 #define ENUM_TRADE_TYPE_LARGEIN_SCALE_PACKAGE_TRADEINBASISPOINTS = 43
 #define ENUM_TRADE_TYPE_STRATEGY_LEG_LARGEIN_SCALE_TRADEINBASISPOINTS = 44
-#define ENUM_TRADE_TYPE_LARGEIN_SCALE_TRADE = 41
+#define ENUM_TRADE_TYPE_NON_STANDARD_SETTLEMENT = 46
+#define ENUM_TRADE_TYPE_REPURCHASE_AGREEMENT_REPO = 47
+#define ENUM_TRADE_TYPE_EXCHANGE_GRANTED_TRADE = 48
+#define ENUM_TRADE_TYPE_OTHER = 49
+#define ENUM_TRADE_TYPE_ODD_LOT = 50
 #define ENUM_TRADE_TYPE_CONVENTIONAL_TRADE_PROVISIONALPRICE = 100
 #define ENUM_TRADE_TYPE_LARGEIN_SCALE_LI_S_TRADE_PROVISIONALPRICE = 101
 #define ENUM_TRADE_TYPE_LARGEIN_SCALE_LI_S_PACKAGE_TRADE_PROVISIONALPRICE = 102
@@ -874,6 +935,115 @@ typedef struct {
     char SoftwareProvider[8];
     uint8_t QueueingIndicator;
 } LogonMessageT;
+
+/*
+ * Structure: Wave For Liquidity Notification Message
+ */ 
+typedef struct {
+    uint32_t MsgSeqNum;
+    char FirmId[8];
+    uint64_t SendingTime;
+    uint64_t OeginFromMember;
+    uint64_t OegoutTimeToMe;
+    uint64_t BookIn;
+    uint64_t BookOutTime;
+    uint64_t OeginFromMe;
+    uint64_t OegoutToMember;
+    int64_t Ioiid;
+    int64_t ExchangeIoiid;
+    uint8_t IoiType;
+    int64_t OriginalIoiid;
+    uint32_t SymbolIndex;
+    uint8_t Emm;
+    uint8_t IoiSide;
+    uint64_t OrderQuantity;
+    uint8_t IoiQuantity;
+    uint8_t IoiQualityIndication;
+    uint16_t ErrorCode;
+} WaveForLiquidityNotificationMessageT;
+
+/*
+ * Bitfield: Target Counterparties
+ */ 
+typedef struct {
+    uint16_t
+    Reserved6 : 6,
+    LocalCommunityOfSpecialistLis : 1,
+    LocalCommunityOfSpecialistBru : 1,
+    LocalCommunityOfSpecialistPar : 1,
+    LocalCommunityOfSpecialistAms : 1,
+    QualityOfSellSideCounterparty : 1,
+    SellSide : 1,
+    BuySide : 1,
+    Holdings : 1,
+    InterestLists : 1,
+    EuronextDataDriven : 1;
+} TargetCounterpartiesT;
+
+/*
+ * Structure: Wave For Liquidity Message
+ */ 
+typedef struct {
+    uint32_t ClMsgSeqNum;
+    char FirmId[8];
+    uint64_t SendingTime;
+    int64_t Ioiid;
+    uint8_t IoiTransactionType;
+    int64_t OriginalIoiid;
+    TargetCounterpartiesT TargetCounterparties;
+    uint32_t SymbolIndex;
+    uint8_t Emm;
+    uint8_t IoiSide;
+    uint64_t OrderQuantity;
+    uint8_t IoiQuantity;
+    uint8_t IoiQualityIndication;
+} WaveForLiquidityMessageT;
+
+/*
+ * Bitfield: Dark Execution Instruction
+ */ 
+typedef struct {
+    uint8_t
+    Reserved3 : 3,
+    MinimumQuantityType : 1,
+    SweepOrderIndicator : 1,
+    DisplayedOrderInteraction : 1,
+    DeferredTradeIndicator : 1,
+    DarkIndicator : 1;
+} DarkExecutionInstructionT;
+
+/*
+ * Structure: Rf Q Counterparts Group
+ */ 
+typedef struct {
+    uint8_t OrderOrigin;
+    int64_t OrderPrice;
+    uint64_t LastTradedQuantity;
+    DarkExecutionInstructionT DarkExecutionInstruction;
+    uint64_t MinimumOrderQuantity;
+} RfQCounterpartsGroupT;
+
+/*
+ * Structure: Rf Q Counterparts Groups
+ */ 
+typedef struct {
+    GroupSizeEncodingT GroupSizeEncoding;
+} RfQCounterpartsGroupsT;
+
+/*
+ * Structure: Rfq Audit Message
+ */ 
+typedef struct {
+    uint32_t MsgSeqNum;
+    char FirmId[8];
+    uint64_t BookIn;
+    uint64_t BookOutTime;
+    uint64_t OeginFromMe;
+    uint64_t OegoutToMember;
+    uint64_t QuoteReqId;
+    uint32_t SymbolIndex;
+    uint8_t Emm;
+} RfqAuditMessageT;
 
 /*
  * Structure: Strategy Fields Group
@@ -1347,19 +1517,6 @@ typedef struct {
 } RfqMatchingStatusMessageT;
 
 /*
- * Bitfield: Dark Execution Instruction
- */ 
-typedef struct {
-    uint8_t
-    Reserved3 : 3,
-    MinimumQuantityType : 1,
-    SweepOrderIndicator : 1,
-    DisplayedOrderInteraction : 1,
-    DeferredTradeIndicator : 1,
-    DarkIndicator : 1;
-} DarkExecutionInstructionT;
-
-/*
  * Structure: Rfq Notification Message
  */ 
 typedef struct {
@@ -1379,6 +1536,7 @@ typedef struct {
     char EndClient[11];
     DarkExecutionInstructionT DarkExecutionInstruction;
     uint64_t MinOrderQty;
+    uint8_t AccountType;
 } RfqNotificationMessageT;
 
 /*
@@ -1584,6 +1742,7 @@ typedef struct {
     char EndClient[11];
     DarkExecutionInstructionT DarkExecutionInstruction;
     uint64_t MinOrderQty;
+    uint8_t AccountType;
 } QuoteRequestMessageT;
 
 /*
@@ -1735,7 +1894,8 @@ typedef struct {
  */ 
 typedef struct {
     uint8_t
-    Reserved4 : 4,
+    Reserved3 : 3,
+    Session4 : 1,
     Session3 : 1,
     Session2 : 1,
     Session1 : 1,
@@ -1794,6 +1954,8 @@ typedef struct {
 typedef struct {
     int64_t EvaluatedPrice;
     uint8_t MessagePriceNotation;
+    uint32_t FinalSymbolIndex;
+    uint32_t FinalExecutionId;
 } OptionalFieldsDerivativesGroupT;
 
 /*

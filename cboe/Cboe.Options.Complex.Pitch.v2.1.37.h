@@ -1,5 +1,5 @@
 /*******************************************************************************
- * C Structs For Cboe Options Pitch ComplexDepthOfBook 2.1.18 protocol
+ * C Structs For Cboe Options Pitch Complex 2.1.37 protocol
  *******************************************************************************/
 
 /*******************************************************************************
@@ -19,7 +19,6 @@
 #define ENUM_AUCTION_TYPE_COMPLEX_AUCTION = 'C'
 #define ENUM_AUCTION_TYPE_COMPLEX_SOLICITATION_AUCTION = 'S'
 #define ENUM_AUCTION_TYPE_COMPLEX_AIM = 'B'
-#define ENUM_AUCTION_TYPE_COA_ALL_OR_NONE = 'O'
 
 /*
  * Customer Indicator Values
@@ -86,12 +85,17 @@
  */ 
 #define ENUM_TRADE_CONDITION_COMPLEX_TO_COMPLEX_ELECTRONIC_TRADE = 'f'
 #define ENUM_TRADE_CONDITION_COMPLEX_AUCTION_TRADE = 'g'
-#define ENUM_TRADE_CONDITION_COMPLEX_CROSS = 'h'
+#define ENUM_TRADE_CONDITION_COMPLEX = 'h'
 #define ENUM_TRADE_CONDITION_COMPLEX_ELECTRONIC_TRADE_AGAINST_SINGLE = 'j'
 #define ENUM_TRADE_CONDITION_COMPLEX_WITH_STOCK_OPTIONS_AUCTION_TRADE = 'k'
+#define ENUM_TRADE_CONDITION_COMPLEX_FLOOR_TRADE_AGAINST_SINGLE_LEG = 'm'
 #define ENUM_TRADE_CONDITION_COMPLEX_WITH_STOCK_ELECTRONIC_TRADE = 'n'
 #define ENUM_TRADE_CONDITION_COMPLEX_WITH_STOCK_CROSS = 'o'
 #define ENUM_TRADE_CONDITION_ELECTRONIC_TRADE = 'l'
+#define ENUM_TRADE_CONDITION_COMPLEX_WITH_STOCK_FLOOR_TRADE = 'p'
+#define ENUM_TRADE_CONDITION_COMPLEX_COMBO_ORDER_FLOOR_TRADE = 't'
+#define ENUM_TRADE_CONDITION_EXTENDED_HOURS_TRADE = 'v'
+#define ENUM_TRADE_CONDITION_ELECTRONIC_TRADE = 'I'
 #define ENUM_TRADE_CONDITION_OPENING_TRADE = 'O'
 
 /*
@@ -99,7 +103,7 @@
  */ 
 #define ENUM_TRADING_STATUS_HALTED = 'H'
 #define ENUM_TRADING_STATUS_QUOTE_ONLY = 'Q'
-#define ENUM_TRADING_STATUS_TRADING = 'T'
+#define ENUM_TRADING_STATUS_RTH_TRADING = 'T'
 
 
 /*******************************************************************************

@@ -1,5 +1,5 @@
 /*******************************************************************************
- * C Structs For Fairx Futures Sbe MarketDataApi 1.2 protocol
+ * C Structs For Coinbase Derivatives Sbe MarketDataApi 1.3 protocol
  *******************************************************************************/
 
 /*******************************************************************************
@@ -46,6 +46,7 @@
  */ 
 #define ENUM_TEMPLATE_ID_OUTRIGHT_INSTRUMENT_DEFINITION_MESSAGE = 10
 #define ENUM_TEMPLATE_ID_SPREAD_INSTRUMENT_DEFINITION_MESSAGE = 11
+#define ENUM_TEMPLATE_ID_OPTION_INSTRUMENT_DEFINITION_MESSAGE = 12
 #define ENUM_TEMPLATE_ID_TRADING_STATUS_UPDATE_MESSAGE = 17
 #define ENUM_TEMPLATE_ID_ORDER_PUT_MESSAGE = 20
 #define ENUM_TEMPLATE_ID_ORDER_DELETE_MESSAGE = 21
@@ -60,6 +61,7 @@
 #define ENUM_TEMPLATE_ID_OPEN_INTEREST_MESSAGE = 42
 #define ENUM_TEMPLATE_ID_START_OF_OUTRIGHT_INSTRUMENT_SNAPSHOT_MESSAGE = 110
 #define ENUM_TEMPLATE_ID_START_OF_SPREAD_INSTRUMENT_SNAPSHOT_MESSAGE = 111
+#define ENUM_TEMPLATE_ID_START_OF_OPTION_INSTRUMENT_SNAPSHOT_MESSAGE = 112
 #define ENUM_TEMPLATE_ID_ORDER_SNAPSHOT_MESSAGE = 120
 #define ENUM_TEMPLATE_ID_END_OF_SNAPSHOT_MESSAGE = 122
 #define ENUM_TEMPLATE_ID_RETRANSMIT_REQUEST_MESSAGE = 200
@@ -103,7 +105,9 @@ typedef struct {
  */ 
 typedef struct {
     uint16_t
-    Reserved15 : 15,
+    Reserved13 : 13,
+    IsCall : 1,
+    IsAnnounced : 1,
     IsPriorSettlementTheoretical : 1;
 } DefinitionFlagsT;
 
@@ -148,6 +152,31 @@ typedef struct {
     int64_t OrderId;
     int64_t Price;
 } OrderSnapshotMessageT;
+
+/*
+ * Structure: Start Of Option Instrument Snapshot Message
+ */ 
+typedef struct {
+    uint16_t SnapshotSeqNum;
+    uint32_t LastInstrSeqNum;
+    char Symbol[24];
+    char ProductCode[8];
+    char Description[32];
+    int64_t SmallTick;
+    char CfiCode[8];
+    int64_t LargeTick;
+    int64_t LargeTickThreshold;
+    int64_t StrikePrice;
+    int32_t ProductId;
+    int32_t UnderlyingInstrumentId;
+    int32_t OrderCount;
+    uint16_t FirstTradingSessionDate;
+    uint16_t LastTradingSessionDate;
+    uint16_t TradingSessionDate;
+    int8_t ProductGroup;
+    int8_t TradingStatus;
+    DefinitionFlagsT DefinitionFlags;
+} StartOfOptionInstrumentSnapshotMessageT;
 
 /*
  * Structure: Start Of Spread Instrument Snapshot Message
@@ -337,6 +366,30 @@ typedef struct {
 } TradingStatusUpdateMessageT;
 
 /*
+ * Structure: Option Instrument Definition Message
+ */ 
+typedef struct {
+    InstrHeaderT InstrHeader;
+    char Symbol[24];
+    char ProductCode[8];
+    char Description[32];
+    int64_t SmallTick;
+    char CfiCode[8];
+    int64_t LargeTick;
+    int64_t LargeTickThreshold;
+    int64_t StrikePrice;
+    uint16_t FirstTradingSessionDate;
+    uint16_t LastTradingSessionDate;
+    int64_t PriorSettlementPrice;
+    int64_t SettlementPrice;
+    int32_t ProductId;
+    int32_t UnderlyingInstrumentId;
+    int8_t ProductGroup;
+    int8_t TradingStatus;
+    DefinitionFlagsT DefinitionFlags;
+} OptionInstrumentDefinitionMessageT;
+
+/*
  * Structure: Spread Instrument Definition Message
  */ 
 typedef struct {
@@ -393,6 +446,7 @@ typedef struct {
 typedef struct {
     OutrightInstrumentDefinitionMessageT OutrightInstrumentDefinitionMessage;
     SpreadInstrumentDefinitionMessageT SpreadInstrumentDefinitionMessage;
+    OptionInstrumentDefinitionMessageT OptionInstrumentDefinitionMessage;
     TradingStatusUpdateMessageT TradingStatusUpdateMessage;
     OrderPutMessageT OrderPutMessage;
     OrderDeleteMessageT OrderDeleteMessage;
@@ -407,6 +461,7 @@ typedef struct {
     OpenInterestMessageT OpenInterestMessage;
     StartOfOutrightInstrumentSnapshotMessageT StartOfOutrightInstrumentSnapshotMessage;
     StartOfSpreadInstrumentSnapshotMessageT StartOfSpreadInstrumentSnapshotMessage;
+    StartOfOptionInstrumentSnapshotMessageT StartOfOptionInstrumentSnapshotMessage;
     OrderSnapshotMessageT OrderSnapshotMessage;
     EndOfSnapshotMessageT EndOfSnapshotMessage;
     RetransmitRequestMessageT RetransmitRequestMessage;
