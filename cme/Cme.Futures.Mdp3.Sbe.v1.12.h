@@ -276,6 +276,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Snapshot Full Refresh Long Qty Group
  */ 
@@ -1221,3 +1223,4 @@ typedef struct {
     BinaryPacketHeaderT BinaryPacketHeader;
 } PacketT;
 
+#pragma pack(pop)

@@ -644,6 +644,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Delete Floor Trade Rejected Message
  */ 
@@ -5416,3 +5418,4 @@ typedef struct {
     MessageHeaderT MessageHeader;
 } PacketT;
 
+#pragma pack(pop)

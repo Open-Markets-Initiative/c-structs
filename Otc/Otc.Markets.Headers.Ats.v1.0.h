@@ -6,6 +6,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Message Header
  */ 
@@ -52,3 +54,4 @@ typedef struct {
     PacketHeaderT PacketHeader;
 } PacketT;
 
+#pragma pack(pop)

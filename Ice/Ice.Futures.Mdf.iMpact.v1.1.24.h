@@ -497,6 +497,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Old Style Options Trade And Market Stats Message
  */ 
@@ -1095,3 +1097,4 @@ typedef struct {
     PacketHeaderT PacketHeader;
 } PacketT;
 
+#pragma pack(pop)

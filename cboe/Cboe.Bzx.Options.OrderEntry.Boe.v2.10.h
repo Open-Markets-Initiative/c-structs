@@ -484,6 +484,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Mass Cancel Acknowledgment Message
  */ 
@@ -3617,3 +3619,4 @@ typedef struct {
     MessageHeaderT MessageHeader;
 } PacketT;
 
+#pragma pack(pop)

@@ -80,6 +80,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Complex Strategy Ticker Message
  */ 
@@ -240,3 +242,4 @@ typedef struct {
     PacketHeaderT PacketHeader;
 } PacketT;
 
+#pragma pack(pop)

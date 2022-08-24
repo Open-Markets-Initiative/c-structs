@@ -87,6 +87,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Unit Of Measure Qty Decimal Optional
  */ 
@@ -1055,3 +1057,4 @@ typedef struct {
     BinaryPacketHeaderT BinaryPacketHeader;
 } PacketT;
 
+#pragma pack(pop)

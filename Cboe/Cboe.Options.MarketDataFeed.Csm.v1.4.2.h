@@ -116,6 +116,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Market Data Control Message
  */ 
@@ -451,3 +453,4 @@ typedef struct {
     PacketHeaderT PacketHeader;
 } PacketT;
 
+#pragma pack(pop)

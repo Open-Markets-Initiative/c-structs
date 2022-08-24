@@ -17,6 +17,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Body Header
  */ 
@@ -52,3 +54,4 @@ typedef struct {
     FrameHeaderT FrameHeader;
 } PacketT;
 
+#pragma pack(pop)

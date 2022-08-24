@@ -85,6 +85,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Equity Quote Body
  */ 
@@ -255,3 +257,4 @@ typedef struct {
     FrameHeaderT FrameHeader;
 } PacketT;
 
+#pragma pack(pop)

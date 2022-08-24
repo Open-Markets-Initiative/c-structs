@@ -148,6 +148,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Event Resend Reject Message
  */ 
@@ -551,3 +553,4 @@ typedef struct {
 typedef struct {
 } PacketT;
 
+#pragma pack(pop)

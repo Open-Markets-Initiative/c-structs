@@ -1029,6 +1029,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: End Of Snapshot Message
  */ 
@@ -1876,3 +1878,4 @@ typedef struct {
     MarketDataPacketHeaderT MarketDataPacketHeader;
 } PacketT;
 
+#pragma pack(pop)

@@ -85,6 +85,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Interpolation Factor
  */ 
@@ -930,3 +932,4 @@ typedef struct {
     BinaryPacketHeaderT BinaryPacketHeader;
 } PacketT;
 
+#pragma pack(pop)

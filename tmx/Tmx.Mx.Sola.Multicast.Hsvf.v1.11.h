@@ -71,6 +71,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Circuit Assurance Message
  */ 
@@ -1316,3 +1318,4 @@ typedef struct {
     char MessageType[2];
 } MessageHeaderT;
 
+#pragma pack(pop)

@@ -487,6 +487,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Leg Option Delta
  */ 
@@ -1810,3 +1812,4 @@ typedef struct {
 typedef struct {
 } PacketT;
 
+#pragma pack(pop)

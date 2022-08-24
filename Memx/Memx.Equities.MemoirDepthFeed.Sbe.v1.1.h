@@ -76,6 +76,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Snapshot Complete Message
  */ 
@@ -284,3 +286,4 @@ typedef struct {
     CommonHeaderT CommonHeader;
 } PacketT;
 
+#pragma pack(pop)

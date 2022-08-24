@@ -872,6 +872,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Response Header Comp
  */ 
@@ -2773,3 +2775,4 @@ typedef struct {
     char Pad7[7];
 } ApproveTesTradeRequestT;
 
+#pragma pack(pop)

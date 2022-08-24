@@ -417,6 +417,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Mass Cancel Reject Message
  */ 
@@ -953,3 +955,4 @@ typedef struct {
     CommonHeaderT CommonHeader;
 } PacketT;
 
+#pragma pack(pop)

@@ -613,6 +613,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Response Header Comp
  */ 
@@ -2002,3 +2004,4 @@ typedef struct {
     char Pad4[4];
 } BroadcastErrorNotificationT;
 
+#pragma pack(pop)

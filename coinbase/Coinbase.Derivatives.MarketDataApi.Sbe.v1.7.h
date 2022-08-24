@@ -91,6 +91,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Retransmit Reject Message
  */ 
@@ -535,3 +537,4 @@ typedef struct {
     PacketHeaderT PacketHeader;
 } PacketT;
 
+#pragma pack(pop)

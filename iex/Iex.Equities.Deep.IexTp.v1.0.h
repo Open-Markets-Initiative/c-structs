@@ -104,6 +104,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Auction Information Message
  */ 
@@ -318,3 +320,4 @@ typedef struct {
     IexTpHeaderT IexTpHeader;
 } PacketT;
 
+#pragma pack(pop)

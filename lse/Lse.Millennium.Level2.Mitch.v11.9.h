@@ -143,6 +143,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Top Of Book Message
  */ 
@@ -429,3 +431,4 @@ typedef struct {
     UnitHeaderT UnitHeader;
 } PacketT;
 
+#pragma pack(pop)

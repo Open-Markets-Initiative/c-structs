@@ -68,6 +68,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Clear Book Message
  */ 
@@ -247,3 +249,4 @@ typedef struct {
     CommonHeaderT CommonHeader;
 } PacketT;
 
+#pragma pack(pop)

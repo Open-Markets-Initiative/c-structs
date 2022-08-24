@@ -509,6 +509,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Execution Report Pending Replace
  */ 
@@ -1952,3 +1954,4 @@ typedef struct {
 typedef struct {
 } PacketT;
 
+#pragma pack(pop)

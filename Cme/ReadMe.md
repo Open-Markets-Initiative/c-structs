@@ -5,25 +5,25 @@
 
 | Division | Data | Protocol | Version | Date | Size | Testing | Specification |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Ebs | Spectrum | Sbe | [12.0][Cme.Ebs.Spectrum.Sbe.v12.0.Structs] | 4/8/2022 | 245 | Untested | [url][Cme.Ebs.Spectrum.Sbe.v12.0.Url] - [xml][Cme.Ebs.Spectrum.Sbe.v12.0.Xml] |
-| Futures | Derived | Sbe | [12.0][Cme.Futures.Derived.Sbe.v12.0.Structs] | 1/4/2020 | 245 | Untested | [url][Cme.Futures.Derived.Sbe.v12.0.Url] - [xml][Cme.Futures.Derived.Sbe.v12.0.Xml] |
-| Futures | iLink3 | Sbe | [8.8][Cme.Futures.iLink3.Sbe.v8.8.Structs] | 5/31/2022 | 1954 | Verified | [url][Cme.Futures.iLink3.Sbe.v8.8.Url] - [xml][Cme.Futures.iLink3.Sbe.v8.8.Xml] |
-| Futures | iLink3 | Sbe | [8.7][Cme.Futures.iLink3.Sbe.v8.7.Structs] | 1/6/2021 | 1953 | Verified | [url][Cme.Futures.iLink3.Sbe.v8.7.Url] - [xml][Cme.Futures.iLink3.Sbe.v8.7.Xml] |
-| Futures | iLink3 | Sbe | [8.6][Cme.Futures.iLink3.Sbe.v8.6.Structs] | 10/13/2020 | 1953 | Untested | [url][Cme.Futures.iLink3.Sbe.v8.6.Url] - [xml][Cme.Futures.iLink3.Sbe.v8.6.Xml] |
-| Futures | iLink3 | Sbe | [8.5][Cme.Futures.iLink3.Sbe.v8.5.Structs] | 2/27/2020 | 1830 | Verified | [url][Cme.Futures.iLink3.Sbe.v8.5.Url] - [xml][Cme.Futures.iLink3.Sbe.v8.5.Xml] |
-| Futures | iLink3 | Sbe | [8.4][Cme.Futures.iLink3.Sbe.v8.4.Structs] | 2/11/2020 | 1826 | Untested | [url][Cme.Futures.iLink3.Sbe.v8.4.Url] - [xml][Cme.Futures.iLink3.Sbe.v8.4.Xml] |
-| Futures | iLink3 | Sbe | [8.3][Cme.Futures.iLink3.Sbe.v8.3.Structs] | 1/9/2020 | 1815 | Untested | [url][Cme.Futures.iLink3.Sbe.v8.3.Url] - [xml][Cme.Futures.iLink3.Sbe.v8.3.Xml] |
-| Futures | iLink3 | Sbe | [8.2][Cme.Futures.iLink3.Sbe.v8.2.Structs] | 11/5/2019 | 1812 | Verified | [url][Cme.Futures.iLink3.Sbe.v8.2.Url] - [xml][Cme.Futures.iLink3.Sbe.v8.2.Xml] |
-| Futures | Mdp3 | Sbe | [1.9][Cme.Futures.Mdp3.Sbe.v1.9.Structs] | 3/8/2018 | 1082 | Verified | [url][Cme.Futures.Mdp3.Sbe.v1.9.Url] - [xml][Cme.Futures.Mdp3.Sbe.v1.9.Xml] - [ftp][Cme.Futures.Mdp3.Sbe.v1.9.Ftp] |
-| Futures | Mdp3 | Sbe | [1.8][Cme.Futures.Mdp3.Sbe.v1.8.Structs] | 7/1/2016 | 818 | Verified | [url][Cme.Futures.Mdp3.Sbe.v1.8.Url] - [xml][Cme.Futures.Mdp3.Sbe.v1.8.Xml] - [ftp][Cme.Futures.Mdp3.Sbe.v1.8.Ftp] |
-| Futures | Mdp3 | Sbe | [1.6][Cme.Futures.Mdp3.Sbe.v1.6.Structs] | 1/9/2016 | 722 | Verified | [url][Cme.Futures.Mdp3.Sbe.v1.6.Url] - [xml][Cme.Futures.Mdp3.Sbe.v1.6.Xml] - [ftp][Cme.Futures.Mdp3.Sbe.v1.6.Ftp] |
-| Futures | Mdp3 | Sbe | [1.5][Cme.Futures.Mdp3.Sbe.v1.5.Structs] | 8/6/2014 | 722 | Verified | [url][Cme.Futures.Mdp3.Sbe.v1.5.Url] - [xml][Cme.Futures.Mdp3.Sbe.v1.5.Xml] - [ftp][Cme.Futures.Mdp3.Sbe.v1.5.Ftp] |
-| Futures | Mdp3 | Sbe | [1.12][Cme.Futures.Mdp3.Sbe.v1.12.Structs] | 3/10/2021 | 1223 | Untested | [url][Cme.Futures.Mdp3.Sbe.v1.12.Url] - [xml][Cme.Futures.Mdp3.Sbe.v1.12.Xml] - [ftp][Cme.Futures.Mdp3.Sbe.v1.12.Ftp] |
-| Futures | Mdp3 | Sbe | [1.11][Cme.Futures.Mdp3.Sbe.v1.11.Structs] | 3/3/2020 | 987 | Untested | [url][Cme.Futures.Mdp3.Sbe.v1.11.Url] - [xml][Cme.Futures.Mdp3.Sbe.v1.11.Xml] - [ftp][Cme.Futures.Mdp3.Sbe.v1.11.Ftp] |
-| Futures | Mdp3 | Sbe | [1.10][Cme.Futures.Mdp3.Sbe.v1.10.Structs] | 7/26/2019 | 937 | Untested | [url][Cme.Futures.Mdp3.Sbe.v1.10.Url] - [xml][Cme.Futures.Mdp3.Sbe.v1.10.Xml] - [ftp][Cme.Futures.Mdp3.Sbe.v1.10.Ftp] |
-| Futures | Settlements | Sbe | [7.0][Cme.Futures.Settlements.Sbe.v7.0.Structs] | 12/3/2018 | 283 | Untested | [url][Cme.Futures.Settlements.Sbe.v7.0.Url] - [xml][Cme.Futures.Settlements.Sbe.v7.0.Xml] |
-| Futures | Streamlined | Sbe | [5.9][Cme.Futures.Streamlined.Sbe.v5.9.Structs] | 4/4/2018 | 1057 | Untested | [url][Cme.Futures.Streamlined.Sbe.v5.9.Url] - [xml][Cme.Futures.Streamlined.Sbe.v5.9.Xml] |
-| Futures | Streamlined | Sbe | [5.8][Cme.Futures.Streamlined.Sbe.v5.8.Structs] | 6/2/2017 | 932 | Untested | [url][Cme.Futures.Streamlined.Sbe.v5.8.Url] - [xml][Cme.Futures.Streamlined.Sbe.v5.8.Xml] |
+| Ebs | Spectrum | Sbe | [12.0][Cme.Ebs.Spectrum.Sbe.v12.0.Structs] | 4/8/2022 | 248 | Untested | [url][Cme.Ebs.Spectrum.Sbe.v12.0.Url] - [xml][Cme.Ebs.Spectrum.Sbe.v12.0.Xml] |
+| Futures | Derived | Sbe | [12.0][Cme.Futures.Derived.Sbe.v12.0.Structs] | 1/4/2020 | 248 | Untested | [url][Cme.Futures.Derived.Sbe.v12.0.Url] - [xml][Cme.Futures.Derived.Sbe.v12.0.Xml] |
+| Futures | iLink3 | Sbe | [8.8][Cme.Futures.iLink3.Sbe.v8.8.Structs] | 5/31/2022 | 1957 | Verified | [url][Cme.Futures.iLink3.Sbe.v8.8.Url] - [xml][Cme.Futures.iLink3.Sbe.v8.8.Xml] |
+| Futures | iLink3 | Sbe | [8.7][Cme.Futures.iLink3.Sbe.v8.7.Structs] | 1/6/2021 | 1956 | Verified | [url][Cme.Futures.iLink3.Sbe.v8.7.Url] - [xml][Cme.Futures.iLink3.Sbe.v8.7.Xml] |
+| Futures | iLink3 | Sbe | [8.6][Cme.Futures.iLink3.Sbe.v8.6.Structs] | 10/13/2020 | 1956 | Untested | [url][Cme.Futures.iLink3.Sbe.v8.6.Url] - [xml][Cme.Futures.iLink3.Sbe.v8.6.Xml] |
+| Futures | iLink3 | Sbe | [8.5][Cme.Futures.iLink3.Sbe.v8.5.Structs] | 2/27/2020 | 1833 | Verified | [url][Cme.Futures.iLink3.Sbe.v8.5.Url] - [xml][Cme.Futures.iLink3.Sbe.v8.5.Xml] |
+| Futures | iLink3 | Sbe | [8.4][Cme.Futures.iLink3.Sbe.v8.4.Structs] | 2/11/2020 | 1829 | Untested | [url][Cme.Futures.iLink3.Sbe.v8.4.Url] - [xml][Cme.Futures.iLink3.Sbe.v8.4.Xml] |
+| Futures | iLink3 | Sbe | [8.3][Cme.Futures.iLink3.Sbe.v8.3.Structs] | 1/9/2020 | 1818 | Untested | [url][Cme.Futures.iLink3.Sbe.v8.3.Url] - [xml][Cme.Futures.iLink3.Sbe.v8.3.Xml] |
+| Futures | iLink3 | Sbe | [8.2][Cme.Futures.iLink3.Sbe.v8.2.Structs] | 11/5/2019 | 1815 | Verified | [url][Cme.Futures.iLink3.Sbe.v8.2.Url] - [xml][Cme.Futures.iLink3.Sbe.v8.2.Xml] |
+| Futures | Mdp3 | Sbe | [1.9][Cme.Futures.Mdp3.Sbe.v1.9.Structs] | 3/8/2018 | 1085 | Verified | [url][Cme.Futures.Mdp3.Sbe.v1.9.Url] - [xml][Cme.Futures.Mdp3.Sbe.v1.9.Xml] - [ftp][Cme.Futures.Mdp3.Sbe.v1.9.Ftp] |
+| Futures | Mdp3 | Sbe | [1.8][Cme.Futures.Mdp3.Sbe.v1.8.Structs] | 7/1/2016 | 821 | Verified | [url][Cme.Futures.Mdp3.Sbe.v1.8.Url] - [xml][Cme.Futures.Mdp3.Sbe.v1.8.Xml] - [ftp][Cme.Futures.Mdp3.Sbe.v1.8.Ftp] |
+| Futures | Mdp3 | Sbe | [1.6][Cme.Futures.Mdp3.Sbe.v1.6.Structs] | 1/9/2016 | 725 | Verified | [url][Cme.Futures.Mdp3.Sbe.v1.6.Url] - [xml][Cme.Futures.Mdp3.Sbe.v1.6.Xml] - [ftp][Cme.Futures.Mdp3.Sbe.v1.6.Ftp] |
+| Futures | Mdp3 | Sbe | [1.5][Cme.Futures.Mdp3.Sbe.v1.5.Structs] | 8/6/2014 | 725 | Verified | [url][Cme.Futures.Mdp3.Sbe.v1.5.Url] - [xml][Cme.Futures.Mdp3.Sbe.v1.5.Xml] - [ftp][Cme.Futures.Mdp3.Sbe.v1.5.Ftp] |
+| Futures | Mdp3 | Sbe | [1.12][Cme.Futures.Mdp3.Sbe.v1.12.Structs] | 3/10/2021 | 1226 | Untested | [url][Cme.Futures.Mdp3.Sbe.v1.12.Url] - [xml][Cme.Futures.Mdp3.Sbe.v1.12.Xml] - [ftp][Cme.Futures.Mdp3.Sbe.v1.12.Ftp] |
+| Futures | Mdp3 | Sbe | [1.11][Cme.Futures.Mdp3.Sbe.v1.11.Structs] | 3/3/2020 | 990 | Untested | [url][Cme.Futures.Mdp3.Sbe.v1.11.Url] - [xml][Cme.Futures.Mdp3.Sbe.v1.11.Xml] - [ftp][Cme.Futures.Mdp3.Sbe.v1.11.Ftp] |
+| Futures | Mdp3 | Sbe | [1.10][Cme.Futures.Mdp3.Sbe.v1.10.Structs] | 7/26/2019 | 940 | Untested | [url][Cme.Futures.Mdp3.Sbe.v1.10.Url] - [xml][Cme.Futures.Mdp3.Sbe.v1.10.Xml] - [ftp][Cme.Futures.Mdp3.Sbe.v1.10.Ftp] |
+| Futures | Settlements | Sbe | [7.0][Cme.Futures.Settlements.Sbe.v7.0.Structs] | 12/3/2018 | 286 | Untested | [url][Cme.Futures.Settlements.Sbe.v7.0.Url] - [xml][Cme.Futures.Settlements.Sbe.v7.0.Xml] |
+| Futures | Streamlined | Sbe | [5.9][Cme.Futures.Streamlined.Sbe.v5.9.Structs] | 4/4/2018 | 1060 | Untested | [url][Cme.Futures.Streamlined.Sbe.v5.9.Url] - [xml][Cme.Futures.Streamlined.Sbe.v5.9.Xml] |
+| Futures | Streamlined | Sbe | [5.8][Cme.Futures.Streamlined.Sbe.v5.8.Structs] | 6/2/2017 | 935 | Untested | [url][Cme.Futures.Streamlined.Sbe.v5.8.Url] - [xml][Cme.Futures.Streamlined.Sbe.v5.8.Xml] |
 
 
 Cme: [website](http://www.cmegroup.com "Go to Chicago Mercantile Exchange")

@@ -181,6 +181,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: M D Incremental Refresh Trade Summary Order Group
  */ 
@@ -720,3 +722,4 @@ typedef struct {
     BinaryPacketHeaderT BinaryPacketHeader;
 } PacketT;
 
+#pragma pack(pop)

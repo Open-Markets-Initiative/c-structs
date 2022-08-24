@@ -976,6 +976,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Xetra En Light Target Parties Comp
  */ 
@@ -3307,3 +3309,4 @@ typedef struct {
     char Pad7[7];
 } ApproveTesTradeRequestT;
 
+#pragma pack(pop)

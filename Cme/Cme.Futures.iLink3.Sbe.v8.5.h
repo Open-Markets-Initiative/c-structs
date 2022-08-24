@@ -488,6 +488,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Quote Cancel Ack Set Group
  */ 
@@ -1828,3 +1830,4 @@ typedef struct {
 typedef struct {
 } PacketT;
 
+#pragma pack(pop)

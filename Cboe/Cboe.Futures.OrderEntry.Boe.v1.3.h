@@ -361,6 +361,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Variance Quote Restatement Message
  */ 
@@ -3776,3 +3778,4 @@ typedef struct {
     MessageHeaderT MessageHeader;
 } PacketT;
 
+#pragma pack(pop)

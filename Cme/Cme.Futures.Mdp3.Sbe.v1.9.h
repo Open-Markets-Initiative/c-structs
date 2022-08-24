@@ -200,6 +200,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: M D Instrument Definition Spread 56 Leg Group
  */ 
@@ -1080,3 +1082,4 @@ typedef struct {
     BinaryPacketHeaderT BinaryPacketHeader;
 } PacketT;
 
+#pragma pack(pop)

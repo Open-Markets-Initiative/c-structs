@@ -5,8 +5,8 @@
 
 | Division | Data | Protocol | Version | Date | Size | Testing | Specification |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Millennium | Level2 | Mitch | [11.9][Lse.Millennium.Level2.Mitch.v11.9.Structs] | 8/28/2018 | 431 | Beta | [url][Lse.Millennium.Level2.Mitch.v11.9.Url] - [pdf][Lse.Millennium.Level2.Mitch.v11.9.Pdf] |
-| Millennium | UdpUnitHeader | Mitch | [1.0][Lse.Millennium.UdpUnitHeader.Mitch.v1.0.Structs] | 1/1/2018 | 41 | Beta | [url][Lse.Millennium.UdpUnitHeader.Mitch.v1.0.Url] - [pdf][Lse.Millennium.UdpUnitHeader.Mitch.v1.0.Pdf] |
+| Millennium | Level2 | Mitch | [11.9][Lse.Millennium.Level2.Mitch.v11.9.Structs] | 8/28/2018 | 434 | Beta | [url][Lse.Millennium.Level2.Mitch.v11.9.Url] - [pdf][Lse.Millennium.Level2.Mitch.v11.9.Pdf] |
+| Millennium | UdpUnitHeader | Mitch | [1.0][Lse.Millennium.UdpUnitHeader.Mitch.v1.0.Structs] | 1/1/2018 | 44 | Beta | [url][Lse.Millennium.UdpUnitHeader.Mitch.v1.0.Url] - [pdf][Lse.Millennium.UdpUnitHeader.Mitch.v1.0.Pdf] |
 
 
 Lse: [website](https://www.londonstockexchange.com "Go to London Stock Exchange")

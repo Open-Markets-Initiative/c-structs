@@ -457,6 +457,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Reset Risk Acknowledgement Message
  */ 
@@ -995,3 +997,4 @@ typedef struct {
     MessageHeaderT MessageHeader;
 } PacketT;
 
+#pragma pack(pop)

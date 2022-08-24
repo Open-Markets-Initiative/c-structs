@@ -139,6 +139,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Trade Correct Message
  */ 
@@ -297,3 +299,4 @@ typedef struct {
     CommonHeaderT CommonHeader;
 } PacketT;
 
+#pragma pack(pop)

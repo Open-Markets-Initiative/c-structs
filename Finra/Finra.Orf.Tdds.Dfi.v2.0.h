@@ -132,6 +132,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Datetime
  */ 
@@ -484,3 +486,4 @@ typedef struct {
     uint8_t BlockSoh;
 } PacketT;
 
+#pragma pack(pop)

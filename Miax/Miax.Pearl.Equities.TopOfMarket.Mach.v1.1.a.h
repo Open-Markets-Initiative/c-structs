@@ -90,6 +90,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Trade Cancel Message
  */ 
@@ -226,3 +228,4 @@ typedef struct {
 typedef struct {
 } PacketT;
 
+#pragma pack(pop)

@@ -401,6 +401,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Bitfield: Purge Rejected Byte 17
  */ 
@@ -3382,3 +3384,4 @@ typedef struct {
     MessageHeaderT MessageHeader;
 } PacketT;
 
+#pragma pack(pop)

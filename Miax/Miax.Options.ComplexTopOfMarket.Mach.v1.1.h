@@ -162,6 +162,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Underlying Trading Status Message
  */ 
@@ -360,3 +362,4 @@ typedef struct {
 typedef struct {
 } PacketT;
 
+#pragma pack(pop)

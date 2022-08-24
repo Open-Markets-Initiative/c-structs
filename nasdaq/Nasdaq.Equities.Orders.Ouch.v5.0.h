@@ -257,6 +257,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Account Query Response Message
  */ 
@@ -660,3 +662,4 @@ typedef struct {
 typedef struct {
 } PacketT;
 
+#pragma pack(pop)

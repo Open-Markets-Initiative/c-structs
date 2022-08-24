@@ -6,6 +6,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Message Header
  */ 
@@ -44,3 +46,4 @@ typedef struct {
     IexTpHeaderT IexTpHeader;
 } PacketT;
 
+#pragma pack(pop)

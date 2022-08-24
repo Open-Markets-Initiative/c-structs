@@ -662,6 +662,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Group Size Encoding
  */ 
@@ -1886,3 +1888,4 @@ typedef struct {
 typedef struct {
 } PacketT;
 
+#pragma pack(pop)

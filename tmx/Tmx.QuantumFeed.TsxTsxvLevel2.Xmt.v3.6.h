@@ -181,6 +181,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Trade Correction Terms Body
  */ 
@@ -1021,3 +1023,4 @@ typedef struct {
     FrameHeaderT FrameHeader;
 } PacketT;
 
+#pragma pack(pop)

@@ -212,6 +212,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Underlying Value Bid And Offer Message
  */ 
@@ -400,3 +402,4 @@ typedef struct {
     uint16_t BlockChecksum;
 } BlockHeaderT;
 
+#pragma pack(pop)

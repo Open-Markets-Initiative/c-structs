@@ -716,6 +716,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Response Header Comp
  */ 
@@ -2267,3 +2269,4 @@ typedef struct {
     char Pad2[2];
 } BestQuoteExecutionReportT;
 
+#pragma pack(pop)

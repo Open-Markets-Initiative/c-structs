@@ -5,14 +5,14 @@
 
 | Division | Data | Protocol | Version | Date | Size | Testing | Specification |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Options | ComplexTopOfMarket | Mach | [1.3][Miax.Options.ComplexTopOfMarket.Mach.v1.3.Structs] | 3/16/2018 | 366 | Untested | [url][Miax.Options.ComplexTopOfMarket.Mach.v1.3.Url] - [pdf][Miax.Options.ComplexTopOfMarket.Mach.v1.3.Pdf] |
-| Options | ComplexTopOfMarket | Mach | [1.1][Miax.Options.ComplexTopOfMarket.Mach.v1.1.Structs] | 7/15/2016 | 362 | Verified | [url][Miax.Options.ComplexTopOfMarket.Mach.v1.1.Url] - [pdf][Miax.Options.ComplexTopOfMarket.Mach.v1.1.Pdf] |
-| Options | TopOfMarket | Mach | [2.3][Miax.Options.TopOfMarket.Mach.v2.3.Structs] | 6/10/2019 | 397 | Untested | [url][Miax.Options.TopOfMarket.Mach.v2.3.Url] - [pdf][Miax.Options.TopOfMarket.Mach.v2.3.Pdf] |
-| Options | TopOfMarket | Mach | [2.2][Miax.Options.TopOfMarket.Mach.v2.2.Structs] | 3/16/2018 | 377 | Untested | [url][Miax.Options.TopOfMarket.Mach.v2.2.Url] - [pdf][Miax.Options.TopOfMarket.Mach.v2.2.Pdf] |
-| Options | TopOfMarket | Mach | [1.9][Miax.Options.TopOfMarket.Mach.v1.9.Structs] | 1/15/2016 | 331 | Verified | [url][Miax.Options.TopOfMarket.Mach.v1.9.Url] - [pdf][Miax.Options.TopOfMarket.Mach.v1.9.Pdf] |
-| Pearl Equities | DepthOfMarket | Mach | [1.3.a][Miax.Pearl.Equities.DepthOfMarket.Mach.v1.3.a.Structs] | 11/5/2020 | 298 | Untested | [url][Miax.Pearl.Equities.DepthOfMarket.Mach.v1.3.a.Url] - [pdf][Miax.Pearl.Equities.DepthOfMarket.Mach.v1.3.a.Pdf] |
-| Pearl Equities | TopOfMarket | Mach | [1.1.a][Miax.Pearl.Equities.TopOfMarket.Mach.v1.1.a.Structs] | 11/5/2020 | 228 | Untested | [url][Miax.Pearl.Equities.TopOfMarket.Mach.v1.1.a.Url] - [pdf][Miax.Pearl.Equities.TopOfMarket.Mach.v1.1.a.Pdf] |
-| Pearl Options | TopOfMarket | Mach | [1.0][Miax.Pearl.Options.TopOfMarket.Mach.v1.0.Structs] | 2/27/2017 | 364 | Untested | [url][Miax.Pearl.Options.TopOfMarket.Mach.v1.0.Url] - [pdf][Miax.Pearl.Options.TopOfMarket.Mach.v1.0.Pdf] |
+| Options | ComplexTopOfMarket | Mach | [1.3][Miax.Options.ComplexTopOfMarket.Mach.v1.3.Structs] | 3/16/2018 | 369 | Untested | [url][Miax.Options.ComplexTopOfMarket.Mach.v1.3.Url] - [pdf][Miax.Options.ComplexTopOfMarket.Mach.v1.3.Pdf] |
+| Options | ComplexTopOfMarket | Mach | [1.1][Miax.Options.ComplexTopOfMarket.Mach.v1.1.Structs] | 7/15/2016 | 365 | Verified | [url][Miax.Options.ComplexTopOfMarket.Mach.v1.1.Url] - [pdf][Miax.Options.ComplexTopOfMarket.Mach.v1.1.Pdf] |
+| Options | TopOfMarket | Mach | [2.3][Miax.Options.TopOfMarket.Mach.v2.3.Structs] | 6/10/2019 | 400 | Untested | [url][Miax.Options.TopOfMarket.Mach.v2.3.Url] - [pdf][Miax.Options.TopOfMarket.Mach.v2.3.Pdf] |
+| Options | TopOfMarket | Mach | [2.2][Miax.Options.TopOfMarket.Mach.v2.2.Structs] | 3/16/2018 | 380 | Untested | [url][Miax.Options.TopOfMarket.Mach.v2.2.Url] - [pdf][Miax.Options.TopOfMarket.Mach.v2.2.Pdf] |
+| Options | TopOfMarket | Mach | [1.9][Miax.Options.TopOfMarket.Mach.v1.9.Structs] | 1/15/2016 | 334 | Verified | [url][Miax.Options.TopOfMarket.Mach.v1.9.Url] - [pdf][Miax.Options.TopOfMarket.Mach.v1.9.Pdf] |
+| Pearl Equities | DepthOfMarket | Mach | [1.3.a][Miax.Pearl.Equities.DepthOfMarket.Mach.v1.3.a.Structs] | 11/5/2020 | 301 | Untested | [url][Miax.Pearl.Equities.DepthOfMarket.Mach.v1.3.a.Url] - [pdf][Miax.Pearl.Equities.DepthOfMarket.Mach.v1.3.a.Pdf] |
+| Pearl Equities | TopOfMarket | Mach | [1.1.a][Miax.Pearl.Equities.TopOfMarket.Mach.v1.1.a.Structs] | 11/5/2020 | 231 | Untested | [url][Miax.Pearl.Equities.TopOfMarket.Mach.v1.1.a.Url] - [pdf][Miax.Pearl.Equities.TopOfMarket.Mach.v1.1.a.Pdf] |
+| Pearl Options | TopOfMarket | Mach | [1.0][Miax.Pearl.Options.TopOfMarket.Mach.v1.0.Structs] | 2/27/2017 | 367 | Untested | [url][Miax.Pearl.Options.TopOfMarket.Mach.v1.0.Url] - [pdf][Miax.Pearl.Options.TopOfMarket.Mach.v1.0.Pdf] |
 
 
 Miax: [website](https://www.miaxoptions.com "Go to Miami International Securities Exchange")

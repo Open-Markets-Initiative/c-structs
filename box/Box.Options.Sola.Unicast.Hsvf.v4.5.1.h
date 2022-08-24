@@ -275,6 +275,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Complex Order Initial And Improvement Order Message
  */ 
@@ -814,3 +816,4 @@ typedef struct {
     char MessageType[2];
 } MessageHeaderT;
 
+#pragma pack(pop)

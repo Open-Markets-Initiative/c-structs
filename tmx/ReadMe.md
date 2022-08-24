@@ -5,10 +5,10 @@
 
 | Division | Data | Protocol | Version | Date | Size | Testing | Specification |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Mx Sola | Multicast | Hsvf | [1.11][Tmx.Mx.Sola.Multicast.Hsvf.v1.11.Structs] | 1/23/2019 | 1318 | Untested | [url][Tmx.Mx.Sola.Multicast.Hsvf.v1.11.Url] - [pdf][Tmx.Mx.Sola.Multicast.Hsvf.v1.11.Pdf] |
-| QuantumFeed | AlphaLevel1 | Xmt | [2.1][Tmx.QuantumFeed.AlphaLevel1.Xmt.v2.1.Structs] | 10/20/2020 | 257 | Beta | [url][Tmx.QuantumFeed.AlphaLevel1.Xmt.v2.1.Url] - [pdf][Tmx.QuantumFeed.AlphaLevel1.Xmt.v2.1.Pdf] |
-| QuantumFeed | TsxTsxvLevel2 | Xmt | [3.6][Tmx.QuantumFeed.TsxTsxvLevel2.Xmt.v3.6.Structs] | 10/20/2020 | 1023 | Beta | [url][Tmx.QuantumFeed.TsxTsxvLevel2.Xmt.v3.6.Url] - [pdf][Tmx.QuantumFeed.TsxTsxvLevel2.Xmt.v3.6.Pdf] |
-| QuantumFeed | UdpHeader | Xmt | [1.1][Tmx.QuantumFeed.UdpHeader.Xmt.v1.1.Structs] | 10/20/2020 | 54 | Verified | [url][Tmx.QuantumFeed.UdpHeader.Xmt.v1.1.Url] |
+| Mx Sola | Multicast | Hsvf | [1.11][Tmx.Mx.Sola.Multicast.Hsvf.v1.11.Structs] | 1/23/2019 | 1321 | Untested | [url][Tmx.Mx.Sola.Multicast.Hsvf.v1.11.Url] - [pdf][Tmx.Mx.Sola.Multicast.Hsvf.v1.11.Pdf] |
+| QuantumFeed | AlphaLevel1 | Xmt | [2.1][Tmx.QuantumFeed.AlphaLevel1.Xmt.v2.1.Structs] | 10/20/2020 | 260 | Beta | [url][Tmx.QuantumFeed.AlphaLevel1.Xmt.v2.1.Url] - [pdf][Tmx.QuantumFeed.AlphaLevel1.Xmt.v2.1.Pdf] |
+| QuantumFeed | TsxTsxvLevel2 | Xmt | [3.6][Tmx.QuantumFeed.TsxTsxvLevel2.Xmt.v3.6.Structs] | 10/20/2020 | 1026 | Beta | [url][Tmx.QuantumFeed.TsxTsxvLevel2.Xmt.v3.6.Url] - [pdf][Tmx.QuantumFeed.TsxTsxvLevel2.Xmt.v3.6.Pdf] |
+| QuantumFeed | UdpHeader | Xmt | [1.1][Tmx.QuantumFeed.UdpHeader.Xmt.v1.1.Structs] | 10/20/2020 | 57 | Verified | [url][Tmx.QuantumFeed.UdpHeader.Xmt.v1.1.Url] |
 
 
 Tmx: [website](https://www.tmx.com/ "Go to Tmx Group")

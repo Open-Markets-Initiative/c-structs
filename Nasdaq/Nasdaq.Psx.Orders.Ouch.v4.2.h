@@ -175,6 +175,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: Order Modified Message
  */ 
@@ -462,3 +464,4 @@ typedef struct {
 typedef struct {
 } PacketT;
 
+#pragma pack(pop)

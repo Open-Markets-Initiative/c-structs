@@ -299,6 +299,8 @@
  * Structs
  *******************************************************************************/
 
+#pragma pack(push, 1)
+
 /*
  * Structure: National Best Offer Short Appendage
  */ 
@@ -586,3 +588,4 @@ typedef struct {
     uint16_t BlockChecksum;
 } BlockHeaderT;
 
+#pragma pack(pop)
