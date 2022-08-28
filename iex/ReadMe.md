@@ -5,9 +5,9 @@
 
 | Division | Data | Protocol | Version | Date | Size | Testing | Specification |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Equities | Deep | IexTp | [1.0][Iex.Equities.Deep.IexTp.v1.0.Structs] | 2/27/2018 | 323 | Verified | [url][Iex.Equities.Deep.IexTp.v1.0.Url] - [pdf][Iex.Equities.Deep.IexTp.v1.0.Pdf] |
-| Equities | Tops | IexTp | [1.6][Iex.Equities.Tops.IexTp.v1.6.Structs] | 2/27/2018 | 316 | Verified | [url][Iex.Equities.Tops.IexTp.v1.6.Url] - [pdf][Iex.Equities.Tops.IexTp.v1.6.Pdf] |
-| Equities | UdpHeader | IexTp | [1.0][Iex.Equities.UdpHeader.IexTp.v1.0.Structs] | 9/20/2015 | 49 | Verified | [url][Iex.Equities.UdpHeader.IexTp.v1.0.Url] - [pdf][Iex.Equities.UdpHeader.IexTp.v1.0.Pdf] |
+| Equities | Deep | IexTp | [1.0][Iex.Equities.Deep.IexTp.v1.0.Structs] | 2/27/2018 | 344 | Verified | [url][Iex.Equities.Deep.IexTp.v1.0.Url] - [pdf][Iex.Equities.Deep.IexTp.v1.0.Pdf] |
+| Equities | Tops | IexTp | [1.6][Iex.Equities.Tops.IexTp.v1.6.Structs] | 2/27/2018 | 337 | Verified | [url][Iex.Equities.Tops.IexTp.v1.6.Url] - [pdf][Iex.Equities.Tops.IexTp.v1.6.Pdf] |
+| Equities | UdpHeader | IexTp | [1.0][Iex.Equities.UdpHeader.IexTp.v1.0.Structs] | 9/20/2015 | 70 | Verified | [url][Iex.Equities.UdpHeader.IexTp.v1.0.Url] - [pdf][Iex.Equities.UdpHeader.IexTp.v1.0.Pdf] |
 
 
 Iex: [website](https://iextrading.com "Go to Investors Exchange")

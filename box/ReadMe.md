@@ -5,7 +5,7 @@
 
 | Division | Data | Protocol | Version | Date | Size | Testing | Specification |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Options Sola | Unicast | Hsvf | [4.5.1][Box.Options.Sola.Unicast.Hsvf.v4.5.1.Structs] | 3/15/2021 | 819 | Verified | [pdf][Box.Options.Sola.Unicast.Hsvf.v4.5.1.Pdf] |
+| Options Sola | Unicast | Hsvf | [4.5.1][Box.Options.Sola.Unicast.Hsvf.v4.5.1.Structs] | 3/15/2021 | 840 | Verified | [pdf][Box.Options.Sola.Unicast.Hsvf.v4.5.1.Pdf] |
 
 
 Box: [website](https://boxoptions.com "Go to Boston Options Exchange")

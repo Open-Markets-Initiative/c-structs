@@ -5,12 +5,12 @@
 
 | Division | Data | Protocol | Version | Date | Size | Testing | Specification |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Derivatives | MarketDataApi | Sbe | [1.7][Coinbase.Derivatives.MarketDataApi.Sbe.v1.7.Structs] | 4/14/2022 | 540 | Untested | [pdf][Coinbase.Derivatives.MarketDataApi.Sbe.v1.7.Pdf] - [xml][Coinbase.Derivatives.MarketDataApi.Sbe.v1.7.Xml] |
-| Derivatives | MarketDataApi | Sbe | [1.3][Coinbase.Derivatives.MarketDataApi.Sbe.v1.3.Structs] | 7/27/2020 | 503 | Untested | [pdf][Coinbase.Derivatives.MarketDataApi.Sbe.v1.3.Pdf] - [xml][Coinbase.Derivatives.MarketDataApi.Sbe.v1.3.Xml] |
-| Derivatives | MarketDataApi | Sbe | [1.2][Coinbase.Derivatives.MarketDataApi.Sbe.v1.2.Structs] | 7/27/2020 | 448 | Verified | [pdf][Coinbase.Derivatives.MarketDataApi.Sbe.v1.2.Pdf] - [xml][Coinbase.Derivatives.MarketDataApi.Sbe.v1.2.Xml] |
-| Derivatives | OrdersApi | Sbe | [1.5][Coinbase.Derivatives.OrdersApi.Sbe.v1.5.Structs] | 4/14/2022 | 556 | Untested | [pdf][Coinbase.Derivatives.OrdersApi.Sbe.v1.5.Pdf] - [xml][Coinbase.Derivatives.OrdersApi.Sbe.v1.5.Xml] |
-| Derivatives | OrdersApi | Sbe | [1.4][Coinbase.Derivatives.OrdersApi.Sbe.v1.4.Structs] | 7/27/2020 | 556 | Verified | [xml][Coinbase.Derivatives.OrdersApi.Sbe.v1.4.Xml] |
-| Derivatives | OrdersApi | Sbe | [1.3][Coinbase.Derivatives.OrdersApi.Sbe.v1.3.Structs] | 7/27/2020 | 556 | Untested | [pdf][Coinbase.Derivatives.OrdersApi.Sbe.v1.3.Pdf] - [xml][Coinbase.Derivatives.OrdersApi.Sbe.v1.3.Xml] |
+| Derivatives | MarketDataApi | Sbe | [1.7][Coinbase.Derivatives.MarketDataApi.Sbe.v1.7.Structs] | 4/14/2022 | 561 | Untested | [pdf][Coinbase.Derivatives.MarketDataApi.Sbe.v1.7.Pdf] - [xml][Coinbase.Derivatives.MarketDataApi.Sbe.v1.7.Xml] |
+| Derivatives | MarketDataApi | Sbe | [1.3][Coinbase.Derivatives.MarketDataApi.Sbe.v1.3.Structs] | 7/27/2020 | 524 | Untested | [pdf][Coinbase.Derivatives.MarketDataApi.Sbe.v1.3.Pdf] - [xml][Coinbase.Derivatives.MarketDataApi.Sbe.v1.3.Xml] |
+| Derivatives | MarketDataApi | Sbe | [1.2][Coinbase.Derivatives.MarketDataApi.Sbe.v1.2.Structs] | 7/27/2020 | 469 | Verified | [pdf][Coinbase.Derivatives.MarketDataApi.Sbe.v1.2.Pdf] - [xml][Coinbase.Derivatives.MarketDataApi.Sbe.v1.2.Xml] |
+| Derivatives | OrdersApi | Sbe | [1.5][Coinbase.Derivatives.OrdersApi.Sbe.v1.5.Structs] | 4/14/2022 | 577 | Untested | [pdf][Coinbase.Derivatives.OrdersApi.Sbe.v1.5.Pdf] - [xml][Coinbase.Derivatives.OrdersApi.Sbe.v1.5.Xml] |
+| Derivatives | OrdersApi | Sbe | [1.4][Coinbase.Derivatives.OrdersApi.Sbe.v1.4.Structs] | 7/27/2020 | 576 | Verified | [xml][Coinbase.Derivatives.OrdersApi.Sbe.v1.4.Xml] |
+| Derivatives | OrdersApi | Sbe | [1.3][Coinbase.Derivatives.OrdersApi.Sbe.v1.3.Structs] | 7/27/2020 | 577 | Untested | [pdf][Coinbase.Derivatives.OrdersApi.Sbe.v1.3.Pdf] - [xml][Coinbase.Derivatives.OrdersApi.Sbe.v1.3.Xml] |
 
 
 Coinbase: [website](https://www.coinbase.com/ "Go to Coinbase")

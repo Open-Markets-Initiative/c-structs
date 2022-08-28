@@ -5,16 +5,16 @@
 
 | Division | Data | Protocol | Version | Date | Size | Testing | Specification |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Optiq | MarketDataGateway | Sbe | [4.3][Euronext.Optiq.MarketDataGateway.Sbe.v4.3.Structs] | 9/25/2020 | 2091 | Beta | [url][Euronext.Optiq.MarketDataGateway.Sbe.v4.3.Url] - [xml][Euronext.Optiq.MarketDataGateway.Sbe.v4.3.Xml] |
-| Optiq | MarketDataGateway | Sbe | [4.13][Euronext.Optiq.MarketDataGateway.Sbe.v4.13.Structs] | 3/7/2022 | 2112 | Beta | [url][Euronext.Optiq.MarketDataGateway.Sbe.v4.13.Url] - [pdf][Euronext.Optiq.MarketDataGateway.Sbe.v4.13.Pdf] - [xml][Euronext.Optiq.MarketDataGateway.Sbe.v4.13.Xml] |
-| Optiq | MarketDataGateway | Sbe | [4.12][Euronext.Optiq.MarketDataGateway.Sbe.v4.12.Structs] | 1/21/2022 | 2096 | Beta | [url][Euronext.Optiq.MarketDataGateway.Sbe.v4.12.Url] - [xml][Euronext.Optiq.MarketDataGateway.Sbe.v4.12.Xml] |
-| Optiq | MarketDataGateway | Sbe | [4.11][Euronext.Optiq.MarketDataGateway.Sbe.v4.11.Structs] | 1/19/2022 | 2096 | Beta | [url][Euronext.Optiq.MarketDataGateway.Sbe.v4.11.Url] - [pdf][Euronext.Optiq.MarketDataGateway.Sbe.v4.11.Pdf] - [xml][Euronext.Optiq.MarketDataGateway.Sbe.v4.11.Xml] |
-| Optiq | MarketDataGateway | Sbe | [3.1][Euronext.Optiq.MarketDataGateway.Sbe.v3.1.Structs] | 3/3/2020 | 1885 | Beta | [url][Euronext.Optiq.MarketDataGateway.Sbe.v3.1.Url] - [xml][Euronext.Optiq.MarketDataGateway.Sbe.v3.1.Xml] |
-| Optiq | MarketDataGateway | Sbe | [3.0][Euronext.Optiq.MarketDataGateway.Sbe.v3.0.Structs] | 9/3/2019 | 1881 | Beta | [url][Euronext.Optiq.MarketDataGateway.Sbe.v3.0.Url] - [xml][Euronext.Optiq.MarketDataGateway.Sbe.v3.0.Xml] |
-| Optiq | OrderEntryGateway | Sbe | [4.2][Euronext.Optiq.OrderEntryGateway.Sbe.v4.2.Structs] | 9/25/2020 | 1891 | Beta | [url][Euronext.Optiq.OrderEntryGateway.Sbe.v4.2.Url] - [pdf][Euronext.Optiq.OrderEntryGateway.Sbe.v4.2.Pdf] - [xml][Euronext.Optiq.OrderEntryGateway.Sbe.v4.2.Xml] |
-| Optiq | OrderEntryGateway | Sbe | [4.13][Euronext.Optiq.OrderEntryGateway.Sbe.v4.13.Structs] | 3/7/2022 | 2053 | Beta | [url][Euronext.Optiq.OrderEntryGateway.Sbe.v4.13.Url] - [pdf][Euronext.Optiq.OrderEntryGateway.Sbe.v4.13.Pdf] - [xml][Euronext.Optiq.OrderEntryGateway.Sbe.v4.13.Xml] |
-| Optiq | OrderEntryGateway | Sbe | [4.12][Euronext.Optiq.OrderEntryGateway.Sbe.v4.12.Structs] | 1/21/2022 | 2053 | Beta | [url][Euronext.Optiq.OrderEntryGateway.Sbe.v4.12.Url] - [xml][Euronext.Optiq.OrderEntryGateway.Sbe.v4.12.Xml] |
-| Optiq | OrderEntryGateway | Sbe | [4.11][Euronext.Optiq.OrderEntryGateway.Sbe.v4.11.Structs] | 1/19/2022 | 2053 | Beta | [url][Euronext.Optiq.OrderEntryGateway.Sbe.v4.11.Url] - [xml][Euronext.Optiq.OrderEntryGateway.Sbe.v4.11.Xml] |
+| Optiq | MarketDataGateway | Sbe | [4.3][Euronext.Optiq.MarketDataGateway.Sbe.v4.3.Structs] | 9/25/2020 | 2111 | Beta | [url][Euronext.Optiq.MarketDataGateway.Sbe.v4.3.Url] - [xml][Euronext.Optiq.MarketDataGateway.Sbe.v4.3.Xml] |
+| Optiq | MarketDataGateway | Sbe | [4.13][Euronext.Optiq.MarketDataGateway.Sbe.v4.13.Structs] | 3/7/2022 | 2133 | Beta | [url][Euronext.Optiq.MarketDataGateway.Sbe.v4.13.Url] - [pdf][Euronext.Optiq.MarketDataGateway.Sbe.v4.13.Pdf] - [xml][Euronext.Optiq.MarketDataGateway.Sbe.v4.13.Xml] |
+| Optiq | MarketDataGateway | Sbe | [4.12][Euronext.Optiq.MarketDataGateway.Sbe.v4.12.Structs] | 1/21/2022 | 2116 | Beta | [url][Euronext.Optiq.MarketDataGateway.Sbe.v4.12.Url] - [xml][Euronext.Optiq.MarketDataGateway.Sbe.v4.12.Xml] |
+| Optiq | MarketDataGateway | Sbe | [4.11][Euronext.Optiq.MarketDataGateway.Sbe.v4.11.Structs] | 1/19/2022 | 2117 | Beta | [url][Euronext.Optiq.MarketDataGateway.Sbe.v4.11.Url] - [pdf][Euronext.Optiq.MarketDataGateway.Sbe.v4.11.Pdf] - [xml][Euronext.Optiq.MarketDataGateway.Sbe.v4.11.Xml] |
+| Optiq | MarketDataGateway | Sbe | [3.1][Euronext.Optiq.MarketDataGateway.Sbe.v3.1.Structs] | 3/3/2020 | 1905 | Beta | [url][Euronext.Optiq.MarketDataGateway.Sbe.v3.1.Url] - [xml][Euronext.Optiq.MarketDataGateway.Sbe.v3.1.Xml] |
+| Optiq | MarketDataGateway | Sbe | [3.0][Euronext.Optiq.MarketDataGateway.Sbe.v3.0.Structs] | 9/3/2019 | 1901 | Beta | [url][Euronext.Optiq.MarketDataGateway.Sbe.v3.0.Url] - [xml][Euronext.Optiq.MarketDataGateway.Sbe.v3.0.Xml] |
+| Optiq | OrderEntryGateway | Sbe | [4.2][Euronext.Optiq.OrderEntryGateway.Sbe.v4.2.Structs] | 9/25/2020 | 1912 | Beta | [url][Euronext.Optiq.OrderEntryGateway.Sbe.v4.2.Url] - [pdf][Euronext.Optiq.OrderEntryGateway.Sbe.v4.2.Pdf] - [xml][Euronext.Optiq.OrderEntryGateway.Sbe.v4.2.Xml] |
+| Optiq | OrderEntryGateway | Sbe | [4.13][Euronext.Optiq.OrderEntryGateway.Sbe.v4.13.Structs] | 3/7/2022 | 2074 | Beta | [url][Euronext.Optiq.OrderEntryGateway.Sbe.v4.13.Url] - [pdf][Euronext.Optiq.OrderEntryGateway.Sbe.v4.13.Pdf] - [xml][Euronext.Optiq.OrderEntryGateway.Sbe.v4.13.Xml] |
+| Optiq | OrderEntryGateway | Sbe | [4.12][Euronext.Optiq.OrderEntryGateway.Sbe.v4.12.Structs] | 1/21/2022 | 2073 | Beta | [url][Euronext.Optiq.OrderEntryGateway.Sbe.v4.12.Url] - [xml][Euronext.Optiq.OrderEntryGateway.Sbe.v4.12.Xml] |
+| Optiq | OrderEntryGateway | Sbe | [4.11][Euronext.Optiq.OrderEntryGateway.Sbe.v4.11.Structs] | 1/19/2022 | 2073 | Beta | [url][Euronext.Optiq.OrderEntryGateway.Sbe.v4.11.Url] - [xml][Euronext.Optiq.OrderEntryGateway.Sbe.v4.11.Xml] |
 
 
 Euronext: [website](https://www.euronext.com "Go to European New Exchange Technology")
