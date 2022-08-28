@@ -252,24 +252,6 @@ typedef struct {
 } SequenceNumberResetMessageT;
 
 /*
- * Structure: Payload
- */ 
-typedef struct {
-    SequenceNumberResetMessageT SequenceNumberResetMessage;
-    SymbolIndexMappingMessageT SymbolIndexMappingMessage;
-    RetransmissionRequestMessageT RetransmissionRequestMessage;
-    RequestResponseMessageT RequestResponseMessage;
-    HeartbeatResponseMessageT HeartbeatResponseMessage;
-    SymbolIndexMappingRequestMessageT SymbolIndexMappingRequestMessage;
-    RefreshRequestMessageT RefreshRequestMessage;
-    MessageUnavailableMessageT MessageUnavailableMessage;
-    SymbolClearMessageT SymbolClearMessage;
-    SecurityStatusMessageT SecurityStatusMessage;
-    RefreshHeaderMessageT RefreshHeaderMessage;
-    ImbalanceMessageT ImbalanceMessage;
-} PayloadT;
-
-/*
  * Structure: Message Header
  */ 
 typedef struct {

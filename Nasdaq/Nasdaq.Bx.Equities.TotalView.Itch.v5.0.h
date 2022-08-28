@@ -504,33 +504,6 @@ typedef struct {
 } SystemEventMessageT;
 
 /*
- * Structure: Payload
- */ 
-typedef struct {
-    SystemEventMessageT SystemEventMessage;
-    StockDirectoryMessageT StockDirectoryMessage;
-    StockTradingActionMessageT StockTradingActionMessage;
-    RegShoRestrictionMessageT RegShoRestrictionMessage;
-    MarketParticipantPositionMessageT MarketParticipantPositionMessage;
-    MwcbDeclineLevelMessageT MwcbDeclineLevelMessage;
-    MwcbStatusMessageT MwcbStatusMessage;
-    LuldAuctionCollarMessageT LuldAuctionCollarMessage;
-    OperationalHaltMessageT OperationalHaltMessage;
-    AddOrderNoMpidAttributionMessageT AddOrderNoMpidAttributionMessage;
-    AddOrderMpidAttributionMessageT AddOrderMpidAttributionMessage;
-    OrderExecutedMessageT OrderExecutedMessage;
-    OrderExecutedWithPriceMessageT OrderExecutedWithPriceMessage;
-    OrderCancelMessageT OrderCancelMessage;
-    OrderDeleteMessageT OrderDeleteMessage;
-    OrderReplaceMessageT OrderReplaceMessage;
-    NonCrossTradeMessageT NonCrossTradeMessage;
-    CrossTradeMessageT CrossTradeMessage;
-    BrokenTradeMessageT BrokenTradeMessage;
-    NetOrderImbalanceIndicatorMessageT NetOrderImbalanceIndicatorMessage;
-    RetailInterestMessageT RetailInterestMessage;
-} PayloadT;
-
-/*
  * Structure: Message Header
  */ 
 typedef struct {

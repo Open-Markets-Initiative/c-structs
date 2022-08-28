@@ -318,35 +318,11 @@ typedef struct {
 } PearlSystemTimeMessageT;
 
 /*
- * Structure: Data
- */ 
-typedef struct {
-    PearlSystemTimeMessageT PearlSystemTimeMessage;
-    SeriesUpdateMessageT SeriesUpdateMessage;
-    SystemStateMessageT SystemStateMessage;
-    CompactTopOfMarketBidMessageT CompactTopOfMarketBidMessage;
-    CompactTopOfMarketBestOfferMessageT CompactTopOfMarketBestOfferMessage;
-    WideTopOfMarketBestBidMessageT WideTopOfMarketBestBidMessage;
-    WideTopOfMarketBestOfferMessageT WideTopOfMarketBestOfferMessage;
-    CompactDoubleSidedTopOfMarketMessageT CompactDoubleSidedTopOfMarketMessage;
-    WideDoubleSidedTopOfMarketMessageT WideDoubleSidedTopOfMarketMessage;
-    LastSaleMessageT LastSaleMessage;
-    TradeCancelMessageT TradeCancelMessage;
-    UnderlyingTradingStatusNotificationT UnderlyingTradingStatusNotification;
-} DataT;
-
-/*
  * Structure: Application Message
  */ 
 typedef struct {
     char MessageType;
 } ApplicationMessageT;
-
-/*
- * Structure: Payload
- */ 
-typedef struct {
-} PayloadT;
 
 /*
  * Structure: Message

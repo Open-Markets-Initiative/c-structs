@@ -179,23 +179,6 @@ typedef struct {
 } InstrumentDirectoryMessageT;
 
 /*
- * Structure: Payload
- */ 
-typedef struct {
-    InstrumentDirectoryMessageT InstrumentDirectoryMessage;
-    RegShoRestrictionMessageT RegShoRestrictionMessage;
-    SecurityTradingStatusMessageT SecurityTradingStatusMessage;
-    SnapshotCompleteMessageT SnapshotCompleteMessage;
-    TradingSessionStatusMessageT TradingSessionStatusMessage;
-    BestBidOfferMessageT BestBidOfferMessage;
-    BestBidMessageT BestBidMessage;
-    BestOfferMessageT BestOfferMessage;
-    BestBidShortMessageT BestBidShortMessage;
-    BestOfferShortMessageT BestOfferShortMessage;
-    ClearBookMessageT ClearBookMessage;
-} PayloadT;
-
-/*
  * Structure: Sbe Header
  */ 
 typedef struct {
@@ -225,12 +208,6 @@ typedef struct {
 typedef struct {
     uint16_t MessageCount;
 } SequencedMessageT;
-
-/*
- * Structure: Sequenced Messages
- */ 
-typedef struct {
-} SequencedMessagesT;
 
 /*
  * Structure: Common Header

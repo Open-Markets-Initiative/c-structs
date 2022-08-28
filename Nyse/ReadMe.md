@@ -7,17 +7,17 @@
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Equities | OpenBook | Ultra | [2.1.b][Nyse.Equities.OpenBook.Ultra.v2.1.b.Structs] | 3/9/2018 | 172 | Verified | [url][Nyse.Equities.OpenBook.Ultra.v2.1.b.Url] - [pdf][Nyse.Equities.OpenBook.Ultra.v2.1.b.Pdf] |
 | Amex Equities | OpenBook | Ultra | [2.1.b][Nyse.Amex.Equities.OpenBook.Ultra.v2.1.b.Structs] | 3/9/2018 | 174 | Verified | [url][Nyse.Amex.Equities.OpenBook.Ultra.v2.1.b.Url] - [pdf][Nyse.Amex.Equities.OpenBook.Ultra.v2.1.b.Pdf] |
-| Amex Equities | IntegratedFeed | Xdp | [2.1.g][Nyse.Amex.Equities.IntegratedFeed.Xdp.v2.1.g.Structs] | 1/29/2018 | 691 | Verified | [url][Nyse.Amex.Equities.IntegratedFeed.Xdp.v2.1.g.Url] - [pdf][Nyse.Amex.Equities.IntegratedFeed.Xdp.v2.1.g.Pdf] |
-| Arca Equities | Bbo | Xdp | [2.4.c][Nyse.Arca.Equities.Bbo.Xdp.v2.4.c.Structs] | 7/13/2016 | 420 | Verified | [url][Nyse.Arca.Equities.Bbo.Xdp.v2.4.c.Url] - [pdf][Nyse.Arca.Equities.Bbo.Xdp.v2.4.c.Pdf] |
-| Equities | Bbo | Xdp | [2.4.g][Nyse.Equities.Bbo.Xdp.v2.4.g.Structs] | 1/29/2018 | 419 | Verified | [url][Nyse.Equities.Bbo.Xdp.v2.4.g.Url] - [pdf][Nyse.Equities.Bbo.Xdp.v2.4.g.Pdf] |
+| Amex Equities | IntegratedFeed | Xdp | [2.1.g][Nyse.Amex.Equities.IntegratedFeed.Xdp.v2.1.g.Structs] | 1/29/2018 | 660 | Verified | [url][Nyse.Amex.Equities.IntegratedFeed.Xdp.v2.1.g.Url] - [pdf][Nyse.Amex.Equities.IntegratedFeed.Xdp.v2.1.g.Pdf] |
+| Arca Equities | Bbo | Xdp | [2.4.c][Nyse.Arca.Equities.Bbo.Xdp.v2.4.c.Structs] | 7/13/2016 | 400 | Verified | [url][Nyse.Arca.Equities.Bbo.Xdp.v2.4.c.Url] - [pdf][Nyse.Arca.Equities.Bbo.Xdp.v2.4.c.Pdf] |
+| Equities | Bbo | Xdp | [2.4.g][Nyse.Equities.Bbo.Xdp.v2.4.g.Structs] | 1/29/2018 | 399 | Verified | [url][Nyse.Equities.Bbo.Xdp.v2.4.g.Url] - [pdf][Nyse.Equities.Bbo.Xdp.v2.4.g.Pdf] |
 | Equities | Bqt | Xdp | [2.1.a][Nyse.Equities.Bqt.Xdp.v2.1.a.Structs] | 4/4/2018 | 695 | Untested | [url][Nyse.Equities.Bqt.Xdp.v2.1.a.Url] - [pdf][Nyse.Equities.Bqt.Xdp.v2.1.a.Pdf] |
-| Equities | Bqt | Xdp | [1.7.a][Nyse.Equities.Bqt.Xdp.v1.7.a.Structs] | 7/24/2017 | 703 | Verified | [url][Nyse.Equities.Bqt.Xdp.v1.7.a.Url] - [pdf][Nyse.Equities.Bqt.Xdp.v1.7.a.Pdf] |
-| Equities | ImbalancesFeed | Xdp | [2.2.a][Nyse.Equities.ImbalancesFeed.Xdp.v2.2.a.Structs] | 3/8/2019 | 327 | Verified | [url][Nyse.Equities.ImbalancesFeed.Xdp.v2.2.a.Url] - [pdf][Nyse.Equities.ImbalancesFeed.Xdp.v2.2.a.Pdf] |
-| Equities | ImbalancesFeed | Xdp | [2.1.f][Nyse.Equities.ImbalancesFeed.Xdp.v2.1.f.Structs] | 2/1/2018 | 311 | Verified | [url][Nyse.Equities.ImbalancesFeed.Xdp.v2.1.f.Url] - [pdf][Nyse.Equities.ImbalancesFeed.Xdp.v2.1.f.Pdf] |
-| Equities | IntegratedFeed | Xdp | [2.1.g][Nyse.Equities.IntegratedFeed.Xdp.v2.1.g.Structs] | 1/29/2018 | 695 | Verified | [url][Nyse.Equities.IntegratedFeed.Xdp.v2.1.g.Url] - [pdf][Nyse.Equities.IntegratedFeed.Xdp.v2.1.g.Pdf] |
+| Equities | Bqt | Xdp | [1.7.a][Nyse.Equities.Bqt.Xdp.v1.7.a.Structs] | 7/24/2017 | 678 | Verified | [url][Nyse.Equities.Bqt.Xdp.v1.7.a.Url] - [pdf][Nyse.Equities.Bqt.Xdp.v1.7.a.Pdf] |
+| Equities | ImbalancesFeed | Xdp | [2.2.a][Nyse.Equities.ImbalancesFeed.Xdp.v2.2.a.Structs] | 3/8/2019 | 309 | Verified | [url][Nyse.Equities.ImbalancesFeed.Xdp.v2.2.a.Url] - [pdf][Nyse.Equities.ImbalancesFeed.Xdp.v2.2.a.Pdf] |
+| Equities | ImbalancesFeed | Xdp | [2.1.f][Nyse.Equities.ImbalancesFeed.Xdp.v2.1.f.Structs] | 2/1/2018 | 293 | Verified | [url][Nyse.Equities.ImbalancesFeed.Xdp.v2.1.f.Url] - [pdf][Nyse.Equities.ImbalancesFeed.Xdp.v2.1.f.Pdf] |
+| Equities | IntegratedFeed | Xdp | [2.1.g][Nyse.Equities.IntegratedFeed.Xdp.v2.1.g.Structs] | 1/29/2018 | 664 | Verified | [url][Nyse.Equities.IntegratedFeed.Xdp.v2.1.g.Url] - [pdf][Nyse.Equities.IntegratedFeed.Xdp.v2.1.g.Pdf] |
 | Options | ComplexFeed | Xdp | [1.3.a][Nyse.Options.ComplexFeed.Xdp.v1.3.a.Structs] | 2/28/2018 | 314 | Verified | [url][Nyse.Options.ComplexFeed.Xdp.v1.3.a.Url] - [pdf][Nyse.Options.ComplexFeed.Xdp.v1.3.a.Pdf] |
-| Options | DeepFeed | Xdp | [1.3.a][Nyse.Options.DeepFeed.Xdp.v1.3.a.Structs] | 2/28/2018 | 363 | Untested | [url][Nyse.Options.DeepFeed.Xdp.v1.3.a.Url] - [pdf][Nyse.Options.DeepFeed.Xdp.v1.3.a.Pdf] |
-| Options | TopFeed | Xdp | [1.3.a][Nyse.Options.TopFeed.Xdp.v1.3.a.Structs] | 2/28/2018 | 517 | Untested | [url][Nyse.Options.TopFeed.Xdp.v1.3.a.Url] - [pdf][Nyse.Options.TopFeed.Xdp.v1.3.a.Pdf] |
+| Options | DeepFeed | Xdp | [1.3.a][Nyse.Options.DeepFeed.Xdp.v1.3.a.Structs] | 2/28/2018 | 347 | Untested | [url][Nyse.Options.DeepFeed.Xdp.v1.3.a.Url] - [pdf][Nyse.Options.DeepFeed.Xdp.v1.3.a.Pdf] |
+| Options | TopFeed | Xdp | [1.3.a][Nyse.Options.TopFeed.Xdp.v1.3.a.Structs] | 2/28/2018 | 494 | Untested | [url][Nyse.Options.TopFeed.Xdp.v1.3.a.Url] - [pdf][Nyse.Options.TopFeed.Xdp.v1.3.a.Pdf] |
 
 
 Nyse: [website](https://www.nyse.com "Go to New York Stock Exchange")

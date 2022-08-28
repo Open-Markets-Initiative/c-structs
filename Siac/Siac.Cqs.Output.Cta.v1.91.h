@@ -539,12 +539,6 @@ typedef struct {
 } AdministrativeUnformattedMessageT;
 
 /*
- * Structure: Administrative Payload
- */ 
-typedef struct {
-} AdministrativePayloadT;
-
-/*
  * Structure: Administrative
  */ 
 typedef struct {

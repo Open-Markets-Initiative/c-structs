@@ -134,14 +134,6 @@ typedef struct {
 } RegularTextBulletinT;
 
 /*
- * Structure: Bulletin
- */ 
-typedef struct {
-    RegularTextBulletinT RegularTextBulletin;
-    SpecialTextBulletinT SpecialTextBulletin;
-} BulletinT;
-
-/*
  * Structure: Bulletins Message
  */ 
 typedef struct {

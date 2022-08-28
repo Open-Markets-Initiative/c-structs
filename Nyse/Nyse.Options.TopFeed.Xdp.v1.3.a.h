@@ -437,29 +437,6 @@ typedef struct {
 } OutrightQuoteMessageT;
 
 /*
- * Structure: Payload
- */ 
-typedef struct {
-    OutrightQuoteMessageT OutrightQuoteMessage;
-    OutrightTradeMessageT OutrightTradeMessage;
-    OutrightTradeCancelMessageT OutrightTradeCancelMessage;
-    OutrightTradeCorrectionMessageT OutrightTradeCorrectionMessage;
-    OutrightImbalanceMessageT OutrightImbalanceMessage;
-    OutrightCrossingRfqMessageT OutrightCrossingRfqMessage;
-    OutrightBoldRfqMessageT OutrightBoldRfqMessage;
-    OutrightSummaryMessageT OutrightSummaryMessage;
-    UnderlyingStatusMessageT UnderlyingStatusMessage;
-    OutrightSeriesStatusMessageT OutrightSeriesStatusMessage;
-    RefreshOutrightQuoteMessageT RefreshOutrightQuoteMessage;
-    RefreshOutrightTradeMessageT RefreshOutrightTradeMessage;
-    RefreshOutrightImbalanceMessageT RefreshOutrightImbalanceMessage;
-    UnderlyingIndexMappingMessageT UnderlyingIndexMappingMessage;
-    SeriesIndexMappingMessageT SeriesIndexMappingMessage;
-    StreamIdMessageT StreamIdMessage;
-    SequenceNumberResetMessageT SequenceNumberResetMessage;
-} PayloadT;
-
-/*
  * Structure: Message Header
  */ 
 typedef struct {

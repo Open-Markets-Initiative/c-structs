@@ -427,37 +427,6 @@ typedef struct {
 } SecondsMessageT;
 
 /*
- * Structure: Payload
- */ 
-typedef struct {
-    SecondsMessageT SecondsMessage;
-    SystemEventMessageT SystemEventMessage;
-    BaseReferenceMessageT BaseReferenceMessage;
-    OptionDirectoryMessageT OptionDirectoryMessage;
-    TradingActionMessageT TradingActionMessage;
-    OptionOpenMessageT OptionOpenMessage;
-    AddOrderMessageShortFormT AddOrderMessageShortForm;
-    AddOrderMessageLongFormT AddOrderMessageLongForm;
-    AddQuoteMessageShortFormT AddQuoteMessageShortForm;
-    AddQuoteMessageLongFormT AddQuoteMessageLongForm;
-    SingleSideExecutedMessageT SingleSideExecutedMessage;
-    SingleSideOrderExecutedWithPriceMessageT SingleSideOrderExecutedWithPriceMessage;
-    OrderCancelMessageT OrderCancelMessage;
-    SingleSideReplaceMessageShortFormT SingleSideReplaceMessageShortForm;
-    SingleSideReplaceMessageLongFormT SingleSideReplaceMessageLongForm;
-    SingleSideDeleteMessageT SingleSideDeleteMessage;
-    SingleSideUpdateMessageT SingleSideUpdateMessage;
-    QuoteReplaceMessageShortFormT QuoteReplaceMessageShortForm;
-    QuoteReplaceMessageLongFormT QuoteReplaceMessageLongForm;
-    QuoteDeleteMessageT QuoteDeleteMessage;
-    BlockDeleteMessageT BlockDeleteMessage;
-    NonAuctionOptionsTradeMessageT NonAuctionOptionsTradeMessage;
-    OptionsCrossTradeMessageT OptionsCrossTradeMessage;
-    BrokenTradeOrOrderExecutionMessageT BrokenTradeOrOrderExecutionMessage;
-    NetOrderImbalanceIndicatorMessageT NetOrderImbalanceIndicatorMessage;
-} PayloadT;
-
-/*
  * Structure: Message Header
  */ 
 typedef struct {

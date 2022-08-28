@@ -265,24 +265,6 @@ typedef struct {
 } SystemEventMessageT;
 
 /*
- * Structure: Message Data
- */ 
-typedef struct {
-    SystemEventMessageT SystemEventMessage;
-    SecurityDirectoryMessageT SecurityDirectoryMessage;
-    TradingStatusMessageT TradingStatusMessage;
-    OperationalHaltStatusMessageT OperationalHaltStatusMessage;
-    ShortSalePriceTestStatusMessageT ShortSalePriceTestStatusMessage;
-    SecurityEventMessageT SecurityEventMessage;
-    PriceLevelBuyUpdateMessageT PriceLevelBuyUpdateMessage;
-    PriceLevelSellUpdateMessageT PriceLevelSellUpdateMessage;
-    TradeReportMessageT TradeReportMessage;
-    OfficialPriceMessageT OfficialPriceMessage;
-    TradeBreakMessageT TradeBreakMessage;
-    AuctionInformationMessageT AuctionInformationMessage;
-} MessageDataT;
-
-/*
  * Structure: Message Header
  */ 
 typedef struct {

@@ -378,28 +378,6 @@ typedef struct {
 } TimeMessageT;
 
 /*
- * Structure: Payload
- */ 
-typedef struct {
-    TimeMessageT TimeMessage;
-    SystemEventMessageT SystemEventMessage;
-    SymbolDirectoryMessageT SymbolDirectoryMessage;
-    SymbolStatusMessageT SymbolStatusMessage;
-    AddOrderMessageT AddOrderMessage;
-    AddAttributedOrderMessageT AddAttributedOrderMessage;
-    OrderDeletedMessageT OrderDeletedMessage;
-    OrderModifiedMessageT OrderModifiedMessage;
-    OrderBookClearMessageT OrderBookClearMessage;
-    OrderExecutedMessageT OrderExecutedMessage;
-    OrderExecutedWithPriceSizeMessageT OrderExecutedWithPriceSizeMessage;
-    TradeMessageT TradeMessage;
-    AuctionTradeMessageT AuctionTradeMessage;
-    AuctionInfoMessageT AuctionInfoMessage;
-    StatisticsMessageT StatisticsMessage;
-    TopOfBookMessageT TopOfBookMessage;
-} PayloadT;
-
-/*
  * Structure: Message Header
  */ 
 typedef struct {

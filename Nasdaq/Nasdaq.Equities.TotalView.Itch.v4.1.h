@@ -334,29 +334,6 @@ typedef struct {
 } TimeStampMessageT;
 
 /*
- * Structure: Payload
- */ 
-typedef struct {
-    TimeStampMessageT TimeStampMessage;
-    SystemEventMessageT SystemEventMessage;
-    StockDirectoryMessageT StockDirectoryMessage;
-    RegShoShortSalePriceTestRestrictedIndicatorMessageT RegShoShortSalePriceTestRestrictedIndicatorMessage;
-    MarketParticipantPositionMessageT MarketParticipantPositionMessage;
-    AddOrderMessageT AddOrderMessage;
-    AddOrderWithMpidMessageT AddOrderWithMpidMessage;
-    OrderExecutedMessageT OrderExecutedMessage;
-    OrderExecutedWithPriceMessageT OrderExecutedWithPriceMessage;
-    OrderCancelMessageT OrderCancelMessage;
-    OrderDeleteMessageT OrderDeleteMessage;
-    OrderReplaceMessageT OrderReplaceMessage;
-    TradeMessageT TradeMessage;
-    CrossTradeMessageT CrossTradeMessage;
-    BrokenTradeMessageT BrokenTradeMessage;
-    NetOrderImbalanceIndicatorMessageT NetOrderImbalanceIndicatorMessage;
-    RetailPriceImprovementIndicatorMessageT RetailPriceImprovementIndicatorMessage;
-} PayloadT;
-
-/*
  * Structure: Message Header
  */ 
 typedef struct {

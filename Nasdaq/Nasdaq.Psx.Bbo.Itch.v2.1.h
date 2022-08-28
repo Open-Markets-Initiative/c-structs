@@ -266,21 +266,6 @@ typedef struct {
 } SystemEventMessageT;
 
 /*
- * Structure: Payload
- */ 
-typedef struct {
-    SystemEventMessageT SystemEventMessage;
-    StockDirectoryMessageT StockDirectoryMessage;
-    StockTradingActionMessageT StockTradingActionMessage;
-    RegShoShortSalePriceTestRestrictedIndicatorMessageT RegShoShortSalePriceTestRestrictedIndicatorMessage;
-    MwcbDeclineLevelMessageT MwcbDeclineLevelMessage;
-    MwcbStatusMessageT MwcbStatusMessage;
-    OperationalHaltMessageT OperationalHaltMessage;
-    QuotationMessageT QuotationMessage;
-    NextSharesQuotationMessageT NextSharesQuotationMessage;
-} PayloadT;
-
-/*
  * Structure: Message Header
  */ 
 typedef struct {

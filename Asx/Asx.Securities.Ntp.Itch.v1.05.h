@@ -563,38 +563,6 @@ typedef struct {
 } SecondsMessageT;
 
 /*
- * Structure: Payload
- */ 
-typedef struct {
-    SecondsMessageT SecondsMessage;
-    EndOfBusinessTradeDateMessageT EndOfBusinessTradeDateMessage;
-    FutureSymbolDirectoryMessageT FutureSymbolDirectoryMessage;
-    OptionsSymbolDirectoryMessageT OptionsSymbolDirectoryMessage;
-    CombinationSymbolDirectoryMessageT CombinationSymbolDirectoryMessage;
-    BundlesSymbolDirectoryT BundlesSymbolDirectory;
-    OrderBookStateMessageT OrderBookStateMessage;
-    AddOrderMessageT AddOrderMessage;
-    OrderVolumeCancelledMessageT OrderVolumeCancelledMessage;
-    OrderDeletedMessageT OrderDeletedMessage;
-    OrderExecutedMessageT OrderExecutedMessage;
-    AuctionOrderExecutedMessageT AuctionOrderExecutedMessage;
-    CombinationOrderExecutedMessageT CombinationOrderExecutedMessage;
-    ImpliedOrderAddedMessageT ImpliedOrderAddedMessage;
-    ImpliedOrderReplacedMessageT ImpliedOrderReplacedMessage;
-    ImpliedOrderDeletedMessageT ImpliedOrderDeletedMessage;
-    TradeExecutedMessageT TradeExecutedMessage;
-    CombinationTradeExecutedMessageT CombinationTradeExecutedMessage;
-    TradeCancellationMessageT TradeCancellationMessage;
-    EquilibriumPriceMessageT EquilibriumPriceMessage;
-    OpenHighLowLastTradeAdjustmentMessageT OpenHighLowLastTradeAdjustmentMessage;
-    MarketSettlementMessageT MarketSettlementMessage;
-    TextMessageT TextMessage;
-    RequestForQuoteMessageT RequestForQuoteMessage;
-    AnomalousOrderThresholdPublishMessageT AnomalousOrderThresholdPublishMessage;
-    VolumeAndOpenInterestMessageT VolumeAndOpenInterestMessage;
-} PayloadT;
-
-/*
  * Structure: Message Header
  */ 
 typedef struct {

@@ -962,33 +962,6 @@ typedef struct {
 } SymbolStatusMessageT;
 
 /*
- * Structure: Body Message
- */ 
-typedef struct {
-    SymbolStatusMessageT SymbolStatusMessage;
-    OrderBookMessageT OrderBookMessage;
-    OrderBookTermsMessageT OrderBookTermsMessage;
-    AssignCopOrdersMessageT AssignCopOrdersMessage;
-    AssignCopNoOrdersMessageT AssignCopNoOrdersMessage;
-    AssignLimitMessageT AssignLimitMessage;
-    MarketStateUpdateMessageT MarketStateUpdateMessage;
-    MocImbalanceMessageT MocImbalanceMessage;
-    OrderBookedMessageT OrderBookedMessage;
-    OrderBookedTermsMessageT OrderBookedTermsMessage;
-    OrderCancelledMessageT OrderCancelledMessage;
-    OrderCancelledTermsMessageT OrderCancelledTermsMessage;
-    OrderPriceTimeAssignedMessageT OrderPriceTimeAssignedMessage;
-    OrderPriceTimeAssignedTermsMessageT OrderPriceTimeAssignedTermsMessage;
-    StockStatusMessageT StockStatusMessage;
-    TradeReportMessageT TradeReportMessage;
-    TradeReportTermsMessageT TradeReportTermsMessage;
-    TradeCancelledMessageT TradeCancelledMessage;
-    TradeCancelledTermsMessageT TradeCancelledTermsMessage;
-    TradeCorrectionMessageT TradeCorrectionMessage;
-    TradeCorrectionTermsMessageT TradeCorrectionTermsMessage;
-} BodyMessageT;
-
-/*
  * Structure: Body Header
  */ 
 typedef struct {

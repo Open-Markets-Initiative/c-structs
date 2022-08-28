@@ -108,19 +108,6 @@ typedef struct {
 } TimeMessageT;
 
 /*
- * Structure: Payload
- */ 
-typedef struct {
-    TimeMessageT TimeMessage;
-    UnitClearMessageT UnitClearMessage;
-    AuctionNotificationMessageT AuctionNotificationMessage;
-    AuctionCancelMessageT AuctionCancelMessage;
-    AuctionTradeMessageT AuctionTradeMessage;
-    SymbolMappingMessageT SymbolMappingMessage;
-    EndOfSessionMessageT EndOfSessionMessage;
-} PayloadT;
-
-/*
  * Structure: Message Header
  */ 
 typedef struct {

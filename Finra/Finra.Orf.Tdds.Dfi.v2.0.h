@@ -222,21 +222,6 @@ typedef struct {
 } StartOfDayMessageT;
 
 /*
- * Structure: Control Payload
- */ 
-typedef struct {
-    StartOfDayMessageT StartOfDayMessage;
-    EndOfDayMessageT EndOfDayMessage;
-    MarketSessionOpenMessageT MarketSessionOpenMessage;
-    MarketSessionCloseMessageT MarketSessionCloseMessage;
-    EndOfRetransmissionRequestsMessageT EndOfRetransmissionRequestsMessage;
-    EndOfTransmissionsMessageT EndOfTransmissionsMessage;
-    LineIntegrityMessageT LineIntegrityMessage;
-    SequenceNumberResetMessageT SequenceNumberResetMessage;
-    EndOfTradeReportingMessageT EndOfTradeReportingMessage;
-} ControlPayloadT;
-
-/*
  * Structure: Control
  */ 
 typedef struct {
@@ -305,16 +290,6 @@ typedef struct {
     MessageHeaderT MessageHeader;
     char Text[2];
 } GeneralAdministrativeMessageT;
-
-/*
- * Structure: Administrative Payload
- */ 
-typedef struct {
-    GeneralAdministrativeMessageT GeneralAdministrativeMessage;
-    ClosingTradeSummaryReportMessageT ClosingTradeSummaryReportMessage;
-    TradingActionMessageT TradingActionMessage;
-    MarketWideCircuitBreakerEventMessageT MarketWideCircuitBreakerEventMessage;
-} AdministrativePayloadT;
 
 /*
  * Structure: Administrative
@@ -461,16 +436,6 @@ typedef struct {
     char ReportVolumeShort[6];
     char PriceChangeIndicator;
 } TradeReportShortFormMessageT;
-
-/*
- * Structure: Trade Payload
- */ 
-typedef struct {
-    TradeReportShortFormMessageT TradeReportShortFormMessage;
-    TradeReportLongFormMessageT TradeReportLongFormMessage;
-    TradeCancelErrorMessageT TradeCancelErrorMessage;
-    TradeCorrectionMessageT TradeCorrectionMessage;
-} TradePayloadT;
 
 /*
  * Structure: Trade

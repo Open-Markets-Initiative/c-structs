@@ -612,42 +612,6 @@ typedef struct {
 } TimeMessageT;
 
 /*
- * Structure: Payload
- */ 
-typedef struct {
-    TimeMessageT TimeMessage;
-    SystemEventT SystemEvent;
-    FutureSymbolDirectoryT FutureSymbolDirectory;
-    SpreadSymbolDirectoryT SpreadSymbolDirectory;
-    OptionSymbolDirectoryT OptionSymbolDirectory;
-    OrderBookStateT OrderBookState;
-    OrderAddedT OrderAdded;
-    OrderReplacedT OrderReplaced;
-    OrderVolumeCancelledT OrderVolumeCancelled;
-    OrderDeletedT OrderDeleted;
-    ImpliedOrderAddedT ImpliedOrderAdded;
-    ImpliedOrderReplacedT ImpliedOrderReplaced;
-    ImpliedOrderDeletedT ImpliedOrderDeleted;
-    CustomMarketOrderAddedT CustomMarketOrderAdded;
-    CustomMarketOrderReplacedT CustomMarketOrderReplaced;
-    CustomMarketOrderDeletedT CustomMarketOrderDeleted;
-    OrderExecutedT OrderExecuted;
-    OrderExecutedWithPriceT OrderExecutedWithPrice;
-    SpreadExecutedT SpreadExecuted;
-    TradeSpreadExecutionChainT TradeSpreadExecutionChain;
-    CustomMarketExecutedT CustomMarketExecuted;
-    CustomMarketTradeT CustomMarketTrade;
-    TradeCancellationT TradeCancellation;
-    EquilibriumPriceAuctionInfoT EquilibriumPriceAuctionInfo;
-    OpenHighLowLastTradeAdjustmentT OpenHighLowLastTradeAdjustment;
-    MarketSettlementT MarketSettlement;
-    AdHocTextT AdHocText;
-    RequestForQuoteT RequestForQuote;
-    AnomalousOrderThresholdPublishT AnomalousOrderThresholdPublish;
-    VolumeAndOpenInterestT VolumeAndOpenInterest;
-} PayloadT;
-
-/*
  * Structure: Message Header
  */ 
 typedef struct {

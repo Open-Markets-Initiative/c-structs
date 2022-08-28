@@ -212,17 +212,6 @@ typedef struct {
 } SymbolStatusMessageT;
 
 /*
- * Structure: Body Message
- */ 
-typedef struct {
-    SymbolStatusMessageT SymbolStatusMessage;
-    TradeMessageT TradeMessage;
-    TradeCancelledMessageT TradeCancelledMessage;
-    StockStatusMessageT StockStatusMessage;
-    EquityQuoteMessageT EquityQuoteMessage;
-} BodyMessageT;
-
-/*
  * Structure: Body Header
  */ 
 typedef struct {

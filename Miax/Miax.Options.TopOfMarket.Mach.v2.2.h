@@ -331,35 +331,11 @@ typedef struct {
 } SystemTimeMessageT;
 
 /*
- * Structure: Data
- */ 
-typedef struct {
-    SystemTimeMessageT SystemTimeMessage;
-    SimpleSeriesUpdateMessageT SimpleSeriesUpdateMessage;
-    SystemStateMessageT SystemStateMessage;
-    SimpleTopOfMarketBidCompactMessageT SimpleTopOfMarketBidCompactMessage;
-    SimpleTopOfMarketOfferCompactMessageT SimpleTopOfMarketOfferCompactMessage;
-    SimpleTopOfMarketBidWideMessageT SimpleTopOfMarketBidWideMessage;
-    SimpleTopOfMarketOfferWideMessageT SimpleTopOfMarketOfferWideMessage;
-    SimpleDoubleSidedTopOfMarketCompactMessageT SimpleDoubleSidedTopOfMarketCompactMessage;
-    SimpleDoubleSidedTopOfMarketWideMessageT SimpleDoubleSidedTopOfMarketWideMessage;
-    LastSaleMessageT LastSaleMessage;
-    TradeCancelMessageT TradeCancelMessage;
-    UnderlyingTradingStatusNotificationMessageT UnderlyingTradingStatusNotificationMessage;
-} DataT;
-
-/*
  * Structure: Application Message
  */ 
 typedef struct {
     char MessageType;
 } ApplicationMessageT;
-
-/*
- * Structure: Payload
- */ 
-typedef struct {
-} PayloadT;
 
 /*
  * Structure: Message

@@ -268,15 +268,6 @@ typedef struct {
 } AccountQueryResponseMessageT;
 
 /*
- * Structure: Order Restated Optional Value
- */ 
-typedef struct {
-    uint32_t DisplayQuantity;
-    int64_t DisplayPrice;
-    uint64_t SecondaryOrdRefNum;
-} OrderRestatedOptionalValueT;
-
-/*
  * Structure: Order Restated Appendage
  */ 
 typedef struct {
@@ -367,14 +358,6 @@ typedef struct {
 } BrokenTradeMessageT;
 
 /*
- * Structure: Order Executed Optional Value
- */ 
-typedef struct {
-    int64_t ReferencePrice;
-    char ReferencePriceType[1];
-} OrderExecutedOptionalValueT;
-
-/*
  * Structure: Order Executed Appendage
  */ 
 typedef struct {
@@ -442,29 +425,6 @@ typedef struct {
 } ReplacedMessageT;
 
 /*
- * Structure: Order Accepted Optional Value
- */ 
-typedef struct {
-    char Firm[4];
-    uint32_t MinQty;
-    char CustomerType[1];
-    uint32_t MaxFloor;
-    char PriceType[1];
-    int32_t PegOffset;
-    char Discretion[1];
-    int64_t DiscretionPrice;
-    char DiscretionPegType[1];
-    int32_t DiscretionPegOffset;
-    char PostOnly[1];
-    uint32_t RandomReserves;
-    char Route[4];
-    uint32_t ExpireTime;
-    char TradeNow[1];
-    char HandleInst[1];
-    char BboWeightIndicator[1];
-} OrderAcceptedOptionalValueT;
-
-/*
  * Structure: Order Accepted Appendage
  */ 
 typedef struct {
@@ -519,19 +479,6 @@ typedef struct {
 } CancelOrderMessageT;
 
 /*
- * Structure: Replace Order Optional Value
- */ 
-typedef struct {
-    uint32_t MinQty;
-    uint32_t MaxFloor;
-    char PriceType[1];
-    char PostOnly[1];
-    uint32_t ExpireTime;
-    char TradeNow[1];
-    char HandleInst[1];
-} ReplaceOrderOptionalValueT;
-
-/*
  * Structure: Replace Order Appendage
  */ 
 typedef struct {
@@ -553,16 +500,6 @@ typedef struct {
     char ClOrdId[14];
     uint16_t AppendageLength;
 } ReplaceOrderMessageT;
-
-/*
- * Structure: Enter Order Optional Value
- */ 
-typedef struct {
-    char Firm[4];
-    uint32_t MinQty;
-    char CustomerType[1];
-    uint32_t MaxFloor;
-} EnterOrderOptionalValueT;
 
 /*
  * Structure: Enter Order Appendage

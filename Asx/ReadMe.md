@@ -5,10 +5,10 @@
 
 | Division | Data | Protocol | Version | Date | Size | Testing | Specification |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Securities | Ntp | Itch | [1.05][Asx.Securities.Ntp.Itch.v1.05.Structs] | 12/1/2017 | 649 | Verified | [pdf][Asx.Securities.Ntp.Itch.v1.05.Pdf] |
-| Securities | SR8 | Itch | [2.0][Asx.Securities.SR8.Itch.v2.0.Structs] | 4/1/2015 | 382 | Untested | [pdf][Asx.Securities.SR8.Itch.v2.0.Pdf] |
-| Securities | T24 | Itch | [1.13][Asx.Securities.T24.Itch.v1.13.Structs] | 7/15/2014 | 712 | Untested | [pdf][Asx.Securities.T24.Itch.v1.13.Pdf] |
-| Securities | SR8 | Ouch | [2.0][Asx.Securities.SR8.Ouch.v2.0.Structs] | 4/1/2015 | 372 | Untested | [pdf][Asx.Securities.SR8.Ouch.v2.0.Pdf] |
+| Securities | Ntp | Itch | [1.05][Asx.Securities.Ntp.Itch.v1.05.Structs] | 12/1/2017 | 617 | Verified | [pdf][Asx.Securities.Ntp.Itch.v1.05.Pdf] |
+| Securities | SR8 | Itch | [2.0][Asx.Securities.SR8.Itch.v2.0.Structs] | 4/1/2015 | 362 | Untested | [pdf][Asx.Securities.SR8.Itch.v2.0.Pdf] |
+| Securities | T24 | Itch | [1.13][Asx.Securities.T24.Itch.v1.13.Structs] | 7/15/2014 | 676 | Untested | [pdf][Asx.Securities.T24.Itch.v1.13.Pdf] |
+| Securities | SR8 | Ouch | [2.0][Asx.Securities.SR8.Ouch.v2.0.Structs] | 4/1/2015 | 357 | Untested | [pdf][Asx.Securities.SR8.Ouch.v2.0.Pdf] |
 
 
 Asx: [website](https://www.asx.com.au "Go to Australian Securities Exchange")

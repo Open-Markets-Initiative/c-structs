@@ -394,37 +394,6 @@ typedef struct {
 } TimeMessageT;
 
 /*
- * Structure: Payload
- */ 
-typedef struct {
-    TimeMessageT TimeMessage;
-    UnitClearMessageT UnitClearMessage;
-    AddOrderLongMessageT AddOrderLongMessage;
-    AddOrderShortMessageT AddOrderShortMessage;
-    AddOrderExpandedMessageT AddOrderExpandedMessage;
-    OrderExecutedMessageT OrderExecutedMessage;
-    OrderExecutedAtPriceSizeMessageT OrderExecutedAtPriceSizeMessage;
-    ReduceSizeLongMessageT ReduceSizeLongMessage;
-    ReduceSizeShortMessageT ReduceSizeShortMessage;
-    ModifyOrderLongMessageT ModifyOrderLongMessage;
-    ModifyOrderShortMessageT ModifyOrderShortMessage;
-    DeleteOrderMessageT DeleteOrderMessage;
-    TradeLongMessageT TradeLongMessage;
-    TradeShortMessageT TradeShortMessage;
-    TradeExpandedMessageT TradeExpandedMessage;
-    TradeBreakMessageT TradeBreakMessage;
-    EndOfSessionMessageT EndOfSessionMessage;
-    SymbolMappingMessageT SymbolMappingMessage;
-    TradingStatusMessageT TradingStatusMessage;
-    AuctionUpdateMessageT AuctionUpdateMessage;
-    AuctionSummaryMessageT AuctionSummaryMessage;
-    AuctionNotificationMessageT AuctionNotificationMessage;
-    AuctionCancelMessageT AuctionCancelMessage;
-    AuctionTradeMessageT AuctionTradeMessage;
-    RetailPriceImprovementMessageT RetailPriceImprovementMessage;
-} PayloadT;
-
-/*
  * Structure: Message Header
  */ 
 typedef struct {

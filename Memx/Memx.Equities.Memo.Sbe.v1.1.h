@@ -754,31 +754,6 @@ typedef struct {
 } NewOrderSingleMessageT;
 
 /*
- * Structure: Payload
- */ 
-typedef struct {
-    NewOrderSingleMessageT NewOrderSingleMessage;
-    OrderCancelReplaceRequestMessageT OrderCancelReplaceRequestMessage;
-    OrderCancelRequestMessageT OrderCancelRequestMessage;
-    MassCancelRequestMessageT MassCancelRequestMessage;
-    ExecutionReportPendingNewMessageT ExecutionReportPendingNewMessage;
-    ExecutionReportNewMessageT ExecutionReportNewMessage;
-    ExecutionReportRejectedMessageT ExecutionReportRejectedMessage;
-    ExecutionReportTradeMessageT ExecutionReportTradeMessage;
-    ExecutionReportPendingCancelMessageT ExecutionReportPendingCancelMessage;
-    PendingMassCancelMessageT PendingMassCancelMessage;
-    ExecutionReportCanceledMessageT ExecutionReportCanceledMessage;
-    MassCancelDoneMessageT MassCancelDoneMessage;
-    ExecutionReportPendingReplaceMessageT ExecutionReportPendingReplaceMessage;
-    ExecutionReportReplacedMessageT ExecutionReportReplacedMessage;
-    ExecutionReportTradeCorrectionMessageT ExecutionReportTradeCorrectionMessage;
-    ExecutionReportTradeBreakMessageT ExecutionReportTradeBreakMessage;
-    ExecutionReportRestatementMessageT ExecutionReportRestatementMessage;
-    OrderCancelRejectMessageT OrderCancelRejectMessage;
-    MassCancelRejectMessageT MassCancelRejectMessage;
-} PayloadT;
-
-/*
  * Structure: Sbe Header
  */ 
 typedef struct {

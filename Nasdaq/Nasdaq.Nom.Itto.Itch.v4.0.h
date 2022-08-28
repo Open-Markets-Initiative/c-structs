@@ -427,34 +427,6 @@ typedef struct {
 } SystemEventMessageT;
 
 /*
- * Structure: Payload
- */ 
-typedef struct {
-    SystemEventMessageT SystemEventMessage;
-    OptionsDirectoryMessageT OptionsDirectoryMessage;
-    TradingActionMessageT TradingActionMessage;
-    SecurityOpenMessageT SecurityOpenMessage;
-    AddOrderMessageShortMessageFormT AddOrderMessageShortMessageForm;
-    AddOrderMessageLongFormMessageT AddOrderMessageLongFormMessage;
-    AddQuoteMessageShortFormMessageT AddQuoteMessageShortFormMessage;
-    AddQuoteMessageLongFormMessageT AddQuoteMessageLongFormMessage;
-    SingleSideExecutedMessageT SingleSideExecutedMessage;
-    SingleSideExecutedWithPriceMessageT SingleSideExecutedWithPriceMessage;
-    OrderCancelMessageT OrderCancelMessage;
-    SingleSideReplaceMessageShortFormT SingleSideReplaceMessageShortForm;
-    SingleSideReplaceMessageLongFormT SingleSideReplaceMessageLongForm;
-    SingleSideDeleteMessageT SingleSideDeleteMessage;
-    SingleSideChangeMessageT SingleSideChangeMessage;
-    QuoteReplaceMessageShortFormT QuoteReplaceMessageShortForm;
-    QuoteReplaceMessageLongFormT QuoteReplaceMessageLongForm;
-    QuoteDeleteMessageT QuoteDeleteMessage;
-    OptionsTradeMessagesNonAuctionT OptionsTradeMessagesNonAuction;
-    OptionsCrossTradeMessageT OptionsCrossTradeMessage;
-    BrokenTradeOrderExecutedMessageT BrokenTradeOrderExecutedMessage;
-    NoiiMessageT NoiiMessage;
-} PayloadT;
-
-/*
  * Structure: Message Header
  */ 
 typedef struct {

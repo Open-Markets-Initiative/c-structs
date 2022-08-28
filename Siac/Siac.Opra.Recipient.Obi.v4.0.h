@@ -241,14 +241,6 @@ typedef struct {
 } UnderlyingValueLastSaleMessageT;
 
 /*
- * Structure: Underlying Value Message Payload
- */ 
-typedef struct {
-    UnderlyingValueLastSaleMessageT UnderlyingValueLastSaleMessage;
-    UnderlyingValueBidAndOfferMessageT UnderlyingValueBidAndOfferMessage;
-} UnderlyingValueMessagePayloadT;
-
-/*
  * Structure: Underlying Value Message
  */ 
 typedef struct {

@@ -443,34 +443,6 @@ typedef struct {
 } OutrightInstrumentDefinitionMessageT;
 
 /*
- * Structure: Payload
- */ 
-typedef struct {
-    OutrightInstrumentDefinitionMessageT OutrightInstrumentDefinitionMessage;
-    SpreadInstrumentDefinitionMessageT SpreadInstrumentDefinitionMessage;
-    OptionInstrumentDefinitionMessageT OptionInstrumentDefinitionMessage;
-    TradingStatusUpdateMessageT TradingStatusUpdateMessage;
-    OrderPutMessageT OrderPutMessage;
-    OrderDeleteMessageT OrderDeleteMessage;
-    ImpliedOrderUpdateMessageT ImpliedOrderUpdateMessage;
-    TradeSummaryMessageT TradeSummaryMessage;
-    TradeMessageT TradeMessage;
-    TradeAmendMessageT TradeAmendMessage;
-    SpreadTradeAmendMessageT SpreadTradeAmendMessage;
-    TradeBustMessageT TradeBustMessage;
-    MarketStatMessageT MarketStatMessage;
-    TradeSessionVolumeMessageT TradeSessionVolumeMessage;
-    OpenInterestMessageT OpenInterestMessage;
-    StartOfOutrightInstrumentSnapshotMessageT StartOfOutrightInstrumentSnapshotMessage;
-    StartOfSpreadInstrumentSnapshotMessageT StartOfSpreadInstrumentSnapshotMessage;
-    StartOfOptionInstrumentSnapshotMessageT StartOfOptionInstrumentSnapshotMessage;
-    OrderSnapshotMessageT OrderSnapshotMessage;
-    EndOfSnapshotMessageT EndOfSnapshotMessage;
-    RetransmitRequestMessageT RetransmitRequestMessage;
-    RetransmitRejectMessageT RetransmitRejectMessage;
-} PayloadT;
-
-/*
  * Structure: Message Header
  */ 
 typedef struct {

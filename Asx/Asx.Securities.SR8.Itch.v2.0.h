@@ -308,26 +308,6 @@ typedef struct {
 } SecondsMessageT;
 
 /*
- * Structure: Payload
- */ 
-typedef struct {
-    SecondsMessageT SecondsMessage;
-    OrderBookDirectoryMessageT OrderBookDirectoryMessage;
-    CombinationOrderBookDirectoryMessageT CombinationOrderBookDirectoryMessage;
-    TickSizeMessageT TickSizeMessage;
-    SystemEventMessageT SystemEventMessage;
-    OrderBookStateMessageT OrderBookStateMessage;
-    AddOrderNoParticipantIdMessageT AddOrderNoParticipantIdMessage;
-    AddOrderParticipantIdMessageT AddOrderParticipantIdMessage;
-    OrderExecutedMessageT OrderExecutedMessage;
-    OrderExecutedWithPriceMessageT OrderExecutedWithPriceMessage;
-    OrderReplaceMessageT OrderReplaceMessage;
-    OrderDeleteMessageT OrderDeleteMessage;
-    TradeMessageT TradeMessage;
-    EquilibriumPriceUpdateMessageT EquilibriumPriceUpdateMessage;
-} PayloadT;
-
-/*
  * Structure: Message Header
  */ 
 typedef struct {

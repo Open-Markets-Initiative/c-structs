@@ -253,34 +253,11 @@ typedef struct {
 } SystemTimeMessageT;
 
 /*
- * Structure: Data
- */ 
-typedef struct {
-    SystemTimeMessageT SystemTimeMessage;
-    SymbolUpdateMessageT SymbolUpdateMessage;
-    SystemStateMessageT SystemStateMessage;
-    SecurityTradingStatusNotificationMessageT SecurityTradingStatusNotificationMessage;
-    SymbolClearMessageT SymbolClearMessage;
-    AddOrderMessageT AddOrderMessage;
-    ModifyOrderMessageT ModifyOrderMessage;
-    DeleteOrderMessageT DeleteOrderMessage;
-    OrderExecutionMessageT OrderExecutionMessage;
-    TradeMessageT TradeMessage;
-    TradeCancelMessageT TradeCancelMessage;
-} DataT;
-
-/*
  * Structure: Application Message
  */ 
 typedef struct {
     char MessageType;
 } ApplicationMessageT;
-
-/*
- * Structure: Payload
- */ 
-typedef struct {
-} PayloadT;
 
 /*
  * Structure: Message

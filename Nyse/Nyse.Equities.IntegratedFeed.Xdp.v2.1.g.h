@@ -607,37 +607,6 @@ typedef struct {
 } SequenceNumberResetMessageT;
 
 /*
- * Structure: Payload
- */ 
-typedef struct {
-    SequenceNumberResetMessageT SequenceNumberResetMessage;
-    SourceTimeReferenceMessageT SourceTimeReferenceMessage;
-    SymbolIndexMappingMessageT SymbolIndexMappingMessage;
-    RetransmissionRequestMessageT RetransmissionRequestMessage;
-    RequestResponseMessageT RequestResponseMessage;
-    HeartbeatResponseMessageT HeartbeatResponseMessage;
-    SymbolIndexMappingRequestMessageT SymbolIndexMappingRequestMessage;
-    RefreshRequestMessageT RefreshRequestMessage;
-    MessageUnavailableMessageT MessageUnavailableMessage;
-    SymbolClearMessageT SymbolClearMessage;
-    SecurityStatusMessageT SecurityStatusMessage;
-    RefreshHeaderMessageT RefreshHeaderMessage;
-    AddOrderMessageT AddOrderMessage;
-    ModifyOrderMessageT ModifyOrderMessage;
-    ReplaceOrderMessageT ReplaceOrderMessage;
-    DeleteOrderMessageT DeleteOrderMessage;
-    TradeCancelMessageT TradeCancelMessage;
-    CrossTradeMessageT CrossTradeMessage;
-    CrossCorrectionMessageT CrossCorrectionMessage;
-    RetailPriceImprovementMessageT RetailPriceImprovementMessage;
-    AddOrderRefreshMessageT AddOrderRefreshMessage;
-    ImbalanceMessageT ImbalanceMessage;
-    OrderExecutionMessageT OrderExecutionMessage;
-    NonDisplayedTradeMessageT NonDisplayedTradeMessage;
-    StockSummaryMessageT StockSummaryMessage;
-} PayloadT;
-
-/*
  * Structure: Message Header
  */ 
 typedef struct {

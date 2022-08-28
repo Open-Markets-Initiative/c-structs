@@ -384,29 +384,6 @@ typedef struct {
 } EnterOrderMessageT;
 
 /*
- * Structure: Data
- */ 
-typedef struct {
-    EnterOrderMessageT EnterOrderMessage;
-    ReplaceOrderMessageT ReplaceOrderMessage;
-    CancelOrderMessageT CancelOrderMessage;
-    ModifyOrderMessageT ModifyOrderMessage;
-    TradeNowMessageT TradeNowMessage;
-    SystemEventMessageT SystemEventMessage;
-    AcceptedMessageT AcceptedMessage;
-    ReplacedMessageT ReplacedMessage;
-    CanceledMessageT CanceledMessage;
-    AiqCanceledMessageT AiqCanceledMessage;
-    ExecutedMessageT ExecutedMessage;
-    BrokenTradeMessageT BrokenTradeMessage;
-    RejectedMessageT RejectedMessage;
-    CancelPendingMessageT CancelPendingMessage;
-    CancelRejectMessageT CancelRejectMessage;
-    OrderPriorityUpdateMessageT OrderPriorityUpdateMessage;
-    OrderModifiedMessageT OrderModifiedMessage;
-} DataT;
-
-/*
  * Structure: Message
  */ 
 typedef struct {

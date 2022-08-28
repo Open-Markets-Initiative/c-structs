@@ -5,9 +5,9 @@
 
 | Division | Data | Protocol | Version | Date | Size | Testing | Specification |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Mx Sola | Multicast | Hsvf | [1.11][Tmx.Mx.Sola.Multicast.Hsvf.v1.11.Structs] | 1/23/2019 | 1342 | Untested | [url][Tmx.Mx.Sola.Multicast.Hsvf.v1.11.Url] - [pdf][Tmx.Mx.Sola.Multicast.Hsvf.v1.11.Pdf] |
-| QuantumFeed | AlphaLevel1 | Xmt | [2.1][Tmx.QuantumFeed.AlphaLevel1.Xmt.v2.1.Structs] | 10/20/2020 | 281 | Beta | [url][Tmx.QuantumFeed.AlphaLevel1.Xmt.v2.1.Url] - [pdf][Tmx.QuantumFeed.AlphaLevel1.Xmt.v2.1.Pdf] |
-| QuantumFeed | TsxTsxvLevel2 | Xmt | [3.6][Tmx.QuantumFeed.TsxTsxvLevel2.Xmt.v3.6.Structs] | 10/20/2020 | 1047 | Beta | [url][Tmx.QuantumFeed.TsxTsxvLevel2.Xmt.v3.6.Url] - [pdf][Tmx.QuantumFeed.TsxTsxvLevel2.Xmt.v3.6.Pdf] |
+| Mx Sola | Multicast | Hsvf | [1.11][Tmx.Mx.Sola.Multicast.Hsvf.v1.11.Structs] | 1/23/2019 | 1334 | Untested | [url][Tmx.Mx.Sola.Multicast.Hsvf.v1.11.Url] - [pdf][Tmx.Mx.Sola.Multicast.Hsvf.v1.11.Pdf] |
+| QuantumFeed | AlphaLevel1 | Xmt | [2.1][Tmx.QuantumFeed.AlphaLevel1.Xmt.v2.1.Structs] | 10/20/2020 | 270 | Beta | [url][Tmx.QuantumFeed.AlphaLevel1.Xmt.v2.1.Url] - [pdf][Tmx.QuantumFeed.AlphaLevel1.Xmt.v2.1.Pdf] |
+| QuantumFeed | TsxTsxvLevel2 | Xmt | [3.6][Tmx.QuantumFeed.TsxTsxvLevel2.Xmt.v3.6.Structs] | 10/20/2020 | 1020 | Beta | [url][Tmx.QuantumFeed.TsxTsxvLevel2.Xmt.v3.6.Url] - [pdf][Tmx.QuantumFeed.TsxTsxvLevel2.Xmt.v3.6.Pdf] |
 | QuantumFeed | UdpHeader | Xmt | [1.1][Tmx.QuantumFeed.UdpHeader.Xmt.v1.1.Structs] | 10/20/2020 | 77 | Verified | [url][Tmx.QuantumFeed.UdpHeader.Xmt.v1.1.Url] |
 
 

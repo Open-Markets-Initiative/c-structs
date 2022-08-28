@@ -340,12 +340,6 @@ typedef struct {
 } TotalConsolidatedAndMarketCenterVolumeMessageT;
 
 /*
- * Structure: Volume Payload
- */ 
-typedef struct {
-} VolumePayloadT;
-
-/*
  * Structure: Volume
  */ 
 typedef struct {

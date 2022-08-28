@@ -243,18 +243,6 @@ typedef struct {
 } SystemEventMessageT;
 
 /*
- * Structure: Payload
- */ 
-typedef struct {
-    SystemEventMessageT SystemEventMessage;
-    OptionDirectoryMessageT OptionDirectoryMessage;
-    TradingActionMessageT TradingActionMessage;
-    SecurityOpenClosedMessageT SecurityOpenClosedMessage;
-    OpeningImbalanceMessageT OpeningImbalanceMessage;
-    OrderOnBookMessageT OrderOnBookMessage;
-} PayloadT;
-
-/*
  * Structure: Message Header
  */ 
 typedef struct {

@@ -262,21 +262,6 @@ typedef struct {
 } EnterOrderMessageT;
 
 /*
- * Structure: Data
- */ 
-typedef struct {
-    EnterOrderMessageT EnterOrderMessage;
-    ReplaceOrderMessageT ReplaceOrderMessage;
-    CancelOrderMessageT CancelOrderMessage;
-    CancelByOrderIdMessageT CancelByOrderIdMessage;
-    OrderAcceptedMessageT OrderAcceptedMessage;
-    OrderRejectedMessageT OrderRejectedMessage;
-    OrderReplacedMessageT OrderReplacedMessage;
-    OrderCancelledMessageT OrderCancelledMessage;
-    OrderExecutedMessageT OrderExecutedMessage;
-} DataT;
-
-/*
  * Structure: Message
  */ 
 typedef struct {

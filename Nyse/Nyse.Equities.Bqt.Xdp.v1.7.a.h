@@ -621,31 +621,6 @@ typedef struct {
 } SequenceNumberResetMessageT;
 
 /*
- * Structure: Payload
- */ 
-typedef struct {
-    SequenceNumberResetMessageT SequenceNumberResetMessage;
-    SymbolIndexMappingMessageT SymbolIndexMappingMessage;
-    RetransmissionRequestMessageT RetransmissionRequestMessage;
-    RequestResponseMessageT RequestResponseMessage;
-    HeartbeatResponseMessageT HeartbeatResponseMessage;
-    SymbolIndexMappingRequestMessageT SymbolIndexMappingRequestMessage;
-    RefreshRequestMessageT RefreshRequestMessage;
-    MessageUnavailableMessageT MessageUnavailableMessage;
-    ConsolidatedSymbolClearMessageT ConsolidatedSymbolClearMessage;
-    ConsolidatedTradingSessionChangeMessageT ConsolidatedTradingSessionChangeMessage;
-    ConsolidatedSecurityStatusMessageT ConsolidatedSecurityStatusMessage;
-    RefreshHeaderMessageT RefreshHeaderMessage;
-    BqtMessageT BqtMessage;
-    ConsolidatedSingleSidedQuoteMessageT ConsolidatedSingleSidedQuoteMessage;
-    ConsolidatedTradeMessageT ConsolidatedTradeMessage;
-    ConsolidatedTradeCancelMessageT ConsolidatedTradeCancelMessage;
-    ConsolidatedTradeCorrectionMessageT ConsolidatedTradeCorrectionMessage;
-    ConsolidatedStockSummaryMessageT ConsolidatedStockSummaryMessage;
-    ConsolidatedVolumeMessageT ConsolidatedVolumeMessage;
-} PayloadT;
-
-/*
  * Structure: Message Header
  */ 
 typedef struct {

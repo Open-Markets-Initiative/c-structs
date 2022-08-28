@@ -5,8 +5,8 @@
 
 | Division | Data | Protocol | Version | Date | Size | Testing | Specification |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Orf | Tdds | Dfi | [2.0][Finra.Orf.Tdds.Dfi.v2.0.Structs] | 9/24/2018 | 510 | Verified | [url][Finra.Orf.Tdds.Dfi.v2.0.Url] - [pdf][Finra.Orf.Tdds.Dfi.v2.0.Pdf] |
-| Otc | Bbds | Dfi | [2018.1A][Finra.Otc.Bbds.Dfi.v2018.1A.Structs] | 5/14/2018 | 335 | Untested | [url][Finra.Otc.Bbds.Dfi.v2018.1A.Url] - [pdf][Finra.Otc.Bbds.Dfi.v2018.1A.Pdf] |
+| Orf | Tdds | Dfi | [2.0][Finra.Orf.Tdds.Dfi.v2.0.Structs] | 9/24/2018 | 475 | Verified | [url][Finra.Orf.Tdds.Dfi.v2.0.Url] - [pdf][Finra.Orf.Tdds.Dfi.v2.0.Pdf] |
+| Otc | Bbds | Dfi | [2018.1A][Finra.Otc.Bbds.Dfi.v2018.1A.Structs] | 5/14/2018 | 306 | Untested | [url][Finra.Otc.Bbds.Dfi.v2018.1A.Url] - [pdf][Finra.Otc.Bbds.Dfi.v2018.1A.Pdf] |
 
 
 Finra: [website](https://www.finra.org "Go to Financial Industry Regulatory Authority")

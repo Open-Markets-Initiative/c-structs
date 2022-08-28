@@ -290,22 +290,6 @@ typedef struct {
 } OutrightMarketDepthBuyMessageT;
 
 /*
- * Structure: Payload
- */ 
-typedef struct {
-    OutrightMarketDepthBuyMessageT OutrightMarketDepthBuyMessage;
-    OutrightMarketDepthSellMessageT OutrightMarketDepthSellMessage;
-    UnderlyingStatusMessageT UnderlyingStatusMessage;
-    OutrightSeriesStatusMessageT OutrightSeriesStatusMessage;
-    RefreshOutrightMarketDepthBuyMessageT RefreshOutrightMarketDepthBuyMessage;
-    RefreshOutrightMarketDepthSellMessageT RefreshOutrightMarketDepthSellMessage;
-    UnderlyingIndexMappingMessageT UnderlyingIndexMappingMessage;
-    SeriesIndexMappingMessageT SeriesIndexMappingMessage;
-    StreamIdMessageT StreamIdMessage;
-    SequenceNumberResetMessageT SequenceNumberResetMessage;
-} PayloadT;
-
-/*
  * Structure: Message Header
  */ 
 typedef struct {

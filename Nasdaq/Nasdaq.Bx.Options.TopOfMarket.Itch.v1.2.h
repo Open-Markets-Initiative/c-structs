@@ -228,25 +228,6 @@ typedef struct {
 } TimestampMessageT;
 
 /*
- * Structure: Payload
- */ 
-typedef struct {
-    TimestampMessageT TimestampMessage;
-    SystemEventMessageT SystemEventMessage;
-    OptionsDirectoryMessageT OptionsDirectoryMessage;
-    TradingActionMessageT TradingActionMessage;
-    SecurityOpenMessageT SecurityOpenMessage;
-    BestBidAndAskUpdateShortFormMessageT BestBidAndAskUpdateShortFormMessage;
-    BestBidAndAskUpdateLongFormMessageT BestBidAndAskUpdateLongFormMessage;
-    BestBidUpdateShortFormMessageT BestBidUpdateShortFormMessage;
-    BestAskUpdateShortFormMessageT BestAskUpdateShortFormMessage;
-    BestBidUpdateLongFormMessageT BestBidUpdateLongFormMessage;
-    BestAskUpdateLongFormMessageT BestAskUpdateLongFormMessage;
-    TradeReportMessageT TradeReportMessage;
-    BrokenTradeReportMessageT BrokenTradeReportMessage;
-} PayloadT;
-
-/*
  * Structure: Message Header
  */ 
 typedef struct {

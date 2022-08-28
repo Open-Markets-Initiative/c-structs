@@ -466,39 +466,6 @@ typedef struct {
 } SecondsMessageT;
 
 /*
- * Structure: Payload
- */ 
-typedef struct {
-    SecondsMessageT SecondsMessage;
-    SystemEventMessageT SystemEventMessage;
-    BaseReferenceMessageT BaseReferenceMessage;
-    OptionDirectoryMessageT OptionDirectoryMessage;
-    TradingActionMessageT TradingActionMessage;
-    SecurityOpenMessageT SecurityOpenMessage;
-    AddOrderShortMessageT AddOrderShortMessage;
-    AddOrderLongMessageT AddOrderLongMessage;
-    AddQuoteShortMessageT AddQuoteShortMessage;
-    AddQuoteLongMessageT AddQuoteLongMessage;
-    SingleSideExecutedMessageT SingleSideExecutedMessage;
-    SingleSideExecutedWithPriceMessageT SingleSideExecutedWithPriceMessage;
-    SingleSideCancelMessageT SingleSideCancelMessage;
-    SingleSideReplaceShortMessageT SingleSideReplaceShortMessage;
-    SingleSideReplaceLongMessageT SingleSideReplaceLongMessage;
-    OrderReplaceShortMessageT OrderReplaceShortMessage;
-    OrderReplaceLongMessageT OrderReplaceLongMessage;
-    SingleSideDeleteMessageT SingleSideDeleteMessage;
-    SingleSideUpdateMessageT SingleSideUpdateMessage;
-    QuoteReplaceShortMessageT QuoteReplaceShortMessage;
-    QuoteReplaceLongMessageT QuoteReplaceLongMessage;
-    QuoteDeleteMessageT QuoteDeleteMessage;
-    BlockDeleteMessageT BlockDeleteMessage;
-    NonAuctionOptionsTradeMessageT NonAuctionOptionsTradeMessage;
-    OptionsCrossTradeMessageT OptionsCrossTradeMessage;
-    BrokenTradeOrderExecutedMessageT BrokenTradeOrderExecutedMessage;
-    AuctionNotificationMessageT AuctionNotificationMessage;
-} PayloadT;
-
-/*
  * Structure: Message Header
  */ 
 typedef struct {

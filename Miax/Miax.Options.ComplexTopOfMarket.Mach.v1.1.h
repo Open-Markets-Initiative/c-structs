@@ -341,12 +341,6 @@ typedef struct {
 } ApplicationMessageT;
 
 /*
- * Structure: Payload
- */ 
-typedef struct {
-} PayloadT;
-
-/*
  * Structure: Message
  */ 
 typedef struct {
