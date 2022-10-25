@@ -70,13 +70,13 @@
 #define ENUM_TEMPLATE_ID_ADMIN_LOGOUT = 316
 #define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_ERIS_REFERENCE_DATA_AND_DAILY_STATISTICS = 333
 #define ENUM_TEMPLATE_ID_MD_NEWS_INDICES = 339
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_TRADE_BLOCKS = 340
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_TRADE_BLOCKS_340 = 340
 #define ENUM_TEMPLATE_ID_QUOTE_REQUEST = 345
 #define ENUM_TEMPLATE_ID_MD_INSTRUMENT_DEFINITION_INDICES = 347
 #define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_INDICES = 348
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_TRADE_BLOCKS = 349
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_ERIS = 351
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_ERIS = 353
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_TRADE_BLOCKS_349 = 349
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_ERIS_351 = 351
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_ERIS_353 = 353
 #define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_OTC = 356
 #define ENUM_TEMPLATE_ID_MD_INSTRUMENT_DEFINITION_ERIS = 363
 
@@ -350,13 +350,13 @@ typedef struct {
 } MDIncrementalRefreshEris353GroupsT;
 
 /*
- * Structure: Md Incremental Refresh Eris 353
+ * Structure: Md Incremental Refresh Eris
  */ 
 typedef struct {
     uint64_t TransactTime;
     MatchEventIndicatorT MatchEventIndicator;
     uint16_t BatchTotalMessagesOptional;
-} MdIncrementalRefreshEris353T;
+} MdIncrementalRefreshErisT;
 
 /*
  * Structure: M D Incremental Refresh Eris 351 Group
@@ -389,13 +389,13 @@ typedef struct {
 } MDIncrementalRefreshEris351GroupsT;
 
 /*
- * Structure: Md Incremental Refresh Eris 351
+ * Structure: Md Incremental Refresh Eris No Quote
  */ 
 typedef struct {
     uint64_t TransactTime;
     MatchEventIndicatorT MatchEventIndicator;
     uint16_t BatchTotalMessagesOptional;
-} MdIncrementalRefreshEris351T;
+} MdIncrementalRefreshErisNoQuoteT;
 
 /*
  * Structure: M D Incremental Refresh Trade Blocks 349 Group
@@ -440,14 +440,14 @@ typedef struct {
 } MDIncrementalRefreshTradeBlocks349GroupsT;
 
 /*
- * Structure: Md Incremental Refresh Trade Blocks 349
+ * Structure: Md Incremental Refresh Trade Blocks
  */ 
 typedef struct {
     uint64_t TransactTimeOptional;
     MatchEventIndicatorT MatchEventIndicator;
     uint16_t BatchTotalMessages;
     uint16_t TradeDate;
-} MdIncrementalRefreshTradeBlocks349T;
+} MdIncrementalRefreshTradeBlocksT;
 
 /*
  * Structure: Percent Trading
@@ -600,13 +600,13 @@ typedef struct {
 } MDIncrementalRefreshTradeBlocks340GroupsT;
 
 /*
- * Structure: Md Incremental Refresh Trade Blocks 340
+ * Structure: Md Incremental Refresh Trade Blocks No Date
  */ 
 typedef struct {
     uint64_t TransactTime;
     MatchEventIndicatorT MatchEventIndicator;
     uint16_t BatchTotalMessages;
-} MdIncrementalRefreshTradeBlocks340T;
+} MdIncrementalRefreshTradeBlocksNoDateT;
 
 /*
  * Structure: Lines Of Text Group

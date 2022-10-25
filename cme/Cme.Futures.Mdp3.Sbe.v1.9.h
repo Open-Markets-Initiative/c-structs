@@ -169,31 +169,31 @@
 #define ENUM_TEMPLATE_ID_ADMIN_HEARTBEAT = 12
 #define ENUM_TEMPLATE_ID_ADMIN_LOGIN = 15
 #define ENUM_TEMPLATE_ID_ADMIN_LOGOUT = 16
-#define ENUM_TEMPLATE_ID_MD_INSTRUMENT_DEFINITION_FUTURE = 27
-#define ENUM_TEMPLATE_ID_MD_INSTRUMENT_DEFINITION_SPREAD = 29
+#define ENUM_TEMPLATE_ID_MD_INSTRUMENT_DEFINITION_FUTURE_27 = 27
+#define ENUM_TEMPLATE_ID_MD_INSTRUMENT_DEFINITION_SPREAD_29 = 29
 #define ENUM_TEMPLATE_ID_SECURITY_STATUS = 30
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_BOOK = 32
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_DAILY_STATISTICS = 33
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_LIMITS_BANDING = 34
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_SESSION_STATISTICS = 35
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_BOOK_32 = 32
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_DAILY_STATISTICS_33 = 33
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_LIMITS_BANDING_34 = 34
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_SESSION_STATISTICS_35 = 35
 #define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_VOLUME = 37
-#define ENUM_TEMPLATE_ID_SNAPSHOT_FULL_REFRESH = 38
+#define ENUM_TEMPLATE_ID_SNAPSHOT_FULL_REFRESH_38 = 38
 #define ENUM_TEMPLATE_ID_QUOTE_REQUEST = 39
-#define ENUM_TEMPLATE_ID_MD_INSTRUMENT_DEFINITION_OPTION = 41
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_TRADE_SUMMARY = 42
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_ORDER_BOOK = 43
-#define ENUM_TEMPLATE_ID_SNAPSHOT_FULL_REFRESH_ORDER_BOOK = 44
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_BOOK = 46
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_ORDER_BOOK = 47
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_TRADE_SUMMARY = 48
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_DAILY_STATISTICS = 49
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_LIMITS_BANDING = 50
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_SESSION_STATISTICS = 51
-#define ENUM_TEMPLATE_ID_SNAPSHOT_FULL_REFRESH = 52
-#define ENUM_TEMPLATE_ID_SNAPSHOT_FULL_REFRESH_ORDER_BOOK = 53
-#define ENUM_TEMPLATE_ID_MD_INSTRUMENT_DEFINITION_FUTURE = 54
-#define ENUM_TEMPLATE_ID_MD_INSTRUMENT_DEFINITION_OPTION = 55
-#define ENUM_TEMPLATE_ID_MD_INSTRUMENT_DEFINITION_SPREAD = 56
+#define ENUM_TEMPLATE_ID_MD_INSTRUMENT_DEFINITION_OPTION_41 = 41
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_TRADE_SUMMARY_42 = 42
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_ORDER_BOOK_43 = 43
+#define ENUM_TEMPLATE_ID_SNAPSHOT_FULL_REFRESH_ORDER_BOOK_44 = 44
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_BOOK_46 = 46
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_ORDER_BOOK_47 = 47
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_TRADE_SUMMARY_48 = 48
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_DAILY_STATISTICS_49 = 49
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_LIMITS_BANDING_50 = 50
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_SESSION_STATISTICS_51 = 51
+#define ENUM_TEMPLATE_ID_SNAPSHOT_FULL_REFRESH_52 = 52
+#define ENUM_TEMPLATE_ID_SNAPSHOT_FULL_REFRESH_ORDER_BOOK_53 = 53
+#define ENUM_TEMPLATE_ID_MD_INSTRUMENT_DEFINITION_FUTURE_54 = 54
+#define ENUM_TEMPLATE_ID_MD_INSTRUMENT_DEFINITION_OPTION_55 = 55
+#define ENUM_TEMPLATE_ID_MD_INSTRUMENT_DEFINITION_SPREAD_56 = 56
 
 
 /*******************************************************************************
@@ -404,7 +404,7 @@ typedef struct {
 } SnapshotFullRefreshOrderBook53GroupsT;
 
 /*
- * Structure: Snapshot Full Refresh Order Book 53
+ * Structure: Snapshot Full Refresh Order Book
  */ 
 typedef struct {
     uint32_t LastMsgSeqNumProcessed;
@@ -413,7 +413,7 @@ typedef struct {
     uint32_t NoChunks;
     uint32_t CurrentChunk;
     uint64_t TransactTime;
-} SnapshotFullRefreshOrderBook53T;
+} SnapshotFullRefreshOrderBookT;
 
 /*
  * Structure: Snapshot Full Refresh 52 Group
@@ -437,7 +437,7 @@ typedef struct {
 } SnapshotFullRefresh52GroupsT;
 
 /*
- * Structure: Snapshot Full Refresh 52
+ * Structure: Snapshot Full Refresh
  */ 
 typedef struct {
     uint32_t LastMsgSeqNumProcessed;
@@ -451,7 +451,7 @@ typedef struct {
     int64_t HighLimitPricePricenulL9;
     int64_t LowLimitPricePricenulL9;
     int64_t MaxPriceVariationPricenulL9;
-} SnapshotFullRefresh52T;
+} SnapshotFullRefreshT;
 
 /*
  * Structure: M D Incremental Refresh Session Statistics 51 Group
@@ -475,13 +475,13 @@ typedef struct {
 } MDIncrementalRefreshSessionStatistics51GroupsT;
 
 /*
- * Structure: Md Incremental Refresh Session Statistics 51
+ * Structure: Md Incremental Refresh Session Statistics
  */ 
 typedef struct {
     uint64_t TransactTime;
     MatchEventIndicatorT MatchEventIndicator;
     char Padding2[2];
-} MdIncrementalRefreshSessionStatistics51T;
+} MdIncrementalRefreshSessionStatisticsT;
 
 /*
  * Structure: M D Incremental Refresh Limits Banding 50 Group
@@ -502,13 +502,13 @@ typedef struct {
 } MDIncrementalRefreshLimitsBanding50GroupsT;
 
 /*
- * Structure: Md Incremental Refresh Limits Banding 50
+ * Structure: Md Incremental Refresh Limits Banding
  */ 
 typedef struct {
     uint64_t TransactTime;
     MatchEventIndicatorT MatchEventIndicator;
     char Padding2[2];
-} MdIncrementalRefreshLimitsBanding50T;
+} MdIncrementalRefreshLimitsBandingT;
 
 /*
  * Structure: M D Incremental Refresh Daily Statistics 49 Group
@@ -533,13 +533,13 @@ typedef struct {
 } MDIncrementalRefreshDailyStatistics49GroupsT;
 
 /*
- * Structure: Md Incremental Refresh Daily Statistics 49
+ * Structure: Md Incremental Refresh Daily Statistics
  */ 
 typedef struct {
     uint64_t TransactTime;
     MatchEventIndicatorT MatchEventIndicator;
     char Padding2[2];
-} MdIncrementalRefreshDailyStatistics49T;
+} MdIncrementalRefreshDailyStatisticsT;
 
 /*
  * Structure: M D Incremental Refresh Trade Summary 48 Order Group
@@ -610,13 +610,13 @@ typedef struct {
 } MDIncrementalRefreshOrderBook47GroupsT;
 
 /*
- * Structure: Md Incremental Refresh Order Book 47
+ * Structure: Md Incremental Refresh Order Book
  */ 
 typedef struct {
     uint64_t TransactTime;
     MatchEventIndicatorT MatchEventIndicator;
     char Padding2[2];
-} MdIncrementalRefreshOrderBook47T;
+} MdIncrementalRefreshOrderBookT;
 
 /*
  * Structure: M D Incremental Refresh Book 46 Order Group
@@ -678,7 +678,7 @@ typedef struct {
 } SnapshotFullRefreshOrderBook44GroupsT;
 
 /*
- * Structure: Snapshot Full Refresh Order Book 44
+ * Structure: Snapshot Full Refresh Order Book Legacy
  */ 
 typedef struct {
     uint32_t LastMsgSeqNumProcessed;
@@ -687,7 +687,7 @@ typedef struct {
     uint32_t NoChunks;
     uint32_t CurrentChunk;
     uint64_t TransactTime;
-} SnapshotFullRefreshOrderBook44T;
+} SnapshotFullRefreshOrderBookLegacyT;
 
 /*
  * Structure: M D Incremental Refresh Order Book 43 Group
@@ -711,13 +711,13 @@ typedef struct {
 } MDIncrementalRefreshOrderBook43GroupsT;
 
 /*
- * Structure: Md Incremental Refresh Order Book 43
+ * Structure: Md Incremental Refresh Order Book Legacy
  */ 
 typedef struct {
     uint64_t TransactTime;
     MatchEventIndicatorT MatchEventIndicator;
     char Padding2[2];
-} MdIncrementalRefreshOrderBook43T;
+} MdIncrementalRefreshOrderBookLegacyT;
 
 /*
  * Structure: M D Incremental Refresh Trade Summary 42 Order Group
@@ -808,7 +808,7 @@ typedef struct {
 } SnapshotFullRefresh38GroupsT;
 
 /*
- * Structure: Snapshot Full Refresh 38
+ * Structure: Snapshot Full Refresh Legacy
  */ 
 typedef struct {
     uint32_t LastMsgSeqNumProcessed;
@@ -822,7 +822,7 @@ typedef struct {
     int64_t HighLimitPricePricenull;
     int64_t LowLimitPricePricenull;
     int64_t MaxPriceVariationPricenull;
-} SnapshotFullRefresh38T;
+} SnapshotFullRefreshLegacyT;
 
 /*
  * Structure: M D Incremental Refresh Volume Group
@@ -873,13 +873,13 @@ typedef struct {
 } MDIncrementalRefreshSessionStatistics35GroupsT;
 
 /*
- * Structure: Md Incremental Refresh Session Statistics 35
+ * Structure: Md Incremental Refresh Session Statistics Legacy
  */ 
 typedef struct {
     uint64_t TransactTime;
     MatchEventIndicatorT MatchEventIndicator;
     char Padding2[2];
-} MdIncrementalRefreshSessionStatistics35T;
+} MdIncrementalRefreshSessionStatisticsLegacyT;
 
 /*
  * Structure: M D Incremental Refresh Limits Banding 34 Group
@@ -900,13 +900,13 @@ typedef struct {
 } MDIncrementalRefreshLimitsBanding34GroupsT;
 
 /*
- * Structure: Md Incremental Refresh Limits Banding 34
+ * Structure: Md Incremental Refresh Limits Banding Legacy
  */ 
 typedef struct {
     uint64_t TransactTime;
     MatchEventIndicatorT MatchEventIndicator;
     char Padding2[2];
-} MdIncrementalRefreshLimitsBanding34T;
+} MdIncrementalRefreshLimitsBandingLegacyT;
 
 /*
  * Structure: M D Incremental Refresh Daily Statistics 33 Group
@@ -931,13 +931,13 @@ typedef struct {
 } MDIncrementalRefreshDailyStatistics33GroupsT;
 
 /*
- * Structure: Md Incremental Refresh Daily Statistics 33
+ * Structure: Md Incremental Refresh Daily Statistics Legacy
  */ 
 typedef struct {
     uint64_t TransactTime;
     MatchEventIndicatorT MatchEventIndicator;
     char Padding2[2];
-} MdIncrementalRefreshDailyStatistics33T;
+} MdIncrementalRefreshDailyStatisticsLegacyT;
 
 /*
  * Structure: M D Incremental Refresh Book 32 Order Group
