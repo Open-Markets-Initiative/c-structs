@@ -11,6 +11,7 @@
 | Bx Equities | Orders | Ouch | [4.2][Nasdaq.Bx.Equities.Orders.Ouch.v4.2.Structs] | 7/8/2019 | 479 | Untested | [url][Nasdaq.Bx.Equities.Orders.Ouch.v4.2.Url] - [pdf][Nasdaq.Bx.Equities.Orders.Ouch.v4.2.Pdf] |
 | Bx Options | DepthOfMarket | Itch | [1.3][Nasdaq.Bx.Options.DepthOfMarket.Itch.v1.3.Structs] | 11/2/2017 | 481 | Untested | [url][Nasdaq.Bx.Options.DepthOfMarket.Itch.v1.3.Url] - [pdf][Nasdaq.Bx.Options.DepthOfMarket.Itch.v1.3.Pdf] |
 | Bx Options | TopOfMarket | Itch | [1.2][Nasdaq.Bx.Options.TopOfMarket.Itch.v1.2.Structs] | 11/2/2017 | 282 | Untested | [url][Nasdaq.Bx.Options.TopOfMarket.Itch.v1.2.Url] - [pdf][Nasdaq.Bx.Options.TopOfMarket.Itch.v1.2.Pdf] |
+| Common | SoupBinTcp | Ouch | [3.0][Nasdaq.Common.SoupBinTcp.Ouch.v3.0.Structs] | 2/22/2017 | 123 | Tested | [url][Nasdaq.Common.SoupBinTcp.Ouch.v3.0.Url] - [pdf][Nasdaq.Common.SoupBinTcp.Ouch.v3.0.Pdf] |
 | Equities | Aggregated | Itch | [2.0][Nasdaq.Equities.Aggregated.Itch.v2.0.Structs] | 9/12/2017 | 440 | Untested | [url][Nasdaq.Equities.Aggregated.Itch.v2.0.Url] - [pdf][Nasdaq.Equities.Aggregated.Itch.v2.0.Pdf] |
 | Equities | Level2 | Itch | [2.0][Nasdaq.Equities.Level2.Itch.v2.0.Structs] | 5/3/2018 | 397 | Untested | [url][Nasdaq.Equities.Level2.Itch.v2.0.Url] - [pdf][Nasdaq.Equities.Level2.Itch.v2.0.Pdf] |
 | Equities | Noi | Itch | [3.0][Nasdaq.Equities.Noi.Itch.v3.0.Structs] | 9/12/2017 | 310 | Untested | [url][Nasdaq.Equities.Noi.Itch.v3.0.Url] - [pdf][Nasdaq.Equities.Noi.Itch.v3.0.Pdf] |
@@ -114,3 +115,6 @@ Nasdaq: [website](https://www.nasdaq.com "Go to National Association of Securiti
 [Nasdaq.Utdf.Output.Utp.v1.5.Structs]: https://github.com/Open-Markets-Initiative/c-structs/blob/main/nasdaq/Nasdaq.Utdf.Output.Utp.v1.5.h "Nasdaq Utdf Output Utp v1.5 C# Parsers Source File"
 [Nasdaq.Utdf.Output.Utp.v1.5.Url]: http://www.utpplan.com/technical "National Association of Securities Dealers Automated Quotations 1.5 Url"
 [Nasdaq.Utdf.Output.Utp.v1.5.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Specifications/Nasdaq/Nasdaq.Utp.Output.v1.5.pdf "National Association of Securities Dealers Automated Quotations 1.5 Pdf"
+[Nasdaq.Common.SoupBinTcp.Ouch.v3.0.Structs]: https://github.com/Open-Markets-Initiative/c-structs/blob/main/nasdaq/Nasdaq.Common.SoupBinTcp.Ouch.v3.0.h "Nasdaq Common SoupBinTcp Ouch v3.0 C# Parsers Source File"
+[Nasdaq.Common.SoupBinTcp.Ouch.v3.0.Url]: https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/soupbintcp.pdf "National Association of Securities Dealers Automated Quotations 3.0 Url"
+[Nasdaq.Common.SoupBinTcp.Ouch.v3.0.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Specifications/Nasdaq/SoupBin.Tcp.v3.0.pdf "National Association of Securities Dealers Automated Quotations 3.0 Pdf"

@@ -1,5 +1,5 @@
 /*******************************************************************************
- * C Structs For Nyse Amex Equities Ultra OpenBook 2.1.b protocol
+ * C Structs For Nyse Amex Equities Ultra OpenBook 2.1.b Binary Model
  *******************************************************************************/
 
 /*******************************************************************************
@@ -9,40 +9,40 @@
 /*
  * Message Type Values
  */ 
-#define ENUM_MESSAGE_TYPE_FULL_UPDATE_MESSAGE = 230
-#define ENUM_MESSAGE_TYPE_DELTA_UPDATE_MESSAGE = 231
-#define ENUM_MESSAGE_TYPE_SEQUENCE_NUMBER_RESET_MESSAGE = 1
-#define ENUM_MESSAGE_TYPE_HEARTBEAT_MESSAGE = 2
+#define ENUM_MESSAGE_TYPE_FULL_UPDATE_MESSAGE 230
+#define ENUM_MESSAGE_TYPE_DELTA_UPDATE_MESSAGE 231
+#define ENUM_MESSAGE_TYPE_SEQUENCE_NUMBER_RESET_MESSAGE 1
+#define ENUM_MESSAGE_TYPE_HEARTBEAT_MESSAGE 2
 
 /*
  * Quote Condition Values
  */ 
-#define ENUM_QUOTE_CONDITION_NO_SPECIAL_QUOTE_CONDITION = ' '
-#define ENUM_QUOTE_CONDITION_SLOW_QUOTE = 'W'
+#define ENUM_QUOTE_CONDITION_NO_SPECIAL_QUOTE_CONDITION ' '
+#define ENUM_QUOTE_CONDITION_SLOW_QUOTE 'W'
 
 /*
  * Reason Code Values
  */ 
-#define ENUM_REASON_CODE_NEW_ORDERADDITIONAL_INTEREST_ADDED = 'O'
-#define ENUM_REASON_CODE_CANCEL = 'C'
-#define ENUM_REASON_CODE_EXECUTION = 'E'
-#define ENUM_REASON_CODE_MULTIPLE_EVENTS = 'X'
+#define ENUM_REASON_CODE_NEW_ORDERADDITIONAL_INTEREST_ADDED 'O'
+#define ENUM_REASON_CODE_CANCEL 'C'
+#define ENUM_REASON_CODE_EXECUTION 'E'
+#define ENUM_REASON_CODE_MULTIPLE_EVENTS 'X'
 
 /*
  * Side Values
  */ 
-#define ENUM_SIDE_BUY = 'B'
-#define ENUM_SIDE_SELL = 'S'
+#define ENUM_SIDE_BUY 'B'
+#define ENUM_SIDE_SELL 'S'
 
 /*
  * Trading Status Values
  */ 
-#define ENUM_TRADING_STATUS_PRE_OPENING = 'P'
-#define ENUM_TRADING_STATUS_EARLY_SESSION = 'E'
-#define ENUM_TRADING_STATUS_CORE_SESSION = 'O'
-#define ENUM_TRADING_STATUS_LATE_SESSION = 'L'
-#define ENUM_TRADING_STATUS_CLOSED = 'X'
-#define ENUM_TRADING_STATUS_HALTED = 'H'
+#define ENUM_TRADING_STATUS_PRE_OPENING 'P'
+#define ENUM_TRADING_STATUS_EARLY_SESSION 'E'
+#define ENUM_TRADING_STATUS_CORE_SESSION 'O'
+#define ENUM_TRADING_STATUS_LATE_SESSION 'L'
+#define ENUM_TRADING_STATUS_CLOSED 'X'
+#define ENUM_TRADING_STATUS_HALTED 'H'
 
 
 /*******************************************************************************

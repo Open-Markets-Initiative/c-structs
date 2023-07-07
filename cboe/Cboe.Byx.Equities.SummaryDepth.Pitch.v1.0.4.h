@@ -1,0 +1,232 @@
+/*******************************************************************************
+ * C Structs For Cboe Byx Equities Pitch SummaryDepth 1.0.4 Binary Model
+ *******************************************************************************/
+
+/*******************************************************************************
+ * Enum Values
+ *******************************************************************************/
+
+/*
+ * Market Status Values
+ */ 
+#define ENUM_MARKET_STATUS_NORMAL 'N'
+#define ENUM_MARKET_STATUS_EXCLUDED_FROM_ADAP_UPDATES 'E'
+#define ENUM_MARKET_STATUS_INCOMPLETE 'I'
+
+/*
+ * Message Type Values
+ */ 
+#define ENUM_MESSAGE_TYPE_CLEAR_QUOTE_MESSAGE 0xA2
+#define ENUM_MESSAGE_TYPE_CBOE_MARKET_STATUS_MESSAGE 0xA6
+#define ENUM_MESSAGE_TYPE_ADAP_MESSAGE 0xA7
+#define ENUM_MESSAGE_TYPE_RPI_MESSAGE 0xA8
+#define ENUM_MESSAGE_TYPE_TRADE_MESSAGE 0xA9
+#define ENUM_MESSAGE_TYPE_TRADE_BREAK_MESSAGE 0xAA
+#define ENUM_MESSAGE_TYPE_TRADING_STATUS_MESSAGE 0xAB
+
+/*
+ * Reg Sho Action Values
+ */ 
+#define ENUM_REG_SHO_ACTION_NO_PRICE_TEST_IN_EFFECT '0'
+#define ENUM_REG_SHO_ACTION_REG_SHO_PRICE_TEST_RESTRICTION_IN_EFFECT '1'
+
+/*
+ * Retail Price Improvement Values
+ */ 
+#define ENUM_RETAIL_PRICE_IMPROVEMENT_BUY_SIDE_RPI 'B'
+#define ENUM_RETAIL_PRICE_IMPROVEMENT_SELL_SIDE_RPI 'S'
+#define ENUM_RETAIL_PRICE_IMPROVEMENT_BUY_AND_SELL_RPI 'A'
+#define ENUM_RETAIL_PRICE_IMPROVEMENT_NO_RPI 'N'
+
+/*
+ * Session Indicator Values
+ */ 
+#define ENUM_SESSION_INDICATOR_REGULAR_TRADING_SESSION 'R'
+#define ENUM_SESSION_INDICATOR_PRE_OR_POST_MARKET_SESSION 'P'
+
+
+/*******************************************************************************
+ * Structs
+ *******************************************************************************/
+
+#pragma pack(push, 1)
+
+/*
+ * Structure: Trading Status Message
+ */ 
+typedef struct {
+    uint64_t Timestamp;
+    char Symbol[8];
+    char ReservedAlphanumeric1[1];
+    char HaltStatus[1];
+    char RegShoAction;
+} TradingStatusMessageT;
+
+/*
+ * Structure: Trade Break Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char Symbol[8];
+    char ReservedAlphanumeric1[1];
+    uint64_t ExecutionId;
+    uint64_t CboeCumulativeExecutedVolume;
+    uint64_t ReservedBinary8;
+    uint8_t TradeBreakFlags;
+} TradeBreakMessageT;
+
+/*
+ * Bitfield: Trade Flags
+ */ 
+typedef struct {
+    uint8_t
+    ReservedTradeFlags : 6,
+    LastsaleEligible : 1,
+    Unused : 1;
+} TradeFlagsT;
+
+/*
+ * Structure: Trade Message
+ */ 
+typedef struct {
+    uint64_t TransactionTime;
+    char Symbol[8];
+    char ReservedAlphanumeric1[1];
+    uint64_t ExecutionId;
+    uint64_t LastPrice;
+    uint64_t LastQuantity;
+    uint64_t CboeCumulativeExecutedVolume;
+    uint64_t ReservedBinary8;
+    TradeFlagsT TradeFlags;
+} TradeMessageT;
+
+/*
+ * Structure: Rpi Message
+ */ 
+typedef struct {
+    uint64_t Timestamp;
+    char Symbol[8];
+    char ReservedAlphanumeric1[1];
+    char RetailPriceImprovement;
+} RpiMessageT;
+
+/*
+ * Structure: Long Update Adap Block
+ */ 
+typedef struct {
+    char Side[1];
+    uint64_t PriceBinary84Price8;
+    uint64_t QuantityLong;
+} LongUpdateAdapBlockT;
+
+/*
+ * Structure: Short Update Adap Block
+ */ 
+typedef struct {
+    char Side[1];
+    uint32_t PriceBinary44Price4;
+    uint32_t QuantityShort;
+} ShortUpdateAdapBlockT;
+
+/*
+ * Structure: Adap Block
+ */ 
+typedef struct {
+    uint8_t AdapBlockSize;
+} AdapBlockT;
+
+/*
+ * Bitfield: Adap Flags
+ */ 
+typedef struct {
+    uint8_t
+    AdapReservedFlags : 6,
+    BlockType : 1,
+    Complete : 1,
+    Clear : 1;
+} AdapFlagsT;
+
+/*
+ * Structure: Adap Message
+ */ 
+typedef struct {
+    uint64_t LastUpdateTimestamp;
+    char Symbol[8];
+    AdapFlagsT AdapFlags;
+    char ReservedAlphanumeric1[1];
+    uint8_t AdapBlocks;
+} AdapMessageT;
+
+/*
+ * Structure: Cboe Market Status Message
+ */ 
+typedef struct {
+    uint64_t Timestamp;
+    char ReservedAlphanumeric1[1];
+    char MarketStatus;
+    char SessionIndicator;
+} CboeMarketStatusMessageT;
+
+/*
+ * Structure: Clear Quote Message
+ */ 
+typedef struct {
+    uint64_t LastUpdateTimestamp;
+    char Symbol[8];
+    char ReservedAlphanumeric1[1];
+} ClearQuoteMessageT;
+
+/*
+ * Structure: Message Header
+ */ 
+typedef struct {
+    uint8_t MessageLength;
+    uint8_t MessageType;
+} MessageHeaderT;
+
+/*
+ * Structure: Message
+ */ 
+typedef struct {
+    MessageHeaderT MessageHeader;
+} MessageT;
+
+/*
+ * Structure: Packet Header
+ */ 
+typedef struct {
+    uint16_t Length;
+    uint8_t Count;
+    uint8_t Unit;
+    uint32_t Sequence;
+} PacketHeaderT;
+
+/*
+ * Structure: Packet
+ */ 
+typedef struct {
+    PacketHeaderT PacketHeader;
+} PacketT;
+
+#pragma pack(pop)
+
+/*******************************************************************************
+
+Protocol:
+   Organization: Chicago Board Options Exchange
+   Version: 1.0.4
+   Date: Monday, July 26, 2021
+   Specification: Cboe_US_Equities_Summary_Depth_Feed_Specification.pdf
+
+Source:
+   Generator: 1.0.0.0
+   Compiler: 2.0
+   License: MIT No Attribution License
+   Authors: Omi Developers
+
+This file was generated by the Open Markets Initiative (Omi).
+
+Information relating to Omi:
+https://github.com/Open-Markets-Initiative/Directory
+
+*******************************************************************************/

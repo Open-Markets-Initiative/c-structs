@@ -1,5 +1,5 @@
 /*******************************************************************************
- * C Structs For Tmx Mx Sola Hsvf Multicast 1.11 protocol
+ * C Structs For Tmx Mx Sola Hsvf Multicast 1.11 Binary Model
  *******************************************************************************/
 
 /*******************************************************************************
@@ -9,62 +9,62 @@
 /*
  * Bulletin Type Values
  */ 
-#define ENUM_BULLETIN_TYPE_REGULAR_TEXT_BULLETIN = '1'
-#define ENUM_BULLETIN_TYPE_SPECIAL_TEXT_BULLETIN = '2'
+#define ENUM_BULLETIN_TYPE_REGULAR_TEXT_BULLETIN '1'
+#define ENUM_BULLETIN_TYPE_SPECIAL_TEXT_BULLETIN '2'
 
 /*
  * Call Put Code Values
  */ 
-#define ENUM_CALL_PUT_CODE_CALL = 'C'
-#define ENUM_CALL_PUT_CODE_PUT = 'P'
+#define ENUM_CALL_PUT_CODE_CALL 'C'
+#define ENUM_CALL_PUT_CODE_PUT 'P'
 
 /*
  * Day Count Convention Values
  */ 
-#define ENUM_DAY_COUNT_CONVENTION_ACT_365 = 'A'
-#define ENUM_DAY_COUNT_CONVENTION_ACT_360 = 'B'
-#define ENUM_DAY_COUNT_CONVENTION_30360 = 'C'
-#define ENUM_DAY_COUNT_CONVENTION_START_OF_DAY = 'S'
-#define ENUM_DAY_COUNT_CONVENTION_END_OF_DAY = 'E'
-#define ENUM_DAY_COUNT_CONVENTION_INSTRUMENT_NEW_OR_UPDATE = 'U'
-#define ENUM_DAY_COUNT_CONVENTION_TRADE_CANCELLATION = 'C'
+#define ENUM_DAY_COUNT_CONVENTION_ACT_365 'A'
+#define ENUM_DAY_COUNT_CONVENTION_ACT_360 'B'
+#define ENUM_DAY_COUNT_CONVENTION_30360 'C'
+#define ENUM_DAY_COUNT_CONVENTION_START_OF_DAY 'S'
+#define ENUM_DAY_COUNT_CONVENTION_END_OF_DAY 'E'
+#define ENUM_DAY_COUNT_CONVENTION_INSTRUMENT_NEW_OR_UPDATE 'U'
+#define ENUM_DAY_COUNT_CONVENTION_TRADE_CANCELLATION 'C'
 
 /*
  * Delivery Type Values
  */ 
-#define ENUM_DELIVERY_TYPE_CASH = 'C'
-#define ENUM_DELIVERY_TYPE_PHYSICAL = 'P'
+#define ENUM_DELIVERY_TYPE_CASH 'C'
+#define ENUM_DELIVERY_TYPE_PHYSICAL 'P'
 
 /*
  * Leg Ratio Sign Values
  */ 
-#define ENUM_LEG_RATIO_SIGN_BUY_OF_THE_UNDERLYING = '+'
-#define ENUM_LEG_RATIO_SIGN_SELL_OF_THE_UNDERLYING = '-'
+#define ENUM_LEG_RATIO_SIGN_BUY_OF_THE_UNDERLYING '+'
+#define ENUM_LEG_RATIO_SIGN_SELL_OF_THE_UNDERLYING '-'
 
 /*
  * Option Type Values
  */ 
-#define ENUM_OPTION_TYPE_AMERICAN = 'A'
-#define ENUM_OPTION_TYPE_EUROPEAN = 'E'
+#define ENUM_OPTION_TYPE_AMERICAN 'A'
+#define ENUM_OPTION_TYPE_EUROPEAN 'E'
 
 /*
  * Requested Market Side Values
  */ 
-#define ENUM_REQUESTED_MARKET_SIDE_BUY = 'B'
-#define ENUM_REQUESTED_MARKET_SIDE_SELL = 'S'
-#define ENUM_REQUESTED_MARKET_SIDE_BOTH = '2'
+#define ENUM_REQUESTED_MARKET_SIDE_BUY 'B'
+#define ENUM_REQUESTED_MARKET_SIDE_SELL 'S'
+#define ENUM_REQUESTED_MARKET_SIDE_BOTH '2'
 
 /*
  * Strategy Allow Implied Values
  */ 
-#define ENUM_STRATEGY_ALLOW_IMPLIED_YES = 'Y'
-#define ENUM_STRATEGY_ALLOW_IMPLIED_NO = 'N'
+#define ENUM_STRATEGY_ALLOW_IMPLIED_YES 'Y'
+#define ENUM_STRATEGY_ALLOW_IMPLIED_NO 'N'
 
 /*
  * Tick Values
  */ 
-#define ENUM_TICK_UPTICK = '+'
-#define ENUM_TICK_DOWNTICK = '-'
+#define ENUM_TICK_UPTICK '+'
+#define ENUM_TICK_DOWNTICK '-'
 
 
 /*******************************************************************************

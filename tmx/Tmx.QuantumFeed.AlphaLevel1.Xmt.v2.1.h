@@ -1,5 +1,5 @@
 /*******************************************************************************
- * C Structs For Tmx QuantumFeed Xmt AlphaLevel1 2.1 protocol
+ * C Structs For Tmx QuantumFeed Xmt AlphaLevel1 2.1 Binary Model
  *******************************************************************************/
 
 /*******************************************************************************
@@ -9,76 +9,76 @@
 /*
  * Ack Required Poss Dup Values
  */ 
-#define ENUM_ACK_REQUIRED_POSS_DUP_RECEIVER_NEEDS_TO_ACK = 'A'
-#define ENUM_ACK_REQUIRED_POSS_DUP_POSSIBLE_DUPLICATES = 'D'
+#define ENUM_ACK_REQUIRED_POSS_DUP_RECEIVER_NEEDS_TO_ACK 'A'
+#define ENUM_ACK_REQUIRED_POSS_DUP_POSSIBLE_DUPLICATES 'D'
 
 /*
  * Bypass Values
  */ 
-#define ENUM_BYPASS_THE_ORDER_IS_A_BYPASS = 'Y'
-#define ENUM_BYPASS_THE_ORDER_IS_NOT_A_BYPASS = 'N'
+#define ENUM_BYPASS_THE_ORDER_IS_A_BYPASS 'Y'
+#define ENUM_BYPASS_THE_ORDER_IS_NOT_A_BYPASS 'N'
 
 /*
  * Cross Type Values
  */ 
-#define ENUM_CROSS_TYPE_INTERNAL = 'I'
-#define ENUM_CROSS_TYPE_BASIS = 'B'
-#define ENUM_CROSS_TYPE_CONTINGENT = 'C'
-#define ENUM_CROSS_TYPE_DERIVATIVE_RELATED = 'D'
-#define ENUM_CROSS_TYPE_REGULAR = 'R'
-#define ENUM_CROSS_TYPE_VOLUME_WEIGHTED_AVERAGE_PRICE = 'V'
-#define ENUM_CROSS_TYPE_DEFAULT_TRADE_WAS_NOT_A_CROSS = ' '
+#define ENUM_CROSS_TYPE_INTERNAL 'I'
+#define ENUM_CROSS_TYPE_BASIS 'B'
+#define ENUM_CROSS_TYPE_CONTINGENT 'C'
+#define ENUM_CROSS_TYPE_DERIVATIVE_RELATED 'D'
+#define ENUM_CROSS_TYPE_REGULAR 'R'
+#define ENUM_CROSS_TYPE_VOLUME_WEIGHTED_AVERAGE_PRICE 'V'
+#define ENUM_CROSS_TYPE_DEFAULT_TRADE_WAS_NOT_A_CROSS ' '
 
 /*
  * Currency Values
  */ 
-#define ENUM_CURRENCY_USD = 'U'
-#define ENUM_CURRENCY_CAD = 'C'
+#define ENUM_CURRENCY_USD 'U'
+#define ENUM_CURRENCY_CAD 'C'
 
 /*
  * Listing Market Values
  */ 
-#define ENUM_LISTING_MARKET_TSX = 'T'
-#define ENUM_LISTING_MARKET_TSXV = 'V'
+#define ENUM_LISTING_MARKET_TSX 'T'
+#define ENUM_LISTING_MARKET_TSXV 'V'
 
 /*
  * Msg Type Values
  */ 
-#define ENUM_MSG_TYPE_SYMBOL_STATUS_MESSAGE = 'J'
-#define ENUM_MSG_TYPE_TRADE_MESSAGE = 's'
-#define ENUM_MSG_TYPE_TRADE_CANCELLED_MESSAGE = 't'
-#define ENUM_MSG_TYPE_STOCK_STATUS_MESSAGE = 'v'
-#define ENUM_MSG_TYPE_EQUITY_QUOTE_MESSAGE = 'w'
+#define ENUM_MSG_TYPE_SYMBOL_STATUS_MESSAGE 'J'
+#define ENUM_MSG_TYPE_TRADE_MESSAGE 's'
+#define ENUM_MSG_TYPE_TRADE_CANCELLED_MESSAGE 't'
+#define ENUM_MSG_TYPE_STOCK_STATUS_MESSAGE 'v'
+#define ENUM_MSG_TYPE_EQUITY_QUOTE_MESSAGE 'w'
 
 /*
  * Opening Trade Values
  */ 
-#define ENUM_OPENING_TRADE_YES = 'Y'
-#define ENUM_OPENING_TRADE_NO = 'N'
+#define ENUM_OPENING_TRADE_YES 'Y'
+#define ENUM_OPENING_TRADE_NO 'N'
 
 /*
  * Product Type Values
  */ 
-#define ENUM_PRODUCT_TYPE_DEBENTURE = 'B'
-#define ENUM_PRODUCT_TYPE_EQUITY = 'E'
-#define ENUM_PRODUCT_TYPE_MUTUAL_FUND = 'M'
-#define ENUM_PRODUCT_TYPE_ETF = 'F'
+#define ENUM_PRODUCT_TYPE_DEBENTURE 'B'
+#define ENUM_PRODUCT_TYPE_EQUITY 'E'
+#define ENUM_PRODUCT_TYPE_MUTUAL_FUND 'M'
+#define ENUM_PRODUCT_TYPE_ETF 'F'
 
 /*
  * Settlement Terms Values
  */ 
-#define ENUM_SETTLEMENT_TERMS_CASH = 'C'
-#define ENUM_SETTLEMENT_TERMS_NN = 'N'
-#define ENUM_SETTLEMENT_TERMS_MS_DERIVATIVESRELATED_CONTINGENT_EQUITY_TRADE = 'M'
-#define ENUM_SETTLEMENT_TERMS_CT_CASH_TODAY = 'T'
-#define ENUM_SETTLEMENT_TERMS_IF_THERE_IS_A_VALID_SETTLEMENT_DATE_ASSOCIATED_WITH_THE_ORDER = 'D'
-#define ENUM_SETTLEMENT_TERMS_NO_SETTLEMENT_TERMS = ' '
+#define ENUM_SETTLEMENT_TERMS_CASH 'C'
+#define ENUM_SETTLEMENT_TERMS_NN 'N'
+#define ENUM_SETTLEMENT_TERMS_MS_DERIVATIVESRELATED_CONTINGENT_EQUITY_TRADE 'M'
+#define ENUM_SETTLEMENT_TERMS_CT_CASH_TODAY 'T'
+#define ENUM_SETTLEMENT_TERMS_IF_THERE_IS_A_VALID_SETTLEMENT_DATE_ASSOCIATED_WITH_THE_ORDER 'D'
+#define ENUM_SETTLEMENT_TERMS_NO_SETTLEMENT_TERMS ' '
 
 /*
  * Test Symbol Values
  */ 
-#define ENUM_TEST_SYMBOL_YES = 'Y'
-#define ENUM_TEST_SYMBOL_NO = 'N'
+#define ENUM_TEST_SYMBOL_YES 'Y'
+#define ENUM_TEST_SYMBOL_NO 'N'
 
 
 /*******************************************************************************

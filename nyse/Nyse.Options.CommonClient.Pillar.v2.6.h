@@ -1,5 +1,5 @@
 /*******************************************************************************
- * C Structs For Nyse Options Pillar CommonClient 2.6 protocol
+ * C Structs For Nyse Options Pillar CommonClient 2.6 Binary Model
  *******************************************************************************/
 
 /*******************************************************************************
@@ -9,17 +9,17 @@
 /*
  * Delivery Flag Values
  */ 
-#define ENUM_DELIVERY_FLAG_HEARTBEAT = 1
-#define ENUM_DELIVERY_FLAG_PILLAR_FAILOVER = 10
-#define ENUM_DELIVERY_FLAG_ORIGINAL_MESSAGE = 11
-#define ENUM_DELIVERY_FLAG_SEQUENCE_NUMBER_RESET_MESSAGE = 12
-#define ENUM_DELIVERY_FLAG_ONE_RETRANSMISSION_PACKET = 13
-#define ENUM_DELIVERY_FLAG_RETRANSMISSION_SEQUENCE_MESSAGE = 15
-#define ENUM_DELIVERY_FLAG_ONE_REFRESH_PACKET = 17
-#define ENUM_DELIVERY_FLAG_REFRESH_SEQUENCE_START = 18
-#define ENUM_DELIVERY_FLAG_REFRESH_SEQUENCE_MESSAGE = 19
-#define ENUM_DELIVERY_FLAG_REFRESH_SEQUENCE_END = 20
-#define ENUM_DELIVERY_FLAG_MESSAGE_UNAVAILABLE = 21
+#define ENUM_DELIVERY_FLAG_HEARTBEAT 1
+#define ENUM_DELIVERY_FLAG_PILLAR_FAILOVER 10
+#define ENUM_DELIVERY_FLAG_ORIGINAL_MESSAGE 11
+#define ENUM_DELIVERY_FLAG_SEQUENCE_NUMBER_RESET_MESSAGE 12
+#define ENUM_DELIVERY_FLAG_ONE_RETRANSMISSION_PACKET 13
+#define ENUM_DELIVERY_FLAG_RETRANSMISSION_SEQUENCE_MESSAGE 15
+#define ENUM_DELIVERY_FLAG_ONE_REFRESH_PACKET 17
+#define ENUM_DELIVERY_FLAG_REFRESH_SEQUENCE_START 18
+#define ENUM_DELIVERY_FLAG_REFRESH_SEQUENCE_MESSAGE 19
+#define ENUM_DELIVERY_FLAG_REFRESH_SEQUENCE_END 20
+#define ENUM_DELIVERY_FLAG_MESSAGE_UNAVAILABLE 21
 
 
 /*******************************************************************************

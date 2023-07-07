@@ -1,5 +1,5 @@
 /*******************************************************************************
- * C Structs For Cme Futures Sbe Settlements 7.0 protocol
+ * C Structs For Cme Futures Sbe Settlements 7.0 Binary Model
  *******************************************************************************/
 
 /*******************************************************************************
@@ -9,44 +9,44 @@
 /*
  * High Px Ind Values
  */ 
-#define ENUM_HIGH_PX_IND_ASK = 'A'
-#define ENUM_HIGH_PX_IND_BID = 'B'
-#define ENUM_HIGH_PX_IND_TRADE = 'T'
+#define ENUM_HIGH_PX_IND_ASK 'A'
+#define ENUM_HIGH_PX_IND_BID 'B'
+#define ENUM_HIGH_PX_IND_TRADE 'T'
 
 /*
  * Low Px Ind Values
  */ 
-#define ENUM_LOW_PX_IND_ASK = 'A'
-#define ENUM_LOW_PX_IND_BID = 'B'
-#define ENUM_LOW_PX_IND_TRADE = 'T'
+#define ENUM_LOW_PX_IND_ASK 'A'
+#define ENUM_LOW_PX_IND_BID 'B'
+#define ENUM_LOW_PX_IND_TRADE 'T'
 
 /*
  * Md Update Action Values
  */ 
-#define ENUM_MD_UPDATE_ACTION_NEW = 0
-#define ENUM_MD_UPDATE_ACTION_CHANGE = 1
-#define ENUM_MD_UPDATE_ACTION_DELETE = 2
+#define ENUM_MD_UPDATE_ACTION_NEW 0
+#define ENUM_MD_UPDATE_ACTION_CHANGE 1
+#define ENUM_MD_UPDATE_ACTION_DELETE 2
 
 /*
  * Open Close Settl Flag Values
  */ 
-#define ENUM_OPEN_CLOSE_SETTL_FLAG_ESTIMATED = 3
-#define ENUM_OPEN_CLOSE_SETTL_FLAG_ACTUAL_ADJUSTED = 4
+#define ENUM_OPEN_CLOSE_SETTL_FLAG_ESTIMATED 3
+#define ENUM_OPEN_CLOSE_SETTL_FLAG_ACTUAL_ADJUSTED 4
 
 /*
  * Put Or Call Values
  */ 
-#define ENUM_PUT_OR_CALL_NO_VALUE = 255
-#define ENUM_PUT_OR_CALL_PUT = 0
-#define ENUM_PUT_OR_CALL_CALL = 1
+#define ENUM_PUT_OR_CALL_NO_VALUE 255
+#define ENUM_PUT_OR_CALL_PUT 0
+#define ENUM_PUT_OR_CALL_CALL 1
 
 /*
  * Template Id Values
  */ 
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_SETTLE = 401
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_VOI = 402
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_HIGH_LOW = 403
-#define ENUM_TEMPLATE_ID_ADMIN_HEARTBEAT = 407
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_SETTLE 401
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_VOI 402
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_HIGH_LOW 403
+#define ENUM_TEMPLATE_ID_ADMIN_HEARTBEAT 407
 
 
 /*******************************************************************************

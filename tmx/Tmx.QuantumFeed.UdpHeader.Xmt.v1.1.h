@@ -1,5 +1,5 @@
 /*******************************************************************************
- * C Structs For Tmx QuantumFeed Xmt UdpHeader 1.1 protocol
+ * C Structs For Tmx QuantumFeed Xmt UdpHeader 1.1 Binary Model
  *******************************************************************************/
 
 /*******************************************************************************
@@ -9,8 +9,8 @@
 /*
  * Ack Required Poss Dup Values
  */ 
-#define ENUM_ACK_REQUIRED_POSS_DUP_RECEIVER_NEEDS_TO_ACK = 'A'
-#define ENUM_ACK_REQUIRED_POSS_DUP_POSSIBLE_DUPLICATES = 'D'
+#define ENUM_ACK_REQUIRED_POSS_DUP_RECEIVER_NEEDS_TO_ACK 'A'
+#define ENUM_ACK_REQUIRED_POSS_DUP_POSSIBLE_DUPLICATES 'D'
 
 
 /*******************************************************************************
