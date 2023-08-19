@@ -151,7 +151,7 @@ typedef struct {
     uint32_t PairedContracts;
     char ImbalanceDirection;
     uint32_t OptionId;
-    uint32_t ImbalancePrice;
+    int32_t ImbalancePrice;
     uint32_t ImbalanceVolume;
     char CustomerFirmIndicator;
     char Reserved;
@@ -175,7 +175,7 @@ typedef struct {
     uint32_t CrossNumber;
     uint32_t MatchNumber;
     char CrossType;
-    uint32_t PriceLong;
+    int32_t PriceLong;
     uint32_t VolumeLong;
 } OptionsCrossTradeMessageT;
 
@@ -188,7 +188,7 @@ typedef struct {
     uint32_t OptionId;
     uint32_t CrossNumber;
     uint32_t MatchNumber;
-    uint32_t PriceLong;
+    int32_t PriceLong;
     uint32_t VolumeLong;
 } NonAuctionOptionsTradeMessageT;
 
@@ -219,9 +219,9 @@ typedef struct {
     uint32_t BidReferenceNumberDelta;
     uint32_t OriginalAskReferenceNumberDelta;
     uint32_t AskReferenceDeltaNumber;
-    uint32_t BidPriceLong;
+    int32_t BidPriceLong;
     uint32_t BidSizeLong;
-    uint32_t AskPriceLong;
+    int32_t AskPriceLong;
     uint32_t AskSizeLong;
 } QuoteReplaceMessageLongFormT;
 
@@ -234,9 +234,9 @@ typedef struct {
     uint32_t BidReferenceNumberDelta;
     uint32_t OriginalAskReferenceNumberDelta;
     uint32_t AskReferenceDeltaNumber;
-    uint16_t BidPrice;
+    int16_t BidPrice;
     uint16_t BidSize;
-    uint16_t AskPrice;
+    int16_t AskPrice;
     uint16_t AskSize;
 } QuoteReplaceMessageShortFormT;
 
@@ -247,7 +247,7 @@ typedef struct {
     uint32_t Timestamp;
     uint32_t ReferenceNumberDelta;
     char ChangeReason;
-    uint32_t PriceLong;
+    int32_t PriceLong;
     uint32_t VolumeLong;
 } SingleSideUpdateMessageT;
 
@@ -266,7 +266,7 @@ typedef struct {
     uint32_t Timestamp;
     uint32_t OriginalReferenceNumberDelta;
     uint32_t NewReferenceNumberDelta;
-    uint32_t PriceLong;
+    int32_t PriceLong;
     uint32_t VolumeLong;
 } SingleSideReplaceMessageLongFormT;
 
@@ -277,7 +277,7 @@ typedef struct {
     uint32_t Timestamp;
     uint32_t OriginalReferenceNumberDelta;
     uint32_t NewReferenceNumberDelta;
-    uint16_t Price;
+    int16_t Price;
     uint16_t Volume;
 } SingleSideReplaceMessageShortFormT;
 
@@ -299,7 +299,7 @@ typedef struct {
     uint32_t CrossNumber;
     uint32_t MatchNumber;
     char Printable;
-    uint32_t PriceLong;
+    int32_t PriceLong;
     uint32_t VolumeLong;
 } SingleSideOrderExecutedWithPriceMessageT;
 
@@ -336,9 +336,9 @@ typedef struct {
     uint32_t BidReferenceNumberDelta;
     uint32_t AskReferenceNumberDelta;
     uint32_t OptionId;
-    uint16_t BidPrice;
+    int16_t BidPrice;
     uint16_t BidSize;
-    uint16_t AskPrice;
+    int16_t AskPrice;
     uint16_t AskSize;
 } AddQuoteMessageShortFormT;
 
@@ -350,7 +350,7 @@ typedef struct {
     uint32_t OrderReferenceNumberDelta;
     char MarketSide;
     uint32_t OptionId;
-    uint32_t PriceLong;
+    int32_t PriceLong;
     uint32_t VolumeLong;
 } AddOrderMessageLongFormT;
 
@@ -362,7 +362,7 @@ typedef struct {
     uint32_t OrderReferenceNumberDelta;
     char MarketSide;
     uint32_t OptionId;
-    uint16_t Price;
+    int16_t Price;
     uint16_t Volume;
 } AddOrderMessageShortFormT;
 
@@ -394,7 +394,7 @@ typedef struct {
     uint8_t ExpirationYear;
     uint8_t ExpirationMonth;
     uint8_t ExpirationDate;
-    uint32_t ExplicitStrikePrice;
+    int32_t ExplicitStrikePrice;
     char OptionType;
     uint8_t Source;
     char UnderlyingSymbol[13];

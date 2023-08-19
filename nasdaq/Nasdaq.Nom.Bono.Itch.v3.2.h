@@ -93,7 +93,7 @@ typedef struct {
     uint32_t Nanoseconds;
     uint32_t OptionId;
     uint32_t OriginalCrossId;
-    uint32_t OriginalPrice;
+    int32_t OriginalPrice;
     uint32_t OriginalVolume;
 } BrokenTradeReportMessageT;
 
@@ -105,7 +105,7 @@ typedef struct {
     uint32_t OptionId;
     uint32_t CrossId;
     char TradeCondition[1];
-    uint32_t Price4;
+    int32_t Price4;
     uint32_t Volume;
 } TradeReportMessageT;
 
@@ -116,7 +116,7 @@ typedef struct {
     uint32_t Nanoseconds;
     uint32_t OptionId;
     char QuoteCondition;
-    uint32_t Price4;
+    int32_t Price4;
     uint32_t Size4;
 } LongBestBidUpdateMessageT;
 
@@ -127,7 +127,7 @@ typedef struct {
     uint32_t Nanoseconds;
     uint32_t OptionId;
     char QuoteCondition;
-    uint32_t Price4;
+    int32_t Price4;
     uint32_t Size4;
 } LongBestAskUpdateMessageT;
 
@@ -138,7 +138,7 @@ typedef struct {
     uint32_t Nanoseconds;
     uint32_t OptionId;
     char QuoteCondition;
-    uint16_t Price2;
+    int16_t Price2;
     uint16_t Size2;
 } ShortBestBidUpdateMessageT;
 
@@ -149,7 +149,7 @@ typedef struct {
     uint32_t Nanoseconds;
     uint32_t OptionId;
     char QuoteCondition;
-    uint16_t Price2;
+    int16_t Price2;
     uint16_t Size2;
 } ShortBestAskUpdateMessageT;
 
@@ -160,9 +160,9 @@ typedef struct {
     uint32_t Nanoseconds;
     uint32_t OptionId;
     char QuoteCondition;
-    uint32_t BidPrice4;
+    int32_t BidPrice4;
     uint32_t BidSize4;
-    uint32_t AskPrice4;
+    int32_t AskPrice4;
     uint32_t AskSize4;
 } LongBestBidAndAskUpdateMessageT;
 
@@ -173,9 +173,9 @@ typedef struct {
     uint32_t Nanoseconds;
     uint32_t OptionId;
     char QuoteCondition;
-    uint16_t BidPrice2;
+    int16_t BidPrice2;
     uint16_t BidSize2;
-    uint16_t AskPrice2;
+    int16_t AskPrice2;
     uint16_t AskSize2;
 } ShortBestBidAndAskUpdateMessageT;
 
@@ -207,7 +207,7 @@ typedef struct {
     uint8_t ExpirationYear;
     uint8_t ExpirationMonth;
     uint8_t ExpirationDay;
-    uint32_t StrikePrice;
+    int32_t StrikePrice;
     char OptionType;
     uint8_t Source;
     char UnderlyingSymbol[13];

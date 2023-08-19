@@ -28,16 +28,10 @@
 #pragma pack(push, 1)
 
 /*
- * Structure: Message
- */ 
-typedef struct {
-    char MessageType[1];
-} MessageT;
-
-/*
  * Structure: Unsequenced Data Packet
  */ 
 typedef struct {
+    char UnsequencedMessageType[1];
 } UnsequencedDataPacketT;
 
 /*
@@ -54,6 +48,7 @@ typedef struct {
  * Structure: Sequenced Data Packet
  */ 
 typedef struct {
+    char SequencedMessageType[1];
 } SequencedDataPacketT;
 
 /*

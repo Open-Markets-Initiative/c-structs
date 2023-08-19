@@ -14,6 +14,7 @@
 | Cash | Eti | T7 | [6.1][Eurex.Cash.Eti.T7.v6.1.Structs] | 5/16/2018 | 2320 | Untested | [url][Eurex.Cash.Eti.T7.v6.1.Url] - [pdf][Eurex.Cash.Eti.T7.v6.1.Pdf] - [xml][Eurex.Cash.Eti.T7.v6.1.Xml] |
 | Cash | Eti | T7 | [6.0][Eurex.Cash.Eti.T7.v6.0.Structs] | 10/19/2017 | 2316 | Untested | [url][Eurex.Cash.Eti.T7.v6.0.Url] - [pdf][Eurex.Cash.Eti.T7.v6.0.Pdf] - [xml][Eurex.Cash.Eti.T7.v6.0.Xml] |
 | Cash | Eti | T7 | [5.0][Eurex.Cash.Eti.T7.v5.0.Structs] | 5/22/2017 | 2054 | Untested | [url][Eurex.Cash.Eti.T7.v5.0.Url] - [pdf][Eurex.Cash.Eti.T7.v5.0.Pdf] - [xml][Eurex.Cash.Eti.T7.v5.0.Xml] |
+| Cash | Eti | T7 | [12.0][Eurex.Cash.Eti.T7.v12.0.Structs] | 7/31/2023 | 3983 | Untested | [url][Eurex.Cash.Eti.T7.v12.0.Url] - [pdf][Eurex.Cash.Eti.T7.v12.0.Pdf] - [xml][Eurex.Cash.Eti.T7.v12.0.Xml] |
 | Cash | Eti | T7 | [11.1][Eurex.Cash.Eti.T7.v11.1.Structs] | 2/23/2023 | 3953 | Untested | [url][Eurex.Cash.Eti.T7.v11.1.Url] - [pdf][Eurex.Cash.Eti.T7.v11.1.Pdf] - [xml][Eurex.Cash.Eti.T7.v11.1.Xml] |
 | Cash | Eti | T7 | [11.0][Eurex.Cash.Eti.T7.v11.0.Structs] | 10/31/2022 | 3935 | Untested | [url][Eurex.Cash.Eti.T7.v11.0.Url] - [pdf][Eurex.Cash.Eti.T7.v11.0.Pdf] - [xml][Eurex.Cash.Eti.T7.v11.0.Xml] |
 | Cash | Eti | T7 | [10.1][Eurex.Cash.Eti.T7.v10.1.Structs] | 6/22/2022 | 3678 | Untested | [url][Eurex.Cash.Eti.T7.v10.1.Url] - [pdf][Eurex.Cash.Eti.T7.v10.1.Pdf] - [xml][Eurex.Cash.Eti.T7.v10.1.Xml] |
@@ -30,6 +31,7 @@
 | Derivatives | Eobi | T7 | [4.0][Eurex.Derivatives.Eobi.T7.v4.0.Structs] | 11/11/2016 | 594 | Untested | [url][Eurex.Derivatives.Eobi.T7.v4.0.Url] - [pdf][Eurex.Derivatives.Eobi.T7.v4.0.Pdf] - [xml][Eurex.Derivatives.Eobi.T7.v4.0.Xml] |
 | Derivatives | Eobi | T7 | [3.0][Eurex.Derivatives.Eobi.T7.v3.0.Structs] | 8/3/2015 | 547 | Verified | [url][Eurex.Derivatives.Eobi.T7.v3.0.Url] - [pdf][Eurex.Derivatives.Eobi.T7.v3.0.Pdf] - [xml][Eurex.Derivatives.Eobi.T7.v3.0.Xml] |
 | Derivatives | Eobi | T7 | [2.5][Eurex.Derivatives.Eobi.T7.v2.5.Structs] | 11/7/2014 | 547 | Untested | [url][Eurex.Derivatives.Eobi.T7.v2.5.Url] - [pdf][Eurex.Derivatives.Eobi.T7.v2.5.Pdf] - [xml][Eurex.Derivatives.Eobi.T7.v2.5.Xml] |
+| Derivatives | Eobi | T7 | [12.0][Eurex.Derivatives.Eobi.T7.v12.0.Structs] | 8/3/2023 | 1030 | Untested | [url][Eurex.Derivatives.Eobi.T7.v12.0.Url] - [pdf][Eurex.Derivatives.Eobi.T7.v12.0.Pdf] - [xml][Eurex.Derivatives.Eobi.T7.v12.0.Xml] |
 | Derivatives | Eobi | T7 | [11.1][Eurex.Derivatives.Eobi.T7.v11.1.Structs] | 2/7/2023 | 997 | Untested | [url][Eurex.Derivatives.Eobi.T7.v11.1.Url] - [pdf][Eurex.Derivatives.Eobi.T7.v11.1.Pdf] - [xml][Eurex.Derivatives.Eobi.T7.v11.1.Xml] |
 | Derivatives | Eobi | T7 | [11.0][Eurex.Derivatives.Eobi.T7.v11.0.Structs] | 11/1/2022 | 997 | Untested | [url][Eurex.Derivatives.Eobi.T7.v11.0.Url] - [pdf][Eurex.Derivatives.Eobi.T7.v11.0.Pdf] - [xml][Eurex.Derivatives.Eobi.T7.v11.0.Xml] |
 | Derivatives | Eobi | T7 | [10.0][Eurex.Derivatives.Eobi.T7.v10.0.Structs] | 9/20/2021 | 825 | Untested | [url][Eurex.Derivatives.Eobi.T7.v10.0.Url] - [pdf][Eurex.Derivatives.Eobi.T7.v10.0.Pdf] - [xml][Eurex.Derivatives.Eobi.T7.v10.0.Xml] |
@@ -44,11 +46,12 @@
 | Derivatives | Eti | T7 | [6.0][Eurex.Derivatives.Eti.T7.v6.0.Structs] | 10/19/2017 | 3232 | Untested | [url][Eurex.Derivatives.Eti.T7.v6.0.Url] - [pdf][Eurex.Derivatives.Eti.T7.v6.0.Pdf] - [xml][Eurex.Derivatives.Eti.T7.v6.0.Xml] |
 | Derivatives | Eti | T7 | [5.0][Eurex.Derivatives.Eti.T7.v5.0.Structs] | 5/22/2017 | 2679 | Untested | [url][Eurex.Derivatives.Eti.T7.v5.0.Url] - [pdf][Eurex.Derivatives.Eti.T7.v5.0.Pdf] - [xml][Eurex.Derivatives.Eti.T7.v5.0.Xml] |
 | Derivatives | Eti | T7 | [2.5][Eurex.Derivatives.Eti.T7.v2.5.Structs] | 11/7/2014 | 2179 | Untested | [url][Eurex.Derivatives.Eti.T7.v2.5.Url] - [pdf][Eurex.Derivatives.Eti.T7.v2.5.Pdf] - [xml][Eurex.Derivatives.Eti.T7.v2.5.Xml] |
+| Derivatives | Eti | T7 | [12.0][Eurex.Derivatives.Eti.T7.v12.0.Structs] | 7/31/2023 | 5057 | Untested | [url][Eurex.Derivatives.Eti.T7.v12.0.Url] - [pdf][Eurex.Derivatives.Eti.T7.v12.0.Pdf] - [xml][Eurex.Derivatives.Eti.T7.v12.0.Xml] |
 | Derivatives | Eti | T7 | [11.1][Eurex.Derivatives.Eti.T7.v11.1.Structs] | 2/20/2023 | 4703 | Untested | [url][Eurex.Derivatives.Eti.T7.v11.1.Url] - [pdf][Eurex.Derivatives.Eti.T7.v11.1.Pdf] - [xml][Eurex.Derivatives.Eti.T7.v11.1.Xml] |
 | Derivatives | Eti | T7 | [11.0][Eurex.Derivatives.Eti.T7.v11.0.Structs] | 10/31/2022 | 4584 | Untested | [url][Eurex.Derivatives.Eti.T7.v11.0.Url] - [pdf][Eurex.Derivatives.Eti.T7.v11.0.Pdf] - [xml][Eurex.Derivatives.Eti.T7.v11.0.Xml] |
 | Derivatives | Eti | T7 | [10.1][Eurex.Derivatives.Eti.T7.v10.1.Structs] | 6/22/2022 | 4459 | Untested | [url][Eurex.Derivatives.Eti.T7.v10.1.Url] - [pdf][Eurex.Derivatives.Eti.T7.v10.1.Pdf] - [xml][Eurex.Derivatives.Eti.T7.v10.1.Xml] |
 | Derivatives | Eti | T7 | [10.0][Eurex.Derivatives.Eti.T7.v10.0.Structs] | 9/20/2021 | 4464 | Untested | [url][Eurex.Derivatives.Eti.T7.v10.0.Url] - [pdf][Eurex.Derivatives.Eti.T7.v10.0.Pdf] - [xml][Eurex.Derivatives.Eti.T7.v10.0.Xml] |
-| Derivatives | Eti | T7 | [1.0][Eurex.Derivatives.Eti.T7.v1.0.Structs] | 1/1/2015 | 52 | Tested | [url][Eurex.Derivatives.Eti.T7.v1.0.Url] |
+| Derivatives | Eti | T7 | [1.0][Eurex.Derivatives.Eti.T7.v1.0.Structs] | 1/1/2015 | 52 | Verified | [url][Eurex.Derivatives.Eti.T7.v1.0.Url] |
 
 
 Eurex: [website](https://www.eurex.com "Go to Eurex Exchange")
@@ -226,5 +229,17 @@ Eurex: [website](https://www.eurex.com "Go to Eurex Exchange")
 [Eurex.Derivatives.Eobi.T7.v11.1.Url]: https://www.eurex.com/ex-en/technology/t7 "Eurex Exchange 11.1 Url"
 [Eurex.Derivatives.Eobi.T7.v11.1.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Specifications/Eurex/Eurex.Derivatives.Eobi.T7.v11.1.pdf "Eurex Exchange 11.1 Pdf"
 [Eurex.Derivatives.Eobi.T7.v11.1.Xml]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Specifications/Eurex/Eurex.Derivatives.Eobi.T7.v11.1.xml "Eurex Exchange 11.1 Xml"
+[Eurex.Cash.Eti.T7.v12.0.Structs]: https://github.com/Open-Markets-Initiative/c-structs/blob/main/eurex/Eurex.Cash.Eti.T7.v12.0.h "Eurex Cash Eti T7 v12.0 C# Parsers Source File"
+[Eurex.Cash.Eti.T7.v12.0.Url]: https://www.eurex.com/ex-en/technology/t7 "Eurex Exchange 12.0 Url"
+[Eurex.Cash.Eti.T7.v12.0.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Specifications/Eurex/Eurex.Derivatives.Eti.T7.v12.0.pdf "Eurex Exchange 12.0 Pdf"
+[Eurex.Cash.Eti.T7.v12.0.Xml]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Specifications/Eurex/Eurex.Cash.Eti.T7.v12.0.xml "Eurex Exchange 12.0 Xml"
+[Eurex.Derivatives.Eti.T7.v12.0.Structs]: https://github.com/Open-Markets-Initiative/c-structs/blob/main/eurex/Eurex.Derivatives.Eti.T7.v12.0.h "Eurex Derivatives Eti T7 v12.0 C# Parsers Source File"
+[Eurex.Derivatives.Eti.T7.v12.0.Url]: https://www.eurex.com/ex-en/technology/t7 "Eurex Exchange 12.0 Url"
+[Eurex.Derivatives.Eti.T7.v12.0.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Specifications/Eurex/Eurex.Derivatives.Eti.T7.v12.0.pdf "Eurex Exchange 12.0 Pdf"
+[Eurex.Derivatives.Eti.T7.v12.0.Xml]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Specifications/Eurex/Eurex.Derivatives.Eti.T7.v12.0.xml "Eurex Exchange 12.0 Xml"
+[Eurex.Derivatives.Eobi.T7.v12.0.Structs]: https://github.com/Open-Markets-Initiative/c-structs/blob/main/eurex/Eurex.Derivatives.Eobi.T7.v12.0.h "Eurex Derivatives Eobi T7 v12.0 C# Parsers Source File"
+[Eurex.Derivatives.Eobi.T7.v12.0.Url]: https://www.eurex.com/ex-en/technology/t7 "Eurex Exchange 12.0 Url"
+[Eurex.Derivatives.Eobi.T7.v12.0.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Specifications/Eurex/Eurex.Derivatives.Eobi.T7.v12.0.pdf "Eurex Exchange 12.0 Pdf"
+[Eurex.Derivatives.Eobi.T7.v12.0.Xml]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Specifications/Eurex/Eurex.Derivatives.Eobi.T7.v12.0.xml "Eurex Exchange 12.0 Xml"
 [Eurex.Derivatives.Eti.T7.v1.0.Structs]: https://github.com/Open-Markets-Initiative/c-structs/blob/main/eurex/Eurex.Derivatives.Eti.T7.v1.0.h "Eurex Derivatives Eti T7 v1.0 C# Parsers Source File"
 [Eurex.Derivatives.Eti.T7.v1.0.Url]: https://www.eurex.com/ex-en/technology/t7 "Eurex Exchange 1.0 Url"

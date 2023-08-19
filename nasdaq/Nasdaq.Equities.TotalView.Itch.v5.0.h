@@ -270,9 +270,9 @@ typedef struct {
     uint64_t ImbalanceShares;
     char ImbalanceDirection;
     char Stock[8];
-    int32_t FarPrice;
-    int32_t NearPrice;
-    int32_t CurrentReferencePrice;
+    uint32_t FarPrice;
+    uint32_t NearPrice;
+    uint32_t CurrentReferencePrice;
     char CrossType;
     char PriceVariationIndicator;
 } NetOrderImbalanceIndicatorMessageT;
@@ -296,7 +296,7 @@ typedef struct {
     char Timestamp;
     uint64_t CrossShares;
     char Stock[8];
-    int32_t CrossPrice;
+    uint32_t CrossPrice;
     uint64_t MatchNumber;
     char CrossType;
 } CrossTradeMessageT;
@@ -312,7 +312,7 @@ typedef struct {
     char BuySellIndicator;
     uint32_t Shares;
     char Stock[8];
-    int32_t Price;
+    uint32_t Price;
     uint64_t MatchNumber;
 } NonCrossTradeMessageT;
 
@@ -326,7 +326,7 @@ typedef struct {
     uint64_t OriginalOrderReferenceNumber;
     uint64_t NewOrderReferenceNumber;
     uint32_t Shares;
-    int32_t Price;
+    uint32_t Price;
 } OrderReplaceMessageT;
 
 /*
@@ -361,7 +361,7 @@ typedef struct {
     uint32_t ExecutedShares;
     uint64_t MatchNumber;
     char Printable;
-    int32_t ExecutionPrice;
+    uint32_t ExecutionPrice;
 } OrderExecutedWithPriceMessageT;
 
 /*
@@ -387,7 +387,7 @@ typedef struct {
     char BuySellIndicator;
     uint32_t Shares;
     char Stock[8];
-    int32_t Price;
+    uint32_t Price;
     char Attribution[4];
 } AddOrderWithMpidAttributionMessageT;
 
@@ -399,9 +399,9 @@ typedef struct {
     uint16_t TrackingNumber;
     char Timestamp;
     char Stock[8];
-    int32_t AuctionCollarReferencePrice;
-    int32_t UpperAuctionCollarPrice;
-    int32_t LowerAuctionCollarPrice;
+    uint32_t AuctionCollarReferencePrice;
+    uint32_t UpperAuctionCollarPrice;
+    uint32_t LowerAuctionCollarPrice;
     uint32_t AuctionCollarExtension;
 } LuldAuctionCollarMessageT;
 
@@ -416,7 +416,7 @@ typedef struct {
     char BuySellIndicator;
     uint32_t Shares;
     char Stock[8];
-    int32_t Price;
+    uint32_t Price;
 } AddOrderNoMpidAttributionMessageT;
 
 /*
@@ -429,7 +429,7 @@ typedef struct {
     char Stock[8];
     uint32_t IpoQuotationReleaseTime;
     char IpoQuotationReleaseQualifier;
-    int32_t IpoPrice;
+    uint32_t IpoPrice;
 } IpoQuotingPeriodUpdateT;
 
 /*
@@ -449,9 +449,9 @@ typedef struct {
     uint16_t StockLocate;
     uint16_t TrackingNumber;
     char Timestamp;
-    int64_t Level1;
-    int64_t Level2;
-    int64_t Level3;
+    uint64_t Level1;
+    uint64_t Level2;
+    uint64_t Level3;
 } MwcbDeclineLevelMessageT;
 
 /*

@@ -178,7 +178,7 @@ typedef struct {
     uint32_t StrategyId;
     uint32_t AuctionId;
     char AuctionType;
-    uint32_t Price;
+    int32_t Price;
     char AuctionSide;
     char DebitOrCredit;
     uint32_t Volume;
@@ -203,11 +203,11 @@ typedef struct {
     uint32_t OptionId;
     char SecuritySymbol[5];
     ExpirationT Expiration;
-    uint32_t ExplicitStrikePrice;
+    int32_t ExplicitStrikePrice;
     char OptionType;
     uint32_t AuctionId;
     char AuctionType;
-    uint32_t Price;
+    int32_t Price;
     char AuctionSide;
     uint32_t MatchedVolume;
     uint32_t ImbalanceVolume;
@@ -222,7 +222,7 @@ typedef struct {
     uint32_t OptionId;
     char SecuritySymbol[5];
     ExpirationT Expiration;
-    uint32_t ExplicitStrikePrice;
+    int32_t ExplicitStrikePrice;
     char OptionType;
     char Side;
     uint32_t LegRatio;
@@ -241,7 +241,7 @@ typedef struct {
     uint32_t ExecutableOrderVolume;
     char OrderStatus;
     char OrderType;
-    uint32_t LimitPrice;
+    int32_t LimitPrice;
     char DebitOrCredit;
     char AllOrNone;
     char TimeInForce;
@@ -259,7 +259,7 @@ typedef struct {
     uint32_t OptionId;
     char SecuritySymbol[5];
     ExpirationT Expiration;
-    uint32_t ExplicitStrikePrice;
+    int32_t ExplicitStrikePrice;
     char OptionType;
     uint32_t OrderId;
     char Side;
@@ -268,7 +268,7 @@ typedef struct {
     char OrderStatus;
     char OrderType;
     char MarketQualifier;
-    uint32_t LimitPrice;
+    int32_t LimitPrice;
     char AllOrNone;
     char TimeInForce;
     char CustomerFirmIndicator;
@@ -294,7 +294,7 @@ typedef struct {
     uint32_t OptionId;
     char SecuritySymbol[5];
     ExpirationT Expiration;
-    uint32_t ExplicitStrikePrice;
+    int32_t ExplicitStrikePrice;
     char OptionType;
     char OpenState;
 } SecurityOpenClosedMessageT;
@@ -318,7 +318,7 @@ typedef struct {
     uint32_t OptionId;
     char SecuritySymbol[5];
     ExpirationT Expiration;
-    uint32_t ExplicitStrikePrice;
+    int32_t ExplicitStrikePrice;
     char OptionType;
     char CurrentTradingState;
 } SecurityTradingActionMessageT;
@@ -330,7 +330,7 @@ typedef struct {
     uint32_t OptionId;
     char SecuritySymbol[5];
     ExpirationT Expiration;
-    uint32_t ExplicitStrikePrice;
+    int32_t ExplicitStrikePrice;
     char OptionType;
     char Side;
     uint32_t LegRatio;
@@ -358,7 +358,7 @@ typedef struct {
     uint32_t OptionId;
     char SecuritySymbol[5];
     ExpirationT Expiration;
-    uint32_t ExplicitStrikePrice;
+    int32_t ExplicitStrikePrice;
     char OptionType;
     uint8_t Source;
     char UnderlyingSymbol[13];

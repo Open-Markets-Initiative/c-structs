@@ -5,13 +5,13 @@
 
 | Division | Data | Protocol | Version | Date | Size | Testing | Specification |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Equities | Orders | Ouch | [5.0][Nasdaq.Equities.Orders.Ouch.v5.0.Structs] | 7/1/2021 | 623 | Untested | [url][Nasdaq.Equities.Orders.Ouch.v5.0.Url] - [pdf][Nasdaq.Equities.Orders.Ouch.v5.0.Pdf] |
+|  Equities | Orders | Ouch | [5.0][Nasdaq.Equities.Orders.Ouch.v5.0.Structs] | 7/1/2021 | 118 | Untested | [url][Nasdaq.Equities.Orders.Ouch.v5.0.Url] - [pdf][Nasdaq.Equities.Orders.Ouch.v5.0.Pdf] |
 |  Equities | Orders | Ouch | [4.2][Nasdaq.Equities.Orders.Ouch.v4.2.Structs] | 7/8/2019 | 502 | Untested | [url][Nasdaq.Equities.Orders.Ouch.v4.2.Url] - [pdf][Nasdaq.Equities.Orders.Ouch.v4.2.Pdf] |
 | Bx Equities | TotalView | Itch | [5.0][Nasdaq.Bx.Equities.TotalView.Itch.v5.0.Structs] | 5/23/2018 | 558 | Untested | [url][Nasdaq.Bx.Equities.TotalView.Itch.v5.0.Url] - [pdf][Nasdaq.Bx.Equities.TotalView.Itch.v5.0.Pdf] |
-| Bx Equities | Orders | Ouch | [4.2][Nasdaq.Bx.Equities.Orders.Ouch.v4.2.Structs] | 7/8/2019 | 479 | Untested | [url][Nasdaq.Bx.Equities.Orders.Ouch.v4.2.Url] - [pdf][Nasdaq.Bx.Equities.Orders.Ouch.v4.2.Pdf] |
+| Bx Equities | Orders | Ouch | [4.2][Nasdaq.Bx.Equities.Orders.Ouch.v4.2.Structs] | 7/8/2019 | 478 | Untested | [url][Nasdaq.Bx.Equities.Orders.Ouch.v4.2.Url] - [pdf][Nasdaq.Bx.Equities.Orders.Ouch.v4.2.Pdf] |
 | Bx Options | DepthOfMarket | Itch | [1.3][Nasdaq.Bx.Options.DepthOfMarket.Itch.v1.3.Structs] | 11/2/2017 | 481 | Untested | [url][Nasdaq.Bx.Options.DepthOfMarket.Itch.v1.3.Url] - [pdf][Nasdaq.Bx.Options.DepthOfMarket.Itch.v1.3.Pdf] |
 | Bx Options | TopOfMarket | Itch | [1.2][Nasdaq.Bx.Options.TopOfMarket.Itch.v1.2.Structs] | 11/2/2017 | 282 | Untested | [url][Nasdaq.Bx.Options.TopOfMarket.Itch.v1.2.Url] - [pdf][Nasdaq.Bx.Options.TopOfMarket.Itch.v1.2.Pdf] |
-| Common | SoupBinTcp | Ouch | [3.0][Nasdaq.Common.SoupBinTcp.Ouch.v3.0.Structs] | 2/22/2017 | 123 | Tested | [url][Nasdaq.Common.SoupBinTcp.Ouch.v3.0.Url] - [pdf][Nasdaq.Common.SoupBinTcp.Ouch.v3.0.Pdf] |
+| Common | SoupBinTcp | Ouch | [3.0][Nasdaq.Common.SoupBinTcp.Ouch.v3.0.Structs] | 2/22/2017 | 118 | Tested | [url][Nasdaq.Common.SoupBinTcp.Ouch.v3.0.Url] - [pdf][Nasdaq.Common.SoupBinTcp.Ouch.v3.0.Pdf] |
 | Equities | Aggregated | Itch | [2.0][Nasdaq.Equities.Aggregated.Itch.v2.0.Structs] | 9/12/2017 | 440 | Untested | [url][Nasdaq.Equities.Aggregated.Itch.v2.0.Url] - [pdf][Nasdaq.Equities.Aggregated.Itch.v2.0.Pdf] |
 | Equities | Level2 | Itch | [2.0][Nasdaq.Equities.Level2.Itch.v2.0.Structs] | 5/3/2018 | 397 | Untested | [url][Nasdaq.Equities.Level2.Itch.v2.0.Url] - [pdf][Nasdaq.Equities.Level2.Itch.v2.0.Pdf] |
 | Equities | Noi | Itch | [3.0][Nasdaq.Equities.Noi.Itch.v3.0.Structs] | 9/12/2017 | 310 | Untested | [url][Nasdaq.Equities.Noi.Itch.v3.0.Url] - [pdf][Nasdaq.Equities.Noi.Itch.v3.0.Pdf] |
@@ -29,7 +29,7 @@
 | Psx | Bbo | Itch | [2.1][Nasdaq.Psx.Bbo.Itch.v2.1.Structs] | 5/3/2018 | 320 | Untested | [url][Nasdaq.Psx.Bbo.Itch.v2.1.Url] - [pdf][Nasdaq.Psx.Bbo.Itch.v2.1.Pdf] |
 | Psx | LastSale | Itch | [2.1][Nasdaq.Psx.LastSale.Itch.v2.1.Structs] | 5/3/2018 | 452 | Untested | [url][Nasdaq.Psx.LastSale.Itch.v2.1.Url] - [pdf][Nasdaq.Psx.LastSale.Itch.v2.1.Pdf] |
 | Psx | TotalView | Itch | [5.0][Nasdaq.Psx.TotalView.Itch.v5.0.Structs] | 5/3/2018 | 546 | Untested | [url][Nasdaq.Psx.TotalView.Itch.v5.0.Url] - [pdf][Nasdaq.Psx.TotalView.Itch.v5.0.Pdf] |
-| Psx | Orders | Ouch | [4.2][Nasdaq.Psx.Orders.Ouch.v4.2.Structs] | 7/8/2019 | 466 | Untested | [url][Nasdaq.Psx.Orders.Ouch.v4.2.Url] - [pdf][Nasdaq.Psx.Orders.Ouch.v4.2.Pdf] |
+| Psx | Orders | Ouch | [4.2][Nasdaq.Psx.Orders.Ouch.v4.2.Structs] | 7/8/2019 | 465 | Untested | [url][Nasdaq.Psx.Orders.Ouch.v4.2.Url] - [pdf][Nasdaq.Psx.Orders.Ouch.v4.2.Pdf] |
 | Uqdf | Output | Utp | [1.5][Nasdaq.Uqdf.Output.Utp.v1.5.Structs] | 5/1/2020 | 552 | Verified | [url][Nasdaq.Uqdf.Output.Utp.v1.5.Url] - [pdf][Nasdaq.Uqdf.Output.Utp.v1.5.Pdf] |
 | Utdf | Output | Utp | [1.5][Nasdaq.Utdf.Output.Utp.v1.5.Structs] | 5/1/2020 | 652 | Untested | [url][Nasdaq.Utdf.Output.Utp.v1.5.Url] - [pdf][Nasdaq.Utdf.Output.Utp.v1.5.Pdf] |
 

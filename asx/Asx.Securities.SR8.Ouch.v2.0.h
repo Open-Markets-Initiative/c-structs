@@ -20,19 +20,6 @@
 #define ENUM_DIRECTED_WHOLESALE_FALSE_DEFAULT 'N'
 
 /*
- * Message Type Values
- */ 
-#define ENUM_MESSAGE_TYPE_ENTER_ORDER_MESSAGE 'O'
-#define ENUM_MESSAGE_TYPE_REPLACE_ORDER_MESSAGE 'U'
-#define ENUM_MESSAGE_TYPE_CANCEL_ORDER_MESSAGE 'X'
-#define ENUM_MESSAGE_TYPE_CANCEL_BY_ORDER_ID_MESSAGE 'Y'
-#define ENUM_MESSAGE_TYPE_ORDER_ACCEPTED_MESSAGE 'A'
-#define ENUM_MESSAGE_TYPE_ORDER_REJECTED_MESSAGE 'J'
-#define ENUM_MESSAGE_TYPE_ORDER_REPLACED_MESSAGE 'U'
-#define ENUM_MESSAGE_TYPE_ORDER_CANCELLED_MESSAGE 'C'
-#define ENUM_MESSAGE_TYPE_ORDER_EXECUTED_MESSAGE 'E'
-
-/*
  * Order State Values
  */ 
 #define ENUM_ORDER_STATE_ON_BOOK 1
@@ -79,6 +66,15 @@
 #define ENUM_REASON_INACTIVATED_DAY_ORDER 24
 
 /*
+ * Sequenced Message Type Values
+ */ 
+#define ENUM_SEQUENCED_MESSAGE_TYPE_ORDER_ACCEPTED_MESSAGE 'A'
+#define ENUM_SEQUENCED_MESSAGE_TYPE_ORDER_REJECTED_MESSAGE 'J'
+#define ENUM_SEQUENCED_MESSAGE_TYPE_ORDER_REPLACED_MESSAGE 'U'
+#define ENUM_SEQUENCED_MESSAGE_TYPE_ORDER_CANCELLED_MESSAGE 'C'
+#define ENUM_SEQUENCED_MESSAGE_TYPE_ORDER_EXECUTED_MESSAGE 'E'
+
+/*
  * Side Values
  */ 
 #define ENUM_SIDE_BUY_ORDER 'B'
@@ -93,12 +89,102 @@
 #define ENUM_TIME_IN_FORCE_FILL_AND_KILL 3
 #define ENUM_TIME_IN_FORCE_FILL_OR_KILL 4
 
+/*
+ * Unsequenced Message Type Values
+ */ 
+#define ENUM_UNSEQUENCED_MESSAGE_TYPE_ENTER_ORDER_MESSAGE 'O'
+#define ENUM_UNSEQUENCED_MESSAGE_TYPE_REPLACE_ORDER_MESSAGE 'U'
+#define ENUM_UNSEQUENCED_MESSAGE_TYPE_CANCEL_ORDER_MESSAGE 'X'
+#define ENUM_UNSEQUENCED_MESSAGE_TYPE_CANCEL_BY_ORDER_ID_MESSAGE 'Y'
+
 
 /*******************************************************************************
  * Structs
  *******************************************************************************/
 
 #pragma pack(push, 1)
+
+/*
+ * Structure: Cancel By Order Id Message
+ */ 
+typedef struct {
+    uint32_t OrderBookId;
+    char Side;
+    uint64_t OrderId;
+} CancelByOrderIdMessageT;
+
+/*
+ * Structure: Cancel Order Message
+ */ 
+typedef struct {
+    char OrderToken[14];
+} CancelOrderMessageT;
+
+/*
+ * Structure: Replace Order Message
+ */ 
+typedef struct {
+    char ExistingOrderToken[14];
+    char ReplacementOrderToken[14];
+    uint64_t Quantity;
+    int32_t Price;
+    uint8_t OpenClose;
+    char ClientAccount[10];
+    char CustomerInfo[15];
+    char ExchangeInfo[32];
+    char CapacityOfParticipant;
+    char DirectedWholesale;
+    char ExecutionVenue[4];
+    char IntermediaryId[10];
+    char OrderOrigin[20];
+    char Filler[8];
+    uint64_t ShortSellQuantity;
+    uint64_t MinimumAcceptableQuantity;
+} ReplaceOrderMessageT;
+
+/*
+ * Structure: Enter Order Message
+ */ 
+typedef struct {
+    char OrderToken[14];
+    uint32_t OrderBookId;
+    char Side;
+    uint64_t Quantity;
+    int32_t Price;
+    uint8_t TimeInForce;
+    uint8_t OpenClose;
+    char ClientAccount[10];
+    char CustomerInfo[15];
+    char ExchangeInfo[32];
+    char ClearingParticipant[1];
+    uint32_t CrossingKey;
+    char CapacityOfParticipant;
+    char DirectedWholesale;
+    char ExecutionVenue[4];
+    char IntermediaryId[10];
+    char OrderOrigin[20];
+    char Filler[8];
+    char OuchOrderType;
+    uint64_t ShortSellQuantity;
+    uint64_t MinimumAcceptableQuantity;
+} EnterOrderMessageT;
+
+/*
+ * Structure: Unsequenced Data Packet
+ */ 
+typedef struct {
+    char UnsequencedMessageType;
+} UnsequencedDataPacketT;
+
+/*
+ * Structure: Login Request Packet
+ */ 
+typedef struct {
+    char Username[6];
+    char Password[10];
+    char RequestedSession[10];
+    char RequestedSequenceNumber[20];
+} LoginRequestPacketT;
 
 /*
  * Structure: Order Executed Message
@@ -197,97 +283,10 @@ typedef struct {
 } OrderAcceptedMessageT;
 
 /*
- * Structure: Cancel By Order Id Message
- */ 
-typedef struct {
-    uint32_t OrderBookId;
-    char Side;
-    uint64_t OrderId;
-} CancelByOrderIdMessageT;
-
-/*
- * Structure: Cancel Order Message
- */ 
-typedef struct {
-    char OrderToken[14];
-} CancelOrderMessageT;
-
-/*
- * Structure: Replace Order Message
- */ 
-typedef struct {
-    char ExistingOrderToken[14];
-    char ReplacementOrderToken[14];
-    uint64_t Quantity;
-    int32_t Price;
-    uint8_t OpenClose;
-    char ClientAccount[10];
-    char CustomerInfo[15];
-    char ExchangeInfo[32];
-    char CapacityOfParticipant;
-    char DirectedWholesale;
-    char ExecutionVenue[4];
-    char IntermediaryId[10];
-    char OrderOrigin[20];
-    char Filler[8];
-    uint64_t ShortSellQuantity;
-    uint64_t MinimumAcceptableQuantity;
-} ReplaceOrderMessageT;
-
-/*
- * Structure: Enter Order Message
- */ 
-typedef struct {
-    char OrderToken[14];
-    uint32_t OrderBookId;
-    char Side;
-    uint64_t Quantity;
-    int32_t Price;
-    uint8_t TimeInForce;
-    uint8_t OpenClose;
-    char ClientAccount[10];
-    char CustomerInfo[15];
-    char ExchangeInfo[32];
-    char ClearingParticipant[1];
-    uint32_t CrossingKey;
-    char CapacityOfParticipant;
-    char DirectedWholesale;
-    char ExecutionVenue[4];
-    char IntermediaryId[10];
-    char OrderOrigin[20];
-    char Filler[8];
-    char OuchOrderType;
-    uint64_t ShortSellQuantity;
-    uint64_t MinimumAcceptableQuantity;
-} EnterOrderMessageT;
-
-/*
- * Structure: Message
- */ 
-typedef struct {
-    char MessageType;
-} MessageT;
-
-/*
- * Structure: Unsequenced Data Packet
- */ 
-typedef struct {
-} UnsequencedDataPacketT;
-
-/*
- * Structure: Login Request Packet
- */ 
-typedef struct {
-    char Username[6];
-    char Password[10];
-    char RequestedSession[10];
-    char RequestedSequenceNumber[20];
-} LoginRequestPacketT;
-
-/*
  * Structure: Sequenced Data Packet
  */ 
 typedef struct {
+    char SequencedMessageType;
 } SequencedDataPacketT;
 
 /*

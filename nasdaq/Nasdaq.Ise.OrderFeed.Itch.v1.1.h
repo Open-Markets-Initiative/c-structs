@@ -136,7 +136,7 @@
  * Structure: Auction Response
  */ 
 typedef struct {
-    uint32_t ResponsePrice;
+    int32_t ResponsePrice;
     uint32_t ResponseSize;
 } AuctionResponseT;
 
@@ -149,7 +149,7 @@ typedef struct {
     uint32_t AuctionId;
     char OrderType;
     char Side;
-    uint32_t Price;
+    int32_t Price;
     uint32_t Size;
     char ExecFlag;
     char OrderCapacity;
@@ -168,7 +168,7 @@ typedef struct {
     uint32_t OptionId;
     char OrderType;
     char Side;
-    uint32_t Price;
+    int32_t Price;
     uint32_t Size;
     char ExecFlag;
     char OrderCapacity;
@@ -185,7 +185,7 @@ typedef struct {
     uint32_t OptionId;
     uint32_t PairedContracts;
     char ImbalanceDirection;
-    uint32_t ImbalancePrice;
+    int32_t ImbalancePrice;
     uint32_t ImbalanceVolume;
 } OpeningImbalanceMessageT;
 
@@ -217,7 +217,7 @@ typedef struct {
     uint8_t ExpirationYear;
     uint8_t ExpirationMonth;
     uint8_t ExpirationDay;
-    uint64_t StrikePrice;
+    int64_t StrikePrice;
     char OptionType;
     uint8_t Source;
     char UnderlyingSymbol[13];

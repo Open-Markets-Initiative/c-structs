@@ -164,7 +164,7 @@ typedef struct {
     uint32_t PairedContracts;
     char ImbalanceDirection;
     uint32_t OptionId;
-    uint32_t ImbalancePrice;
+    int32_t ImbalancePrice;
     uint32_t ImbalanceVolume;
     char CustomerIndicator;
     char Reserved;
@@ -188,7 +188,7 @@ typedef struct {
     uint32_t CrossNumber;
     uint32_t MatchNumber;
     char CrossType;
-    uint32_t Price;
+    int32_t Price;
     uint32_t Volume;
 } OptionsCrossTradeMessageT;
 
@@ -201,7 +201,7 @@ typedef struct {
     uint32_t OptionId;
     uint32_t CrossNumber;
     uint32_t MatchNumber;
-    uint32_t Price;
+    int32_t Price;
     uint32_t Volume;
 } NonAuctionOptionsTradeMessageT;
 
@@ -232,9 +232,9 @@ typedef struct {
     uint32_t BidReferenceNumberDelta;
     uint32_t OriginalAskReferenceNumberDelta;
     uint32_t AskReferenceNumberDelta;
-    uint32_t BidPrice;
+    int32_t BidPrice;
     uint32_t BidSize;
-    uint32_t AskPrice;
+    int32_t AskPrice;
     uint32_t AskSize;
 } QuoteReplaceLongMessageT;
 
@@ -247,9 +247,9 @@ typedef struct {
     uint32_t BidReferenceNumberDelta;
     uint32_t OriginalAskReferenceNumberDelta;
     uint32_t AskReferenceNumberDelta;
-    uint16_t ShortBidPrice;
+    int16_t ShortBidPrice;
     uint16_t ShortBidSize;
-    uint16_t ShortAskPrice;
+    int16_t ShortAskPrice;
     uint16_t ShortAskSize;
 } QuoteReplaceShortMessageT;
 
@@ -260,7 +260,7 @@ typedef struct {
     uint32_t Timestamp;
     uint32_t ReferenceNumberDelta;
     char ChangeReason;
-    uint32_t Price;
+    int32_t Price;
     uint32_t Volume;
 } SingleSideUpdateMessageT;
 
@@ -279,7 +279,7 @@ typedef struct {
     uint32_t Timestamp;
     uint32_t OriginalReferenceNumberDelta;
     uint32_t NewReferenceNumberDelta;
-    uint32_t Price;
+    int32_t Price;
     uint32_t Volume;
     uint32_t OrderId;
 } OrderReplaceLongMessageT;
@@ -291,7 +291,7 @@ typedef struct {
     uint32_t Timestamp;
     uint32_t OriginalReferenceNumberDelta;
     uint32_t NewReferenceNumberDelta;
-    uint16_t ShortPrice;
+    int16_t ShortPrice;
     uint16_t ShortVolume;
     uint32_t OrderId;
 } OrderReplaceShortMessageT;
@@ -303,7 +303,7 @@ typedef struct {
     uint32_t Timestamp;
     uint32_t OriginalReferenceNumberDelta;
     uint32_t NewReferenceNumberDelta;
-    uint32_t Price;
+    int32_t Price;
     uint32_t Volume;
 } SingleSideReplaceLongMessageT;
 
@@ -314,7 +314,7 @@ typedef struct {
     uint32_t Timestamp;
     uint32_t OriginalReferenceNumberDelta;
     uint32_t NewReferenceNumberDelta;
-    uint16_t ShortPrice;
+    int16_t ShortPrice;
     uint16_t ShortVolume;
 } SingleSideReplaceShortMessageT;
 
@@ -336,7 +336,7 @@ typedef struct {
     uint32_t CrossNumber;
     uint32_t MatchNumber;
     char Printable;
-    uint32_t Price;
+    int32_t Price;
     uint32_t Volume;
 } SingleSideExecutedWithPriceMessageT;
 
@@ -359,9 +359,9 @@ typedef struct {
     uint32_t BidReferenceNumberDelta;
     uint32_t AskReferenceNumberDelta;
     uint32_t OptionId;
-    uint32_t BidPrice;
+    int32_t BidPrice;
     uint32_t BidSize;
-    uint32_t AskPrice;
+    int32_t AskPrice;
     uint32_t AskSize;
 } AddQuoteLongMessageT;
 
@@ -373,9 +373,9 @@ typedef struct {
     uint32_t BidReferenceNumberDelta;
     uint32_t AskReferenceNumberDelta;
     uint32_t OptionId;
-    uint16_t ShortBidPrice;
+    int16_t ShortBidPrice;
     uint16_t ShortBidSize;
-    uint16_t ShortAskPrice;
+    int16_t ShortAskPrice;
     uint16_t ShortAskSize;
 } AddQuoteShortMessageT;
 
@@ -387,7 +387,7 @@ typedef struct {
     uint32_t OrderReferenceNumberDelta;
     char MarketSide;
     uint32_t OptionId;
-    uint32_t Price;
+    int32_t Price;
     uint32_t Volume;
     uint32_t OrderId;
 } AddOrderLongMessageT;
@@ -400,7 +400,7 @@ typedef struct {
     uint32_t OrderReferenceNumberDelta;
     char MarketSide;
     uint32_t OptionId;
-    uint16_t ShortPrice;
+    int16_t ShortPrice;
     uint16_t ShortVolume;
     uint32_t OrderId;
 } AddOrderShortMessageT;
@@ -433,7 +433,7 @@ typedef struct {
     uint8_t ExpirationYear;
     uint8_t ExpirationMonth;
     uint8_t ExpirationDate;
-    uint32_t ExplicitStrikePrice;
+    int32_t ExplicitStrikePrice;
     char OptionType;
     uint8_t Source;
     char UnderlyingSymbol[13];

@@ -249,9 +249,9 @@ typedef struct {
  * Structure: Mwcb Decline Level Message
  */ 
 typedef struct {
-    int64_t Level1;
-    int64_t Level2;
-    int64_t Level3;
+    uint64_t Level1;
+    uint64_t Level2;
+    uint64_t Level3;
 } MwcbDeclineLevelMessageT;
 
 /*
@@ -300,13 +300,13 @@ typedef struct {
     char IssueSymbol[8];
     char SecurityClass;
     char OriginalTradeControlNumber[10];
-    int32_t OriginalTradePrice;
-    int32_t OriginalNavPremiumDiscountAmount;
+    uint32_t OriginalTradePrice;
+    uint32_t OriginalNavPremiumDiscountAmount;
     uint32_t OriginalTradeSize;
     char OriginalSaleConditionModifier[4];
     char CorrectedTradeControlNumber[10];
-    int32_t CorrectedTradePrice;
-    int32_t CorrectedNavPremiumDiscountAmount;
+    uint32_t CorrectedTradePrice;
+    uint32_t CorrectedNavPremiumDiscountAmount;
     uint32_t CorrectedTradeSize;
     char CorrectedSaleConditionModifier[4];
 } TradeCorrectionForNextSharesMessageT;
@@ -319,11 +319,11 @@ typedef struct {
     char IssueSymbol[8];
     char SecurityClass;
     char OriginalTradeControlNumber[10];
-    int32_t OriginalTradePrice;
+    uint32_t OriginalTradePrice;
     uint32_t OriginalTradeSize;
     char OriginalSaleConditionModifier[4];
     char CorrectedTradeControlNumber[10];
-    int32_t CorrectedTradePrice;
+    uint32_t CorrectedTradePrice;
     uint32_t CorrectedTradeSize;
     char CorrectedSaleConditionModifier[4];
 } TradeCorrectionMessageT;
@@ -336,8 +336,8 @@ typedef struct {
     char IssueSymbol[8];
     char SecurityClass;
     char OriginalTradeControlNumber[10];
-    int32_t OriginalTradePrice;
-    int32_t OriginalNavPremiumDiscountAmount;
+    uint32_t OriginalTradePrice;
+    uint32_t OriginalNavPremiumDiscountAmount;
     uint32_t OriginalTradeSize;
     char OriginalSaleConditionModifier[4];
 } TradeCancelErrorForNextSharesMessageT;
@@ -350,7 +350,7 @@ typedef struct {
     char IssueSymbol[8];
     char SecurityClass;
     char OriginalTradeControlNumber[10];
-    int32_t OriginalTradePrice;
+    uint32_t OriginalTradePrice;
     uint32_t OriginalTradeSize;
     char OriginalSaleConditionModifier[4];
 } TradeCancelErrorMessageT;
@@ -363,9 +363,9 @@ typedef struct {
     char NextSharesSymbol[8];
     char SecurityClass;
     char TradeControlNumber[10];
-    int32_t ProxyPrice;
+    uint32_t ProxyPrice;
     uint32_t TradeSize;
-    int32_t NavPremiumDiscountAmount;
+    uint32_t NavPremiumDiscountAmount;
     char SaleConditionModifierLevel1;
     char SaleConditionModifierLevel2;
     char SaleConditionModifierLevel3;
@@ -380,7 +380,7 @@ typedef struct {
     char IssueSymbol[8];
     char SecurityClass;
     char TradeControlNumber[10];
-    int32_t TradePrice;
+    uint32_t TradePrice;
     uint32_t TradeSize;
     char SaleConditionModifierLevel1;
     char SaleConditionModifierLevel2;

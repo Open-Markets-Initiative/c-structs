@@ -21,7 +21,6 @@
 | Equities | ImbalancesFeed | Xdp | [2.1.f][Nyse.Equities.ImbalancesFeed.Xdp.v2.1.f.Structs] | 2/1/2018 | 293 | Verified | [url][Nyse.Equities.ImbalancesFeed.Xdp.v2.1.f.Url] - [pdf][Nyse.Equities.ImbalancesFeed.Xdp.v2.1.f.Pdf] |
 | Equities | IntegratedFeed | Xdp | [2.3.a][Nyse.Equities.IntegratedFeed.Xdp.v2.3.a.Structs] | 10/25/2019 | 664 | Verified | [url][Nyse.Equities.IntegratedFeed.Xdp.v2.3.a.Url] - [pdf][Nyse.Equities.IntegratedFeed.Xdp.v2.3.a.Pdf] |
 | Equities | IntegratedFeed | Xdp | [2.1.g][Nyse.Equities.IntegratedFeed.Xdp.v2.1.g.Structs] | 1/29/2018 | 664 | Verified | [url][Nyse.Equities.IntegratedFeed.Xdp.v2.1.g.Url] - [pdf][Nyse.Equities.IntegratedFeed.Xdp.v2.1.g.Pdf] |
-| Options | BinaryGateway | Pillar | [3.15][Nyse.Options.BinaryGateway.Pillar.v3.15.Structs] | 5/8/2023 | 1001 | Beta | [url][Nyse.Options.BinaryGateway.Pillar.v3.15.Url] - [pdf][Nyse.Options.BinaryGateway.Pillar.v3.15.Pdf] |
 | Options | CommonClient | Pillar | [2.6][Nyse.Options.CommonClient.Pillar.v2.6.Structs] | 8/3/2022 | 86 | Verified | [url][Nyse.Options.CommonClient.Pillar.v2.6.Url] - [pdf][Nyse.Options.CommonClient.Pillar.v2.6.Pdf] |
 | Options | StreamProtocol | Pillar | [1.6][Nyse.Options.StreamProtocol.Pillar.v1.6.Structs] | 9/26/2019 | 181 | Tested | [url][Nyse.Options.StreamProtocol.Pillar.v1.6.Url] - [pdf][Nyse.Options.StreamProtocol.Pillar.v1.6.Pdf] |
 | Options | ComplexFeed | Xdp | [1.3.a][Nyse.Options.ComplexFeed.Xdp.v1.3.a.Structs] | 2/28/2018 | 314 | Verified | [url][Nyse.Options.ComplexFeed.Xdp.v1.3.a.Url] - [pdf][Nyse.Options.ComplexFeed.Xdp.v1.3.a.Pdf] |
@@ -89,9 +88,6 @@ Nyse: [website](https://www.nyse.com "Go to New York Stock Exchange")
 [Nyse.Arca.Options.Feed.Pillar.v1.2.f.Structs]: https://github.com/Open-Markets-Initiative/c-structs/blob/main/nyse/Nyse.Arca.Options.Feed.Pillar.v1.2.f.h "Nyse Arca Options Feed Pillar v1.2.f C# Parsers Source File"
 [Nyse.Arca.Options.Feed.Pillar.v1.2.f.Url]: https://www.nyse.com/market-data/real-time/options-deep-feed "New York Stock Exchange 1.2.f Url"
 [Nyse.Arca.Options.Feed.Pillar.v1.2.f.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Specifications/Nyse/Nyse.Options.DeepFeed.Pillar.v1.2.f.pdf "New York Stock Exchange 1.2.f Pdf"
-[Nyse.Options.BinaryGateway.Pillar.v3.15.Structs]: https://github.com/Open-Markets-Initiative/c-structs/blob/main/nyse/Nyse.Options.BinaryGateway.Pillar.v3.15.h "Nyse Options BinaryGateway Pillar v3.15 C# Parsers Source File"
-[Nyse.Options.BinaryGateway.Pillar.v3.15.Url]: https://www.nyse.com/connectivity/specs "New York Stock Exchange 3.15 Url"
-[Nyse.Options.BinaryGateway.Pillar.v3.15.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Specifications/Nyse/Nyse.Options.BinaryGateway.Pillar.v3.15.pdf "New York Stock Exchange 3.15 Pdf"
 [Nyse.Options.CommonClient.Pillar.v2.6.Structs]: https://github.com/Open-Markets-Initiative/c-structs/blob/main/nyse/Nyse.Options.CommonClient.Pillar.v2.6.h "Nyse Options CommonClient Pillar v2.6 C# Parsers Source File"
 [Nyse.Options.CommonClient.Pillar.v2.6.Url]: https://www.nyse.com/market-data/real-time "New York Stock Exchange 2.6 Url"
 [Nyse.Options.CommonClient.Pillar.v2.6.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Specifications/Nyse/Nyse.Options.CommonClient.v2.6.pdf "New York Stock Exchange 2.6 Pdf"

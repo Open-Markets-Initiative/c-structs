@@ -238,9 +238,9 @@ typedef struct {
 typedef struct {
     uint16_t TrackingNumber;
     char Timestamp;
-    int64_t Level1;
-    int64_t Level2;
-    int64_t Level3;
+    uint64_t Level1;
+    uint64_t Level2;
+    uint64_t Level3;
 } MwcbDeclineLevelMessageT;
 
 /*
@@ -262,7 +262,7 @@ typedef struct {
     char MarketSide;
     uint32_t ParticipantShares;
     char Stock[8];
-    int32_t Price;
+    uint32_t Price;
     char Mpid[4];
 } MarketParticipantBidaskUpdateMessageT;
 

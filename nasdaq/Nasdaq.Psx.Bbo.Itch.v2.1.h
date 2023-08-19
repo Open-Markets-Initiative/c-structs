@@ -164,7 +164,7 @@ typedef struct {
     char Timestamp;
     char NextSharesSymbol[8];
     char SecurityClass;
-    int32_t NasdaqBestBid;
+    uint32_t NasdaqBestBid;
 } NextSharesQuotationMessageT;
 
 /*
@@ -175,9 +175,9 @@ typedef struct {
     char Timestamp;
     char Stock[8];
     char SecurityClass;
-    int32_t PsxBestBidPrice;
+    uint32_t PsxBestBidPrice;
     uint32_t PsxBestBidSize;
-    int32_t PsxBestOfferPrice;
+    uint32_t PsxBestOfferPrice;
     uint32_t PsxBestOfferSize;
 } QuotationMessageT;
 
@@ -207,9 +207,9 @@ typedef struct {
 typedef struct {
     uint16_t TrackingNumber;
     char Timestamp;
-    int64_t Level1;
-    int64_t Level2;
-    int64_t Level3;
+    uint64_t Level1;
+    uint64_t Level2;
+    uint64_t Level3;
 } MwcbDeclineLevelMessageT;
 
 /*

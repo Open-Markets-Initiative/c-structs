@@ -88,7 +88,7 @@
 typedef struct {
     char Timestamp;
     uint32_t StrategyId;
-    uint64_t LastPrice;
+    int64_t LastPrice;
     uint32_t Size;
     uint32_t Volume;
     uint64_t High;
@@ -104,7 +104,7 @@ typedef struct {
     char Timestamp;
     uint32_t StrategyId;
     char QuoteCondition;
-    uint32_t Price;
+    int32_t Price;
     uint32_t Size;
     uint32_t CustSize;
     uint32_t ProCustSize;
@@ -120,7 +120,7 @@ typedef struct {
     char Timestamp;
     uint32_t StrategyId;
     char QuoteCondition;
-    uint32_t Price;
+    int32_t Price;
     uint32_t Size;
     uint32_t CustSize;
     uint32_t ProCustSize;
@@ -136,14 +136,14 @@ typedef struct {
     char Timestamp;
     uint32_t StrategyId;
     char QuoteCondition;
-    uint32_t BidPrice;
+    int32_t BidPrice;
     uint32_t BidSize;
     uint32_t BidCustSize;
     uint32_t BidProCustSize;
     uint32_t BidNttSize;
     uint32_t BidMarketSize;
     uint32_t BidNttMarketSize;
-    uint32_t AskPrice;
+    int32_t AskPrice;
     uint32_t AskSize;
     uint32_t AskCustSize;
     uint32_t AskProCustSize;
@@ -180,7 +180,7 @@ typedef struct {
     uint8_t ExpirationYear;
     uint8_t ExpirationMonth;
     uint8_t ExpirationDay;
-    uint64_t ExplicitStrikePrice;
+    int64_t ExplicitStrikePrice;
     char OptionType;
     char Side;
     uint32_t LegRatio;

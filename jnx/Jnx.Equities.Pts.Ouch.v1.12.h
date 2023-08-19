@@ -1,5 +1,5 @@
 /*******************************************************************************
- * C Structs For Jnx Equities Ouch Pts 1.11 Binary Model
+ * C Structs For Jnx Equities Ouch Pts 1.12 Binary Model
  *******************************************************************************/
 
 /*******************************************************************************
@@ -175,7 +175,7 @@ typedef struct {
     char ClientReference[10];
     char BuySellIndicator;
     uint32_t Quantity;
-    uint32_t OrderbookId;
+    char OrderbookId[4];
     char Group[4];
     uint32_t Price;
     uint32_t TimeInForce;
@@ -256,7 +256,7 @@ typedef struct {
     uint32_t ReplacementOrderToken;
     char BuySellIndicator;
     uint32_t Quantity;
-    uint32_t OrderbookId;
+    char OrderbookId[4];
     char Group[4];
     uint32_t Price;
     uint32_t TimeInForce;
@@ -276,7 +276,7 @@ typedef struct {
     char ClientReference[10];
     char BuySellIndicator;
     uint32_t Quantity;
-    uint32_t OrderbookId;
+    char OrderbookId[4];
     char Group[4];
     uint32_t Price;
     uint32_t TimeInForce;
@@ -354,9 +354,9 @@ typedef struct {
 
 Protocol:
    Organization: Japannext
-   Version: 1.11
-   Date: Thursday, March 9, 2023
-   Specification: Japannext_PTS_OUCH_Equities_v1.11.pdf
+   Version: 1.12
+   Date: Wednesday, November 1, 2023
+   Specification: Japannext_PTS_OUCH_Equities_v1.12.pdf
 
 Source:
    Generator: 1.0.0.0

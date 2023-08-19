@@ -282,9 +282,9 @@ typedef struct {
     uint16_t TrackingNumber;
     char Timestamp;
     char Stock[8];
-    int32_t AuctionCollarReferencePrice;
-    int32_t UpperAuctionCollarPrice;
-    int32_t LowerAuctionCollarPrice;
+    uint32_t AuctionCollarReferencePrice;
+    uint32_t UpperAuctionCollarPrice;
+    uint32_t LowerAuctionCollarPrice;
     uint32_t AuctionCollarExtension;
 } LuldAuctionCollarMessageT;
 
@@ -297,7 +297,7 @@ typedef struct {
     char Stock[8];
     uint32_t IpoQuotationReleaseTime;
     char IpoQuotationReleaseQualifier;
-    int32_t IpoPrice;
+    uint32_t IpoPrice;
 } IpoQuotingPeriodUpdateMessageT;
 
 /*
@@ -315,9 +315,9 @@ typedef struct {
 typedef struct {
     uint16_t TrackingNumber;
     char Timestamp;
-    int64_t Level1;
-    int64_t Level2;
-    int64_t Level3;
+    uint64_t Level1;
+    uint64_t Level2;
+    uint64_t Level3;
 } MwcbDeclineLevelMessageT;
 
 /*

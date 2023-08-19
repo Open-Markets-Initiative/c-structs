@@ -170,7 +170,7 @@ typedef struct {
     char Stock[8];
     uint32_t IpoQuotationReleaseTime;
     char IpoQuotationReleaseQualifier;
-    int32_t IpoPrice;
+    uint32_t IpoPrice;
 } IpoQuotingPeriodUpdateMessageT;
 
 /*
@@ -181,7 +181,7 @@ typedef struct {
     char Timestamp;
     uint64_t Shares;
     char Stock[8];
-    int32_t CrossPrice;
+    uint32_t CrossPrice;
     uint64_t MatchNumber;
     char CrossType;
 } CrossTradeMessageT;
@@ -196,9 +196,9 @@ typedef struct {
     uint64_t ImbalanceShares;
     char ImbalanceDirection;
     char Stock[8];
-    int32_t FarPrice;
-    int32_t NearPrice;
-    int32_t CurrentReferencePrice;
+    uint32_t FarPrice;
+    uint32_t NearPrice;
+    uint32_t CurrentReferencePrice;
     char CrossType;
     char PriceVariationIndicator;
 } NoiiMessageT;

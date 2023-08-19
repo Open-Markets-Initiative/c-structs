@@ -101,26 +101,6 @@
 #define ENUM_LIQUIDITY_FLAG_DISPLAYED_ADDED_LIQUIDITY 'V'
 
 /*
- * Message Type Values
- */ 
-#define ENUM_MESSAGE_TYPE_ENTER_ORDER_MESSAGE 'O'
-#define ENUM_MESSAGE_TYPE_REPLACE_ORDER_MESSAGE 'U'
-#define ENUM_MESSAGE_TYPE_CANCEL_ORDER_MESSAGE 'X'
-#define ENUM_MESSAGE_TYPE_MODIFY_ORDER_MESSAGE 'M'
-#define ENUM_MESSAGE_TYPE_SYSTEM_EVENT_MESSAGE 'S'
-#define ENUM_MESSAGE_TYPE_ACCEPTED_MESSAGE 'A'
-#define ENUM_MESSAGE_TYPE_REPLACED_MESSAGE 'U'
-#define ENUM_MESSAGE_TYPE_CANCELED_MESSAGE 'C'
-#define ENUM_MESSAGE_TYPE_AIQ_CANCELED_MESSAGE 'D'
-#define ENUM_MESSAGE_TYPE_EXECUTED_MESSAGE 'E'
-#define ENUM_MESSAGE_TYPE_BROKEN_TRADE_MESSAGE 'B'
-#define ENUM_MESSAGE_TYPE_REJECTED_MESSAGE 'J'
-#define ENUM_MESSAGE_TYPE_CANCEL_PENDING_MESSAGE 'P'
-#define ENUM_MESSAGE_TYPE_CANCEL_REJECT_MESSAGE 'I'
-#define ENUM_MESSAGE_TYPE_ORDER_PRIORITY_UPDATE_MESSAGE 'T'
-#define ENUM_MESSAGE_TYPE_ORDER_MODIFIED_MESSAGE 'M'
-
-/*
  * Order State Values
  */ 
 #define ENUM_ORDER_STATE_LIVE 'L'
@@ -170,12 +150,102 @@
 #define ENUM_REJECTED_REASON_EXCEEDED 'm'
 #define ENUM_REJECTED_REASON_EXCEEDED 'n'
 
+/*
+ * Sequenced Message Type Values
+ */ 
+#define ENUM_SEQUENCED_MESSAGE_TYPE_SYSTEM_EVENT_MESSAGE 'S'
+#define ENUM_SEQUENCED_MESSAGE_TYPE_ACCEPTED_MESSAGE 'A'
+#define ENUM_SEQUENCED_MESSAGE_TYPE_REPLACED_MESSAGE 'U'
+#define ENUM_SEQUENCED_MESSAGE_TYPE_CANCELED_MESSAGE 'C'
+#define ENUM_SEQUENCED_MESSAGE_TYPE_AIQ_CANCELED_MESSAGE 'D'
+#define ENUM_SEQUENCED_MESSAGE_TYPE_EXECUTED_MESSAGE 'E'
+#define ENUM_SEQUENCED_MESSAGE_TYPE_BROKEN_TRADE_MESSAGE 'B'
+#define ENUM_SEQUENCED_MESSAGE_TYPE_REJECTED_MESSAGE 'J'
+#define ENUM_SEQUENCED_MESSAGE_TYPE_CANCEL_PENDING_MESSAGE 'P'
+#define ENUM_SEQUENCED_MESSAGE_TYPE_CANCEL_REJECT_MESSAGE 'I'
+#define ENUM_SEQUENCED_MESSAGE_TYPE_ORDER_PRIORITY_UPDATE_MESSAGE 'T'
+#define ENUM_SEQUENCED_MESSAGE_TYPE_ORDER_MODIFIED_MESSAGE 'M'
+
+/*
+ * Unsequenced Message Type Values
+ */ 
+#define ENUM_UNSEQUENCED_MESSAGE_TYPE_ENTER_ORDER_MESSAGE 'O'
+#define ENUM_UNSEQUENCED_MESSAGE_TYPE_REPLACE_ORDER_MESSAGE 'U'
+#define ENUM_UNSEQUENCED_MESSAGE_TYPE_CANCEL_ORDER_MESSAGE 'U'
+#define ENUM_UNSEQUENCED_MESSAGE_TYPE_MODIFY_ORDER_MESSAGE 'M'
+
 
 /*******************************************************************************
  * Structs
  *******************************************************************************/
 
 #pragma pack(push, 1)
+
+/*
+ * Structure: Modify Order Message
+ */ 
+typedef struct {
+    char OrderToken[14];
+    char BuySellIndicator;
+    uint32_t Shares;
+} ModifyOrderMessageT;
+
+/*
+ * Structure: Cancel Order Message
+ */ 
+typedef struct {
+    char OrderToken[14];
+    uint32_t Shares;
+} CancelOrderMessageT;
+
+/*
+ * Structure: Replace Order Message
+ */ 
+typedef struct {
+    char ExistingOrderToken[14];
+    char ReplacementOrderToken[14];
+    uint32_t Shares;
+    uint32_t Price;
+    uint32_t TimeInForce;
+    char Display;
+    char IntermarketSweepEligibility;
+    uint32_t MinimumQuantity;
+} ReplaceOrderMessageT;
+
+/*
+ * Structure: Enter Order Message
+ */ 
+typedef struct {
+    char OrderToken[14];
+    char BuySellIndicator;
+    uint32_t Shares;
+    char Stock[8];
+    uint32_t Price;
+    uint32_t TimeInForce;
+    char Firm[4];
+    char Display;
+    char Capacity;
+    char IntermarketSweepEligibility;
+    uint32_t MinimumQuantity;
+    char CrossType;
+} EnterOrderMessageT;
+
+/*
+ * Structure: Unsequenced Data Packet
+ */ 
+typedef struct {
+    char UnsequencedMessageType;
+} UnsequencedDataPacketT;
+
+/*
+ * Structure: Login Request Packet
+ */ 
+typedef struct {
+    char Username[6];
+    char Password[10];
+    char RequestedSession[10];
+    char RequestedSequenceNumber[20];
+} LoginRequestPacketT;
 
 /*
  * Structure: Order Modified Message
@@ -322,81 +392,10 @@ typedef struct {
 } SystemEventMessageT;
 
 /*
- * Structure: Modify Order Message
- */ 
-typedef struct {
-    char OrderToken[14];
-    char BuySellIndicator;
-    uint32_t Shares;
-} ModifyOrderMessageT;
-
-/*
- * Structure: Cancel Order Message
- */ 
-typedef struct {
-    char OrderToken[14];
-    uint32_t Shares;
-} CancelOrderMessageT;
-
-/*
- * Structure: Replace Order Message
- */ 
-typedef struct {
-    char ExistingOrderToken[14];
-    char ReplacementOrderToken[14];
-    uint32_t Shares;
-    uint32_t Price;
-    uint32_t TimeInForce;
-    char Display;
-    char IntermarketSweepEligibility;
-    uint32_t MinimumQuantity;
-} ReplaceOrderMessageT;
-
-/*
- * Structure: Enter Order Message
- */ 
-typedef struct {
-    char OrderToken[14];
-    char BuySellIndicator;
-    uint32_t Shares;
-    char Stock[8];
-    uint32_t Price;
-    uint32_t TimeInForce;
-    char Firm[4];
-    char Display;
-    char Capacity;
-    char IntermarketSweepEligibility;
-    uint32_t MinimumQuantity;
-    char CrossType;
-} EnterOrderMessageT;
-
-/*
- * Structure: Message
- */ 
-typedef struct {
-    char MessageType;
-} MessageT;
-
-/*
- * Structure: Unsequenced Data Packet
- */ 
-typedef struct {
-} UnsequencedDataPacketT;
-
-/*
- * Structure: Login Request Packet
- */ 
-typedef struct {
-    char Username[6];
-    char Password[10];
-    char RequestedSession[10];
-    char RequestedSequenceNumber[20];
-} LoginRequestPacketT;
-
-/*
  * Structure: Sequenced Data Packet
  */ 
 typedef struct {
+    char SequencedMessageType;
 } SequencedDataPacketT;
 
 /*

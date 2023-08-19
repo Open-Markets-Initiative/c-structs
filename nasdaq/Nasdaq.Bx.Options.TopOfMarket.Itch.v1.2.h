@@ -87,7 +87,7 @@ typedef struct {
     uint32_t Nanoseconds;
     uint32_t OptionId;
     uint32_t OriginalCrossId;
-    uint32_t OriginalPrice;
+    int32_t OriginalPrice;
     uint32_t OriginalVolume;
 } BrokenTradeReportMessageT;
 
@@ -99,7 +99,7 @@ typedef struct {
     uint32_t OptionId;
     uint32_t CrossId;
     char TradeCondition[1];
-    uint32_t PriceLong;
+    int32_t PriceLong;
     uint32_t Volume;
 } TradeReportMessageT;
 
@@ -110,7 +110,7 @@ typedef struct {
     uint32_t Nanoseconds;
     uint32_t OptionId;
     char QuoteCondition;
-    uint32_t PriceLong;
+    int32_t PriceLong;
     uint32_t SizeLong;
 } BestAskUpdateLongFormMessageT;
 
@@ -121,7 +121,7 @@ typedef struct {
     uint32_t Nanoseconds;
     uint32_t OptionId;
     char QuoteCondition;
-    uint32_t PriceLong;
+    int32_t PriceLong;
     uint32_t SizeLong;
 } BestBidUpdateLongFormMessageT;
 
@@ -132,7 +132,7 @@ typedef struct {
     uint32_t Nanoseconds;
     uint32_t OptionId;
     char QuoteCondition;
-    uint16_t Price;
+    int16_t Price;
     uint16_t Size;
 } BestAskUpdateShortFormMessageT;
 
@@ -143,7 +143,7 @@ typedef struct {
     uint32_t Nanoseconds;
     uint32_t OptionId;
     char QuoteCondition;
-    uint16_t Price;
+    int16_t Price;
     uint16_t Size;
 } BestBidUpdateShortFormMessageT;
 
@@ -154,9 +154,9 @@ typedef struct {
     uint32_t Nanoseconds;
     uint32_t OptionId;
     char QuoteCondition;
-    uint32_t BidPriceLong;
+    int32_t BidPriceLong;
     uint32_t BidSizeLong;
-    uint32_t AskPriceLong;
+    int32_t AskPriceLong;
     uint32_t AskSizeLong;
 } BestBidAndAskUpdateLongFormMessageT;
 
@@ -167,9 +167,9 @@ typedef struct {
     uint32_t Nanoseconds;
     uint32_t OptionId;
     char QuoteCondition;
-    uint16_t BidPrice;
+    int16_t BidPrice;
     uint16_t BidSize;
-    uint16_t AskPrice;
+    int16_t AskPrice;
     uint16_t AskSize;
 } BestBidAndAskUpdateShortFormMessageT;
 
@@ -201,7 +201,7 @@ typedef struct {
     uint8_t ExpirationYear;
     uint8_t ExpirationMonth;
     uint8_t ExpirationDay;
-    uint32_t StrikePrice;
+    int32_t StrikePrice;
     char OptionType;
     uint8_t Source;
     char UnderlyingSymbol[13];

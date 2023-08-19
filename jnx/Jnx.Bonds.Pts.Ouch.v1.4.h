@@ -1,5 +1,5 @@
 /*******************************************************************************
- * C Structs For Jnx Equities Ouch Pts 1.11 Binary Model
+ * C Structs For Jnx Bonds Ouch Pts 1.4 Binary Model
  *******************************************************************************/
 
 /*******************************************************************************
@@ -24,15 +24,10 @@
  * Cash Margin Type Values
  */ 
 #define ENUM_CASH_MARGIN_TYPE_CASH '1'
-#define ENUM_CASH_MARGIN_TYPE_MARGIN_OPEN_NEGOTIABLE '2'
-#define ENUM_CASH_MARGIN_TYPE_MARGIN_CLOSE_NEGOTIABLE '3'
-#define ENUM_CASH_MARGIN_TYPE_MARGIN_OPEN_STANDARDIZED '4'
-#define ENUM_CASH_MARGIN_TYPE_MARGIN_CLOSE_STANDARDIZED '5'
 
 /*
  * Display Values
  */ 
-#define ENUM_DISPLAY_UNUSED ' '
 #define ENUM_DISPLAY_POSTONLY 'P'
 
 /*
@@ -54,8 +49,6 @@
 #define ENUM_ORDER_CANCELED_REASON_INVALID_MINIMUM_QUANTITY 'N'
 #define ENUM_ORDER_CANCELED_REASON_INVALID_ORDER_TYPE 'Y'
 #define ENUM_ORDER_CANCELED_REASON_INVALID_DISPLAY_TYPE 'D'
-#define ENUM_ORDER_CANCELED_REASON_EXCEEDED_ORDER_VALUE_LIMIT 'V'
-#define ENUM_ORDER_CANCELED_REASON_ORDER_RESTRICTION 'i'
 #define ENUM_ORDER_CANCELED_REASON_NOT_ALLOWED 'R'
 #define ENUM_ORDER_CANCELED_REASON_THROTTLED 'F'
 #define ENUM_ORDER_CANCELED_REASON_MARGIN_RESTRICTION 'G'
@@ -80,8 +73,6 @@
 #define ENUM_ORDER_REJECTED_REASON_INVALID_MINIMUM_QUANTITY 'N'
 #define ENUM_ORDER_REJECTED_REASON_INVALID_ORDER_TYPE 'Y'
 #define ENUM_ORDER_REJECTED_REASON_INVALID_DISPLAY_TYPE 'D'
-#define ENUM_ORDER_REJECTED_REASON_EXCEEDED_ORDER_VALUE_LIMIT 'V'
-#define ENUM_ORDER_REJECTED_REASON_SHORT_SELL_ORDER_RESTRICTION 'i'
 #define ENUM_ORDER_REJECTED_REASON_ORDER_NOT_ALLOWED 'R'
 #define ENUM_ORDER_REJECTED_REASON_FLOW_THROTTLED 'F'
 #define ENUM_ORDER_REJECTED_REASON_INVALID_MARGIN_SPECIFICATION 'G'
@@ -117,7 +108,7 @@
 #define ENUM_SEQUENCED_MESSAGE_TYPE_ORDER_REPLACED_MESSAGE 'U'
 #define ENUM_SEQUENCED_MESSAGE_TYPE_ORDER_CANCELED_MESSAGE 'C'
 #define ENUM_SEQUENCED_MESSAGE_TYPE_ORDER_AIQ_CANCELED_MESSAGE 'D'
-#define ENUM_SEQUENCED_MESSAGE_TYPE_ORDER_EXECUTED_MESSAGE 'E'
+#define ENUM_SEQUENCED_MESSAGE_TYPE_ORDER_EXECUTED_WITH_COUNTER_PARTY_MESSAGE 'e'
 #define ENUM_SEQUENCED_MESSAGE_TYPE_ORDER_REJECTED_MESSAGE 'J'
 
 /*
@@ -161,7 +152,7 @@ typedef struct {
     uint32_t ExistingOrderToken;
     uint32_t ReplacementOrderToken;
     uint32_t Quantity;
-    uint32_t Price;
+    int32_t Price;
     uint32_t TimeInForce;
     char Display;
     uint32_t MinimumQuantity;
@@ -177,7 +168,7 @@ typedef struct {
     uint32_t Quantity;
     uint32_t OrderbookId;
     char Group[4];
-    uint32_t Price;
+    int32_t Price;
     uint32_t TimeInForce;
     uint32_t FirmId;
     char Display;
@@ -214,16 +205,17 @@ typedef struct {
 } OrderRejectedMessageT;
 
 /*
- * Structure: Order Executed Message
+ * Structure: Order Executed With Counter Party Message
  */ 
 typedef struct {
     uint64_t Timestamp;
     uint32_t OrderToken;
     uint32_t ExecutedQuantity;
-    uint32_t ExecutionPrice;
+    int32_t ExecutionPrice;
     char LiquidityIndicator;
+    char CounterParty[12];
     uint64_t MatchNumber;
-} OrderExecutedMessageT;
+} OrderExecutedWithCounterPartyMessageT;
 
 /*
  * Structure: Order Aiq Canceled Message
@@ -234,7 +226,7 @@ typedef struct {
     uint32_t DecrementQuantity;
     char OrderCanceledReason;
     uint32_t QuantityPreventedFromTrading;
-    uint32_t ExecutionPrice;
+    int32_t ExecutionPrice;
     char LiquidityIndicator;
 } OrderAiqCanceledMessageT;
 
@@ -258,7 +250,7 @@ typedef struct {
     uint32_t Quantity;
     uint32_t OrderbookId;
     char Group[4];
-    uint32_t Price;
+    int32_t Price;
     uint32_t TimeInForce;
     char Display;
     uint64_t OrderNumber;
@@ -278,7 +270,7 @@ typedef struct {
     uint32_t Quantity;
     uint32_t OrderbookId;
     char Group[4];
-    uint32_t Price;
+    int32_t Price;
     uint32_t TimeInForce;
     uint32_t FirmId;
     char Display;
@@ -354,9 +346,9 @@ typedef struct {
 
 Protocol:
    Organization: Japannext
-   Version: 1.11
-   Date: Thursday, March 9, 2023
-   Specification: Japannext_PTS_OUCH_Equities_v1.11.pdf
+   Version: 1.4
+   Date: Wednesday, April 1, 2020
+   Specification: Japannext_PTS_OUCH_Bonds_v1.4.pdf
 
 Source:
    Generator: 1.0.0.0
