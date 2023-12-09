@@ -1,4 +1,4 @@
-[![Box](https://github.com/Open-Markets-Initiative/Directory/blob/main/Images/Box.png)](https://boxoptions.com)
+[![Box](https://github.com/Open-Markets-Initiative/Directory/blob/main/Organizations/Box/Images/Logo.png)](https://boxoptions.com)
 
 
 ## Boston Options Exchange
@@ -12,4 +12,4 @@ Box: [website](https://boxoptions.com "Go to Boston Options Exchange")
 
 
 [Box.Options.Sola.Unicast.Hsvf.v4.5.1.Structs]: https://github.com/Open-Markets-Initiative/c-structs/blob/main/box/Box.Options.Sola.Unicast.Hsvf.v4.5.1.h "Box Options Sola Unicast Hsvf v4.5.1 C# Parsers Source File"
-[Box.Options.Sola.Unicast.Hsvf.v4.5.1.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Specifications/Box/Box.Options.Sola.Unicast.Hsvf.v4.5.pdf "Boston Options Exchange 4.5.1 Pdf"
+[Box.Options.Sola.Unicast.Hsvf.v4.5.1.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Organizations/Box/Specifications/Box.Options.Sola.Unicast.Hsvf.v4.5.pdf "Boston Options Exchange 4.5.1 Pdf"

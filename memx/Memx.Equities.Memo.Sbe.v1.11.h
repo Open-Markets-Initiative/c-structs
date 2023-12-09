@@ -1,5 +1,5 @@
 /*******************************************************************************
- * C Structs For Memx Equities Sbe Memo 1.10 Binary Model
+ * C Structs For Memx Equities Sbe Memo 1.11 Binary Model
  *******************************************************************************/
 
 /*******************************************************************************
@@ -499,6 +499,7 @@ typedef struct {
     uint32_t LeavesQty;
     uint32_t CumQty;
     char LnkId[4];
+    char SecurityGroup[1];
 } ExecutionReportTradeBreakMessageT;
 
 /*
@@ -517,6 +518,7 @@ typedef struct {
     uint32_t LeavesQty;
     uint32_t CumQty;
     char LnkId[4];
+    char SecurityGroup[1];
 } ExecutionReportTradeCorrectionMessageT;
 
 /*
@@ -640,6 +642,7 @@ typedef struct {
     char LastMkt;
     uint64_t TrdMatchingId;
     char LnkId[4];
+    char SecurityGroup[1];
 } ExecutionReportTradeMessageT;
 
 /*
@@ -972,9 +975,9 @@ typedef struct {
 
 Protocol:
    Organization: Members Exchange
-   Version: 1.10
-   Date: Thursday, November 17, 2022
-   Specification: MEMO SBE-v1_10-revD.pdf
+   Version: 1.11
+   Date: Friday, January 13, 2023
+   Specification: MEMO SBE-v1_11.pdf
 
 Source:
    Generator: 1.0.0.0

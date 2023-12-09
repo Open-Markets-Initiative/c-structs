@@ -1,5 +1,5 @@
 /*******************************************************************************
- * C Structs For Eurex Derivatives T7 Eobi 10.0 Binary Model
+ * C Structs For Eurex Derivatives T7 Eobi 10.1 Binary Model
  *******************************************************************************/
 
 /*******************************************************************************
@@ -807,9 +807,9 @@ typedef struct {
 
 Protocol:
    Organization: Eurex Exchange
-   Version: 10.0
-   Date: Monday, September 20, 2021
-   Specification: T7_EOBI_Manual_v.10.0.0-1-.pdf
+   Version: 10.1
+   Date: Wednesday, June 22, 2022
+   Specification: T7_EOBI_Manual_v.10.1.1.pdf
 
 Source:
    Generator: 1.0.0.0

@@ -527,7 +527,7 @@ typedef struct {
 typedef struct {
     int32_t MarketId;
     int64_t SettlementPriceWithDealPricePrecision;
-    int64_t DateTime;
+    int64_t MessageDateTime;
     char IsOfficial;
     int64_t ValuationDateTime;
     int64_t Volatility;
@@ -541,7 +541,7 @@ typedef struct {
 typedef struct {
     int32_t MarketId;
     int32_t OpenInterest;
-    int64_t DateTime;
+    int64_t MessageDateTime;
     char OpenInterestDate[10];
 } OptionOpenInterestMessageT;
 
@@ -698,7 +698,7 @@ typedef struct {
     char Status;
     int64_t AuctionEndTime;
     int32_t ThresholdImbalanceQty;
-    int64_t DateTime;
+    int64_t MessageDateTime;
 } FixingTransitionMessageT;
 
 /*
@@ -853,7 +853,7 @@ typedef struct {
 typedef struct {
     int32_t MarketId;
     int64_t PreOpenPrice;
-    int64_t DateTime;
+    int64_t MessageDateTime;
     char HasPreOpenVolume[1];
     int32_t PreOpenVolume;
 } PreOpenPriceIndicatorMessageT;
@@ -864,7 +864,7 @@ typedef struct {
 typedef struct {
     int32_t MarketId;
     char EventType[1];
-    int64_t DateTime;
+    int64_t MessageDateTime;
 } MarketEventMessageT;
 
 /*
@@ -882,7 +882,7 @@ typedef struct {
     int64_t Vwap;
     int64_t SettlementPriceWithDealPricePrecision;
     int32_t OpenInterest;
-    int64_t DateTime;
+    int64_t MessageDateTime;
     int64_t SettlementPrice;
 } EndOfDayMarketSummaryMessageT;
 
@@ -904,7 +904,7 @@ typedef struct {
 typedef struct {
     int32_t MarketId;
     int64_t SettlementPriceWithDealPricePrecision;
-    int64_t DateTime;
+    int64_t MessageDateTime;
     char IsOfficial;
     int64_t ValuationDateTime;
     int64_t SettlementPrice;
@@ -916,7 +916,7 @@ typedef struct {
 typedef struct {
     int32_t MarketId;
     int64_t ClosePrice;
-    int64_t DateTime;
+    int64_t MessageDateTime;
 } ClosePriceMessageT;
 
 /*
@@ -925,7 +925,7 @@ typedef struct {
 typedef struct {
     int32_t MarketId;
     int64_t OpenPrice;
-    int64_t DateTime;
+    int64_t MessageDateTime;
 } OpenPriceMessageT;
 
 /*
@@ -935,7 +935,7 @@ typedef struct {
     int32_t MarketId;
     int32_t OpenInterest;
     int32_t OpenInterestChange;
-    int64_t DateTime;
+    int64_t MessageDateTime;
     char OpenInterestDate[10];
 } OpenInterestMessageT;
 
@@ -944,7 +944,7 @@ typedef struct {
  */ 
 typedef struct {
     char TextMessage[200];
-    int64_t DateTime;
+    int64_t MessageDateTime;
     char TextMessageExtraFld[800];
 } SystemTextMessageT;
 
@@ -954,7 +954,7 @@ typedef struct {
 typedef struct {
     int32_t MarketId;
     char TradingStatus;
-    int64_t DateTime;
+    int64_t MessageDateTime;
 } MarketStateChangeMessageT;
 
 /*
@@ -969,7 +969,7 @@ typedef struct {
     int64_t High;
     int64_t Low;
     int64_t Vwap;
-    int64_t DateTime;
+    int64_t MessageDateTime;
 } MarketStatisticsMessageT;
 
 /*
@@ -981,7 +981,7 @@ typedef struct {
     int64_t Price;
     int32_t Quantity;
     char OffMarketTradeIndicator;
-    int64_t DateTime;
+    int64_t MessageDateTime;
     char OffMarketTradeType[3];
 } CancelledTradeMessageT;
 
@@ -994,7 +994,7 @@ typedef struct {
     int64_t Price;
     int32_t Quantity;
     char OffMarketTradeIndicator;
-    int64_t DateTime;
+    int64_t MessageDateTime;
     char Status;
     char OffMarketTradeType[3];
 } InvestigatedTradeMessageT;

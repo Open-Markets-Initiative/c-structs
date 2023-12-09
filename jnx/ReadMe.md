@@ -1,4 +1,4 @@
-[![Jnx](https://github.com/Open-Markets-Initiative/Directory/blob/main/Images/Jnx.png)](https://www.japannext.co.jp/en)
+[![Jnx](https://github.com/Open-Markets-Initiative/Directory/blob/main/Organizations/Jnx/Images/Logo.png)](https://www.japannext.co.jp/en)
 
 
 ## Japannext
@@ -18,19 +18,19 @@ Jnx: [website](https://www.japannext.co.jp/en "Go to Japannext")
 
 [Jnx.Bonds.Pts.Itch.v1.2.Structs]: https://github.com/Open-Markets-Initiative/c-structs/blob/main/jnx/Jnx.Bonds.Pts.Itch.v1.2.h "Jnx Bonds Pts Itch v1.2 C# Parsers Source File"
 [Jnx.Bonds.Pts.Itch.v1.2.Url]: https://www.japannext.co.jp/library "Japannext 1.2 Url"
-[Jnx.Bonds.Pts.Itch.v1.2.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Specifications/Jnx/Jnx.Bonds.Pts.Itch.v1.2.pdf "Japannext 1.2 Pdf"
+[Jnx.Bonds.Pts.Itch.v1.2.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Organizations/Jnx/Specifications/Jnx.Bonds.Pts.Itch.v1.2.pdf "Japannext 1.2 Pdf"
 [Jnx.Bonds.Pts.Ouch.v1.4.Structs]: https://github.com/Open-Markets-Initiative/c-structs/blob/main/jnx/Jnx.Bonds.Pts.Ouch.v1.4.h "Jnx Bonds Pts Ouch v1.4 C# Parsers Source File"
 [Jnx.Bonds.Pts.Ouch.v1.4.Url]: https://www.japannext.co.jp/library "Japannext 1.4 Url"
-[Jnx.Bonds.Pts.Ouch.v1.4.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Specifications/Jnx/Jnx.Bonds.Pts.Ouch.v1.4.pdf "Japannext 1.4 Pdf"
+[Jnx.Bonds.Pts.Ouch.v1.4.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Organizations/Jnx/Specifications/Jnx.Bonds.Pts.Ouch.v1.4.pdf "Japannext 1.4 Pdf"
 [Jnx.Equities.Pts.Itch.v1.6.Structs]: https://github.com/Open-Markets-Initiative/c-structs/blob/main/jnx/Jnx.Equities.Pts.Itch.v1.6.h "Jnx Equities Pts Itch v1.6 C# Parsers Source File"
 [Jnx.Equities.Pts.Itch.v1.6.Url]: https://www.japannext.co.jp/library "Japannext 1.6 Url"
-[Jnx.Equities.Pts.Itch.v1.6.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Specifications/Jnx/Jnx.Equties.Pts.Itch.v1.6.pdf "Japannext 1.6 Pdf"
+[Jnx.Equities.Pts.Itch.v1.6.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Organizations/Jnx/Specifications/Jnx.Equties.Pts.Itch.v1.6.pdf "Japannext 1.6 Pdf"
 [Jnx.Equities.Pts.Itch.v1.7.Structs]: https://github.com/Open-Markets-Initiative/c-structs/blob/main/jnx/Jnx.Equities.Pts.Itch.v1.7.h "Jnx Equities Pts Itch v1.7 C# Parsers Source File"
 [Jnx.Equities.Pts.Itch.v1.7.Url]: https://www.japannext.co.jp/library "Japannext 1.7 Url"
-[Jnx.Equities.Pts.Itch.v1.7.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Specifications/Jnx/Jnx.Equties.Pts.Itch.v1.7.pdf "Japannext 1.7 Pdf"
+[Jnx.Equities.Pts.Itch.v1.7.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Organizations/Jnx/Specifications/Jnx.Equties.Pts.Itch.v1.7.pdf "Japannext 1.7 Pdf"
 [Jnx.Equities.Pts.Ouch.v1.11.Structs]: https://github.com/Open-Markets-Initiative/c-structs/blob/main/jnx/Jnx.Equities.Pts.Ouch.v1.11.h "Jnx Equities Pts Ouch v1.11 C# Parsers Source File"
 [Jnx.Equities.Pts.Ouch.v1.11.Url]: https://www.japannext.co.jp/library "Japannext 1.11 Url"
-[Jnx.Equities.Pts.Ouch.v1.11.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Specifications/Jnx/Jnx.Equties.Pts.Ouch.v1.11.pdf "Japannext 1.11 Pdf"
+[Jnx.Equities.Pts.Ouch.v1.11.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Organizations/Jnx/Specifications/Jnx.Equties.Pts.Ouch.v1.11.pdf "Japannext 1.11 Pdf"
 [Jnx.Equities.Pts.Ouch.v1.12.Structs]: https://github.com/Open-Markets-Initiative/c-structs/blob/main/jnx/Jnx.Equities.Pts.Ouch.v1.12.h "Jnx Equities Pts Ouch v1.12 C# Parsers Source File"
 [Jnx.Equities.Pts.Ouch.v1.12.Url]: https://www.japannext.co.jp/library "Japannext 1.12 Url"
-[Jnx.Equities.Pts.Ouch.v1.12.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Specifications/Jnx/Jnx.Equties.Pts.Ouch.v1.12.pdf "Japannext 1.12 Pdf"
+[Jnx.Equities.Pts.Ouch.v1.12.Pdf]: https://github.com/Open-Markets-Initiative/Directory/blob/main/Organizations/Jnx/Specifications/Jnx.Equties.Pts.Ouch.v1.12.pdf "Japannext 1.12 Pdf"

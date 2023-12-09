@@ -326,7 +326,6 @@ typedef struct {
     char MessageIndicator[1];
     uint32_t TransactionId;
     uint32_t ParticipantReferenceNumber;
-    uint16_t MessageDataLength;
 } ControlMessageT;
 
 /*
@@ -346,8 +345,8 @@ typedef struct {
 typedef struct {
     char ParticipantId;
     char DenominatorCode[1];
-    uint32_t Price;
-    char Size[0];
+    int32_t Price;
+    uint32_t Size;
 } BestOfferAppendageT;
 
 /*
@@ -356,8 +355,8 @@ typedef struct {
 typedef struct {
     char ParticipantId;
     char DenominatorCode[1];
-    uint32_t Price;
-    char Size[0];
+    int32_t Price;
+    uint32_t Size;
 } BestBidAppendageT;
 
 /*
